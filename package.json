@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
+    "db:init": "tsx scripts/init-db.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
