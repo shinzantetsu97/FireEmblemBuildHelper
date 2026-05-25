@@ -82,3 +82,49 @@ After completing Milestone 1, STOP and report:
 - Whether each command passed
 - Any assumptions made
 - Any issues or uncertainties
+
+---
+
+## Results
+
+Completed Milestone 1.
+
+Files created:
+- `src/index.ts`
+- `package.json`
+- `package-lock.json`
+- `tsconfig.json`
+- `README.md`
+- `.gitignore`
+
+Folders created:
+- `src`
+- `data/raw`
+- `data/seed`
+- `data/reports`
+
+Additional repo-readiness files created:
+- `data/raw/.gitkeep`
+- `data/seed/.gitkeep`
+- `data/reports/.gitkeep`
+
+Commands run:
+- `Get-Content -Raw -LiteralPath prompt.txt` passed.
+- `Get-ChildItem -Force` passed.
+- `git status --short` failed because `git` was not installed or not on PATH at the time.
+- `rg --files` passed.
+- `New-Item -ItemType Directory -Force -Path src,data\raw,data\seed,data\reports` passed.
+- `npm install` first attempt timed out in the restricted sandbox.
+- `npm install` with registry access passed.
+- `npm run dev` passed and printed `FireEmblemBuildHelper project is running.`
+- `npm run typecheck` passed.
+
+Assumptions:
+- Used `fire-emblem-build-helper` as the package name.
+- Used a minimal modern TypeScript config with `NodeNext` module settings.
+- Kept dependencies limited to `typescript` and `tsx`.
+
+Issues / uncertainties:
+- Git was not installed or not on PATH during initial project setup.
+- After this milestone, the user chose to install Git and connect this folder to their own GitHub repository.
+- No spreadsheet parsing, SQLite, backend, React, auth, or Fire Emblem rules were added.
