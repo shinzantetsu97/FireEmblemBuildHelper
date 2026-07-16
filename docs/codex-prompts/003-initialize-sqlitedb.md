@@ -187,3 +187,93 @@ Do not commit, push, or merge yet. I will manually verify first.
 - `npm run typecheck` passed again after the seed text fix.
 - A direct SQLite readback confirmed the corrected seed note text was stored, including `note_seed_4` with title `劈应用` and content `你TMD劈我应用是吧（被捅）`.
 - `git check-ignore -v data/app.db` was rerun successfully after the clean fix and confirmed `.gitignore` ignores the generated database via `*.db`.
+
+---
+
+## Results
+
+Completed Milestone 2.
+
+Branch workflow:
+- Started from `main`.
+- Pulled latest `main` from `origin`.
+- Created and worked on `feature/db-init-notes`.
+- After user verification, committed the feature branch and merged it back into `main`.
+- Final merged commit: `eebad1c feat: initialize SQLite notes database`.
+- `main` was pushed to `origin`.
+
+Files created:
+- `scripts/init-db.ts`
+- `docs/codex-prompts/003-initialize-sqlitedb.md`
+- `docs/codex-prompts/templates/post-verification-commit-merge.md`
+
+Files modified:
+- `package.json`
+
+Generated local files:
+- `data/app.db` was created by `npm run db:init`.
+- `data/app.db` is ignored by Git via the existing `*.db` rule in `.gitignore`.
+
+`package.json` changes:
+- Added the `db:init` script:
+  - `tsx scripts/init-db.ts`
+- No dependencies or devDependencies were changed.
+
+`.gitignore` changes:
+- None.
+- Existing `*.db` rule already covers `data/app.db`.
+
+Database schema created:
+- `profiles`
+- `notes`
+
+Seed data created:
+- One local development profile:
+  - `profile_1`
+  - `Default Profile`
+- Four local development notes for `profile_1`.
+
+Commands run:
+- `git switch main` passed.
+- `git pull origin main` passed.
+- `git switch -c feature/db-init-notes` passed.
+- `npm run typecheck` passed.
+- `npm run db:init` passed.
+- `npm run db:init` passed a second time.
+- `npm run dev` passed during post-verification.
+- `git check-ignore -v data/app.db` passed.
+- Direct SQLite readback with `better-sqlite3` passed.
+- `git add ...` passed.
+- `git commit -m "feat: initialize SQLite notes database"` passed.
+- `git push -u origin feature/db-init-notes` passed.
+- `git switch main` passed.
+- `git pull origin main` passed.
+- `git merge feature/db-init-notes` passed as a fast-forward.
+- `npm run typecheck` passed again on `main`.
+- `npm run dev` passed again on `main`.
+- `npm run db:init` passed again on `main`.
+- `git push origin main` passed.
+
+Final `db:init` summary:
+- `profiles: 1`
+- `notes for profile_1: 4`
+
+Idempotency:
+- Uses `CREATE TABLE IF NOT EXISTS`.
+- Enables SQLite foreign keys with `PRAGMA foreign_keys = ON`.
+- Wraps schema creation and seed inserts in a transaction.
+- Uses stable fixed IDs for seed rows.
+- Uses `INSERT OR IGNORE` for seed rows.
+- Does not drop existing tables.
+- Does not delete user data.
+- Running `npm run db:init` repeatedly does not duplicate notes.
+
+Assumptions:
+- `data/app.db` is local development data and should remain ignored.
+- Seed notes are local sanity-check data only, not production onboarding data.
+- The local generated database could be regenerated during development after the encoding issue was found.
+
+Issues / uncertainties:
+- The first execution attempt stopped because the prompt file itself was untracked; the prompt was updated to allow uncommitted changes under `docs/codex-prompts/`.
+- The initial seed note strings copied into `scripts/init-db.ts` were mojibake. User noticed this, the script was corrected, and `data/app.db` was regenerated.
+- The feature branch was merged but not pruned.

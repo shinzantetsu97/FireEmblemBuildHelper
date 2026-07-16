@@ -79,3 +79,5 @@ After completing, STOP and report:
 - Whether each command passed
 - Final git status
 - Any issues or uncertainties
+
+After STOP and report, ask whether the user wants to prune the merged feature branch.
