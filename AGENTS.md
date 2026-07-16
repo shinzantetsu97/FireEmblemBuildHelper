@@ -42,6 +42,8 @@ Preserve UTF-8 text. Watch for mojibake when touching Japanese, Chinese, or loca
 
 Add validation/reporting around imported spreadsheet or source data. One incorrect support, class, route, or availability flag can make planner output misleading.
 
+Before entering game data, read the applicable canonical ordering document. Keep records in normalized JSON files in that canonical order; do not rely on a runtime sort to make input data readable.
+
 ## File-reading discipline
 
 Before reading files, decide whether the task actually requires it.

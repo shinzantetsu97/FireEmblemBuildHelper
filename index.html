@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A browser-local workspace for Fire Emblem build and run planning."
+      content="A browser-local Fire Emblem Fates unit reference and planning workspace."
     />
     <title>FireEmblemBuildHelper</title>
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const redirectPath = sessionStorage.getItem("febh:redirect-path");
+      if (redirectPath) {
+        sessionStorage.removeItem("febh:redirect-path");
+        if (redirectPath.startsWith("/FireEmblemBuildHelper/")) {
+          history.replaceState(null, "", redirectPath);
+        }
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

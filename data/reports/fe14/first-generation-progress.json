@@ -1,0 +1,910 @@
+{
+  "gameId": "fe14",
+  "updatedAt": "2026-07-16",
+  "units": [
+    {
+      "order": 1,
+      "unitId": "felicia",
+      "displayName": "Felicia",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
+      },
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "felicia"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "unitId": "jakob",
+      "displayName": "Jakob",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
+      },
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "jakob"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Jakob's 乔卡 workbook sheet still requires direct inspection; current records use independent web, chart, and in-game sources.",
+          "unitId": "jakob"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "unitId": "kaze",
+      "displayName": "Kaze",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
+      },
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "kaze"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Kaze's 凉风 workbook sheet and its four level/stat notes still require direct inspection; the current carryover rules are independently corroborated by Fire Emblem Wiki prose and Serenes Forest data.",
+          "unitId": "kaze"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "unitId": "silas",
+      "displayName": "Silas",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
+      },
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "silas"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "unitId": "azura",
+      "displayName": "Azura",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
+      },
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "azura"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "unitId": "mozu",
+      "displayName": "Mozu",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 7,
+      "unitId": "shura",
+      "displayName": "Shura",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 8,
+      "unitId": "izana",
+      "displayName": "Izana",
+      "status": "in_review",
+      "domains": {
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 9,
+      "unitId": "gunter",
+      "displayName": "Gunter",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 10,
+      "unitId": "flora",
+      "displayName": "Flora",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 11,
+      "unitId": "elise",
+      "displayName": "Elise",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 12,
+      "unitId": "arthur",
+      "displayName": "Arthur",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 13,
+      "unitId": "effie",
+      "displayName": "Effie",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 14,
+      "unitId": "odin",
+      "displayName": "Odin",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 15,
+      "unitId": "niles",
+      "displayName": "Niles",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 16,
+      "unitId": "nyx",
+      "displayName": "Nyx",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 17,
+      "unitId": "camilla",
+      "displayName": "Camilla",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 18,
+      "unitId": "selena",
+      "displayName": "Selena",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 19,
+      "unitId": "beruka",
+      "displayName": "Beruka",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 20,
+      "unitId": "laslow",
+      "displayName": "Laslow",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 21,
+      "unitId": "peri",
+      "displayName": "Peri",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 22,
+      "unitId": "benny",
+      "displayName": "Benny",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 23,
+      "unitId": "charlotte",
+      "displayName": "Charlotte",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 24,
+      "unitId": "leo",
+      "displayName": "Leo",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 25,
+      "unitId": "keaton",
+      "displayName": "Keaton",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 26,
+      "unitId": "xander",
+      "displayName": "Xander",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 27,
+      "unitId": "rinkah",
+      "displayName": "Rinkah",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 28,
+      "unitId": "sakura",
+      "displayName": "Sakura",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 29,
+      "unitId": "hana",
+      "displayName": "Hana",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 30,
+      "unitId": "subaki",
+      "displayName": "Subaki",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 31,
+      "unitId": "saizo",
+      "displayName": "Saizo",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 32,
+      "unitId": "orochi",
+      "displayName": "Orochi",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 33,
+      "unitId": "hinoka",
+      "displayName": "Hinoka",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 34,
+      "unitId": "azama",
+      "displayName": "Azama",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 35,
+      "unitId": "setsuna",
+      "displayName": "Setsuna",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 36,
+      "unitId": "hayato",
+      "displayName": "Hayato",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 37,
+      "unitId": "oboro",
+      "displayName": "Oboro",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 38,
+      "unitId": "hinata",
+      "displayName": "Hinata",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 39,
+      "unitId": "takumi",
+      "displayName": "Takumi",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 40,
+      "unitId": "kagero",
+      "displayName": "Kagero",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 41,
+      "unitId": "reina",
+      "displayName": "Reina",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": false,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 42,
+      "unitId": "kaden",
+      "displayName": "Kaden",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 43,
+      "unitId": "scarlet",
+      "displayName": "Scarlet",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": false,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 44,
+      "unitId": "ryoma",
+      "displayName": "Ryoma",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 45,
+      "unitId": "yukimura",
+      "displayName": "Yukimura",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": false,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 46,
+      "unitId": "fuga",
+      "displayName": "Fuga",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": false,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 47,
+      "unitId": "anna",
+      "displayName": "Anna",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": false,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    },
+    {
+      "order": 48,
+      "unitId": "corrin",
+      "displayName": "Corrin",
+      "status": "not_started",
+      "domains": {
+        "identity": false,
+        "availability": false,
+        "baseStats": false,
+        "growths": false,
+        "capModifiers": false,
+        "pairupBonuses": false,
+        "supports": true,
+        "classAccess": false,
+        "personalSkill": false
+      },
+      "openIssues": []
+    }
+  ]
+}

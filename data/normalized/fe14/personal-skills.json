@@ -1,0 +1,304 @@
+[
+  {
+    "id": "healing_descant",
+    "unitId": "azura",
+    "names": {
+      "en": "Healing Descant",
+      "zhHans": "治愈之声"
+    },
+    "effect": "At the start of each turn, adjacent allies within two spaces recover 10% of their maximum HP.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿库娅!C6:E6",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Shared Characters > Healing Descant > Azura",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azura",
+        "locator": "Fire Emblem Fates > Skill set > Healing Descant",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "devoted_partner",
+    "unitId": "felicia",
+    "names": {
+      "en": "Devoted Partner",
+      "zhHans": "绝对援护"
+    },
+    "effect": "When Corrin is the lead unit, Corrin deals 2 more damage and receives 2 less damage.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!C6:F6",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Shared Characters > Devoted Partner > Felicia",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-felicia",
+        "locator": "Fire Emblem Fates > Skill set > Devoted Partner",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "evasive_partner",
+    "unitId": "jakob",
+    "names": {
+      "en": "Evasive Partner",
+      "zhHans": "绝对死守"
+    },
+    "effect": "When Corrin is the lead unit, Corrin gains 15 Avoid and receives 3 less damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Shared Characters > Evasive Partner > Jakob",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-jakob",
+        "locator": "Fire Emblem Fates > Skill set > Evasive Partner",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-name-chart",
+        "locator": "Skills > 絶対死守 > Evasive Partner",
+        "fields": [
+          "names.zhHans"
+        ],
+        "reviewStatus": "candidate"
+      }
+    ]
+  },
+  {
+    "id": "vow_of_friendship",
+    "unitId": "silas",
+    "names": {
+      "en": "Vow of Friendship",
+      "zhHans": "友情的誓言"
+    },
+    "effect": "If Corrin is an ally and Corrin is under half HP, Silas deals 3 more damage and receives 3 less damage.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!C6:E6",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Shared Characters > Vow of Friendship > Silas",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-silas",
+        "locator": "Fire Emblem Fates > Skill set > Vow of Friendship",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "miraculous_save",
+    "unitId": "kaze",
+    "names": {
+      "en": "Miraculous Save",
+      "zhHans": "羁绊的祈祷"
+    },
+    "effect": "When Kaze is the support unit, the lead unit has a chance equal to their Luck stat to survive a fatal attack with 1 HP.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Shared Characters > Miraculous Save > Kaze",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Skill set > Miraculous Save",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-name-chart",
+        "locator": "Skills > 絆の祈り > Miraculous Save; Simplified Chinese rendering pending workbook audit",
+        "fields": [
+          "names.zhHans"
+        ],
+        "reviewStatus": "candidate"
+      }
+    ]
+  },
+  {
+    "id": "forager",
+    "unitId": "mozu",
+    "names": {
+      "en": "Forager",
+      "zhHans": "农场主"
+    },
+    "effect": "When standing on Mountain, Woods, Waste, or Field terrain, Mozu recovers 20% HP at the start of the turn.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "物集!C6:E6",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Shared Characters > Forager > Mozu",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-mozu",
+        "locator": "Fire Emblem Fates > Skill set > Forager",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "highwayman",
+    "unitId": "shura",
+    "names": {
+      "en": "Highwayman",
+      "zhHans": "出阴招"
+    },
+    "effect": "When Shura initiates combat and the enemy cannot counterattack, the enemy's Strength and Speed are reduced by 3 after combat; each recovers by 1 every turn.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿修罗!C6:E6",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Shared Characters > Highwayman > Shura",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-shura",
+        "locator": "Fire Emblem Fates > Skill set > Highwayman",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "peacebringer",
+    "unitId": "izana",
+    "names": {
+      "en": "Peacebringer",
+      "zhHans": "美貌的王者"
+    },
+    "effect": "Allies and enemies within 2 tiles of Izana deal 2 less damage.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "伊邪那!C6:E6",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Shared Characters > Peacebringer > Izana",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Fire Emblem Fates > Skill set > Peacebringer",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  }
+]

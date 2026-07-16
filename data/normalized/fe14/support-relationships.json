@@ -1,0 +1,4346 @@
+[
+  {
+    "id": "azura__corrin_female",
+    "unitId": "azura",
+    "partnerUnitId": "corrin",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Corrin (female) support information; Friendship Seal unlocks at A",
+        "fields": [
+          "ranks",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__corrin_male",
+    "unitId": "azura",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Corrin (male) support information",
+        "fields": [
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__corrin_female",
+    "unitId": "felicia",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-supports",
+        "locator": "Avatar > Every character; marriage only with the opposite gender",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Corrin (female) support information; maximizes at A rank; no additional class tree",
+        "fields": [
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__corrin_male",
+    "unitId": "felicia",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Corrin (male) support information",
+        "fields": [
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__corrin_female",
+    "unitId": "jakob",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-supports",
+        "locator": "Avatar > Every character; marriage only with the opposite gender",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Corrin (female) support information",
+        "fields": [
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__corrin_male",
+    "unitId": "jakob",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-supports",
+        "locator": "Avatar > Every character; marriage only with the opposite gender",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Corrin (male) support information; maximizes at A rank; no additional class tree",
+        "fields": [
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__corrin_female",
+    "unitId": "silas",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Corrin (female) support information",
+        "fields": [
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__corrin_male",
+    "unitId": "silas",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Corrin (male) support information; maximizes at A rank; no additional class tree",
+        "fields": [
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__corrin_female",
+    "unitId": "kaze",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Corrin (female) support information",
+        "fields": [
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__corrin_male",
+    "unitId": "kaze",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Corrin (male) support information; maximizes at A rank",
+        "fields": [
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__corrin_female",
+    "unitId": "mozu",
+    "partnerUnitId": "corrin",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Corrin (female) support information; Friendship Seal unlocks at A",
+        "fields": [
+          "ranks",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__corrin_male",
+    "unitId": "mozu",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Corrin (male) support information",
+        "fields": [
+          "ranks",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "shura__corrin_female",
+    "unitId": "shura",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-shura-supports",
+        "locator": "Corrin (female) support information",
+        "fields": [
+          "ranks",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "shura__corrin_male",
+    "unitId": "shura",
+    "partnerUnitId": "corrin",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-shura-supports",
+        "locator": "Corrin (male) support information; this support grants Shura no class",
+        "fields": [
+          "ranks",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "izana__corrin_female",
+    "unitId": "izana",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Supports; Corrin (female) reaches S",
+        "fields": [
+          "ranks",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "izana__corrin_male",
+    "unitId": "izana",
+    "partnerUnitId": "corrin",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest"
+    ],
+    "partnerGender": "male",
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Supports; Corrin (male) reaches A only",
+        "fields": [
+          "ranks",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__azura",
+    "unitId": "jakob",
+    "partnerUnitId": "azura",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Azura support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__azura",
+    "unitId": "silas",
+    "partnerUnitId": "azura",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Azura support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__azura",
+    "unitId": "kaze",
+    "partnerUnitId": "azura",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Azura support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__ryoma",
+    "unitId": "azura",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Ryoma support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__hinoka",
+    "unitId": "azura",
+    "partnerUnitId": "hinoka",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Hinoka support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Azura and Hinoka A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "azura__takumi",
+    "unitId": "azura",
+    "partnerUnitId": "takumi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Takumi support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__sakura",
+    "unitId": "azura",
+    "partnerUnitId": "sakura",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Sakura support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Azura and Sakura A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "azura__saizo",
+    "unitId": "azura",
+    "partnerUnitId": "saizo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Saizo support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__azama",
+    "unitId": "azura",
+    "partnerUnitId": "azama",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Azama support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__hinata",
+    "unitId": "azura",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Hinata support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__subaki",
+    "unitId": "azura",
+    "partnerUnitId": "subaki",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Subaki support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__hayato",
+    "unitId": "azura",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Hayato support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__kaden",
+    "unitId": "azura",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Kaden support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__xander",
+    "unitId": "azura",
+    "partnerUnitId": "xander",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Xander support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__leo",
+    "unitId": "azura",
+    "partnerUnitId": "leo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Leo support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__elise",
+    "unitId": "azura",
+    "partnerUnitId": "elise",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Elise support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Azura and Elise A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "azura__laslow",
+    "unitId": "azura",
+    "partnerUnitId": "laslow",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Laslow support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__odin",
+    "unitId": "azura",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Odin support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__niles",
+    "unitId": "azura",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Niles support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__arthur",
+    "unitId": "azura",
+    "partnerUnitId": "arthur",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Arthur support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__benny",
+    "unitId": "azura",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Benny support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura__keaton",
+    "unitId": "azura",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura-supports",
+        "locator": "Keaton support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__jakob",
+    "unitId": "felicia",
+    "partnerUnitId": "jakob",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Jakob support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__silas",
+    "unitId": "felicia",
+    "partnerUnitId": "silas",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Silas support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__kaze",
+    "unitId": "felicia",
+    "partnerUnitId": "kaze",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Kaze support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__ryoma",
+    "unitId": "felicia",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Ryoma support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__takumi",
+    "unitId": "felicia",
+    "partnerUnitId": "takumi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Takumi support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__saizo",
+    "unitId": "felicia",
+    "partnerUnitId": "saizo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Saizo support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__azama",
+    "unitId": "felicia",
+    "partnerUnitId": "azama",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Azama support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__hinata",
+    "unitId": "felicia",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Hinata support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__hana",
+    "unitId": "felicia",
+    "partnerUnitId": "hana",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B12:C12",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Hana support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__subaki",
+    "unitId": "felicia",
+    "partnerUnitId": "subaki",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Subaki support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__hayato",
+    "unitId": "felicia",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Hayato support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__kaden",
+    "unitId": "felicia",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Kaden support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__xander",
+    "unitId": "felicia",
+    "partnerUnitId": "xander",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Xander support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__leo",
+    "unitId": "felicia",
+    "partnerUnitId": "leo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Leo support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__laslow",
+    "unitId": "felicia",
+    "partnerUnitId": "laslow",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Laslow support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__peri",
+    "unitId": "felicia",
+    "partnerUnitId": "peri",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B12:C12",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Peri support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__odin",
+    "unitId": "felicia",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Odin support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__niles",
+    "unitId": "felicia",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Niles support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__arthur",
+    "unitId": "felicia",
+    "partnerUnitId": "arthur",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Arthur support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__benny",
+    "unitId": "felicia",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Benny support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__keaton",
+    "unitId": "felicia",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Keaton support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__flora",
+    "unitId": "felicia",
+    "partnerUnitId": "flora",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B12:C12",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Flora support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__silas",
+    "unitId": "jakob",
+    "partnerUnitId": "silas",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-supports",
+        "locator": "A+ supports > Jakob > Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Silas support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Silas and Jakob A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "jakob__mozu",
+    "unitId": "jakob",
+    "partnerUnitId": "mozu",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Mozu support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__hinoka",
+    "unitId": "jakob",
+    "partnerUnitId": "hinoka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Hinoka support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__takumi",
+    "unitId": "jakob",
+    "partnerUnitId": "takumi",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-supports",
+        "locator": "A+ supports > Jakob > Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Takumi support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Takumi and Jakob A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "jakob__sakura",
+    "unitId": "jakob",
+    "partnerUnitId": "sakura",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Sakura support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__kagero",
+    "unitId": "jakob",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Kagero support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__setsuna",
+    "unitId": "jakob",
+    "partnerUnitId": "setsuna",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Setsuna support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__oboro",
+    "unitId": "jakob",
+    "partnerUnitId": "oboro",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Oboro support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__hana",
+    "unitId": "jakob",
+    "partnerUnitId": "hana",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Hana support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__rinkah",
+    "unitId": "jakob",
+    "partnerUnitId": "rinkah",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Rinkah support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__orochi",
+    "unitId": "jakob",
+    "partnerUnitId": "orochi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Orochi support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__camilla",
+    "unitId": "jakob",
+    "partnerUnitId": "camilla",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Camilla support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__elise",
+    "unitId": "jakob",
+    "partnerUnitId": "elise",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Elise support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__peri",
+    "unitId": "jakob",
+    "partnerUnitId": "peri",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Peri support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__selena",
+    "unitId": "jakob",
+    "partnerUnitId": "selena",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Selena support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__beruka",
+    "unitId": "jakob",
+    "partnerUnitId": "beruka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Beruka support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__effie",
+    "unitId": "jakob",
+    "partnerUnitId": "effie",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Effie support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__nyx",
+    "unitId": "jakob",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Nyx support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__charlotte",
+    "unitId": "jakob",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Charlotte support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__gunter",
+    "unitId": "jakob",
+    "partnerUnitId": "gunter",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Gunter support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Gunter and Jakob A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "kaze__silas",
+    "unitId": "kaze",
+    "partnerUnitId": "silas",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Silas support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__mozu",
+    "unitId": "silas",
+    "partnerUnitId": "mozu",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Mozu support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__ryoma",
+    "unitId": "silas",
+    "partnerUnitId": "ryoma",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B12:C12",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Ryoma support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Silas and Ryoma A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "silas__hinoka",
+    "unitId": "silas",
+    "partnerUnitId": "hinoka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Hinoka support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__sakura",
+    "unitId": "silas",
+    "partnerUnitId": "sakura",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Sakura support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__kagero",
+    "unitId": "silas",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Kagero support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__setsuna",
+    "unitId": "silas",
+    "partnerUnitId": "setsuna",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Setsuna support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__oboro",
+    "unitId": "silas",
+    "partnerUnitId": "oboro",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Oboro support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__hana",
+    "unitId": "silas",
+    "partnerUnitId": "hana",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Hana support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__rinkah",
+    "unitId": "silas",
+    "partnerUnitId": "rinkah",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Rinkah support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__orochi",
+    "unitId": "silas",
+    "partnerUnitId": "orochi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Orochi support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__camilla",
+    "unitId": "silas",
+    "partnerUnitId": "camilla",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Camilla support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__elise",
+    "unitId": "silas",
+    "partnerUnitId": "elise",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Elise support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__peri",
+    "unitId": "silas",
+    "partnerUnitId": "peri",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Peri support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__selena",
+    "unitId": "silas",
+    "partnerUnitId": "selena",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Selena support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__beruka",
+    "unitId": "silas",
+    "partnerUnitId": "beruka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Beruka support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__effie",
+    "unitId": "silas",
+    "partnerUnitId": "effie",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Effie support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__nyx",
+    "unitId": "silas",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Nyx support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__charlotte",
+    "unitId": "silas",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Charlotte support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__mozu",
+    "unitId": "kaze",
+    "partnerUnitId": "mozu",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Mozu support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__hinoka",
+    "unitId": "kaze",
+    "partnerUnitId": "hinoka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Hinoka support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__sakura",
+    "unitId": "kaze",
+    "partnerUnitId": "sakura",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Sakura support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__saizo",
+    "unitId": "kaze",
+    "partnerUnitId": "saizo",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Saizo support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__kagero",
+    "unitId": "kaze",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Kagero support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__setsuna",
+    "unitId": "kaze",
+    "partnerUnitId": "setsuna",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Setsuna support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__oboro",
+    "unitId": "kaze",
+    "partnerUnitId": "oboro",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Oboro support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__hana",
+    "unitId": "kaze",
+    "partnerUnitId": "hana",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Hana support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__rinkah",
+    "unitId": "kaze",
+    "partnerUnitId": "rinkah",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Rinkah support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__orochi",
+    "unitId": "kaze",
+    "partnerUnitId": "orochi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Orochi support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__xander",
+    "unitId": "kaze",
+    "partnerUnitId": "xander",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Xander support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__camilla",
+    "unitId": "kaze",
+    "partnerUnitId": "camilla",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Camilla support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__elise",
+    "unitId": "kaze",
+    "partnerUnitId": "elise",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Elise support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__peri",
+    "unitId": "kaze",
+    "partnerUnitId": "peri",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Peri support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__selena",
+    "unitId": "kaze",
+    "partnerUnitId": "selena",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Selena support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__beruka",
+    "unitId": "kaze",
+    "partnerUnitId": "beruka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Beruka support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__effie",
+    "unitId": "kaze",
+    "partnerUnitId": "effie",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Effie support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__nyx",
+    "unitId": "kaze",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Nyx support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__charlotte",
+    "unitId": "kaze",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Charlotte support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__ryoma",
+    "unitId": "mozu",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Ryoma support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__takumi",
+    "unitId": "mozu",
+    "partnerUnitId": "takumi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Takumi support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__saizo",
+    "unitId": "mozu",
+    "partnerUnitId": "saizo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Saizo support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__azama",
+    "unitId": "mozu",
+    "partnerUnitId": "azama",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Azama support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__hinata",
+    "unitId": "mozu",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Hinata support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__oboro",
+    "unitId": "mozu",
+    "partnerUnitId": "oboro",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Oboro support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Mozu and Oboro A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "mozu__subaki",
+    "unitId": "mozu",
+    "partnerUnitId": "subaki",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Subaki support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__hayato",
+    "unitId": "mozu",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Hayato support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__kaden",
+    "unitId": "mozu",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Kaden support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__xander",
+    "unitId": "mozu",
+    "partnerUnitId": "xander",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Xander support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__leo",
+    "unitId": "mozu",
+    "partnerUnitId": "leo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Leo support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__laslow",
+    "unitId": "mozu",
+    "partnerUnitId": "laslow",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Laslow support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__odin",
+    "unitId": "mozu",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Odin support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__niles",
+    "unitId": "mozu",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Niles support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__effie",
+    "unitId": "mozu",
+    "partnerUnitId": "effie",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Effie support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Mozu and Effie A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "mozu__arthur",
+    "unitId": "mozu",
+    "partnerUnitId": "arthur",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Arthur support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__nyx",
+    "unitId": "mozu",
+    "partnerUnitId": "nyx",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Nyx support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Mozu and Nyx A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "mozu__benny",
+    "unitId": "mozu",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Benny support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu__keaton",
+    "unitId": "mozu",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-mozu-supports",
+        "locator": "Keaton support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "unitId": "azura",
+    "modifiers": {
+      "strength": 0,
+      "magic": 0,
+      "skill": 1,
+      "speed": 3,
+      "luck": 0,
+      "defense": -3,
+      "resistance": 0
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Shared Characters > Azura",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azura",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "felicia",
+    "modifiers": {
+      "strength": -2,
+      "magic": 2,
+      "skill": 0,
+      "speed": 1,
+      "luck": 0,
+      "defense": -1,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Shared Characters > Felicia",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-felicia",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "jakob",
+    "modifiers": {
+      "strength": 2,
+      "magic": -2,
+      "skill": 2,
+      "speed": 0,
+      "luck": -1,
+      "defense": 0,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Shared Characters > Jakob",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-jakob",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "silas",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": 2,
+      "speed": 0,
+      "luck": -1,
+      "defense": 0,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Shared Characters > Silas",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-silas",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kaze",
+    "modifiers": {
+      "strength": -2,
+      "magic": 0,
+      "skill": 2,
+      "speed": 3,
+      "luck": -2,
+      "defense": -1,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Shared Characters > Kaze",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "mozu",
+    "modifiers": {
+      "strength": 0,
+      "magic": 0,
+      "skill": 1,
+      "speed": 1,
+      "luck": 1,
+      "defense": 0,
+      "resistance": -2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Shared Characters > Mozu",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-mozu",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "shura",
+    "modifiers": {
+      "strength": -1,
+      "magic": 0,
+      "skill": -1,
+      "speed": 3,
+      "luck": -1,
+      "defense": -2,
+      "resistance": 2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Shared Characters > Shura",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-shura",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "izana",
+    "modifiers": {
+      "strength": 0,
+      "magic": 1,
+      "skill": 1,
+      "speed": -2,
+      "luck": 0,
+      "defense": 0,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Shared Characters > Izana",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  }
+]

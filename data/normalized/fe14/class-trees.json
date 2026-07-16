@@ -1,0 +1,31 @@
+{
+  "gameId": "fe14",
+  "scope": "standard_non_dlc",
+  "classes": [
+    { "id": "apothecary", "promotions": [{ "id": "merchant", "label": "Merchant" }, { "id": "mechanist", "label": "Mechanist" }] },
+    { "id": "archer", "promotions": [{ "id": "sniper", "label": "Sniper" }, { "id": "kinshi_knight", "label": "Kinshi Knight" }] },
+    { "id": "cavalier", "promotions": [{ "id": "paladin", "label": "Paladin" }, { "id": "great_knight", "label": "Great Knight" }] },
+    { "id": "dark_mage", "promotions": [{ "id": "sorcerer", "label": "Sorcerer" }, { "id": "dark_knight", "label": "Dark Knight" }] },
+    { "id": "diviner", "promotions": [{ "id": "onmyoji", "label": "Onmyoji" }, { "id": "basara", "label": "Basara" }] },
+    { "id": "fighter", "promotions": [{ "id": "hero", "label": "Hero" }, { "id": "berserker", "label": "Berserker" }] },
+    { "id": "kitsune", "promotions": [{ "id": "nine_tails", "label": "Nine-Tails" }] },
+    { "id": "knight", "promotions": [{ "id": "general", "label": "General" }, { "id": "great_knight", "label": "Great Knight" }] },
+    { "id": "mercenary", "promotions": [{ "id": "hero", "label": "Hero" }, { "id": "bow_knight", "label": "Bow Knight" }] },
+    { "id": "monk", "promotions": [{ "id": "great_master", "label": "Great Master" }, { "id": "onmyoji", "label": "Onmyoji" }] },
+    { "id": "ninja", "promotions": [{ "id": "master_ninja", "label": "Master Ninja" }, { "id": "mechanist", "label": "Mechanist" }] },
+    { "id": "nohr_prince", "promotions": [{ "id": "nohr_noble", "label": "Nohr Noble" }, { "id": "hoshido_noble", "label": "Hoshido Noble" }] },
+    { "id": "oni_savage", "promotions": [{ "id": "oni_chieftain", "label": "Oni Chieftain" }, { "id": "blacksmith", "label": "Blacksmith" }] },
+    { "id": "outlaw", "promotions": [{ "id": "adventurer", "label": "Adventurer" }, { "id": "bow_knight", "label": "Bow Knight" }] },
+    { "id": "samurai", "promotions": [{ "id": "swordmaster", "label": "Swordmaster" }, { "id": "master_of_arms", "label": "Master of Arms" }] },
+    { "id": "shrine_maiden", "promotions": [{ "id": "priestess", "label": "Priestess" }, { "id": "onmyoji", "label": "Onmyoji" }] },
+    { "id": "sky_knight", "promotions": [{ "id": "falcon_knight", "label": "Falcon Knight" }, { "id": "kinshi_knight", "label": "Kinshi Knight" }] },
+    { "id": "spear_fighter", "promotions": [{ "id": "spear_master", "label": "Spear Master" }, { "id": "basara", "label": "Basara" }] },
+    { "id": "troubadour", "promotions": [{ "id": "strategist", "label": "Strategist" }, { "id": "attendant", "label": "Maid / Butler" }] },
+    { "id": "villager", "promotions": [{ "id": "merchant", "label": "Merchant" }, { "id": "master_of_arms", "label": "Master of Arms" }] },
+    { "id": "wolfskin", "promotions": [{ "id": "wolfssegner", "label": "Wolfssegner" }] },
+    { "id": "wyvern_rider", "promotions": [{ "id": "wyvern_lord", "label": "Wyvern Lord" }, { "id": "malig_knight", "label": "Malig Knight" }] }
+  ],
+  "provenance": [
+    { "sourceId": "fewiki-fe14-classes", "locator": "Class table > Changes to", "fields": ["classes.promotions"], "reviewStatus": "accepted" }
+  ]
+}

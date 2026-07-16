@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "data:validate": "tsx scripts/data/fe14/validate.ts",
+    "data:build": "tsx scripts/data/fe14/generate-runtime.ts",
     "db:init": "tsx scripts/init-db.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

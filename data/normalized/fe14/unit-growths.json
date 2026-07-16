@@ -1,0 +1,298 @@
+[
+  {
+    "unitId": "azura",
+    "kind": "personal",
+    "rates": {
+      "hp": 25,
+      "strength": 50,
+      "magic": 25,
+      "skill": 60,
+      "speed": 60,
+      "luck": 40,
+      "defense": 15,
+      "resistance": 35
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿库娅!B17:J17",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Shared Characters > Azura",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azura",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > personal growths after removing Songstress class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "felicia",
+    "kind": "personal",
+    "rates": {
+      "hp": 40,
+      "strength": 10,
+      "magic": 35,
+      "skill": 30,
+      "speed": 40,
+      "luck": 55,
+      "defense": 15,
+      "resistance": 35
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B17:J17",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Shared Characters > Felicia",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "jakob",
+    "kind": "personal",
+    "rates": {
+      "hp": 50,
+      "strength": 30,
+      "magic": 15,
+      "skill": 40,
+      "speed": 35,
+      "luck": 45,
+      "defense": 25,
+      "resistance": 25
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Shared Characters > Jakob",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-jakob",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > personal growths after removing Butler class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "silas",
+    "kind": "personal",
+    "rates": {
+      "hp": 40,
+      "strength": 45,
+      "magic": 5,
+      "skill": 50,
+      "speed": 40,
+      "luck": 40,
+      "defense": 40,
+      "resistance": 25
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B17:J17",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Shared Characters > Silas",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-silas",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > personal growths after removing Cavalier class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kaze",
+    "kind": "personal",
+    "rates": {
+      "hp": 55,
+      "strength": 40,
+      "magic": 0,
+      "skill": 45,
+      "speed": 65,
+      "luck": 20,
+      "defense": 20,
+      "resistance": 35
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Shared Characters > Kaze",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > personal growths after removing Ninja class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "mozu",
+    "kind": "personal",
+    "rates": {
+      "hp": 30,
+      "strength": 40,
+      "magic": 5,
+      "skill": 50,
+      "speed": 55,
+      "luck": 45,
+      "defense": 35,
+      "resistance": 30
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "物集!B17:K17",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Shared Characters > Mozu",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-mozu",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; Aptitude is listed separately",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "shura",
+    "kind": "personal",
+    "rates": {
+      "hp": 30,
+      "strength": 25,
+      "magic": 10,
+      "skill": 20,
+      "speed": 35,
+      "luck": 30,
+      "defense": 15,
+      "resistance": 35
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿修罗!B15:K15",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Shared Characters > Shura",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-shura",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "izana",
+    "kind": "personal",
+    "rates": {
+      "hp": 45,
+      "strength": 15,
+      "magic": 35,
+      "skill": 55,
+      "speed": 30,
+      "luck": 45,
+      "defense": 35,
+      "resistance": 35
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "伊邪那!B14:K14",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Shared Characters > Izana",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal growths after removing Onmyoji class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1043 @@
+[
+  {
+    "id": "azura.chapter_5",
+    "unitId": "azura",
+    "scenarioLabel": "Chapter 5 recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 5,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 5,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 5,
+        "timing": "start"
+      }
+    ],
+    "level": 1,
+    "classId": "songstress",
+    "temporaryDeparture": {
+      "afterChapter": 5,
+      "routes": [
+        "conquest"
+      ],
+      "returns": [
+        {
+          "route": "conquest",
+          "chapter": 9,
+          "timing": "start"
+        }
+      ]
+    },
+    "inventory": [
+      "brass_naginata"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿库娅!B2:J5",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-azura",
+        "locator": "Fire Emblem Fates > Prologue/Birthright/Conquest/Revelation > Chapter 5; Conquest departure",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura.conquest_rejoin",
+    "unitId": "azura",
+    "scenarioLabel": "Conquest return",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 9,
+        "timing": "start"
+      }
+    ],
+    "level": 1,
+    "classId": "songstress",
+    "chapter5Carryover": {
+      "sourceAvailabilityId": "azura.chapter_5",
+      "checkpoint": "end_of_chapter_5",
+      "levelCalculation": "retain_chapter_5_level",
+      "statCalculation": "retain_chapter_5_stats",
+      "note": "Conquest restores Azura with the stats she had at the end of Chapter 5; her Chapter 9 inventory is a Vulnerary and Chest Key. Weapon-proficiency carryover is intentionally not asserted here."
+    },
+    "inventory": [
+      "vulnerary",
+      "chest_key"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fewiki-azura",
+        "locator": "Fire Emblem Fates > Conquest > Starting stats and growth rates; rejoins with Chapter 5 stats",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "chapter5Carryover"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azura.revelation",
+    "unitId": "azura",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 6,
+        "timing": "start"
+      }
+    ],
+    "level": 1,
+    "classId": "songstress",
+    "inventory": [
+      "bronze_lance",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿库娅!B2:J5",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-azura",
+        "locator": "Fire Emblem Fates > Revelation > Starting stats and growth rates",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia.avatar_female",
+    "unitId": "felicia",
+    "avatarGender": "female",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 16,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 16,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 16,
+        "timing": "start"
+      }
+    ],
+    "level": 13,
+    "classId": "maid",
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!C4:J5",
+        "fields": [
+          "routeJoins",
+          "avatarGender",
+          "level",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Female Corrin",
+        "fields": [
+          "routeJoins",
+          "avatarGender",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia.avatar_male",
+    "unitId": "felicia",
+    "avatarGender": "male",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 2,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 2,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 2,
+        "timing": "start"
+      }
+    ],
+    "level": 1,
+    "classId": "maid",
+    "temporarilyLeavesAfterChapter": 3,
+    "returnsChapter": 6,
+    "inventory": [
+      "iron_dagger",
+      "heal"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!C4:J5",
+        "fields": [
+          "routeJoins",
+          "avatarGender",
+          "level",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Male Corrin",
+        "fields": [
+          "routeJoins",
+          "avatarGender",
+          "level",
+          "classId",
+          "temporarilyLeavesAfterChapter",
+          "returnsChapter",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob.avatar_female",
+    "unitId": "jakob",
+    "avatarGender": "female",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 2,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 2,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 2,
+        "timing": "start"
+      }
+    ],
+    "level": 1,
+    "classId": "butler",
+    "temporarilyLeavesAfterChapter": 3,
+    "returnsChapter": 6,
+    "inventory": [
+      "iron_dagger",
+      "heal"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Female Corrin",
+        "fields": [
+          "routeJoins",
+          "avatarGender",
+          "level",
+          "classId",
+          "temporarilyLeavesAfterChapter",
+          "returnsChapter",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob.avatar_male",
+    "unitId": "jakob",
+    "avatarGender": "male",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 16,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 16,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 16,
+        "timing": "start"
+      }
+    ],
+    "level": 13,
+    "classId": "butler",
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Male Corrin",
+        "fields": [
+          "routeJoins",
+          "avatarGender",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas.birthright",
+    "unitId": "silas",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 7,
+        "timing": "end"
+      }
+    ],
+    "level": 6,
+    "classId": "cavalier",
+    "inventory": [
+      "steel_sword",
+      "javelin"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!C2:J7",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas",
+        "locator": "Fire Emblem Fates > Birthright > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas.conquest",
+    "unitId": "silas",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 7,
+        "timing": "during"
+      }
+    ],
+    "level": 6,
+    "classId": "cavalier",
+    "inventory": [
+      "iron_sword",
+      "bronze_lance"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!C2:J7",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas",
+        "locator": "Fire Emblem Fates > Conquest > Starting stats and growth rates",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas.revelation",
+    "unitId": "silas",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 14,
+        "timing": "end"
+      }
+    ],
+    "level": 18,
+    "classId": "cavalier",
+    "inventory": [
+      "javelin"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!C2:J7",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas",
+        "locator": "Fire Emblem Fates > Revelation > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze.birthright",
+    "unitId": "kaze",
+    "scenarioLabel": "Birthright continuation",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 6,
+        "timing": "start"
+      }
+    ],
+    "level": 3,
+    "classId": "ninja",
+    "retentionCondition": {
+      "route": "birthright",
+      "afterChapter": 15,
+      "requirement": {
+        "kind": "support_rank",
+        "partnerUnitId": "corrin",
+        "minimumRank": "A"
+      },
+      "onFailure": "permanent_departure",
+      "note": "Kaze remains in the army after Chapter 15 only if Corrin has reached A support or higher with him."
+    },
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Birthright > Role",
+        "fields": [
+          "routeJoins",
+          "retentionCondition",
+          "level"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze.common",
+    "unitId": "kaze",
+    "scenarioLabel": "Pre-route",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 4,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 4,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 4,
+        "timing": "start"
+      }
+    ],
+    "level": 3,
+    "classId": "ninja",
+    "temporaryDeparture": {
+      "afterChapter": 5,
+      "routes": [
+        "conquest",
+        "revelation"
+      ],
+      "returns": [
+        {
+          "route": "conquest",
+          "chapter": 11,
+          "timing": "end"
+        },
+        {
+          "route": "revelation",
+          "chapter": 8,
+          "timing": "end"
+        }
+      ]
+    },
+    "inventory": [
+      "iron_shuriken",
+      "vulnerary"
+    ],
+    "inventoryByDifficulty": {
+      "normal": [
+        "iron_shuriken",
+        "vulnerary",
+        "vulnerary"
+      ],
+      "hard": [
+        "iron_shuriken",
+        "vulnerary"
+      ],
+      "lunatic": [
+        "iron_shuriken",
+        "vulnerary"
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Prologue > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "inventoryByDifficulty",
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "user-fe14-kaze-inventory",
+        "locator": "Chapter 4 recruitment inventory by difficulty",
+        "fields": [
+          "inventoryByDifficulty"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze.conquest",
+    "unitId": "kaze",
+    "scenarioLabel": "Conquest rejoin",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 11,
+        "timing": "end"
+      }
+    ],
+    "level": 9,
+    "classId": "ninja",
+    "inventory": [
+      "steel_shuriken"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Conquest > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze.revelation",
+    "unitId": "kaze",
+    "scenarioLabel": "Revelation rejoin",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 8,
+        "timing": "end"
+      }
+    ],
+    "level": 3,
+    "classId": "ninja",
+    "inventory": [
+      "iron_shuriken"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Revelation > Starting stats and growth rates",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mozu.paralogue_1",
+    "unitId": "mozu",
+    "scenarioLabel": "Paralogue 1 recruitment (unlocks after Chapter 7)",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 7,
+        "timing": "conditional"
+      },
+      {
+        "route": "conquest",
+        "chapter": 7,
+        "timing": "conditional"
+      },
+      {
+        "route": "revelation",
+        "chapter": 7,
+        "timing": "conditional"
+      }
+    ],
+    "level": 1,
+    "classId": "villager",
+    "inventory": [
+      "brass_naginata",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "物集!C2:J5",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-mozu",
+        "locator": "Fire Emblem Fates > Role; Starting stats and growth rates",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "shura.birthright",
+    "unitId": "shura",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 22,
+        "timing": "end"
+      }
+    ],
+    "level": 10,
+    "classId": "adventurer",
+    "inventory": [
+      "spys_yumi",
+      "beaststone_plus"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿修罗!C3:J9; C13:K13",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-shura",
+        "locator": "Fire Emblem Fates > Playable > Birthright",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "shura.conquest",
+    "unitId": "shura",
+    "scenarioLabel": "Conquest recruitment (spare Shura)",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 16,
+        "timing": "end"
+      }
+    ],
+    "level": 2,
+    "classId": "adventurer",
+    "inventory": [
+      "killer_bow",
+      "mend"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿修罗!C4:J9; C14:K14",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-shura",
+        "locator": "Fire Emblem Fates > Playable > Conquest; recruit only by sparing him",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "shura.revelation",
+    "unitId": "shura",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 15,
+        "timing": "during"
+      }
+    ],
+    "level": 10,
+    "classId": "adventurer",
+    "inventory": [
+      "steel_bow",
+      "heal"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿修罗!C4:J9; C13:K13",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-shura",
+        "locator": "Fire Emblem Fates > Playable > Revelation",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "izana.birthright",
+    "unitId": "izana",
+    "scenarioLabel": "Birthright My Castle recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 18,
+        "timing": "conditional"
+      }
+    ],
+    "level": 5,
+    "classId": "onmyoji",
+    "myCastleRecruitment": {
+      "facilityId": "hot_spring",
+      "facilityLevel": 3,
+      "refreshMethods": [
+        "real_time",
+        "map_completion"
+      ],
+      "note": "After Chapter 18 is complete, refresh My Castle by waiting for the real-time update or by completing any map."
+    },
+    "autoLevel": {
+      "basis": "displayed_story_chapter",
+      "minimumLevel": 5,
+      "milestones": [
+        {
+          "displayedChapterStart": 19,
+          "level": 5
+        }
+      ],
+      "statCalculation": "average_growths_round_half_up",
+      "skillsLearnedAutomatically": true,
+      "modelBasis": "castle_recruit_autolevel",
+      "comparisonModel": "offspring_seal_esque_level_scaling",
+      "comparisonStatus": "unverified",
+      "weaponProficiencyScales": true,
+      "weaponProficiencyMilestonesStatus": "unresolved",
+      "evidenceStatus": "partial",
+      "note": "Birthright's earliest Level 5 stat block is independently corroborated. At each scaled level, add (Izana's individual growth rates + Onmyoji class growth rates) multiplied by levels gained, then round each resulting stat to the nearest integer with exact 0.5 results rounded up. Later Birthright chapter milestones still need direct testing; the child unit Offspring Seal level table does not apply directly."
+    },
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "伊邪那!C4:I7",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "user-fe14-izana-recruitment",
+        "locator": "Birthright Chapter 18 completion, Hot Spring level 3, then My Castle time passes",
+        "fields": [
+          "routeJoins",
+          "myCastleRecruitment"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "pegasusknight-fe14-parent-units",
+        "locator": "共通 > イザナ",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Hoshidan Characters > Other Data > Izana footnote",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "paragon-fe14-data-schemas",
+        "locator": "CastleJoin and Chapter schemas; offspring_seal_level fields",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "izana.conquest",
+    "unitId": "izana",
+    "scenarioLabel": "Conquest My Castle recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 22,
+        "timing": "conditional"
+      }
+    ],
+    "level": 7,
+    "classId": "onmyoji",
+    "myCastleRecruitment": {
+      "facilityId": "hot_spring",
+      "facilityLevel": 3,
+      "refreshMethods": [
+        "real_time",
+        "map_completion"
+      ],
+      "note": "After Chapter 22 is complete, refresh My Castle by waiting for the real-time update or by completing any map."
+    },
+    "autoLevel": {
+      "basis": "displayed_story_chapter",
+      "minimumLevel": 7,
+      "maximumLevel": 15,
+      "milestones": [
+        {
+          "displayedChapterStart": 23,
+          "level": 7
+        },
+        {
+          "displayedChapterStart": 24,
+          "level": 9
+        },
+        {
+          "displayedChapterStart": 25,
+          "level": 11
+        },
+        {
+          "displayedChapterStart": 26,
+          "level": 13
+        },
+        {
+          "displayedChapterStart": 27,
+          "level": 15
+        }
+      ],
+      "statCalculation": "average_growths_round_half_up",
+      "skillsLearnedAutomatically": true,
+      "modelBasis": "castle_recruit_autolevel",
+      "comparisonModel": "offspring_seal_esque_level_scaling",
+      "comparisonStatus": "unverified",
+      "weaponProficiencyScales": true,
+      "weaponProficiencyMilestonesStatus": "unresolved",
+      "evidenceStatus": "tested",
+      "note": "Controlled Conquest testing found two deterministic levels per completed story chapter after Chapter 22, capped at level 15. Stats use (Izana's individual growth rates + Onmyoji class growth rates) from his Level 5 bases, with exact 0.5 results rounded up. Difficulty does not affect these gains, and the schedule differs from the child unit Offspring Seal level table."
+    },
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "伊邪那!C4:I7",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates",
+        "fields": [
+          "routeJoins",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "disputed"
+      },
+      {
+        "sourceId": "user-fe14-izana-recruitment",
+        "locator": "Conquest Chapter 22 completion, Hot Spring level 3, then My Castle time passes",
+        "fields": [
+          "routeJoins",
+          "myCastleRecruitment"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "reddit-fe14-castle-recruit-scaling",
+        "locator": "EDIT 2: Conquest displayed chapters 23-27",
+        "fields": [
+          "level",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Nohrian Characters > Other Data > Izana footnote",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "paragon-fe14-data-schemas",
+        "locator": "CastleJoin and Chapter schemas; offspring_seal_level fields",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  }
+]

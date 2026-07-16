@@ -1,0 +1,920 @@
+[
+  {
+    "unitId": "azura",
+    "availabilityIds": [
+      "azura.chapter_5",
+      "azura.conquest_rejoin",
+      "azura.revelation"
+    ],
+    "level": 1,
+    "classId": "songstress",
+    "stats": {
+      "hp": 16,
+      "strength": 5,
+      "magic": 2,
+      "skill": 8,
+      "speed": 8,
+      "luck": 6,
+      "defense": 4,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "lance": "E"
+    },
+    "startingSkillIds": [
+      "healing_descant",
+      "luck_plus_4"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿库娅!B15:K16",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-azura",
+        "locator": "Fire Emblem Fates > Birthright > Starting stats and growth rates",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "felicia",
+    "availabilityId": "felicia.avatar_male",
+    "level": 1,
+    "classId": "maid",
+    "stats": {
+      "hp": 19,
+      "strength": 5,
+      "magic": 9,
+      "skill": 10,
+      "speed": 10,
+      "luck": 12,
+      "defense": 5,
+      "resistance": 9
+    },
+    "weaponRanks": {
+      "dagger": "D",
+      "staff": "D"
+    },
+    "startingSkillIds": [
+      "devoted_partner",
+      "resistance_plus_2",
+      "demoiselle"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B14:K15",
+        "fields": [
+          "stats"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Shared Characters > Felicia",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-felicia",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Male Corrin",
+        "fields": [
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "felicia",
+    "availabilityId": "felicia.avatar_female",
+    "level": 13,
+    "classId": "maid",
+    "stats": {
+      "hp": 24,
+      "strength": 7,
+      "magic": 14,
+      "skill": 15,
+      "speed": 17,
+      "luck": 20,
+      "defense": 7,
+      "resistance": 14
+    },
+    "weaponRanks": {
+      "dagger": "C",
+      "staff": "C"
+    },
+    "weaponRankProgress": {
+      "dagger": {
+        "towardRank": "B",
+        "barFraction": 0.333,
+        "precision": "approximate"
+      },
+      "staff": {
+        "towardRank": "B",
+        "barFraction": 0.333,
+        "precision": "approximate"
+      }
+    },
+    "startingSkillIds": [
+      "devoted_partner",
+      "resistance_plus_2",
+      "demoiselle",
+      "live_to_serve"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B14:K16",
+        "fields": [
+          "stats"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Shared Characters > Felicia (Chapter 16)",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-felicia",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Female Corrin",
+        "fields": [
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "user-3ds-fe14-felicia",
+        "locator": "Chapter 16 recruitment status screen",
+        "fields": [
+          "weaponRanks",
+          "weaponRankProgress"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "jakob",
+    "availabilityId": "jakob.avatar_female",
+    "level": 1,
+    "classId": "butler",
+    "stats": {
+      "hp": 21,
+      "strength": 8,
+      "magic": 6,
+      "skill": 12,
+      "speed": 9,
+      "luck": 10,
+      "defense": 7,
+      "resistance": 6
+    },
+    "weaponRanks": {
+      "dagger": "D",
+      "staff": "D"
+    },
+    "startingSkillIds": [
+      "evasive_partner",
+      "resistance_plus_2",
+      "gentilhomme"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Shared Characters > Jakob",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-jakob",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Female Corrin",
+        "fields": [
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "jakob",
+    "availabilityId": "jakob.avatar_male",
+    "level": 13,
+    "classId": "butler",
+    "stats": {
+      "hp": 27,
+      "strength": 13,
+      "magic": 9,
+      "skill": 19,
+      "speed": 15,
+      "luck": 17,
+      "defense": 11,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "dagger": "C",
+      "staff": "C"
+    },
+    "weaponRankProgress": {
+      "dagger": {
+        "towardRank": "B",
+        "barFraction": 0.333,
+        "precision": "approximate"
+      },
+      "staff": {
+        "towardRank": "B",
+        "barFraction": 0.333,
+        "precision": "approximate"
+      }
+    },
+    "startingSkillIds": [
+      "evasive_partner",
+      "resistance_plus_2",
+      "gentilhomme",
+      "live_to_serve"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Shared Characters > Jakob (Chapter 16)",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-jakob",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Male Corrin",
+        "fields": [
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "user-3ds-fe14-jakob",
+        "locator": "Chapter 16 recruitment status screen",
+        "fields": [
+          "weaponRanks",
+          "weaponRankProgress"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "silas",
+    "availabilityIds": [
+      "silas.birthright",
+      "silas.conquest"
+    ],
+    "level": 6,
+    "classId": "cavalier",
+    "stats": {
+      "hp": 22,
+      "strength": 11,
+      "magic": 0,
+      "skill": 9,
+      "speed": 8,
+      "luck": 7,
+      "defense": 10,
+      "resistance": 5
+    },
+    "weaponRanks": {
+      "sword": "C",
+      "lance": "D"
+    },
+    "weaponRanksByAvailability": {
+      "silas.birthright": {
+        "sword": "C",
+        "lance": "D"
+      },
+      "silas.conquest": {
+        "sword": "D",
+        "lance": "E"
+      }
+    },
+    "startingSkillIds": [
+      "vow_of_friendship",
+      "elbow_room"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B15:K16",
+        "fields": [
+          "stats"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas",
+        "locator": "Fire Emblem Fates > Birthright > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "silas",
+    "availabilityId": "silas.revelation",
+    "level": 18,
+    "classId": "cavalier",
+    "stats": {
+      "hp": 39,
+      "strength": 19,
+      "magic": 3,
+      "skill": 16,
+      "speed": 12,
+      "luck": 11,
+      "defense": 19,
+      "resistance": 14
+    },
+    "weaponRanks": {
+      "sword": "B",
+      "lance": "B"
+    },
+    "startingSkillIds": [
+      "vow_of_friendship",
+      "elbow_room",
+      "shelter"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B16:K16",
+        "fields": [
+          "stats"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas",
+        "locator": "Fire Emblem Fates > Revelation > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Shared Characters > Silas",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kaze",
+    "availabilityId": "kaze.common",
+    "level": 3,
+    "classId": "ninja",
+    "stats": {
+      "hp": 19,
+      "strength": 7,
+      "magic": 0,
+      "skill": 9,
+      "speed": 12,
+      "luck": 4,
+      "defense": 5,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "dagger": "D"
+    },
+    "startingSkillIds": [
+      "miraculous_save",
+      "locktouch"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Shared Characters > Kaze",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Prologue > Playable",
+        "fields": [
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kaze",
+    "availabilityId": "kaze.birthright",
+    "level": 3,
+    "classId": "ninja",
+    "stats": {
+      "hp": 19,
+      "strength": 7,
+      "magic": 0,
+      "skill": 9,
+      "speed": 12,
+      "luck": 4,
+      "defense": 5,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "dagger": "D"
+    },
+    "startingSkillIds": [
+      "miraculous_save",
+      "locktouch"
+    ],
+    "chapter5Carryover": {
+      "sourceAvailabilityId": "kaze.common",
+      "checkpoint": "end_of_chapter_5",
+      "levelCalculation": "retain_chapter_5_level",
+      "statCalculation": "retain_chapter_5_stats",
+      "weaponProficiencyCalculation": "retain_chapter_5_proficiency",
+      "note": "Birthright continues with Kaze's exact level, rolled stat gains, and weapon proficiency from the end of Chapter 5; the displayed values are the no-gain template."
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Birthright > Role",
+        "fields": [
+          "chapter5Carryover"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "user-fe14-kaze-proficiency",
+        "locator": "Chapter 4 and 5 weapon-proficiency carryover",
+        "fields": [
+          "chapter5Carryover.weaponProficiencyCalculation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Shared Characters > Kaze",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "kaze",
+    "availabilityId": "kaze.conquest",
+    "level": 9,
+    "classId": "ninja",
+    "stats": {
+      "hp": 22,
+      "strength": 9,
+      "magic": 0,
+      "skill": 12,
+      "speed": 16,
+      "luck": 6,
+      "defense": 7,
+      "resistance": 13
+    },
+    "weaponRanks": {
+      "dagger": "C"
+    },
+    "startingSkillIds": [
+      "miraculous_save",
+      "locktouch"
+    ],
+    "chapter5Carryover": {
+      "sourceAvailabilityId": "kaze.common",
+      "checkpoint": "end_of_chapter_5",
+      "levelCalculation": "template_plus_chapter_5_levels_gained",
+      "statCalculation": "template_plus_chapter_5_level_up_gains",
+      "weaponProficiencyCalculation": "template_plus_chapter_5_proficiency_gained",
+      "note": "Conquest starts from the level 9 template, then adds every level gained in Chapters 4 and 5, reapplies the exact stat gains rolled on those level-ups, and adds the weapon proficiency gained there to its C-rank template."
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Conquest > Playable; level-up carryover note",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds",
+          "chapter5Carryover.levelCalculation",
+          "chapter5Carryover.statCalculation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "user-fe14-kaze-proficiency",
+        "locator": "Chapter 4 and 5 weapon-proficiency carryover",
+        "fields": [
+          "chapter5Carryover.weaponProficiencyCalculation"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "kaze",
+    "availabilityId": "kaze.revelation",
+    "level": 3,
+    "classId": "ninja",
+    "stats": {
+      "hp": 19,
+      "strength": 7,
+      "magic": 0,
+      "skill": 9,
+      "speed": 12,
+      "luck": 4,
+      "defense": 5,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "dagger": "D"
+    },
+    "startingSkillIds": [
+      "miraculous_save",
+      "locktouch"
+    ],
+    "chapter5Carryover": {
+      "sourceAvailabilityId": "kaze.common",
+      "checkpoint": "end_of_chapter_5",
+      "levelCalculation": "retain_chapter_5_level",
+      "statCalculation": "retain_chapter_5_stats",
+      "weaponProficiencyCalculation": "retain_chapter_5_proficiency",
+      "note": "Revelation restores Kaze's exact Chapter 5 level, rolled stat gains, and weapon proficiency; the displayed values are the no-gain template."
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Shared Characters > Kaze",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Revelation > Role; rejoins with the same stats held at the conclusion of Chapter 5",
+        "fields": [
+          "chapter5Carryover"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "user-fe14-kaze-proficiency",
+        "locator": "Chapter 4 and 5 weapon-proficiency carryover",
+        "fields": [
+          "chapter5Carryover.weaponProficiencyCalculation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Revelation > Starting stats and growth rates",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "mozu",
+    "availabilityId": "mozu.paralogue_1",
+    "level": 1,
+    "classId": "villager",
+    "stats": {
+      "hp": 16,
+      "strength": 6,
+      "magic": 0,
+      "skill": 5,
+      "speed": 7,
+      "luck": 3,
+      "defense": 4,
+      "resistance": 1
+    },
+    "weaponRanks": {
+      "lance": "E"
+    },
+    "startingSkillIds": [
+      "forager",
+      "aptitude"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "物集!C5:J5; C16:K16",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-mozu",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "shura",
+    "availabilityIds": [
+      "shura.birthright",
+      "shura.revelation"
+    ],
+    "level": 10,
+    "classId": "adventurer",
+    "stats": {
+      "hp": 34,
+      "strength": 20,
+      "magic": 11,
+      "skill": 23,
+      "speed": 27,
+      "luck": 15,
+      "defense": 14,
+      "resistance": 24
+    },
+    "weaponRanks": {
+      "bow": "A",
+      "staff": "C"
+    },
+    "weaponRanksByAvailability": {
+      "shura.birthright": {
+        "bow": "A",
+        "staff": "C"
+      },
+      "shura.revelation": {
+        "bow": "B",
+        "staff": "C"
+      }
+    },
+    "startingSkillIds": [
+      "highwayman",
+      "locktouch",
+      "movement_plus_1",
+      "lucky_seven"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿修罗!C3:J9; C13:K13",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-shura",
+        "locator": "Fire Emblem Fates > Playable > Birthright and Revelation",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "shura",
+    "availabilityId": "shura.conquest",
+    "level": 2,
+    "classId": "adventurer",
+    "stats": {
+      "hp": 31,
+      "strength": 18,
+      "magic": 10,
+      "skill": 21,
+      "speed": 24,
+      "luck": 13,
+      "defense": 13,
+      "resistance": 21
+    },
+    "weaponRanks": {
+      "bow": "C",
+      "staff": "D"
+    },
+    "startingSkillIds": [
+      "highwayman",
+      "locktouch",
+      "movement_plus_1"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "阿修罗!C4:J9; C14:K14",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-shura",
+        "locator": "Fire Emblem Fates > Playable > Conquest",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "izana",
+    "availabilityId": "izana.birthright",
+    "level": 5,
+    "classId": "onmyoji",
+    "stats": {
+      "hp": 31,
+      "strength": 8,
+      "magic": 23,
+      "skill": 25,
+      "speed": 18,
+      "luck": 17,
+      "defense": 14,
+      "resistance": 24
+    },
+    "weaponRanks": {
+      "tome": "B",
+      "staff": "C"
+    },
+    "startingSkillIds": [
+      "peacebringer",
+      "miracle",
+      "rally_luck",
+      "rally_magic"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "伊邪那!C4:H5; C13:K13",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Hoshidan Characters > Shared Characters > Izana",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "izana",
+    "availabilityId": "izana.conquest",
+    "level": 7,
+    "classId": "onmyoji",
+    "stats": {
+      "hp": 32,
+      "strength": 8,
+      "magic": 24,
+      "skill": 26,
+      "speed": 19,
+      "luck": 18,
+      "defense": 15,
+      "resistance": 25
+    },
+    "weaponRanks": {
+      "tome": "B",
+      "staff": "C"
+    },
+    "startingSkillIds": [
+      "peacebringer",
+      "miracle",
+      "rally_luck",
+      "rally_magic"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "伊邪那!C4:H5; C13:K13",
+        "fields": [
+          "classId",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "reddit-fe14-castle-recruit-scaling",
+        "locator": "EDIT 2: level 7 at displayed Chapter 23; average-growth deterministic gains",
+        "fields": [
+          "level",
+          "stats"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  }
+]

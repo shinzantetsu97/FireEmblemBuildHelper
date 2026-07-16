@@ -1,0 +1,324 @@
+{
+  "gameId": "fe14",
+  "updatedAt": "2026-07-16",
+  "sources": [
+    {
+      "id": "fe14-workbook-cn",
+      "kind": "workbook",
+      "title": "火纹if.xlsx",
+      "location": "火纹if.xlsx",
+      "language": "zh-Hans",
+      "reviewStatus": "candidate",
+      "notes": "User-provided research workbook. Values require independent corroboration before acceptance."
+    },
+    {
+      "id": "serenes-fe14-base-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Revelation - Character Base Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/revelation/character-base-stats/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Shared-character table includes both Felicia recruitment states."
+    },
+    {
+      "id": "serenes-fe14-growth-rates",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan Characters - Growth Rates",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/growth-rates/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-maximum-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan Characters - Maximum Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/maximum-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-class-sets",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan Characters - Class Sets",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/class-sets/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-pair-up-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan Characters - Pair Up Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/pair-up-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-support-bonuses",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan Characters - Support Bonus",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/supports/support-bonus/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Defines cumulative Attack Stance support-unit bonuses, including the no-support baseline."
+    },
+    {
+      "id": "serenes-fe14-personal-skills",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan Characters - Personal Skills",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-supports",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan Characters - Supports",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/supports/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-felicia",
+      "kind": "web",
+      "title": "Felicia - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Felicia",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-felicia-supports",
+      "kind": "web",
+      "title": "Felicia/Supports - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Felicia/Supports",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-jakob",
+      "kind": "web",
+      "title": "Jakob - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Jakob",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-jakob-supports",
+      "kind": "web",
+      "title": "Jakob/Supports - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Jakob/Supports",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-kaze",
+      "kind": "web",
+      "title": "Kaze - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Kaze",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-kaze-supports",
+      "kind": "web",
+      "title": "Kaze/Supports - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Kaze/Supports",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-silas",
+      "kind": "web",
+      "title": "Silas - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Silas",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-silas-supports",
+      "kind": "web",
+      "title": "Silas/Supports - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Silas/Supports",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-azura",
+      "kind": "web",
+      "title": "Azura - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Azura",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-azura-supports",
+      "kind": "web",
+      "title": "Azura/Supports - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Azura/Supports",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-mozu",
+      "kind": "web",
+      "title": "Mozu - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Mozu",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-mozu-supports",
+      "kind": "web",
+      "title": "Mozu/Supports - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Mozu/Supports",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-shura",
+      "kind": "web",
+      "title": "Shura - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Shura",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-shura-supports",
+      "kind": "web",
+      "title": "Shura/Supports - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Shura/Supports",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-izana",
+      "kind": "web",
+      "title": "Izana - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Izana",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "user-fe14-izana-recruitment",
+      "kind": "game_data",
+      "title": "Izana My Castle recruitment timing - user verification",
+      "location": "User-provided Fire Emblem Fates gameplay verification",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "After the relevant route chapter and a level 3 Hot Spring, Izana joins when My Castle refreshes. Waiting for the real-time update works; completing a map is another way to advance the refresh."
+    },
+    {
+      "id": "reddit-fe14-castle-recruit-scaling",
+      "kind": "web",
+      "title": "Flora/Izana level scaling??? - controlled Conquest testing",
+      "location": "https://www.reddit.com/r/fireemblem/comments/ra1sjh/floraizana_level_scaling/",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Player testing records the full Conquest level schedule, deterministic average-growth stat gains, automatic class skills, and a level 15 cap."
+    },
+    {
+      "id": "pegasusknight-fe14-parent-units",
+      "kind": "web",
+      "title": "FE14 parent-generation unit evaluation - Pegasus Knight",
+      "location": "https://www.pegasusknight.com/wiki/fe14/%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88/%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E8%A9%95%E4%BE%A1%EF%BC%88%E8%A6%AA%E4%B8%96%E4%BB%A3%EF%BC%89",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Japanese community reference identifying Izana, Flora, and Fuga as My Castle recruits whose joining levels rise with later recruitment. Its listed Conquest Izana minimum conflicts with controlled testing."
+    },
+    {
+      "id": "paragon-fe14-data-schemas",
+      "kind": "web",
+      "title": "Paragon FE14 extracted-data schemas",
+      "location": "https://github.com/thane98/paragon/tree/poetry/Data/FE14/Types",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "The CastleJoin and Chapter schemas expose route-specific castle recruitment chapters and chapter-level Offspring Seal scaling fields. Their coexistence supports describing the castle system as Offspring Seal-esque level scaling, but does not prove that castle recruits use the child unit Offspring Seal routine."
+    },
+    {
+      "id": "serenes-fe14-hoshidan-other-data",
+      "kind": "web",
+      "title": "Hoshidan Characters - Other Data - Serenes Forest",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/other-data/",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Izana's footnote states that later recruitment raises his weapon ranks and level, with level determining how many class skills he has."
+    },
+    {
+      "id": "serenes-fe14-nohrian-other-data",
+      "kind": "web",
+      "title": "Nohrian Characters - Other Data - Serenes Forest",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/other-data/",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Izana's footnote states that later recruitment raises his weapon ranks and level, with level determining how many class skills he has."
+    },
+    {
+      "id": "fe14-partner-seal-chart",
+      "kind": "web",
+      "title": "Fire Emblem Fates - Partner Seal Chart",
+      "location": "https://drive.google.com/file/d/0B1EoYvI1FUNqZ3dpcjZwdU9CX0E/view?resourcekey=0-zq0JMUw2kAIcBfIeCmCR-A",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fe14-friendship-seal-chart",
+      "kind": "web",
+      "title": "Fire Emblem Fates - Friendship Seal Chart version 1.2",
+      "location": "https://drive.google.com/file/d/0B1EoYvI1FUNqaHhSd1pzUFJNSmc/view?resourcekey=0-kX2rTu6-3jF-6EDm8T7YXQ",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-fe14-name-chart",
+      "kind": "web",
+      "title": "Name chart/Fire Emblem Fates - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Name_chart/Fire_Emblem_Fates",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-fe14-classes",
+      "kind": "web",
+      "title": "List of classes in Fire Emblem Fates - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/List_of_classes_in_Fire_Emblem_Fates",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Regular base-class promotion trees only; DLC classes are intentionally outside this catalogue."
+    },
+    {
+      "id": "user-3ds-fe14-felicia",
+      "kind": "game_data",
+      "title": "Felicia Chapter 16 join state - user Nintendo 3DS verification",
+      "location": "User's physical Fire Emblem Fates save on Nintendo 3DS",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Direct in-game observation: Felicia joins at Chapter 16 with C-rank daggers and staves and both proficiency bars approximately one-third filled toward B."
+    },
+    {
+      "id": "user-3ds-fe14-jakob",
+      "kind": "game_data",
+      "title": "Jakob Chapter 16 join state - user Nintendo 3DS verification",
+      "location": "User's physical Fire Emblem Fates save on Nintendo 3DS",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Direct in-game observation: Jakob joins at Chapter 16 with C-rank daggers and staves and both proficiency bars approximately one-third filled toward B."
+    },
+    {
+      "id": "user-fe14-kaze-inventory",
+      "kind": "game_data",
+      "title": "Kaze Chapter 4 inventory - user verification",
+      "location": "User's direct Fire Emblem Fates verification",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Kaze has a second Vulnerary when joining in Chapter 4 on Normal difficulty; Hard and Lunatic use one Vulnerary."
+    },
+    {
+      "id": "user-fe14-kaze-proficiency",
+      "kind": "game_data",
+      "title": "Kaze Chapter 4-5 weapon proficiency carryover - user verification",
+      "location": "User's direct Fire Emblem Fates verification",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Weapon proficiency earned by Kaze in Chapters 4 and 5 carries into his route-specific state alongside his level and stat gains."
+    }
+  ]
+}

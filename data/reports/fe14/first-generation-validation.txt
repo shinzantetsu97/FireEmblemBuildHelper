@@ -1,0 +1,16 @@
+FE14 first-generation data validation
+======================================
+Result: PASS
+Roster units: 48
+Normalized units: 8
+Errors: 0
+Warnings: 7
+
+Review warnings:
+- [variable_corrin_class_grant] felicia: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] jakob: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] kaze: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] silas: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] azura: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [workbook_source_pending] jakob: Jakob's 乔卡 workbook sheet still requires direct inspection; current records use independent web, chart, and in-game sources.
+- [workbook_source_pending] kaze: Kaze's 凉风 workbook sheet and its four level/stat notes still require direct inspection; the current carryover rules are independently corroborated by Fire Emblem Wiki prose and Serenes Forest data.
