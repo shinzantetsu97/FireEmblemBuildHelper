@@ -458,65 +458,6 @@
     ]
   },
   {
-    "id": "izana__corrin_female",
-    "unitId": "izana",
-    "partnerUnitId": "corrin",
-    "kind": "romantic",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "S"
-    ],
-    "routes": [
-      "birthright",
-      "conquest"
-    ],
-    "partnerGender": "female",
-    "direction": "mutual",
-    "provenance": [
-      {
-        "sourceId": "fewiki-izana",
-        "locator": "Supports; Corrin (female) reaches S",
-        "fields": [
-          "ranks",
-          "partnerGender",
-          "direction"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
-    "id": "izana__corrin_male",
-    "unitId": "izana",
-    "partnerUnitId": "corrin",
-    "kind": "friendship",
-    "ranks": [
-      "C",
-      "B",
-      "A"
-    ],
-    "routes": [
-      "birthright",
-      "conquest"
-    ],
-    "partnerGender": "male",
-    "direction": "unit_to_partner",
-    "provenance": [
-      {
-        "sourceId": "fewiki-izana",
-        "locator": "Supports; Corrin (male) reaches A only",
-        "fields": [
-          "ranks",
-          "partnerGender",
-          "direction"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
     "id": "jakob__azura",
     "unitId": "jakob",
     "partnerUnitId": "azura",
@@ -604,6 +545,629 @@
         "locator": "Azura support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__jakob",
+    "unitId": "felicia",
+    "partnerUnitId": "jakob",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Jakob support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__silas",
+    "unitId": "felicia",
+    "partnerUnitId": "silas",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Silas support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "felicia__kaze",
+    "unitId": "felicia",
+    "partnerUnitId": "kaze",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "菲利希亚!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-felicia-supports",
+        "locator": "Kaze support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "jakob__silas",
+    "unitId": "jakob",
+    "partnerUnitId": "silas",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-supports",
+        "locator": "A+ supports > Jakob > Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Silas support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Silas and Jakob A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "jakob__mozu",
+    "unitId": "jakob",
+    "partnerUnitId": "mozu",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-jakob-supports",
+        "locator": "Mozu support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__silas",
+    "unitId": "kaze",
+    "partnerUnitId": "silas",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Silas support information",
+        "fields": [
+          "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "silas__mozu",
+    "unitId": "silas",
+    "partnerUnitId": "mozu",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "塞拉斯!B13:C13",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-silas-supports",
+        "locator": "Mozu support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaze__mozu",
+    "unitId": "kaze",
+    "partnerUnitId": "mozu",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-kaze-supports",
+        "locator": "Mozu support information",
+        "fields": [
+          "ranks"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__corrin_female",
+    "unitId": "elise",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Avatar and Elise; marriage only with the opposite gender",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__corrin_male",
+    "unitId": "elise",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "艾丽泽!B14:F14",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Supports > Corrin (male)",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "effie__corrin_female",
+    "unitId": "effie",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Avatar and Effie; marriage only with the opposite gender",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Corrin (F) support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "effie__corrin_male",
+    "unitId": "effie",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Avatar and Effie; marriage only with the opposite gender",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Corrin (M) support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur__corrin_female",
+    "unitId": "arthur",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Supports > Corrin (female)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "arthur__corrin_male",
+    "unitId": "arthur",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Avatar and Arthur; marriage only with the opposite gender",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "flora__corrin_female",
+    "unitId": "flora",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Supports > Corrin (female)",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "flora__corrin_male",
+    "unitId": "flora",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "芙洛拉!B10:F10",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Supports > Corrin (male)",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "izana__corrin_female",
+    "unitId": "izana",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Supports; Corrin (female) reaches S",
+        "fields": [
+          "ranks",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "izana__corrin_male",
+    "unitId": "izana",
+    "partnerUnitId": "corrin",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest"
+    ],
+    "partnerGender": "male",
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fewiki-izana",
+        "locator": "Supports; Corrin (male) reaches A only",
+        "fields": [
+          "ranks",
+          "partnerGender",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1166,117 +1730,6 @@
         "fields": [
           "ranks",
           "routes"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
-    "id": "felicia__jakob",
-    "unitId": "felicia",
-    "partnerUnitId": "jakob",
-    "kind": "romantic",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "S"
-    ],
-    "routes": [
-      "birthright",
-      "conquest",
-      "revelation"
-    ],
-    "direction": "mutual",
-    "provenance": [
-      {
-        "sourceId": "fe14-workbook-cn",
-        "locator": "菲利希亚!B13:C13",
-        "fields": [
-          "partnerUnitId",
-          "ranks"
-        ],
-        "reviewStatus": "corroborated"
-      },
-      {
-        "sourceId": "fewiki-felicia-supports",
-        "locator": "Jakob support information",
-        "fields": [
-          "ranks"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
-    "id": "felicia__silas",
-    "unitId": "felicia",
-    "partnerUnitId": "silas",
-    "kind": "romantic",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "S"
-    ],
-    "routes": [
-      "birthright",
-      "conquest",
-      "revelation"
-    ],
-    "direction": "mutual",
-    "provenance": [
-      {
-        "sourceId": "fe14-workbook-cn",
-        "locator": "菲利希亚!B13:C13",
-        "fields": [
-          "partnerUnitId",
-          "ranks"
-        ],
-        "reviewStatus": "corroborated"
-      },
-      {
-        "sourceId": "fewiki-felicia-supports",
-        "locator": "Silas support information",
-        "fields": [
-          "ranks"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
-    "id": "felicia__kaze",
-    "unitId": "felicia",
-    "partnerUnitId": "kaze",
-    "kind": "romantic",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "S"
-    ],
-    "routes": [
-      "birthright",
-      "conquest",
-      "revelation"
-    ],
-    "direction": "mutual",
-    "provenance": [
-      {
-        "sourceId": "fe14-workbook-cn",
-        "locator": "菲利希亚!B13:C13",
-        "fields": [
-          "partnerUnitId",
-          "ranks"
-        ],
-        "reviewStatus": "corroborated"
-      },
-      {
-        "sourceId": "fewiki-felicia-supports",
-        "locator": "Kaze support information",
-        "fields": [
-          "ranks"
         ],
         "reviewStatus": "accepted"
       }
@@ -1966,79 +2419,13 @@
           "direction"
         ],
         "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
-    "id": "jakob__silas",
-    "unitId": "jakob",
-    "partnerUnitId": "silas",
-    "kind": "friendship",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "A+"
-    ],
-    "routes": [
-      "birthright",
-      "conquest",
-      "revelation"
-    ],
-    "direction": "unit_to_partner",
-    "provenance": [
-      {
-        "sourceId": "serenes-fe14-supports",
-        "locator": "A+ supports > Jakob > Silas",
-        "fields": [
-          "partnerUnitId",
-          "ranks"
-        ],
-        "reviewStatus": "corroborated"
       },
       {
-        "sourceId": "fewiki-jakob-supports",
-        "locator": "Silas support information",
+        "sourceId": "fewiki-flora-supports",
+        "locator": "Felicia support information",
         "fields": [
           "ranks",
           "direction"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "sourceId": "fe14-friendship-seal-chart",
-        "locator": "Silas and Jakob A+ support",
-        "fields": [
-          "partnerUnitId",
-          "ranks"
-        ],
-        "reviewStatus": "corroborated"
-      }
-    ]
-  },
-  {
-    "id": "jakob__mozu",
-    "unitId": "jakob",
-    "partnerUnitId": "mozu",
-    "kind": "romantic",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "S"
-    ],
-    "routes": [
-      "birthright",
-      "conquest",
-      "revelation"
-    ],
-    "direction": "mutual",
-    "provenance": [
-      {
-        "sourceId": "fewiki-jakob-supports",
-        "locator": "Mozu support information",
-        "fields": [
-          "ranks"
         ],
         "reviewStatus": "accepted"
       }
@@ -2515,109 +2902,6 @@
       {
         "sourceId": "fewiki-jakob-supports",
         "locator": "Charlotte support information",
-        "fields": [
-          "ranks"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
-    "id": "jakob__gunter",
-    "unitId": "jakob",
-    "partnerUnitId": "gunter",
-    "kind": "friendship",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "A+"
-    ],
-    "routes": [
-      "conquest"
-    ],
-    "direction": "unit_to_partner",
-    "provenance": [
-      {
-        "sourceId": "fewiki-jakob-supports",
-        "locator": "Gunter support information",
-        "fields": [
-          "ranks",
-          "routes",
-          "direction"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "sourceId": "fe14-friendship-seal-chart",
-        "locator": "Gunter and Jakob A+ support",
-        "fields": [
-          "partnerUnitId",
-          "ranks"
-        ],
-        "reviewStatus": "corroborated"
-      }
-    ]
-  },
-  {
-    "id": "kaze__silas",
-    "unitId": "kaze",
-    "partnerUnitId": "silas",
-    "kind": "friendship",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "A+"
-    ],
-    "routes": [
-      "birthright",
-      "conquest",
-      "revelation"
-    ],
-    "direction": "unit_to_partner",
-    "provenance": [
-      {
-        "sourceId": "fewiki-kaze-supports",
-        "locator": "Silas support information",
-        "fields": [
-          "ranks",
-          "direction"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
-    "id": "silas__mozu",
-    "unitId": "silas",
-    "partnerUnitId": "mozu",
-    "kind": "romantic",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "S"
-    ],
-    "routes": [
-      "birthright",
-      "conquest",
-      "revelation"
-    ],
-    "direction": "mutual",
-    "provenance": [
-      {
-        "sourceId": "fe14-workbook-cn",
-        "locator": "塞拉斯!B13:C13",
-        "fields": [
-          "partnerUnitId",
-          "ranks"
-        ],
-        "reviewStatus": "corroborated"
-      },
-      {
-        "sourceId": "fewiki-silas-supports",
-        "locator": "Mozu support information",
         "fields": [
           "ranks"
         ],
@@ -3242,34 +3526,6 @@
       {
         "sourceId": "fewiki-silas-supports",
         "locator": "Charlotte support information",
-        "fields": [
-          "ranks"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
-    "id": "kaze__mozu",
-    "unitId": "kaze",
-    "partnerUnitId": "mozu",
-    "kind": "romantic",
-    "ranks": [
-      "C",
-      "B",
-      "A",
-      "S"
-    ],
-    "routes": [
-      "birthright",
-      "conquest",
-      "revelation"
-    ],
-    "direction": "mutual",
-    "provenance": [
-      {
-        "sourceId": "fewiki-kaze-supports",
-        "locator": "Mozu support information",
         "fields": [
           "ranks"
         ],
@@ -4340,6 +4596,1554 @@
           "direction"
         ],
         "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__xander",
+    "unitId": "elise",
+    "partnerUnitId": "xander",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Elise and Xander; royal siblings cannot marry",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "effie__xander",
+    "unitId": "effie",
+    "partnerUnitId": "xander",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Xander and Effie",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Xander support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__camilla",
+    "unitId": "elise",
+    "partnerUnitId": "camilla",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Elise and Camilla",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Elise and Camilla A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "arthur__camilla",
+    "unitId": "arthur",
+    "partnerUnitId": "camilla",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Camilla",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__leo",
+    "unitId": "elise",
+    "partnerUnitId": "leo",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Elise and Leo; royal siblings cannot marry",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "effie__leo",
+    "unitId": "effie",
+    "partnerUnitId": "leo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Leo and Effie",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Leo support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__laslow",
+    "unitId": "elise",
+    "partnerUnitId": "laslow",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Laslow and Elise",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__odin",
+    "unitId": "elise",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Elise",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__niles",
+    "unitId": "elise",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Elise",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__effie",
+    "unitId": "elise",
+    "partnerUnitId": "effie",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Elise and Effie",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Elise and Effie A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "elise__arthur",
+    "unitId": "elise",
+    "partnerUnitId": "arthur",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Elise",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__benny",
+    "unitId": "elise",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Benny and Elise",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "elise__keaton",
+    "unitId": "elise",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Keaton and Elise",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "effie__laslow",
+    "unitId": "effie",
+    "partnerUnitId": "laslow",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Laslow and Effie",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Laslow support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur__peri",
+    "unitId": "arthur",
+    "partnerUnitId": "peri",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Peri",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur__selena",
+    "unitId": "arthur",
+    "partnerUnitId": "selena",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Selena",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur__beruka",
+    "unitId": "arthur",
+    "partnerUnitId": "beruka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Beruka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "effie__odin",
+    "unitId": "effie",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Effie",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Odin support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "effie__niles",
+    "unitId": "effie",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Effie",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Niles support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur__niles",
+    "unitId": "arthur",
+    "partnerUnitId": "niles",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Niles",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Arthur and Niles A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "arthur__effie",
+    "unitId": "arthur",
+    "partnerUnitId": "effie",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Effie",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "effie__nyx",
+    "unitId": "effie",
+    "partnerUnitId": "nyx",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Effie and Nyx",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Nyx support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Effie and Nyx A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "effie__benny",
+    "unitId": "effie",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Benny and Effie",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Benny support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "effie__keaton",
+    "unitId": "effie",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Keaton and Effie",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Keaton support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur__nyx",
+    "unitId": "arthur",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Nyx",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur__charlotte",
+    "unitId": "arthur",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Charlotte",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur__benny",
+    "unitId": "arthur",
+    "partnerUnitId": "benny",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Benny",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Arthur and Benny A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "arthur__keaton",
+    "unitId": "arthur",
+    "partnerUnitId": "keaton",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Arthur and Keaton",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Arthur and Keaton A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "gunter__corrin_female",
+    "unitId": "gunter",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Supports > Corrin (female)",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List note for Gunter",
+        "fields": [
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "gunter__corrin_male",
+    "unitId": "gunter",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Supports > Corrin (male)",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List note for Gunter",
+        "fields": [
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "yukimura__corrin_female",
+    "unitId": "yukimura",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-yukimura",
+        "locator": "Fire Emblem Fates > Supports > Corrin (female)",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "yukimura__corrin_male",
+    "unitId": "yukimura",
+    "partnerUnitId": "corrin",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright"
+    ],
+    "partnerGender": "male",
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-yukimura",
+        "locator": "Fire Emblem Fates > Supports > Corrin (male)",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "fuga__corrin_female",
+    "unitId": "fuga",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "风雅!B9:F10",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "partnerGender"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-fuga",
+        "locator": "Fire Emblem Fates > Supports > Corrin (female)",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "fuga__corrin_male",
+    "unitId": "fuga",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-fuga",
+        "locator": "Fire Emblem Fates > Supports > Corrin (male)",
+        "fields": [
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "gunter__jakob",
+    "unitId": "gunter",
+    "partnerUnitId": "jakob",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B11:F11",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Supports > Jakob",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List note for Gunter",
+        "fields": [
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Gunter and Jakob A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "elise__ryoma",
+    "unitId": "elise",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Supports > Ryoma (Revelation only)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "elise__takumi",
+    "unitId": "elise",
+    "partnerUnitId": "takumi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Supports > Takumi (Revelation only)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "elise__sakura",
+    "unitId": "elise",
+    "partnerUnitId": "sakura",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Supports and Friendship Sets > Sakura (Revelation only)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Elise and Sakura A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "arthur__kagero",
+    "unitId": "arthur",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Supports > Kagero (Revelation only)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "arthur__setsuna",
+    "unitId": "arthur",
+    "partnerUnitId": "setsuna",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Supports > Setsuna (Revelation only)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "effie__azama",
+    "unitId": "effie",
+    "partnerUnitId": "azama",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Effie and Azama (3rd Route exclusive)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Azama support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur__azama",
+    "unitId": "arthur",
+    "partnerUnitId": "azama",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Arthur and Azama A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "effie__hana",
+    "unitId": "effie",
+    "partnerUnitId": "hana",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Effie and Hana (3rd Route exclusive)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Hana support information",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Effie and Hana A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "effie__hayato",
+    "unitId": "effie",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Effie and Hayato (3rd Route exclusive)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Hayato support information",
+        "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "fuga__hayato",
+    "unitId": "fuga",
+    "partnerUnitId": "hayato",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "风雅!B9:F10",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-fuga",
+        "locator": "Fire Emblem Fates > Supports > Hayato",
+        "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Fuga and Hayato A+ support",
+        "fields": [
+          "partnerUnitId",
+          "ranks"
+        ],
+        "reviewStatus": "corroborated"
       }
     ]
   }

@@ -824,6 +824,833 @@
     ]
   },
   {
+    "id": "gunter.early",
+    "unitId": "gunter",
+    "scenarioLabel": "Early route deployment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 2,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 2,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 2,
+        "timing": "start"
+      }
+    ],
+    "level": 3,
+    "classId": "great_knight",
+    "temporaryDeparture": {
+      "afterChapter": 3,
+      "routes": [
+        "birthright",
+        "conquest",
+        "revelation"
+      ],
+      "returns": [
+        {
+          "route": "conquest",
+          "chapter": 15,
+          "timing": "start"
+        },
+        {
+          "route": "revelation",
+          "chapter": 7,
+          "timing": "during"
+        }
+      ]
+    },
+    "inventory": [
+      "iron_lance"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B2:K16",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Initial Characters > Gunter (temp.)",
+        "fields": [
+          "routeJoins",
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Recruitment and Base Stats",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "gamefaqs-fe14-conquest-character-guide",
+        "locator": "6.2.03 Gunter > Recruitment and route returns",
+        "fields": [
+          "routeJoins",
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "gunter.conquest_return",
+    "unitId": "gunter",
+    "scenarioLabel": "Conquest return",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 15,
+        "timing": "start"
+      }
+    ],
+    "level": 10,
+    "classId": "great_knight",
+    "inventory": [
+      "steel_lance",
+      "steel_axe",
+      "javelin",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B2:K16",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Gunter",
+        "fields": [
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Shared Characters > Gunter",
+        "fields": [
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Recruitment and Base Stats > Conquest",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "gunter.revelation_return",
+    "unitId": "gunter",
+    "scenarioLabel": "Revelation return",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 7,
+        "timing": "during"
+      }
+    ],
+    "level": 3,
+    "classId": "great_knight",
+    "inventory": [
+      "steel_lance",
+      "vulnerary",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B2:K16",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Initial Characters > Gunter (perm.)",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Shared Characters > Gunter",
+        "fields": [
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Recruitment and Base Stats > Revelation",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "elise.conquest_guest",
+    "unitId": "elise",
+    "scenarioLabel": "Conquest Chapter 6 guest",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 6,
+        "timing": "start"
+      }
+    ],
+    "level": 4,
+    "classId": "troubadour",
+    "gainsExperience": false,
+    "inventory": [
+      "heal",
+      "freeze"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Base Stats > Conquest Chapter 6",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Initial Characters > Elise (temp.)",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-embrace-the-dark",
+        "locator": "Units Gained and Strategy",
+        "fields": [
+          "gainsExperience"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "elise.conquest",
+    "unitId": "elise",
+    "scenarioLabel": "Conquest permanent recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 7,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 5,
+    "classId": "troubadour",
+    "inventory": [
+      "heal",
+      "freeze"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "艾丽泽!B2:K17",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Initial Characters > Elise (perm.)",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Elise",
+        "fields": [
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Base Stats > Conquest Chapter 7",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "elise.revelation",
+    "unitId": "elise",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 14,
+        "timing": "start"
+      }
+    ],
+    "level": 7,
+    "classId": "troubadour",
+    "inventory": [
+      "heal",
+      "mend"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "艾丽泽!B2:K17",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Initial Characters > Elise",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Exclusive Characters > Elise",
+        "fields": [
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Base Stats > Revelation Chapter 14",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "effie.conquest",
+    "unitId": "effie",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 7,
+        "timing": "during",
+        "turn": 4
+      }
+    ],
+    "level": 6,
+    "classId": "knight",
+    "inventory": [
+      "iron_lance"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Initial Characters > Effie (turn 4)",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Conquest",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "effie.revelation",
+    "unitId": "effie",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 14,
+        "timing": "start"
+      }
+    ],
+    "level": 8,
+    "classId": "knight",
+    "inventory": [
+      "iron_lance"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Initial Characters > Effie",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Revelation > Exclusive Characters > Effie",
+        "fields": [
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Revelation",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "arthur.conquest",
+    "unitId": "arthur",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 7,
+        "timing": "during",
+        "turn": 4
+      }
+    ],
+    "level": 7,
+    "classId": "fighter",
+    "inventory": [
+      "iron_axe",
+      "hand_axe"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Initial Characters > Arthur (turn 4)",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Arthur",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Base Stats > Conquest Chapter 7",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "arthur.revelation",
+    "unitId": "arthur",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 14,
+        "timing": "start"
+      }
+    ],
+    "level": 9,
+    "classId": "fighter",
+    "inventory": [
+      "iron_axe"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Initial Characters > Arthur",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Exclusive Characters > Arthur",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Base Stats > Revelation Chapter 14",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "flora.conquest",
+    "unitId": "flora",
+    "scenarioLabel": "Conquest My Castle recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 18,
+        "timing": "conditional"
+      }
+    ],
+    "level": 5,
+    "classId": "maid",
+    "myCastleRecruitment": {
+      "facilityId": "fire_orb",
+      "facilityLevel": 3,
+      "refreshMethods": [
+        "real_time",
+        "map_completion"
+      ],
+      "note": "After Chapter 18 is complete, upgrade the Fire Orb to level 3 and refresh My Castle by waiting for the real-time update or by completing any map."
+    },
+    "autoLevel": {
+      "basis": "displayed_story_chapter",
+      "minimumLevel": 5,
+      "maximumLevel": 15,
+      "milestones": [
+        {
+          "displayedChapterStart": 19,
+          "displayedChapterEnd": 22,
+          "level": 5
+        },
+        {
+          "displayedChapterStart": 23,
+          "level": 7
+        },
+        {
+          "displayedChapterStart": 24,
+          "level": 9
+        },
+        {
+          "displayedChapterStart": 25,
+          "level": 11
+        },
+        {
+          "displayedChapterStart": 26,
+          "level": 13
+        },
+        {
+          "displayedChapterStart": 27,
+          "level": 15
+        }
+      ],
+      "statCalculation": "average_growths_round_half_up",
+      "statBaseLevel": 5,
+      "growthClassId": "maid",
+      "skillsLearnedAutomatically": true,
+      "modelBasis": "castle_recruit_autolevel",
+      "comparisonModel": "offspring_seal_esque_level_scaling",
+      "comparisonStatus": "unverified",
+      "weaponProficiencyScales": true,
+      "weaponProficiencyMilestonesStatus": "unresolved",
+      "evidenceStatus": "tested",
+      "note": "Controlled Conquest testing found Flora at level 5 through displayed Chapter 22, then two deterministic levels per completed story chapter through level 15 at displayed Chapter 27. Stats use (Flora's individual growth rates + Maid class growth rates) from her level 5 Conquest bases, with exact 0.5 results rounded up. Difficulty does not affect these gains; exact weapon-rank milestones still need direct testing."
+    },
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "芙洛拉!B1:I16",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Recruitment and Base Stats > Conquest",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "myCastleRecruitment"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "pegasusknight-fe14-parent-units",
+        "locator": "暗夜王国 > フローラ",
+        "fields": [
+          "routeJoins",
+          "myCastleRecruitment",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "reddit-fe14-castle-recruit-scaling",
+        "locator": "EDIT 3: Flora at Conquest displayed chapters 19-27",
+        "fields": [
+          "level",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Flora footnote",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "paragon-fe14-data-schemas",
+        "locator": "CastleJoin and Chapter schemas; offspring_seal_level fields",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "flora.revelation",
+    "unitId": "flora",
+    "scenarioLabel": "Revelation My Castle recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 22,
+        "timing": "conditional"
+      }
+    ],
+    "level": 7,
+    "classId": "maid",
+    "myCastleRecruitment": {
+      "facilityIds": [
+        "ballista",
+        "fire_orb",
+        "launcher"
+      ],
+      "facilityLevel": 3,
+      "refreshMethods": [
+        "real_time",
+        "map_completion"
+      ],
+      "note": "After Chapter 22 is complete, upgrade any Ballista, Fire Orb, or Launcher to level 3 and refresh My Castle by waiting for the real-time update or by completing any map."
+    },
+    "autoLevel": {
+      "basis": "displayed_story_chapter",
+      "minimumLevel": 7,
+      "maximumLevel": 15,
+      "milestones": [
+        {
+          "displayedChapterStart": 23,
+          "level": 7
+        },
+        {
+          "displayedChapterStart": 24,
+          "level": 9
+        },
+        {
+          "displayedChapterStart": 25,
+          "level": 11
+        },
+        {
+          "displayedChapterStart": 26,
+          "level": 13
+        },
+        {
+          "displayedChapterStart": 27,
+          "level": 15
+        }
+      ],
+      "statCalculation": "average_growths_round_half_up",
+      "statBaseLevel": 5,
+      "growthClassId": "maid",
+      "skillsLearnedAutomatically": true,
+      "modelBasis": "castle_recruit_autolevel",
+      "comparisonModel": "offspring_seal_esque_level_scaling",
+      "comparisonStatus": "unverified",
+      "weaponProficiencyScales": true,
+      "weaponProficiencyMilestonesStatus": "unresolved",
+      "evidenceStatus": "partial",
+      "note": "Flora's independently corroborated Revelation base is level 7, and its stats equal two average Maid growth levels added to her level 5 Conquest bases with exact 0.5 results rounded up. Community references place her at level 15 by displayed Chapter 27, but Revelation's complete milestone schedule and exact weapon-rank milestones still need direct testing."
+    },
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "芙洛拉!B1:I16",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Recruitment and Base Stats > Revelation",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "myCastleRecruitment"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "pegasusknight-fe14-parent-units",
+        "locator": "インビジブルキングダム > フローラ",
+        "fields": [
+          "routeJoins",
+          "myCastleRecruitment",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Flora footnote",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "paragon-fe14-data-schemas",
+        "locator": "CastleJoin and Chapter schemas; offspring_seal_level fields",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "id": "izana.birthright",
     "unitId": "izana",
     "scenarioLabel": "Birthright My Castle recruitment",
@@ -855,6 +1682,8 @@
         }
       ],
       "statCalculation": "average_growths_round_half_up",
+      "statBaseLevel": 5,
+      "growthClassId": "onmyoji",
       "skillsLearnedAutomatically": true,
       "modelBasis": "castle_recruit_autolevel",
       "comparisonModel": "offspring_seal_esque_level_scaling",
@@ -972,6 +1801,8 @@
         }
       ],
       "statCalculation": "average_growths_round_half_up",
+      "statBaseLevel": 5,
+      "growthClassId": "onmyoji",
       "skillsLearnedAutomatically": true,
       "modelBasis": "castle_recruit_autolevel",
       "comparisonModel": "offspring_seal_esque_level_scaling",
@@ -1027,6 +1858,230 @@
         "locator": "Nohrian Characters > Other Data > Izana footnote",
         "fields": [
           "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "paragon-fe14-data-schemas",
+        "locator": "CastleJoin and Chapter schemas; offspring_seal_level fields",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "yukimura.birthright",
+    "unitId": "yukimura",
+    "scenarioLabel": "Birthright My Castle recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 21,
+        "timing": "conditional"
+      }
+    ],
+    "level": 10,
+    "classId": "mechanist",
+    "myCastleRecruitment": {
+      "facilityId": "puppet",
+      "facilityLevel": 3,
+      "refreshMethods": [
+        "real_time",
+        "map_completion"
+      ],
+      "note": "After Chapter 21 is complete, upgrade any Puppet to level 3 and refresh My Castle by waiting for the real-time update or by completing any map."
+    },
+    "autoLevel": {
+      "basis": "displayed_story_chapter",
+      "minimumLevel": 10,
+      "maximumLevel": 15,
+      "milestones": [
+        {
+          "displayedChapterStart": 22,
+          "level": 10
+        },
+        {
+          "displayedChapterStart": 23,
+          "level": 11
+        },
+        {
+          "displayedChapterStart": 24,
+          "level": 12
+        },
+        {
+          "displayedChapterStart": 25,
+          "level": 13
+        },
+        {
+          "displayedChapterStart": 26,
+          "level": 14
+        },
+        {
+          "displayedChapterStart": 27,
+          "level": 15
+        }
+      ],
+      "statCalculation": "average_growths_round_half_up",
+      "statBaseLevel": 10,
+      "growthClassId": "mechanist",
+      "skillsLearnedAutomatically": true,
+      "modelBasis": "castle_recruit_autolevel",
+      "comparisonModel": "offspring_seal_esque_level_scaling",
+      "comparisonStatus": "unverified",
+      "weaponProficiencyScales": true,
+      "weaponProficiencyMilestonesStatus": "unresolved",
+      "evidenceStatus": "partial",
+      "note": "Community references place Yukimura at level 10 for displayed Chapter 22 and level 15 for displayed Chapter 27. At each scaled level, add (Yukimura's individual growth rates + Mechanist class growth rates) multiplied by levels gained, then round each resulting stat to the nearest integer with exact 0.5 results rounded up. The intermediate chapter schedule and exact weapon-rank milestones still need direct testing; the child unit Offspring Seal level table does not apply directly."
+    },
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "幸村!B1:I14",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-yukimura",
+        "locator": "Fire Emblem Fates > Base Stats and recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "myCastleRecruitment"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "pegasusknight-fe14-parent-units",
+        "locator": "白夜王国 > ユキムラ",
+        "fields": [
+          "routeJoins",
+          "myCastleRecruitment",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Exclusive Characters > Yukimura footnote",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "paragon-fe14-data-schemas",
+        "locator": "CastleJoin and Chapter schemas; offspring_seal_level fields",
+        "fields": [
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "fuga.revelation",
+    "unitId": "fuga",
+    "scenarioLabel": "Revelation My Castle recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 18,
+        "timing": "conditional"
+      }
+    ],
+    "level": 10,
+    "classId": "master_of_arms",
+    "myCastleRecruitment": {
+      "facilityId": "hot_spring",
+      "facilityLevel": 3,
+      "refreshMethods": [
+        "real_time",
+        "map_completion"
+      ],
+      "note": "After Chapter 18 is complete, upgrade the Hot Spring to level 3 and refresh My Castle by waiting for the real-time update or by completing any map."
+    },
+    "autoLevel": {
+      "basis": "displayed_story_chapter",
+      "minimumLevel": 10,
+      "milestones": [
+        {
+          "displayedChapterStart": 19,
+          "level": 10
+        }
+      ],
+      "statCalculation": "average_growths_round_half_up",
+      "statBaseLevel": 10,
+      "growthClassId": "master_of_arms",
+      "skillsLearnedAutomatically": true,
+      "modelBasis": "castle_recruit_autolevel",
+      "comparisonModel": "offspring_seal_esque_level_scaling",
+      "comparisonStatus": "unverified",
+      "weaponProficiencyScales": true,
+      "weaponProficiencyMilestonesStatus": "unresolved",
+      "evidenceStatus": "partial",
+      "note": "Fuga's level 10 base at displayed Chapter 19 is independently corroborated, and multiple sources state that his level, deterministic stats, weapon ranks, and learned skills rise with later recruitment. At each scaled level, add (Fuga's individual growth rates + Master of Arms class growth rates) multiplied by levels gained, then round each resulting stat to the nearest integer with exact 0.5 results rounded up. Exact later chapter and weapon-rank milestones still need direct testing."
+    },
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "风雅!B2:K14",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Revelation > Exclusive Characters > Fuga footnote",
+        "fields": [
+          "level",
+          "classId",
+          "autoLevel"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Exclusive Characters > Fuga footnote",
+        "fields": [
+          "inventory",
+          "autoLevel"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "pegasusknight-fe14-parent-units",
+        "locator": "インビジブルキングダム > フウガ",
+        "fields": [
+          "routeJoins",
+          "myCastleRecruitment",
+          "autoLevel"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-fuga",
+        "locator": "Revelation recruitment and Base Stats",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "myCastleRecruitment"
         ],
         "reviewStatus": "corroborated"
       },

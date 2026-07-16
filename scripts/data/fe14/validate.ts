@@ -124,6 +124,7 @@ function validateRelationships(
   const roster = rosterFile.units as JsonObject[];
   const rosterIds = roster.map((unit) => unit.id as string);
   const rosterIdSet = new Set(rosterIds);
+  const rosterById = new Map(roster.map((unit) => [unit.id as string, unit]));
   const rosterByProcessingOrder = [...roster].sort(
     (left, right) => (left.processingOrder as number) - (right.processingOrder as number),
   );
@@ -151,6 +152,8 @@ function validateRelationships(
       message: "First-generation roster JSON must be ordered by its canonical unit number.",
     });
   }
+
+  validateUnitRecordOrdering(parsed, rosterById, errors);
 
   for (const source of sourceRecords) {
     const expectedLocation = SOURCE_LOCATIONS[source.id as keyof typeof SOURCE_LOCATIONS];
@@ -245,6 +248,7 @@ function validateRelationships(
   }
 
   const supports = parsed["data/normalized/fe14/support-relationships.json"] as JsonObject[];
+  validateSupportOrdering(supports, rosterById, errors);
   const supportIds = new Set<string>();
   const supportPairKeys = new Set<string>();
   for (const support of supports) {
@@ -267,12 +271,42 @@ function validateRelationships(
   }
 
   const classAccess = parsed["data/normalized/fe14/unit-class-access.json"] as JsonObject[];
+  const supportById = new Map(supports.map((support) => [support.id as string, support]));
   for (const accessRecord of classAccess) {
     const accessUnitId = accessRecord.unitId as string;
     const sealGrants = accessRecord.sealGrants as JsonObject[];
+    const baseClassSet = new Set(accessRecord.baseClassSet as string[]);
+    const heartSealClassSet = new Set(accessRecord.heartSealClassSet as string[]);
+    validateSealGrantOrdering(accessUnitId, sealGrants, supportById, rosterById, errors);
     for (const grant of sealGrants) {
       const supportId = grant.supportRelationshipId as string;
       const support = supports.find((record) => record.id === supportId);
+      const grantedClassId = grant.grantedClassId as string;
+      const expectedOwnedVia = baseClassSet.has(grantedClassId)
+        ? "base"
+        : heartSealClassSet.has(grantedClassId)
+          ? "heart_seal"
+          : undefined;
+      const resolutionSteps = (grant.resolutionSteps ?? []) as string[];
+
+      if (expectedOwnedVia && (
+        grant.resolution !== "already_owned"
+        || grant.alreadyOwnedVia !== expectedOwnedVia
+        || resolutionSteps.at(-1) !== "already_owned"
+      )) {
+        errors.push({
+          code: "unmarked_owned_seal_grant",
+          message: `${supportId} grants ${grantedClassId}, which ${accessUnitId} already has through ${expectedOwnedVia === "base" ? "base access" : "Heart Seal access"}.`,
+          unitId: accessUnitId,
+        });
+      } else if (!expectedOwnedVia && grant.alreadyOwnedVia !== undefined) {
+        errors.push({
+          code: "invalid_owned_seal_grant",
+          message: `${supportId} marks ${grantedClassId} as already owned, but it is not in ${accessUnitId}'s base or Heart Seal class set.`,
+          unitId: accessUnitId,
+        });
+      }
+
       if (!support) {
         errors.push({
           code: "unknown_support_grant",
@@ -295,6 +329,7 @@ function validateRelationships(
     kaze: { availability: 4, baseStats: 4 },
     silas: { availability: 3, baseStats: 2 },
     azura: { availability: 3, baseStats: 1 },
+    effie: { availability: 2, baseStats: 2 },
   };
 
   for (const [currentUnitId, counts] of Object.entries(completedUnitCounts)) {
@@ -327,11 +362,14 @@ function validateRelationships(
     );
     const accessRecord = classAccess.find((record) => record.unitId === currentUnitId);
     const sealGrants = (accessRecord?.sealGrants ?? []) as JsonObject[];
-    const expectedSealGrants = currentUnitId === "azura" ? 24 : 23;
-    if (unitSupports.length !== 24 || sealGrants.length !== expectedSealGrants) {
+    const expectedSupportCounts: Record<string, number> = { effie: 19 };
+    const expectedSealGrantCounts: Record<string, number> = { azura: 24, effie: 18 };
+    const expectedSupports = expectedSupportCounts[currentUnitId] ?? 24;
+    const expectedSealGrants = expectedSealGrantCounts[currentUnitId] ?? 23;
+    if (unitSupports.length !== expectedSupports || sealGrants.length !== expectedSealGrants) {
       errors.push({
         code: "unit_support_completeness",
-        message: `${currentUnitId} requires 24 first-generation support edges and ${expectedSealGrants} seal outcomes; found ${unitSupports.length} and ${sealGrants.length}.`,
+        message: `${currentUnitId} requires ${expectedSupports} first-generation support edges and ${expectedSealGrants} seal outcomes; found ${unitSupports.length} and ${sealGrants.length}.`,
         unitId: currentUnitId,
       });
     }
@@ -341,6 +379,7 @@ function validateRelationships(
       jakob: "jakob__corrin_male",
       kaze: "kaze__corrin_male",
       silas: "silas__corrin_male",
+      effie: "effie__corrin_female",
     }[currentUnitId];
     if (sameGenderCorrinSupportId && sealGrants.some((grant) => grant.supportRelationshipId === sameGenderCorrinSupportId)) {
       errors.push({
@@ -372,6 +411,119 @@ function validateRelationships(
       message: "Kaze's 凉风 workbook sheet and its four level/stat notes still require direct inspection; the current carryover rules are independently corroborated by Fire Emblem Wiki prose and Serenes Forest data.",
       unitId: "kaze",
     });
+  }
+  if (!unitFilter || unitFilter === "effie") {
+    warnings.push({
+      code: "workbook_source_pending",
+      message: "Effie's 艾尔菲 workbook sheet still requires direct inspection; the required local spreadsheet runtime was unavailable, so current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+      unitId: "effie",
+    });
+  }
+}
+
+function compareUnitOrder(
+  leftId: string,
+  rightId: string,
+  rosterById: Map<string, JsonObject>,
+): number {
+  const left = rosterById.get(leftId);
+  const right = rosterById.get(rightId);
+  const leftRouteCount = (left?.availableRoutes as unknown[] | undefined)?.length ?? 0;
+  const rightRouteCount = (right?.availableRoutes as unknown[] | undefined)?.length ?? 0;
+  return rightRouteCount - leftRouteCount ||
+    ((left?.unitNo as number | undefined) ?? Number.MAX_SAFE_INTEGER) -
+      ((right?.unitNo as number | undefined) ?? Number.MAX_SAFE_INTEGER) ||
+    leftId.localeCompare(rightId);
+}
+
+function unitNo(unitId: string, rosterById: Map<string, JsonObject>): number {
+  return (rosterById.get(unitId)?.unitNo as number | undefined) ?? Number.MAX_SAFE_INTEGER;
+}
+
+function validateUnitRecordOrdering(
+  parsed: Record<string, unknown>,
+  rosterById: Map<string, JsonObject>,
+  errors: ValidationMessage[],
+): void {
+  const paths = [
+    "data/normalized/fe14/unit-availability.json",
+    "data/normalized/fe14/unit-base-stats.json",
+    "data/normalized/fe14/unit-growths.json",
+    "data/normalized/fe14/unit-cap-modifiers.json",
+    "data/normalized/fe14/unit-pairup-bonuses.json",
+    "data/normalized/fe14/unit-class-access.json",
+    "data/normalized/fe14/personal-skills.json",
+  ];
+
+  for (const path of paths) {
+    const records = parsed[path] as JsonObject[];
+    for (let index = 1; index < records.length; index += 1) {
+      const previous = records[index - 1];
+      const current = records[index];
+      if (compareUnitOrder(previous.unitId as string, current.unitId as string, rosterById) > 0) {
+        errors.push({
+          code: "unit_record_order",
+          message: `${path} must be ordered by available-route count, then unit number.`,
+          path,
+        });
+        break;
+      }
+    }
+  }
+}
+
+function validateSupportOrdering(
+  supports: JsonObject[],
+  rosterById: Map<string, JsonObject>,
+  errors: ValidationMessage[],
+): void {
+  const compareSupports = (left: JsonObject, right: JsonObject) => {
+    const leftIds = [left.unitId as string, left.partnerUnitId as string].sort((a, b) => unitNo(a, rosterById) - unitNo(b, rosterById));
+    const rightIds = [right.unitId as string, right.partnerUnitId as string].sort((a, b) => unitNo(a, rosterById) - unitNo(b, rosterById));
+    return ((right.routes as unknown[]).length - (left.routes as unknown[]).length) ||
+      unitNo(leftIds[0], rosterById) - unitNo(rightIds[0], rosterById) ||
+      unitNo(leftIds[1], rosterById) - unitNo(rightIds[1], rosterById) ||
+      (left.id as string).localeCompare(right.id as string);
+  };
+
+  for (let index = 1; index < supports.length; index += 1) {
+    if (compareSupports(supports[index - 1], supports[index]) > 0) {
+      errors.push({
+        code: "support_record_order",
+        message: "Support relationships must be ordered by each pair's available-route count, then unit number.",
+        path: "data/normalized/fe14/support-relationships.json",
+      });
+      break;
+    }
+  }
+}
+
+function validateSealGrantOrdering(
+  unitId: string,
+  grants: JsonObject[],
+  supportById: Map<string, JsonObject>,
+  rosterById: Map<string, JsonObject>,
+  errors: ValidationMessage[],
+): void {
+  const partnerId = (grant: JsonObject) => {
+    const support = supportById.get(grant.supportRelationshipId as string);
+    if (!support) return "";
+    return support.unitId === unitId ? support.partnerUnitId as string : support.unitId as string;
+  };
+
+  for (let index = 1; index < grants.length; index += 1) {
+    const previousPartnerId = partnerId(grants[index - 1]);
+    const currentPartnerId = partnerId(grants[index]);
+    const routeDifference = ((grants[index].routes as unknown[]).length - (grants[index - 1].routes as unknown[]).length);
+    if (routeDifference > 0 || (routeDifference === 0 && unitNo(previousPartnerId, rosterById) > unitNo(currentPartnerId, rosterById))) {
+      errors.push({
+        code: "seal_grant_order",
+          message: `Class grants for ${unitId} must be ordered by route count, then the partner's unit number.`,
+        unitId,
+        path: "data/normalized/fe14/unit-class-access.json",
+      });
+      break;
+    }
   }
 }
 

@@ -65,8 +65,10 @@ export const rosterSchema = z.object({
         .optional(),
       gender: z.enum(["female", "male", "variable"]).optional(),
       dragonVein: z.boolean().optional(),
+      unitTags: z.array(z.enum(["dragon", "beast"])).max(2).optional(),
       personalSkillId: z.string().optional(),
       notes: z.array(z.string().min(1)).optional(),
+      supportNotes: z.array(z.string().min(1)).optional(),
     }),
   ),
 });
@@ -82,20 +84,27 @@ const availabilitySchema = z.object({
         route: routeSchema,
         chapter: z.number().int().nonnegative(),
         timing: z.enum(["start", "during", "end", "conditional"]),
+        turn: z.number().int().positive().optional(),
       }),
     )
     .min(1),
   level: z.number().int().positive(),
   classId: z.string().min(1),
+  gainsExperience: z.boolean().optional(),
   myCastleRecruitment: z
     .object({
-      facilityId: z.string().min(1),
+      facilityId: z.string().min(1).optional(),
+      facilityIds: z.array(z.string().min(1)).min(2).optional(),
       facilityLevel: z.number().int().positive(),
       refreshMethods: z
         .array(z.enum(["real_time", "map_completion"]))
         .min(1),
       note: z.string().min(1),
     })
+    .refine(
+      ({ facilityId, facilityIds }) => Boolean(facilityId) !== Boolean(facilityIds),
+      { message: "My Castle recruitment must specify either facilityId or facilityIds" },
+    )
     .optional(),
   autoLevel: z
     .object({
@@ -112,6 +121,8 @@ const availabilitySchema = z.object({
         )
         .min(1),
       statCalculation: z.literal("average_growths_round_half_up"),
+      statBaseLevel: z.number().int().positive(),
+      growthClassId: z.string().min(1),
       skillsLearnedAutomatically: z.boolean(),
       modelBasis: z.literal("castle_recruit_autolevel"),
       comparisonModel: z.literal("offspring_seal_esque_level_scaling"),
@@ -346,6 +357,7 @@ export const classAccessFileSchema = z.array(
           )
           .min(1)
           .optional(),
+        alreadyOwnedVia: z.enum(["base", "heart_seal"]).optional(),
         routes: z.array(routeSchema).min(1),
         reviewStatus: reviewStatusSchema,
       }),

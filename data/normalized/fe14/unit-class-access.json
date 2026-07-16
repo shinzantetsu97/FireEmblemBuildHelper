@@ -16,8 +16,8 @@
     ],
     "sealGrants": [
       {
-        "supportRelationshipId": "azura__corrin_male",
-        "seal": "partner",
+        "supportRelationshipId": "azura__corrin_female",
+        "seal": "friendship",
         "borrowedClassId": "avatar_talent",
         "grantedClassId": "avatar_talent",
         "resolution": "variable",
@@ -29,8 +29,8 @@
         "reviewStatus": "candidate"
       },
       {
-        "supportRelationshipId": "azura__corrin_female",
-        "seal": "friendship",
+        "supportRelationshipId": "azura__corrin_male",
+        "seal": "partner",
         "borrowedClassId": "avatar_talent",
         "grantedClassId": "avatar_talent",
         "resolution": "variable",
@@ -55,19 +55,6 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "kaze__azura",
-        "seal": "partner",
-        "borrowedClassId": "ninja",
-        "grantedClassId": "ninja",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "silas__azura",
         "seal": "partner",
         "borrowedClassId": "cavalier",
@@ -81,10 +68,23 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "azura__sakura",
-        "seal": "friendship",
-        "borrowedClassId": "shrine_maiden",
-        "grantedClassId": "shrine_maiden",
+        "supportRelationshipId": "kaze__azura",
+        "seal": "partner",
+        "borrowedClassId": "ninja",
+        "grantedClassId": "ninja",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "azura__ryoma",
+        "seal": "partner",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -93,11 +93,40 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "azura__subaki",
-        "seal": "partner",
+        "supportRelationshipId": "azura__hinoka",
+        "seal": "friendship",
         "borrowedClassId": "sky_knight",
         "grantedClassId": "sky_knight",
         "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "azura__takumi",
+        "seal": "partner",
+        "borrowedClassId": "archer",
+        "grantedClassId": "archer",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "azura__sakura",
+        "seal": "friendship",
+        "borrowedClassId": "shrine_maiden",
+        "grantedClassId": "shrine_maiden",
+        "resolution": "direct",
         "routes": [
           "birthright",
           "revelation"
@@ -117,35 +146,11 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "azura__hinoka",
-        "seal": "friendship",
-        "borrowedClassId": "sky_knight",
-        "grantedClassId": "sky_knight",
-        "resolution": "already_owned",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "azura__azama",
         "seal": "partner",
         "borrowedClassId": "monk",
         "grantedClassId": "shrine_maiden",
         "resolution": "gender_parallel",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "azura__hayato",
-        "seal": "partner",
-        "borrowedClassId": "diviner",
-        "grantedClassId": "diviner",
-        "resolution": "direct",
         "routes": [
           "birthright",
           "revelation"
@@ -165,10 +170,27 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "azura__takumi",
+        "supportRelationshipId": "azura__subaki",
         "seal": "partner",
-        "borrowedClassId": "archer",
-        "grantedClassId": "archer",
+        "borrowedClassId": "sky_knight",
+        "grantedClassId": "sky_knight",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "azura__hayato",
+        "seal": "partner",
+        "borrowedClassId": "diviner",
+        "grantedClassId": "diviner",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -189,13 +211,25 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "azura__ryoma",
+        "supportRelationshipId": "azura__xander",
         "seal": "partner",
-        "borrowedClassId": "samurai",
-        "grantedClassId": "samurai",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
         "resolution": "direct",
         "routes": [
-          "birthright",
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "azura__leo",
+        "seal": "partner",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
           "revelation"
         ],
         "reviewStatus": "accepted"
@@ -213,10 +247,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "azura__arthur",
+        "supportRelationshipId": "azura__laslow",
         "seal": "partner",
-        "borrowedClassId": "fighter",
-        "grantedClassId": "fighter",
+        "borrowedClassId": "mercenary",
+        "grantedClassId": "mercenary",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -249,10 +283,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "azura__laslow",
+        "supportRelationshipId": "azura__arthur",
         "seal": "partner",
-        "borrowedClassId": "mercenary",
-        "grantedClassId": "mercenary",
+        "borrowedClassId": "fighter",
+        "grantedClassId": "fighter",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -273,34 +307,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "azura__leo",
-        "seal": "partner",
-        "borrowedClassId": "dark_mage",
-        "grantedClassId": "dark_mage",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "azura__keaton",
         "seal": "partner",
         "borrowedClassId": "fighter",
         "grantedClassId": "fighter",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "azura__xander",
-        "seal": "partner",
-        "borrowedClassId": "cavalier",
-        "grantedClassId": "cavalier",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -448,18 +458,6 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "felicia__hinata",
-        "seal": "partner",
-        "borrowedClassId": "samurai",
-        "grantedClassId": "samurai",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "felicia__takumi",
         "seal": "partner",
         "borrowedClassId": "archer",
@@ -476,6 +474,54 @@
         "seal": "partner",
         "borrowedClassId": "ninja",
         "grantedClassId": "ninja",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "felicia__azama",
+        "seal": "partner",
+        "borrowedClassId": "monk",
+        "grantedClassId": "shrine_maiden",
+        "resolution": "gender_parallel",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "felicia__hinata",
+        "seal": "partner",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "felicia__hana",
+        "seal": "friendship",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "felicia__subaki",
+        "seal": "partner",
+        "borrowedClassId": "sky_knight",
+        "grantedClassId": "sky_knight",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -508,30 +554,6 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "felicia__azama",
-        "seal": "partner",
-        "borrowedClassId": "monk",
-        "grantedClassId": "shrine_maiden",
-        "resolution": "gender_parallel",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "felicia__subaki",
-        "seal": "partner",
-        "borrowedClassId": "sky_knight",
-        "grantedClassId": "sky_knight",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "felicia__xander",
         "seal": "partner",
         "borrowedClassId": "cavalier",
@@ -556,10 +578,51 @@
         "reviewStatus": "accepted"
       },
       {
+        "supportRelationshipId": "felicia__laslow",
+        "seal": "partner",
+        "borrowedClassId": "mercenary",
+        "grantedClassId": "mercenary",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "felicia__peri",
+        "seal": "friendship",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
         "supportRelationshipId": "felicia__odin",
         "seal": "partner",
         "borrowedClassId": "dark_mage",
         "grantedClassId": "dark_mage",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "felicia__niles",
+        "seal": "partner",
+        "borrowedClassId": "outlaw",
+        "grantedClassId": "outlaw",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -580,18 +643,6 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "felicia__keaton",
-        "seal": "partner",
-        "borrowedClassId": "wolfskin",
-        "grantedClassId": "fighter",
-        "resolution": "restricted_primary_fallback",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "felicia__benny",
         "seal": "partner",
         "borrowedClassId": "knight",
@@ -604,47 +655,11 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "felicia__laslow",
+        "supportRelationshipId": "felicia__keaton",
         "seal": "partner",
-        "borrowedClassId": "mercenary",
-        "grantedClassId": "mercenary",
-        "resolution": "already_owned",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "felicia__niles",
-        "seal": "partner",
-        "borrowedClassId": "outlaw",
-        "grantedClassId": "outlaw",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "felicia__hana",
-        "seal": "friendship",
-        "borrowedClassId": "samurai",
-        "grantedClassId": "samurai",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "felicia__peri",
-        "seal": "friendship",
-        "borrowedClassId": "cavalier",
-        "grantedClassId": "cavalier",
-        "resolution": "direct",
+        "borrowedClassId": "wolfskin",
+        "grantedClassId": "fighter",
+        "resolution": "restricted_primary_fallback",
         "routes": [
           "conquest",
           "revelation"
@@ -735,30 +750,6 @@
         "reviewStatus": "candidate"
       },
       {
-        "supportRelationshipId": "felicia__jakob",
-        "seal": "partner",
-        "borrowedClassId": "troubadour",
-        "grantedClassId": "mercenary",
-        "resolution": "same_primary_fallback",
-        "routes": [
-          "birthright",
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "jakob__gunter",
-        "seal": "friendship",
-        "borrowedClassId": "cavalier",
-        "grantedClassId": "cavalier",
-        "resolution": "already_owned",
-        "routes": [
-          "conquest"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "jakob__azura",
         "seal": "partner",
         "borrowedClassId": "songstress",
@@ -772,11 +763,29 @@
         "reviewStatus": "accepted"
       },
       {
+        "supportRelationshipId": "felicia__jakob",
+        "seal": "partner",
+        "borrowedClassId": "troubadour",
+        "grantedClassId": "mercenary",
+        "resolution": "same_primary_fallback",
+        "routes": [
+          "birthright",
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
         "supportRelationshipId": "jakob__silas",
         "seal": "friendship",
         "borrowedClassId": "cavalier",
         "grantedClassId": "cavalier",
         "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
         "routes": [
           "birthright",
           "conquest",
@@ -798,10 +807,22 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "jakob__rinkah",
+        "supportRelationshipId": "jakob__hinoka",
         "seal": "partner",
-        "borrowedClassId": "oni_savage",
-        "grantedClassId": "oni_savage",
+        "borrowedClassId": "sky_knight",
+        "grantedClassId": "sky_knight",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "jakob__takumi",
+        "seal": "friendship",
+        "borrowedClassId": "archer",
+        "grantedClassId": "archer",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -822,34 +843,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "jakob__hana",
+        "supportRelationshipId": "jakob__kagero",
         "seal": "partner",
-        "borrowedClassId": "samurai",
-        "grantedClassId": "samurai",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "jakob__orochi",
-        "seal": "partner",
-        "borrowedClassId": "diviner",
-        "grantedClassId": "diviner",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "jakob__hinoka",
-        "seal": "partner",
-        "borrowedClassId": "sky_knight",
-        "grantedClassId": "sky_knight",
+        "borrowedClassId": "ninja",
+        "grantedClassId": "ninja",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -882,10 +879,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "jakob__takumi",
-        "seal": "friendship",
-        "borrowedClassId": "archer",
-        "grantedClassId": "archer",
+        "supportRelationshipId": "jakob__hana",
+        "seal": "partner",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -894,13 +891,37 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "jakob__kagero",
+        "supportRelationshipId": "jakob__rinkah",
         "seal": "partner",
-        "borrowedClassId": "ninja",
-        "grantedClassId": "ninja",
+        "borrowedClassId": "oni_savage",
+        "grantedClassId": "oni_savage",
         "resolution": "direct",
         "routes": [
           "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "jakob__orochi",
+        "seal": "partner",
+        "borrowedClassId": "diviner",
+        "grantedClassId": "diviner",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "jakob__camilla",
+        "seal": "partner",
+        "borrowedClassId": "wyvern_rider",
+        "grantedClassId": "wyvern_rider",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
           "revelation"
         ],
         "reviewStatus": "accepted"
@@ -918,35 +939,16 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "jakob__effie",
+        "supportRelationshipId": "jakob__peri",
         "seal": "partner",
-        "borrowedClassId": "knight",
-        "grantedClassId": "knight",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
         ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "jakob__nyx",
-        "seal": "partner",
-        "borrowedClassId": "dark_mage",
-        "grantedClassId": "dark_mage",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "jakob__camilla",
-        "seal": "partner",
-        "borrowedClassId": "wyvern_rider",
-        "grantedClassId": "wyvern_rider",
-        "resolution": "direct",
+        "alreadyOwnedVia": "heart_seal",
         "routes": [
           "conquest",
           "revelation"
@@ -978,11 +980,23 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "jakob__peri",
+        "supportRelationshipId": "jakob__effie",
         "seal": "partner",
-        "borrowedClassId": "cavalier",
-        "grantedClassId": "cavalier",
-        "resolution": "already_owned",
+        "borrowedClassId": "knight",
+        "grantedClassId": "knight",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "jakob__nyx",
+        "seal": "partner",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
+        "resolution": "direct",
         "routes": [
           "conquest",
           "revelation"
@@ -998,6 +1012,22 @@
         "routes": [
           "conquest",
           "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "gunter__jakob",
+        "seal": "friendship",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "conquest"
         ],
         "reviewStatus": "accepted"
       }
@@ -1077,6 +1107,19 @@
         "reviewStatus": "candidate"
       },
       {
+        "supportRelationshipId": "silas__azura",
+        "seal": "partner",
+        "borrowedClassId": "songstress",
+        "grantedClassId": "sky_knight",
+        "resolution": "restricted_primary_fallback",
+        "routes": [
+          "birthright",
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
         "supportRelationshipId": "felicia__silas",
         "seal": "partner",
         "borrowedClassId": "troubadour",
@@ -1116,19 +1159,6 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "silas__azura",
-        "seal": "partner",
-        "borrowedClassId": "songstress",
-        "grantedClassId": "sky_knight",
-        "resolution": "restricted_primary_fallback",
-        "routes": [
-          "birthright",
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "silas__mozu",
         "seal": "partner",
         "borrowedClassId": "villager",
@@ -1142,10 +1172,22 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "silas__rinkah",
+        "supportRelationshipId": "silas__ryoma",
+        "seal": "friendship",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "silas__hinoka",
         "seal": "partner",
-        "borrowedClassId": "oni_savage",
-        "grantedClassId": "oni_savage",
+        "borrowedClassId": "sky_knight",
+        "grantedClassId": "sky_knight",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -1166,34 +1208,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "silas__hana",
+        "supportRelationshipId": "silas__kagero",
         "seal": "partner",
-        "borrowedClassId": "samurai",
-        "grantedClassId": "samurai",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "silas__orochi",
-        "seal": "partner",
-        "borrowedClassId": "diviner",
-        "grantedClassId": "diviner",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "silas__hinoka",
-        "seal": "partner",
-        "borrowedClassId": "sky_knight",
-        "grantedClassId": "sky_knight",
+        "borrowedClassId": "ninja",
+        "grantedClassId": "ninja",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -1226,20 +1244,8 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "silas__kagero",
+        "supportRelationshipId": "silas__hana",
         "seal": "partner",
-        "borrowedClassId": "ninja",
-        "grantedClassId": "ninja",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "silas__ryoma",
-        "seal": "friendship",
         "borrowedClassId": "samurai",
         "grantedClassId": "samurai",
         "resolution": "direct",
@@ -1250,10 +1256,92 @@
         "reviewStatus": "accepted"
       },
       {
+        "supportRelationshipId": "silas__rinkah",
+        "seal": "partner",
+        "borrowedClassId": "oni_savage",
+        "grantedClassId": "oni_savage",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "silas__orochi",
+        "seal": "partner",
+        "borrowedClassId": "diviner",
+        "grantedClassId": "diviner",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "silas__camilla",
+        "seal": "partner",
+        "borrowedClassId": "wyvern_rider",
+        "grantedClassId": "wyvern_rider",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
         "supportRelationshipId": "silas__elise",
         "seal": "partner",
         "borrowedClassId": "troubadour",
         "grantedClassId": "troubadour",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "silas__peri",
+        "seal": "partner",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "base",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "silas__selena",
+        "seal": "partner",
+        "borrowedClassId": "mercenary",
+        "grantedClassId": "mercenary",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "silas__beruka",
+        "seal": "partner",
+        "borrowedClassId": "wyvern_rider",
+        "grantedClassId": "wyvern_rider",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -1279,54 +1367,6 @@
         "borrowedClassId": "dark_mage",
         "grantedClassId": "dark_mage",
         "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "silas__camilla",
-        "seal": "partner",
-        "borrowedClassId": "wyvern_rider",
-        "grantedClassId": "wyvern_rider",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "silas__selena",
-        "seal": "partner",
-        "borrowedClassId": "mercenary",
-        "grantedClassId": "mercenary",
-        "resolution": "already_owned",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "silas__beruka",
-        "seal": "partner",
-        "borrowedClassId": "wyvern_rider",
-        "grantedClassId": "wyvern_rider",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "silas__peri",
-        "seal": "partner",
-        "borrowedClassId": "cavalier",
-        "grantedClassId": "cavalier",
-        "resolution": "already_owned",
         "routes": [
           "conquest",
           "revelation"
@@ -1432,11 +1472,11 @@
         "reviewStatus": "candidate"
       },
       {
-        "supportRelationshipId": "felicia__kaze",
+        "supportRelationshipId": "kaze__azura",
         "seal": "partner",
-        "borrowedClassId": "troubadour",
-        "grantedClassId": "troubadour",
-        "resolution": "direct",
+        "borrowedClassId": "songstress",
+        "grantedClassId": "sky_knight",
+        "resolution": "restricted_primary_fallback",
         "routes": [
           "birthright",
           "conquest",
@@ -1445,11 +1485,11 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "kaze__azura",
+        "supportRelationshipId": "felicia__kaze",
         "seal": "partner",
-        "borrowedClassId": "songstress",
-        "grantedClassId": "sky_knight",
-        "resolution": "restricted_primary_fallback",
+        "borrowedClassId": "troubadour",
+        "grantedClassId": "troubadour",
+        "resolution": "direct",
         "routes": [
           "birthright",
           "conquest",
@@ -1484,10 +1524,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "kaze__rinkah",
+        "supportRelationshipId": "kaze__hinoka",
         "seal": "partner",
-        "borrowedClassId": "oni_savage",
-        "grantedClassId": "oni_savage",
+        "borrowedClassId": "sky_knight",
+        "grantedClassId": "sky_knight",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -1508,22 +1548,6 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "kaze__hana",
-        "seal": "partner",
-        "borrowedClassId": "samurai",
-        "grantedClassId": "samurai",
-        "resolution": "already_owned",
-        "resolutionSteps": [
-          "direct",
-          "already_owned"
-        ],
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "kaze__saizo",
         "seal": "friendship",
         "borrowedClassId": "ninja",
@@ -1533,6 +1557,7 @@
           "same_primary_fallback",
           "already_owned"
         ],
+        "alreadyOwnedVia": "heart_seal",
         "routes": [
           "birthright",
           "revelation"
@@ -1540,23 +1565,11 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "kaze__orochi",
+        "supportRelationshipId": "kaze__kagero",
         "seal": "partner",
-        "borrowedClassId": "diviner",
+        "borrowedClassId": "ninja",
         "grantedClassId": "diviner",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "kaze__hinoka",
-        "seal": "partner",
-        "borrowedClassId": "sky_knight",
-        "grantedClassId": "sky_knight",
-        "resolution": "direct",
+        "resolution": "same_primary_fallback",
         "routes": [
           "birthright",
           "revelation"
@@ -1588,13 +1601,66 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "kaze__kagero",
+        "supportRelationshipId": "kaze__hana",
         "seal": "partner",
-        "borrowedClassId": "ninja",
-        "grantedClassId": "diviner",
-        "resolution": "same_primary_fallback",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
         "routes": [
           "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "kaze__rinkah",
+        "seal": "partner",
+        "borrowedClassId": "oni_savage",
+        "grantedClassId": "oni_savage",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "kaze__orochi",
+        "seal": "partner",
+        "borrowedClassId": "diviner",
+        "grantedClassId": "diviner",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "kaze__xander",
+        "seal": "friendship",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "kaze__camilla",
+        "seal": "partner",
+        "borrowedClassId": "wyvern_rider",
+        "grantedClassId": "wyvern_rider",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
           "revelation"
         ],
         "reviewStatus": "accepted"
@@ -1612,34 +1678,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "kaze__effie",
+        "supportRelationshipId": "kaze__peri",
         "seal": "partner",
-        "borrowedClassId": "knight",
-        "grantedClassId": "knight",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "kaze__nyx",
-        "seal": "partner",
-        "borrowedClassId": "dark_mage",
-        "grantedClassId": "dark_mage",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "kaze__camilla",
-        "seal": "partner",
-        "borrowedClassId": "wyvern_rider",
-        "grantedClassId": "wyvern_rider",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -1672,10 +1714,22 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "kaze__peri",
+        "supportRelationshipId": "kaze__effie",
         "seal": "partner",
-        "borrowedClassId": "cavalier",
-        "grantedClassId": "cavalier",
+        "borrowedClassId": "knight",
+        "grantedClassId": "knight",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "kaze__nyx",
+        "seal": "partner",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -1688,18 +1742,6 @@
         "seal": "partner",
         "borrowedClassId": "fighter",
         "grantedClassId": "fighter",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "kaze__xander",
-        "seal": "friendship",
-        "borrowedClassId": "cavalier",
-        "grantedClassId": "cavalier",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -1772,8 +1814,8 @@
     ],
     "sealGrants": [
       {
-        "supportRelationshipId": "mozu__corrin_male",
-        "seal": "partner",
+        "supportRelationshipId": "mozu__corrin_female",
+        "seal": "friendship",
         "borrowedClassId": "avatar_talent",
         "grantedClassId": "avatar_talent",
         "resolution": "variable",
@@ -1785,8 +1827,8 @@
         "reviewStatus": "candidate"
       },
       {
-        "supportRelationshipId": "mozu__corrin_female",
-        "seal": "friendship",
+        "supportRelationshipId": "mozu__corrin_male",
+        "seal": "partner",
         "borrowedClassId": "avatar_talent",
         "grantedClassId": "avatar_talent",
         "resolution": "variable",
@@ -1811,19 +1853,6 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "kaze__mozu",
-        "seal": "partner",
-        "borrowedClassId": "ninja",
-        "grantedClassId": "ninja",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "silas__mozu",
         "seal": "partner",
         "borrowedClassId": "cavalier",
@@ -1837,11 +1866,41 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "mozu__subaki",
+        "supportRelationshipId": "kaze__mozu",
         "seal": "partner",
-        "borrowedClassId": "sky_knight",
-        "grantedClassId": "sky_knight",
+        "borrowedClassId": "ninja",
+        "grantedClassId": "ninja",
         "resolution": "direct",
+        "routes": [
+          "birthright",
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "mozu__ryoma",
+        "seal": "partner",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
+        "resolution": "direct",
+        "routes": [
+          "birthright",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "mozu__takumi",
+        "seal": "partner",
+        "borrowedClassId": "archer",
+        "grantedClassId": "archer",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
         "routes": [
           "birthright",
           "revelation"
@@ -1873,10 +1932,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "mozu__hayato",
+        "supportRelationshipId": "mozu__hinata",
         "seal": "partner",
-        "borrowedClassId": "diviner",
-        "grantedClassId": "diviner",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -1897,10 +1956,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "mozu__hinata",
+        "supportRelationshipId": "mozu__subaki",
         "seal": "partner",
-        "borrowedClassId": "samurai",
-        "grantedClassId": "samurai",
+        "borrowedClassId": "sky_knight",
+        "grantedClassId": "sky_knight",
         "resolution": "direct",
         "routes": [
           "birthright",
@@ -1909,11 +1968,11 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "mozu__takumi",
+        "supportRelationshipId": "mozu__hayato",
         "seal": "partner",
-        "borrowedClassId": "archer",
-        "grantedClassId": "archer",
-        "resolution": "already_owned",
+        "borrowedClassId": "diviner",
+        "grantedClassId": "diviner",
+        "resolution": "direct",
         "routes": [
           "birthright",
           "revelation"
@@ -1933,22 +1992,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "mozu__ryoma",
+        "supportRelationshipId": "mozu__xander",
         "seal": "partner",
-        "borrowedClassId": "samurai",
-        "grantedClassId": "samurai",
-        "resolution": "direct",
-        "routes": [
-          "birthright",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "mozu__arthur",
-        "seal": "partner",
-        "borrowedClassId": "fighter",
-        "grantedClassId": "fighter",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -1957,10 +2004,22 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "mozu__effie",
-        "seal": "friendship",
-        "borrowedClassId": "knight",
-        "grantedClassId": "knight",
+        "supportRelationshipId": "mozu__leo",
+        "seal": "partner",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "mozu__laslow",
+        "seal": "partner",
+        "borrowedClassId": "mercenary",
+        "grantedClassId": "mercenary",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -1993,10 +2052,10 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "mozu__nyx",
+        "supportRelationshipId": "mozu__effie",
         "seal": "friendship",
-        "borrowedClassId": "dark_mage",
-        "grantedClassId": "dark_mage",
+        "borrowedClassId": "knight",
+        "grantedClassId": "knight",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -2005,10 +2064,22 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "mozu__laslow",
+        "supportRelationshipId": "mozu__arthur",
         "seal": "partner",
-        "borrowedClassId": "mercenary",
-        "grantedClassId": "mercenary",
+        "borrowedClassId": "fighter",
+        "grantedClassId": "fighter",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "mozu__nyx",
+        "seal": "friendship",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
         "resolution": "direct",
         "routes": [
           "conquest",
@@ -2029,35 +2100,11 @@
         "reviewStatus": "accepted"
       },
       {
-        "supportRelationshipId": "mozu__leo",
-        "seal": "partner",
-        "borrowedClassId": "dark_mage",
-        "grantedClassId": "dark_mage",
-        "resolution": "direct",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "supportRelationshipId": "mozu__keaton",
         "seal": "partner",
         "borrowedClassId": "wolfskin",
         "grantedClassId": "fighter",
         "resolution": "restricted_primary_fallback",
-        "routes": [
-          "conquest",
-          "revelation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "supportRelationshipId": "mozu__xander",
-        "seal": "partner",
-        "borrowedClassId": "cavalier",
-        "grantedClassId": "cavalier",
-        "resolution": "direct",
         "routes": [
           "conquest",
           "revelation"
@@ -2215,6 +2262,1050 @@
     ]
   },
   {
+    "unitId": "gunter",
+    "startingClassId": "great_knight",
+    "baseClassSet": [
+      "cavalier"
+    ],
+    "heartSealClassSet": [
+      "mercenary",
+      "wyvern_rider"
+    ],
+    "corrinTalentOnlyClassSet": [
+      "apothecary",
+      "archer",
+      "dark_mage",
+      "diviner",
+      "fighter",
+      "knight",
+      "monk",
+      "ninja",
+      "oni_savage",
+      "outlaw",
+      "samurai",
+      "sky_knight",
+      "spear_fighter"
+    ],
+    "sealGrants": [
+      {
+        "supportRelationshipId": "gunter__corrin_female",
+        "seal": "partner",
+        "borrowedClassId": "avatar_talent",
+        "grantedClassId": "avatar_talent",
+        "resolution": "variable",
+        "routes": [
+          "conquest"
+        ],
+        "reviewStatus": "candidate"
+      },
+      {
+        "supportRelationshipId": "gunter__jakob",
+        "seal": "friendship",
+        "borrowedClassId": "troubadour",
+        "grantedClassId": "troubadour",
+        "resolution": "direct",
+        "routes": [
+          "conquest"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B10:F11",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-class-sets",
+        "locator": "Shared Characters > Gunter",
+        "fields": [
+          "baseClassSet",
+          "heartSealClassSet"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Class Sets and Supports",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants",
+          "corrinTalentOnlyClassSet"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Gunter and Jakob A+ support",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-partner-seal-chart",
+        "locator": "Gunter partner outcome with female Corrin",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "elise",
+    "startingClassId": "troubadour",
+    "baseClassSet": [
+      "troubadour"
+    ],
+    "heartSealClassSet": [
+      "wyvern_rider"
+    ],
+    "corrinTalentOnlyClassSet": [
+      "apothecary",
+      "diviner",
+      "monk",
+      "oni_savage",
+      "spear_fighter"
+    ],
+    "sealGrants": [
+      {
+        "supportRelationshipId": "elise__corrin_male",
+        "seal": "partner",
+        "borrowedClassId": "avatar_talent",
+        "grantedClassId": "avatar_talent",
+        "resolution": "variable",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "candidate"
+      },
+      {
+        "supportRelationshipId": "azura__elise",
+        "seal": "friendship",
+        "borrowedClassId": "songstress",
+        "grantedClassId": "sky_knight",
+        "resolution": "restricted_primary_fallback",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "jakob__elise",
+        "seal": "partner",
+        "borrowedClassId": "troubadour",
+        "grantedClassId": "cavalier",
+        "resolution": "same_primary_fallback",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "silas__elise",
+        "seal": "partner",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "kaze__elise",
+        "seal": "partner",
+        "borrowedClassId": "ninja",
+        "grantedClassId": "ninja",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__camilla",
+        "seal": "friendship",
+        "borrowedClassId": "wyvern_rider",
+        "grantedClassId": "wyvern_rider",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__laslow",
+        "seal": "partner",
+        "borrowedClassId": "mercenary",
+        "grantedClassId": "mercenary",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__odin",
+        "seal": "partner",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__niles",
+        "seal": "partner",
+        "borrowedClassId": "outlaw",
+        "grantedClassId": "outlaw",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__effie",
+        "seal": "friendship",
+        "borrowedClassId": "knight",
+        "grantedClassId": "knight",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__arthur",
+        "seal": "partner",
+        "borrowedClassId": "fighter",
+        "grantedClassId": "fighter",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__benny",
+        "seal": "partner",
+        "borrowedClassId": "knight",
+        "grantedClassId": "knight",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__keaton",
+        "seal": "partner",
+        "borrowedClassId": "wolfskin",
+        "grantedClassId": "fighter",
+        "resolution": "restricted_primary_fallback",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__ryoma",
+        "seal": "partner",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
+        "resolution": "direct",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__takumi",
+        "seal": "partner",
+        "borrowedClassId": "archer",
+        "grantedClassId": "archer",
+        "resolution": "direct",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__sakura",
+        "seal": "friendship",
+        "borrowedClassId": "shrine_maiden",
+        "grantedClassId": "shrine_maiden",
+        "resolution": "direct",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "艾丽泽!B10:F14",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-class-sets",
+        "locator": "Exclusive Characters > Elise",
+        "fields": [
+          "baseClassSet",
+          "heartSealClassSet"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Class Sets > Standard, Friendship, and Partner Sets",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants",
+          "corrinTalentOnlyClassSet"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Elise A+ outcomes",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-partner-seal-chart",
+        "locator": "Elise partner outcomes",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "effie",
+    "startingClassId": "knight",
+    "baseClassSet": [
+      "knight"
+    ],
+    "heartSealClassSet": [
+      "troubadour"
+    ],
+    "corrinTalentOnlyClassSet": [
+      "apothecary",
+      "oni_savage",
+      "sky_knight",
+      "spear_fighter",
+      "wyvern_rider"
+    ],
+    "sealGrants": [
+      {
+        "supportRelationshipId": "effie__corrin_male",
+        "seal": "partner",
+        "borrowedClassId": "avatar_talent",
+        "grantedClassId": "avatar_talent",
+        "resolution": "variable",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "candidate"
+      },
+      {
+        "supportRelationshipId": "jakob__effie",
+        "seal": "partner",
+        "borrowedClassId": "troubadour",
+        "grantedClassId": "troubadour",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "silas__effie",
+        "seal": "partner",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "kaze__effie",
+        "seal": "partner",
+        "borrowedClassId": "ninja",
+        "grantedClassId": "ninja",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "mozu__effie",
+        "seal": "friendship",
+        "borrowedClassId": "villager",
+        "grantedClassId": "archer",
+        "resolution": "restricted_primary_fallback",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__xander",
+        "seal": "partner",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__leo",
+        "seal": "partner",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__effie",
+        "seal": "friendship",
+        "borrowedClassId": "troubadour",
+        "grantedClassId": "troubadour",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__laslow",
+        "seal": "partner",
+        "borrowedClassId": "mercenary",
+        "grantedClassId": "mercenary",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__odin",
+        "seal": "partner",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__niles",
+        "seal": "partner",
+        "borrowedClassId": "outlaw",
+        "grantedClassId": "outlaw",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__effie",
+        "seal": "partner",
+        "borrowedClassId": "fighter",
+        "grantedClassId": "fighter",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__nyx",
+        "seal": "friendship",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__benny",
+        "seal": "partner",
+        "borrowedClassId": "knight",
+        "grantedClassId": "fighter",
+        "resolution": "same_primary_fallback",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__keaton",
+        "seal": "partner",
+        "borrowedClassId": "wolfskin",
+        "grantedClassId": "fighter",
+        "resolution": "restricted_primary_fallback",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__azama",
+        "seal": "partner",
+        "borrowedClassId": "monk",
+        "grantedClassId": "shrine_maiden",
+        "resolution": "gender_parallel",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__hana",
+        "seal": "friendship",
+        "borrowedClassId": "samurai",
+        "grantedClassId": "samurai",
+        "resolution": "direct",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "effie__hayato",
+        "seal": "partner",
+        "borrowedClassId": "diviner",
+        "grantedClassId": "diviner",
+        "resolution": "direct",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-class-sets",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie",
+        "locator": "Fire Emblem Fates > Reclassing options",
+        "fields": [
+          "baseClassSet",
+          "heartSealClassSet"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie-supports",
+        "locator": "Additional class tree for every S and A+ support",
+        "fields": [
+          "sealGrants",
+          "corrinTalentOnlyClassSet"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-partner-seal-chart",
+        "locator": "Effie S-support class grants",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Effie A+ class grants",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "arthur",
+    "startingClassId": "fighter",
+    "baseClassSet": [
+      "fighter"
+    ],
+    "heartSealClassSet": [
+      "cavalier"
+    ],
+    "corrinTalentOnlyClassSet": [
+      "apothecary",
+      "diviner",
+      "oni_savage",
+      "samurai",
+      "spear_fighter"
+    ],
+    "sealGrants": [
+      {
+        "supportRelationshipId": "arthur__corrin_female",
+        "seal": "partner",
+        "borrowedClassId": "avatar_talent",
+        "grantedClassId": "avatar_talent",
+        "resolution": "variable",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "candidate"
+      },
+      {
+        "supportRelationshipId": "azura__arthur",
+        "seal": "partner",
+        "borrowedClassId": "songstress",
+        "grantedClassId": "sky_knight",
+        "resolution": "restricted_primary_fallback",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "felicia__arthur",
+        "seal": "partner",
+        "borrowedClassId": "troubadour",
+        "grantedClassId": "troubadour",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "mozu__arthur",
+        "seal": "partner",
+        "borrowedClassId": "villager",
+        "grantedClassId": "archer",
+        "resolution": "restricted_primary_fallback",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__camilla",
+        "seal": "partner",
+        "borrowedClassId": "wyvern_rider",
+        "grantedClassId": "wyvern_rider",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "elise__arthur",
+        "seal": "partner",
+        "borrowedClassId": "troubadour",
+        "grantedClassId": "troubadour",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__peri",
+        "seal": "partner",
+        "borrowedClassId": "cavalier",
+        "grantedClassId": "cavalier",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__selena",
+        "seal": "partner",
+        "borrowedClassId": "mercenary",
+        "grantedClassId": "mercenary",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__beruka",
+        "seal": "partner",
+        "borrowedClassId": "wyvern_rider",
+        "grantedClassId": "wyvern_rider",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__niles",
+        "seal": "friendship",
+        "borrowedClassId": "outlaw",
+        "grantedClassId": "outlaw",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__effie",
+        "seal": "partner",
+        "borrowedClassId": "knight",
+        "grantedClassId": "knight",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__nyx",
+        "seal": "partner",
+        "borrowedClassId": "dark_mage",
+        "grantedClassId": "dark_mage",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__charlotte",
+        "seal": "partner",
+        "borrowedClassId": "fighter",
+        "grantedClassId": "fighter",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "direct",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "base",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__benny",
+        "seal": "friendship",
+        "borrowedClassId": "knight",
+        "grantedClassId": "knight",
+        "resolution": "direct",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__keaton",
+        "seal": "friendship",
+        "borrowedClassId": "wolfskin",
+        "grantedClassId": "outlaw",
+        "resolution": "same_primary_fallback",
+        "resolutionSteps": [
+          "restricted_primary_fallback",
+          "same_primary_fallback"
+        ],
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__kagero",
+        "seal": "partner",
+        "borrowedClassId": "ninja",
+        "grantedClassId": "ninja",
+        "resolution": "direct",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__setsuna",
+        "seal": "partner",
+        "borrowedClassId": "archer",
+        "grantedClassId": "archer",
+        "resolution": "direct",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "supportRelationshipId": "arthur__azama",
+        "seal": "friendship",
+        "borrowedClassId": "monk",
+        "grantedClassId": "monk",
+        "resolution": "direct",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-class-sets",
+        "locator": "Exclusive Characters > Arthur",
+        "fields": [
+          "baseClassSet",
+          "heartSealClassSet"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Class Sets > Standard, Friendship, and Partner Sets",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants",
+          "corrinTalentOnlyClassSet"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-partner-seal-chart",
+        "locator": "Arthur partner outcomes",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Arthur A+ outcomes",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "flora",
+    "startingClassId": "maid",
+    "baseClassSet": [
+      "troubadour"
+    ],
+    "heartSealClassSet": [
+      "mercenary",
+      "dark_mage"
+    ],
+    "corrinTalentOnlyClassSet": [
+      "apothecary",
+      "archer",
+      "cavalier",
+      "diviner",
+      "fighter",
+      "knight",
+      "monk",
+      "ninja",
+      "oni_savage",
+      "outlaw",
+      "samurai",
+      "sky_knight",
+      "spear_fighter",
+      "wyvern_rider"
+    ],
+    "sealGrants": [
+      {
+        "supportRelationshipId": "flora__corrin_male",
+        "seal": "partner",
+        "borrowedClassId": "avatar_talent",
+        "grantedClassId": "avatar_talent",
+        "resolution": "variable",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "candidate"
+      },
+      {
+        "supportRelationshipId": "felicia__flora",
+        "seal": "friendship",
+        "borrowedClassId": "troubadour",
+        "grantedClassId": "mercenary",
+        "resolution": "already_owned",
+        "resolutionSteps": [
+          "same_primary_fallback",
+          "already_owned"
+        ],
+        "alreadyOwnedVia": "heart_seal",
+        "routes": [
+          "conquest",
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "芙洛拉!B9:F10",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-class-sets",
+        "locator": "Exclusive Characters > Flora",
+        "fields": [
+          "baseClassSet",
+          "heartSealClassSet"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Class Sets and Supports",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants",
+          "corrinTalentOnlyClassSet"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-flora-supports",
+        "locator": "Felicia A+ support: Troubadour resolves to Mercenary",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fe14-partner-seal-chart",
+        "locator": "Flora partner outcome with male Corrin",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "izana",
     "startingClassId": "onmyoji",
     "baseClassSet": [
@@ -2290,6 +3381,188 @@
       {
         "sourceId": "fe14-partner-seal-chart",
         "locator": "Izana partner outcome with female Corrin",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "yukimura",
+    "startingClassId": "mechanist",
+    "baseClassSet": [
+      "apothecary"
+    ],
+    "heartSealClassSet": [
+      "samurai",
+      "monk"
+    ],
+    "corrinTalentOnlyClassSet": [
+      "archer",
+      "cavalier",
+      "dark_mage",
+      "diviner",
+      "fighter",
+      "knight",
+      "mercenary",
+      "ninja",
+      "oni_savage",
+      "outlaw",
+      "spear_fighter",
+      "sky_knight",
+      "troubadour",
+      "wyvern_rider"
+    ],
+    "sealGrants": [
+      {
+        "supportRelationshipId": "yukimura__corrin_female",
+        "seal": "partner",
+        "borrowedClassId": "avatar_talent",
+        "grantedClassId": "avatar_talent",
+        "resolution": "variable",
+        "routes": [
+          "birthright"
+        ],
+        "reviewStatus": "candidate"
+      }
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "幸村!B8:F9",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-class-sets",
+        "locator": "Exclusive Characters > Yukimura",
+        "fields": [
+          "baseClassSet",
+          "heartSealClassSet"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-yukimura",
+        "locator": "Fire Emblem Fates > Class Sets and Supports",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants",
+          "corrinTalentOnlyClassSet"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-partner-seal-chart",
+        "locator": "Yukimura partner outcome with female Corrin",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "fuga",
+    "startingClassId": "master_of_arms",
+    "baseClassSet": [
+      "samurai"
+    ],
+    "heartSealClassSet": [
+      "oni_savage",
+      "monk"
+    ],
+    "corrinTalentOnlyClassSet": [
+      "apothecary",
+      "archer",
+      "cavalier",
+      "dark_mage",
+      "fighter",
+      "knight",
+      "mercenary",
+      "ninja",
+      "outlaw",
+      "sky_knight",
+      "spear_fighter",
+      "troubadour",
+      "wyvern_rider"
+    ],
+    "sealGrants": [
+      {
+        "supportRelationshipId": "fuga__corrin_female",
+        "seal": "partner",
+        "borrowedClassId": "avatar_talent",
+        "grantedClassId": "avatar_talent",
+        "resolution": "variable",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "candidate"
+      },
+      {
+        "supportRelationshipId": "fuga__hayato",
+        "seal": "friendship",
+        "borrowedClassId": "diviner",
+        "grantedClassId": "diviner",
+        "resolution": "direct",
+        "routes": [
+          "revelation"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "风雅!B9:F10",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-other-class-sets",
+        "locator": "3rd route exclusive > Fuga",
+        "fields": [
+          "baseClassSet",
+          "heartSealClassSet"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-fuga",
+        "locator": "Fire Emblem Fates > Class Sets and Supports",
+        "fields": [
+          "startingClassId",
+          "baseClassSet",
+          "heartSealClassSet",
+          "sealGrants",
+          "corrinTalentOnlyClassSet"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-friendship-seal-chart",
+        "locator": "Fuga friendship outcome with Hayato",
+        "fields": [
+          "sealGrants"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fe14-partner-seal-chart",
+        "locator": "Fuga partner outcome with female Corrin",
         "fields": [
           "sealGrants"
         ],

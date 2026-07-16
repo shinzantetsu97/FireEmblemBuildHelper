@@ -203,7 +203,7 @@ Do not bulk-convert all workbook sheets. Do not paste a complete external table 
 
 Process exactly one current unit through the full gate below before starting the next unit.
 
-Before entering a unit, read the FE14 canonical ordering reference. Keep every normalized JSON file in that canonical unit order, including records introduced for later units through relationships. Do not use processing order or a frontend sort as a substitute for maintaining readable, canonically ordered source data.
+Before entering a unit, read the FE14 canonical ordering reference. Keep every normalized JSON file ordered first by the record's available-route count (descending), then by canonical unit number (ascending). For unit-keyed records, use the roster unit's `availableRoutes.length`; for support relationships and seal grants, use the record's own `routes.length`, then the relevant partner's unit number. This includes records introduced for later units through relationships. Do not use processing order or a frontend sort as a substitute for maintaining readable source data.
 
 For this milestone, [the Fire Emblem Wiki's first-generation character list](https://fireemblem.fandom.com/wiki/List_of_characters_in_Fire_Emblem_Fates) is the canonical directory-order reference. Store its stable directory number as `unitNo`. The review workflow's sequence is separately stored as `processingOrder`; it is not a license to reorder source JSON.
 
@@ -281,11 +281,11 @@ Process units in this exact order unless the user explicitly changes it. Corrin 
 | 5 | `azura` | Azura | `阿库娅` | [x] Shared |
 | 6 | `mozu` | Mozu | `物集` | [x] Shared |
 | 7 | `shura` | Shura | `阿修罗` | [x] Shared/special |
-| 8 | `izana` | Izana | `伊邪那` | Shared/special |
-| 9 | `gunter` | Gunter | `玖塔` | Nohr/special |
-| 10 | `flora` | Flora | `芙洛拉` | Nohr/special |
-| 11 | `elise` | Elise | `艾丽泽` | Nohr |
-| 12 | `arthur` | Arthur | `哈罗德` | Nohr |
+| 8 | `izana` | Izana | `伊邪那` | [x] Shared/special |
+| 9 | `gunter` | Gunter | `玖塔` | [x] Nohr/special |
+| 10 | `flora` | Flora | `芙洛拉` | [x] Nohr/special |
+| 11 | `elise` | Elise | `艾丽泽` | [x] Nohr |
+| 12 | `arthur` | Arthur | `哈罗德` | [x] Nohr |
 | 13 | `effie` | Effie | `艾尔菲` | Nohr |
 | 14 | `odin` | Odin | `奥丁` | Nohr |
 | 15 | `niles` | Niles | `零` | Nohr |
@@ -318,8 +318,8 @@ Process units in this exact order unless the user explicitly changes it. Corrin 
 | 42 | `kaden` | Kaden | `锦` | Hoshido |
 | 43 | `scarlet` | Scarlet | `克里姆森` | Hoshido/special |
 | 44 | `ryoma` | Ryoma | `龙马` | Hoshido |
-| 45 | `yukimura` | Yukimura | `幸村` | Hoshido/special |
-| 46 | `fuga` | Fuga | `风雅` | Revelation/special |
+| 45 | `yukimura` | Yukimura | `幸村` | [x] Hoshido/special |
+| 46 | `fuga` | Fuga | `风雅` | [x] Revelation/special |
 | 47 | `anna` | Anna | `安娜` | DLC |
 | 48 | `corrin` | Corrin | `神威` | Avatar; always last |
 

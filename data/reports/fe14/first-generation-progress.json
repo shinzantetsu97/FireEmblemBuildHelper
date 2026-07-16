@@ -172,7 +172,7 @@
       "order": 8,
       "unitId": "izana",
       "displayName": "Izana",
-      "status": "in_review",
+      "status": "accepted",
       "domains": {
         "identity": true,
         "availability": true,
@@ -190,17 +190,17 @@
       "order": 9,
       "unitId": "gunter",
       "displayName": "Gunter",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
       "openIssues": []
     },
@@ -208,17 +208,17 @@
       "order": 10,
       "unitId": "flora",
       "displayName": "Flora",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
       "openIssues": []
     },
@@ -226,17 +226,17 @@
       "order": 11,
       "unitId": "elise",
       "displayName": "Elise",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
       "openIssues": []
     },
@@ -244,17 +244,17 @@
       "order": 12,
       "unitId": "arthur",
       "displayName": "Arthur",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
       "openIssues": []
     },
@@ -262,19 +262,30 @@
       "order": 13,
       "unitId": "effie",
       "displayName": "Effie",
-      "status": "not_started",
+      "status": "in_review",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "effie"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Effie's 艾尔菲 workbook sheet still requires direct inspection; the required local spreadsheet runtime was unavailable, so current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "effie"
+        }
+      ]
     },
     {
       "order": 14,
@@ -838,17 +849,17 @@
       "order": 45,
       "unitId": "yukimura",
       "displayName": "Yukimura",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
-        "supports": false,
-        "classAccess": false,
-        "personalSkill": false
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
       },
       "openIssues": []
     },
@@ -856,17 +867,17 @@
       "order": 46,
       "unitId": "fuga",
       "displayName": "Fuga",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
-        "supports": false,
-        "classAccess": false,
-        "personalSkill": false
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
       },
       "openIssues": []
     },

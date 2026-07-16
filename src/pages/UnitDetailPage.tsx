@@ -55,7 +55,9 @@ export default function UnitDetailPage({ slug }: { slug: string }) {
           FE14 Units
         </AppLink>
 
-        {unit.identity.id === "izana" ? <IzanaDataAlert /> : null}
+        {["izana", "yukimura", "flora", "fuga"].includes(unit.identity.id) ? (
+          <CastleRecruitDataAlert unitName={unit.identity.displayName} />
+        ) : null}
 
         <UnitHeader unit={unit} />
 
@@ -91,18 +93,18 @@ export default function UnitDetailPage({ slug }: { slug: string }) {
   );
 }
 
-function IzanaDataAlert() {
+function CastleRecruitDataAlert({ unitName }: { unitName: string }) {
   return (
-    <Alert className="izana-data-alert" variant="danger">
+    <Alert className="castle-recruit-data-alert" variant="danger">
       <TriangleAlert aria-hidden="true" size={28} />
       <div>
         <strong>Sharing is caring.</strong>
         <p>
-          The more you care about Izana, the more reliable this table becomes. This game has been out for more than
-          10 years, and no one has produced a concrete, accurate data table for Izana yet, FFS. If you know a verified
+          The more you care about {unitName}, the more reliable this table becomes. This game has been out for more than
+          10 years, and no one has produced a concrete, accurate data table for {unitName} yet, FFS. If you know a verified
           source or have personally verified this data, I would be most obliged.
         </p>
-        <p className="izana-table-flip">Until then, (╯‵□′)╯︵┻━┻</p>
+        <p className="castle-recruit-table-flip">Until then, (╯‵□′)╯︵┻━┻</p>
       </div>
     </Alert>
   );
@@ -120,6 +122,7 @@ function UnitHeader({ unit }: { unit: UnitRuntime }) {
           </span>
           <span>First generation</span>
           <ClassTreeLabel classId={unit.classAccess?.startingClassId ?? "unknown"} />
+          {identity.unitTags?.map((tag) => <span key={tag}>{displayId(tag)} unit</span>)}
         </div>
         <h1>{identity.displayName}</h1>
         <p>
@@ -129,10 +132,6 @@ function UnitHeader({ unit }: { unit: UnitRuntime }) {
         </p>
       </div>
       <dl className="unit-header-facts">
-        <div>
-          <dt>Personal skill</dt>
-          <dd>{unit.personalSkill?.names.en}</dd>
-        </div>
         <div>
           <dt>Dragon Vein</dt>
           <dd>{identity.dragonVein ? "Yes" : "No"}</dd>
@@ -176,6 +175,9 @@ function UnitOverview({ unit }: { unit: UnitRuntime }) {
               <dl>
                 <div><dt>Weapon ranks</dt><dd>{formatWeaponRanks(unit, scenario.id)}</dd></div>
                 <div><dt>Inventory</dt><dd>{formatInventory(unit, scenario.id)}</dd></div>
+                {scenario.gainsExperience === false ? (
+                  <div><dt>EXP gain</dt><dd>Disabled</dd></div>
+                ) : null}
                 {scenario.myCastleRecruitment ? (
                   <div className="recruitment-trigger">
                     <dt>Recruitment trigger</dt>
@@ -215,6 +217,7 @@ function UnitOverview({ unit }: { unit: UnitRuntime }) {
             </p>
           ))}
         {unit.identity.notes?.map((note) => <p className="route-note" key={note}>* {note}</p>)}
+        {unit.identity.supportNotes?.map((note) => <p className="route-note" key={note}>* {note}</p>)}
       </section>
 
       <section className="data-section" aria-labelledby="stats-heading">
@@ -352,7 +355,7 @@ function AutoLevelSummary({ scenario }: { scenario: AvailabilityScenario }) {
         {autoLevel.weaponProficiencyMilestonesStatus === "unresolved" ? "; exact rank milestones remain unresolved." : "."}
       </p>
       <p>
-        <strong>Stats:</strong> Level 5 bases + (individual growth rates + Onmyoji class growth rates) × levels gained.
+        <strong>Stats:</strong> Level {autoLevel.statBaseLevel} bases + (individual growth rates + {displayId(autoLevel.growthClassId)} class growth rates) × levels gained.
         Round each resulting stat to the nearest integer; exact .5 results round up.
       </p>
       <p>{autoLevel.note}</p>
@@ -397,13 +400,49 @@ function SupportDirectory({ unit }: { unit: UnitRuntime }) {
   const grantsBySupport = new Map(
     (unit.classAccess?.sealGrants ?? []).map((grant) => [grant.supportRelationshipId, grant]),
   );
-  const friendship = unit.supports.filter((support) => support.kind !== "romantic");
-  const romantic = unit.supports.filter((support) => support.kind === "romantic");
+  const alreadyOwnedVia = new Set(
+    (unit.classAccess?.sealGrants ?? [])
+      .map((grant) => grant.alreadyOwnedVia)
+      .filter((value): value is NonNullable<SealGrant["alreadyOwnedVia"]> => value !== undefined),
+  );
+  const rosterById = new Map(fe14Data.roster.map((rosterUnit) => [rosterUnit.id, rosterUnit]));
+  const bySupportRoutesThenPartnerUnitNo = (
+    left: UnitRuntime["supports"][number],
+    right: UnitRuntime["supports"][number],
+  ) => {
+    const leftPartner = rosterById.get(left.partnerUnitId);
+    const rightPartner = rosterById.get(right.partnerUnitId);
+    return right.routes.length - left.routes.length ||
+      (leftPartner?.unitNo ?? Number.MAX_SAFE_INTEGER) - (rightPartner?.unitNo ?? Number.MAX_SAFE_INTEGER) ||
+      left.id.localeCompare(right.id);
+  };
+  const friendship = unit.supports
+    .filter((support) => support.kind !== "romantic")
+    .sort(bySupportRoutesThenPartnerUnitNo);
+  const romantic = unit.supports
+    .filter((support) => support.kind === "romantic")
+    .sort(bySupportRoutesThenPartnerUnitNo);
 
   return (
-    <div className="support-groups">
-      <SupportGroup title="A / A+ supports" supports={friendship} grants={grantsBySupport} />
-      <SupportGroup title="Partner Seal (S)" supports={romantic} grants={grantsBySupport} />
+    <div>
+      {unit.identity.supportNotes?.map((note) => (
+        <p className="support-availability-note" key={note}>
+          <strong>Support availability:</strong> {note}
+        </p>
+      ))}
+      <div className="support-groups">
+        <SupportGroup title="Friendship Seal (A+)" supports={friendship} grants={grantsBySupport} />
+        <SupportGroup title="Partner Seal (S)" supports={romantic} grants={grantsBySupport} />
+      </div>
+      {alreadyOwnedVia.size > 0 ? (
+        <p className="seal-owned-legend">
+          <TriangleAlert aria-hidden="true" size={17} />
+          <span>
+            <strong>Caution:</strong> Marked classes are already available through this unit&apos;s{" "}
+            {formatOwnedSources(alreadyOwnedVia)}. The listed seal does not add a new class tree.
+          </span>
+        </p>
+      ) : null}
     </div>
   );
 }
@@ -428,13 +467,30 @@ function SupportGroup({
             <div className="support-row" key={support.id}>
               <span>{partner?.displayName ?? displayId(support.partnerUnitId)}</span>
               <span>{support.routes.map(formatRoute).join(" / ")}</span>
-              <strong>{grant ? <ClassTreeLabel classId={grant.grantedClassId} /> : "No class grant"}</strong>
+              <div className="support-grant-result">
+                <strong>
+                  {grant ? <ClassTreeLabel classId={grant.grantedClassId} /> : "No class grant"}
+                  {grant?.alreadyOwnedVia ? (
+                    <TriangleAlert
+                      aria-label={`Already available via ${grant.alreadyOwnedVia === "base" ? "Base class" : "Heart Seal"}`}
+                      className="seal-owned-marker"
+                      size={16}
+                    />
+                  ) : null}
+                </strong>
+              </div>
             </div>
           );
         })}
       </div>
     </div>
   );
+}
+
+function formatOwnedSources(sources: Set<"base" | "heart_seal">): string {
+  if (sources.has("base") && sources.has("heart_seal")) return "base class set or Heart Seal options";
+  if (sources.has("base")) return "base class set";
+  return "Heart Seal options";
 }
 
 function SourceList({ unit }: { unit: UnitRuntime }) {
@@ -516,13 +572,22 @@ function formatRouteJoin(
   routeJoin: AvailabilityScenario["routeJoins"][number],
 ): string {
   if (scenario.myCastleRecruitment) return `After Chapter ${routeJoin.chapter}`;
+  if (routeJoin.turn) return `Chapter ${routeJoin.chapter} (turn ${routeJoin.turn})`;
   return `Chapter ${routeJoin.chapter}${routeJoin.timing === "start" ? "" : ` (${routeJoin.timing})`}`;
 }
 
 function formatMyCastleTrigger(scenario: AvailabilityScenario): string {
   const recruitment = scenario.myCastleRecruitment;
   if (!recruitment) return "—";
-  return `${displayId(recruitment.facilityId)} Lv. ${recruitment.facilityLevel}, then a My Castle refresh by waiting or completing a map`;
+  const facilities = recruitment.facilityIds
+    ? `Any of ${formatDisjunction(recruitment.facilityIds.map(displayId))}`
+    : displayId(recruitment.facilityId ?? "unknown_facility");
+  return `${facilities} Lv. ${recruitment.facilityLevel}, then a My Castle refresh by waiting or completing a map`;
+}
+
+function formatDisjunction(values: string[]): string {
+  if (values.length === 2) return `${values[0]} or ${values[1]}`;
+  return `${values.slice(0, -1).join(", ")}, or ${values.at(-1)}`;
 }
 
 function formatInventory(unit: UnitRuntime, availabilityId: string): string {

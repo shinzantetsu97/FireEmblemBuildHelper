@@ -198,6 +198,22 @@
       "reviewStatus": "accepted"
     },
     {
+      "id": "fewiki-effie",
+      "kind": "web",
+      "title": "Effie - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Effie",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-effie-supports",
+      "kind": "web",
+      "title": "Effie/Supports - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Effie/Supports",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
       "id": "user-fe14-izana-recruitment",
       "kind": "game_data",
       "title": "Izana My Castle recruitment timing - user verification",
@@ -240,7 +256,7 @@
       "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/other-data/",
       "language": "en",
       "reviewStatus": "corroborated",
-      "notes": "Izana's footnote states that later recruitment raises his weapon ranks and level, with level determining how many class skills he has."
+      "notes": "Izana and Yukimura footnotes state that later recruitment raises weapon ranks and level, with level determining how many class skills they have."
     },
     {
       "id": "serenes-fe14-nohrian-other-data",
@@ -249,7 +265,7 @@
       "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/other-data/",
       "language": "en",
       "reviewStatus": "corroborated",
-      "notes": "Izana's footnote states that later recruitment raises his weapon ranks and level, with level determining how many class skills he has."
+      "notes": "Provides Nohrian inventory, weapon-rank, and starting-skill data; its Izana and Flora footnotes state that later recruitment raises their weapon ranks and level, with level determining how many class skills they have."
     },
     {
       "id": "fe14-partner-seal-chart",
@@ -283,6 +299,142 @@
       "language": "en",
       "reviewStatus": "accepted",
       "notes": "Regular base-class promotion trees only; DLC classes are intentionally outside this catalogue."
+    },
+    {
+      "id": "fandom-fe14-yukimura",
+      "kind": "web",
+      "title": "Yukimura - Fire Emblem Wiki",
+      "location": "https://fireemblem.fandom.com/wiki/Yukimura",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Corroborates Yukimura's level 10 Mechanist base block, B dagger and bow ranks, starting skills, personal growths, cap modifiers, Corrin-only supports, class sets, and Birthright-only availability."
+    },
+    {
+      "id": "fandom-fe14-flora",
+      "kind": "web",
+      "title": "Flora - Fire Emblem Wiki",
+      "location": "https://fireemblem.fandom.com/wiki/Flora",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Corroborates Flora's route-specific Maid base blocks and weapon ranks, starting skills, personal and full growths, cap modifiers, supports, class sets, and My Castle recruitment requirements."
+    },
+    {
+      "id": "fewiki-flora-supports",
+      "kind": "web",
+      "title": "Flora/Supports - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Flora/Supports",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Confirms Flora's A+ support with Felicia and the resulting Mercenary Friendship Seal grant."
+    },
+    {
+      "id": "fandom-fe14-fuga",
+      "kind": "web",
+      "title": "Fuga - Fire Emblem Wiki",
+      "location": "https://fireemblem.fandom.com/wiki/Fuga",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Corroborates Fuga's level 10 Master of Arms base block, B/C/C weapon ranks, starting skills, full growths, cap modifiers, supports, class sets, personal skill, and Revelation-only availability."
+    },
+    {
+      "id": "fandom-fe14-gunter",
+      "kind": "web",
+      "title": "Gunter - Fire Emblem Wiki",
+      "location": "https://fireemblem.fandom.com/wiki/Gunter",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Corroborates Gunter's early and returning Great Knight base blocks, weapon ranks, skills, personal growths, cap modifiers, supports, class sets, personal skill, and Conquest/Revelation availability."
+    },
+    {
+      "id": "gamefaqs-fe14-conquest-character-guide",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Conquest Character Guide - GameFAQs",
+      "location": "https://gamefaqs.gamespot.com/3ds/114533-fire-emblem-fates-conquest/faqs/72962",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "States that Gunter joins in Chapter 2 on all paths, leaves in Chapter 3, returns in Conquest Chapter 15 and Revelation Chapter 7, and does not return in Birthright."
+    },
+    {
+      "id": "serenes-fe14-nohrian-base-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian Characters - Base Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/base-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-revelation-recruitment",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Revelation - Character Recruitment",
+      "location": "https://serenesforest.net/fire-emblem-fates/revelation/character-recruitment/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-revelation-supports",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Revelation - Supports",
+      "location": "https://serenesforest.net/fire-emblem-fates/revelation/supports/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Explicitly notes that Gunter cannot support in Revelation."
+    },
+    {
+      "id": "serenes-fe14-revelation-character-data",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Revelation - Character Data",
+      "location": "https://serenesforest.net/fire-emblem-fates/revelation/character-data/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Corroborates Fuga's empty inventory, minimum weapon ranks and skills, and states that later recruitment raises his level, ranks, and learned skills."
+    },
+    {
+      "id": "serenes-fe14-other-growth-rates",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Other Characters - Growth Rates",
+      "location": "https://serenesforest.net/fire-emblem-fates/other-characters/growth-rates/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-other-maximum-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Other Characters - Maximum Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/other-characters/maximum-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-other-pair-up-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Other Characters - Pair Up Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/other-characters/pair-up-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-other-class-sets",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Other Characters - Class Sets",
+      "location": "https://serenesforest.net/fire-emblem-fates/other-characters/class-sets/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-other-personal-skills",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Other Characters - Personal Skills",
+      "location": "https://serenesforest.net/fire-emblem-fates/other-characters/personal-skills/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-revelation-support-bonuses",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Revelation - Support Bonus",
+      "location": "https://serenesforest.net/fire-emblem-fates/revelation/supports/support-bonus/",
+      "language": "en",
+      "reviewStatus": "accepted"
     },
     {
       "id": "user-3ds-fe14-felicia",
@@ -319,6 +471,99 @@
       "language": "en",
       "reviewStatus": "accepted",
       "notes": "Weapon proficiency earned by Kaze in Chapters 4 and 5 carries into his route-specific state alongside his level and stat gains."
+    },
+    {
+      "id": "serenes-fe14-nohrian-recruitment",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian Characters - Recruitment",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/recruitment/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Lists Elise as a temporary Chapter 6 guest who leaves at the end, then as a permanent Chapter 7 recruit on turn 3."
+    },
+    {
+      "id": "serenes-fe14-nohrian-growth-rates",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian Characters - Growth Rates",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/growth-rates/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-maximum-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian Characters - Maximum Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/maximum-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-pair-up-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian Characters - Pair Up Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/pair-up-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-class-sets",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian Characters - Class Sets",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/class-sets/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-personal-skills",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian Characters - Personal Skills",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-supports",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian Characters - Supports",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/supports/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-support-bonuses",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian Characters - Support Bonus",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/supports/support-bonus/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Defines cumulative Attack Stance support-unit bonuses, including the no-support baseline."
+    },
+    {
+      "id": "fandom-fe14-elise",
+      "kind": "web",
+      "title": "Elise - Fire Emblem Wiki",
+      "location": "https://fireemblem.fandom.com/wiki/Elise",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Corroborates Elise's three playable base blocks, inventory, weapon rank, skills, growths, cap modifiers, supports, and class sets."
+    },
+    {
+      "id": "fandom-fe14-embrace-the-dark",
+      "kind": "web",
+      "title": "Embrace the Dark - Fire Emblem Wiki",
+      "location": "https://fireemblem.fandom.com/wiki/Embrace_the_Dark",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Identifies Elise as a Chapter 6 guest and states that the Nohrian royal guests do not gain experience in this chapter."
+    },
+    {
+      "id": "fandom-fe14-arthur",
+      "kind": "web",
+      "title": "Arthur (Fates) - Fire Emblem Wiki",
+      "location": "https://fireemblem.fandom.com/wiki/Arthur_(Fates)",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Corroborates Arthur's Conquest and Revelation base blocks, personal growths, cap modifiers, pair-up bonuses, supports, and class sets."
     }
   ]
 }

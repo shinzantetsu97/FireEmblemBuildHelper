@@ -256,6 +256,182 @@
     ]
   },
   {
+    "unitId": "gunter",
+    "kind": "personal",
+    "rates": {
+      "hp": 15,
+      "strength": 5,
+      "magic": 0,
+      "skill": 5,
+      "speed": 0,
+      "luck": 15,
+      "defense": 5,
+      "resistance": 5
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B15:K16",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Growth Rates; personal growths after removing Great Knight class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "elise",
+    "kind": "personal",
+    "rates": {
+      "hp": 30,
+      "strength": 5,
+      "magic": 65,
+      "skill": 25,
+      "speed": 55,
+      "luck": 70,
+      "defense": 15,
+      "resistance": 40
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "艾丽泽!B18:K18",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Elise",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Growth Rates; personal growths after removing Troubadour class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "effie",
+    "kind": "personal",
+    "rates": {
+      "hp": 35,
+      "strength": 60,
+      "magic": 0,
+      "skill": 35,
+      "speed": 50,
+      "luck": 50,
+      "defense": 35,
+      "resistance": 30
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal growths after removing Knight class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "arthur",
+    "kind": "personal",
+    "rates": {
+      "hp": 50,
+      "strength": 45,
+      "magic": 0,
+      "skill": 55,
+      "speed": 35,
+      "luck": 5,
+      "defense": 45,
+      "resistance": 20
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Arthur",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Growth Rates; personal growths after removing Fighter class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "flora",
+    "kind": "personal",
+    "rates": {
+      "hp": 35,
+      "strength": 40,
+      "magic": 20,
+      "skill": 45,
+      "speed": 30,
+      "luck": 35,
+      "defense": 30,
+      "resistance": 30
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "芙洛拉!B14:K16",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Exclusive Characters > Flora",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Growth Rates; personal growths after removing Maid class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "izana",
     "kind": "personal",
     "rates": {
@@ -288,6 +464,86 @@
       {
         "sourceId": "fewiki-izana",
         "locator": "Fire Emblem Fates > Starting stats and growth rates; personal growths after removing Onmyoji class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "yukimura",
+    "kind": "personal",
+    "rates": {
+      "hp": 25,
+      "strength": 25,
+      "magic": 5,
+      "skill": 40,
+      "speed": 15,
+      "luck": 30,
+      "defense": 25,
+      "resistance": 30
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "幸村!B12:K14",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-growth-rates",
+        "locator": "Exclusive Characters > Yukimura",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-yukimura",
+        "locator": "Fire Emblem Fates > Growth Rates; personal growths after removing Mechanist class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "fuga",
+    "kind": "personal",
+    "rates": {
+      "hp": 20,
+      "strength": 20,
+      "magic": 0,
+      "skill": 15,
+      "speed": 5,
+      "luck": 20,
+      "defense": 10,
+      "resistance": 10
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "风雅!B11:K14",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-other-growth-rates",
+        "locator": "3rd route exclusive > Fuga",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-fuga",
+        "locator": "Fire Emblem Fates > Growth Rates; personal growths after removing Master of Arms class growths",
         "fields": [
           "rates"
         ],

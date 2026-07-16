@@ -127,7 +127,7 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Jakob", level: 1 })).toBeInTheDocument();
-    expect(screen.getAllByText("Evasive Partner")).toHaveLength(2);
+    expect(screen.getByText("Evasive Partner")).toBeInTheDocument();
     expect(screen.getAllByText("Chapter 2")).toHaveLength(3);
     expect(screen.getAllByText("Chapter 16")).toHaveLength(3);
     expect(screen.getByText("Dagger D, Staff D")).toBeInTheDocument();
@@ -147,7 +147,7 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Kaze", level: 1 })).toBeInTheDocument();
-    expect(screen.getAllByText("Miraculous Save")).toHaveLength(2);
+    expect(screen.getByText("Miraculous Save")).toBeInTheDocument();
     expect(screen.getAllByText("Chapter 4")).toHaveLength(3);
     expect(screen.getByText("Normal: Iron Shuriken, Vulnerary ×2; Hard/Lunatic: Iron Shuriken, Vulnerary")).toBeInTheDocument();
     expect(screen.getByText("Chapter 11 (end)")).toBeInTheDocument();
@@ -173,7 +173,7 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Silas", level: 1 })).toBeInTheDocument();
-    expect(screen.getAllByText("Vow of Friendship")).toHaveLength(2);
+    expect(screen.getByText("Vow of Friendship")).toBeInTheDocument();
     expect(screen.getByText("Chapter 7 (end)")).toBeInTheDocument();
     expect(screen.getByText("Chapter 7 (during)")).toBeInTheDocument();
     expect(screen.getByText("Chapter 14 (end)")).toBeInTheDocument();
@@ -194,7 +194,7 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Azura", level: 1 })).toBeInTheDocument();
-    expect(screen.getAllByText("Healing Descant")).toHaveLength(2);
+    expect(screen.getByText("Healing Descant")).toBeInTheDocument();
     expect(screen.getAllByText("Chapter 5")).toHaveLength(3);
     expect(screen.getByText("Chapter 9")).toBeInTheDocument();
     expect(screen.getByText("Chapter 6")).toBeInTheDocument();
@@ -218,7 +218,7 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Mozu", level: 1 })).toBeInTheDocument();
-    expect(screen.getAllByText("Forager")).toHaveLength(2);
+    expect(screen.getByText("Forager")).toBeInTheDocument();
     expect(screen.getByText(/Paralogue 1 recruitment \(unlocks after Chapter 7\)/i)).toBeInTheDocument();
     expect(screen.getAllByText("Chapter 7 (conditional)")).toHaveLength(3);
     expect(screen.getByText("Brass Naginata, Vulnerary")).toBeInTheDocument();
@@ -246,7 +246,7 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Shura", level: 1 })).toBeInTheDocument();
-    expect(screen.getAllByText("Highwayman")).toHaveLength(2);
+    expect(screen.getByText("Highwayman")).toBeInTheDocument();
     expect(screen.getByText("Chapter 22 (end)")).toBeInTheDocument();
     expect(screen.getByText("Chapter 16 (end)")).toBeInTheDocument();
     expect(screen.getByText("Chapter 15 (during)")).toBeInTheDocument();
@@ -286,5 +286,215 @@ describe("notes workspace", () => {
     expect(screen.getAllByText(/Weapon proficiency scales with story progress/i)).toHaveLength(2);
     expect(screen.getAllByText(/Level 5 bases \+ \(individual growth rates \+ Onmyoji class growth rates\) × levels gained/i)).toHaveLength(2);
     expect(screen.getByText(/Later Birthright chapter milestones still need direct testing/i)).toBeInTheDocument();
+  });
+
+  it("shows Yukimura's Birthright-only castle recruitment and scaling caveat", () => {
+    window.history.replaceState({}, "", "/FE14/Units/Yukimura");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Yukimura", level: 1 })).toBeInTheDocument();
+    expect(screen.getByText(/no one has produced a concrete, accurate data table for Yukimura yet, FFS/i)).toBeInTheDocument();
+    expect(screen.getByText("After Chapter 21")).toBeInTheDocument();
+    expect(screen.getByText("Lv. 10-15 Mechanist")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Joining stats at Lv. 10" })).toBeInTheDocument();
+    expect(screen.getByText(/Puppet Lv\. 3, then a My Castle refresh by waiting/i)).toBeInTheDocument();
+    expect(screen.getByText("Ch. 22: Lv. 10")).toBeInTheDocument();
+    expect(screen.getByText("Ch. 27: Lv. 15")).toBeInTheDocument();
+    expect(screen.getByText(/Level 10 bases \+ \(individual growth rates \+ Mechanist class growth rates\) × levels gained/i)).toBeInTheDocument();
+    expect(screen.getByText(/cannot be recruited in Conquest or Revelation/i)).toBeInTheDocument();
+  });
+
+  it("shows Flora's route-specific castle recruitment, bases, and autolevel rules", () => {
+    window.history.replaceState({}, "", "/FE14/Units/Flora");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Flora", level: 1 })).toBeInTheDocument();
+    expect(screen.getByText(/no one has produced a concrete, accurate data table for Flora yet, FFS/i)).toBeInTheDocument();
+    expect(screen.getByText("After Chapter 18")).toBeInTheDocument();
+    expect(screen.getByText("After Chapter 22")).toBeInTheDocument();
+    expect(screen.getByText("Lv. 5-15 Maid")).toBeInTheDocument();
+    expect(screen.getByText("Lv. 7-15 Maid")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Joining stats at Lv. 5" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Joining stats at Lv. 7" })).toBeInTheDocument();
+    expect(screen.getByText(/Fire Orb Lv\. 3, then a My Castle refresh by waiting/i)).toBeInTheDocument();
+    expect(screen.getByText(/Any of Ballista, Fire Orb, or Launcher Lv\. 3, then a My Castle refresh by waiting/i)).toBeInTheDocument();
+    expect(screen.getByText("Dagger B, Staff B")).toBeInTheDocument();
+    expect(screen.getByText("Dagger C, Staff B")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Friendship Seal (A+)" })).toBeInTheDocument();
+    expect(screen.getAllByText("Mercenary")).toHaveLength(2);
+    expect(screen.getByText("Dark Mage")).toBeInTheDocument();
+    const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
+    const feliciaRow = within(relationships).getByText("Felicia").closest(".support-row") as HTMLElement | null;
+    expect(feliciaRow).not.toBeNull();
+    expect(within(feliciaRow!).getByText("Mercenary")).toBeInTheDocument();
+    expect(within(feliciaRow!).getByLabelText("Already available via Heart Seal")).toBeInTheDocument();
+    expect(within(relationships).getByText(/Marked classes are already available through this unit's Heart Seal options/i)).toBeInTheDocument();
+    expect(screen.getByText("Ch. 19-22: Lv. 5")).toBeInTheDocument();
+    expect(screen.getAllByText("Ch. 23: Lv. 7")).toHaveLength(2);
+    expect(screen.getAllByText("Ch. 27: Lv. 15")).toHaveLength(2);
+    expect(screen.getAllByText(/Level 5 bases \+ \(individual growth rates \+ Maid class growth rates\) × levels gained/i)).toHaveLength(2);
+    expect(screen.getByText(/Revelation's complete milestone schedule and exact weapon-rank milestones still need direct testing/i)).toBeInTheDocument();
+  });
+
+  it("shows Fuga's Revelation castle recruitment and unresolved later scaling", () => {
+    window.history.replaceState({}, "", "/FE14/Units/Fuga");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Fuga", level: 1 })).toBeInTheDocument();
+    expect(screen.getByText(/no one has produced a concrete, accurate data table for Fuga yet, FFS/i)).toBeInTheDocument();
+    expect(screen.getByText("After Chapter 18")).toBeInTheDocument();
+    expect(screen.getByText(/Lv\. 10\+ \(scales\) Master Of Arms/i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Joining stats at Lv. 10" })).toBeInTheDocument();
+    expect(screen.getByText("Sword B, Lance C, Axe C")).toBeInTheDocument();
+    expect(screen.getByText(/Hot Spring Lv\. 3, then a My Castle refresh by waiting/i)).toBeInTheDocument();
+    expect(screen.getByText("Ch. 19: Lv. 10")).toBeInTheDocument();
+    expect(screen.getByText(/Level 10 bases \+ \(individual growth rates \+ Master Of Arms class growth rates\) × levels gained/i)).toBeInTheDocument();
+    expect(screen.getByText(/Exact later chapter and weapon-rank milestones still need direct testing/i)).toBeInTheDocument();
+    expect(screen.getByText("Female Corrin Talent only")).toBeInTheDocument();
+    expect(screen.getByText("Hayato")).toBeInTheDocument();
+  });
+
+  it("shows Gunter's temporary deployment, route returns, and Conquest-only supports", () => {
+    window.history.replaceState({}, "", "/FE14/Units/Gunter");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Gunter", level: 1 })).toBeInTheDocument();
+    expect(screen.getAllByText("Chapter 2")).toHaveLength(3);
+    expect(screen.getByText("Chapter 15")).toBeInTheDocument();
+    expect(screen.getByText("Chapter 7 (during)")).toBeInTheDocument();
+    expect(screen.getAllByRole("heading", { name: "Joining stats" })).toHaveLength(3);
+    expect(screen.getAllByText("Lv. 3 Great Knight")).toHaveLength(2);
+    expect(screen.getByText("Lv. 10 Great Knight")).toBeInTheDocument();
+    expect(screen.getByText("Iron Lance")).toBeInTheDocument();
+    expect(screen.getByText("Steel Lance, Steel Axe, Javelin, Vulnerary")).toBeInTheDocument();
+    expect(screen.getAllByText(/cannot initiate support conversations or receive support bonuses in Revelation/i)).toHaveLength(2);
+    expect(screen.getByText(/never returns in Birthright/i)).toBeInTheDocument();
+    expect(screen.getByText(/EXP progress, level gains, and weapon proficiency.*remains unverified/i)).toBeInTheDocument();
+    expect(screen.getByText("Friendship Seal (A+)")).toBeInTheDocument();
+    expect(screen.getByText("Jakob")).toBeInTheDocument();
+    expect(screen.getByText("Female Corrin Talent only")).toBeInTheDocument();
+    const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
+    expect(within(relationships).getByText(/Support availability:/i)).toBeInTheDocument();
+    expect(within(relationships).getByText(/Corrin and Jakob supports are Conquest-only/i)).toBeInTheDocument();
+  });
+
+  it("shows Elise's guest deployment, permanent joins, and class access", () => {
+    window.history.replaceState({}, "", "/FE14/Units/Elise");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Elise", level: 1 })).toBeInTheDocument();
+    expect(screen.getByText("Conquest Chapter 6 guest")).toBeInTheDocument();
+    expect(screen.getByText("Lv. 4 Troubadour")).toBeInTheDocument();
+    expect(screen.getByText("Disabled")).toBeInTheDocument();
+    expect(screen.getByText("Chapter 7 (turn 3)")).toBeInTheDocument();
+    expect(screen.getByText("Chapter 14")).toBeInTheDocument();
+    expect(screen.getAllByRole("heading", { name: "Joining stats" })).toHaveLength(3);
+    expect(screen.getAllByText("Staff D")).toHaveLength(3);
+    expect(screen.getAllByText("Heal, Freeze")).toHaveLength(2);
+    expect(screen.getByText("Heal, Mend")).toBeInTheDocument();
+    expect(screen.getByText(/staves do not carry forward/i)).toBeInTheDocument();
+    expect(screen.getByText("Male Corrin Talent only")).toBeInTheDocument();
+    expect(screen.getByText("Lily's Poise")).toBeInTheDocument();
+    const eliseHeader = screen.getByRole("heading", { name: "Elise", level: 1 }).closest(".unit-header") as HTMLElement;
+    expect(within(eliseHeader).queryByText("Personal skill")).not.toBeInTheDocument();
+    expect(within(eliseHeader).queryByText("Lily's Poise")).not.toBeInTheDocument();
+    expect(screen.getByText("Camilla")).toBeInTheDocument();
+    expect(screen.getByText("Sakura")).toBeInTheDocument();
+  });
+
+  it("shows Arthur's Conquest and Revelation recruitment blocks and seal outcomes", () => {
+    window.history.replaceState({}, "", "/FE14/Units/Arthur");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Arthur", level: 1 })).toBeInTheDocument();
+    expect(screen.getByText("Chapter 7 (turn 4)")).toBeInTheDocument();
+    expect(screen.getByText("Chapter 14")).toBeInTheDocument();
+    expect(screen.getAllByRole("heading", { name: "Joining stats" })).toHaveLength(2);
+    expect(screen.getByText("Lv. 7 Fighter")).toBeInTheDocument();
+    expect(screen.getByText("Lv. 9 Fighter")).toBeInTheDocument();
+    expect(screen.getByText("Iron Axe, Hand Axe")).toBeInTheDocument();
+    expect(screen.getByText("Iron Axe")).toBeInTheDocument();
+    expect(screen.getAllByText("Axe D")).toHaveLength(2);
+    expect(screen.getByText("Misfortunate")).toBeInTheDocument();
+    const arthurHeader = screen.getByRole("heading", { name: "Arthur", level: 1 }).closest(".unit-header") as HTMLElement;
+    expect(within(arthurHeader).queryByText("Personal skill")).not.toBeInTheDocument();
+    expect(within(arthurHeader).queryByText("Misfortunate")).not.toBeInTheDocument();
+    expect(screen.getByText("255%")).toBeInTheDocument();
+    expect(screen.getAllByText("Outlaw")).toHaveLength(2);
+    expect(screen.getByText("Female Corrin Talent only")).toBeInTheDocument();
+    const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
+    const friendshipGroup = within(relationships).getByRole("heading", { name: "Friendship Seal (A+)" }).parentElement;
+    const partnerGroup = within(relationships).getByRole("heading", { name: "Partner Seal (S)" }).parentElement;
+    expect(friendshipGroup).not.toBeNull();
+    expect(partnerGroup).not.toBeNull();
+    expect(Array.from(friendshipGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent)).toEqual([
+      "Corrin",
+      "Niles",
+      "Benny",
+      "Keaton",
+      "Azama",
+    ]);
+    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent).slice(0, 6)).toEqual([
+      "Corrin",
+      "Azura",
+      "Felicia",
+      "Mozu",
+      "Camilla",
+      "Elise",
+    ]);
+    const azamaRow = screen.getByText("Azama").closest(".support-row") as HTMLElement | null;
+    expect(azamaRow).not.toBeNull();
+    expect(within(azamaRow!).getByText("Monk")).toBeInTheDocument();
+  });
+
+  it("shows Effie's route joins, growths, and resolved seal fallbacks", () => {
+    window.history.replaceState({}, "", "/FE14/Units/Effie");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Effie", level: 1 })).toBeInTheDocument();
+    expect(screen.getByText("Chapter 7 (turn 4)")).toBeInTheDocument();
+    expect(screen.getByText("Chapter 14")).toBeInTheDocument();
+    expect(screen.getAllByRole("heading", { name: "Joining stats" })).toHaveLength(2);
+    expect(screen.getByText("Lv. 6 Knight")).toBeInTheDocument();
+    expect(screen.getByText("Lv. 8 Knight")).toBeInTheDocument();
+    expect(screen.getAllByText("Iron Lance")).toHaveLength(2);
+    expect(screen.getAllByText("Lance D")).toHaveLength(2);
+    expect(screen.getByText("Puissance")).toBeInTheDocument();
+    expect(screen.getByText("295%")).toBeInTheDocument();
+    expect(screen.getByText("Male Corrin Talent only")).toBeInTheDocument();
+
+    const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
+    const friendshipGroup = within(relationships).getByRole("heading", { name: "Friendship Seal (A+)" }).parentElement;
+    const partnerGroup = within(relationships).getByRole("heading", { name: "Partner Seal (S)" }).parentElement;
+    expect(friendshipGroup).not.toBeNull();
+    expect(partnerGroup).not.toBeNull();
+    expect(Array.from(friendshipGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent)).toEqual([
+      "Corrin",
+      "Mozu",
+      "Elise",
+      "Nyx",
+      "Hana",
+    ]);
+    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent).slice(0, 6)).toEqual([
+      "Corrin",
+      "Jakob",
+      "Silas",
+      "Kaze",
+      "Xander",
+      "Leo",
+    ]);
+    const azamaRow = within(relationships).getByText("Azama").closest(".support-row") as HTMLElement | null;
+    expect(azamaRow).not.toBeNull();
+    expect(within(azamaRow!).getByText("Shrine Maiden")).toBeInTheDocument();
+    const bennyRow = within(relationships).getByText("Benny").closest(".support-row") as HTMLElement | null;
+    expect(bennyRow).not.toBeNull();
+    expect(within(bennyRow!).getByText("Fighter")).toBeInTheDocument();
+    const eliseRow = within(relationships).getByText("Elise").closest(".support-row") as HTMLElement | null;
+    expect(eliseRow).not.toBeNull();
+    expect(within(eliseRow!).getByLabelText("Already available via Heart Seal")).toBeInTheDocument();
+    const jakobRow = within(relationships).getByText("Jakob").closest(".support-row") as HTMLElement | null;
+    expect(jakobRow).not.toBeNull();
+    expect(within(jakobRow!).getByLabelText("Already available via Heart Seal")).toBeInTheDocument();
+    expect(within(relationships).getByText(/Marked classes are already available through this unit's Heart Seal options/i)).toBeInTheDocument();
   });
 });

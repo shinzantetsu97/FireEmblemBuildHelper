@@ -210,6 +210,156 @@
     ]
   },
   {
+    "unitId": "gunter",
+    "modifiers": {
+      "strength": 2,
+      "magic": 0,
+      "skill": 1,
+      "speed": -2,
+      "luck": 0,
+      "defense": 2,
+      "resistance": -2
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B15:K16",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Max Stat Modifiers",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "elise",
+    "modifiers": {
+      "strength": -1,
+      "magic": 3,
+      "skill": -2,
+      "speed": 1,
+      "luck": 1,
+      "defense": -3,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Elise",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Max Stat Modifiers",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "effie",
+    "modifiers": {
+      "strength": 3,
+      "magic": 0,
+      "skill": -1,
+      "speed": 1,
+      "luck": 0,
+      "defense": -1,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "arthur",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": 3,
+      "speed": 0,
+      "luck": -3,
+      "defense": 1,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Arthur",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Max Stat Modifiers",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "flora",
+    "modifiers": {
+      "strength": 1,
+      "magic": -1,
+      "skill": 2,
+      "speed": 0,
+      "luck": -1,
+      "defense": 1,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Exclusive Characters > Flora",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Max Stat Modifiers",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "izana",
     "modifiers": {
       "strength": 0,
@@ -232,6 +382,66 @@
       {
         "sourceId": "fewiki-izana",
         "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "yukimura",
+    "modifiers": {
+      "strength": -1,
+      "magic": 0,
+      "skill": 3,
+      "speed": -1,
+      "luck": 0,
+      "defense": -1,
+      "resistance": 0
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-maximum-stats",
+        "locator": "Exclusive Characters > Yukimura",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-yukimura",
+        "locator": "Fire Emblem Fates > Max Stat Modifiers",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "fuga",
+    "modifiers": {
+      "strength": 2,
+      "magic": -1,
+      "skill": 1,
+      "speed": 0,
+      "luck": -1,
+      "defense": 2,
+      "resistance": -2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-other-maximum-stats",
+        "locator": "3rd route exclusive > Fuga",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-fuga",
+        "locator": "Fire Emblem Fates > Max Stat Modifiers",
         "fields": [
           "modifiers"
         ],
