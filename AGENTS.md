@@ -12,7 +12,9 @@ This repo is `FireEmblemBuildHelper`.
 
 `FireEmblemBuildHelper` is a Fire Emblem planning project. The first supported game is Fire Emblem Fates / Fire Emblem if / FE14.
 
-The current implementation direction is Node + TypeScript with SQLite-backed local data. Do not switch languages, frameworks, package managers, or storage engines unless the user explicitly asks.
+The public application is a static React + TypeScript site deployed to GitHub Pages. Player-created data lives in browser-local IndexedDB and is backed up through versioned JSON export/import. Curated Fire Emblem data is shipped as validated static payloads.
+
+Node + TypeScript remain available for development and build-time data tooling. The existing Express and SQLite code is historical local-backend exploration, not a public runtime dependency. Do not add, extend, or host a backend API unless the user explicitly asks.
 
 ## Core rule
 
@@ -50,7 +52,7 @@ Read the smallest number of files needed to complete the task.
 
 When scanning repo context, exclude generated output and dependency folders. Do not treat `docs/codex-prompts/` as source code unless the task involves prompt archives or commit workflow prompts.
 
-## Node workspace discipline
+## Web and Node workspace discipline
 
 Do not inspect `node_modules/`, generated output, coverage, local database files, or `*.tsbuildinfo`.
 
@@ -63,6 +65,8 @@ Prefer `npm ls`, `npm explain`, and package documentation over scanning dependen
 Do not read `package-lock.json` manually unless resolving dependency or lockfile issues.
 
 Run the narrowest relevant script. Do not run every command for a local change unless shared behavior is affected.
+
+For public-app changes, keep the site static and browser-local. Do not make the frontend depend on Express, SQLite, a hosted API, accounts, or network requests for player-created data.
 
 ## Editing discipline
 

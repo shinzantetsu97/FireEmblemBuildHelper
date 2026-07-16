@@ -1,5 +1,7 @@
 # Milestone 1 - Backend Dependency Setup
 
+> **Historical archive:** This prompt records an earlier local-backend exploration. The current public architecture is a static React site with browser-local IndexedDB; do not use this prompt as a current implementation plan. It is retained for project history.
+
 ## Notes / Prompt Revision History
 
 The earlier version of this prompt asked Codex to install backend dependencies directly.

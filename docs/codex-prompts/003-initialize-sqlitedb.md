@@ -1,5 +1,7 @@
 # Milestone 2 - SQLite DB Init for Profile Notes
 
+> **Historical archive:** This prompt records an earlier local-backend exploration. The current public architecture is a static React site with browser-local IndexedDB; do not use this prompt as a current implementation plan. It is retained for project history.
+
 We are working on FireEmblemBuildHelper, a Fire Emblem planning project. The first supported game target will be Fire Emblem Fates / Fire Emblem if / FE14.
 
 Important working style:

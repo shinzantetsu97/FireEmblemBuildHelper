@@ -17,6 +17,12 @@ The Vite development server prints a local URL. Build the static site with:
 npm run build
 ```
 
+Run the automated test suite with:
+
+```text
+npm test
+```
+
 ## GitHub Pages
 
 The included GitHub Actions workflow builds and deploys the site from `main` to GitHub Pages. In the repository's **Settings -> Pages**, select **GitHub Actions** as the publishing source. After a successful deployment, the default project-site URL is:
@@ -27,9 +33,9 @@ https://shinzantetsu97.github.io/FireEmblemBuildHelper/
 
 The app remains static and browser-local when deployed. Each visitor's notes stay in that visitor's browser unless they export a JSON backup.
 
-## Existing Development Tooling
+## Historical Backend Exploration
 
-`npm run db:init` initializes the earlier SQLite development database at `data/app.db`. The public notes workspace does not use that database or a backend API.
+`npm run db:init` initializes an earlier SQLite development experiment at `data/app.db`. The public application does not use that database, Express, or a backend API. Retiring or repurposing those legacy files and dependencies should be a separate, deliberate cleanup task.
 
 ## Data Folders
 

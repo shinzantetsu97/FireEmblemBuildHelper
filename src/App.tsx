@@ -206,7 +206,9 @@ export default function App() {
     setError(null);
 
     try {
-      const restoredWorkspace = await importWorkspaceBackup(parseJsonBackup(await file.text()));
+      const restoredWorkspace = await importWorkspaceBackup(
+        parseJsonBackup(await readFileAsText(file)),
+      );
       await loadWorkspace(restoredWorkspace.id);
     } catch (caughtError) {
       setError(getErrorMessage(caughtError));
@@ -293,6 +295,7 @@ export default function App() {
               <input
                 ref={fileInputRef}
                 accept="application/json,.json"
+                aria-label="Choose JSON backup file"
                 className="visually-hidden"
                 type="file"
                 onChange={(event) => void importJsonBackup(event)}
@@ -475,4 +478,19 @@ function parseJsonBackup(contents: string): unknown {
   } catch {
     throw new Error("This file is not valid JSON. Choose a FireEmblemBuildHelper JSON backup.");
   }
+}
+
+function readFileAsText(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onerror = () => {
+      reject(reader.error ?? new Error("The backup file could not be read."));
+    };
+    reader.onload = () => {
+      resolve(typeof reader.result === "string" ? reader.result : "");
+    };
+
+    reader.readAsText(file);
+  });
 }
