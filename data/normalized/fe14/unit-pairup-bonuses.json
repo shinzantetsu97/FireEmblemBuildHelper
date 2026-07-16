@@ -589,6 +589,382 @@
     ]
   },
   {
+    "unitId": "gunter",
+    "attackStance": {
+      "reviewStatus": "accepted",
+      "semantics": "The base bonus applies with no support. Each rank then adds the listed delta, cumulatively through the reached support rank.",
+      "baseBonus": {
+        "hit": 10
+      },
+      "rankDeltas": {
+        "C": {
+          "critical": 3
+        },
+        "B": {
+          "hit": 5
+        },
+        "A": {
+          "critical": 3
+        },
+        "S": {
+          "hit": 5,
+          "critical": 3
+        }
+      }
+    },
+    "guardStance": {
+      "reviewStatus": "accepted",
+      "semantics": "Pair Up discards Attack Stance support-unit boosts and applies a standard Dodge +5. Personal stat deltas are cumulative across C, B, A, and S and are added to class Pair Up stats.",
+      "baseBonus": {
+        "criticalAvoid": 5
+      },
+      "rankDeltas": {
+        "C": {
+          "defense": 1
+        },
+        "B": {
+          "strength": 1
+        },
+        "A": {
+          "skill": 1
+        },
+        "S": {
+          "strength": 1,
+          "defense": 1
+        }
+      }
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B7:F9",
+        "fields": [
+          "attackStance",
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-support-bonuses",
+        "locator": "Initial Characters > Gunter",
+        "fields": [
+          "attackStance",
+          "guardStance.baseBonus"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Pair Up",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "elise",
+    "attackStance": {
+      "reviewStatus": "accepted",
+      "semantics": "The base bonus applies with no support. Each rank then adds the listed delta, cumulatively through the reached support rank.",
+      "baseBonus": {
+        "hit": 10
+      },
+      "rankDeltas": {
+        "C": {
+          "criticalAvoid": 5
+        },
+        "B": {
+          "hit": 5
+        },
+        "A": {
+          "criticalAvoid": 5
+        },
+        "S": {
+          "hit": 5,
+          "criticalAvoid": 5
+        }
+      }
+    },
+    "guardStance": {
+      "reviewStatus": "accepted",
+      "semantics": "Pair Up discards Attack Stance support-unit boosts and applies a standard Dodge +5. Personal stat deltas are cumulative across C, B, A, and S and are added to class Pair Up stats.",
+      "baseBonus": {
+        "criticalAvoid": 5
+      },
+      "rankDeltas": {
+        "C": {
+          "magic": 1
+        },
+        "B": {
+          "magic": 1
+        },
+        "A": {
+          "luck": 1
+        },
+        "S": {
+          "magic": 1,
+          "speed": 1
+        }
+      }
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-support-bonuses",
+        "locator": "Initial Characters > Elise, Laslow, Keaton, Mozu",
+        "fields": [
+          "attackStance",
+          "guardStance.baseBonus"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-pair-up-stats",
+        "locator": "Exclusive Characters > Elise",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Pair Up",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "effie",
+    "attackStance": {
+      "reviewStatus": "accepted",
+      "semantics": "The base bonus applies with no support. Each rank then adds the listed delta, cumulatively through the reached support rank.",
+      "baseBonus": {
+        "hit": 10
+      },
+      "rankDeltas": {
+        "C": {
+          "critical": 3
+        },
+        "B": {
+          "criticalAvoid": 5
+        },
+        "A": {
+          "critical": 3
+        },
+        "S": {
+          "critical": 6
+        }
+      }
+    },
+    "guardStance": {
+      "reviewStatus": "accepted",
+      "semantics": "Pair Up discards Attack Stance support-unit boosts and applies a standard Dodge +5. Personal stat deltas are cumulative across C, B, A, and S and are added to class Pair Up stats.",
+      "baseBonus": {
+        "criticalAvoid": 5
+      },
+      "rankDeltas": {
+        "C": {
+          "strength": 1
+        },
+        "B": {
+          "luck": 1
+        },
+        "A": {
+          "speed": 1
+        },
+        "S": {
+          "strength": 2
+        }
+      }
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-support-bonuses",
+        "locator": "Initial Characters > Effie, Leo",
+        "fields": [
+          "attackStance",
+          "guardStance.baseBonus"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-pair-up-stats",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Pair Up",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "arthur",
+    "attackStance": {
+      "reviewStatus": "accepted",
+      "semantics": "The base bonus applies with no support. Each rank then adds the listed delta, cumulatively through the reached support rank.",
+      "baseBonus": {
+        "hit": 10
+      },
+      "rankDeltas": {
+        "C": {
+          "hit": 5
+        },
+        "B": {
+          "avoid": 5
+        },
+        "A": {
+          "hit": 5
+        },
+        "S": {
+          "hit": 10
+        }
+      }
+    },
+    "guardStance": {
+      "reviewStatus": "accepted",
+      "semantics": "Pair Up discards Attack Stance support-unit boosts and applies a standard Dodge +5. Personal stat deltas are cumulative across C, B, A, and S and are added to class Pair Up stats.",
+      "baseBonus": {
+        "criticalAvoid": 5
+      },
+      "rankDeltas": {
+        "C": {
+          "skill": 1
+        },
+        "B": {
+          "strength": 1
+        },
+        "A": {
+          "strength": 1
+        },
+        "S": {
+          "skill": 2
+        }
+      }
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-support-bonuses",
+        "locator": "Initial Characters > Arthur, Izana",
+        "fields": [
+          "attackStance",
+          "guardStance.baseBonus"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-pair-up-stats",
+        "locator": "Exclusive Characters > Arthur",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Pair Up",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "flora",
+    "attackStance": {
+      "reviewStatus": "accepted",
+      "semantics": "The base bonus applies with no support. Each rank then adds the listed delta, cumulatively through the reached support rank.",
+      "baseBonus": {
+        "hit": 10
+      },
+      "rankDeltas": {
+        "C": {
+          "critical": 3
+        },
+        "B": {
+          "hit": 5
+        },
+        "A": {
+          "critical": 3
+        },
+        "S": {
+          "hit": 5,
+          "critical": 3
+        }
+      }
+    },
+    "guardStance": {
+      "reviewStatus": "accepted",
+      "semantics": "Pair Up discards Attack Stance support-unit boosts and applies a standard Dodge +5. Personal stat deltas are cumulative across C, B, A, and S and are added to class Pair Up stats.",
+      "baseBonus": {
+        "criticalAvoid": 5
+      },
+      "rankDeltas": {
+        "C": {
+          "skill": 1
+        },
+        "B": {
+          "defense": 1
+        },
+        "A": {
+          "resistance": 1
+        },
+        "S": {
+          "strength": 1,
+          "luck": 1
+        }
+      }
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "芙洛拉!B7:F8",
+        "fields": [
+          "attackStance",
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-support-bonuses",
+        "locator": "Initial Characters > Flora",
+        "fields": [
+          "attackStance",
+          "guardStance.baseBonus"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-pair-up-stats",
+        "locator": "Exclusive Characters > Flora",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Pair Up",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "izana",
     "attackStance": {
       "reviewStatus": "accepted",
@@ -662,6 +1038,172 @@
       },
       {
         "sourceId": "fewiki-izana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Pair Up",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "yukimura",
+    "attackStance": {
+      "reviewStatus": "accepted",
+      "semantics": "The base bonus applies with no support. Each rank then adds the listed delta, cumulatively through the reached support rank.",
+      "baseBonus": {
+        "hit": 10
+      },
+      "rankDeltas": {
+        "C": {
+          "avoid": 5
+        },
+        "B": {
+          "critical": 3
+        },
+        "A": {
+          "criticalAvoid": 5
+        },
+        "S": {
+          "hit": 5,
+          "critical": 3
+        }
+      }
+    },
+    "guardStance": {
+      "reviewStatus": "accepted",
+      "semantics": "Pair Up discards Attack Stance support-unit boosts and applies a standard Dodge +5. Personal stat deltas are cumulative across C, B, A, and S and are added to class Pair Up stats.",
+      "baseBonus": {
+        "criticalAvoid": 5
+      },
+      "rankDeltas": {
+        "C": {
+          "skill": 1
+        },
+        "B": {
+          "skill": 1
+        },
+        "A": {
+          "strength": 1
+        },
+        "S": {
+          "skill": 1,
+          "speed": 1
+        }
+      }
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "幸村!B5:F7",
+        "fields": [
+          "attackStance",
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-support-bonuses",
+        "locator": "Initial Characters > Silas, Hinoka, Oboro, Hinata, Scarlet, Yukimura",
+        "fields": [
+          "attackStance",
+          "guardStance.baseBonus"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-pair-up-stats",
+        "locator": "Exclusive Characters > Yukimura",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-yukimura",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Pair Up",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "fuga",
+    "attackStance": {
+      "reviewStatus": "accepted",
+      "semantics": "The base bonus applies with no support. Each rank then adds the listed delta, cumulatively through the reached support rank.",
+      "baseBonus": {
+        "hit": 10
+      },
+      "rankDeltas": {
+        "C": {
+          "avoid": 5
+        },
+        "B": {
+          "critical": 3
+        },
+        "A": {
+          "criticalAvoid": 5
+        },
+        "S": {
+          "hit": 5,
+          "critical": 3
+        }
+      }
+    },
+    "guardStance": {
+      "reviewStatus": "accepted",
+      "semantics": "Pair Up discards Attack Stance support-unit boosts and applies a standard Dodge +5. Personal stat deltas are cumulative across C, B, A, and S and are added to class Pair Up stats.",
+      "baseBonus": {
+        "criticalAvoid": 5
+      },
+      "rankDeltas": {
+        "C": {
+          "defense": 1
+        },
+        "B": {
+          "strength": 1
+        },
+        "A": {
+          "skill": 1
+        },
+        "S": {
+          "strength": 1,
+          "defense": 1
+        }
+      }
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "风雅!B6:F8",
+        "fields": [
+          "attackStance",
+          "guardStance"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-support-bonuses",
+        "locator": "Initial Characters > Silas, Hinoka, Oboro, Hinata, Scarlet, Camilla, Selena, Peri, Benny, Fuga",
+        "fields": [
+          "attackStance",
+          "guardStance.baseBonus"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-other-pair-up-stats",
+        "locator": "3rd route exclusive > Fuga",
+        "fields": [
+          "guardStance"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-fuga",
         "locator": "Fire Emblem Fates > Starting stats and growth rates > Pair Up",
         "fields": [
           "guardStance"

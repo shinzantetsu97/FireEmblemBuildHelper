@@ -809,6 +809,680 @@
     ]
   },
   {
+    "unitId": "gunter",
+    "availabilityIds": [
+      "gunter.early",
+      "gunter.revelation_return"
+    ],
+    "level": 3,
+    "classId": "great_knight",
+    "stats": {
+      "hp": 24,
+      "strength": 10,
+      "magic": 0,
+      "skill": 15,
+      "speed": 8,
+      "luck": 9,
+      "defense": 10,
+      "resistance": 4
+    },
+    "weaponRanks": {
+      "sword": "D",
+      "lance": "C",
+      "axe": "D"
+    },
+    "startingSkillIds": [
+      "forceful_partner",
+      "elbow_room",
+      "shelter"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B4:K5; B13:K16",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Gunter",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Shared Characters > Gunter (early)",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Shared Characters > Gunter",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Base Stats > Early / Revelation",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "gunter",
+    "availabilityId": "gunter.conquest_return",
+    "level": 10,
+    "classId": "great_knight",
+    "stats": {
+      "hp": 34,
+      "strength": 17,
+      "magic": 0,
+      "skill": 24,
+      "speed": 10,
+      "luck": 13,
+      "defense": 20,
+      "resistance": 6
+    },
+    "weaponRanks": {
+      "sword": "D",
+      "lance": "B",
+      "axe": "C"
+    },
+    "startingSkillIds": [
+      "forceful_partner",
+      "elbow_room",
+      "shelter",
+      "luna"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B3:K4; B13:K16",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Gunter",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Shared Characters > Gunter (Conquest Chapter 15)",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Base Stats > Conquest",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "elise",
+    "availabilityId": "elise.conquest_guest",
+    "level": 4,
+    "classId": "troubadour",
+    "stats": {
+      "hp": 19,
+      "strength": 2,
+      "magic": 10,
+      "skill": 5,
+      "speed": 9,
+      "luck": 13,
+      "defense": 4,
+      "resistance": 11
+    },
+    "weaponRanks": {
+      "staff": "D"
+    },
+    "startingSkillIds": [
+      "lilys_poise",
+      "resistance_plus_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Base Stats > Conquest Chapter 6",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "elise",
+    "availabilityId": "elise.conquest",
+    "level": 5,
+    "classId": "troubadour",
+    "stats": {
+      "hp": 19,
+      "strength": 2,
+      "magic": 11,
+      "skill": 5,
+      "speed": 10,
+      "luck": 14,
+      "defense": 4,
+      "resistance": 11
+    },
+    "weaponRanks": {
+      "staff": "D"
+    },
+    "startingSkillIds": [
+      "lilys_poise",
+      "resistance_plus_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "艾丽泽!B4:K5; B16:K17",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Exclusive Characters > Elise",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Elise",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Base Stats > Conquest Chapter 7",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "elise",
+    "availabilityId": "elise.revelation",
+    "level": 7,
+    "classId": "troubadour",
+    "stats": {
+      "hp": 20,
+      "strength": 2,
+      "magic": 13,
+      "skill": 7,
+      "speed": 11,
+      "luck": 16,
+      "defense": 4,
+      "resistance": 13
+    },
+    "weaponRanks": {
+      "staff": "D"
+    },
+    "startingSkillIds": [
+      "lilys_poise",
+      "resistance_plus_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "艾丽泽!B4:K5; B16:K17",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Revelation > Exclusive Characters > Elise",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Exclusive Characters > Elise",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Base Stats > Revelation Chapter 14",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "effie",
+    "availabilityId": "effie.conquest",
+    "level": 6,
+    "classId": "knight",
+    "stats": {
+      "hp": 23,
+      "strength": 13,
+      "magic": 0,
+      "skill": 8,
+      "speed": 5,
+      "luck": 10,
+      "defense": 12,
+      "resistance": 4
+    },
+    "weaponRanks": {
+      "lance": "D"
+    },
+    "startingSkillIds": [
+      "puissance",
+      "defense_plus_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Conquest",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "effie",
+    "availabilityId": "effie.revelation",
+    "level": 8,
+    "classId": "knight",
+    "stats": {
+      "hp": 24,
+      "strength": 14,
+      "magic": 0,
+      "skill": 9,
+      "speed": 5,
+      "luck": 11,
+      "defense": 13,
+      "resistance": 4
+    },
+    "weaponRanks": {
+      "lance": "D"
+    },
+    "startingSkillIds": [
+      "puissance",
+      "defense_plus_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Revelation > Exclusive Characters > Effie",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Exclusive Characters > Effie",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Revelation",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "arthur",
+    "availabilityId": "arthur.conquest",
+    "level": 7,
+    "classId": "fighter",
+    "stats": {
+      "hp": 24,
+      "strength": 12,
+      "magic": 0,
+      "skill": 9,
+      "speed": 8,
+      "luck": 1,
+      "defense": 9,
+      "resistance": 4
+    },
+    "weaponRanks": {
+      "axe": "D"
+    },
+    "startingSkillIds": [
+      "misfortunate",
+      "hp_plus_5"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Exclusive Characters > Arthur",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Arthur",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Base Stats > Conquest Chapter 7",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "arthur",
+    "availabilityId": "arthur.revelation",
+    "level": 9,
+    "classId": "fighter",
+    "stats": {
+      "hp": 26,
+      "strength": 13,
+      "magic": 0,
+      "skill": 10,
+      "speed": 9,
+      "luck": 1,
+      "defense": 9,
+      "resistance": 4
+    },
+    "weaponRanks": {
+      "axe": "D"
+    },
+    "startingSkillIds": [
+      "misfortunate",
+      "hp_plus_5"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Revelation > Exclusive Characters > Arthur",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Exclusive Characters > Arthur",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Base Stats > Revelation Chapter 14",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "flora",
+    "availabilityId": "flora.conquest",
+    "level": 5,
+    "classId": "maid",
+    "stats": {
+      "hp": 29,
+      "strength": 18,
+      "magic": 16,
+      "skill": 25,
+      "speed": 15,
+      "luck": 11,
+      "defense": 14,
+      "resistance": 23
+    },
+    "weaponRanks": {
+      "dagger": "B",
+      "staff": "B"
+    },
+    "startingSkillIds": [
+      "icy_blood",
+      "resistance_plus_2",
+      "demoiselle",
+      "live_to_serve"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "芙洛拉!B1:I4; B12:K16",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Nohrian Characters > Exclusive Characters > Flora",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Flora",
+        "fields": [
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Base Stats > Conquest",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "flora",
+    "availabilityId": "flora.revelation",
+    "level": 7,
+    "classId": "maid",
+    "stats": {
+      "hp": 30,
+      "strength": 19,
+      "magic": 17,
+      "skill": 26,
+      "speed": 16,
+      "luck": 12,
+      "defense": 15,
+      "resistance": 24
+    },
+    "weaponRanks": {
+      "dagger": "C",
+      "staff": "B"
+    },
+    "startingSkillIds": [
+      "icy_blood",
+      "resistance_plus_2",
+      "demoiselle",
+      "live_to_serve"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "芙洛拉!B1:I4; B12:K16",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Base Stats > Revelation",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "izana",
     "availabilityId": "izana.birthright",
     "level": 5,
@@ -912,6 +1586,149 @@
         "fields": [
           "level",
           "stats"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "yukimura",
+    "availabilityId": "yukimura.birthright",
+    "level": 10,
+    "classId": "mechanist",
+    "stats": {
+      "hp": 38,
+      "strength": 25,
+      "magic": 3,
+      "skill": 29,
+      "speed": 23,
+      "luck": 18,
+      "defense": 21,
+      "resistance": 22
+    },
+    "weaponRanks": {
+      "dagger": "B",
+      "bow": "B"
+    },
+    "startingSkillIds": [
+      "perspicacious",
+      "potent_potion",
+      "quick_salve",
+      "golembane"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "幸村!B1:I4; B10:K14",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Hoshidan Characters > Exclusive Characters > Yukimura",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Exclusive Characters > Yukimura",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-yukimura",
+        "locator": "Fire Emblem Fates > Base Stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "fuga",
+    "availabilityId": "fuga.revelation",
+    "level": 10,
+    "classId": "master_of_arms",
+    "stats": {
+      "hp": 41,
+      "strength": 29,
+      "magic": 0,
+      "skill": 27,
+      "speed": 25,
+      "luck": 18,
+      "defense": 29,
+      "resistance": 15
+    },
+    "weaponRanks": {
+      "sword": "B",
+      "lance": "C",
+      "axe": "C"
+    },
+    "startingSkillIds": [
+      "wind_disciple",
+      "duelists_blow",
+      "vantage",
+      "seal_strength"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "风雅!B2:K14",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Revelation > Exclusive Characters > Fuga",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Exclusive Characters > Fuga",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-fuga",
+        "locator": "Fire Emblem Fates > Base Stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
         ],
         "reviewStatus": "corroborated"
       }

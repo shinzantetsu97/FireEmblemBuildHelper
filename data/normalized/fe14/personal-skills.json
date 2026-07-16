@@ -264,6 +264,169 @@
     ]
   },
   {
+    "id": "forceful_partner",
+    "unitId": "gunter",
+    "names": {
+      "en": "Forceful Partner",
+      "zhHans": "绝对进攻"
+    },
+    "effect": "While Gunter is the support unit and Corrin leads, Corrin gains Hit +15 and damage +3.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "玖塔!B6:E6",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-gunter",
+        "locator": "Fire Emblem Fates > Skill set > Forceful Partner",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "lilys_poise",
+    "unitId": "elise",
+    "names": {
+      "en": "Lily's Poise",
+      "zhHans": "可爱之花"
+    },
+    "effect": "Adjacent allies deal 1 extra damage and take 3 less damage.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "艾丽泽!B7:E7",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Nohrian Characters > Lily's Poise > Elise",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-elise",
+        "locator": "Fire Emblem Fates > Lily's Poise",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "puissance",
+    "unitId": "effie",
+    "names": {
+      "en": "Puissance",
+      "zhHans": "怪力"
+    },
+    "effect": "When Effie's Strength is 5 or more points higher than the enemy's Strength, damage +3 during battle.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Nohrian Characters > Puissance > Effie",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-effie",
+        "locator": "Fire Emblem Fates > Skill set > Puissance",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "misfortunate",
+    "unitId": "arthur",
+    "names": {
+      "en": "Misfortunate",
+      "zhHans": "不幸"
+    },
+    "effect": "Enemies within 2 tiles have Crit Avoid -15, while Arthur has Crit Avoid -5.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Nohrian Characters > Misfortunate > Arthur",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-arthur",
+        "locator": "Fire Emblem Fates > Skill Set > Misfortunate",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "icy_blood",
+    "unitId": "flora",
+    "names": {
+      "en": "Icy Blood",
+      "zhHans": "冰之血"
+    },
+    "effect": "When Flora is not at full HP and is attacked from 2 or more spaces away, the attacker takes half the damage dealt and suffers Skill -3 and Speed -3 after combat.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "芙洛拉!B5:E5",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Nohrian Characters > Icy Blood > Flora",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-flora",
+        "locator": "Fire Emblem Fates > Base Class > Icy Blood",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "id": "peacebringer",
     "unitId": "izana",
     "names": {
@@ -293,6 +456,82 @@
       {
         "sourceId": "fewiki-izana",
         "locator": "Fire Emblem Fates > Skill set > Peacebringer",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "perspicacious",
+    "unitId": "yukimura",
+    "names": {
+      "en": "Perspicacious",
+      "zhHans": "军略传授"
+    },
+    "effect": "All allies gain Hit +5 while Yukimura is deployed.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "幸村!B4:E4",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Hoshidan Characters > Perspicacious > Yukimura",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-yukimura",
+        "locator": "Fire Emblem Fates > Base Class > Perspicacious",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "wind_disciple",
+    "unitId": "fuga",
+    "names": {
+      "en": "Wind Disciple",
+      "zhHans": "风之血"
+    },
+    "effect": "When Fuga is not at full HP, he gains Hit +10 and Avoid +10.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "风雅!B5:E5",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-other-personal-skills",
+        "locator": "3rd route exclusive > Wind Disciple > Fuga",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fandom-fe14-fuga",
+        "locator": "Fire Emblem Fates > Wind Disciple",
         "fields": [
           "names.en",
           "effect"

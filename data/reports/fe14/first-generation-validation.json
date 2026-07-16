@@ -4,9 +4,9 @@
   "valid": true,
   "counts": {
     "rosterUnits": 48,
-    "normalizedUnits": 8,
+    "normalizedUnits": 15,
     "errors": 0,
-    "warnings": 7
+    "warnings": 9
   },
   "errors": [],
   "warnings": [
@@ -36,6 +36,11 @@
       "unitId": "azura"
     },
     {
+      "code": "variable_corrin_class_grant",
+      "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+      "unitId": "effie"
+    },
+    {
       "code": "workbook_source_pending",
       "message": "Jakob's 乔卡 workbook sheet still requires direct inspection; current records use independent web, chart, and in-game sources.",
       "unitId": "jakob"
@@ -44,6 +49,11 @@
       "code": "workbook_source_pending",
       "message": "Kaze's 凉风 workbook sheet and its four level/stat notes still require direct inspection; the current carryover rules are independently corroborated by Fire Emblem Wiki prose and Serenes Forest data.",
       "unitId": "kaze"
+    },
+    {
+      "code": "workbook_source_pending",
+      "message": "Effie's 艾尔菲 workbook sheet still requires direct inspection; the required local spreadsheet runtime was unavailable, so current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+      "unitId": "effie"
     }
   ]
 }

@@ -68,8 +68,10 @@ export interface UnitIdentity {
   names?: { en: string; ja: string; jaLatn: string; zhHans: string };
   gender?: string;
   dragonVein?: boolean;
+  unitTags?: Array<"dragon" | "beast">;
   personalSkillId?: string;
   notes?: string[];
+  supportNotes?: string[];
 }
 
 export interface StatBlock {
@@ -89,11 +91,13 @@ export interface UnitRuntime {
     id: string;
     scenarioLabel?: string;
     avatarGender?: string;
-    routeJoins: Array<{ route: string; chapter: number; timing: string }>;
+    routeJoins: Array<{ route: string; chapter: number; timing: string; turn?: number }>;
     level: number;
     classId: string;
+    gainsExperience?: boolean;
     myCastleRecruitment?: {
-      facilityId: string;
+      facilityId?: string;
+      facilityIds?: string[];
       facilityLevel: number;
       refreshMethods: Array<"real_time" | "map_completion">;
       note: string;
@@ -108,6 +112,8 @@ export interface UnitRuntime {
         level: number;
       }>;
       statCalculation: "average_growths_round_half_up";
+      statBaseLevel: number;
+      growthClassId: string;
       skillsLearnedAutomatically: boolean;
       modelBasis: "castle_recruit_autolevel";
       comparisonModel: "offspring_seal_esque_level_scaling";
@@ -182,8 +188,11 @@ export interface StanceBonuses {
 export interface SealGrant {
   supportRelationshipId: string;
   seal: string;
+  borrowedClassId: string;
   grantedClassId: string;
   resolution: string;
+  resolutionSteps?: string[];
+  alreadyOwnedVia?: "base" | "heart_seal";
 }
 
 export interface ClassTree {
