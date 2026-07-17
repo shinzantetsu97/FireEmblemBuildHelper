@@ -380,6 +380,14 @@ async function main() {
       provenance: [
         { sourceId: "fewiki-fe14-offspring-stats", locator: `${childRoster.displayName}/Stats > inheritance formulas and parent options`, fields: ["variableParentOptions", "childBaseGrowth", "formulas"], reviewStatus: "corroborated" },
         { sourceId: "serenes-fe14-offspring-rules", locator: `Children > ${childRoster.displayName}; supports and class-changing rules`, fields: ["fixedInheritedClassId", "childBaseClassId", "supports", "variableParentOptions"], reviewStatus: "accepted" },
+        ...(child.id === "nina" || child.id === "percy"
+          ? [{ sourceId: "serenes-fe14-nohrian-class-sets", locator: `Children > ${childRoster.displayName}; exhaustive class-collision fallback`, fields: ["variableParentOptions"], reviewStatus: "accepted" }]
+          : []),
+        ...(child.id === "nina"
+          ? [{ sourceId: "rrpg-fe14-child-class-inheritance", locator: "素質の継承 > ゼロ x ニュクス", fields: ["variableParentOptions"], reviewStatus: "corroborated" }]
+          : child.id === "percy"
+            ? [{ sourceId: "aniwotawiki-fe14-beruka-percy-inheritance", locator: "性能 > ハロルドと結婚した場合", fields: ["variableParentOptions"], reviewStatus: "corroborated" }]
+            : []),
       ],
     };
   });
@@ -434,6 +442,8 @@ async function main() {
     provenance: [
       { sourceId: "fewiki-fe14-offspring-stats", locator: "Shigure/Stats > father options, level-10 personal bases, inheritance rules, and sibling substitutions", fields: ["variableParentOptions", "childBaseGrowth", "formulas"], reviewStatus: "corroborated" },
       { sourceId: "serenes-fe14-offspring-rules", locator: "Shigure class set, support matrix, support bonuses, and Jakob inheritance exception", fields: ["fixedInheritedClassId", "childBaseClassId", "supports", "variableParentOptions"], reviewStatus: "accepted" },
+      { sourceId: "serenes-fe14-nohrian-class-sets", locator: "Shared Characters > Jakob and Azura; Shared Children > Shigure; child inheritance rules", fields: ["fixedInheritedClassId", "variableParentOptions"], reviewStatus: "accepted" },
+      { sourceId: "aniwotawiki-fe14-shigure-inheritance", locator: "性能 > ジョーカー父", fields: ["fixedInheritedClassId", "variableParentOptions"], reviewStatus: "corroborated" },
       { sourceId: "pegasusknight-fe14-child-units", locator: "シグレ > parent-dependent traits and inheritance", fields: ["variableParentOptions", "notes"], reviewStatus: "corroborated" },
     ],
   };
@@ -692,8 +702,7 @@ function resolveMotherClass(child: ChildConfig, motherId: string, classAccessByI
   if (!owned.has(secondary)) {
     return { classId: secondary, reason: secondary !== rawSecondary ? "gender_parallel" : reason };
   }
-  const parallelBasis = inheritanceRestricted.has(rawPrimary) ? primary : secondary;
-  const fallback = parallelClass[parallelBasis];
+  const fallback = parallelClass[primary];
   if (!fallback) throw new Error(`No parallel inheritance fallback for ${child.id} from ${motherId}`);
   return { classId: genderParallelClass(fallback, child.gender), reason: "parallel_class_fallback" };
 }

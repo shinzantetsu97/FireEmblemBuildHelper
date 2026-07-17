@@ -1,10 +1,32 @@
 export const RELEASES = [
   {
+    version: "0.4.1",
+    date: "2026-07-17",
+    dateLabel: "July 17, 2026",
+    title: "Offspring inheritance edge-case fixes",
+    current: true,
+    changes: [
+      "Corrected Nyx!Nina to inherit Diviner instead of Archer and Beruka!Percy to inherit Sky Knight instead of Oni Savage when both ordinary maternal class trees are exhausted.",
+      "Added regression coverage for all three exhaustive inheritance cases, including Jakob!Shigure receiving Wyvern Rider from Azura after Jakob supplies Troubadour.",
+      "Prioritized validated class-skill data and player-configurable unit-page layouts, including an accessible-skills-first arrangement, in the immediate roadmap.",
+    ],
+  },
+  {
+    version: "0.4.0",
+    date: "2026-07-17",
+    dateLabel: "July 17, 2026",
+    title: "Complete FE14 second-generation roster",
+    changes: [
+      "Added all 21 second-generation unit profiles with canonical ordering, portraits, recruitment data, growths, cap modifiers, supports, stance bonuses, inherited traits, and source provenance.",
+      "Added dynamic parent selection with recursive offspring-parent resolution, Corrin boon, bane, and Talent controls, gender-aware Kana presentation, and parent-dependent class and support outcomes.",
+      "Added an interactive recruitment-stat calculator and inheritance flow, Offspring Seal promotion projections, class maximums, generation filtering, validation reports, and targeted offspring-mechanics tests.",
+    ],
+  },
+  {
     version: "0.3.1",
     date: "2026-07-16",
     dateLabel: "July 16, 2026",
     title: "Frontend structure and support polish",
-    current: true,
     changes: [
       "Split the frontend pages into focused components and grouped FE14 data, pages, unit components, and portraits under a dedicated game package.",
       "Rebalanced relationship lists with A and Friendship supports on the left, Partner supports on the right, and explicit Corrin (M) / Corrin (F) labels.",

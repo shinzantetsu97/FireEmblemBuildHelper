@@ -3774,6 +3774,24 @@
         "reviewStatus": "accepted"
       },
       {
+        "sourceId": "serenes-fe14-nohrian-class-sets",
+        "locator": "Shared Characters > Jakob and Azura; Shared Children > Shigure; child inheritance rules",
+        "fields": [
+          "fixedInheritedClassId",
+          "variableParentOptions"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "aniwotawiki-fe14-shigure-inheritance",
+        "locator": "性能 > ジョーカー父",
+        "fields": [
+          "fixedInheritedClassId",
+          "variableParentOptions"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
         "sourceId": "pegasusknight-fe14-child-units",
         "locator": "シグレ > parent-dependent traits and inheritance",
         "fields": [
@@ -11834,7 +11852,7 @@
           "conquest",
           "revelation"
         ],
-        "inheritedClassId": "oni_savage",
+        "inheritedClassId": "sky_knight",
         "inheritedClassReason": "parallel_class_fallback"
       },
       {
@@ -12263,6 +12281,22 @@
           "variableParentOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-class-sets",
+        "locator": "Children > Percy; exhaustive class-collision fallback",
+        "fields": [
+          "variableParentOptions"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "aniwotawiki-fe14-beruka-percy-inheritance",
+        "locator": "性能 > ハロルドと結婚した場合",
+        "fields": [
+          "variableParentOptions"
+        ],
+        "reviewStatus": "corroborated"
       }
     ]
   },
@@ -13380,7 +13414,7 @@
           "conquest",
           "revelation"
         ],
-        "inheritedClassId": "archer",
+        "inheritedClassId": "diviner",
         "inheritedClassReason": "parallel_class_fallback"
       },
       {
@@ -13769,6 +13803,22 @@
           "variableParentOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-class-sets",
+        "locator": "Children > Nina; exhaustive class-collision fallback",
+        "fields": [
+          "variableParentOptions"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "rrpg-fe14-child-class-inheritance",
+        "locator": "素質の継承 > ゼロ x ニュクス",
+        "fields": [
+          "variableParentOptions"
+        ],
+        "reviewStatus": "corroborated"
       }
     ]
   }

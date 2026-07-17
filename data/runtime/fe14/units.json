@@ -68811,6 +68811,24 @@
               "reviewStatus": "accepted"
             },
             {
+              "sourceId": "serenes-fe14-nohrian-class-sets",
+              "locator": "Shared Characters > Jakob and Azura; Shared Children > Shigure; child inheritance rules",
+              "fields": [
+                "fixedInheritedClassId",
+                "variableParentOptions"
+              ],
+              "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "aniwotawiki-fe14-shigure-inheritance",
+              "locator": "性能 > ジョーカー父",
+              "fields": [
+                "fixedInheritedClassId",
+                "variableParentOptions"
+              ],
+              "reviewStatus": "corroborated"
+            },
+            {
               "sourceId": "pegasusknight-fe14-child-units",
               "locator": "シグレ > parent-dependent traits and inheritance",
               "fields": [
@@ -68858,6 +68876,24 @@
               "variableParentOptions"
             ],
             "reviewStatus": "accepted"
+          },
+          {
+            "sourceId": "serenes-fe14-nohrian-class-sets",
+            "locator": "Shared Characters > Jakob and Azura; Shared Children > Shigure; child inheritance rules",
+            "fields": [
+              "fixedInheritedClassId",
+              "variableParentOptions"
+            ],
+            "reviewStatus": "accepted"
+          },
+          {
+            "sourceId": "aniwotawiki-fe14-shigure-inheritance",
+            "locator": "性能 > ジョーカー父",
+            "fields": [
+              "fixedInheritedClassId",
+              "variableParentOptions"
+            ],
+            "reviewStatus": "corroborated"
           },
           {
             "sourceId": "pegasusknight-fe14-child-units",
@@ -69770,6 +69806,24 @@
                 "variableParentOptions"
               ],
               "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "serenes-fe14-nohrian-class-sets",
+              "locator": "Shared Characters > Jakob and Azura; Shared Children > Shigure; child inheritance rules",
+              "fields": [
+                "fixedInheritedClassId",
+                "variableParentOptions"
+              ],
+              "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "aniwotawiki-fe14-shigure-inheritance",
+              "locator": "性能 > ジョーカー父",
+              "fields": [
+                "fixedInheritedClassId",
+                "variableParentOptions"
+              ],
+              "reviewStatus": "corroborated"
             },
             {
               "sourceId": "pegasusknight-fe14-child-units",
@@ -83858,6 +83912,22 @@
                 "variableParentOptions"
               ],
               "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "serenes-fe14-nohrian-class-sets",
+              "locator": "Children > Percy; exhaustive class-collision fallback",
+              "fields": [
+                "variableParentOptions"
+              ],
+              "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "aniwotawiki-fe14-beruka-percy-inheritance",
+              "locator": "性能 > ハロルドと結婚した場合",
+              "fields": [
+                "variableParentOptions"
+              ],
+              "reviewStatus": "corroborated"
             }
           ]
         }
@@ -83898,6 +83968,22 @@
               "variableParentOptions"
             ],
             "reviewStatus": "accepted"
+          },
+          {
+            "sourceId": "serenes-fe14-nohrian-class-sets",
+            "locator": "Children > Percy; exhaustive class-collision fallback",
+            "fields": [
+              "variableParentOptions"
+            ],
+            "reviewStatus": "accepted"
+          },
+          {
+            "sourceId": "aniwotawiki-fe14-beruka-percy-inheritance",
+            "locator": "性能 > ハロルドと結婚した場合",
+            "fields": [
+              "variableParentOptions"
+            ],
+            "reviewStatus": "corroborated"
           }
         ]
       },
@@ -83995,7 +84081,7 @@
                 "conquest",
                 "revelation"
               ],
-              "inheritedClassId": "oni_savage",
+              "inheritedClassId": "sky_knight",
               "inheritedClassReason": "parallel_class_fallback"
             },
             {
@@ -84424,6 +84510,22 @@
                 "variableParentOptions"
               ],
               "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "serenes-fe14-nohrian-class-sets",
+              "locator": "Children > Percy; exhaustive class-collision fallback",
+              "fields": [
+                "variableParentOptions"
+              ],
+              "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "aniwotawiki-fe14-beruka-percy-inheritance",
+              "locator": "性能 > ハロルドと結婚した場合",
+              "fields": [
+                "variableParentOptions"
+              ],
+              "reviewStatus": "corroborated"
             }
           ]
         },
@@ -86546,6 +86648,22 @@
                 "variableParentOptions"
               ],
               "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "serenes-fe14-nohrian-class-sets",
+              "locator": "Children > Nina; exhaustive class-collision fallback",
+              "fields": [
+                "variableParentOptions"
+              ],
+              "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "rrpg-fe14-child-class-inheritance",
+              "locator": "素質の継承 > ゼロ x ニュクス",
+              "fields": [
+                "variableParentOptions"
+              ],
+              "reviewStatus": "corroborated"
             }
           ]
         }
@@ -86586,6 +86704,22 @@
               "variableParentOptions"
             ],
             "reviewStatus": "accepted"
+          },
+          {
+            "sourceId": "serenes-fe14-nohrian-class-sets",
+            "locator": "Children > Nina; exhaustive class-collision fallback",
+            "fields": [
+              "variableParentOptions"
+            ],
+            "reviewStatus": "accepted"
+          },
+          {
+            "sourceId": "rrpg-fe14-child-class-inheritance",
+            "locator": "素質の継承 > ゼロ x ニュクス",
+            "fields": [
+              "variableParentOptions"
+            ],
+            "reviewStatus": "corroborated"
           }
         ]
       },
@@ -86701,7 +86835,7 @@
                 "conquest",
                 "revelation"
               ],
-              "inheritedClassId": "archer",
+              "inheritedClassId": "diviner",
               "inheritedClassReason": "parallel_class_fallback"
             },
             {
@@ -87090,6 +87224,22 @@
                 "variableParentOptions"
               ],
               "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "serenes-fe14-nohrian-class-sets",
+              "locator": "Children > Nina; exhaustive class-collision fallback",
+              "fields": [
+                "variableParentOptions"
+              ],
+              "reviewStatus": "accepted"
+            },
+            {
+              "sourceId": "rrpg-fe14-child-class-inheritance",
+              "locator": "素質の継承 > ゼロ x ニュクス",
+              "fields": [
+                "variableParentOptions"
+              ],
+              "reviewStatus": "corroborated"
             }
           ]
         },
@@ -87934,7 +88084,8 @@
       "title": "Fire Emblem Fates: Nohrian Characters - Class Sets",
       "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/class-sets/",
       "language": "en",
-      "reviewStatus": "accepted"
+      "reviewStatus": "accepted",
+      "notes": "Defines father-before-mother child inheritance, duplicate-tree handling, and parallel-class fallback using the class sets for Jakob, Azura, Niles, Nyx, Arthur, Beruka, Shigure, Nina, and Percy."
     },
     {
       "id": "serenes-fe14-nohrian-personal-skills",
@@ -88491,6 +88642,33 @@
       "language": "en",
       "reviewStatus": "accepted",
       "notes": "Combines the Hoshidan/Nohrian child class-set tables, support matrices, class-changing exceptions, and parallel-class table."
+    },
+    {
+      "id": "rrpg-fe14-child-class-inheritance",
+      "kind": "web",
+      "title": "RRPG - FEif aptitude inheritance",
+      "location": "https://rrpg.jp/fe_if/nature.html",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Explicitly identifies Diviner as the hidden fallback aptitude produced by Niles and Nyx for Nina when both ordinary inherited trees collide."
+    },
+    {
+      "id": "aniwotawiki-fe14-beruka-percy-inheritance",
+      "kind": "web",
+      "title": "AniwotaWiki - Beruka and Percy inheritance exception",
+      "location": "https://w.atwiki.jp/aniwotawiki/pages/36554.html",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Explicitly states that Beruka passes the Sky Knight aptitude, the parallel of Wyvern Rider, to Percy when married to Arthur because both of her ordinary trees are already present."
+    },
+    {
+      "id": "aniwotawiki-fe14-shigure-inheritance",
+      "kind": "web",
+      "title": "AniwotaWiki - Shigure and Jakob inheritance exception",
+      "location": "https://w.atwiki.jp/aniwotawiki/pages/37005.html",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Identifies Jakob as the father who causes Shigure to gain the otherwise unexplained Wyvern Rider aptitude."
     },
     {
       "id": "atwiki-fe14-child-pairings",

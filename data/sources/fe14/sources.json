@@ -568,7 +568,8 @@
       "title": "Fire Emblem Fates: Nohrian Characters - Class Sets",
       "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/class-sets/",
       "language": "en",
-      "reviewStatus": "accepted"
+      "reviewStatus": "accepted",
+      "notes": "Defines father-before-mother child inheritance, duplicate-tree handling, and parallel-class fallback using the class sets for Jakob, Azura, Niles, Nyx, Arthur, Beruka, Shigure, Nina, and Percy."
     },
     {
       "id": "serenes-fe14-nohrian-personal-skills",
@@ -1125,6 +1126,33 @@
       "language": "en",
       "reviewStatus": "accepted",
       "notes": "Combines the Hoshidan/Nohrian child class-set tables, support matrices, class-changing exceptions, and parallel-class table."
+    },
+    {
+      "id": "rrpg-fe14-child-class-inheritance",
+      "kind": "web",
+      "title": "RRPG - FEif aptitude inheritance",
+      "location": "https://rrpg.jp/fe_if/nature.html",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Explicitly identifies Diviner as the hidden fallback aptitude produced by Niles and Nyx for Nina when both ordinary inherited trees collide."
+    },
+    {
+      "id": "aniwotawiki-fe14-beruka-percy-inheritance",
+      "kind": "web",
+      "title": "AniwotaWiki - Beruka and Percy inheritance exception",
+      "location": "https://w.atwiki.jp/aniwotawiki/pages/36554.html",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Explicitly states that Beruka passes the Sky Knight aptitude, the parallel of Wyvern Rider, to Percy when married to Arthur because both of her ordinary trees are already present."
+    },
+    {
+      "id": "aniwotawiki-fe14-shigure-inheritance",
+      "kind": "web",
+      "title": "AniwotaWiki - Shigure and Jakob inheritance exception",
+      "location": "https://w.atwiki.jp/aniwotawiki/pages/37005.html",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Identifies Jakob as the father who causes Shigure to gain the otherwise unexplained Wyvern Rider aptitude."
     },
     {
       "id": "atwiki-fe14-child-pairings",
