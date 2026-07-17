@@ -1,5 +1,5 @@
 import Table from "react-bootstrap/Table";
-import { displayId, type UnitRuntime } from "../../../data/fe14";
+import { displayId, type UnitRuntime } from "../../../data";
 import GrowthBar from "./GrowthBar";
 import { STAT_KEYS } from "./types";
 import { formatSigned } from "./utils";

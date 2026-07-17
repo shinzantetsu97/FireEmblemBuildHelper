@@ -1,4 +1,4 @@
-import { displayId, type UnitRuntime } from "../../../data/fe14";
+import { displayId, type UnitRuntime } from "../../../data";
 import { AvatarConfigurationControls } from "./AvatarConfiguration";
 import SectionHeading from "./SectionHeading";
 import { STAT_KEYS, type AvatarSelection, type AvailabilityScenario } from "./types";

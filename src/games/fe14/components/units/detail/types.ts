@@ -1,4 +1,4 @@
-import type { AvatarChoice, StatBlock, UnitRuntime } from "../../../data/fe14";
+import type { AvatarChoice, StatBlock, UnitRuntime } from "../../../data";
 
 export const STAT_KEYS: Array<keyof StatBlock> = [
   "hp",

@@ -1,4 +1,4 @@
-import { displayId, fe14Data } from "../../../data/fe14";
+import { displayId, fe14Data } from "../../../data";
 
 export function ClassTreeList({ classIds }: { classIds: string[] }) {
   return classIds.map((classId, index) => (

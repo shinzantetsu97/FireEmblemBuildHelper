@@ -5,7 +5,7 @@ import { formatBonuses } from "./utils";
 export default function PairupTable({ bonuses }: { bonuses: PairupTableBonuses }) {
   return (
     <Table className="pairup-table" responsive>
-      <thead><tr><th>Rank</th><th>Attack Stance / Tag Team <span>Accepted</span></th><th>Guard Stance / Pair Up <span>Accepted</span></th></tr></thead>
+      <thead><tr><th>Rank</th><th>Attack Stance / Tag Team</th><th>Guard Stance / Pair Up</th></tr></thead>
       <tbody>
         <tr>
           <th scope="row">No support</th>
