@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import Container from "react-bootstrap/Container";
 import { ChevronLeft } from "lucide-react";
@@ -13,8 +13,10 @@ import type { AvatarGender } from "./types";
 
 export default function UnitDetail({ slug }: { slug: string }) {
   const [view, setView] = useState<UnitView>("overview");
-  const [avatarGender, setAvatarGender] = useState<AvatarGender>("male");
+  const [avatarGender, setAvatarGender] = useState<AvatarGender>(() => defaultGender(slug));
   const unit = findUnitBySlug(slug);
+
+  useEffect(() => setAvatarGender(defaultGender(slug)), [slug]);
 
   if (!unit) {
     return (
@@ -50,4 +52,8 @@ export default function UnitDetail({ slug }: { slug: string }) {
       </Container>
     </main>
   );
+}
+
+function defaultGender(slug: string): AvatarGender {
+  return slug.toLocaleLowerCase() === "kana" ? "female" : "male";
 }

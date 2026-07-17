@@ -96,7 +96,7 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "FE14 Units" })).toBeInTheDocument();
-    expect(screen.getAllByRole("img")).toHaveLength(48);
+    expect(screen.getAllByRole("img")).toHaveLength(69);
     expect(screen.getByText("No. 02")).toBeInTheDocument();
     const feliciaCard = screen.getByRole("img", { name: "Felicia portrait" }).closest("a");
     expect(feliciaCard).toHaveAttribute(
@@ -107,9 +107,12 @@ describe("notes workspace", () => {
     expect(within(feliciaCard!).queryByText("Accepted")).not.toBeInTheDocument();
 
     await user.selectOptions(screen.getByLabelText("Route roster"), "conquest");
-    expect(screen.getAllByRole("img")).toHaveLength(28);
+    expect(screen.getAllByRole("img")).toHaveLength(41);
     expect(screen.queryByRole("img", { name: "Ryoma portrait" })).not.toBeInTheDocument();
     expect(screen.getByRole("img", { name: "Xander portrait" })).toBeInTheDocument();
+
+    await user.selectOptions(screen.getByLabelText("Generation"), "first");
+    expect(screen.getAllByRole("img")).toHaveLength(28);
   });
 
   it("opens Felicia's overview and expandable JSON data", async () => {
@@ -804,5 +807,100 @@ describe("notes workspace", () => {
       "Corrin (F)",
       "Corrin (M)",
     ]);
+  });
+
+  it.each(["Sophie", "Kiragi", "Rhajat", "Nina"])("renders the %s offspring profile", (slug) => {
+    window.history.replaceState({}, "", `/FE14/Units/${slug}`);
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: slug, level: 1 })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: `Choose ${slug}'s mother` })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "How one recruitment stat is assembled" })).toBeInTheDocument();
+  });
+
+  it.each([
+    ["Dwyer", "NPC"],
+    ["Kiragi", "Playable Character"],
+  ])("uses the preferred recruitment faction label for %s", (slug, factionLabel) => {
+    window.history.replaceState({}, "", `/FE14/Units/${slug}`);
+    render(<App />);
+
+    expect(screen.getByText("Starts as").nextElementSibling).toHaveTextContent(factionLabel);
+  });
+
+  it.each(["Shiro", "Kiragi"])("shows guaranteed Dragon Vein access for %s", (slug) => {
+    window.history.replaceState({}, "", `/FE14/Units/${slug}`);
+    render(<App />);
+
+    const header = screen.getByRole("heading", { name: slug, level: 1 }).closest(".unit-header") as HTMLElement;
+    expect(within(header).getByText("Dragon Vein").nextElementSibling).toHaveTextContent("Yes");
+    expect(within(header).queryByText("Parent-dependent")).not.toBeInTheDocument();
+  });
+
+  it("keeps variable Dragon Vein access parent-dependent in an offspring header", () => {
+    window.history.replaceState({}, "", "/FE14/Units/Dwyer");
+    render(<App />);
+
+    const header = screen.getByRole("heading", { name: "Dwyer", level: 1 }).closest(".unit-header") as HTMLElement;
+    expect(within(header).getByText("Dragon Vein").nextElementSibling).toHaveTextContent("Parent-dependent");
+  });
+
+  it("updates an offspring's inherited unit traits with the selected parent", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE14/Units/Asugi");
+    render(<App />);
+
+    const traitLabel = screen.getByText("Unit traits");
+    expect(traitLabel.nextElementSibling).toHaveTextContent("Dragon unit");
+
+    await user.selectOptions(screen.getByLabelText("Mother"), "sakura");
+    expect(traitLabel.nextElementSibling).toHaveTextContent("None");
+  });
+
+  it("renders Shigure's father-driven scenario and Jakob class collision", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE14/Units/Shigure");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Choose Shigure's father" })).toBeInTheDocument();
+    expect(screen.getByText("Starts as").nextElementSibling).toHaveTextContent("Not deployed");
+
+    await user.selectOptions(screen.getByLabelText("Father"), "jakob");
+    const parentScenario = screen.getByRole("region", { name: "Choose Shigure's father" });
+    expect(within(parentScenario).getByText("Sibling").nextElementSibling).toHaveTextContent("Dwyer");
+    expect(screen.getByText("From Azura").nextElementSibling).toHaveTextContent("Wyvern Rider");
+    expect(screen.getByText("From Jakob").nextElementSibling).toHaveTextContent("Troubadour");
+  });
+
+  it("resolves Kana's gender, Talent, and offspring-parent scenario from one control set", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE14/Units/Kana");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Choose Kana's parent" })).toBeInTheDocument();
+    expect(screen.getByLabelText("Kana gender")).toHaveValue("female");
+    const femalePortraitSrc = screen.getByAltText("Female Kana portrait").getAttribute("src");
+    expect(screen.getByLabelText("Corrin boon")).toBeInTheDocument();
+    expect(screen.getByLabelText("Corrin bane")).toBeInTheDocument();
+    expect(screen.getByLabelText("Corrin Talent")).toBeInTheDocument();
+
+    await user.selectOptions(screen.getByLabelText("Parent"), "sophie");
+    expect(screen.getByLabelText("Sophie's mother")).toBeInTheDocument();
+    await user.selectOptions(screen.getByLabelText("Sophie's mother"), "felicia");
+    expect(screen.getByText("Cap inheritance bonus").nextElementSibling).toHaveTextContent("+0 (offspring parent)");
+    expect(screen.getByText("From Sophie").nextElementSibling).toHaveTextContent("Mercenary");
+    expect(screen.getByText(/Sophie's rates are first resolved with Felicia/i)).toBeInTheDocument();
+
+    await user.selectOptions(screen.getByLabelText("Kana gender"), "male");
+    expect(screen.getByAltText("Male Kana portrait")).not.toHaveAttribute("src", femalePortraitSrc);
+    await user.selectOptions(screen.getByLabelText("Parent"), "shigure");
+    await user.selectOptions(screen.getByLabelText("Shigure's father"), "keaton");
+    const supports = screen.getByRole("region", { name: "Supports and seal grants" });
+    expect(within(supports).queryByText("Velouria")).not.toBeInTheDocument();
+    expect(within(supports).getByText(/Azura clause:/).closest("p")).toHaveTextContent("Velouria is unavailable");
+
+    await user.selectOptions(screen.getByLabelText("Parent"), "jakob");
+    await user.selectOptions(screen.getByLabelText("Corrin Talent"), "troubadour");
+    expect(screen.getByText("From Corrin (F)").nextElementSibling).toHaveTextContent("No additional tree");
   });
 });

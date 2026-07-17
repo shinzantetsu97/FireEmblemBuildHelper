@@ -14,19 +14,20 @@ export default function UnitHeader({
   setAvatarGender: (gender: AvatarGender) => void;
 }) {
   const { identity } = unit;
+  const hasVariablePortrait = identity.id === "corrin" || identity.id === "kana";
   return (
     <header className="unit-header">
       <img
         src={getPortraitUrl(identity, avatarGender)}
-        alt={identity.id === "corrin" ? `${displayId(avatarGender)} Corrin portrait` : `${identity.displayName} portrait`}
+        alt={hasVariablePortrait ? `${displayId(avatarGender)} ${identity.displayName} portrait` : `${identity.displayName} portrait`}
       />
       <div className="unit-header-copy">
         <div className="unit-header-meta">
-          <span>First generation</span>
+          <span>{identity.generation === "second" ? "Second generation" : "First generation"}</span>
           {identity.availabilityCategory === "dlc_exclusive" ? <span>DLC-exclusive</span> : null}
           <ClassTreeLabel
             classId={unit.classAccess?.startingClassId ?? "unknown"}
-            labelOverride={identity.id === "corrin" ? corrinNobleBaseLabel(avatarGender) : undefined}
+            labelOverride={hasVariablePortrait ? corrinNobleBaseLabel(avatarGender) : undefined}
           />
           {identity.unitTags?.map((tag) => <span key={tag}>{displayId(tag)} unit</span>)}
         </div>
@@ -45,7 +46,10 @@ export default function UnitHeader({
             {identity.availableRoutes.map(displayId).join(", ")}
           </dd>
         </div>
-        <div><dt>Dragon Vein</dt><dd>{identity.dragonVein ? "Yes" : "No"}</dd></div>
+        <div>
+          <dt>Dragon Vein</dt>
+          <dd>{identity.dragonVein ? "Yes" : identity.generation === "second" ? "Parent-dependent" : "No"}</dd>
+        </div>
         {identity.id === "corrin" ? (
           <div className="unit-header-gender">
             <dt>Gender</dt>

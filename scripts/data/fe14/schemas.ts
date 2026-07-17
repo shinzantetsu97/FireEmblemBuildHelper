@@ -25,6 +25,17 @@ export const sourceRefSchema = z.object({
   reviewStatus: reviewStatusSchema,
 });
 
+export const statBlockSchema = z.object({
+  hp: z.number().int(),
+  strength: z.number().int(),
+  magic: z.number().int(),
+  skill: z.number().int(),
+  speed: z.number().int(),
+  luck: z.number().int(),
+  defense: z.number().int(),
+  resistance: z.number().int(),
+});
+
 export const sourceCatalogSchema = z.object({
   gameId: z.literal("fe14"),
   updatedAt: z.string().min(1),
@@ -41,38 +52,127 @@ export const sourceCatalogSchema = z.object({
   ),
 });
 
+const rosterUnitSchema = z.object({
+  id: z.string().regex(/^[a-z][a-z0-9_]*$/),
+  unitNo: z.number().int().positive(),
+  processingOrder: z.number().int().positive(),
+  availableRoutes: z.array(routeSchema).min(1),
+  availabilityCategory: z.enum(["dlc_exclusive"]).optional(),
+  slug: z.string().min(1),
+  displayName: z.string().min(1),
+  portraitFile: z.string().min(1),
+  sourceSheet: z.string().min(1),
+  status: processingStatusSchema,
+  names: z
+    .object({
+      en: z.string().min(1),
+      ja: z.string().min(1),
+      jaLatn: z.string().min(1),
+      zhHans: z.string().min(1),
+    })
+    .optional(),
+  gender: z.enum(["female", "male", "variable"]).optional(),
+  dragonVein: z.boolean().optional(),
+  unitTags: z.array(z.enum(["dragon", "beast"])).max(2).optional(),
+  personalSkillId: z.string().optional(),
+  notes: z.array(z.string().min(1)).optional(),
+  supportNotes: z.array(z.string().min(1)).optional(),
+});
+
 export const rosterSchema = z.object({
   gameId: z.literal("fe14"),
   rosterKind: z.literal("first_generation"),
-  units: z.array(
-    z.object({
-      id: z.string().regex(/^[a-z][a-z0-9_]*$/),
-      unitNo: z.number().int().positive(),
-      processingOrder: z.number().int().positive(),
-      availableRoutes: z.array(routeSchema).min(1),
-      availabilityCategory: z.enum(["dlc_exclusive"]).optional(),
-      slug: z.string().min(1),
-      displayName: z.string().min(1),
-      portraitFile: z.string().min(1),
-      sourceSheet: z.string().min(1),
-      status: processingStatusSchema,
-      names: z
-        .object({
-          en: z.string().min(1),
-          ja: z.string().min(1),
-          jaLatn: z.string().min(1),
-          zhHans: z.string().min(1),
-        })
-        .optional(),
-      gender: z.enum(["female", "male", "variable"]).optional(),
-      dragonVein: z.boolean().optional(),
-      unitTags: z.array(z.enum(["dragon", "beast"])).max(2).optional(),
-      personalSkillId: z.string().optional(),
-      notes: z.array(z.string().min(1)).optional(),
-      supportNotes: z.array(z.string().min(1)).optional(),
-    }),
-  ),
+  units: z.array(rosterUnitSchema),
 });
+
+export const secondGenerationRosterSchema = z.object({
+  gameId: z.literal("fe14"),
+  rosterKind: z.literal("second_generation"),
+  units: z.array(rosterUnitSchema.extend({
+    generation: z.literal("second"),
+    paralogueNo: z.number().int().min(2).max(22),
+    paralogueTitle: z.string().min(1),
+    fixedParentUnitId: z.string().min(1),
+  })).length(21),
+});
+
+const childSupportSchema = z.object({
+  partnerUnitId: z.string().min(1),
+  partnerGender: z.enum(["female", "male"]).optional(),
+  unitGender: z.enum(["female", "male"]).optional(),
+  kind: z.enum(["romantic", "friendship", "platonic", "family"]),
+  ranks: z.array(z.enum(["C", "B", "A", "S", "A+"])).min(1),
+  routes: z.array(routeSchema).min(1),
+  condition: z.enum(["always", "selected_variable_parent", "selected_sibling"]).default("always"),
+  sealGrant: z.object({
+    seal: z.enum(["friendship", "partner"]),
+    borrowedClassId: z.string().min(1),
+    grantedClassId: z.string().min(1),
+    resolution: z.enum([
+      "direct",
+      "duplicate_primary_fallback",
+      "restricted_primary_fallback",
+      "parallel_class_fallback",
+      "gender_parallel",
+      "variable",
+    ]),
+    classCandidates: z.object({
+      primaryClassId: z.string().min(1),
+      secondaryClassId: z.string().min(1).optional(),
+    }).optional(),
+  }).optional(),
+});
+
+export const childParentageFileSchema = z.array(z.object({
+  unitId: z.string().min(1),
+  fixedParentUnitId: z.string().min(1),
+  variableParentRole: z.enum(["mother", "father", "parent"]),
+  scenarioKind: z.enum(["standard", "avatar_child"]).optional(),
+  variableParentOptions: z.array(z.object({
+    unitId: z.string().min(1),
+    routes: z.array(routeSchema).min(1),
+    childGender: z.enum(["female", "male"]).optional(),
+    parentGeneration: z.enum(["first", "second"]).optional(),
+    inheritanceClassCandidates: z.object({
+      primaryClassId: z.string().min(1),
+      secondaryClassId: z.string().min(1).optional(),
+    }).optional(),
+    inheritedClassId: z.string().min(1),
+    inheritedClassReason: z.enum([
+      "direct",
+      "duplicate_primary_fallback",
+      "restricted_primary_fallback",
+      "parallel_class_fallback",
+      "gender_parallel",
+    ]),
+    fixedInheritedClassId: z.string().min(1).optional(),
+    fixedInheritedClassReason: z.enum([
+      "direct",
+      "duplicate_primary_fallback",
+      "restricted_primary_fallback",
+      "parallel_class_fallback",
+      "gender_parallel",
+    ]).optional(),
+    siblingUnitId: z.string().min(1).optional(),
+  })).min(1),
+  fixedInheritedClassId: z.string().min(1),
+  childBaseClassId: z.string().min(1),
+  childBaseGrowth: statBlockSchema,
+  notes: z.array(z.string().min(1)).optional(),
+  personalSkill: z.object({
+    id: z.string().min(1),
+    names: z.object({ en: z.string().min(1), zhHans: z.string().min(1) }),
+    effect: z.string().min(1),
+  }),
+  formulas: z.object({
+    personalGrowth: z.literal("floor((child_base + variable_parent) / 2)"),
+    capModifiers: z.enum(["fixed_parent + variable_parent + 1", "fixed_parent + variable_parent + generation_bonus"]),
+    attackStanceRanks: z.object({ C: z.enum(["fixed_parent", "variable_parent", "actual_mother", "actual_father"]), B: z.enum(["fixed_parent", "variable_parent", "actual_mother", "actual_father"]), A: z.enum(["fixed_parent", "variable_parent", "actual_mother", "actual_father"]), S: z.enum(["fixed_parent", "variable_parent", "actual_mother", "actual_father"]) }),
+    guardStanceRanks: z.object({ C: z.enum(["fixed_parent", "variable_parent", "actual_mother", "actual_father"]), B: z.enum(["fixed_parent", "variable_parent", "actual_mother", "actual_father"]), A: z.enum(["fixed_parent", "variable_parent", "actual_mother", "actual_father"]), S: z.enum(["fixed_parent", "variable_parent", "actual_mother", "actual_father"]) }),
+  }),
+  supports: z.array(childSupportSchema),
+  provenance: z.array(sourceRefSchema).min(1),
+}));
 
 const availabilitySchema = z.object({
   id: z.string().min(1),
@@ -215,16 +315,66 @@ const availabilitySchema = z.object({
 
 export const availabilityFileSchema = z.array(availabilitySchema);
 
-export const statBlockSchema = z.object({
-  hp: z.number().int(),
-  strength: z.number().int(),
-  magic: z.number().int(),
-  skill: z.number().int(),
-  speed: z.number().int(),
-  luck: z.number().int(),
-  defense: z.number().int(),
-  resistance: z.number().int(),
-});
+export const childRecruitmentFileSchema = z.array(z.object({
+  unitId: z.string().min(1),
+  paralogueNo: z.number().int().min(2).max(22),
+  paralogueTitle: z.string().min(1),
+  initialFaction: z.enum(["player", "npc", "enemy", "not_deployed"]),
+  recruitment: z.object({
+    description: z.string().min(1),
+    talkUnitId: z.string().min(1).optional(),
+    automaticAtMapEndIfSurvives: z.boolean(),
+    deathBeforeRecruitmentIsPermanent: z.boolean(),
+  }),
+  recruitmentNotes: z.array(z.string().min(1)).optional(),
+  startingClassId: z.string().min(1),
+  level10PersonalBases: statBlockSchema,
+  level10MinimumStatsBeforeInheritance: statBlockSchema,
+  weaponRanks: z.record(z.string(), z.enum(["E", "D", "C", "B", "A", "S"])),
+  inventory: z.array(z.string().min(1)),
+  startingClassGrowthRates: statBlockSchema,
+  baseStatFormula: z.object({
+    childAptitude: z.string().min(1),
+    promotedClassAptitude: z.string().min(1),
+    parentInheritanceValue: z.string().min(1),
+    parentStatInput: z.string().min(1),
+    inheritanceBonus: z.string().min(1),
+    finalStat: z.string().min(1),
+    rounding: z.string().min(1),
+    offspringSealNote: z.string().min(1),
+  }),
+  levelByStoryPosition: z.array(z.object({
+    chapterStart: z.number().int().min(1),
+    chapterEnd: z.number().int().min(1).optional(),
+    level: z.number().int().positive(),
+  })).min(1),
+  offspringSeal: z.object({
+    availableFromChapter: z.literal(19),
+    promotedLevelsByChapter: z.record(z.string(), z.number().int().positive()),
+    promotionOptions: z.array(z.object({
+      classId: z.string().min(1),
+      displayName: z.string().min(1),
+      routes: z.array(routeSchema).min(1).optional(),
+      classBaseStats: statBlockSchema,
+      classGrowthRates: statBlockSchema,
+      promotionGains: statBlockSchema,
+      primaryWeaponId: z.string().min(1),
+      secondaryWeaponIds: z.array(z.string().min(1)),
+      learnedSkills: z.array(z.object({
+        level: z.number().int().positive(),
+        skillId: z.string().min(1),
+        displayName: z.string().min(1),
+      })),
+    })).min(1),
+    weaponRankMilestones: z.array(z.object({
+      chapterStart: z.number().int().min(19),
+      chapterEnd: z.number().int().min(19),
+      primaryRank: z.enum(["E", "D", "C", "B", "A", "S"]),
+      secondaryRank: z.enum(["E", "D", "C", "B", "A", "S"]),
+    })),
+  }),
+  provenance: z.array(sourceRefSchema).min(1),
+}));
 
 export const baseStatsFileSchema = z.array(
   z.object({
@@ -291,7 +441,7 @@ export const baseStatsFileSchema = z.array(
 export const growthsFileSchema = z.array(
   z.object({
     unitId: z.string().min(1),
-    kind: z.literal("personal"),
+    kind: z.enum(["personal", "child_base"]),
     rates: statBlockSchema,
     provenance: z.array(sourceRefSchema).min(1),
   }),
@@ -518,10 +668,27 @@ export const classTreeFileSchema = z.object({
   provenance: z.array(sourceRefSchema).min(1),
 });
 
+export const classStatsFileSchema = z.object({
+  gameId: z.literal("fe14"),
+  scope: z.literal("standard_playable_non_dlc"),
+  classes: z.array(z.object({
+    classId: z.string().min(1),
+    displayName: z.string().min(1),
+    tier: z.enum(["base", "advanced", "special"]),
+    maximumStats: statBlockSchema,
+    weaponRankCaps: z.record(z.string(), z.enum(["E", "D", "C", "B", "A", "S"])),
+  })).min(1),
+  provenance: z.array(sourceRefSchema).min(1),
+});
+
 export const domainSchemas = {
   "data/sources/fe14/sources.json": sourceCatalogSchema,
   "data/normalized/fe14/units/first-generation.json": rosterSchema,
+  "data/normalized/fe14/units/second-generation.json": secondGenerationRosterSchema,
+  "data/normalized/fe14/child-parentage.json": childParentageFileSchema,
+  "data/normalized/fe14/child-recruitment.json": childRecruitmentFileSchema,
   "data/normalized/fe14/class-trees.json": classTreeFileSchema,
+  "data/normalized/fe14/class-stats.json": classStatsFileSchema,
   "data/normalized/fe14/unit-availability.json": availabilityFileSchema,
   "data/normalized/fe14/unit-base-stats.json": baseStatsFileSchema,
   "data/normalized/fe14/unit-growths.json": growthsFileSchema,

@@ -56,6 +56,12 @@ const APPROVED_ROSTER = [
   "corrin",
 ] as const;
 
+const APPROVED_SECOND_GENERATION_ROSTER = [
+  "kana", "shigure", "dwyer", "sophie", "midori", "shiro", "kiragi", "asugi", "selkie",
+  "hisame", "mitama", "caeldori", "rhajat", "siegbert", "forrest", "ignatius", "velouria",
+  "percy", "ophelia", "soleil", "nina",
+] as const;
+
 export interface ValidationMessage {
   code: string;
   message: string;
@@ -122,18 +128,24 @@ function validateRelationships(
   const sourceIds = new Set(sourceRecords.map((source) => source.id as string));
   const rosterFile = parsed["data/normalized/fe14/units/first-generation.json"] as JsonObject;
   const roster = rosterFile.units as JsonObject[];
+  const secondRosterFile = parsed["data/normalized/fe14/units/second-generation.json"] as JsonObject;
+  const secondRoster = secondRosterFile.units as JsonObject[];
+  const allRoster = [...roster, ...secondRoster];
   const rosterIds = roster.map((unit) => unit.id as string);
-  const rosterIdSet = new Set(rosterIds);
-  const rosterById = new Map(roster.map((unit) => [unit.id as string, unit]));
+  const secondRosterIds = secondRoster.map((unit) => unit.id as string);
+  const rosterIdSet = new Set(allRoster.map((unit) => unit.id as string));
+  const rosterById = new Map(allRoster.map((unit) => [unit.id as string, unit]));
   const rosterByProcessingOrder = [...roster].sort(
     (left, right) => (left.processingOrder as number) - (right.processingOrder as number),
   );
   const processingIds = rosterByProcessingOrder.map((unit) => unit.id as string);
 
   validateUniqueIds(sourceRecords, "source", errors);
-  validateUniqueIds(roster, "roster unit", errors);
-  validateContinuousOrder(roster, "unitNo", "unit number", errors);
-  validateContinuousOrder(roster, "processingOrder", "processing order", errors);
+  validateUniqueIds(allRoster, "roster unit", errors);
+  validateContinuousOrder(roster, "unitNo", "unit number", 1, errors);
+  validateContinuousOrder(roster, "processingOrder", "processing order", 1, errors);
+  validateContinuousOrder(secondRoster, "unitNo", "second-generation unit number", 49, errors);
+  validateContinuousOrder(secondRoster, "processingOrder", "second-generation processing order", 1, errors);
 
   if (rosterIds.length !== APPROVED_ROSTER.length) {
     errors.push({ code: "roster_count", message: `Expected 48 units; found ${rosterIds.length}.` });
@@ -143,6 +155,20 @@ function validateRelationships(
     errors.push({
       code: "roster_order",
       message: "First-generation roster membership or processing order differs from the approved manifest.",
+    });
+  }
+
+  if (secondRosterIds.join("|") !== APPROVED_SECOND_GENERATION_ROSTER.join("|")) {
+    errors.push({
+      code: "second_generation_roster_order",
+      message: "Second-generation roster membership or canonical paralogue order differs from the approved manifest.",
+    });
+  }
+
+  if (secondRoster.length !== 21 || secondRoster.some((unit, index) => unit.unitNo !== index + 49)) {
+    errors.push({
+      code: "second_generation_roster_count",
+      message: "Second-generation roster must contain canonical unit numbers 49 through 69 in JSON order.",
     });
   }
 
@@ -181,7 +207,9 @@ function validateRelationships(
     (relativePath) =>
       relativePath.startsWith("data/normalized/fe14/") &&
       !relativePath.endsWith("units/first-generation.json") &&
-      !relativePath.endsWith("class-trees.json"),
+      !relativePath.endsWith("units/second-generation.json") &&
+      !relativePath.endsWith("class-trees.json") &&
+      !relativePath.endsWith("class-stats.json"),
   );
 
   for (const relativePath of domainPaths) {
@@ -201,6 +229,51 @@ function validateRelationships(
   if (unitFilter && !rosterIdSet.has(unitFilter)) {
     errors.push({ code: "unknown_scope_unit", message: `Unknown unit filter ${unitFilter}.` });
     return;
+  }
+
+
+  const childParentage = parsed["data/normalized/fe14/child-parentage.json"] as JsonObject[];
+  const childRecruitment = parsed["data/normalized/fe14/child-recruitment.json"] as JsonObject[];
+  for (const child of childParentage) {
+    const childUnitId = child.unitId as string;
+    const options = child.variableParentOptions as JsonObject[];
+    if (!secondRosterIds.includes(childUnitId)) {
+      errors.push({ code: "invalid_child_parentage", message: `${childUnitId} is not a second-generation unit.`, unitId: childUnitId });
+    }
+    for (const relatedUnitId of [child.fixedParentUnitId, ...options.map((option) => option.unitId), ...options.map((option) => option.siblingUnitId).filter(Boolean)]) {
+      if (!rosterIdSet.has(relatedUnitId as string)) {
+        errors.push({ code: "unknown_child_relative", message: `${childUnitId} references unknown related unit ${String(relatedUnitId)}.`, unitId: childUnitId });
+      }
+    }
+  }
+  for (const recruitment of childRecruitment) {
+    if (!secondRosterIds.includes(recruitment.unitId as string)) {
+      errors.push({ code: "invalid_child_recruitment", message: `${String(recruitment.unitId)} is not a second-generation unit.`, unitId: recruitment.unitId as string });
+    }
+  }
+
+  const classTreeFile = parsed["data/normalized/fe14/class-trees.json"] as JsonObject;
+  const classStatsFile = parsed["data/normalized/fe14/class-stats.json"] as JsonObject;
+  const classTreeRows = classTreeFile.classes as JsonObject[];
+  const classProfiles = classStatsFile.classes as JsonObject[];
+  const standardClassIds = new Set<string>([
+    ...classTreeRows.map((entry) => entry.id as string),
+    ...classTreeRows.flatMap((entry) => (entry.promotions as JsonObject[]).map((promotion) => promotion.id as string)),
+    "songstress",
+  ]);
+  const profileIds = classProfiles.map((profile) => profile.classId as string);
+  for (const classId of standardClassIds) {
+    if (!profileIds.includes(classId)) {
+      errors.push({ code: "missing_class_stat_profile", message: `Standard playable class ${classId} has no maximum-stat profile.` });
+    }
+  }
+  for (const classId of profileIds) {
+    if (!standardClassIds.has(classId)) {
+      errors.push({ code: "unknown_class_stat_profile", message: `Class stat profile ${classId} is outside the standard playable non-DLC class scope.` });
+    }
+  }
+  if (new Set(profileIds).size !== profileIds.length) {
+    errors.push({ code: "duplicate_class_stat_profile", message: "Class stat profiles contain duplicate class IDs." });
   }
 
   const availability = parsed["data/normalized/fe14/unit-availability.json"] as JsonObject[];
@@ -271,7 +344,7 @@ function validateRelationships(
     if (!rosterIdSet.has(unitId) || !rosterIdSet.has(partnerUnitId)) {
       errors.push({
         code: "child_or_unknown_support",
-        message: `Support ${supportId} references a unit outside the first-generation roster.`,
+        message: `Support ${supportId} references a unit outside the canonical roster.`,
         unitId,
       });
     }
@@ -836,14 +909,15 @@ function validateContinuousOrder(
   records: JsonObject[],
   field: "unitNo" | "processingOrder",
   label: string,
+  start: number,
   errors: ValidationMessage[],
 ): void {
   const values = records.map((record) => record[field] as number).sort((left, right) => left - right);
-  const isContinuous = values.length === APPROVED_ROSTER.length && values.every((value, index) => value === index + 1);
+  const isContinuous = new Set(values).size === records.length && values.every((value, index) => value === index + start);
   if (!isContinuous) {
     errors.push({
       code: `invalid_${field}`,
-      message: `Roster ${label} values must be unique and continuous from 1 through ${String(APPROVED_ROSTER.length)}.`,
+      message: `Roster ${label} values must be unique and continuous from ${String(start)} through ${String(start + records.length - 1)}.`,
     });
   }
 }

@@ -1,5 +1,24 @@
 # Decisions
 
+## 2026-07-17: Run Plans Own Persistent Unit Configurations
+
+**Status:** Accepted
+
+Interactive unit-page choices are future build data, not disposable presentation state. Corrin's gender, boon, bane, and Talent; an offspring unit's variable parent; planned support pairings; and later class or skill choices must be able to survive page navigation, opening the unit JSON inspector, browser reloads, and switching between units.
+
+IndexedDB remains the canonical public-app store. A profile owns one or more projects or run plans, and each run plan owns its unit configurations. Configurations will reference curated game concepts by stable IDs rather than copying display names or entire game-data records. Values calculated from a configuration should normally be resolved from the current curated data at read time rather than stored as duplicated facts.
+
+The implementation may use in-memory React state as a working cache, but that cache is not the persistence contract. URL parameters may later support links to particular views, and `localStorage` may hold small interface preferences, but neither replaces IndexedDB for saved builds. No new frontend state-management dependency is selected by this decision.
+
+Two different JSON purposes must remain explicit:
+
+- **Unit JSON inspection/export** exposes the read-only curated record for auditing and developer-friendly reference. It should use compact actions on the unit page instead of occupying a permanent page tab.
+- **Run-plan JSON export/import** is the versioned backup and restore format for player-created profiles, configurations, notes, and builds.
+
+Both formats require an explicit schema version, but importing a curated unit record must never overwrite a player's saved run plan. IndexedDB schema migrations and exported run-plan migrations must be tested before persisted unit configurations are considered stable.
+
+See the Phase 3 mini-refactor and Phase 4 planner sections in [ROADMAP.md](ROADMAP.md).
+
 ## 2026-07-14: Browser-Local Persistence for the Public App
 
 **Status:** Accepted

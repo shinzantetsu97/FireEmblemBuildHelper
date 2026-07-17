@@ -48,6 +48,28 @@ import subakiPortrait from "./assets/character_portraits/Tsubaki.png";
 import takumiPortrait from "./assets/character_portraits/Takumi.png";
 import xanderPortrait from "./assets/character_portraits/Marx.png";
 import yukimuraPortrait from "./assets/character_portraits/Yukimura.png";
+import dwyerPortrait from "./assets/character_portraits/Deere.png";
+import kanaPortrait from "./assets/character_portraits/Kanna.png";
+import kanaMalePortrait from "./assets/character_portraits/Kanna2.webp";
+import shigurePortrait from "./assets/character_portraits/Shigure.png";
+import sophiePortrait from "./assets/character_portraits/Sophie.png";
+import midoriPortrait from "./assets/character_portraits/Midoriko.png";
+import shiroPortrait from "./assets/character_portraits/Shinonome.png";
+import kiragiPortrait from "./assets/character_portraits/Kisaragi.png";
+import asugiPortrait from "./assets/character_portraits/Grey.png";
+import selkiePortrait from "./assets/character_portraits/Kinu.png";
+import hisamePortrait from "./assets/character_portraits/Hisame.png";
+import mitamaPortrait from "./assets/character_portraits/Mitama.png";
+import caeldoriPortrait from "./assets/character_portraits/Matoi.png";
+import rhajatPortrait from "./assets/character_portraits/Shara.png";
+import siegbertPortrait from "./assets/character_portraits/Siegbert.png";
+import forrestPortrait from "./assets/character_portraits/Foleo.png";
+import ignatiusPortrait from "./assets/character_portraits/Ignis.png";
+import velouriaPortrait from "./assets/character_portraits/Velour.png";
+import percyPortrait from "./assets/character_portraits/Lutz.png";
+import opheliaPortrait from "./assets/character_portraits/Ophelia.png";
+import soleilPortrait from "./assets/character_portraits/Soleil.png";
+import ninaPortrait from "./assets/character_portraits/Eponine.png";
 
 export interface SourceRef {
   sourceId: string;
@@ -74,6 +96,10 @@ export interface UnitIdentity {
   personalSkillId?: string;
   notes?: string[];
   supportNotes?: string[];
+  generation: "first" | "second";
+  paralogueNo?: number;
+  paralogueTitle?: string;
+  fixedParentUnitId?: string;
 }
 
 export interface StatBlock {
@@ -259,6 +285,102 @@ export interface UnitRuntime {
   }>;
   classAccess: (Record<string, unknown> & { startingClassId: string; baseClassSet: string[]; heartSealClassSet: string[]; corrinTalentOnlyClassSet: string[]; sealGrants: SealGrant[] }) | null;
   personalSkill: (Record<string, unknown> & { names: { en: string }; effect: string }) | null;
+  offspring: OffspringData | null;
+}
+
+export interface VariableParentOption {
+  unitId: string;
+  routes: string[];
+  inheritedClassId: string;
+  inheritedClassReason: "direct" | "duplicate_primary_fallback" | "restricted_primary_fallback" | "parallel_class_fallback" | "gender_parallel";
+  childGender?: "female" | "male";
+  parentGeneration?: "first" | "second";
+  inheritanceClassCandidates?: {
+    primaryClassId: string;
+    secondaryClassId?: string;
+  };
+  fixedInheritedClassId?: string;
+  fixedInheritedClassReason?: "direct" | "duplicate_primary_fallback" | "restricted_primary_fallback" | "parallel_class_fallback" | "gender_parallel";
+  siblingUnitId?: string;
+}
+
+export interface OffspringData {
+  parentage: {
+    fixedParentUnitId: string;
+    variableParentRole: "mother" | "father" | "parent";
+    scenarioKind?: "standard" | "avatar_child";
+    variableParentOptions: VariableParentOption[];
+    fixedInheritedClassId: string;
+    childBaseClassId: string;
+    childBaseGrowth: StatBlock;
+    notes?: string[];
+    formulas: Record<string, unknown>;
+    supports: Array<{
+      partnerUnitId: string;
+      partnerGender?: "female" | "male";
+      unitGender?: "female" | "male";
+      kind: "romantic" | "friendship" | "platonic" | "family";
+      ranks: string[];
+      routes: string[];
+      condition: "always" | "selected_variable_parent" | "selected_sibling";
+      sealGrant?: {
+        seal: "friendship" | "partner";
+        borrowedClassId: string;
+        grantedClassId: string;
+        resolution: "direct" | "duplicate_primary_fallback" | "restricted_primary_fallback" | "parallel_class_fallback" | "gender_parallel" | "variable";
+        classCandidates?: {
+          primaryClassId: string;
+          secondaryClassId?: string;
+        };
+      };
+    }>;
+  };
+  recruitment: {
+    paralogueNo: number;
+    paralogueTitle: string;
+    initialFaction: "player" | "npc" | "enemy" | "not_deployed";
+    recruitment: {
+      description: string;
+      talkUnitId?: string;
+      automaticAtMapEndIfSurvives: boolean;
+      deathBeforeRecruitmentIsPermanent: boolean;
+    };
+    recruitmentNotes?: string[];
+    startingClassId: string;
+    level10PersonalBases: StatBlock;
+    level10MinimumStatsBeforeInheritance: StatBlock;
+    weaponRanks: Record<string, string>;
+    inventory: string[];
+    startingClassGrowthRates: StatBlock;
+    baseStatFormula: {
+      childAptitude: string;
+      promotedClassAptitude: string;
+      parentInheritanceValue: string;
+      parentStatInput: string;
+      inheritanceBonus: string;
+      finalStat: string;
+      rounding: string;
+      offspringSealNote: string;
+    };
+    levelByStoryPosition: Array<{ chapterStart: number; chapterEnd?: number; level: number }>;
+    offspringSeal: {
+      availableFromChapter: 19;
+      promotedLevelsByChapter: Record<string, number>;
+      promotionOptions: Array<{
+        classId: string;
+        displayName: string;
+        routes?: string[];
+        classBaseStats: StatBlock;
+        classGrowthRates: StatBlock;
+        promotionGains: StatBlock;
+        primaryWeaponId: string;
+        secondaryWeaponId: string;
+        learnedSkills: Array<{ level: number; skillId: string; displayName: string }>;
+        secondaryWeaponIds: string[];
+      }>;
+      weaponRankMilestones: Array<{ chapterStart: number; chapterEnd: number; primaryRank: string; secondaryRank: string }>;
+    };
+  };
 }
 
 export interface StanceBonuses {
@@ -283,12 +405,21 @@ export interface ClassTree {
   promotions: Array<{ id: string; label: string }>;
 }
 
+export interface ClassStatProfile {
+  classId: string;
+  displayName: string;
+  tier: "base" | "advanced" | "special";
+  maximumStats: StatBlock;
+  weaponRankCaps: Record<string, string>;
+}
+
 export interface Fe14Runtime {
   schemaVersion: number;
   gameId: string;
   lastUpdated: string;
   roster: UnitIdentity[];
   classTrees: ClassTree[];
+  classStats: ClassStatProfile[];
   units: UnitRuntime[];
   sources: Array<{ id: string; title: string; location: string; reviewStatus: string }>;
 }
@@ -342,12 +473,34 @@ const portraitUrls: Record<string, string> = {
   "Yukimura.png": yukimuraPortrait,
   "Yuugiri.png": reinaPortrait,
   "Zero.png": nilesPortrait,
+  "Deere.png": dwyerPortrait,
+  "Kanna.png": kanaPortrait,
+  "Shigure.png": shigurePortrait,
+  "Sophie.png": sophiePortrait,
+  "Midoriko.png": midoriPortrait,
+  "Shinonome.png": shiroPortrait,
+  "Kisaragi.png": kiragiPortrait,
+  "Grey.png": asugiPortrait,
+  "Kinu.png": selkiePortrait,
+  "Hisame.png": hisamePortrait,
+  "Mitama.png": mitamaPortrait,
+  "Matoi.png": caeldoriPortrait,
+  "Shara.png": rhajatPortrait,
+  "Siegbert.png": siegbertPortrait,
+  "Foleo.png": forrestPortrait,
+  "Ignis.png": ignatiusPortrait,
+  "Velour.png": velouriaPortrait,
+  "Lutz.png": percyPortrait,
+  "Ophelia.png": opheliaPortrait,
+  "Soleil.png": soleilPortrait,
+  "Eponine.png": ninaPortrait,
 };
 
 export const fe14Data = runtimeJson as unknown as Fe14Runtime;
 
 export function getPortraitUrl(unit: UnitIdentity, avatarGender?: "male" | "female"): string {
   if (unit.id === "corrin" && avatarGender === "female") return corrinFemalePortrait;
+  if (unit.id === "kana" && avatarGender === "male") return kanaMalePortrait;
   return portraitUrls[unit.portraitFile] ?? "";
 }
 

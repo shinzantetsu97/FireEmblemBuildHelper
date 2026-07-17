@@ -17,6 +17,7 @@ import { type AvatarGender } from "./types";
 import { ScarletDepartureAlert } from "./UnitAlerts";
 import { corrinNobleBaseLabel } from "./UnitHeader";
 import UnitReferences from "./UnitReferences";
+import OffspringOverview from "./OffspringOverview";
 import { corrinTalentLabel } from "./utils";
 
 export default function UnitOverview({
@@ -38,6 +39,16 @@ export default function UnitOverview({
   const avatarSelection = config && boon && bane && talent
     ? { config, boon, bane, talent, gender: avatarGender, boonId, baneId, talentId, setBoonId, setBaneId, setTalentId, setGender: setAvatarGender }
     : null;
+
+  if (unit.offspring) {
+    return (
+      <OffspringOverview
+        unit={unit}
+        childGender={avatarGender}
+        setChildGender={setAvatarGender}
+      />
+    );
+  }
 
   return (
     <div className="unit-overview">
