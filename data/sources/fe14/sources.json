@@ -232,6 +232,15 @@
       "notes": "Player testing records the full Conquest level schedule, deterministic average-growth stat gains, automatic class skills, and a level 15 cap."
     },
     {
+      "id": "ltranc-fe14-map-level-scaling",
+      "kind": "game_data",
+      "title": "FE14 map-level scaling analysis - ltranc@",
+      "location": "Personal communication via Discord, 2026-07-17",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "FE14 modder ltranc@ identified the shared map-level autolevel mechanic: children use internal level 10, Izana and Flora use 28, and Yukimura and Fuga use 33. The applicable chapter map level determines autolevel gains and the Offspring Seal result."
+    },
+    {
       "id": "pegasusknight-fe14-parent-units",
       "kind": "web",
       "title": "FE14 parent-generation unit evaluation - Pegasus Knight",
@@ -247,7 +256,7 @@
       "location": "https://github.com/thane98/paragon/tree/poetry/Data/FE14/Types",
       "language": "en",
       "reviewStatus": "corroborated",
-      "notes": "The CastleJoin and Chapter schemas expose route-specific castle recruitment chapters and chapter-level Offspring Seal scaling fields. Their coexistence supports describing the castle system as Offspring Seal-esque level scaling, but does not prove that castle recruits use the child unit Offspring Seal routine."
+      "notes": "The CastleJoin and Chapter schemas expose route-specific castle recruitment data and chapter-level Offspring Seal fields. These extracted structures corroborate the map-level mechanism identified through FE14 modding analysis."
     },
     {
       "id": "serenes-fe14-hoshidan-other-data",

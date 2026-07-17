@@ -96,6 +96,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -278,6 +304,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -377,6 +413,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -547,6 +609,16 @@
         "fields": [
           "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
         ],
         "reviewStatus": "accepted"
       }
@@ -845,8 +917,44 @@
           "baseStatFormula"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
-    ]
+    ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    }
   },
   {
     "unitId": "sophie",
@@ -945,6 +1053,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -1118,6 +1252,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1217,6 +1361,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -1389,6 +1559,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1487,6 +1667,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -1657,6 +1863,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1754,6 +1970,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -1924,6 +2166,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2020,6 +2272,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -2190,6 +2468,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2288,6 +2576,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -2408,6 +2722,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2505,6 +2829,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -2676,6 +3026,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2776,6 +3136,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -2948,6 +3334,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3045,6 +3441,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -3217,6 +3639,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3314,6 +3746,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -3486,6 +3944,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3586,6 +4054,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -3759,6 +4253,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3853,6 +4357,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -4025,6 +4555,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4124,6 +4664,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -4297,6 +4863,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4395,6 +4971,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -4515,6 +5117,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4612,6 +5224,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -4784,6 +5422,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4881,6 +5529,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -5051,6 +5725,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -5149,6 +5833,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -5321,6 +6031,16 @@
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -5420,6 +6140,32 @@
         "level": 20
       }
     ],
+    "mapLevelScaling": {
+      "basis": "map_level",
+      "internalLevel": 10,
+      "unpromotedLevelFormula": "max(10, map_level)",
+      "promotedInternalLevelOffset": 20,
+      "offspringSealLevelFormula": "map_level - promoted_internal_level_offset",
+      "knownMapLevelsByChapter": {
+        "12": 11,
+        "13": 12,
+        "14": 14,
+        "15": 15,
+        "16": 17,
+        "17": 18,
+        "18": 20,
+        "19": 22,
+        "20": 24,
+        "21": 26,
+        "22": 28,
+        "23": 30,
+        "24": 32,
+        "25": 34,
+        "26": 36,
+        "27": 38
+      },
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+    },
     "offspringSeal": {
       "availableFromChapter": 19,
       "promotedLevelsByChapter": {
@@ -5590,6 +6336,16 @@
         "fields": [
           "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "ltranc-fe14-map-level-scaling",
+        "locator": "Children: internal level 10 and map-level / Offspring Seal relationship",
+        "fields": [
+          "mapLevelScaling",
+          "levelByStoryPosition",
+          "offspringSeal"
         ],
         "reviewStatus": "accepted"
       }

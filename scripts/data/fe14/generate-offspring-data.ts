@@ -288,6 +288,19 @@ const revelationRomances: Record<string, string[]> = {
 
 const readJson = async <T>(file: string): Promise<T> => JSON.parse(await readFile(path.join(normalized, file), "utf8")) as T;
 
+const childMapLevelScaling = {
+  basis: "map_level",
+  internalLevel: 10,
+  unpromotedLevelFormula: "max(10, map_level)",
+  promotedInternalLevelOffset: 20,
+  offspringSealLevelFormula: "map_level - promoted_internal_level_offset",
+  knownMapLevelsByChapter: {
+    12: 11, 13: 12, 14: 14, 15: 15, 16: 17, 17: 18, 18: 20,
+    19: 22, 20: 24, 21: 26, 22: 28, 23: 30, 24: 32, 25: 34, 26: 36, 27: 38,
+  },
+  note: "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+} as const;
+
 async function main() {
   const [existingParentage, existingRecruitment, firstRoster, secondRoster, supportRelationships, classAccess, classTrees] = await Promise.all([
     readJson<any[]>("child-parentage.json"),
@@ -301,6 +314,15 @@ async function main() {
   const acceptedDwyerParentage = existingParentage.find((entry) => entry.unitId === "dwyer");
   const acceptedDwyerRecruitment = existingRecruitment.find((entry) => entry.unitId === "dwyer");
   if (!acceptedDwyerParentage || !acceptedDwyerRecruitment) throw new Error("Accepted Dwyer seed is required");
+  acceptedDwyerRecruitment.mapLevelScaling = childMapLevelScaling;
+  if (!acceptedDwyerRecruitment.provenance.some((entry: any) => entry.sourceId === "ltranc-fe14-map-level-scaling")) {
+    acceptedDwyerRecruitment.provenance.push({
+      sourceId: "ltranc-fe14-map-level-scaling",
+      locator: "Children: internal level 10 and map-level / Offspring Seal relationship",
+      fields: ["mapLevelScaling", "levelByStoryPosition", "offspringSeal"],
+      reviewStatus: "accepted",
+    });
+  }
 
   const rosterUnits = [...firstRoster.units, ...secondRoster.units];
   const rosterById = new Map(rosterUnits.map((unit: any) => [unit.id, unit]));
@@ -500,11 +522,13 @@ async function main() {
       startingClassGrowthRates: baseProfile.growth,
       baseStatFormula: acceptedDwyerRecruitment.baseStatFormula,
       levelByStoryPosition: acceptedDwyerRecruitment.levelByStoryPosition,
+      mapLevelScaling: childMapLevelScaling,
       offspringSeal: { ...acceptedDwyerRecruitment.offspringSeal, promotionOptions },
       provenance: [
         { sourceId: "fewiki-fe14-offspring-units", locator: `${roster.displayName} > Fates recruitment, inventory, and starting ranks`, fields: ["recruitment", "inventory", "weaponRanks"], reviewStatus: "corroborated" },
         { sourceId: "fewiki-fe14-offspring-stats", locator: `${roster.displayName}/Stats > level-10 bases and scaling`, fields: ["level10PersonalBases", "level10MinimumStatsBeforeInheritance", "levelByStoryPosition", "offspringSeal"], reviewStatus: "corroborated" },
         { sourceId: "fewiki-fe14-classes", locator: `${baseProfile.displayName} and promotion rows`, fields: ["startingClassGrowthRates", "offspringSeal.promotionOptions"], reviewStatus: "accepted" },
+        { sourceId: "ltranc-fe14-map-level-scaling", locator: "Children: internal level 10 and map-level / Offspring Seal relationship", fields: ["mapLevelScaling", "levelByStoryPosition", "offspringSeal"], reviewStatus: "accepted" },
       ],
     };
   });

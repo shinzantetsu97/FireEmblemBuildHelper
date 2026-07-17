@@ -384,18 +384,15 @@ Do not model child-paralogue enemy scaling merely because it uses related story-
 
 Create one shared, source-backed table rather than duplicating chapter thresholds on every child.
 
-The candidate table currently describes displayed Chapters 19-27, effective post-promotion levels progressing from 22 through 38, and main/secondary weapon-rank milestones. Verify:
+The verified map-level table describes displayed Chapters 19-27 with map levels progressing from 22 through 38. Children have internal level 10. Before promotion, their scaled level is the greater of level 10 and the current map level; an Offspring Seal converts that effective level to promoted displayed level by subtracting 20. Verify any still-unresolved presentation details, including:
 
-- the exact chapter basis;
-- displayed versus internal/effective level;
-- promoted displayed level;
 - main and secondary weapon ranks at every threshold;
 - automatic promotion-class selection;
 - which class skills are automatically learned;
 - inventory timing and whether the seal must be used manually;
 - route, difficulty, version, and region differences.
 
-Do not reuse the special castle-recruit "Offspring Seal-esque" model from Izana, Yukimura, Flora, or Fuga. Similar wording is not proof that the mechanics are identical.
+Children and the special castle recruits share the chapter map-level input, as identified and explained by FE14 modder ltranc@, but they do not share one complete formula. Children use internal level 10 and Offspring Seal promotion conversion. Flora and Izana use internal level 28 from promoted level 5; Yukimura and Fuga use internal level 33 from promoted level 10. Keep child stat inheritance, parent contributions, promotion gains, and actual Offspring Seal effects separate from castle-recruit stat calculation.
 
 ## Class Inheritance Rules
 

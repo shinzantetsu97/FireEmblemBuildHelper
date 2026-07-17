@@ -301,12 +301,6 @@ select {
   max-width: 70rem;
 }
 
-.castle-recruit-data-alert .castle-recruit-table-flip {
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin-top: 0.65rem;
-}
-
 .unit-header {
   align-items: center;
   background: #ffffff;
