@@ -1,0 +1,5598 @@
+[
+  {
+    "unitId": "kana",
+    "paralogueNo": 2,
+    "paralogueTitle": "Dragon Blood",
+    "initialFaction": "not_deployed",
+    "recruitment": {
+      "description": "Kana joins automatically after the map is completed.",
+      "automaticAtMapEndIfSurvives": true,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "recruitmentNotes": [
+      "Kana appears during Dragon Blood as an uncontrolled dragon NPC; the playable Nohr Prince or Princess joins after the chapter ends."
+    ],
+    "startingClassId": "nohr_prince",
+    "level10PersonalBases": {
+      "hp": 7,
+      "strength": 3,
+      "magic": 6,
+      "skill": 8,
+      "speed": 8,
+      "luck": 9,
+      "defense": 5,
+      "resistance": 5
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 24,
+      "strength": 10,
+      "magic": 9,
+      "skill": 12,
+      "speed": 13,
+      "luck": 11,
+      "defense": 10,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "sword": "D",
+      "dragonstone": "D"
+    },
+    "inventory": [
+      "dragonstone"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 15,
+      "strength": 15,
+      "magic": 10,
+      "skill": 10,
+      "speed": 10,
+      "luck": 10,
+      "defense": 10,
+      "resistance": 5
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "nohr_noble",
+          "displayName": "Nohr Noble",
+          "routes": [
+            "conquest",
+            "revelation"
+          ],
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 8,
+            "magic": 6,
+            "skill": 4,
+            "speed": 7,
+            "luck": 2,
+            "defense": 6,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 15,
+            "strength": 10,
+            "magic": 15,
+            "skill": 5,
+            "speed": 15,
+            "luck": 5,
+            "defense": 5,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 1,
+            "magic": 3,
+            "skill": 0,
+            "speed": 2,
+            "luck": 0,
+            "defense": 1,
+            "resistance": 4
+          },
+          "primaryWeaponId": "sword",
+          "secondaryWeaponIds": [
+            "dragonstone",
+            "tome"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "draconic_hex",
+              "displayName": "Draconic Hex"
+            },
+            {
+              "level": 15,
+              "skillId": "nohrian_trust",
+              "displayName": "Nohrian Trust"
+            }
+          ]
+        },
+        {
+          "classId": "hoshido_noble",
+          "displayName": "Hoshido Noble",
+          "routes": [
+            "birthright",
+            "revelation"
+          ],
+          "classBaseStats": {
+            "hp": 19,
+            "strength": 10,
+            "magic": 4,
+            "skill": 5,
+            "speed": 6,
+            "luck": 4,
+            "defense": 7,
+            "resistance": 3
+          },
+          "classGrowthRates": {
+            "hp": 15,
+            "strength": 15,
+            "magic": 10,
+            "skill": 10,
+            "speed": 10,
+            "luck": 10,
+            "defense": 15,
+            "resistance": 0
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 3,
+            "magic": 1,
+            "skill": 1,
+            "speed": 1,
+            "luck": 2,
+            "defense": 2,
+            "resistance": 1
+          },
+          "primaryWeaponId": "sword",
+          "secondaryWeaponIds": [
+            "dragonstone",
+            "staff"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "dragon_ward",
+              "displayName": "Dragon Ward"
+            },
+            {
+              "level": 15,
+              "skillId": "hoshidan_unity",
+              "displayName": "Hoshidan Unity"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Kana > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Kana/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Nohr Prince / Princess and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "shigure",
+    "paralogueNo": 3,
+    "paralogueTitle": "Surprise Duet",
+    "initialFaction": "not_deployed",
+    "recruitment": {
+      "description": "Shigure joins automatically after the map is completed.",
+      "automaticAtMapEndIfSurvives": true,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "recruitmentNotes": [
+      "Shigure is not deployed during Surprise Duet; he joins after the chapter ends."
+    ],
+    "startingClassId": "sky_knight",
+    "level10PersonalBases": {
+      "hp": 9,
+      "strength": 6,
+      "magic": 1,
+      "skill": 7,
+      "speed": 7,
+      "luck": 5,
+      "defense": 8,
+      "resistance": 7
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 25,
+      "strength": 9,
+      "magic": 1,
+      "skill": 12,
+      "speed": 14,
+      "luck": 9,
+      "defense": 10,
+      "resistance": 13
+    },
+    "weaponRanks": {
+      "lance": "D"
+    },
+    "inventory": [
+      "iron_naginata"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 0,
+      "strength": 10,
+      "magic": 0,
+      "skill": 10,
+      "speed": 15,
+      "luck": 20,
+      "defense": 0,
+      "resistance": 20
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "falcon_knight",
+          "displayName": "Falcon Knight",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 5,
+            "magic": 4,
+            "skill": 6,
+            "speed": 10,
+            "luck": 5,
+            "defense": 5,
+            "resistance": 9
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 10,
+            "magic": 10,
+            "skill": 10,
+            "speed": 15,
+            "luck": 20,
+            "defense": 0,
+            "resistance": 20
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 2,
+            "magic": 4,
+            "skill": 1,
+            "speed": 3,
+            "luck": 1,
+            "defense": 3,
+            "resistance": 3
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "staff"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rally_speed",
+              "displayName": "Rally Speed"
+            },
+            {
+              "level": 15,
+              "skillId": "warding_blow",
+              "displayName": "Warding Blow"
+            }
+          ]
+        },
+        {
+          "classId": "kinshi_knight",
+          "displayName": "Kinshi Knight",
+          "classBaseStats": {
+            "hp": 17,
+            "strength": 4,
+            "magic": 1,
+            "skill": 9,
+            "speed": 8,
+            "luck": 5,
+            "defense": 4,
+            "resistance": 7
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 5,
+            "magic": 0,
+            "skill": 15,
+            "speed": 15,
+            "luck": 15,
+            "defense": 0,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 1,
+            "magic": 1,
+            "skill": 4,
+            "speed": 1,
+            "luck": 1,
+            "defense": 2,
+            "resistance": 1
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "bow"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "air_superiority",
+              "displayName": "Air Superiority"
+            },
+            {
+              "level": 15,
+              "skillId": "amaterasu",
+              "displayName": "Amaterasu"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Shigure > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Shigure/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Sky Knight and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "dwyer",
+    "paralogueNo": 4,
+    "paralogueTitle": "Fight or Flight",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Jakob talks to Dwyer, or Dwyer survives until map completion.",
+      "talkUnitId": "jakob",
+      "automaticAtMapEndIfSurvives": true,
+      "deathBeforeRecruitmentIsPermanent": true
+    },
+    "startingClassId": "troubadour",
+    "level10PersonalBases": {
+      "hp": 8,
+      "strength": 7,
+      "magic": 7,
+      "skill": 2,
+      "speed": 6,
+      "luck": 4,
+      "defense": 6,
+      "resistance": 7
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 23,
+      "strength": 7,
+      "magic": 10,
+      "skill": 9,
+      "speed": 11,
+      "luck": 8,
+      "defense": 7,
+      "resistance": 11
+    },
+    "weaponRanks": {
+      "staff": "D"
+    },
+    "inventory": [
+      "mend",
+      "sun_festal",
+      "physic"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 0,
+      "strength": 0,
+      "magic": 10,
+      "skill": 20,
+      "speed": 10,
+      "luck": 15,
+      "defense": 0,
+      "resistance": 15
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "attendant",
+          "displayName": "Butler",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 4,
+            "magic": 5,
+            "skill": 9,
+            "speed": 8,
+            "luck": 4,
+            "defense": 5,
+            "resistance": 4
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 10,
+            "magic": 10,
+            "skill": 15,
+            "speed": 15,
+            "luck": 10,
+            "defense": 5,
+            "resistance": 10
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 4,
+            "magic": 2,
+            "skill": 2,
+            "speed": 3,
+            "luck": 0,
+            "defense": 4,
+            "resistance": 0
+          },
+          "primaryWeaponId": "staff",
+          "secondaryWeaponIds": [
+            "dagger"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "live_to_serve",
+              "displayName": "Live to Serve"
+            },
+            {
+              "level": 15,
+              "skillId": "tomebreaker",
+              "displayName": "Tomebreaker"
+            }
+          ]
+        },
+        {
+          "classId": "strategist",
+          "displayName": "Strategist",
+          "classBaseStats": {
+            "hp": 16,
+            "strength": 0,
+            "magic": 7,
+            "skill": 6,
+            "speed": 7,
+            "luck": 5,
+            "defense": 2,
+            "resistance": 7
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 0,
+            "magic": 15,
+            "skill": 5,
+            "speed": 10,
+            "luck": 20,
+            "defense": 0,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 0,
+            "magic": 4,
+            "skill": -1,
+            "speed": 2,
+            "luck": 1,
+            "defense": 1,
+            "resistance": 3
+          },
+          "primaryWeaponId": "staff",
+          "secondaryWeaponIds": [
+            "tome"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rally_resistance",
+              "displayName": "Rally Resistance"
+            },
+            {
+              "level": 15,
+              "skillId": "inspiration",
+              "displayName": "Inspiration"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-dwyer",
+        "locator": "Fire Emblem Fates > Recruitment and starting inventory",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-class-growth-rates",
+        "locator": "Troubadour",
+        "fields": [
+          "startingClassGrowthRates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-dwyer-stats",
+        "locator": "Fire Emblem Fates > Base stats, chapter scaling, promotion gains, and promoted skills",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal.promotedLevelsByChapter",
+          "offspringSeal.promotionOptions.promotionGains",
+          "offspringSeal.promotionOptions.learnedSkills"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-class-base-stats",
+        "locator": "Troubadour, Strategist, Maid / Butler",
+        "fields": [
+          "offspringSeal.promotionOptions.classBaseStats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-class-growth-rates",
+        "locator": "Strategist, Maid / Butler",
+        "fields": [
+          "offspringSeal.promotionOptions.classGrowthRates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "pegasusknight-fe14-child-units",
+        "locator": "Overview > official strategy-guide initial-parameter formula",
+        "fields": [
+          "baseStatFormula"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "sophie",
+    "paralogueNo": 5,
+    "paralogueTitle": "Bold Approach",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Silas talks to Sophie, or Sophie survives until map completion.",
+      "talkUnitId": "silas",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": true
+    },
+    "startingClassId": "cavalier",
+    "level10PersonalBases": {
+      "hp": 8,
+      "strength": 6,
+      "magic": 2,
+      "skill": 7,
+      "speed": 6,
+      "luck": 7,
+      "defense": 4,
+      "resistance": 6
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 25,
+      "strength": 12,
+      "magic": 2,
+      "skill": 12,
+      "speed": 11,
+      "luck": 10,
+      "defense": 9,
+      "resistance": 9
+    },
+    "weaponRanks": {
+      "sword": "D",
+      "lance": "D"
+    },
+    "inventory": [
+      "iron_lance",
+      "iron_sword",
+      "vulnerary"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 10,
+      "strength": 15,
+      "magic": 0,
+      "skill": 10,
+      "speed": 10,
+      "luck": 15,
+      "defense": 10,
+      "resistance": 5
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "paladin",
+          "displayName": "Paladin",
+          "classBaseStats": {
+            "hp": 19,
+            "strength": 8,
+            "magic": 1,
+            "skill": 7,
+            "speed": 7,
+            "luck": 4,
+            "defense": 7,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 15,
+            "magic": 0,
+            "skill": 10,
+            "speed": 10,
+            "luck": 15,
+            "defense": 10,
+            "resistance": 10
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 2,
+            "magic": 1,
+            "skill": 2,
+            "speed": 2,
+            "luck": 1,
+            "defense": 2,
+            "resistance": 3
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "sword"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "defender",
+              "displayName": "Defender"
+            },
+            {
+              "level": 15,
+              "skillId": "aegis",
+              "displayName": "Aegis"
+            }
+          ]
+        },
+        {
+          "classId": "great_knight",
+          "displayName": "Great Knight",
+          "classBaseStats": {
+            "hp": 21,
+            "strength": 10,
+            "magic": 0,
+            "skill": 6,
+            "speed": 6,
+            "luck": 3,
+            "defense": 10,
+            "resistance": 2
+          },
+          "classGrowthRates": {
+            "hp": 20,
+            "strength": 20,
+            "magic": 0,
+            "skill": 10,
+            "speed": 5,
+            "luck": 5,
+            "defense": 20,
+            "resistance": 0
+          },
+          "promotionGains": {
+            "hp": 4,
+            "strength": 4,
+            "magic": 0,
+            "skill": 1,
+            "speed": 1,
+            "luck": 0,
+            "defense": 5,
+            "resistance": -1
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "sword",
+            "axe"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "luna",
+              "displayName": "Luna"
+            },
+            {
+              "level": 15,
+              "skillId": "armored_blow",
+              "displayName": "Armored Blow"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Sophie > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Sophie/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Cavalier and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "midori",
+    "paralogueNo": 6,
+    "paralogueTitle": "Herbal Remedy",
+    "initialFaction": "player",
+    "recruitment": {
+      "description": "Midori joins automatically at the start of the paralogue.",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "recruitmentNotes": [
+      "In Birthright, Herbal Remedy cannot be unlocked until Kaze passes his Chapter 15 survival check."
+    ],
+    "startingClassId": "apothecary",
+    "level10PersonalBases": {
+      "hp": 8,
+      "strength": 6,
+      "magic": 2,
+      "skill": 10,
+      "speed": 4,
+      "luck": 10,
+      "defense": 4,
+      "resistance": 2
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 26,
+      "strength": 12,
+      "magic": 2,
+      "skill": 14,
+      "speed": 8,
+      "luck": 12,
+      "defense": 10,
+      "resistance": 4
+    },
+    "weaponRanks": {
+      "bow": "D"
+    },
+    "inventory": [
+      "iron_yumi"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 20,
+      "strength": 20,
+      "magic": 0,
+      "skill": 10,
+      "speed": 10,
+      "luck": 5,
+      "defense": 10,
+      "resistance": 5
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "merchant",
+          "displayName": "Merchant",
+          "classBaseStats": {
+            "hp": 20,
+            "strength": 8,
+            "magic": 0,
+            "skill": 6,
+            "speed": 5,
+            "luck": 4,
+            "defense": 8,
+            "resistance": 5
+          },
+          "classGrowthRates": {
+            "hp": 20,
+            "strength": 20,
+            "magic": 0,
+            "skill": 10,
+            "speed": 5,
+            "luck": 15,
+            "defense": 10,
+            "resistance": 5
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 2,
+            "magic": 0,
+            "skill": 2,
+            "speed": 1,
+            "luck": 2,
+            "defense": 2,
+            "resistance": 3
+          },
+          "primaryWeaponId": "bow",
+          "secondaryWeaponIds": [
+            "lance"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "profiteer",
+              "displayName": "Profiteer"
+            },
+            {
+              "level": 15,
+              "skillId": "spendthrift",
+              "displayName": "Spendthrift"
+            }
+          ]
+        },
+        {
+          "classId": "mechanist",
+          "displayName": "Mechanist",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 7,
+            "magic": 0,
+            "skill": 9,
+            "speed": 7,
+            "luck": 2,
+            "defense": 6,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 10,
+            "magic": 0,
+            "skill": 15,
+            "speed": 10,
+            "luck": 5,
+            "defense": 5,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 0,
+            "strength": 1,
+            "magic": 0,
+            "skill": 5,
+            "speed": 3,
+            "luck": 0,
+            "defense": 0,
+            "resistance": 4
+          },
+          "primaryWeaponId": "bow",
+          "secondaryWeaponIds": [
+            "dagger"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "golembane",
+              "displayName": "Golembane"
+            },
+            {
+              "level": 15,
+              "skillId": "replicate",
+              "displayName": "Replicate"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Midori > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Midori/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Apothecary and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "shiro",
+    "paralogueNo": 7,
+    "paralogueTitle": "Father & Liege",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Ryoma talks to Shiro during the battle.",
+      "talkUnitId": "ryoma",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": true
+    },
+    "startingClassId": "spear_fighter",
+    "level10PersonalBases": {
+      "hp": 8,
+      "strength": 7,
+      "magic": 0,
+      "skill": 5,
+      "speed": 3,
+      "luck": 6,
+      "defense": 8,
+      "resistance": 5
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 25,
+      "strength": 13,
+      "magic": 0,
+      "skill": 11,
+      "speed": 9,
+      "luck": 8,
+      "defense": 13,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "lance": "D"
+    },
+    "inventory": [
+      "iron_naginata",
+      "vulnerary"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 15,
+      "strength": 15,
+      "magic": 0,
+      "skill": 15,
+      "speed": 15,
+      "luck": 5,
+      "defense": 10,
+      "resistance": 5
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "spear_master",
+          "displayName": "Spear Master",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 9,
+            "magic": 0,
+            "skill": 8,
+            "speed": 8,
+            "luck": 3,
+            "defense": 7,
+            "resistance": 3
+          },
+          "classGrowthRates": {
+            "hp": 15,
+            "strength": 15,
+            "magic": 0,
+            "skill": 15,
+            "speed": 15,
+            "luck": 5,
+            "defense": 10,
+            "resistance": 5
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 3,
+            "magic": 0,
+            "skill": 2,
+            "speed": 2,
+            "luck": 1,
+            "defense": 2,
+            "resistance": 1
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "seal_speed",
+              "displayName": "Seal Speed"
+            },
+            {
+              "level": 15,
+              "skillId": "lancefaire",
+              "displayName": "Lancefaire"
+            }
+          ]
+        },
+        {
+          "classId": "basara",
+          "displayName": "Basara",
+          "classBaseStats": {
+            "hp": 20,
+            "strength": 7,
+            "magic": 5,
+            "skill": 7,
+            "speed": 7,
+            "luck": 5,
+            "defense": 7,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 20,
+            "strength": 10,
+            "magic": 10,
+            "skill": 10,
+            "speed": 10,
+            "luck": 15,
+            "defense": 5,
+            "resistance": 10
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 1,
+            "magic": 5,
+            "skill": 1,
+            "speed": 1,
+            "luck": 3,
+            "defense": 2,
+            "resistance": 4
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "tome"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rend_heaven",
+              "displayName": "Rend Heaven"
+            },
+            {
+              "level": 15,
+              "skillId": "quixotic",
+              "displayName": "Quixotic"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Shiro > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Shiro/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Spear Fighter and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "kiragi",
+    "paralogueNo": 8,
+    "paralogueTitle": "A Great Hunt",
+    "initialFaction": "player",
+    "recruitment": {
+      "description": "Kiragi joins automatically on turn 1.",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "startingClassId": "archer",
+    "level10PersonalBases": {
+      "hp": 7,
+      "strength": 6,
+      "magic": 0,
+      "skill": 5,
+      "speed": 6,
+      "luck": 8,
+      "defense": 4,
+      "resistance": 1
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 24,
+      "strength": 11,
+      "magic": 0,
+      "skill": 12,
+      "speed": 11,
+      "luck": 10,
+      "defense": 8,
+      "resistance": 2
+    },
+    "weaponRanks": {
+      "bow": "D"
+    },
+    "inventory": [
+      "iron_yumi",
+      "vulnerary"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 10,
+      "strength": 15,
+      "magic": 0,
+      "skill": 15,
+      "speed": 15,
+      "luck": 5,
+      "defense": 10,
+      "resistance": 0
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "sniper",
+          "displayName": "Sniper",
+          "classBaseStats": {
+            "hp": 19,
+            "strength": 7,
+            "magic": 0,
+            "skill": 10,
+            "speed": 9,
+            "luck": 3,
+            "defense": 6,
+            "resistance": 2
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 15,
+            "magic": 0,
+            "skill": 20,
+            "speed": 15,
+            "luck": 5,
+            "defense": 10,
+            "resistance": 0
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 2,
+            "magic": 0,
+            "skill": 3,
+            "speed": 4,
+            "luck": 1,
+            "defense": 2,
+            "resistance": 1
+          },
+          "primaryWeaponId": "bow",
+          "secondaryWeaponIds": [],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "certain_blow",
+              "displayName": "Certain Blow"
+            },
+            {
+              "level": 15,
+              "skillId": "bowfaire",
+              "displayName": "Bowfaire"
+            }
+          ]
+        },
+        {
+          "classId": "kinshi_knight",
+          "displayName": "Kinshi Knight",
+          "classBaseStats": {
+            "hp": 17,
+            "strength": 4,
+            "magic": 1,
+            "skill": 9,
+            "speed": 8,
+            "luck": 5,
+            "defense": 4,
+            "resistance": 7
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 5,
+            "magic": 0,
+            "skill": 15,
+            "speed": 15,
+            "luck": 15,
+            "defense": 0,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 0,
+            "strength": -1,
+            "magic": 1,
+            "skill": 2,
+            "speed": 3,
+            "luck": 3,
+            "defense": 0,
+            "resistance": 6
+          },
+          "primaryWeaponId": "bow",
+          "secondaryWeaponIds": [
+            "lance"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "air_superiority",
+              "displayName": "Air Superiority"
+            },
+            {
+              "level": 15,
+              "skillId": "amaterasu",
+              "displayName": "Amaterasu"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Kiragi > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Kiragi/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Archer and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "asugi",
+    "paralogueNo": 9,
+    "paralogueTitle": "Saizo vs. Saizo",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Asugi joins automatically when the map is completed.",
+      "automaticAtMapEndIfSurvives": true,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "startingClassId": "ninja",
+    "level10PersonalBases": {
+      "hp": 6,
+      "strength": 7,
+      "magic": 4,
+      "skill": 7,
+      "speed": 6,
+      "luck": 9,
+      "defense": 4,
+      "resistance": 9
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 22,
+      "strength": 10,
+      "magic": 4,
+      "skill": 15,
+      "speed": 14,
+      "luck": 10,
+      "defense": 7,
+      "resistance": 12
+    },
+    "weaponRanks": {
+      "dagger": "D"
+    },
+    "inventory": [
+      "iron_shuriken"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 5,
+      "strength": 5,
+      "magic": 0,
+      "skill": 20,
+      "speed": 20,
+      "luck": 0,
+      "defense": 5,
+      "resistance": 15
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "master_ninja",
+          "displayName": "Master Ninja",
+          "classBaseStats": {
+            "hp": 17,
+            "strength": 5,
+            "magic": 0,
+            "skill": 10,
+            "speed": 11,
+            "luck": 2,
+            "defense": 4,
+            "resistance": 8
+          },
+          "classGrowthRates": {
+            "hp": 5,
+            "strength": 5,
+            "magic": 0,
+            "skill": 20,
+            "speed": 20,
+            "luck": 0,
+            "defense": 5,
+            "resistance": 20
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 2,
+            "magic": 0,
+            "skill": 2,
+            "speed": 3,
+            "luck": 1,
+            "defense": 1,
+            "resistance": 5
+          },
+          "primaryWeaponId": "dagger",
+          "secondaryWeaponIds": [],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "lethality",
+              "displayName": "Lethality"
+            },
+            {
+              "level": 15,
+              "skillId": "shurikenfaire",
+              "displayName": "Shurikenfaire"
+            }
+          ]
+        },
+        {
+          "classId": "mechanist",
+          "displayName": "Mechanist",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 7,
+            "magic": 0,
+            "skill": 9,
+            "speed": 7,
+            "luck": 2,
+            "defense": 6,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 10,
+            "magic": 0,
+            "skill": 15,
+            "speed": 10,
+            "luck": 5,
+            "defense": 5,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 4,
+            "magic": 0,
+            "skill": 1,
+            "speed": -1,
+            "luck": 1,
+            "defense": 3,
+            "resistance": 3
+          },
+          "primaryWeaponId": "dagger",
+          "secondaryWeaponIds": [
+            "bow"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "golembane",
+              "displayName": "Golembane"
+            },
+            {
+              "level": 15,
+              "skillId": "replicate",
+              "displayName": "Replicate"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Asugi > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Asugi/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Ninja and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "selkie",
+    "paralogueNo": 10,
+    "paralogueTitle": "Hunter & Prey",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Kaden talks to Selkie during the battle.",
+      "talkUnitId": "kaden",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": true
+    },
+    "startingClassId": "kitsune",
+    "level10PersonalBases": {
+      "hp": 7,
+      "strength": 4,
+      "magic": 3,
+      "skill": 6,
+      "speed": 7,
+      "luck": 10,
+      "defense": 6,
+      "resistance": 11
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 23,
+      "strength": 9,
+      "magic": 4,
+      "skill": 12,
+      "speed": 15,
+      "luck": 14,
+      "defense": 7,
+      "resistance": 15
+    },
+    "weaponRanks": {
+      "beaststone": "D"
+    },
+    "inventory": [
+      "beaststone",
+      "concoction"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 10,
+      "strength": 10,
+      "magic": 0,
+      "skill": 15,
+      "speed": 20,
+      "luck": 10,
+      "defense": 0,
+      "resistance": 20
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "nine_tails",
+          "displayName": "Nine-Tails",
+          "classBaseStats": {
+            "hp": 19,
+            "strength": 6,
+            "magic": 2,
+            "skill": 9,
+            "speed": 10,
+            "luck": 5,
+            "defense": 2,
+            "resistance": 8
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 10,
+            "magic": 0,
+            "skill": 15,
+            "speed": 20,
+            "luck": 10,
+            "defense": 0,
+            "resistance": 20
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 1,
+            "magic": 1,
+            "skill": 3,
+            "speed": 2,
+            "luck": 1,
+            "defense": 1,
+            "resistance": 4
+          },
+          "primaryWeaponId": "beaststone",
+          "secondaryWeaponIds": [],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "even_better",
+              "displayName": "Even Better"
+            },
+            {
+              "level": 15,
+              "skillId": "grisly_wound",
+              "displayName": "Grisly Wound"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Selkie > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Selkie/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Kitsune and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "hisame",
+    "paralogueNo": 11,
+    "paralogueTitle": "A Long Grudge",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Hinata talks to Hisame during the battle.",
+      "talkUnitId": "hinata",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": true
+    },
+    "startingClassId": "samurai",
+    "level10PersonalBases": {
+      "hp": 6,
+      "strength": 6,
+      "magic": 1,
+      "skill": 7,
+      "speed": 5,
+      "luck": 4,
+      "defense": 5,
+      "resistance": 4
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 23,
+      "strength": 10,
+      "magic": 1,
+      "skill": 12,
+      "speed": 13,
+      "luck": 7,
+      "defense": 8,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "sword": "D"
+    },
+    "inventory": [
+      "iron_katana"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 10,
+      "strength": 10,
+      "magic": 0,
+      "skill": 15,
+      "speed": 20,
+      "luck": 15,
+      "defense": 0,
+      "resistance": 10
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "swordmaster",
+          "displayName": "Swordmaster",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 6,
+            "magic": 2,
+            "skill": 7,
+            "speed": 11,
+            "luck": 4,
+            "defense": 5,
+            "resistance": 5
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 10,
+            "magic": 5,
+            "skill": 15,
+            "speed": 20,
+            "luck": 15,
+            "defense": 0,
+            "resistance": 10
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 2,
+            "magic": 2,
+            "skill": 2,
+            "speed": 3,
+            "luck": 1,
+            "defense": 2,
+            "resistance": 2
+          },
+          "primaryWeaponId": "sword",
+          "secondaryWeaponIds": [],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "astra",
+              "displayName": "Astra"
+            },
+            {
+              "level": 15,
+              "skillId": "swordfaire",
+              "displayName": "Swordfaire"
+            }
+          ]
+        },
+        {
+          "classId": "master_of_arms",
+          "displayName": "Master of Arms",
+          "classBaseStats": {
+            "hp": 20,
+            "strength": 8,
+            "magic": 0,
+            "skill": 6,
+            "speed": 9,
+            "luck": 3,
+            "defense": 7,
+            "resistance": 3
+          },
+          "classGrowthRates": {
+            "hp": 20,
+            "strength": 15,
+            "magic": 0,
+            "skill": 10,
+            "speed": 10,
+            "luck": 10,
+            "defense": 10,
+            "resistance": 0
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 4,
+            "magic": 0,
+            "skill": 1,
+            "speed": 1,
+            "luck": 0,
+            "defense": 4,
+            "resistance": 0
+          },
+          "primaryWeaponId": "sword",
+          "secondaryWeaponIds": [
+            "lance",
+            "axe"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "seal_strength",
+              "displayName": "Seal Strength"
+            },
+            {
+              "level": 15,
+              "skillId": "life_and_death",
+              "displayName": "Life and Death"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Hisame > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Hisame/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Samurai and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "mitama",
+    "paralogueNo": 12,
+    "paralogueTitle": "Sweet Dreams",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Visit Mitama's village three times with Azama, or complete the map while she remains inside.",
+      "talkUnitId": "azama",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "recruitmentNotes": [
+      "The village visit count is the active-recruitment method; clearing the map also recruits Mitama."
+    ],
+    "startingClassId": "shrine_maiden",
+    "level10PersonalBases": {
+      "hp": 6,
+      "strength": 7,
+      "magic": 6,
+      "skill": 6,
+      "speed": 8,
+      "luck": 10,
+      "defense": 3,
+      "resistance": 5
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 22,
+      "strength": 7,
+      "magic": 9,
+      "skill": 11,
+      "speed": 13,
+      "luck": 14,
+      "defense": 5,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "staff": "D"
+    },
+    "inventory": [
+      "wane_festal"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 0,
+      "strength": 5,
+      "magic": 10,
+      "skill": 10,
+      "speed": 15,
+      "luck": 15,
+      "defense": 0,
+      "resistance": 20
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "priestess",
+          "displayName": "Priestess",
+          "classBaseStats": {
+            "hp": 19,
+            "strength": 6,
+            "magic": 7,
+            "skill": 6,
+            "speed": 9,
+            "luck": 5,
+            "defense": 5,
+            "resistance": 8
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 10,
+            "magic": 10,
+            "skill": 5,
+            "speed": 15,
+            "luck": 15,
+            "defense": 0,
+            "resistance": 20
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 6,
+            "magic": 4,
+            "skill": 1,
+            "speed": 4,
+            "luck": 1,
+            "defense": 3,
+            "resistance": 3
+          },
+          "primaryWeaponId": "staff",
+          "secondaryWeaponIds": [
+            "bow"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "renewal",
+              "displayName": "Renewal"
+            },
+            {
+              "level": 15,
+              "skillId": "countermagic",
+              "displayName": "Countermagic"
+            }
+          ]
+        },
+        {
+          "classId": "onmyoji",
+          "displayName": "Onmyoji",
+          "classBaseStats": {
+            "hp": 16,
+            "strength": 0,
+            "magic": 7,
+            "skill": 6,
+            "speed": 7,
+            "luck": 2,
+            "defense": 3,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 0,
+            "magic": 20,
+            "skill": 10,
+            "speed": 15,
+            "luck": 0,
+            "defense": 0,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 0,
+            "strength": 0,
+            "magic": 4,
+            "skill": 1,
+            "speed": 2,
+            "luck": -2,
+            "defense": 1,
+            "resistance": 1
+          },
+          "primaryWeaponId": "staff",
+          "secondaryWeaponIds": [
+            "tome"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rally_magic",
+              "displayName": "Rally Magic"
+            },
+            {
+              "level": 15,
+              "skillId": "tomefaire",
+              "displayName": "Tomefaire"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Mitama > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Mitama/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Shrine Maiden and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "caeldori",
+    "paralogueNo": 13,
+    "paralogueTitle": "Truly Talented",
+    "initialFaction": "player",
+    "recruitment": {
+      "description": "Caeldori joins automatically on turn 1.",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "startingClassId": "sky_knight",
+    "level10PersonalBases": {
+      "hp": 8,
+      "strength": 8,
+      "magic": 3,
+      "skill": 5,
+      "speed": 6,
+      "luck": 9,
+      "defense": 5,
+      "resistance": 6
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 24,
+      "strength": 11,
+      "magic": 3,
+      "skill": 10,
+      "speed": 13,
+      "luck": 13,
+      "defense": 7,
+      "resistance": 12
+    },
+    "weaponRanks": {
+      "lance": "D"
+    },
+    "inventory": [
+      "swordcatcher",
+      "iron_naginata"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 0,
+      "strength": 10,
+      "magic": 0,
+      "skill": 10,
+      "speed": 15,
+      "luck": 20,
+      "defense": 0,
+      "resistance": 20
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "falcon_knight",
+          "displayName": "Falcon Knight",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 5,
+            "magic": 4,
+            "skill": 6,
+            "speed": 10,
+            "luck": 5,
+            "defense": 5,
+            "resistance": 9
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 10,
+            "magic": 10,
+            "skill": 10,
+            "speed": 15,
+            "luck": 20,
+            "defense": 0,
+            "resistance": 20
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 2,
+            "magic": 4,
+            "skill": 1,
+            "speed": 3,
+            "luck": 1,
+            "defense": 3,
+            "resistance": 3
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "staff"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rally_speed",
+              "displayName": "Rally Speed"
+            },
+            {
+              "level": 15,
+              "skillId": "warding_blow",
+              "displayName": "Warding Blow"
+            }
+          ]
+        },
+        {
+          "classId": "kinshi_knight",
+          "displayName": "Kinshi Knight",
+          "classBaseStats": {
+            "hp": 17,
+            "strength": 4,
+            "magic": 1,
+            "skill": 9,
+            "speed": 8,
+            "luck": 5,
+            "defense": 4,
+            "resistance": 7
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 5,
+            "magic": 0,
+            "skill": 15,
+            "speed": 15,
+            "luck": 15,
+            "defense": 0,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 1,
+            "magic": 1,
+            "skill": 4,
+            "speed": 1,
+            "luck": 1,
+            "defense": 2,
+            "resistance": 1
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "bow"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "air_superiority",
+              "displayName": "Air Superiority"
+            },
+            {
+              "level": 15,
+              "skillId": "amaterasu",
+              "displayName": "Amaterasu"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Caeldori > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Caeldori/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Sky Knight and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "rhajat",
+    "paralogueNo": 14,
+    "paralogueTitle": "After the End",
+    "initialFaction": "enemy",
+    "recruitment": {
+      "description": "Hayato talks to Rhajat, or Rhajat joins automatically when the map is completed.",
+      "talkUnitId": "hayato",
+      "automaticAtMapEndIfSurvives": true,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "startingClassId": "diviner",
+    "level10PersonalBases": {
+      "hp": 8,
+      "strength": 1,
+      "magic": 10,
+      "skill": 0,
+      "speed": 7,
+      "luck": 6,
+      "defense": 5,
+      "resistance": 12
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 23,
+      "strength": 1,
+      "magic": 14,
+      "skill": 5,
+      "speed": 13,
+      "luck": 7,
+      "defense": 6,
+      "resistance": 15
+    },
+    "weaponRanks": {
+      "tome": "D"
+    },
+    "inventory": [
+      "ox_spirit"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 0,
+      "strength": 5,
+      "magic": 15,
+      "skill": 10,
+      "speed": 15,
+      "luck": 5,
+      "defense": 0,
+      "resistance": 10
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "onmyoji",
+          "displayName": "Onmyoji",
+          "classBaseStats": {
+            "hp": 16,
+            "strength": 0,
+            "magic": 7,
+            "skill": 6,
+            "speed": 7,
+            "luck": 2,
+            "defense": 3,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 0,
+            "magic": 20,
+            "skill": 10,
+            "speed": 15,
+            "luck": 0,
+            "defense": 0,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 0,
+            "magic": 3,
+            "skill": 1,
+            "speed": 1,
+            "luck": 1,
+            "defense": 2,
+            "resistance": 3
+          },
+          "primaryWeaponId": "tome",
+          "secondaryWeaponIds": [
+            "staff"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rally_magic",
+              "displayName": "Rally Magic"
+            },
+            {
+              "level": 15,
+              "skillId": "tomefaire",
+              "displayName": "Tomefaire"
+            }
+          ]
+        },
+        {
+          "classId": "basara",
+          "displayName": "Basara",
+          "classBaseStats": {
+            "hp": 20,
+            "strength": 7,
+            "magic": 5,
+            "skill": 7,
+            "speed": 7,
+            "luck": 5,
+            "defense": 7,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 20,
+            "strength": 10,
+            "magic": 10,
+            "skill": 10,
+            "speed": 10,
+            "luck": 15,
+            "defense": 5,
+            "resistance": 10
+          },
+          "promotionGains": {
+            "hp": 5,
+            "strength": 7,
+            "magic": 1,
+            "skill": 2,
+            "speed": 1,
+            "luck": 4,
+            "defense": 6,
+            "resistance": 3
+          },
+          "primaryWeaponId": "tome",
+          "secondaryWeaponIds": [
+            "lance"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rend_heaven",
+              "displayName": "Rend Heaven"
+            },
+            {
+              "level": 15,
+              "skillId": "quixotic",
+              "displayName": "Quixotic"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Rhajat > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Rhajat/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Diviner and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "siegbert",
+    "paralogueNo": 15,
+    "paralogueTitle": "Hidden Bravery",
+    "initialFaction": "player",
+    "recruitment": {
+      "description": "Siegbert joins automatically on turn 1.",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "startingClassId": "cavalier",
+    "level10PersonalBases": {
+      "hp": 7,
+      "strength": 5,
+      "magic": 2,
+      "skill": 7,
+      "speed": 6,
+      "luck": 7,
+      "defense": 6,
+      "resistance": 3
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 24,
+      "strength": 11,
+      "magic": 2,
+      "skill": 12,
+      "speed": 11,
+      "luck": 10,
+      "defense": 11,
+      "resistance": 6
+    },
+    "weaponRanks": {
+      "sword": "D",
+      "lance": "D"
+    },
+    "inventory": [
+      "iron_sword",
+      "iron_lance",
+      "javelin",
+      "concoction"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 10,
+      "strength": 15,
+      "magic": 0,
+      "skill": 10,
+      "speed": 10,
+      "luck": 15,
+      "defense": 10,
+      "resistance": 5
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "paladin",
+          "displayName": "Paladin",
+          "classBaseStats": {
+            "hp": 19,
+            "strength": 8,
+            "magic": 1,
+            "skill": 7,
+            "speed": 7,
+            "luck": 4,
+            "defense": 7,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 15,
+            "magic": 0,
+            "skill": 10,
+            "speed": 10,
+            "luck": 15,
+            "defense": 10,
+            "resistance": 10
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 2,
+            "magic": 1,
+            "skill": 2,
+            "speed": 2,
+            "luck": 1,
+            "defense": 2,
+            "resistance": 3
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "sword"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "defender",
+              "displayName": "Defender"
+            },
+            {
+              "level": 15,
+              "skillId": "aegis",
+              "displayName": "Aegis"
+            }
+          ]
+        },
+        {
+          "classId": "great_knight",
+          "displayName": "Great Knight",
+          "classBaseStats": {
+            "hp": 21,
+            "strength": 10,
+            "magic": 0,
+            "skill": 6,
+            "speed": 6,
+            "luck": 3,
+            "defense": 10,
+            "resistance": 2
+          },
+          "classGrowthRates": {
+            "hp": 20,
+            "strength": 20,
+            "magic": 0,
+            "skill": 10,
+            "speed": 5,
+            "luck": 5,
+            "defense": 20,
+            "resistance": 0
+          },
+          "promotionGains": {
+            "hp": 4,
+            "strength": 4,
+            "magic": 0,
+            "skill": 1,
+            "speed": 1,
+            "luck": 0,
+            "defense": 5,
+            "resistance": -1
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "sword",
+            "axe"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "luna",
+              "displayName": "Luna"
+            },
+            {
+              "level": 15,
+              "skillId": "armored_blow",
+              "displayName": "Armored Blow"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Siegbert > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Siegbert/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Cavalier and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "forrest",
+    "paralogueNo": 16,
+    "paralogueTitle": "Abducted",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Forrest joins automatically after the map if he survives.",
+      "automaticAtMapEndIfSurvives": true,
+      "deathBeforeRecruitmentIsPermanent": true
+    },
+    "startingClassId": "troubadour",
+    "level10PersonalBases": {
+      "hp": 8,
+      "strength": 5,
+      "magic": 9,
+      "skill": 1,
+      "speed": 4,
+      "luck": 5,
+      "defense": 6,
+      "resistance": 13
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 23,
+      "strength": 5,
+      "magic": 12,
+      "skill": 8,
+      "speed": 9,
+      "luck": 9,
+      "defense": 7,
+      "resistance": 17
+    },
+    "weaponRanks": {
+      "staff": "D"
+    },
+    "inventory": [],
+    "startingClassGrowthRates": {
+      "hp": 0,
+      "strength": 0,
+      "magic": 10,
+      "skill": 20,
+      "speed": 10,
+      "luck": 15,
+      "defense": 0,
+      "resistance": 15
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "strategist",
+          "displayName": "Strategist",
+          "classBaseStats": {
+            "hp": 16,
+            "strength": 0,
+            "magic": 7,
+            "skill": 6,
+            "speed": 7,
+            "luck": 5,
+            "defense": 2,
+            "resistance": 7
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 0,
+            "magic": 15,
+            "skill": 5,
+            "speed": 10,
+            "luck": 20,
+            "defense": 0,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 0,
+            "magic": 4,
+            "skill": -1,
+            "speed": 2,
+            "luck": 1,
+            "defense": 1,
+            "resistance": 3
+          },
+          "primaryWeaponId": "staff",
+          "secondaryWeaponIds": [
+            "tome"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rally_resistance",
+              "displayName": "Rally Resistance"
+            },
+            {
+              "level": 15,
+              "skillId": "inspiration",
+              "displayName": "Inspiration"
+            }
+          ]
+        },
+        {
+          "classId": "attendant",
+          "displayName": "Butler",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 4,
+            "magic": 5,
+            "skill": 9,
+            "speed": 8,
+            "luck": 4,
+            "defense": 5,
+            "resistance": 4
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 10,
+            "magic": 10,
+            "skill": 15,
+            "speed": 15,
+            "luck": 10,
+            "defense": 5,
+            "resistance": 10
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 4,
+            "magic": 2,
+            "skill": 2,
+            "speed": 3,
+            "luck": 0,
+            "defense": 4,
+            "resistance": 0
+          },
+          "primaryWeaponId": "staff",
+          "secondaryWeaponIds": [
+            "dagger"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "live_to_serve",
+              "displayName": "Live to Serve"
+            },
+            {
+              "level": 15,
+              "skillId": "tomebreaker",
+              "displayName": "Tomebreaker"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Forrest > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Forrest/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Troubadour and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "ignatius",
+    "paralogueNo": 17,
+    "paralogueTitle": "Two Defenders",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Benny talks to Ignatius during the battle.",
+      "talkUnitId": "benny",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": true
+    },
+    "startingClassId": "knight",
+    "level10PersonalBases": {
+      "hp": 8,
+      "strength": 7,
+      "magic": 0,
+      "skill": 6,
+      "speed": 4,
+      "luck": 7,
+      "defense": 6,
+      "resistance": 7
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 27,
+      "strength": 15,
+      "magic": 0,
+      "skill": 11,
+      "speed": 7,
+      "luck": 10,
+      "defense": 14,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "lance": "D"
+    },
+    "inventory": [
+      "iron_lance",
+      "javelin",
+      "vulnerary"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 20,
+      "strength": 20,
+      "magic": 0,
+      "skill": 15,
+      "speed": 5,
+      "luck": 10,
+      "defense": 20,
+      "resistance": 0
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "general",
+          "displayName": "General",
+          "classBaseStats": {
+            "hp": 22,
+            "strength": 11,
+            "magic": 0,
+            "skill": 7,
+            "speed": 3,
+            "luck": 4,
+            "defense": 12,
+            "resistance": 3
+          },
+          "classGrowthRates": {
+            "hp": 25,
+            "strength": 20,
+            "magic": 0,
+            "skill": 15,
+            "speed": 0,
+            "luck": 10,
+            "defense": 20,
+            "resistance": 5
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 3,
+            "magic": 0,
+            "skill": 2,
+            "speed": 0,
+            "luck": 1,
+            "defense": 4,
+            "resistance": 2
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "axe"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "wary_fighter",
+              "displayName": "Wary Fighter"
+            },
+            {
+              "level": 15,
+              "skillId": "pavise",
+              "displayName": "Pavise"
+            }
+          ]
+        },
+        {
+          "classId": "great_knight",
+          "displayName": "Great Knight",
+          "classBaseStats": {
+            "hp": 21,
+            "strength": 10,
+            "magic": 0,
+            "skill": 6,
+            "speed": 6,
+            "luck": 3,
+            "defense": 10,
+            "resistance": 2
+          },
+          "classGrowthRates": {
+            "hp": 20,
+            "strength": 20,
+            "magic": 0,
+            "skill": 10,
+            "speed": 5,
+            "luck": 5,
+            "defense": 20,
+            "resistance": 0
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 2,
+            "magic": 0,
+            "skill": 1,
+            "speed": 3,
+            "luck": 0,
+            "defense": 2,
+            "resistance": 1
+          },
+          "primaryWeaponId": "lance",
+          "secondaryWeaponIds": [
+            "sword",
+            "axe"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "luna",
+              "displayName": "Luna"
+            },
+            {
+              "level": 15,
+              "skillId": "armored_blow",
+              "displayName": "Armored Blow"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Ignatius > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Ignatius/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Knight and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "velouria",
+    "paralogueNo": 18,
+    "paralogueTitle": "Nutty Family",
+    "initialFaction": "player",
+    "recruitment": {
+      "description": "Velouria appears on the next turn after the army crosses the rightmost mountain row, or joins when the map is completed first.",
+      "automaticAtMapEndIfSurvives": true,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "startingClassId": "wolfskin",
+    "level10PersonalBases": {
+      "hp": 7,
+      "strength": 6,
+      "magic": 0,
+      "skill": 6,
+      "speed": 6,
+      "luck": 11,
+      "defense": 9,
+      "resistance": 8
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 26,
+      "strength": 14,
+      "magic": 0,
+      "skill": 10,
+      "speed": 12,
+      "luck": 11,
+      "defense": 13,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "beaststone": "D"
+    },
+    "inventory": [
+      "beaststone",
+      "beastrune",
+      "vulnerary"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 20,
+      "strength": 20,
+      "magic": 0,
+      "skill": 5,
+      "speed": 15,
+      "luck": 5,
+      "defense": 10,
+      "resistance": 0
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "wolfssegner",
+          "displayName": "Wolfssegner",
+          "classBaseStats": {
+            "hp": 22,
+            "strength": 11,
+            "magic": 0,
+            "skill": 6,
+            "speed": 7,
+            "luck": 1,
+            "defense": 7,
+            "resistance": 1
+          },
+          "classGrowthRates": {
+            "hp": 20,
+            "strength": 20,
+            "magic": 0,
+            "skill": 5,
+            "speed": 15,
+            "luck": 5,
+            "defense": 10,
+            "resistance": 0
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 3,
+            "magic": 0,
+            "skill": 2,
+            "speed": 1,
+            "luck": 1,
+            "defense": 3,
+            "resistance": 1
+          },
+          "primaryWeaponId": "beaststone",
+          "secondaryWeaponIds": [],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "better_odds",
+              "displayName": "Better Odds"
+            },
+            {
+              "level": 15,
+              "skillId": "grisly_wound",
+              "displayName": "Grisly Wound"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Velouria > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Velouria/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Wolfskin and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "percy",
+    "paralogueNo": 19,
+    "paralogueTitle": "Great Heroism",
+    "initialFaction": "enemy",
+    "recruitment": {
+      "description": "Percy joins automatically when the map is completed.",
+      "automaticAtMapEndIfSurvives": true,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "startingClassId": "wyvern_rider",
+    "level10PersonalBases": {
+      "hp": 6,
+      "strength": 4,
+      "magic": 0,
+      "skill": 6,
+      "speed": 6,
+      "luck": 15,
+      "defense": 8,
+      "resistance": 4
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 23,
+      "strength": 10,
+      "magic": 0,
+      "skill": 11,
+      "speed": 10,
+      "luck": 17,
+      "defense": 15,
+      "resistance": 4
+    },
+    "weaponRanks": {
+      "axe": "D"
+    },
+    "inventory": [
+      "hand_axe",
+      "iron_axe"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 10,
+      "strength": 15,
+      "magic": 5,
+      "skill": 10,
+      "speed": 10,
+      "luck": 5,
+      "defense": 20,
+      "resistance": 0
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "wyvern_lord",
+          "displayName": "Wyvern Lord",
+          "classBaseStats": {
+            "hp": 19,
+            "strength": 8,
+            "magic": 0,
+            "skill": 9,
+            "speed": 6,
+            "luck": 3,
+            "defense": 10,
+            "resistance": 1
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 15,
+            "magic": 0,
+            "skill": 15,
+            "speed": 10,
+            "luck": 5,
+            "defense": 20,
+            "resistance": 0
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 2,
+            "magic": 0,
+            "skill": 4,
+            "speed": 2,
+            "luck": 1,
+            "defense": 3,
+            "resistance": 1
+          },
+          "primaryWeaponId": "axe",
+          "secondaryWeaponIds": [
+            "lance"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rally_defense",
+              "displayName": "Rally Defense"
+            },
+            {
+              "level": 15,
+              "skillId": "swordbreaker",
+              "displayName": "Swordbreaker"
+            }
+          ]
+        },
+        {
+          "classId": "malig_knight",
+          "displayName": "Malig Knight",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 7,
+            "magic": 6,
+            "skill": 6,
+            "speed": 5,
+            "luck": 0,
+            "defense": 8,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 15,
+            "magic": 15,
+            "skill": 10,
+            "speed": 5,
+            "luck": 0,
+            "defense": 10,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 1,
+            "magic": 6,
+            "skill": 1,
+            "speed": 1,
+            "luck": -2,
+            "defense": 1,
+            "resistance": 6
+          },
+          "primaryWeaponId": "axe",
+          "secondaryWeaponIds": [
+            "tome"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "savage_blow",
+              "displayName": "Savage Blow"
+            },
+            {
+              "level": 15,
+              "skillId": "trample",
+              "displayName": "Trample"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Percy > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Percy/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Wyvern Rider and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "ophelia",
+    "paralogueNo": 20,
+    "paralogueTitle": "Ultimate Power",
+    "initialFaction": "player",
+    "recruitment": {
+      "description": "Ophelia joins automatically on turn 1.",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "startingClassId": "dark_mage",
+    "level10PersonalBases": {
+      "hp": 7,
+      "strength": 3,
+      "magic": 6,
+      "skill": 6,
+      "speed": 7,
+      "luck": 12,
+      "defense": 2,
+      "resistance": 5
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 23,
+      "strength": 3,
+      "magic": 12,
+      "skill": 9,
+      "speed": 10,
+      "luck": 13,
+      "defense": 5,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "tome": "D"
+    },
+    "inventory": [
+      "thunder",
+      "vulnerary"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 0,
+      "strength": 10,
+      "magic": 20,
+      "skill": 0,
+      "speed": 10,
+      "luck": 0,
+      "defense": 5,
+      "resistance": 10
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "sorcerer",
+          "displayName": "Sorcerer",
+          "classBaseStats": {
+            "hp": 17,
+            "strength": 0,
+            "magic": 9,
+            "skill": 4,
+            "speed": 6,
+            "luck": 1,
+            "defense": 5,
+            "resistance": 8
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 0,
+            "magic": 25,
+            "skill": 0,
+            "speed": 10,
+            "luck": 0,
+            "defense": 5,
+            "resistance": 15
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 0,
+            "magic": 3,
+            "skill": 1,
+            "speed": 3,
+            "luck": 0,
+            "defense": 2,
+            "resistance": 3
+          },
+          "primaryWeaponId": "tome",
+          "secondaryWeaponIds": [],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "vengeance",
+              "displayName": "Vengeance"
+            },
+            {
+              "level": 15,
+              "skillId": "bowbreaker",
+              "displayName": "Bowbreaker"
+            }
+          ]
+        },
+        {
+          "classId": "dark_knight",
+          "displayName": "Dark Knight",
+          "classBaseStats": {
+            "hp": 19,
+            "strength": 8,
+            "magic": 6,
+            "skill": 6,
+            "speed": 5,
+            "luck": 3,
+            "defense": 8,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 15,
+            "strength": 20,
+            "magic": 10,
+            "skill": 5,
+            "speed": 5,
+            "luck": 5,
+            "defense": 15,
+            "resistance": 5
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 8,
+            "magic": 0,
+            "skill": 3,
+            "speed": 2,
+            "luck": 2,
+            "defense": 5,
+            "resistance": 1
+          },
+          "primaryWeaponId": "tome",
+          "secondaryWeaponIds": [
+            "sword"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "seal_magic",
+              "displayName": "Seal Magic"
+            },
+            {
+              "level": 15,
+              "skillId": "lifetaker",
+              "displayName": "Lifetaker"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Ophelia > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Ophelia/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Dark Mage and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "soleil",
+    "paralogueNo": 21,
+    "paralogueTitle": "In Endless Dreams",
+    "initialFaction": "npc",
+    "recruitment": {
+      "description": "Laslow talks to Soleil during the battle.",
+      "talkUnitId": "laslow",
+      "automaticAtMapEndIfSurvives": false,
+      "deathBeforeRecruitmentIsPermanent": true
+    },
+    "startingClassId": "mercenary",
+    "level10PersonalBases": {
+      "hp": 6,
+      "strength": 7,
+      "magic": 1,
+      "skill": 3,
+      "speed": 6,
+      "luck": 7,
+      "defense": 5,
+      "resistance": 6
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 23,
+      "strength": 12,
+      "magic": 1,
+      "skill": 10,
+      "speed": 12,
+      "luck": 9,
+      "defense": 10,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "sword": "D"
+    },
+    "inventory": [
+      "iron_sword",
+      "vulnerary"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 10,
+      "strength": 15,
+      "magic": 0,
+      "skill": 20,
+      "speed": 15,
+      "luck": 5,
+      "defense": 10,
+      "resistance": 5
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "hero",
+          "displayName": "Hero",
+          "classBaseStats": {
+            "hp": 20,
+            "strength": 8,
+            "magic": 0,
+            "skill": 10,
+            "speed": 8,
+            "luck": 3,
+            "defense": 7,
+            "resistance": 2
+          },
+          "classGrowthRates": {
+            "hp": 20,
+            "strength": 15,
+            "magic": 0,
+            "skill": 20,
+            "speed": 15,
+            "luck": 5,
+            "defense": 10,
+            "resistance": 0
+          },
+          "promotionGains": {
+            "hp": 3,
+            "strength": 3,
+            "magic": 0,
+            "skill": 3,
+            "speed": 2,
+            "luck": 1,
+            "defense": 2,
+            "resistance": 0
+          },
+          "primaryWeaponId": "sword",
+          "secondaryWeaponIds": [
+            "axe"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "sol",
+              "displayName": "Sol"
+            },
+            {
+              "level": 15,
+              "skillId": "axebreaker",
+              "displayName": "Axebreaker"
+            }
+          ]
+        },
+        {
+          "classId": "bow_knight",
+          "displayName": "Bow Knight",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 6,
+            "magic": 0,
+            "skill": 8,
+            "speed": 9,
+            "luck": 3,
+            "defense": 5,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 10,
+            "magic": 0,
+            "skill": 15,
+            "speed": 15,
+            "luck": 10,
+            "defense": 0,
+            "resistance": 10
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 1,
+            "magic": 0,
+            "skill": 1,
+            "speed": 3,
+            "luck": 1,
+            "defense": 0,
+            "resistance": 4
+          },
+          "primaryWeaponId": "sword",
+          "secondaryWeaponIds": [
+            "bow"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rally_skill",
+              "displayName": "Rally Skill"
+            },
+            {
+              "level": 15,
+              "skillId": "shurikenbreaker",
+              "displayName": "Shurikenbreaker"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Soleil > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Soleil/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Mercenary and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "nina",
+    "paralogueNo": 22,
+    "paralogueTitle": "Abrupt Clash",
+    "initialFaction": "enemy",
+    "recruitment": {
+      "description": "Nina joins automatically when the map is completed.",
+      "automaticAtMapEndIfSurvives": true,
+      "deathBeforeRecruitmentIsPermanent": false
+    },
+    "recruitmentNotes": [
+      "Only female Corrin can be Nina's variable parent. Niles's S support with male Corrin does not unlock Nina's paralogue."
+    ],
+    "startingClassId": "outlaw",
+    "level10PersonalBases": {
+      "hp": 5,
+      "strength": 8,
+      "magic": 5,
+      "skill": 5,
+      "speed": 5,
+      "luck": 11,
+      "defense": 3,
+      "resistance": 10
+    },
+    "level10MinimumStatsBeforeInheritance": {
+      "hp": 21,
+      "strength": 11,
+      "magic": 6,
+      "skill": 9,
+      "speed": 13,
+      "luck": 12,
+      "defense": 5,
+      "resistance": 14
+    },
+    "weaponRanks": {
+      "bow": "D"
+    },
+    "inventory": [
+      "iron_bow"
+    ],
+    "startingClassGrowthRates": {
+      "hp": 0,
+      "strength": 10,
+      "magic": 5,
+      "skill": 10,
+      "speed": 20,
+      "luck": 0,
+      "defense": 0,
+      "resistance": 20
+    },
+    "baseStatFormula": {
+      "childAptitude": "child personal base + automatic-growth stat gains",
+      "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
+      "parentInheritanceValue": "max(0, parent personal base + parent level-up gains - child aptitude - promoted-class aptitude)",
+      "parentStatInput": "Use only the parent's fixed personal value plus stat points earned through level-ups. Exclude class bases, permanent stat-booster items, Pair Up, equipment, meals, tonics, statues, and other external bonuses.",
+      "inheritanceBonus": "min(floor((father inheritance value + mother inheritance value) / 4), floor(2 + child aptitude / 10))",
+      "finalStat": "child personal base + current class base + automatic-growth stat gains + inheritance bonus",
+      "rounding": "Floor the inheritance division and cap; round the promoted-class aptitude to the nearest integer with exact halves rounded up.",
+      "offspringSealNote": "For an unpromoted child, promoted-class aptitude is zero and the formula reduces to the commonly circulated C form. Offspring Seal calculations must split the promoted-class aptitude instead of treating every level as one N * combined-growth term."
+    },
+    "levelByStoryPosition": [
+      {
+        "chapterStart": 8,
+        "chapterEnd": 11,
+        "level": 10
+      },
+      {
+        "chapterStart": 12,
+        "level": 11
+      },
+      {
+        "chapterStart": 13,
+        "level": 12
+      },
+      {
+        "chapterStart": 14,
+        "level": 14
+      },
+      {
+        "chapterStart": 15,
+        "level": 15
+      },
+      {
+        "chapterStart": 16,
+        "level": 17
+      },
+      {
+        "chapterStart": 17,
+        "level": 18
+      },
+      {
+        "chapterStart": 18,
+        "chapterEnd": 27,
+        "level": 20
+      }
+    ],
+    "offspringSeal": {
+      "availableFromChapter": 19,
+      "promotedLevelsByChapter": {
+        "19": 2,
+        "20": 4,
+        "21": 6,
+        "22": 8,
+        "23": 10,
+        "24": 12,
+        "25": 14,
+        "26": 16,
+        "27": 18
+      },
+      "promotionOptions": [
+        {
+          "classId": "adventurer",
+          "displayName": "Adventurer",
+          "classBaseStats": {
+            "hp": 17,
+            "strength": 4,
+            "magic": 6,
+            "skill": 6,
+            "speed": 10,
+            "luck": 2,
+            "defense": 3,
+            "resistance": 8
+          },
+          "classGrowthRates": {
+            "hp": 0,
+            "strength": 5,
+            "magic": 15,
+            "skill": 5,
+            "speed": 20,
+            "luck": 0,
+            "defense": 0,
+            "resistance": 20
+          },
+          "promotionGains": {
+            "hp": 1,
+            "strength": 1,
+            "magic": 5,
+            "skill": 2,
+            "speed": 2,
+            "luck": 1,
+            "defense": 1,
+            "resistance": 4
+          },
+          "primaryWeaponId": "bow",
+          "secondaryWeaponIds": [
+            "staff"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "lucky_seven",
+              "displayName": "Lucky Seven"
+            },
+            {
+              "level": 15,
+              "skillId": "pass",
+              "displayName": "Pass"
+            }
+          ]
+        },
+        {
+          "classId": "bow_knight",
+          "displayName": "Bow Knight",
+          "classBaseStats": {
+            "hp": 18,
+            "strength": 6,
+            "magic": 0,
+            "skill": 8,
+            "speed": 9,
+            "luck": 3,
+            "defense": 5,
+            "resistance": 6
+          },
+          "classGrowthRates": {
+            "hp": 10,
+            "strength": 10,
+            "magic": 0,
+            "skill": 15,
+            "speed": 15,
+            "luck": 10,
+            "defense": 0,
+            "resistance": 10
+          },
+          "promotionGains": {
+            "hp": 2,
+            "strength": 3,
+            "magic": -1,
+            "skill": 4,
+            "speed": 1,
+            "luck": 2,
+            "defense": 3,
+            "resistance": 2
+          },
+          "primaryWeaponId": "bow",
+          "secondaryWeaponIds": [
+            "sword"
+          ],
+          "learnedSkills": [
+            {
+              "level": 5,
+              "skillId": "rally_skill",
+              "displayName": "Rally Skill"
+            },
+            {
+              "level": 15,
+              "skillId": "shurikenbreaker",
+              "displayName": "Shurikenbreaker"
+            }
+          ]
+        }
+      ],
+      "weaponRankMilestones": [
+        {
+          "chapterStart": 19,
+          "chapterEnd": 19,
+          "primaryRank": "C",
+          "secondaryRank": "E"
+        },
+        {
+          "chapterStart": 20,
+          "chapterEnd": 21,
+          "primaryRank": "C",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 22,
+          "chapterEnd": 23,
+          "primaryRank": "B",
+          "secondaryRank": "D"
+        },
+        {
+          "chapterStart": 24,
+          "chapterEnd": 27,
+          "primaryRank": "B",
+          "secondaryRank": "C"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "sourceId": "fewiki-fe14-offspring-units",
+        "locator": "Nina > Fates recruitment, inventory, and starting ranks",
+        "fields": [
+          "recruitment",
+          "inventory",
+          "weaponRanks"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-offspring-stats",
+        "locator": "Nina/Stats > level-10 bases and scaling",
+        "fields": [
+          "level10PersonalBases",
+          "level10MinimumStatsBeforeInheritance",
+          "levelByStoryPosition",
+          "offspringSeal"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-fe14-classes",
+        "locator": "Outlaw and promotion rows",
+        "fields": [
+          "startingClassGrowthRates",
+          "offspringSeal.promotionOptions"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  }
+]

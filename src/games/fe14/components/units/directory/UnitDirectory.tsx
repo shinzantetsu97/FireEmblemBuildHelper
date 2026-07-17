@@ -18,12 +18,20 @@ const ROUTE_KEYS: Record<string, string> = {
   revelation: "RV",
 };
 
+const GENERATION_OPTIONS = [
+  { value: "all", label: "All generations" },
+  { value: "first", label: "First generation" },
+  { value: "second", label: "Second generation" },
+] as const;
+
 export default function UnitDirectory() {
   const [route, setRoute] = useState<(typeof ROUTE_OPTIONS)[number]["value"]>("all");
+  const [generation, setGeneration] = useState<(typeof GENERATION_OPTIONS)[number]["value"]>("all");
   const roster = fe14Data.roster.filter((unit) => {
-    if (route === "all") return true;
-    if (route === "dlc") return unit.availabilityCategory === "dlc_exclusive";
-    return unit.availableRoutes.includes(route);
+    const matchesGeneration = generation === "all" || unit.generation === generation;
+    const matchesRoute = route === "all"
+      || (route === "dlc" ? unit.availabilityCategory === "dlc_exclusive" : unit.availableRoutes.includes(route));
+    return matchesGeneration && matchesRoute;
   });
   const availableCount = roster.filter((unit) => unit.status !== "not_started").length;
 
@@ -43,11 +51,19 @@ export default function UnitDirectory() {
               ))}
             </Form.Select>
           </Form.Group>
+          <Form.Group controlId="unit-generation-filter">
+            <Form.Label>Generation</Form.Label>
+            <Form.Select value={generation} onChange={(event) => setGeneration(event.target.value as typeof generation)}>
+              {GENERATION_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>{option.label}</option>
+              ))}
+            </Form.Select>
+          </Form.Group>
           <span>{availableCount} of {roster.length} units available</span>
         </div>
       </header>
 
-      <section className="unit-directory" aria-label="First-generation unit roster">
+      <section className="unit-directory" aria-label="FE14 unit roster">
         {roster.map((unit) => {
           const portrait = getPortraitUrl(unit);
           const ready = unit.status !== "not_started";

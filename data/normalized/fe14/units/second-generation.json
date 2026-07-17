@@ -1,0 +1,586 @@
+{
+  "gameId": "fe14",
+  "rosterKind": "second_generation",
+  "units": [
+    {
+      "id": "kana",
+      "unitNo": 49,
+      "processingOrder": 21,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Kana",
+      "displayName": "Kana",
+      "portraitFile": "Kanna.png",
+      "sourceSheet": "神流",
+      "status": "in_review",
+      "names": {
+        "en": "Kana",
+        "ja": "カンナ",
+        "jaLatn": "Kanna",
+        "zhHans": "神流"
+      },
+      "gender": "variable",
+      "dragonVein": true,
+      "unitTags": [
+        "dragon"
+      ],
+      "paralogueNo": 2,
+      "paralogueTitle": "Dragon Blood",
+      "fixedParentUnitId": "corrin",
+      "personalSkillId": "draconic_heir",
+      "notes": [
+        "Kana's gender is always opposite Corrin's. The selected spouse resolves Kana's growths, caps, traits, class inheritance, sibling, and support bonuses.",
+        "If Corrin marries an offspring unit, that spouse's own variable parent must also be selected before Kana's inherited data is fully resolved.",
+        "Male Corrin with Niles or female Corrin with Rhajat does not unlock Dragon Blood and produces no Kana."
+      ]
+    },
+    {
+      "id": "shigure",
+      "unitNo": 50,
+      "processingOrder": 20,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Shigure",
+      "displayName": "Shigure",
+      "portraitFile": "Shigure.png",
+      "sourceSheet": "时雨",
+      "status": "accepted",
+      "names": {
+        "en": "Shigure",
+        "ja": "シグレ",
+        "jaLatn": "Shigure",
+        "zhHans": "时雨"
+      },
+      "gender": "male",
+      "dragonVein": true,
+      "paralogueNo": 3,
+      "paralogueTitle": "Surprise Duet",
+      "fixedParentUnitId": "azura",
+      "personalSkillId": "perfect_pitch",
+      "notes": [
+        "Shigure is Azura's fixed offspring unit; selecting Azura's S-support partner resolves his father-dependent growths, caps, traits, sibling, class access, and support bonuses.",
+        "If Jakob is Shigure's father, Jakob supplies Troubadour first and Azura's inheritance resolves to Wyvern Rider instead."
+      ]
+    },
+    {
+      "id": "dwyer",
+      "unitNo": 51,
+      "processingOrder": 1,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Dwyer",
+      "displayName": "Dwyer",
+      "portraitFile": "Deere.png",
+      "sourceSheet": "迪亚",
+      "status": "accepted",
+      "names": {
+        "en": "Dwyer",
+        "ja": "ディーア",
+        "jaLatn": "Deere",
+        "zhHans": "迪亚"
+      },
+      "gender": "male",
+      "dragonVein": false,
+      "personalSkillId": "born_steward",
+      "paralogueNo": 4,
+      "paralogueTitle": "Fight or Flight",
+      "fixedParentUnitId": "jakob",
+      "notes": [
+        "Dwyer begins Fight or Flight as an allied NPC. Jakob can recruit him by talking to him; Dwyer also joins after the map if he survives.",
+        "His level, recruitment bases, and Offspring Seal outcome depend on story progress and the selected variable parent."
+      ]
+    },
+    {
+      "id": "sophie",
+      "unitNo": 52,
+      "processingOrder": 2,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Sophie",
+      "displayName": "Sophie",
+      "portraitFile": "Sophie.png",
+      "sourceSheet": "佐菲",
+      "status": "accepted",
+      "gender": "female",
+      "paralogueNo": 5,
+      "paralogueTitle": "Bold Approach",
+      "fixedParentUnitId": "silas",
+      "names": {
+        "en": "Sophie",
+        "ja": "ゾフィー",
+        "jaLatn": "Sophie",
+        "zhHans": "佐菲"
+      },
+      "personalSkillId": "mischievous"
+    },
+    {
+      "id": "midori",
+      "unitNo": 53,
+      "processingOrder": 3,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Midori",
+      "displayName": "Midori",
+      "portraitFile": "Midoriko.png",
+      "sourceSheet": "绿子",
+      "status": "accepted",
+      "gender": "female",
+      "paralogueNo": 6,
+      "paralogueTitle": "Herbal Remedy",
+      "fixedParentUnitId": "kaze",
+      "names": {
+        "en": "Midori",
+        "ja": "ミドリコ",
+        "jaLatn": "Midoriko",
+        "zhHans": "绿子"
+      },
+      "personalSkillId": "lucky_charm"
+    },
+    {
+      "id": "shiro",
+      "unitNo": 54,
+      "processingOrder": 4,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "revelation"
+      ],
+      "slug": "Shiro",
+      "displayName": "Shiro",
+      "portraitFile": "Shinonome.png",
+      "sourceSheet": "东刚",
+      "status": "accepted",
+      "gender": "male",
+      "paralogueNo": 7,
+      "paralogueTitle": "Father & Liege",
+      "fixedParentUnitId": "ryoma",
+      "names": {
+        "en": "Shiro",
+        "ja": "シノノメ",
+        "jaLatn": "Shinonome",
+        "zhHans": "东刚"
+      },
+      "personalSkillId": "noble_cause",
+      "dragonVein": true
+    },
+    {
+      "id": "kiragi",
+      "unitNo": 55,
+      "processingOrder": 5,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "revelation"
+      ],
+      "slug": "Kiragi",
+      "displayName": "Kiragi",
+      "portraitFile": "Kisaragi.png",
+      "sourceSheet": "如月",
+      "status": "accepted",
+      "gender": "male",
+      "paralogueNo": 8,
+      "paralogueTitle": "A Great Hunt",
+      "fixedParentUnitId": "takumi",
+      "names": {
+        "en": "Kiragi",
+        "ja": "キサラギ",
+        "jaLatn": "Kisaragi",
+        "zhHans": "如月"
+      },
+      "personalSkillId": "optimist",
+      "dragonVein": true
+    },
+    {
+      "id": "asugi",
+      "unitNo": 56,
+      "processingOrder": 6,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "revelation"
+      ],
+      "slug": "Asugi",
+      "displayName": "Asugi",
+      "portraitFile": "Grey.png",
+      "sourceSheet": "暮井",
+      "status": "accepted",
+      "gender": "male",
+      "paralogueNo": 9,
+      "paralogueTitle": "Saizo vs. Saizo",
+      "fixedParentUnitId": "saizo",
+      "names": {
+        "en": "Asugi",
+        "ja": "グレイ",
+        "jaLatn": "Gurei",
+        "zhHans": "暮井"
+      },
+      "personalSkillId": "sweet_tooth"
+    },
+    {
+      "id": "selkie",
+      "unitNo": 57,
+      "processingOrder": 7,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "revelation"
+      ],
+      "slug": "Selkie",
+      "displayName": "Selkie",
+      "portraitFile": "Kinu.png",
+      "sourceSheet": "绢",
+      "status": "accepted",
+      "gender": "female",
+      "unitTags": [
+        "beast"
+      ],
+      "paralogueNo": 10,
+      "paralogueTitle": "Hunter & Prey",
+      "fixedParentUnitId": "kaden",
+      "names": {
+        "en": "Selkie",
+        "ja": "キヌ",
+        "jaLatn": "Kinu",
+        "zhHans": "绢"
+      },
+      "personalSkillId": "playthings"
+    },
+    {
+      "id": "hisame",
+      "unitNo": 58,
+      "processingOrder": 8,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "revelation"
+      ],
+      "slug": "Hisame",
+      "displayName": "Hisame",
+      "portraitFile": "Hisame.png",
+      "sourceSheet": "冰雨",
+      "status": "accepted",
+      "gender": "male",
+      "paralogueNo": 11,
+      "paralogueTitle": "A Long Grudge",
+      "fixedParentUnitId": "hinata",
+      "names": {
+        "en": "Hisame",
+        "ja": "ヒサメ",
+        "jaLatn": "Hisame",
+        "zhHans": "冰雨"
+      },
+      "personalSkillId": "calm"
+    },
+    {
+      "id": "mitama",
+      "unitNo": 59,
+      "processingOrder": 9,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "revelation"
+      ],
+      "slug": "Mitama",
+      "displayName": "Mitama",
+      "portraitFile": "Mitama.png",
+      "sourceSheet": "三珠",
+      "status": "accepted",
+      "gender": "female",
+      "paralogueNo": 12,
+      "paralogueTitle": "Sweet Dreams",
+      "fixedParentUnitId": "azama",
+      "names": {
+        "en": "Mitama",
+        "ja": "ミタマ",
+        "jaLatn": "Mitama",
+        "zhHans": "三珠"
+      },
+      "personalSkillId": "haiku"
+    },
+    {
+      "id": "caeldori",
+      "unitNo": 60,
+      "processingOrder": 10,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "revelation"
+      ],
+      "slug": "Caeldori",
+      "displayName": "Caeldori",
+      "portraitFile": "Matoi.png",
+      "sourceSheet": "缠",
+      "status": "accepted",
+      "gender": "female",
+      "paralogueNo": 13,
+      "paralogueTitle": "Truly Talented",
+      "fixedParentUnitId": "subaki",
+      "names": {
+        "en": "Caeldori",
+        "ja": "マトイ",
+        "jaLatn": "Matoi",
+        "zhHans": "缠"
+      },
+      "personalSkillId": "prodigy"
+    },
+    {
+      "id": "rhajat",
+      "unitNo": 61,
+      "processingOrder": 11,
+      "generation": "second",
+      "availableRoutes": [
+        "birthright",
+        "revelation"
+      ],
+      "slug": "Rhajat",
+      "displayName": "Rhajat",
+      "portraitFile": "Shara.png",
+      "sourceSheet": "莎拉",
+      "status": "accepted",
+      "gender": "female",
+      "paralogueNo": 14,
+      "paralogueTitle": "After the End",
+      "fixedParentUnitId": "hayato",
+      "names": {
+        "en": "Rhajat",
+        "ja": "シャラ",
+        "jaLatn": "Shara",
+        "zhHans": "莎拉"
+      },
+      "personalSkillId": "vendetta"
+    },
+    {
+      "id": "siegbert",
+      "unitNo": 62,
+      "processingOrder": 12,
+      "generation": "second",
+      "availableRoutes": [
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Siegbert",
+      "displayName": "Siegbert",
+      "portraitFile": "Siegbert.png",
+      "sourceSheet": "西格贝特",
+      "status": "accepted",
+      "gender": "male",
+      "dragonVein": true,
+      "paralogueNo": 15,
+      "paralogueTitle": "Hidden Bravery",
+      "fixedParentUnitId": "xander",
+      "names": {
+        "en": "Siegbert",
+        "ja": "ジークベルト",
+        "jaLatn": "Siegbert",
+        "zhHans": "西格贝特"
+      },
+      "personalSkillId": "gallant"
+    },
+    {
+      "id": "forrest",
+      "unitNo": 63,
+      "processingOrder": 13,
+      "generation": "second",
+      "availableRoutes": [
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Forrest",
+      "displayName": "Forrest",
+      "portraitFile": "Foleo.png",
+      "sourceSheet": "弗利欧",
+      "status": "accepted",
+      "gender": "male",
+      "dragonVein": true,
+      "paralogueNo": 16,
+      "paralogueTitle": "Abducted",
+      "fixedParentUnitId": "leo",
+      "names": {
+        "en": "Forrest",
+        "ja": "フォレオ",
+        "jaLatn": "Foleo",
+        "zhHans": "弗利欧"
+      },
+      "personalSkillId": "fierce_counter"
+    },
+    {
+      "id": "ignatius",
+      "unitNo": 64,
+      "processingOrder": 14,
+      "generation": "second",
+      "availableRoutes": [
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Ignatius",
+      "displayName": "Ignatius",
+      "portraitFile": "Ignis.png",
+      "sourceSheet": "伊格尼斯",
+      "status": "accepted",
+      "gender": "male",
+      "paralogueNo": 17,
+      "paralogueTitle": "Two Defenders",
+      "fixedParentUnitId": "benny",
+      "names": {
+        "en": "Ignatius",
+        "ja": "イグニス",
+        "jaLatn": "Ignis",
+        "zhHans": "伊格尼斯"
+      },
+      "personalSkillId": "guarded_bravery"
+    },
+    {
+      "id": "velouria",
+      "unitNo": 65,
+      "processingOrder": 15,
+      "generation": "second",
+      "availableRoutes": [
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Velouria",
+      "displayName": "Velouria",
+      "portraitFile": "Velour.png",
+      "sourceSheet": "维璐亚",
+      "status": "accepted",
+      "gender": "female",
+      "unitTags": [
+        "beast"
+      ],
+      "paralogueNo": 18,
+      "paralogueTitle": "Nutty Family",
+      "fixedParentUnitId": "keaton",
+      "names": {
+        "en": "Velouria",
+        "ja": "ベロア",
+        "jaLatn": "Velour",
+        "zhHans": "维璐亚"
+      },
+      "personalSkillId": "goody_basket"
+    },
+    {
+      "id": "percy",
+      "unitNo": 66,
+      "processingOrder": 16,
+      "generation": "second",
+      "availableRoutes": [
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Percy",
+      "displayName": "Percy",
+      "portraitFile": "Lutz.png",
+      "sourceSheet": "露兹",
+      "status": "accepted",
+      "gender": "male",
+      "paralogueNo": 19,
+      "paralogueTitle": "Great Heroism",
+      "fixedParentUnitId": "arthur",
+      "names": {
+        "en": "Percy",
+        "ja": "ルッツ",
+        "jaLatn": "Lutz",
+        "zhHans": "露兹"
+      },
+      "personalSkillId": "fortunate_son"
+    },
+    {
+      "id": "ophelia",
+      "unitNo": 67,
+      "processingOrder": 17,
+      "generation": "second",
+      "availableRoutes": [
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Ophelia",
+      "displayName": "Ophelia",
+      "portraitFile": "Ophelia.png",
+      "sourceSheet": "奥菲利亚",
+      "status": "accepted",
+      "gender": "female",
+      "paralogueNo": 20,
+      "paralogueTitle": "Ultimate Power",
+      "fixedParentUnitId": "odin",
+      "names": {
+        "en": "Ophelia",
+        "ja": "オフェリア",
+        "jaLatn": "Ophelia",
+        "zhHans": "奥菲利亚"
+      },
+      "personalSkillId": "bibliophile"
+    },
+    {
+      "id": "soleil",
+      "unitNo": 68,
+      "processingOrder": 18,
+      "generation": "second",
+      "availableRoutes": [
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Soleil",
+      "displayName": "Soleil",
+      "portraitFile": "Soleil.png",
+      "sourceSheet": "索雷尤",
+      "status": "accepted",
+      "gender": "female",
+      "paralogueNo": 21,
+      "paralogueTitle": "In Endless Dreams",
+      "fixedParentUnitId": "laslow",
+      "names": {
+        "en": "Soleil",
+        "ja": "ソレイユ",
+        "jaLatn": "Soleil",
+        "zhHans": "索雷尤"
+      },
+      "personalSkillId": "sisterhood"
+    },
+    {
+      "id": "nina",
+      "unitNo": 69,
+      "processingOrder": 19,
+      "generation": "second",
+      "availableRoutes": [
+        "conquest",
+        "revelation"
+      ],
+      "slug": "Nina",
+      "displayName": "Nina",
+      "portraitFile": "Eponine.png",
+      "sourceSheet": "艾潘妮",
+      "status": "accepted",
+      "gender": "female",
+      "paralogueNo": 22,
+      "paralogueTitle": "Abrupt Clash",
+      "fixedParentUnitId": "niles",
+      "names": {
+        "en": "Nina",
+        "ja": "エポニーヌ",
+        "jaLatn": "Eponine",
+        "zhHans": "艾潘妮"
+      },
+      "personalSkillId": "daydream"
+    }
+  ]
+}

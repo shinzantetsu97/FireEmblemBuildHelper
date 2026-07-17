@@ -112,6 +112,25 @@ export const SOURCE_LOCATIONS = {
     "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/maximum-stats/",
   "fewiki-corrin": "https://fireemblemwiki.org/wiki/Corrin",
   "fewiki-corrin-stats": "https://fireemblemwiki.org/wiki/Corrin/Stats",
+  "fewiki-dwyer": "https://fireemblemwiki.org/wiki/Dwyer",
+  "fewiki-dwyer-stats": "https://fireemblemwiki.org/wiki/Dwyer/Stats",
+  "fewiki-fe14-offspring-units":
+    "https://fireemblemwiki.org/wiki/Category:Children_character_stats_in_Fire_Emblem_Fates",
+  "fewiki-fe14-offspring-stats":
+    "https://fireemblemwiki.org/wiki/Category:Children_character_stats_in_Fire_Emblem_Fates",
+  "serenes-fe14-offspring-rules":
+    "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/class-sets/",
+  "pegasusknight-fe14-child-units":
+    "https://www.pegasusknight.com/wiki/fe14/%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88/%E5%AD%90%E4%B8%96%E4%BB%A3",
+  "atwiki-fe14-child-pairings": "https://w.atwiki.jp/feif/pages/126.html",
+  "serenes-fe14-hoshidan-class-maximum-stats":
+    "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/maximum-stats/",
+  "serenes-fe14-nohrian-class-maximum-stats":
+    "https://serenesforest.net/fire-emblem-fates/nohrian-classes/maximum-stats/",
+  "serenes-fe14-nohrian-class-base-stats":
+    "https://serenesforest.net/fire-emblem-fates/nohrian-classes/base-stats/",
+  "serenes-fe14-nohrian-class-growth-rates":
+    "https://serenesforest.net/fire-emblem-fates/nohrian-classes/growth-rates/",
   "serenes-fe14-other-base-stats":
     "https://serenesforest.net/fire-emblem-fates/other-characters/base-stats/",
   "serenes-fe14-other-recruitment":

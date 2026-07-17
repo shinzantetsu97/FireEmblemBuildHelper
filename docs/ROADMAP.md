@@ -50,6 +50,19 @@ The product is moving toward a rules-aware Fire Emblem build and run planner. It
 
 **Not the goal:** A comprehensive Fire Emblem wiki or a combat simulator.
 
+### Near-Term Mini-Refactor: Unit State and JSON Inspection
+
+**Outcome:** Unit pages remain useful as reference pages while their interactive choices can grow into saved build configurations.
+
+- Replace the full-page unit JSON tab with small **View JSON** and **Export JSON** actions near the unit-page header.
+- Keep curated unit JSON read-only and separate from player selections; exporting a unit record is for inspection and data review, not for restoring a run plan.
+- Move Corrin, offspring-parent, support, class, and other build-relevant selections behind a shared unit-configuration state boundary instead of leaving them isolated in page components.
+- Preserve selections when navigating between unit pages or opening the JSON inspector.
+- Prepare those configurations to be owned by a browser-local profile and run plan in IndexedDB, using stable unit and option IDs.
+- Add schema versions and migration coverage before persisted unit configurations are treated as durable user data.
+
+This refactor should establish the state and ownership boundary without prematurely building the complete Phase 4 planner.
+
 ## Phase 4: Fates Build Planner (MVP)
 
 **Outcome:** A player can create a local Fates run plan, add unit builds, and understand whether their intended paths are legal for the selected route and difficulty.
@@ -57,6 +70,7 @@ The product is moving toward a rules-aware Fire Emblem build and run planner. It
 - Create and switch between multiple locally saved Fates projects or run plans.
 - Select a route and difficulty for a run plan.
 - Add builds for characters with goals, priority, notes, and ordered steps.
+- Persist each unit's selected configuration within its run plan, including applicable avatar settings, parentage, pairings, and class choices.
 - Model an initial set of build steps: recruitment or availability, seals or class changes, promotions, and target skills.
 - Explain validation results clearly: unavailable units, route restrictions, inaccessible classes, missing requirements, and invalid step order.
 - Surface relevant weapon-rank requirements and, where data is ready, required weapon uses or experience.

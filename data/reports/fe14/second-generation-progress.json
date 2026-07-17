@@ -1,0 +1,279 @@
+{
+  "gameId": "fe14",
+  "updatedAt": "2026-07-17",
+  "units": [
+    {
+      "order": 1,
+      "unitNo": 51,
+      "unitId": "dwyer",
+      "displayName": "Dwyer",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 2,
+      "unitNo": 52,
+      "unitId": "sophie",
+      "displayName": "Sophie",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 3,
+      "unitNo": 53,
+      "unitId": "midori",
+      "displayName": "Midori",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 4,
+      "unitNo": 54,
+      "unitId": "shiro",
+      "displayName": "Shiro",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 5,
+      "unitNo": 55,
+      "unitId": "kiragi",
+      "displayName": "Kiragi",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 6,
+      "unitNo": 56,
+      "unitId": "asugi",
+      "displayName": "Asugi",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 7,
+      "unitNo": 57,
+      "unitId": "selkie",
+      "displayName": "Selkie",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 8,
+      "unitNo": 58,
+      "unitId": "hisame",
+      "displayName": "Hisame",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 9,
+      "unitNo": 59,
+      "unitId": "mitama",
+      "displayName": "Mitama",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 10,
+      "unitNo": 60,
+      "unitId": "caeldori",
+      "displayName": "Caeldori",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 11,
+      "unitNo": 61,
+      "unitId": "rhajat",
+      "displayName": "Rhajat",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 12,
+      "unitNo": 62,
+      "unitId": "siegbert",
+      "displayName": "Siegbert",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 13,
+      "unitNo": 63,
+      "unitId": "forrest",
+      "displayName": "Forrest",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 14,
+      "unitNo": 64,
+      "unitId": "ignatius",
+      "displayName": "Ignatius",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 15,
+      "unitNo": 65,
+      "unitId": "velouria",
+      "displayName": "Velouria",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 16,
+      "unitNo": 66,
+      "unitId": "percy",
+      "displayName": "Percy",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 17,
+      "unitNo": 67,
+      "unitId": "ophelia",
+      "displayName": "Ophelia",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 18,
+      "unitNo": 68,
+      "unitId": "soleil",
+      "displayName": "Soleil",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 19,
+      "unitNo": 69,
+      "unitId": "nina",
+      "displayName": "Nina",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 20,
+      "unitNo": 50,
+      "unitId": "shigure",
+      "displayName": "Shigure",
+      "status": "accepted",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    },
+    {
+      "order": 21,
+      "unitNo": 49,
+      "unitId": "kana",
+      "displayName": "Kana",
+      "status": "in_review",
+      "domains": {
+        "identity": true,
+        "parentage": true,
+        "recruitment": true
+      },
+      "openIssues": []
+    }
+  ]
+}

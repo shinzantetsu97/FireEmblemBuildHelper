@@ -1,6 +1,6 @@
 {
   "gameId": "fe14",
-  "updatedAt": "2026-07-16",
+  "updatedAt": "2026-07-17",
   "sources": [
     {
       "id": "fe14-workbook-cn",
@@ -1040,6 +1040,127 @@
       "location": "https://fireemblemwiki.org/wiki/Corrin/Stats",
       "language": "en",
       "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-dwyer",
+      "kind": "web",
+      "title": "Dwyer - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Dwyer",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-dwyer-stats",
+      "kind": "web",
+      "title": "Dwyer/Stats - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Dwyer/Stats",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Corroborates Dwyer's variable-parent formulas, chapter scaling, and class inheritance, including Nohr Prince from female Corrin rather than Corrin's Talent."
+    },
+    {
+      "id": "pegasusknight-fe14-child-units",
+      "kind": "web",
+      "title": "FE14 second-generation mechanics - Pegasus Knight",
+      "location": "https://www.pegasusknight.com/wiki/fe14/%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88/%E5%AD%90%E4%B8%96%E4%BB%A3",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Transcribes the official strategy guide's child initial-parameter terminology, inheritance cap, promoted-class aptitude term, and rounding rule."
+    },
+    {
+      "id": "serenes-fe14-hoshidan-class-maximum-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan class maximum stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/maximum-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-class-maximum-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian class maximum stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-classes/maximum-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-class-base-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian class base stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-classes/base-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-class-growth-rates",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian class growth rates",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-classes/growth-rates/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-fe14-offspring-units",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Fates offspring unit pages",
+      "location": "https://fireemblemwiki.org/wiki/Category:Children_character_stats_in_Fire_Emblem_Fates",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Unit locators identify each offspring's main page for recruitment, inventory, weapon ranks, and personal skill text."
+    },
+    {
+      "id": "fewiki-fe14-offspring-stats",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Fates offspring stat pages",
+      "location": "https://fireemblemwiki.org/wiki/Category:Children_character_stats_in_Fire_Emblem_Fates",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Unit-specific /Stats locators corroborate level-10 bases, child-base growths, variable parents, Corrin's Noble inheritance, and the shared recruitment formula."
+    },
+    {
+      "id": "serenes-fe14-offspring-rules",
+      "kind": "web",
+      "title": "Serenes Forest - Fates offspring supports and class-changing rules",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/class-sets/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Combines the Hoshidan/Nohrian child class-set tables, support matrices, class-changing exceptions, and parallel-class table."
+    },
+    {
+      "id": "atwiki-fe14-child-pairings",
+      "kind": "web",
+      "title": "FEif child pairing and inheritance tables - atwiki",
+      "location": "https://w.atwiki.jp/feif/pages/126.html",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Corroborates Kana's gender-specific spouse sets, Beast inheritance, spouse-dependent growths, and the omitted +1 cap bonus when Corrin marries an offspring unit."
+    },
+    {
+      "id": "atwiki-fe14-kana-family-support",
+      "kind": "web",
+      "title": "Kana family-support exception - AniwotaWiki",
+      "location": "https://w.atwiki.jp/aniwotawiki/pages/36689.html",
+      "language": "ja",
+      "reviewStatus": "disputed",
+      "notes": "Reports that when Corrin marries one of Azura's offspring, Kana may still reach C-A with Azura's other offspring but cannot marry them. This conflicts with the specialist Japanese Pegasus Knight support matrix and a localized-game test, both of which report that no support occurs at all."
+    },
+    {
+      "id": "pegasusknight-fe14-kana-family-support",
+      "kind": "web",
+      "title": "FE14 support-rank index - Pegasus Knight",
+      "location": "https://www.pegasusknight.com/wiki/fe14/%E4%BC%9A%E8%A9%B1%E9%9B%86/%E6%94%AF%E6%8F%B4%E4%BC%9A%E8%A9%B1/%E3%83%A9%E3%83%B3%E3%82%AF%E4%B8%80%E8%A6%A7",
+      "language": "ja",
+      "reviewStatus": "accepted",
+      "notes": "The specialist support matrix explicitly states that if Corrin marries one of Azura's offspring, Kana of either gender cannot initiate any support with Azura's other offspring, even when they are opposite genders. It gives Female Kana and Shigure as an example."
+    },
+    {
+      "id": "reddit-fe14-kana-azura-clause",
+      "kind": "web",
+      "title": "Localized Kana and Azura-offspring support test",
+      "location": "https://www.reddit.com/r/shitpostemblem/comments/1ulshy1/kana/",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Firsthand localized Revelation report says Male Kana could not support Azura!Midori at all after Female Corrin married Shigure. This independently matches the specialist Japanese Pegasus Knight support matrix."
     }
   ]
 }

@@ -5,8 +5,12 @@ import { validateFe14Data, type ValidationMessage } from "./validate";
 type JsonObject = Record<string, unknown>;
 
 const DOMAIN_PATHS = {
-  roster: "data/normalized/fe14/units/first-generation.json",
+  firstRoster: "data/normalized/fe14/units/first-generation.json",
+  secondRoster: "data/normalized/fe14/units/second-generation.json",
+  childParentage: "data/normalized/fe14/child-parentage.json",
+  childRecruitment: "data/normalized/fe14/child-recruitment.json",
   classTrees: "data/normalized/fe14/class-trees.json",
+  classStats: "data/normalized/fe14/class-stats.json",
   availability: "data/normalized/fe14/unit-availability.json",
   baseStats: "data/normalized/fe14/unit-base-stats.json",
   growths: "data/normalized/fe14/unit-growths.json",
@@ -28,9 +32,13 @@ if (!result.valid) {
   throw new Error("FE14 normalized data did not pass validation; runtime output was not generated.");
 }
 
-const rosterFile = result.parsed[DOMAIN_PATHS.roster] as JsonObject;
-const roster = rosterFile.units as JsonObject[];
+const firstRosterFile = result.parsed[DOMAIN_PATHS.firstRoster] as JsonObject;
+const secondRosterFile = result.parsed[DOMAIN_PATHS.secondRoster] as JsonObject;
+const firstRoster = (firstRosterFile.units as JsonObject[]).map((unit) => ({ ...unit, generation: "first" }));
+const secondRoster = secondRosterFile.units as JsonObject[];
+const roster = [...firstRoster, ...secondRoster];
 const classTreeFile = result.parsed[DOMAIN_PATHS.classTrees] as JsonObject;
+const classStatsFile = result.parsed[DOMAIN_PATHS.classStats] as JsonObject;
 const sourcesFile = result.parsed[DOMAIN_PATHS.sources] as JsonObject;
 const updatedAt = sourcesFile.updatedAt as string;
 
@@ -38,17 +46,32 @@ const runtimeUnits = roster
   .filter((unit) => unit.status !== "not_started")
   .map((identity) => {
     const unitId = identity.id as string;
+    const parentage = firstRecordFor(result.parsed[DOMAIN_PATHS.childParentage], unitId);
+    const recruitment = firstRecordFor(result.parsed[DOMAIN_PATHS.childRecruitment], unitId);
+    const childBaseGrowth = parentage?.childBaseGrowth as JsonObject | undefined;
+    const childBaseClassId = parentage?.childBaseClassId as string | undefined;
     return {
       identity,
       availability: recordsFor(result.parsed[DOMAIN_PATHS.availability], unitId),
       baseStats: recordsFor(result.parsed[DOMAIN_PATHS.baseStats], unitId),
-      growths: recordsFor(result.parsed[DOMAIN_PATHS.growths], unitId),
+      growths: childBaseGrowth
+        ? [{ unitId, kind: "child_base", rates: childBaseGrowth, provenance: parentage?.provenance }]
+        : recordsFor(result.parsed[DOMAIN_PATHS.growths], unitId),
       capModifiers: firstRecordFor(result.parsed[DOMAIN_PATHS.capModifiers], unitId),
       avatarConfiguration: firstRecordFor(result.parsed[DOMAIN_PATHS.avatarConfigurations], unitId),
       pairupBonuses: firstRecordFor(result.parsed[DOMAIN_PATHS.pairupBonuses], unitId),
       supports: supportRecordsFor(result.parsed[DOMAIN_PATHS.supports], unitId),
-      classAccess: firstRecordFor(result.parsed[DOMAIN_PATHS.classAccess], unitId),
-      personalSkill: firstRecordFor(result.parsed[DOMAIN_PATHS.personalSkills], unitId),
+      classAccess: childBaseClassId ? {
+        unitId,
+        startingClassId: childBaseClassId,
+        baseClassSet: [childBaseClassId],
+        heartSealClassSet: [parentage?.fixedInheritedClassId],
+        corrinTalentOnlyClassSet: [],
+        sealGrants: [],
+        provenance: parentage?.provenance,
+      } : firstRecordFor(result.parsed[DOMAIN_PATHS.classAccess], unitId),
+      personalSkill: parentage?.personalSkill ?? firstRecordFor(result.parsed[DOMAIN_PATHS.personalSkills], unitId),
+      offspring: parentage && recruitment ? { parentage, recruitment } : null,
     };
   });
 
@@ -58,6 +81,7 @@ const runtime = {
   lastUpdated: updatedAt,
   roster,
   classTrees: classTreeFile.classes,
+  classStats: classStatsFile.classes,
   units: runtimeUnits,
   sources: sourcesFile.sources,
 };
@@ -65,7 +89,7 @@ const runtime = {
 const progress = {
   gameId: "fe14",
   updatedAt,
-  units: [...roster].sort(byProcessingOrder).map((unit) => {
+  units: [...firstRoster].sort(byProcessingOrder).map((unit) => {
     const unitId = unit.id as string;
     return {
       order: unit.processingOrder as number,
@@ -89,12 +113,35 @@ const progress = {
   }),
 };
 
+const secondGenerationProgress = {
+  gameId: "fe14",
+  updatedAt,
+  units: [...secondRoster].sort(byProcessingOrder).map((unit) => {
+    const unitId = unit.id as string;
+    return {
+      order: unit.processingOrder,
+      unitNo: unit.unitNo,
+      unitId,
+      displayName: unit.displayName,
+      status: unit.status,
+      domains: {
+        identity: Boolean(unit.names),
+        parentage: recordsFor(result.parsed[DOMAIN_PATHS.childParentage], unitId).length > 0,
+        recruitment: recordsFor(result.parsed[DOMAIN_PATHS.childRecruitment], unitId).length > 0,
+      },
+      openIssues: result.warnings.filter((warning) => warning.unitId === unitId),
+    };
+  }),
+};
+
 const validationReport = {
   gameId: "fe14",
   lastUpdated: updatedAt,
   valid: result.valid,
   counts: {
     rosterUnits: roster.length,
+    firstGenerationUnits: firstRoster.length,
+    secondGenerationUnits: secondRoster.length,
     normalizedUnits: runtimeUnits.length,
     errors: result.errors.length,
     warnings: result.warnings.length,
@@ -110,6 +157,9 @@ await Promise.all([
   writeJson("data/reports/fe14/first-generation-progress.json", progress),
   writeJson("data/reports/fe14/first-generation-validation.json", validationReport),
   writeText("data/reports/fe14/first-generation-validation.txt", reportText),
+  writeJson("data/reports/fe14/second-generation-progress.json", secondGenerationProgress),
+  writeJson("data/reports/fe14/second-generation-validation.json", validationReport),
+  writeText("data/reports/fe14/second-generation-validation.txt", reportText.replace("first-generation", "second-generation")),
 ]);
 
 console.log(

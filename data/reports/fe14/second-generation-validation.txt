@@ -1,4 +1,4 @@
-FE14 first-generation data validation
+FE14 second-generation data validation
 ======================================
 Result: PASS
 Roster units: 69
