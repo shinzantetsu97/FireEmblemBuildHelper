@@ -203,24 +203,25 @@ export interface UnitRuntime {
       };
     };
     autoLevel?: {
-      basis: "displayed_story_chapter";
+      basis: "map_level";
+      internalLevel: number;
       minimumLevel: number;
       maximumLevel?: number;
       milestones: Array<{
         displayedChapterStart: number;
         displayedChapterEnd?: number;
+        mapLevel: number;
         level: number;
       }>;
+      levelFormula: "stat_base_level + max(0, map_level - internal_level), capped_at_maximum_level";
       statCalculation: "average_growths_round_half_up";
       statBaseLevel: number;
       growthClassId: string;
       skillsLearnedAutomatically: boolean;
-      modelBasis: "castle_recruit_autolevel";
-      comparisonModel: "offspring_seal_esque_level_scaling";
-      comparisonStatus: "unverified";
+      modelBasis: "map_level_autolevel";
       weaponProficiencyScales: boolean;
       weaponProficiencyMilestonesStatus: "unresolved";
-      evidenceStatus: "tested" | "partial";
+      evidenceStatus: "tested" | "partial" | "accepted";
       note: string;
     };
     inventory: string[];
@@ -363,6 +364,15 @@ export interface OffspringData {
       offspringSealNote: string;
     };
     levelByStoryPosition: Array<{ chapterStart: number; chapterEnd?: number; level: number }>;
+    mapLevelScaling: {
+      basis: "map_level";
+      internalLevel: 10;
+      unpromotedLevelFormula: "max(10, map_level)";
+      promotedInternalLevelOffset: 20;
+      offspringSealLevelFormula: "map_level - promoted_internal_level_offset";
+      knownMapLevelsByChapter: Record<string, number>;
+      note: string;
+    };
     offspringSeal: {
       availableFromChapter: 19;
       promotedLevelsByChapter: Record<string, number>;

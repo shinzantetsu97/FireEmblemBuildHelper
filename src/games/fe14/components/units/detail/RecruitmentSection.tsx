@@ -143,24 +143,19 @@ function JoiningStats({
 function AutoLevelSummary({ scenario }: { scenario: AvailabilityScenario }) {
   if (!scenario.autoLevel) return null;
   const { autoLevel } = scenario;
+  const gainedLevelMilestones = autoLevel.milestones.filter((milestone) => milestone.level > autoLevel.statBaseLevel);
 
   return (
     <div className="auto-level-summary">
-      <h3>Story-progress autolevel</h3>
-      <div className="auto-level-milestones">
-        {autoLevel.milestones.map((milestone) => (
-          <span key={`${milestone.displayedChapterStart}-${milestone.displayedChapterEnd ?? milestone.displayedChapterStart}`}>
-            Ch. {milestone.displayedChapterStart}
-            {milestone.displayedChapterEnd && milestone.displayedChapterEnd !== milestone.displayedChapterStart
-              ? `-${milestone.displayedChapterEnd}`
-              : ""}: Lv. {milestone.level}
-          </span>
-        ))}
-      </div>
+      <h3>Automatic level scaling</h3>
+      {gainedLevelMilestones.length > 0 ? (
+        <div className="auto-level-milestones">
+          {gainedLevelMilestones.map((milestone) => (
+            <span key={milestone.displayedChapterStart}>Ch. {milestone.displayedChapterStart}: Lv. {milestone.level}</span>
+          ))}
+        </div>
+      ) : null}
       <p>
-        <strong>Model:</strong>{" "}
-        {autoLevel.modelBasis === "castle_recruit_autolevel" ? "Castle-recruit autolevel" : autoLevel.modelBasis}. Comparison:
-        {autoLevel.comparisonModel === "offspring_seal_esque_level_scaling" ? " Offspring Seal-esque level scaling. " : ` ${autoLevel.comparisonModel}. `}
         {autoLevel.weaponProficiencyScales ? "Weapon proficiency scales with story progress" : "Weapon proficiency does not scale"}
         {autoLevel.weaponProficiencyMilestonesStatus === "unresolved" ? "; exact rank milestones remain unresolved." : "."}
       </p>
@@ -168,7 +163,6 @@ function AutoLevelSummary({ scenario }: { scenario: AvailabilityScenario }) {
         <strong>Stats:</strong> Level {autoLevel.statBaseLevel} bases + (individual growth rates + {displayId(autoLevel.growthClassId)} class growth rates) × levels gained.
         Round each resulting stat to the nearest integer; exact .5 results round up.
       </p>
-      <p>{autoLevel.note}</p>
     </div>
   );
 }

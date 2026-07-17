@@ -51,6 +51,54 @@ describe("Dwyer offspring scenarios", () => {
   });
 });
 
+describe("map-level autoleveling", () => {
+  it("uses internal level 10 and the verified Chapter 19-27 map levels for every offspring", () => {
+    for (const unit of fe14Data.units.filter((candidate) => candidate.offspring)) {
+      const scaling = unit.offspring!.recruitment.mapLevelScaling;
+
+      expect(scaling.internalLevel, unit.identity.id).toBe(10);
+      expect(scaling.knownMapLevelsByChapter["19"], unit.identity.id).toBe(22);
+      expect(scaling.knownMapLevelsByChapter["27"], unit.identity.id).toBe(38);
+      expect(scaling.promotedInternalLevelOffset, unit.identity.id).toBe(20);
+    }
+  });
+
+  it("records the map-level thresholds for all four castle recruits", () => {
+    const expected = {
+      flora: { internalLevel: 28, chapter25Level: 11 },
+      izana: { internalLevel: 28, chapter25Level: 11 },
+      yukimura: { internalLevel: 33, chapter25Level: 11 },
+      fuga: { internalLevel: 33, chapter25Level: 11 },
+    } as const;
+
+    for (const [unitId, values] of Object.entries(expected)) {
+      const unit = fe14Data.units.find((candidate) => candidate.identity.id === unitId)!;
+
+      expect(unit.availability.length, unitId).toBeGreaterThan(0);
+      for (const scenario of unit.availability) {
+        expect(scenario.autoLevel?.basis, scenario.id).toBe("map_level");
+        expect(scenario.autoLevel?.internalLevel, scenario.id).toBe(values.internalLevel);
+      }
+      const chapter25 = unit.availability
+        .flatMap((scenario) => scenario.autoLevel?.milestones ?? [])
+        .find((milestone) => milestone.displayedChapterStart === 25);
+      expect(chapter25, unitId).toMatchObject({ mapLevel: 34, level: values.chapter25Level });
+    }
+  });
+
+  it("keeps Yukimura and Fuga at level 10 until map level exceeds 33", () => {
+    for (const unitId of ["yukimura", "fuga"]) {
+      const unit = fe14Data.units.find((candidate) => candidate.identity.id === unitId)!;
+      const milestones = unit.availability[0].autoLevel!.milestones;
+
+      expect(milestones.find((milestone) => milestone.displayedChapterStart === 24), unitId)
+        .toMatchObject({ mapLevel: 32, level: 10 });
+      expect(milestones.find((milestone) => milestone.displayedChapterStart === 26), unitId)
+        .toMatchObject({ mapLevel: 36, level: 13 });
+    }
+  });
+});
+
 describe("Shigure father scenarios", () => {
   const shigure = fe14Data.units.find((unit) => unit.identity.id === "shigure")!;
 

@@ -1,10 +1,20 @@
 export const RELEASES = [
   {
+    version: "0.4.2",
+    date: "2026-07-17",
+    dateLabel: "July 17, 2026",
+    title: "FE14 autolevel scaling corrections",
+    current: true,
+    changes: [
+      "Replaced the speculative castle-recruit model with verified level schedules for Izana, Flora, Yukimura, and Fuga, and recorded the shared story-scaling rules used by offspring and Offspring Seals. Thanks to FE14 modder ltranc@ for identifying and explaining the underlying mechanic.",
+      "Simplified castle-recruit profiles by removing the obsolete uncertainty banner and showing compact chapter-to-level progressions while retaining technical details in the JSON data.",
+    ],
+  },
+  {
     version: "0.4.1",
     date: "2026-07-17",
     dateLabel: "July 17, 2026",
     title: "Offspring inheritance edge-case fixes",
-    current: true,
     changes: [
       "Corrected Nyx!Nina to inherit Diviner instead of Archer and Beruka!Percy to inherit Sky Knight instead of Oni Savage when both ordinary maternal class trees are exhausted.",
       "Added regression coverage for all three exhaustive inheritance cases, including Jakob!Shigure receiving Wyvern Rider from Azura after Jakob supplies Troubadour.",

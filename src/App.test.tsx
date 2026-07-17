@@ -20,7 +20,7 @@ describe("notes workspace", () => {
     expect(screen.getByRole("heading", { name: "Game Library" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Fire Emblem If \/ Fates/ })).toHaveAttribute("href", "/FE14/Units");
     expect(screen.getByRole("heading", { name: "Version log", level: 2 })).toBeInTheDocument();
-    expect(screen.getByText("v0.4.1")).toBeInTheDocument();
+    expect(screen.getByText("v0.4.2")).toBeInTheDocument();
     expect(screen.getByText("Offspring inheritance edge-case fixes")).toBeInTheDocument();
     expect(screen.getByText("v0.3.0")).toBeInTheDocument();
     expect(screen.getByText("Complete FE14 first-generation roster")).toBeInTheDocument();
@@ -295,22 +295,22 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Izana", level: 1 })).toBeInTheDocument();
-    expect(screen.getByText("Sharing is caring.")).toBeInTheDocument();
-    expect(screen.getByText(/no one has produced a concrete, accurate data table for Izana yet, FFS/i)).toBeInTheDocument();
-    expect(screen.getByText(/Until then, \(╯‵□′\)╯︵┻━┻/i)).toBeInTheDocument();
+    expect(screen.queryByText("Sharing is caring.")).not.toBeInTheDocument();
     expect(screen.getByText("After Chapter 18")).toBeInTheDocument();
     expect(screen.getByText("After Chapter 22")).toBeInTheDocument();
-    expect(screen.getByText("Lv. 5+ (scales) Onmyoji")).toBeInTheDocument();
+    expect(screen.getByText("Lv. 5-15 Onmyoji")).toBeInTheDocument();
     expect(screen.getByText("Lv. 7-15 Onmyoji")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Joining stats at Lv. 5" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Joining stats at Lv. 7" })).toBeInTheDocument();
     expect(screen.getAllByText(/Hot Spring Lv\. 3, then a My Castle refresh by waiting/i)).toHaveLength(2);
-    expect(screen.getByText("Ch. 23: Lv. 7")).toBeInTheDocument();
-    expect(screen.getByText("Ch. 27: Lv. 15")).toBeInTheDocument();
-    expect(screen.getAllByText(/Castle-recruit autolevel.*Offspring Seal-esque level scaling/i)).toHaveLength(3);
+    expect(screen.getAllByText("Ch. 23: Lv. 7")).toHaveLength(2);
+    expect(screen.getAllByText("Ch. 24: Lv. 9")).toHaveLength(2);
+    expect(screen.getAllByText("Ch. 25: Lv. 11")).toHaveLength(2);
+    expect(screen.getAllByText("Ch. 26: Lv. 13")).toHaveLength(2);
+    expect(screen.getAllByText("Ch. 27: Lv. 15")).toHaveLength(2);
     expect(screen.getAllByText(/Weapon proficiency scales with story progress/i)).toHaveLength(2);
     expect(screen.getAllByText(/Level 5 bases \+ \(individual growth rates \+ Onmyoji class growth rates\) × levels gained/i)).toHaveLength(2);
-    expect(screen.getByText(/Later Birthright chapter milestones still need direct testing/i)).toBeInTheDocument();
+    expect(screen.getByText(/Scaling details were identified and explained by FE14 modder ltranc@/i)).toBeInTheDocument();
   });
 
   it("shows Yukimura's Birthright-only castle recruitment and scaling caveat", () => {
@@ -318,12 +318,12 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Yukimura", level: 1 })).toBeInTheDocument();
-    expect(screen.getByText(/no one has produced a concrete, accurate data table for Yukimura yet, FFS/i)).toBeInTheDocument();
     expect(screen.getByText("After Chapter 21")).toBeInTheDocument();
     expect(screen.getByText("Lv. 10-15 Mechanist")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Joining stats at Lv. 10" })).toBeInTheDocument();
     expect(screen.getByText(/Puppet Lv\. 3, then a My Castle refresh by waiting/i)).toBeInTheDocument();
-    expect(screen.getByText("Ch. 22: Lv. 10")).toBeInTheDocument();
+    expect(screen.getByText("Ch. 25: Lv. 11")).toBeInTheDocument();
+    expect(screen.getByText("Ch. 26: Lv. 13")).toBeInTheDocument();
     expect(screen.getByText("Ch. 27: Lv. 15")).toBeInTheDocument();
     expect(screen.getByText(/Level 10 bases \+ \(individual growth rates \+ Mechanist class growth rates\) × levels gained/i)).toBeInTheDocument();
     expect(screen.getByText(/cannot be recruited in Conquest or Revelation/i)).toBeInTheDocument();
@@ -334,7 +334,6 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Flora", level: 1 })).toBeInTheDocument();
-    expect(screen.getByText(/no one has produced a concrete, accurate data table for Flora yet, FFS/i)).toBeInTheDocument();
     expect(screen.getByText("After Chapter 18")).toBeInTheDocument();
     expect(screen.getByText("After Chapter 22")).toBeInTheDocument();
     expect(screen.getByText("Lv. 5-15 Maid")).toBeInTheDocument();
@@ -354,11 +353,12 @@ describe("notes workspace", () => {
     expect(within(feliciaRow!).getByText("Mercenary")).toBeInTheDocument();
     expect(within(feliciaRow!).getByLabelText("Already available via Heart Seal")).toBeInTheDocument();
     expect(within(relationships).getByText(/Marked classes are already available through this unit's Heart Seal options/i)).toBeInTheDocument();
-    expect(screen.getByText("Ch. 19-22: Lv. 5")).toBeInTheDocument();
     expect(screen.getAllByText("Ch. 23: Lv. 7")).toHaveLength(2);
+    expect(screen.getAllByText("Ch. 24: Lv. 9")).toHaveLength(2);
+    expect(screen.getAllByText("Ch. 25: Lv. 11")).toHaveLength(2);
+    expect(screen.getAllByText("Ch. 26: Lv. 13")).toHaveLength(2);
     expect(screen.getAllByText("Ch. 27: Lv. 15")).toHaveLength(2);
     expect(screen.getAllByText(/Level 5 bases \+ \(individual growth rates \+ Maid class growth rates\) × levels gained/i)).toHaveLength(2);
-    expect(screen.getByText(/Revelation's complete milestone schedule and exact weapon-rank milestones still need direct testing/i)).toBeInTheDocument();
   });
 
   it("shows Fuga's Revelation castle recruitment and unresolved later scaling", () => {
@@ -366,15 +366,16 @@ describe("notes workspace", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Fuga", level: 1 })).toBeInTheDocument();
-    expect(screen.getByText(/no one has produced a concrete, accurate data table for Fuga yet, FFS/i)).toBeInTheDocument();
     expect(screen.getByText("After Chapter 18")).toBeInTheDocument();
-    expect(screen.getByText(/Lv\. 10\+ \(scales\) Master Of Arms/i)).toBeInTheDocument();
+    expect(screen.getByText(/Lv\. 10-15 Master Of Arms/i)).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Joining stats at Lv. 10" })).toBeInTheDocument();
     expect(screen.getByText("Sword B, Lance C, Axe C")).toBeInTheDocument();
     expect(screen.getByText(/Hot Spring Lv\. 3, then a My Castle refresh by waiting/i)).toBeInTheDocument();
-    expect(screen.getByText("Ch. 19: Lv. 10")).toBeInTheDocument();
+    expect(screen.getByText("Ch. 25: Lv. 11")).toBeInTheDocument();
+    expect(screen.getByText("Ch. 26: Lv. 13")).toBeInTheDocument();
+    expect(screen.getByText("Ch. 27: Lv. 15")).toBeInTheDocument();
     expect(screen.getByText(/Level 10 bases \+ \(individual growth rates \+ Master Of Arms class growth rates\) × levels gained/i)).toBeInTheDocument();
-    expect(screen.getByText(/Exact later chapter and weapon-rank milestones still need direct testing/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Exact weapon-rank milestones remain unresolved/i).length).toBeGreaterThan(0);
     expect(screen.getByText("Female Corrin Talent only")).toBeInTheDocument();
     expect(screen.getByText("Hayato")).toBeInTheDocument();
   });

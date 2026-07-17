@@ -1133,9 +1133,9 @@
       "notes": [
         "Flora becomes recruitable in Conquest after Chapter 18 once the Fire Orb reaches level 3 and My Castle refreshes. In Revelation, she becomes recruitable after Chapter 22 once any Ballista, Fire Orb, or Launcher reaches level 3 and My Castle refreshes.",
         "Waiting for the real-time refresh or completing any map can advance the refresh; recruitment is not locked to completing the next story chapter.",
-        "Her joining level, deterministic stat gains, weapon proficiency, and learned class skills scale with story progress. Controlled Conquest testing found level 5 through displayed Chapter 22, then two levels per story chapter through the level 15 cap at displayed Chapter 27.",
-        "Scaled stats use (individual growth rates + Maid class growth rates) from the level 5 Conquest base stat block, with exact 0.5 results rounded up. Revelation's level 7 base follows the same calculation, but its complete milestone and weapon-rank schedule still needs direct testing.",
-        "Flora appears to use castle-recruit autoleveling with Offspring Seal-esque level scaling, not the child unit Offspring Seal level table directly. The exact internal relationship remains unverified."
+        "Flora starts gaining automatic levels in Chapter 23 and reaches her level 15 cap in Chapter 27; Revelation therefore begins at level 7 after Chapter 22.",
+        "Scaled stats use (individual growth rates + Maid class growth rates) from the level 5 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
+        "Scaling details were identified and explained by FE14 modder ltranc@."
       ]
     },
     {
@@ -1161,9 +1161,9 @@
       "personalSkillId": "perspicacious",
       "notes": [
         "Yukimura becomes recruitable in Birthright after Chapter 21 once any Puppet reaches level 3 and My Castle refreshes. Waiting for the real-time refresh or completing any map can advance the refresh.",
-        "His joining level, deterministic stat gains, weapon proficiency, and learned class skills scale with story progress. Community references place him at Mechanist level 10 for displayed Chapter 22 and level 15 for displayed Chapter 27; exact internal chapter and weapon-rank milestones still need direct testing.",
-        "Scaled stats use (individual growth rates + Mechanist class growth rates) from the level 10 base stat block, with exact 0.5 results rounded up.",
-        "Yukimura appears to use a castle-recruit autolevel system with Offspring Seal-esque level scaling, not the child unit Offspring Seal level table directly. The exact internal relationship remains unverified.",
+        "Yukimura starts gaining automatic levels in Chapter 25 and reaches his level 15 cap in Chapter 27.",
+        "Scaled stats use (individual growth rates + Mechanist class growth rates) from the level 10 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
+        "Scaling details were identified and explained by FE14 modder ltranc@.",
         "Yukimura cannot be recruited in Conquest or Revelation, even though Revelation allows level 3 Puppets."
       ]
     },
@@ -1192,8 +1192,9 @@
       "notes": [
         "Izana becomes recruitable after the Hot Spring reaches level 3 and My Castle refreshes. A completed map advances the refresh, but simply waiting for the real-time refresh also works.",
         "Izana unlocks after Birthright Chapter 18 or Conquest Chapter 22; he is not locked to the next story chapter.",
-        "His joining level, deterministic stat gains, weapon proficiency, and learned class skills scale with story progress. Scaled stats use (individual growth rates + Onmyoji class growth rates) from the level 5 base stat block, with exact 0.5 results rounded up. Conquest has a tested level 7-to-15 schedule; exact later-recruitment milestones for Birthright and exact weapon-rank milestones remain unresolved.",
-        "Izana uses a castle-recruit autolevel system with Offspring Seal-esque level scaling, not the child unit Offspring Seal level table directly. The exact internal relationship remains unverified.",
+        "Izana starts gaining automatic levels in Chapter 23 and reaches his level 15 cap in Chapter 27; Conquest therefore begins at level 7 after Chapter 22.",
+        "Scaled stats use (individual growth rates + Onmyoji class growth rates) from the level 5 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
+        "Scaling details were identified and explained by FE14 modder ltranc@.",
         "Izana is an NPC in Revelation and cannot be recruited there."
       ]
     },
@@ -1220,10 +1221,10 @@
       "personalSkillId": "wind_disciple",
       "notes": [
         "Fuga is Revelation-exclusive and becomes recruitable after Chapter 18 once the Hot Spring reaches level 3 and My Castle refreshes. Waiting for the real-time refresh or completing any map can advance the refresh.",
-        "His workbook internal level 30 is displayed in-game as promoted level 10. His minimum level 10 Master of Arms base block, Sword B / Lance C / Axe C ranks, and empty inventory are independently corroborated.",
-        "Later recruitment raises Fuga's level, deterministic stats, weapon proficiency, and learned class skills, but no source located so far provides a verified chapter-by-chapter schedule. Only the displayed Chapter 19 level 10 milestone is recorded.",
-        "Scaled stats use (individual growth rates + Master of Arms class growth rates) from the level 10 base stat block, with exact 0.5 results rounded up.",
-        "Fuga appears to use castle-recruit autoleveling with Offspring Seal-esque level scaling, not the child unit Offspring Seal level table directly. The exact internal relationship remains unverified."
+        "His minimum level 10 Master of Arms base block, Sword B / Lance C / Axe C ranks, and empty inventory are independently corroborated.",
+        "Fuga starts gaining automatic levels in Chapter 25 and reaches his level 15 cap in Chapter 27.",
+        "Scaled stats use (individual growth rates + Master of Arms class growth rates) from the level 10 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
+        "Scaling details were identified and explained by FE14 modder ltranc@."
       ]
     },
     {

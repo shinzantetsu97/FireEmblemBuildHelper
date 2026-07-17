@@ -227,7 +227,8 @@ const availabilitySchema = z.object({
     .optional(),
   autoLevel: z
     .object({
-      basis: z.literal("displayed_story_chapter"),
+      basis: z.literal("map_level"),
+      internalLevel: z.number().int().nonnegative(),
       minimumLevel: z.number().int().positive(),
       maximumLevel: z.number().int().positive().optional(),
       milestones: z
@@ -235,20 +236,20 @@ const availabilitySchema = z.object({
           z.object({
             displayedChapterStart: z.number().int().nonnegative(),
             displayedChapterEnd: z.number().int().nonnegative().optional(),
+            mapLevel: z.number().int().nonnegative(),
             level: z.number().int().positive(),
           }),
         )
         .min(1),
+      levelFormula: z.literal("stat_base_level + max(0, map_level - internal_level), capped_at_maximum_level"),
       statCalculation: z.literal("average_growths_round_half_up"),
       statBaseLevel: z.number().int().positive(),
       growthClassId: z.string().min(1),
       skillsLearnedAutomatically: z.boolean(),
-      modelBasis: z.literal("castle_recruit_autolevel"),
-      comparisonModel: z.literal("offspring_seal_esque_level_scaling"),
-      comparisonStatus: z.literal("unverified"),
+      modelBasis: z.literal("map_level_autolevel"),
       weaponProficiencyScales: z.boolean(),
       weaponProficiencyMilestonesStatus: z.literal("unresolved"),
-      evidenceStatus: z.enum(["tested", "partial"]),
+      evidenceStatus: z.enum(["tested", "partial", "accepted"]),
       note: z.string().min(1),
     })
     .optional(),
@@ -348,6 +349,15 @@ export const childRecruitmentFileSchema = z.array(z.object({
     chapterEnd: z.number().int().min(1).optional(),
     level: z.number().int().positive(),
   })).min(1),
+  mapLevelScaling: z.object({
+    basis: z.literal("map_level"),
+    internalLevel: z.literal(10),
+    unpromotedLevelFormula: z.literal("max(10, map_level)"),
+    promotedInternalLevelOffset: z.literal(20),
+    offspringSealLevelFormula: z.literal("map_level - promoted_internal_level_offset"),
+    knownMapLevelsByChapter: z.record(z.string(), z.number().int().nonnegative()),
+    note: z.string().min(1),
+  }),
   offspringSeal: z.object({
     availableFromChapter: z.literal(19),
     promotedLevelsByChapter: z.record(z.string(), z.number().int().positive()),

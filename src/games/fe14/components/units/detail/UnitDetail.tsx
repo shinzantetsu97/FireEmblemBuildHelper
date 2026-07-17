@@ -5,7 +5,6 @@ import { ChevronLeft } from "lucide-react";
 import JsonExplorer from "../../../../../components/JsonExplorer";
 import { findUnitBySlug } from "../../../data";
 import { AppLink } from "../../../../../router";
-import { CastleRecruitDataAlert } from "./UnitAlerts";
 import UnitHeader from "./UnitHeader";
 import UnitOverview from "./UnitOverview";
 import UnitViewToolbar, { type UnitView } from "./UnitViewToolbar";
@@ -39,9 +38,6 @@ export default function UnitDetail({ slug }: { slug: string }) {
           <ChevronLeft aria-hidden="true" size={17} />
           FE14 Units
         </AppLink>
-        {["izana", "yukimura", "flora", "fuga"].includes(unit.identity.id) ? (
-          <CastleRecruitDataAlert unitName={unit.identity.displayName} />
-        ) : null}
         <UnitHeader unit={unit} avatarGender={avatarGender} setAvatarGender={setAvatarGender} />
         <UnitViewToolbar onChange={setView} view={view} />
         {view === "overview" ? (

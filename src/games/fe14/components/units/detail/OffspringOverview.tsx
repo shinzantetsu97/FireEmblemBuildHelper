@@ -234,7 +234,8 @@ function RecruitmentPanel({
         <div className="offspring-scaling">
           <h3>Story-position level</h3>
           <div>{data.levelByStoryPosition.map((milestone) => <span key={milestone.chapterStart}>Ch. {milestone.chapterStart}{milestone.chapterEnd && milestone.chapterEnd !== milestone.chapterStart ? `-${milestone.chapterEnd}` : ""}: Lv. {milestone.level}</span>)}</div>
-          <p>Chapter 19 onward also grants an Offspring Seal, scaling from promoted Lv. 2 in Chapter 19 to Lv. 18 in Chapter 27.</p>
+          <p>Child recruitment levels rise with story progress. From Chapter 19 onward, an Offspring Seal supplies the appropriate promoted level and learned class skills.</p>
+          <p><strong>Research credit:</strong> FE14 scaling details were identified and explained by modder ltranc@.</p>
         </div>
       </div>
       {data.recruitmentNotes?.map((note) => <p className="offspring-rule-note" key={note}>{note}</p>)}
