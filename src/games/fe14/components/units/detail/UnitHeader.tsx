@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
-import { displayId, getPortraitUrl, type UnitRuntime } from "../../../data/fe14";
+import { displayId, getPortraitUrl, type UnitRuntime } from "../../../data";
 import { ClassTreeLabel } from "./ClassTree";
 import type { AvatarGender } from "./types";
 

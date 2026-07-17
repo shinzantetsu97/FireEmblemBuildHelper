@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import { ShieldCheck, TriangleAlert } from "lucide-react";
-import { type UnitRuntime } from "../../../data/fe14";
+import { type UnitRuntime } from "../../../data";
 import {
   AvatarConfigurationSection,
   AvatarPairupSection,

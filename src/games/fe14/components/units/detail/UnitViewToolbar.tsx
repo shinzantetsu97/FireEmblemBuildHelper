@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import { Braces, LayoutList } from "lucide-react";
-import { fe14Data } from "../../../data/fe14";
+import { fe14Data } from "../../../data";
 
 export type UnitView = "overview" | "json";
 

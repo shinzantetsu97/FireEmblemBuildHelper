@@ -901,14 +901,6 @@ select {
   white-space: nowrap;
 }
 
-.pairup-table thead span {
-  color: #7b3f57;
-  display: block;
-  font-size: 0.68rem;
-  margin-top: 0.15rem;
-  text-transform: uppercase;
-}
-
 .growth-cell {
   align-items: center;
   gap: 0.6rem;
@@ -957,6 +949,12 @@ select {
 .support-group h3 {
   font-size: 0.95rem;
   margin: 0 0 0.6rem;
+}
+
+.support-column {
+  align-content: start;
+  display: grid;
+  gap: 1rem;
 }
 
 .support-availability-note {

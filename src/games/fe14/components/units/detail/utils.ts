@@ -1,4 +1,4 @@
-import { displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data/fe14";
+import { displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data";
 import { STAT_KEYS, type AvailabilityScenario } from "./types";
 
 export function corrinBorrowedClassId(partnerUnitId: string): string | undefined {

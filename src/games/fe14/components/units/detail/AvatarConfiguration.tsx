@@ -2,7 +2,7 @@ import Alert from "react-bootstrap/Alert";
 import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
 import { TriangleAlert } from "lucide-react";
-import { displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data/fe14";
+import { displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data";
 import { ClassTreeList } from "./ClassTree";
 import GrowthBar from "./GrowthBar";
 import PairupTable from "./PairupTable";

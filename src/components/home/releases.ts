@@ -1,10 +1,21 @@
 export const RELEASES = [
   {
+    version: "0.3.1",
+    date: "2026-07-16",
+    dateLabel: "July 16, 2026",
+    title: "Frontend structure and support polish",
+    current: true,
+    changes: [
+      "Split the frontend pages into focused components and grouped FE14 data, pages, unit components, and portraits under a dedicated game package.",
+      "Rebalanced relationship lists with A and Friendship supports on the left, Partner supports on the right, and explicit Corrin (M) / Corrin (F) labels.",
+      "Removed internal acceptance-status labels from the Attack Stance and Guard Stance table headers.",
+    ],
+  },
+  {
     version: "0.3.0",
     date: "2026-07-16",
     dateLabel: "July 16, 2026",
     title: "Complete FE14 first-generation roster",
-    current: true,
     changes: [
       "Completed all 48 parent-generation profiles with portraits, route-specific recruitment, stats, class access, supports, seal outcomes, stance bonuses, and references.",
       "Added interactive Corrin controls for gender, boon, bane, Talent, bases, growths, cap modifiers, support coverage, and stance bonuses.",

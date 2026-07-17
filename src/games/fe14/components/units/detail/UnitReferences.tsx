@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { fe14Data, type SourceRef, type UnitRuntime } from "../../../data/fe14";
+import { fe14Data, type SourceRef, type UnitRuntime } from "../../../data";
 
 export default function UnitReferences({ unit }: { unit: UnitRuntime }) {
   return (

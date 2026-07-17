@@ -1,5 +1,5 @@
 import { TriangleAlert } from "lucide-react";
-import { displayId, fe14Data, type SealGrant, type UnitRuntime } from "../../../data/fe14";
+import { displayId, fe14Data, type SealGrant, type UnitRuntime } from "../../../data";
 import { ClassTreeLabel } from "./ClassTree";
 import { avatarTalentClassIds } from "./AvatarConfiguration";
 import type { AvatarSelection } from "./types";
@@ -64,13 +64,17 @@ export default function SupportDirectory({ unit, avatarSelection }: { unit: Unit
         </p>
       ))}
       <div className="support-groups">
-        <SupportGroup
-          title={unit.identity.id === "corrin" ? "Friendship Seal (same-gender A)" : "Friendship Seal (A+)"}
-          supports={friendship}
-          grants={grantsBySupport}
-        />
-        <SupportGroup title="A support (no class grant)" supports={noClassGrant} grants={grantsBySupport} />
-        <SupportGroup title="Partner Seal (S)" supports={romantic} grants={grantsBySupport} />
+        <div className="support-column support-column-friendship">
+          <SupportGroup
+            title={unit.identity.id === "corrin" ? "Friendship Seal (same-gender A)" : "Friendship Seal (A+)"}
+            supports={friendship}
+            grants={grantsBySupport}
+          />
+          <SupportGroup title="A support (no class grant)" supports={noClassGrant} grants={grantsBySupport} />
+        </div>
+        <div className="support-column support-column-partner">
+          <SupportGroup title="Partner Seal (S)" supports={romantic} grants={grantsBySupport} />
+        </div>
       </div>
       {alreadyOwnedVia.size > 0 ? (
         <p className="seal-owned-legend">
@@ -104,7 +108,7 @@ function SupportGroup({
           const grant = grants.get(support.id);
           return (
             <div className="support-row" key={support.id}>
-              <span>{partner?.displayName ?? displayId(support.partnerUnitId)}</span>
+              <span>{formatSupportPartnerName(support, partner?.displayName)}</span>
               <span>
                 {support.routes.map(formatRoute).join(" / ")}
               </span>
@@ -126,6 +130,14 @@ function SupportGroup({
       </div>
     </div>
   );
+}
+
+function formatSupportPartnerName(
+  support: UnitRuntime["supports"][number],
+  displayName?: string,
+): string {
+  if (support.partnerUnitId !== "corrin") return displayName ?? displayId(support.partnerUnitId);
+  return `Corrin (${support.partnerGender === "male" ? "M" : "F"})`;
 }
 
 function formatOwnedSources(sources: Set<"base" | "heart_seal">): string {

@@ -2,7 +2,7 @@ import { render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it } from "vitest";
 import App from "./App";
-import { fe14Data } from "./data/fe14";
+import { fe14Data } from "./games/fe14/data";
 import { createNote, ensureDefaultWorkspace } from "./storage";
 import { resetBrowserStorage } from "./test/storageTestUtils";
 
@@ -451,16 +451,19 @@ describe("notes workspace", () => {
     const partnerGroup = within(relationships).getByRole("heading", { name: "Partner Seal (S)" }).parentElement;
     expect(friendshipGroup).not.toBeNull();
     expect(partnerGroup).not.toBeNull();
+    expect(friendshipGroup?.parentElement).toHaveClass("support-column-friendship");
+    expect(noGrantGroup?.parentElement).toBe(friendshipGroup?.parentElement);
+    expect(partnerGroup?.parentElement).toHaveClass("support-column-partner");
     expect(Array.from(friendshipGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent)).toEqual([
       "Niles",
       "Benny",
       "Keaton",
       "Azama",
     ]);
-    expect(within(noGrantGroup!).getByText("Corrin")).toBeInTheDocument();
+    expect(within(noGrantGroup!).getByText("Corrin (M)")).toBeInTheDocument();
     expect(within(noGrantGroup!).getByText("No class grant")).toBeInTheDocument();
     expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent).slice(0, 6)).toEqual([
-      "Corrin",
+      "Corrin (F)",
       "Azura",
       "Felicia",
       "Mozu",
@@ -500,10 +503,10 @@ describe("notes workspace", () => {
       "Nyx",
       "Hana",
     ]);
-    expect(within(noGrantGroup!).getByText("Corrin")).toBeInTheDocument();
+    expect(within(noGrantGroup!).getByText("Corrin (F)")).toBeInTheDocument();
     expect(within(noGrantGroup!).getByText("No class grant")).toBeInTheDocument();
     expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent).slice(0, 6)).toEqual([
-      "Corrin",
+      "Corrin (M)",
       "Jakob",
       "Silas",
       "Kaze",
@@ -797,6 +800,9 @@ describe("notes workspace", () => {
     const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
     const partnerGroup = within(relationships).getByRole("heading", { name: "Partner Seal (S)" }).parentElement;
     expect(partnerGroup).not.toBeNull();
-    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent).filter((name) => name === "Corrin")).toHaveLength(2);
+    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent).filter((name) => name?.startsWith("Corrin ("))).toEqual([
+      "Corrin (F)",
+      "Corrin (M)",
+    ]);
   });
 });

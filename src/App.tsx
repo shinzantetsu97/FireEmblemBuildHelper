@@ -1,8 +1,8 @@
 import AppHeader from "./components/AppHeader";
 import HomePage from "./pages/HomePage";
 import NotesPage from "./pages/NotesPage";
-import UnitDetailPage from "./pages/UnitDetailPage";
-import UnitIndexPage from "./pages/UnitIndexPage";
+import UnitDetailPage from "./games/fe14/pages/UnitDetailPage";
+import UnitIndexPage from "./games/fe14/pages/UnitIndexPage";
 import { useAppRoute } from "./router";
 
 export default function App() {
