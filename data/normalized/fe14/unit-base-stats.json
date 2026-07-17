@@ -1,5 +1,53 @@
 [
   {
+    "unitId": "corrin",
+    "availabilityId": "corrin.prologue",
+    "level": 1,
+    "classId": "nohr_prince",
+    "stats": {
+      "hp": 19,
+      "strength": 7,
+      "magic": 4,
+      "skill": 7,
+      "speed": 6,
+      "luck": 5,
+      "defense": 6,
+      "resistance": 2
+    },
+    "weaponRanks": {
+      "sword": "E"
+    },
+    "startingSkillIds": [
+      "nobility"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "神威!C24:J28",
+        "fields": ["stats", "weaponRanks", "startingSkillIds"],
+        "reviewStatus": "candidate"
+      },
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Avatar neutral base stats",
+        "fields": ["stats"],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-corrin",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates",
+        "fields": ["stats", "startingSkillIds"],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Shared Characters > Avatar; Dragonstone rank early-game note",
+        "fields": ["weaponRanks"],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "unitId": "azura",
     "availabilityIds": [
       "azura.chapter_5",
@@ -964,6 +1012,2094 @@
     ]
   },
   {
+    "unitId": "anna",
+    "availabilityId": "anna.dlc",
+    "level": 10,
+    "classId": "outlaw",
+    "stats": {
+      "hp": 23,
+      "strength": 9,
+      "magic": 11,
+      "skill": 10,
+      "speed": 14,
+      "luck": 15,
+      "defense": 6,
+      "resistance": 15
+    },
+    "weaponRanks": {
+      "bow": "C"
+    },
+    "startingSkillIds": [
+      "make_a_killing",
+      "locktouch",
+      "movement_plus_1"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-other-base-stats",
+        "locator": "DLC exclusive > Anna",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-anna-fates",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "ryoma",
+    "availabilityId": "ryoma.birthright_guest",
+    "level": 4,
+    "classId": "swordmaster",
+    "stats": {
+      "hp": 36,
+      "strength": 18,
+      "magic": 2,
+      "skill": 15,
+      "speed": 17,
+      "luck": 20,
+      "defense": 13,
+      "resistance": 13
+    },
+    "weaponRanks": {
+      "sword": "B"
+    },
+    "startingSkillIds": [
+      "bushido",
+      "vantage",
+      "duelists_blow"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Ryoma base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Ryoma character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-ryoma",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "ryoma",
+    "availabilityIds": [
+      "ryoma.birthright",
+      "ryoma.revelation"
+    ],
+    "level": 4,
+    "classId": "swordmaster",
+    "stats": {
+      "hp": 36,
+      "strength": 20,
+      "magic": 2,
+      "skill": 18,
+      "speed": 24,
+      "luck": 20,
+      "defense": 16,
+      "resistance": 13
+    },
+    "weaponRanks": {
+      "sword": "B"
+    },
+    "startingSkillIds": [
+      "bushido",
+      "vantage",
+      "duelists_blow"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Ryoma base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Ryoma character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-ryoma",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hinoka",
+    "availabilityIds": [
+      "hinoka.birthright_guest",
+      "hinoka.birthright"
+    ],
+    "level": 8,
+    "classId": "sky_knight",
+    "stats": {
+      "hp": 23,
+      "strength": 9,
+      "magic": 4,
+      "skill": 13,
+      "speed": 16,
+      "luck": 12,
+      "defense": 9,
+      "resistance": 15
+    },
+    "weaponRanks": {
+      "lance": "C"
+    },
+    "startingSkillIds": [
+      "rallying_cry",
+      "darting_blow"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Hinoka base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Hinoka character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinoka",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hinoka",
+    "availabilityId": "hinoka.revelation",
+    "level": 17,
+    "classId": "sky_knight",
+    "stats": {
+      "hp": 24,
+      "strength": 14,
+      "magic": 5,
+      "skill": 18,
+      "speed": 23,
+      "luck": 16,
+      "defense": 12,
+      "resistance": 23
+    },
+    "weaponRanks": {
+      "lance": "B"
+    },
+    "startingSkillIds": [
+      "rallying_cry",
+      "darting_blow",
+      "camaraderie"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Hinoka base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Hinoka character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinoka",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "takumi",
+    "availabilityIds": [
+      "takumi.birthright_guest",
+      "takumi.birthright",
+      "takumi.revelation"
+    ],
+    "level": 11,
+    "classId": "archer",
+    "stats": {
+      "hp": 26,
+      "strength": 13,
+      "magic": 0,
+      "skill": 17,
+      "speed": 11,
+      "luck": 13,
+      "defense": 10,
+      "resistance": 4
+    },
+    "weaponRanks": {
+      "bow": "C"
+    },
+    "startingSkillIds": [
+      "competitive",
+      "skill_2",
+      "quick_draw"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Takumi base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Takumi character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-takumi",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "sakura",
+    "availabilityId": "sakura.chapter_5",
+    "level": 1,
+    "classId": "shrine_maiden",
+    "stats": {
+      "hp": 16,
+      "strength": 3,
+      "magic": 6,
+      "skill": 5,
+      "speed": 7,
+      "luck": 9,
+      "defense": 5,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "staff": "E"
+    },
+    "startingSkillIds": [
+      "quiet_strength",
+      "miracle"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Sakura base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Sakura character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-sakura",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "sakura",
+    "availabilityId": "sakura.revelation",
+    "level": 4,
+    "classId": "shrine_maiden",
+    "stats": {
+      "hp": 19,
+      "strength": 4,
+      "magic": 8,
+      "skill": 6,
+      "speed": 10,
+      "luck": 11,
+      "defense": 7,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "staff": "D"
+    },
+    "startingSkillIds": [
+      "quiet_strength",
+      "miracle"
+    ],
+    "chapter5Carryover": {
+      "sourceAvailabilityId": "sakura.chapter_5",
+      "checkpoint": "end_of_chapter_5",
+      "levelCalculation": "template_plus_chapter_5_levels_gained",
+      "statCalculation": "template_plus_chapter_5_level_up_gains",
+      "weaponProficiencyCalculation": "template_plus_chapter_5_proficiency_gained",
+      "note": "Revelation starts Sakura from its level 4 stat template and D-rank staff template, then adds every level, exact rolled stat gain, partial EXP, and point of staff proficiency earned in Chapter 5."
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Sakura base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Sakura character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-sakura",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "user-fe14-sakura-carryover",
+        "locator": "Revelation Chapter 8 return compared with Chapter 5 training",
+        "fields": [
+          "chapter5Carryover"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "saizo",
+    "availabilityId": "saizo.birthright",
+    "level": 7,
+    "classId": "ninja",
+    "stats": {
+      "hp": 23,
+      "strength": 11,
+      "magic": 3,
+      "skill": 14,
+      "speed": 11,
+      "luck": 9,
+      "defense": 9,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "dagger": "C"
+    },
+    "startingSkillIds": [
+      "pyrotechnics",
+      "locktouch"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Saizo base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Saizo character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-saizo",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "saizo",
+    "availabilityId": "saizo.revelation",
+    "level": 9,
+    "classId": "ninja",
+    "stats": {
+      "hp": 23,
+      "strength": 11,
+      "magic": 3,
+      "skill": 15,
+      "speed": 12,
+      "luck": 9,
+      "defense": 9,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "dagger": "C"
+    },
+    "startingSkillIds": [
+      "pyrotechnics",
+      "locktouch"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Saizo base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Saizo character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-saizo",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kagero",
+    "availabilityIds": [
+      "kagero.birthright",
+      "kagero.revelation"
+    ],
+    "level": 10,
+    "classId": "ninja",
+    "stats": {
+      "hp": 22,
+      "strength": 15,
+      "magic": 0,
+      "skill": 10,
+      "speed": 12,
+      "luck": 7,
+      "defense": 9,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "dagger": "C"
+    },
+    "startingSkillIds": [
+      "shuriken_mastery",
+      "locktouch",
+      "poison_strike"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Kagero base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Kagero character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kagero",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "setsuna",
+    "availabilityId": "setsuna.birthright",
+    "level": 3,
+    "classId": "archer",
+    "stats": {
+      "hp": 19,
+      "strength": 8,
+      "magic": 0,
+      "skill": 9,
+      "speed": 10,
+      "luck": 6,
+      "defense": 5,
+      "resistance": 3
+    },
+    "weaponRanks": {
+      "bow": "D"
+    },
+    "startingSkillIds": [
+      "optimist",
+      "skill_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Setsuna base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Setsuna character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-setsuna",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "setsuna",
+    "availabilityId": "setsuna.revelation",
+    "level": 11,
+    "classId": "archer",
+    "stats": {
+      "hp": 25,
+      "strength": 12,
+      "magic": 0,
+      "skill": 15,
+      "speed": 17,
+      "luck": 11,
+      "defense": 8,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "bow": "C"
+    },
+    "startingSkillIds": [
+      "optimist",
+      "skill_2",
+      "quick_draw"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Setsuna base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Setsuna character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-setsuna",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "azama",
+    "availabilityId": "azama.birthright",
+    "level": 7,
+    "classId": "monk",
+    "stats": {
+      "hp": 24,
+      "strength": 9,
+      "magic": 7,
+      "skill": 9,
+      "speed": 10,
+      "luck": 12,
+      "defense": 10,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "staff": "D"
+    },
+    "startingSkillIds": [
+      "divine_retribution",
+      "miracle"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Azama base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Azama character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azama",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "azama",
+    "availabilityId": "azama.revelation",
+    "level": 13,
+    "classId": "monk",
+    "stats": {
+      "hp": 28,
+      "strength": 10,
+      "magic": 8,
+      "skill": 11,
+      "speed": 13,
+      "luck": 16,
+      "defense": 14,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "staff": "C"
+    },
+    "startingSkillIds": [
+      "divine_retribution",
+      "miracle",
+      "rally_luck"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Azama base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Azama character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azama",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hinata",
+    "availabilityIds": [
+      "hinata.birthright",
+      "hinata.revelation"
+    ],
+    "level": 10,
+    "classId": "samurai",
+    "stats": {
+      "hp": 26,
+      "strength": 11,
+      "magic": 0,
+      "skill": 9,
+      "speed": 14,
+      "luck": 10,
+      "defense": 12,
+      "resistance": 4
+    },
+    "weaponRanks": {
+      "sword": "C"
+    },
+    "startingSkillIds": [
+      "triple_threat",
+      "duelists_blow",
+      "vantage"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Hinata base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Hinata character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinata",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "oboro",
+    "availabilityIds": [
+      "oboro.birthright",
+      "oboro.revelation"
+    ],
+    "level": 10,
+    "classId": "spear_fighter",
+    "stats": {
+      "hp": 25,
+      "strength": 13,
+      "magic": 0,
+      "skill": 11,
+      "speed": 12,
+      "luck": 11,
+      "defense": 13,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "lance": "C"
+    },
+    "startingSkillIds": [
+      "nohr_enmity",
+      "seal_defense",
+      "swap"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Oboro base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Oboro character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-oboro",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hana",
+    "availabilityId": "hana.birthright",
+    "level": 4,
+    "classId": "samurai",
+    "stats": {
+      "hp": 20,
+      "strength": 9,
+      "magic": 0,
+      "skill": 11,
+      "speed": 11,
+      "luck": 5,
+      "defense": 6,
+      "resistance": 9
+    },
+    "weaponRanks": {
+      "sword": "D"
+    },
+    "startingSkillIds": [
+      "fearsome_blow",
+      "duelists_blow"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Hana base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Hana character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hana",
+    "availabilityId": "hana.revelation",
+    "level": 4,
+    "classId": "samurai",
+    "stats": {
+      "hp": 20,
+      "strength": 7,
+      "magic": 0,
+      "skill": 9,
+      "speed": 11,
+      "luck": 5,
+      "defense": 6,
+      "resistance": 9
+    },
+    "weaponRanks": {
+      "sword": "D"
+    },
+    "startingSkillIds": [
+      "fearsome_blow",
+      "duelists_blow"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Hana base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Hana character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "subaki",
+    "availabilityIds": [
+      "subaki.birthright",
+      "subaki.revelation"
+    ],
+    "level": 5,
+    "classId": "sky_knight",
+    "stats": {
+      "hp": 22,
+      "strength": 8,
+      "magic": 0,
+      "skill": 13,
+      "speed": 10,
+      "luck": 7,
+      "defense": 9,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "lance": "D"
+    },
+    "startingSkillIds": [
+      "perfectionist",
+      "darting_blow"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Subaki base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Subaki character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-subaki",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hayato",
+    "availabilityId": "hayato.birthright",
+    "level": 1,
+    "classId": "diviner",
+    "stats": {
+      "hp": 16,
+      "strength": 1,
+      "magic": 4,
+      "skill": 5,
+      "speed": 7,
+      "luck": 8,
+      "defense": 4,
+      "resistance": 5
+    },
+    "weaponRanks": {
+      "tome": "D"
+    },
+    "startingSkillIds": [
+      "pride",
+      "magic_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Hayato base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Hayato character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hayato",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hayato",
+    "availabilityId": "hayato.revelation",
+    "level": 9,
+    "classId": "diviner",
+    "stats": {
+      "hp": 22,
+      "strength": 2,
+      "magic": 9,
+      "skill": 9,
+      "speed": 13,
+      "luck": 11,
+      "defense": 5,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "tome": "D"
+    },
+    "startingSkillIds": [
+      "pride",
+      "magic_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Hayato base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Hayato character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hayato",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "rinkah",
+    "availabilityId": "rinkah.common",
+    "level": 4,
+    "classId": "oni_savage",
+    "stats": {
+      "hp": 20,
+      "strength": 8,
+      "magic": 2,
+      "skill": 6,
+      "speed": 8,
+      "luck": 5,
+      "defense": 10,
+      "resistance": 3
+    },
+    "weaponRanks": {
+      "axe": "E"
+    },
+    "startingSkillIds": [
+      "fiery_blood",
+      "seal_resistance"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Rinkah base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Rinkah character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-rinkah",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "orochi",
+    "availabilityId": "orochi.birthright",
+    "level": 5,
+    "classId": "diviner",
+    "stats": {
+      "hp": 20,
+      "strength": 0,
+      "magic": 9,
+      "skill": 11,
+      "speed": 7,
+      "luck": 6,
+      "defense": 5,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "tome": "D"
+    },
+    "startingSkillIds": [
+      "capture",
+      "magic_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Orochi base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Orochi character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-orochi",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "orochi",
+    "availabilityId": "orochi.revelation",
+    "level": 7,
+    "classId": "diviner",
+    "stats": {
+      "hp": 20,
+      "strength": 1,
+      "magic": 10,
+      "skill": 12,
+      "speed": 7,
+      "luck": 6,
+      "defense": 5,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "tome": "D"
+    },
+    "startingSkillIds": [
+      "capture",
+      "magic_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Orochi base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Orochi character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-orochi",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kaden",
+    "availabilityIds": [
+      "kaden.birthright",
+      "kaden.revelation"
+    ],
+    "level": 14,
+    "classId": "kitsune",
+    "stats": {
+      "hp": 30,
+      "strength": 15,
+      "magic": 1,
+      "skill": 12,
+      "speed": 19,
+      "luck": 14,
+      "defense": 9,
+      "resistance": 14
+    },
+    "weaponRanks": {
+      "beaststone": "C"
+    },
+    "startingSkillIds": [
+      "reciprocity",
+      "evenhanded",
+      "beastbane"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Kaden base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Kaden character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaden",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "reina",
+    "availabilityId": "reina.birthright",
+    "level": 1,
+    "classId": "kinshi_knight",
+    "stats": {
+      "hp": 28,
+      "strength": 17,
+      "magic": 5,
+      "skill": 14,
+      "speed": 20,
+      "luck": 14,
+      "defense": 10,
+      "resistance": 13
+    },
+    "weaponRanks": {
+      "lance": "C",
+      "bow": "D"
+    },
+    "startingSkillIds": [
+      "morbid_celebration",
+      "darting_blow",
+      "camaraderie"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Reina base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Reina character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-reina",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "reina",
+    "availabilityId": "reina.revelation",
+    "level": 1,
+    "classId": "kinshi_knight",
+    "stats": {
+      "hp": 28,
+      "strength": 18,
+      "magic": 4,
+      "skill": 16,
+      "speed": 21,
+      "luck": 15,
+      "defense": 10,
+      "resistance": 13
+    },
+    "weaponRanks": {
+      "lance": "C",
+      "bow": "D"
+    },
+    "startingSkillIds": [
+      "morbid_celebration",
+      "darting_blow",
+      "camaraderie"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Reina base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Reina character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-reina",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "scarlet",
+    "availabilityId": "scarlet.birthright",
+    "level": 1,
+    "classId": "wyvern_lord",
+    "stats": {
+      "hp": 30,
+      "strength": 23,
+      "magic": 4,
+      "skill": 17,
+      "speed": 19,
+      "luck": 14,
+      "defense": 22,
+      "resistance": 6
+    },
+    "weaponRanks": {
+      "lance": "D",
+      "axe": "C"
+    },
+    "startingSkillIds": [
+      "in_extremis",
+      "strength_2",
+      "lunge"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Scarlet base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-other-data",
+        "locator": "Scarlet character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-scarlet",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "scarlet",
+    "availabilityId": "scarlet.revelation",
+    "level": 3,
+    "classId": "wyvern_lord",
+    "stats": {
+      "hp": 32,
+      "strength": 22,
+      "magic": 4,
+      "skill": 18,
+      "speed": 19,
+      "luck": 14,
+      "defense": 23,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "lance": "D",
+      "axe": "C"
+    },
+    "startingSkillIds": [
+      "in_extremis",
+      "strength_2",
+      "lunge"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-base-stats",
+        "locator": "Scarlet base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Scarlet character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-scarlet",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "xander",
+    "availabilityId": "xander.conquest_guest",
+    "level": 3,
+    "classId": "paladin",
+    "stats": {
+      "hp": 40,
+      "strength": 15,
+      "magic": 1,
+      "skill": 14,
+      "speed": 13,
+      "luck": 15,
+      "defense": 14,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "sword": "C",
+      "lance": "D"
+    },
+    "startingSkillIds": [
+      "chivalry",
+      "elbow_room",
+      "shelter"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Xander base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Xander character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-xander",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "xander",
+    "availabilityIds": [
+      "xander.conquest",
+      "xander.revelation"
+    ],
+    "level": 4,
+    "classId": "paladin",
+    "stats": {
+      "hp": 38,
+      "strength": 23,
+      "magic": 4,
+      "skill": 18,
+      "speed": 15,
+      "luck": 20,
+      "defense": 23,
+      "resistance": 11
+    },
+    "weaponRanks": {
+      "sword": "B",
+      "lance": "D"
+    },
+    "startingSkillIds": [
+      "chivalry",
+      "elbow_room",
+      "shelter"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Xander base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Xander character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-xander",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "camilla",
+    "availabilityId": "camilla.conquest_guest",
+    "level": 1,
+    "classId": "malig_knight",
+    "stats": {
+      "hp": 25,
+      "strength": 12,
+      "magic": 8,
+      "skill": 9,
+      "speed": 12,
+      "luck": 7,
+      "defense": 13,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "axe": "C",
+      "tome": "D"
+    },
+    "startingSkillIds": [
+      "roses_thorns",
+      "strength_plus_2",
+      "lunge"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Camilla base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Camilla",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-camilla",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "camilla",
+    "availabilityIds": [
+      "camilla.conquest",
+      "camilla.revelation"
+    ],
+    "level": 1,
+    "classId": "malig_knight",
+    "stats": {
+      "hp": 30,
+      "strength": 19,
+      "magic": 11,
+      "skill": 15,
+      "speed": 19,
+      "luck": 12,
+      "defense": 18,
+      "resistance": 15
+    },
+    "weaponRanks": {
+      "axe": "C",
+      "tome": "D"
+    },
+    "startingSkillIds": [
+      "roses_thorns",
+      "strength_plus_2",
+      "lunge"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Camilla base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Camilla",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-camilla",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "leo",
+    "availabilityId": "leo.conquest_guest",
+    "level": 1,
+    "classId": "dark_knight",
+    "stats": {
+      "hp": 27,
+      "strength": 9,
+      "magic": 13,
+      "skill": 10,
+      "speed": 10,
+      "luck": 8,
+      "defense": 11,
+      "resistance": 13
+    },
+    "weaponRanks": {
+      "sword": "D",
+      "tome": "C"
+    },
+    "startingSkillIds": [
+      "pragmatic",
+      "heartseeker",
+      "malefic_aura"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Leo base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Leo character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-leo",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "leo",
+    "availabilityIds": [
+      "leo.conquest",
+      "leo.revelation"
+    ],
+    "level": 2,
+    "classId": "dark_knight",
+    "stats": {
+      "hp": 34,
+      "strength": 14,
+      "magic": 20,
+      "skill": 14,
+      "speed": 15,
+      "luck": 15,
+      "defense": 16,
+      "resistance": 20
+    },
+    "weaponRanks": {
+      "sword": "D",
+      "tome": "C"
+    },
+    "startingSkillIds": [
+      "pragmatic",
+      "heartseeker",
+      "malefic_aura"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Leo base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Leo character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-leo",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "elise",
     "availabilityId": "elise.conquest_guest",
     "level": 4,
@@ -1133,6 +3269,599 @@
           "startingSkillIds"
         ],
         "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "laslow",
+    "availabilityId": "laslow.conquest",
+    "level": 12,
+    "classId": "mercenary",
+    "stats": {
+      "hp": 28,
+      "strength": 15,
+      "magic": 0,
+      "skill": 16,
+      "speed": 13,
+      "luck": 14,
+      "defense": 10,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "sword": "C"
+    },
+    "startingSkillIds": [
+      "fancy_footwork",
+      "good_fortune",
+      "strong_riposte"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Laslow base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Laslow",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-laslow",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "laslow",
+    "availabilityId": "laslow.revelation",
+    "level": 16,
+    "classId": "mercenary",
+    "stats": {
+      "hp": 30,
+      "strength": 17,
+      "magic": 0,
+      "skill": 19,
+      "speed": 16,
+      "luck": 16,
+      "defense": 12,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "sword": "C"
+    },
+    "startingSkillIds": [
+      "fancy_footwork",
+      "good_fortune",
+      "strong_riposte"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Laslow base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Laslow",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-laslow",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "peri",
+    "availabilityId": "peri.conquest",
+    "level": 10,
+    "classId": "cavalier",
+    "stats": {
+      "hp": 25,
+      "strength": 13,
+      "magic": 0,
+      "skill": 9,
+      "speed": 13,
+      "luck": 9,
+      "defense": 10,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "sword": "D",
+      "lance": "C"
+    },
+    "startingSkillIds": [
+      "bloodthirst",
+      "elbow_room",
+      "shelter"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Peri base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Peri",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-peri",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "peri",
+    "availabilityId": "peri.revelation",
+    "level": 16,
+    "classId": "cavalier",
+    "stats": {
+      "hp": 27,
+      "strength": 16,
+      "magic": 0,
+      "skill": 10,
+      "speed": 15,
+      "luck": 12,
+      "defense": 12,
+      "resistance": 11
+    },
+    "weaponRanks": {
+      "sword": "D",
+      "lance": "C"
+    },
+    "startingSkillIds": [
+      "bloodthirst",
+      "elbow_room",
+      "shelter"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Peri base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Peri",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-peri",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "selena",
+    "availabilityIds": [
+      "selena.conquest",
+      "selena.revelation"
+    ],
+    "level": 10,
+    "classId": "mercenary",
+    "stats": {
+      "hp": 24,
+      "strength": 12,
+      "magic": 3,
+      "skill": 12,
+      "speed": 15,
+      "luck": 9,
+      "defense": 11,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "sword": "D"
+    },
+    "startingSkillIds": [
+      "fierce_rival",
+      "good_fortune",
+      "strong_riposte"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Selena base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Selena",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-selena",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "weaponRankProgressByAvailability": {
+      "selena.conquest": {
+        "sword": {
+          "towardRank": "C",
+          "barFraction": 0.5,
+          "precision": "exact"
+        }
+      }
+    }
+  },
+  {
+    "unitId": "beruka",
+    "availabilityIds": [
+      "beruka.conquest",
+      "beruka.revelation"
+    ],
+    "level": 9,
+    "classId": "wyvern_rider",
+    "stats": {
+      "hp": 23,
+      "strength": 13,
+      "magic": 0,
+      "skill": 14,
+      "speed": 9,
+      "luck": 10,
+      "defense": 14,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "axe": "D"
+    },
+    "startingSkillIds": [
+      "opportunist",
+      "strength_plus_2"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Beruka base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Beruka",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-beruka",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "weaponRankProgressByAvailability": {
+      "beruka.conquest": {
+        "axe": {
+          "towardRank": "C",
+          "barFraction": 0.5,
+          "precision": "exact"
+        }
+      }
+    }
+  },
+  {
+    "unitId": "odin",
+    "availabilityId": "odin.conquest",
+    "level": 5,
+    "classId": "dark_mage",
+    "stats": {
+      "hp": 21,
+      "strength": 5,
+      "magic": 8,
+      "skill": 10,
+      "speed": 7,
+      "luck": 9,
+      "defense": 6,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "tome": "D"
+    },
+    "startingSkillIds": [
+      "aching_blood",
+      "heartseeker"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Odin base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Odin",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-odin",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "odin",
+    "availabilityId": "odin.revelation",
+    "level": 12,
+    "classId": "dark_mage",
+    "stats": {
+      "hp": 24,
+      "strength": 8,
+      "magic": 12,
+      "skill": 12,
+      "speed": 10,
+      "luck": 12,
+      "defense": 7,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "tome": "C"
+    },
+    "startingSkillIds": [
+      "aching_blood",
+      "heartseeker",
+      "malefic_aura"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Odin base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Odin",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-odin",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "niles",
+    "availabilityId": "niles.conquest",
+    "level": 8,
+    "classId": "outlaw",
+    "stats": {
+      "hp": 22,
+      "strength": 9,
+      "magic": 5,
+      "skill": 9,
+      "speed": 15,
+      "luck": 6,
+      "defense": 7,
+      "resistance": 12
+    },
+    "weaponRanks": {
+      "bow": "D"
+    },
+    "startingSkillIds": [
+      "kidnap",
+      "locktouch"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Niles base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Niles",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-niles",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "niles",
+    "availabilityId": "niles.revelation",
+    "level": 14,
+    "classId": "outlaw",
+    "stats": {
+      "hp": 24,
+      "strength": 11,
+      "magic": 6,
+      "skill": 11,
+      "speed": 17,
+      "luck": 7,
+      "defense": 10,
+      "resistance": 16
+    },
+    "weaponRanks": {
+      "bow": "C"
+    },
+    "startingSkillIds": [
+      "kidnap",
+      "locktouch",
+      "movement_plus_1"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Niles base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Niles",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-niles",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1349,6 +4078,245 @@
       {
         "sourceId": "fandom-fe14-arthur",
         "locator": "Fire Emblem Fates > Base Stats > Revelation Chapter 14",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "nyx",
+    "availabilityIds": [
+      "nyx.conquest",
+      "nyx.revelation"
+    ],
+    "level": 9,
+    "classId": "dark_mage",
+    "stats": {
+      "hp": 20,
+      "strength": 1,
+      "magic": 12,
+      "skill": 5,
+      "speed": 11,
+      "luck": 3,
+      "defense": 4,
+      "resistance": 8
+    },
+    "weaponRanks": {
+      "tome": "C"
+    },
+    "startingSkillIds": [
+      "countercurse",
+      "heartseeker"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Nyx base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Nyx",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-nyx",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "charlotte",
+    "availabilityIds": [
+      "charlotte.conquest",
+      "charlotte.revelation"
+    ],
+    "level": 10,
+    "classId": "fighter",
+    "stats": {
+      "hp": 28,
+      "strength": 15,
+      "magic": 0,
+      "skill": 10,
+      "speed": 13,
+      "luck": 9,
+      "defense": 8,
+      "resistance": 2
+    },
+    "weaponRanks": {
+      "axe": "C"
+    },
+    "startingSkillIds": [
+      "unmask",
+      "hp_plus_5",
+      "gamble"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Charlotte base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Charlotte",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-charlotte",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "benny",
+    "availabilityIds": [
+      "benny.conquest",
+      "benny.revelation"
+    ],
+    "level": 15,
+    "classId": "knight",
+    "stats": {
+      "hp": 31,
+      "strength": 15,
+      "magic": 0,
+      "skill": 15,
+      "speed": 6,
+      "luck": 12,
+      "defense": 19,
+      "resistance": 10
+    },
+    "weaponRanks": {
+      "lance": "C"
+    },
+    "startingSkillIds": [
+      "fierce_mien",
+      "defense_plus_2",
+      "natural_cover"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-base-stats",
+        "locator": "Benny base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Exclusive Characters > Benny",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-benny",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "level",
+          "classId",
+          "stats",
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "keaton",
+    "availabilityIds": [
+      "keaton.conquest",
+      "keaton.revelation"
+    ],
+    "level": 15,
+    "classId": "wolfskin",
+    "stats": {
+      "hp": 35,
+      "strength": 19,
+      "magic": 0,
+      "skill": 10,
+      "speed": 13,
+      "luck": 9,
+      "defense": 16,
+      "resistance": 7
+    },
+    "weaponRanks": {
+      "beaststone": "C"
+    },
+    "startingSkillIds": [
+      "collector",
+      "odd_shaped",
+      "beastbane"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-base-stats",
+        "locator": "Keaton base stats",
+        "fields": [
+          "level",
+          "classId",
+          "stats"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Keaton character data",
+        "fields": [
+          "weaponRanks",
+          "startingSkillIds"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-keaton",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
         "fields": [
           "level",
           "classId",

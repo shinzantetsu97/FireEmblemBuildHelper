@@ -3,7 +3,7 @@
     "id": "azura__corrin_female",
     "unitId": "azura",
     "partnerUnitId": "corrin",
-    "kind": "friendship",
+    "kind": "platonic",
     "ranks": [
       "C",
       "B",
@@ -339,7 +339,7 @@
     "id": "mozu__corrin_female",
     "unitId": "mozu",
     "partnerUnitId": "corrin",
-    "kind": "friendship",
+    "kind": "platonic",
     "ranks": [
       "C",
       "B",
@@ -450,6 +450,71 @@
         "locator": "Corrin (male) support information; this support grants Shura no class",
         "fields": [
           "ranks",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "anna__corrin_female",
+    "unitId": "anna",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-other-supports",
+        "locator": "Support List > Anna > Avatar (F)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "partnerGender",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "anna__corrin_male",
+    "unitId": "anna",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-other-supports",
+        "locator": "Support List > Anna > Avatar (M)",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
           "partnerGender",
           "direction"
         ],
@@ -831,6 +896,1285 @@
     ]
   },
   {
+    "id": "ryoma__corrin_female",
+    "unitId": "ryoma",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Ryoma and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "ryoma__corrin_male",
+    "unitId": "ryoma",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Ryoma and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinoka__corrin_female",
+    "unitId": "hinoka",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinoka__corrin_male",
+    "unitId": "hinoka",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "takumi__corrin_female",
+    "unitId": "takumi",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Takumi and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "takumi__corrin_male",
+    "unitId": "takumi",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Takumi and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__corrin_female",
+    "unitId": "sakura",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__corrin_male",
+    "unitId": "sakura",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "saizo__corrin_female",
+    "unitId": "saizo",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "saizo__corrin_male",
+    "unitId": "saizo",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kagero__corrin_female",
+    "unitId": "kagero",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kagero and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kagero__corrin_male",
+    "unitId": "kagero",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kagero and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "setsuna__corrin_female",
+    "unitId": "setsuna",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "setsuna__corrin_male",
+    "unitId": "setsuna",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azama__corrin_female",
+    "unitId": "azama",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azama__corrin_male",
+    "unitId": "azama",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinata__corrin_female",
+    "unitId": "hinata",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinata and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinata__corrin_male",
+    "unitId": "hinata",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinata and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "oboro__corrin_female",
+    "unitId": "oboro",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "oboro__corrin_male",
+    "unitId": "oboro",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__corrin_female",
+    "unitId": "hana",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__corrin_male",
+    "unitId": "hana",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__corrin_female",
+    "unitId": "subaki",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__corrin_male",
+    "unitId": "subaki",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hayato__corrin_female",
+    "unitId": "hayato",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hayato and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hayato__corrin_male",
+    "unitId": "hayato",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hayato and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__corrin_female",
+    "unitId": "rinkah",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__corrin_male",
+    "unitId": "rinkah",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__corrin_female",
+    "unitId": "orochi",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__corrin_male",
+    "unitId": "orochi",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaden__corrin_female",
+    "unitId": "kaden",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kaden and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kaden__corrin_male",
+    "unitId": "kaden",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kaden and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "reina__corrin_female",
+    "unitId": "reina",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Reina and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "reina__corrin_male",
+    "unitId": "reina",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Reina and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "scarlet__corrin_female",
+    "unitId": "scarlet",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Scarlet and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "scarlet__corrin_male",
+    "unitId": "scarlet",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Scarlet and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "xander__corrin_female",
+    "unitId": "xander",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Xander and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "xander__corrin_male",
+    "unitId": "xander",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Xander and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__corrin_female",
+    "unitId": "camilla",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Camilla and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "camilla__corrin_male",
+    "unitId": "camilla",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Camilla and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
+  },
+  {
+    "id": "leo__corrin_female",
+    "unitId": "leo",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Leo and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "leo__corrin_male",
+    "unitId": "leo",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Leo and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "elise__corrin_female",
     "unitId": "elise",
     "partnerUnitId": "corrin",
@@ -899,6 +2243,361 @@
         "reviewStatus": "corroborated"
       }
     ]
+  },
+  {
+    "id": "laslow__corrin_female",
+    "unitId": "laslow",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Laslow and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "laslow__corrin_male",
+    "unitId": "laslow",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Laslow and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
+  },
+  {
+    "id": "peri__corrin_female",
+    "unitId": "peri",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Peri and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "peri__corrin_male",
+    "unitId": "peri",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Peri and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
+  },
+  {
+    "id": "selena__corrin_female",
+    "unitId": "selena",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Selena and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "selena__corrin_male",
+    "unitId": "selena",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Selena and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
+  },
+  {
+    "id": "beruka__corrin_female",
+    "unitId": "beruka",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Beruka and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "beruka__corrin_male",
+    "unitId": "beruka",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Beruka and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
+  },
+  {
+    "id": "odin__corrin_female",
+    "unitId": "odin",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "odin__corrin_male",
+    "unitId": "odin",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
+  },
+  {
+    "id": "niles__corrin_female",
+    "unitId": "niles",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "niles__corrin_male",
+    "unitId": "niles",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
   },
   {
     "id": "effie__corrin_female",
@@ -1038,6 +2737,244 @@
           "ranks",
           "routes",
           "partnerGender"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "nyx__corrin_female",
+    "unitId": "nyx",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Nyx and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "nyx__corrin_male",
+    "unitId": "nyx",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Nyx and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
+  },
+  {
+    "id": "charlotte__corrin_female",
+    "unitId": "charlotte",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Charlotte and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "charlotte__corrin_male",
+    "unitId": "charlotte",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Charlotte and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
+  },
+  {
+    "id": "benny__corrin_female",
+    "unitId": "benny",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Benny and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "female"
+  },
+  {
+    "id": "benny__corrin_male",
+    "unitId": "benny",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Benny and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "partnerGender": "male"
+  },
+  {
+    "id": "keaton__corrin_female",
+    "unitId": "keaton",
+    "partnerUnitId": "corrin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "female",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Keaton and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "keaton__corrin_male",
+    "unitId": "keaton",
+    "partnerUnitId": "corrin",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "partnerGender": "male",
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Keaton and Corrin",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1198,6 +3135,17 @@
           "routes"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Ryoma and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1236,6 +3184,17 @@
           "ranks"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1262,6 +3221,17 @@
         "fields": [
           "ranks",
           "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Takumi and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1302,6 +3272,17 @@
           "ranks"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1328,6 +3309,17 @@
         "fields": [
           "ranks",
           "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1358,6 +3350,17 @@
           "routes"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1384,6 +3387,17 @@
         "fields": [
           "ranks",
           "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinata and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1414,6 +3428,17 @@
           "routes"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1440,6 +3465,17 @@
         "fields": [
           "ranks",
           "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hayato and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1470,6 +3506,17 @@
           "routes"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kaden and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1498,6 +3545,17 @@
           "routes"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Xander and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1524,6 +3582,17 @@
         "fields": [
           "ranks",
           "routes"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Leo and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1732,6 +3801,17 @@
           "routes"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Keaton and Azura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1766,6 +3846,17 @@
         "locator": "Ryoma support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Ryoma and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1804,6 +3895,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Takumi and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1838,6 +3940,17 @@
         "locator": "Saizo support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1876,6 +3989,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1910,6 +4034,17 @@
         "locator": "Hinata support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinata and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -1949,6 +4084,17 @@
           "direction"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1983,6 +4129,17 @@
         "locator": "Subaki support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -2021,6 +4178,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hayato and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2055,6 +4223,17 @@
         "locator": "Kaden support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kaden and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -2093,6 +4272,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Xander and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2127,6 +4317,17 @@
         "locator": "Leo support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Leo and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -2382,6 +4583,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Keaton and Felicia",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2455,6 +4667,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Jakob",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2501,6 +4724,17 @@
           "ranks"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Takumi and Jakob",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2526,6 +4760,17 @@
         "locator": "Sakura support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Jakob",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -2555,6 +4800,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kagero and Jakob",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2580,6 +4836,17 @@
         "locator": "Setsuna support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Jakob",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -2609,6 +4876,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Jakob",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2634,6 +4912,17 @@
         "locator": "Hana support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Jakob",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -2663,6 +4952,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Jakob",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2688,6 +4988,17 @@
         "locator": "Orochi support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Jakob",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -2954,6 +5265,17 @@
           "ranks"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Ryoma and Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -2988,6 +5310,17 @@
         "locator": "Hinoka support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -3026,6 +5359,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3060,6 +5404,17 @@
         "locator": "Kagero support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kagero and Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -3098,6 +5453,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3132,6 +5498,17 @@
         "locator": "Oboro support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -3170,6 +5547,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3206,6 +5594,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3240,6 +5639,17 @@
         "locator": "Orochi support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Silas",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -3557,6 +5967,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3582,6 +6003,17 @@
         "locator": "Sakura support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -3612,6 +6044,17 @@
           "direction"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3637,6 +6080,17 @@
         "locator": "Kagero support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kagero and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -3666,6 +6120,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3691,6 +6156,17 @@
         "locator": "Oboro support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -3720,6 +6196,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3745,6 +6232,17 @@
         "locator": "Rinkah support information",
         "fields": [
           "ranks"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -3774,6 +6272,17 @@
           "ranks"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -3799,6 +6308,17 @@
         "locator": "Xander support information",
         "fields": [
           "ranks",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Xander and Kaze",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
           "direction"
         ],
         "reviewStatus": "accepted"
@@ -4047,6 +6567,17 @@
           "direction"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Ryoma and Mozu",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4071,6 +6602,17 @@
         "sourceId": "fewiki-mozu-supports",
         "locator": "Takumi support information",
         "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Takumi and Mozu",
+        "fields": [
+          "partnerUnitId",
           "ranks",
           "routes",
           "direction"
@@ -4105,6 +6647,17 @@
           "direction"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Mozu",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4134,6 +6687,17 @@
           "direction"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Mozu",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4158,6 +6722,17 @@
         "sourceId": "fewiki-mozu-supports",
         "locator": "Hinata support information",
         "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinata and Mozu",
+        "fields": [
+          "partnerUnitId",
           "ranks",
           "routes",
           "direction"
@@ -4201,6 +6776,17 @@
           "ranks"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Mozu",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4225,6 +6811,17 @@
         "sourceId": "fewiki-mozu-supports",
         "locator": "Subaki support information",
         "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Mozu",
+        "fields": [
+          "partnerUnitId",
           "ranks",
           "routes",
           "direction"
@@ -4259,6 +6856,17 @@
           "direction"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hayato and Mozu",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4283,6 +6891,17 @@
         "sourceId": "fewiki-mozu-supports",
         "locator": "Kaden support information",
         "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kaden and Mozu",
+        "fields": [
+          "partnerUnitId",
           "ranks",
           "routes",
           "direction"
@@ -4317,6 +6936,17 @@
           "direction"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Xander and Mozu",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4341,6 +6971,17 @@
         "sourceId": "fewiki-mozu-supports",
         "locator": "Leo support information",
         "fields": [
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Leo and Mozu",
+        "fields": [
+          "partnerUnitId",
           "ranks",
           "routes",
           "direction"
@@ -4596,6 +7237,2591 @@
           "direction"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Keaton and Mozu",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinoka__ryoma",
+    "unitId": "hinoka",
+    "partnerUnitId": "ryoma",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "takumi__ryoma",
+    "unitId": "takumi",
+    "partnerUnitId": "ryoma",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Takumi and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__ryoma",
+    "unitId": "sakura",
+    "partnerUnitId": "ryoma",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "saizo__ryoma",
+    "unitId": "saizo",
+    "partnerUnitId": "ryoma",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kagero__ryoma",
+    "unitId": "kagero",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kagero and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "setsuna__ryoma",
+    "unitId": "setsuna",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "oboro__ryoma",
+    "unitId": "oboro",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__ryoma",
+    "unitId": "hana",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__ryoma",
+    "unitId": "rinkah",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__ryoma",
+    "unitId": "orochi",
+    "partnerUnitId": "ryoma",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinoka__takumi",
+    "unitId": "hinoka",
+    "partnerUnitId": "takumi",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__hinoka",
+    "unitId": "sakura",
+    "partnerUnitId": "hinoka",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Hinoka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "saizo__hinoka",
+    "unitId": "saizo",
+    "partnerUnitId": "hinoka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Hinoka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinoka__setsuna",
+    "unitId": "hinoka",
+    "partnerUnitId": "setsuna",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Setsuna",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinoka__azama",
+    "unitId": "hinoka",
+    "partnerUnitId": "azama",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Azama",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinoka__hinata",
+    "unitId": "hinoka",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__hinoka",
+    "unitId": "subaki",
+    "partnerUnitId": "hinoka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Hinoka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinoka__hayato",
+    "unitId": "hinoka",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Hayato",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinoka__kaden",
+    "unitId": "hinoka",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinoka and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__takumi",
+    "unitId": "sakura",
+    "partnerUnitId": "takumi",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "takumi__kagero",
+    "unitId": "takumi",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Takumi and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "setsuna__takumi",
+    "unitId": "setsuna",
+    "partnerUnitId": "takumi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinata__takumi",
+    "unitId": "hinata",
+    "partnerUnitId": "takumi",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinata and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "oboro__takumi",
+    "unitId": "oboro",
+    "partnerUnitId": "takumi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__takumi",
+    "unitId": "hana",
+    "partnerUnitId": "takumi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__takumi",
+    "unitId": "rinkah",
+    "partnerUnitId": "takumi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__takumi",
+    "unitId": "orochi",
+    "partnerUnitId": "takumi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__saizo",
+    "unitId": "sakura",
+    "partnerUnitId": "saizo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Saizo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__azama",
+    "unitId": "sakura",
+    "partnerUnitId": "azama",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Azama",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__hinata",
+    "unitId": "sakura",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__hana",
+    "unitId": "sakura",
+    "partnerUnitId": "hana",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Hana",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__subaki",
+    "unitId": "sakura",
+    "partnerUnitId": "subaki",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Subaki",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__hayato",
+    "unitId": "sakura",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Hayato",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sakura__kaden",
+    "unitId": "sakura",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Sakura and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "saizo__kagero",
+    "unitId": "saizo",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "saizo__setsuna",
+    "unitId": "saizo",
+    "partnerUnitId": "setsuna",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Setsuna",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "saizo__oboro",
+    "unitId": "saizo",
+    "partnerUnitId": "oboro",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Oboro",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__saizo",
+    "unitId": "hana",
+    "partnerUnitId": "saizo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Saizo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__saizo",
+    "unitId": "subaki",
+    "partnerUnitId": "saizo",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Saizo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__saizo",
+    "unitId": "rinkah",
+    "partnerUnitId": "saizo",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Saizo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "saizo__orochi",
+    "unitId": "saizo",
+    "partnerUnitId": "orochi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Saizo and Orochi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "setsuna__kagero",
+    "unitId": "setsuna",
+    "partnerUnitId": "kagero",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azama__kagero",
+    "unitId": "azama",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinata__kagero",
+    "unitId": "hinata",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinata and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__kagero",
+    "unitId": "subaki",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hayato__kagero",
+    "unitId": "hayato",
+    "partnerUnitId": "kagero",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hayato and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__kagero",
+    "unitId": "rinkah",
+    "partnerUnitId": "kagero",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__kagero",
+    "unitId": "orochi",
+    "partnerUnitId": "kagero",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kagero__kaden",
+    "unitId": "kagero",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Kagero and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azama__setsuna",
+    "unitId": "azama",
+    "partnerUnitId": "setsuna",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Setsuna",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "setsuna__hinata",
+    "unitId": "setsuna",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__setsuna",
+    "unitId": "hana",
+    "partnerUnitId": "setsuna",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Setsuna",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__setsuna",
+    "unitId": "subaki",
+    "partnerUnitId": "setsuna",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Setsuna",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "setsuna__hayato",
+    "unitId": "setsuna",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Hayato",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "setsuna__kaden",
+    "unitId": "setsuna",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Setsuna and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azama__oboro",
+    "unitId": "azama",
+    "partnerUnitId": "oboro",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Oboro",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__azama",
+    "unitId": "hana",
+    "partnerUnitId": "azama",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Azama",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__azama",
+    "unitId": "subaki",
+    "partnerUnitId": "azama",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Azama",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azama__hayato",
+    "unitId": "azama",
+    "partnerUnitId": "hayato",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Hayato",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__azama",
+    "unitId": "rinkah",
+    "partnerUnitId": "azama",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Azama",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__azama",
+    "unitId": "orochi",
+    "partnerUnitId": "azama",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Azama",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "azama__kaden",
+    "unitId": "azama",
+    "partnerUnitId": "kaden",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Azama and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "oboro__hinata",
+    "unitId": "oboro",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__hinata",
+    "unitId": "hana",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__hinata",
+    "unitId": "subaki",
+    "partnerUnitId": "hinata",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__hinata",
+    "unitId": "rinkah",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__hinata",
+    "unitId": "orochi",
+    "partnerUnitId": "hinata",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hinata__kaden",
+    "unitId": "hinata",
+    "partnerUnitId": "kaden",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hinata and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__oboro",
+    "unitId": "subaki",
+    "partnerUnitId": "oboro",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Oboro",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hayato__oboro",
+    "unitId": "hayato",
+    "partnerUnitId": "oboro",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hayato and Oboro",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__oboro",
+    "unitId": "rinkah",
+    "partnerUnitId": "oboro",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Oboro",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__oboro",
+    "unitId": "orochi",
+    "partnerUnitId": "oboro",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Oboro",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "oboro__kaden",
+    "unitId": "oboro",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Oboro and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__subaki",
+    "unitId": "hana",
+    "partnerUnitId": "subaki",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Subaki",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__hayato",
+    "unitId": "hana",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Hayato",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hana__kaden",
+    "unitId": "hana",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hana and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__subaki",
+    "unitId": "rinkah",
+    "partnerUnitId": "subaki",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Subaki",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "subaki__orochi",
+    "unitId": "subaki",
+    "partnerUnitId": "orochi",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Subaki and Orochi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__hayato",
+    "unitId": "rinkah",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Hayato",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__hayato",
+    "unitId": "orochi",
+    "partnerUnitId": "hayato",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Hayato",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "hayato__kaden",
+    "unitId": "hayato",
+    "partnerUnitId": "kaden",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hayato and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__orochi",
+    "unitId": "rinkah",
+    "partnerUnitId": "orochi",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Orochi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "rinkah__kaden",
+    "unitId": "rinkah",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Rinkah and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "orochi__kaden",
+    "unitId": "orochi",
+    "partnerUnitId": "kaden",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "birthright",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Orochi and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__xander",
+    "unitId": "xander",
+    "partnerUnitId": "camilla",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Camilla and Xander",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "leo__xander",
+    "unitId": "leo",
+    "partnerUnitId": "xander",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Leo and Xander",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -4618,6 +9844,123 @@
       {
         "sourceId": "serenes-fe14-nohrian-supports",
         "locator": "Support List > Elise and Xander; royal siblings cannot marry",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "laslow__xander",
+    "unitId": "xander",
+    "partnerUnitId": "laslow",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Laslow and Xander",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "peri__xander",
+    "unitId": "xander",
+    "partnerUnitId": "peri",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Peri and Xander",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena__xander",
+    "unitId": "xander",
+    "partnerUnitId": "selena",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Selena and Xander",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka__xander",
+    "unitId": "xander",
+    "partnerUnitId": "beruka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Beruka and Xander",
         "fields": [
           "partnerUnitId",
           "ranks",
@@ -4666,6 +10009,92 @@
     ]
   },
   {
+    "id": "nyx__xander",
+    "unitId": "xander",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Nyx and Xander",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "charlotte__xander",
+    "unitId": "xander",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Charlotte and Xander",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__leo",
+    "unitId": "camilla",
+    "partnerUnitId": "leo",
+    "kind": "platonic",
+    "ranks": [
+      "C",
+      "B",
+      "A"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Camilla and Leo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "elise__camilla",
     "unitId": "elise",
     "partnerUnitId": "camilla",
@@ -4705,6 +10134,153 @@
     ]
   },
   {
+    "id": "camilla__laslow",
+    "unitId": "camilla",
+    "partnerUnitId": "laslow",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Camilla and Laslow",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__selena",
+    "unitId": "camilla",
+    "partnerUnitId": "selena",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Camilla and Selena",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__beruka",
+    "unitId": "camilla",
+    "partnerUnitId": "beruka",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Camilla and Beruka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__camilla",
+    "unitId": "camilla",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Camilla",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles__camilla",
+    "unitId": "camilla",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Camilla",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "arthur__camilla",
     "unitId": "arthur",
     "partnerUnitId": "camilla",
@@ -4724,6 +10300,64 @@
       {
         "sourceId": "serenes-fe14-nohrian-supports",
         "locator": "Support List > Arthur and Camilla",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__benny",
+    "unitId": "camilla",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Camilla and Benny",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__keaton",
+    "unitId": "camilla",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Camilla and Keaton",
         "fields": [
           "partnerUnitId",
           "ranks",
@@ -4762,6 +10396,153 @@
     ]
   },
   {
+    "id": "peri__leo",
+    "unitId": "leo",
+    "partnerUnitId": "peri",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Peri and Leo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena__leo",
+    "unitId": "leo",
+    "partnerUnitId": "selena",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Selena and Leo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka__leo",
+    "unitId": "leo",
+    "partnerUnitId": "beruka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Beruka and Leo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__leo",
+    "unitId": "leo",
+    "partnerUnitId": "odin",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Leo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles__leo",
+    "unitId": "leo",
+    "partnerUnitId": "niles",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Leo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "effie__leo",
     "unitId": "effie",
     "partnerUnitId": "leo",
@@ -4792,6 +10573,64 @@
         "sourceId": "fewiki-effie-supports",
         "locator": "Leo support information",
         "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "nyx__leo",
+    "unitId": "leo",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Nyx and Leo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "charlotte__leo",
+    "unitId": "leo",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Charlotte and Leo",
+        "fields": [
+          "partnerUnitId",
           "ranks",
           "routes"
         ],
@@ -5013,6 +10852,123 @@
     ]
   },
   {
+    "id": "laslow__peri",
+    "unitId": "laslow",
+    "partnerUnitId": "peri",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Laslow and Peri",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena__laslow",
+    "unitId": "laslow",
+    "partnerUnitId": "selena",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Selena and Laslow",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka__laslow",
+    "unitId": "laslow",
+    "partnerUnitId": "beruka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Beruka and Laslow",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__laslow",
+    "unitId": "laslow",
+    "partnerUnitId": "odin",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Laslow",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "effie__laslow",
     "unitId": "effie",
     "partnerUnitId": "laslow",
@@ -5051,6 +11007,182 @@
     ]
   },
   {
+    "id": "nyx__laslow",
+    "unitId": "laslow",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Nyx and Laslow",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "laslow__charlotte",
+    "unitId": "laslow",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Laslow and Charlotte",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "laslow__keaton",
+    "unitId": "laslow",
+    "partnerUnitId": "keaton",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Laslow and Keaton",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena__peri",
+    "unitId": "peri",
+    "partnerUnitId": "selena",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Selena and Peri",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__peri",
+    "unitId": "peri",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Peri",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles__peri",
+    "unitId": "peri",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Peri",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "arthur__peri",
     "unitId": "arthur",
     "partnerUnitId": "peri",
@@ -5070,6 +11202,182 @@
       {
         "sourceId": "serenes-fe14-nohrian-supports",
         "locator": "Support List > Arthur and Peri",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "peri__charlotte",
+    "unitId": "peri",
+    "partnerUnitId": "charlotte",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Peri and Charlotte",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "peri__benny",
+    "unitId": "peri",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Peri and Benny",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "peri__keaton",
+    "unitId": "peri",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Peri and Keaton",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena__beruka",
+    "unitId": "selena",
+    "partnerUnitId": "beruka",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Selena and Beruka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__selena",
+    "unitId": "selena",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Selena",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles__selena",
+    "unitId": "selena",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Selena",
         "fields": [
           "partnerUnitId",
           "ranks",
@@ -5109,6 +11417,122 @@
     ]
   },
   {
+    "id": "selena__benny",
+    "unitId": "selena",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Selena and Benny",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena__keaton",
+    "unitId": "selena",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Selena and Keaton",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__beruka",
+    "unitId": "beruka",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Beruka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles__beruka",
+    "unitId": "beruka",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Beruka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "arthur__beruka",
     "unitId": "arthur",
     "partnerUnitId": "beruka",
@@ -5132,6 +11556,124 @@
           "partnerUnitId",
           "ranks",
           "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka__charlotte",
+    "unitId": "beruka",
+    "partnerUnitId": "charlotte",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Beruka and Charlotte",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka__benny",
+    "unitId": "beruka",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Beruka and Benny",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka__keaton",
+    "unitId": "beruka",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Beruka and Keaton",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__niles",
+    "unitId": "odin",
+    "partnerUnitId": "niles",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Niles",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -5168,6 +11710,64 @@
         "sourceId": "fewiki-effie-supports",
         "locator": "Odin support information",
         "fields": [
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__nyx",
+    "unitId": "odin",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Nyx",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__charlotte",
+    "unitId": "odin",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Odin and Charlotte",
+        "fields": [
+          "partnerUnitId",
           "ranks",
           "routes"
         ],
@@ -5249,6 +11849,64 @@
           "ranks"
         ],
         "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "niles__nyx",
+    "unitId": "niles",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Nyx",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles__charlotte",
+    "unitId": "niles",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Niles and Charlotte",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -5543,6 +12201,182 @@
     ]
   },
   {
+    "id": "nyx__charlotte",
+    "unitId": "nyx",
+    "partnerUnitId": "charlotte",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Nyx and Charlotte",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "nyx__benny",
+    "unitId": "nyx",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Nyx and Benny",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "nyx__keaton",
+    "unitId": "nyx",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Nyx and Keaton",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "benny__charlotte",
+    "unitId": "charlotte",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Benny and Charlotte",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "charlotte__keaton",
+    "unitId": "charlotte",
+    "partnerUnitId": "keaton",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Charlotte and Keaton",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "benny__keaton",
+    "unitId": "benny",
+    "partnerUnitId": "keaton",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "conquest",
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-supports",
+        "locator": "Support List > Benny and Keaton",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "gunter__corrin_female",
     "unitId": "gunter",
     "partnerUnitId": "corrin",
@@ -5801,6 +12635,63 @@
     ]
   },
   {
+    "id": "xander__ryoma",
+    "unitId": "xander",
+    "partnerUnitId": "ryoma",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Xander and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__ryoma",
+    "unitId": "ryoma",
+    "partnerUnitId": "camilla",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Camilla and Ryoma",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "elise__ryoma",
     "unitId": "elise",
     "partnerUnitId": "ryoma",
@@ -5825,6 +12716,161 @@
           "routes"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Ryoma and Elise",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "xander__hinoka",
+    "unitId": "xander",
+    "partnerUnitId": "hinoka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Xander and Hinoka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__hinoka",
+    "unitId": "hinoka",
+    "partnerUnitId": "camilla",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Camilla and Hinoka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "leo__hinoka",
+    "unitId": "leo",
+    "partnerUnitId": "hinoka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Leo and Hinoka",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla__takumi",
+    "unitId": "takumi",
+    "partnerUnitId": "camilla",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Camilla and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "leo__takumi",
+    "unitId": "leo",
+    "partnerUnitId": "takumi",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Leo and Takumi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -5853,6 +12899,75 @@
           "routes"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Takumi and Elise",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "xander__sakura",
+    "unitId": "xander",
+    "partnerUnitId": "sakura",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Xander and Sakura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "leo__sakura",
+    "unitId": "leo",
+    "partnerUnitId": "sakura",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Leo and Sakura",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -5891,6 +13006,159 @@
           "ranks"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Sakura and Elise",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "laslow__saizo",
+    "unitId": "saizo",
+    "partnerUnitId": "laslow",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Laslow and Saizo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka__saizo",
+    "unitId": "saizo",
+    "partnerUnitId": "beruka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Beruka and Saizo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "charlotte__saizo",
+    "unitId": "saizo",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Charlotte and Saizo",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "peri__kagero",
+    "unitId": "kagero",
+    "partnerUnitId": "peri",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Peri and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__kagero",
+    "unitId": "kagero",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Odin and Kagero",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -5919,6 +13187,74 @@
           "routes"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Kagero and Arthur",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena__setsuna",
+    "unitId": "setsuna",
+    "partnerUnitId": "selena",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Selena and Setsuna",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles__setsuna",
+    "unitId": "setsuna",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Niles and Setsuna",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -5947,6 +13283,45 @@
           "routes"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Setsuna and Arthur",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka__azama",
+    "unitId": "azama",
+    "partnerUnitId": "beruka",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Beruka and Azama",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -6013,6 +13388,215 @@
           "direction"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Azama and Arthur",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "peri__hinata",
+    "unitId": "hinata",
+    "partnerUnitId": "peri",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Peri and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena__hinata",
+    "unitId": "hinata",
+    "partnerUnitId": "selena",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Selena and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__hinata",
+    "unitId": "hinata",
+    "partnerUnitId": "odin",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Odin and Hinata",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka__oboro",
+    "unitId": "oboro",
+    "partnerUnitId": "beruka",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Beruka and Oboro",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles__oboro",
+    "unitId": "oboro",
+    "partnerUnitId": "niles",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Niles and Oboro",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "benny__oboro",
+    "unitId": "oboro",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Benny and Oboro",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "laslow__hana",
+    "unitId": "hana",
+    "partnerUnitId": "laslow",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Laslow and Hana",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -6065,6 +13649,120 @@
     ]
   },
   {
+    "id": "keaton__hana",
+    "unitId": "keaton",
+    "partnerUnitId": "hana",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Keaton and Hana",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena__subaki",
+    "unitId": "subaki",
+    "partnerUnitId": "selena",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Selena and Subaki",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles__subaki",
+    "unitId": "subaki",
+    "partnerUnitId": "niles",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Niles and Subaki",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "nyx__subaki",
+    "unitId": "subaki",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Nyx and Subaki",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "effie__hayato",
     "unitId": "effie",
     "partnerUnitId": "hayato",
@@ -6096,6 +13794,63 @@
         "fields": [
           "ranks",
           "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "nyx__hayato",
+    "unitId": "hayato",
+    "partnerUnitId": "nyx",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Nyx and Hayato",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "benny__hayato",
+    "unitId": "hayato",
+    "partnerUnitId": "benny",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Benny and Hayato",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
         ],
         "reviewStatus": "accepted"
       }
@@ -6144,6 +13899,284 @@
           "ranks"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-supports",
+        "locator": "Support List > Hayato and Fuga",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Hayato and Fuga",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "charlotte__rinkah",
+    "unitId": "rinkah",
+    "partnerUnitId": "charlotte",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Charlotte and Rinkah",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "benny__rinkah",
+    "unitId": "rinkah",
+    "partnerUnitId": "benny",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Benny and Rinkah",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "keaton__rinkah",
+    "unitId": "keaton",
+    "partnerUnitId": "rinkah",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Keaton and Rinkah",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "laslow__orochi",
+    "unitId": "orochi",
+    "partnerUnitId": "laslow",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Laslow and Orochi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin__orochi",
+    "unitId": "orochi",
+    "partnerUnitId": "odin",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Odin and Orochi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "nyx__orochi",
+    "unitId": "orochi",
+    "partnerUnitId": "nyx",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Nyx and Orochi",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "peri__kaden",
+    "unitId": "kaden",
+    "partnerUnitId": "peri",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Peri and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "charlotte__kaden",
+    "unitId": "kaden",
+    "partnerUnitId": "charlotte",
+    "kind": "romantic",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "mutual",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Charlotte and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "keaton__kaden",
+    "unitId": "keaton",
+    "partnerUnitId": "kaden",
+    "kind": "friendship",
+    "ranks": [
+      "C",
+      "B",
+      "A",
+      "A+"
+    ],
+    "routes": [
+      "revelation"
+    ],
+    "direction": "unit_to_partner",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-supports",
+        "locator": "Support List > Keaton and Kaden",
+        "fields": [
+          "partnerUnitId",
+          "ranks",
+          "routes",
+          "direction"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   }

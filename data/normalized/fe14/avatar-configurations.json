@@ -1,0 +1,314 @@
+[
+  {
+    "unitId": "corrin",
+    "defaultName": "Corrin",
+    "genderOptions": [
+      "male",
+      "female"
+    ],
+    "boons": [
+      {
+        "id": "robust",
+        "label": "Robust",
+        "stat": "hp",
+        "baseDeltas": { "hp": 3 },
+        "growthDeltas": { "hp": 15, "defense": 5, "resistance": 5 },
+        "capDeltas": { "strength": 1, "magic": 1, "luck": 2, "defense": 2, "resistance": 2 }
+      },
+      {
+        "id": "strong",
+        "label": "Strong",
+        "stat": "strength",
+        "baseDeltas": { "strength": 2 },
+        "growthDeltas": { "strength": 15, "skill": 5, "defense": 5 },
+        "capDeltas": { "strength": 4, "skill": 2, "defense": 2 }
+      },
+      {
+        "id": "clever",
+        "label": "Clever",
+        "stat": "magic",
+        "baseDeltas": { "magic": 3 },
+        "growthDeltas": { "magic": 20, "speed": 5, "resistance": 5 },
+        "capDeltas": { "magic": 4, "speed": 2, "resistance": 2 }
+      },
+      {
+        "id": "deft",
+        "label": "Deft",
+        "stat": "skill",
+        "baseDeltas": { "skill": 3 },
+        "growthDeltas": { "strength": 5, "skill": 25, "defense": 5 },
+        "capDeltas": { "strength": 2, "skill": 4, "defense": 2 }
+      },
+      {
+        "id": "quick",
+        "label": "Quick",
+        "stat": "speed",
+        "baseDeltas": { "speed": 2 },
+        "growthDeltas": { "skill": 5, "speed": 15, "luck": 5 },
+        "capDeltas": { "skill": 2, "speed": 4, "luck": 2 }
+      },
+      {
+        "id": "lucky",
+        "label": "Lucky",
+        "stat": "luck",
+        "baseDeltas": { "luck": 3 },
+        "growthDeltas": { "strength": 5, "magic": 5, "luck": 25 },
+        "capDeltas": { "strength": 2, "magic": 2, "luck": 4 }
+      },
+      {
+        "id": "sturdy",
+        "label": "Sturdy",
+        "stat": "defense",
+        "baseDeltas": { "defense": 1 },
+        "growthDeltas": { "luck": 5, "defense": 10, "resistance": 5 },
+        "capDeltas": { "luck": 2, "defense": 4, "resistance": 2 }
+      },
+      {
+        "id": "calm",
+        "label": "Calm",
+        "stat": "resistance",
+        "baseDeltas": { "resistance": 1 },
+        "growthDeltas": { "magic": 5, "speed": 5, "resistance": 10 },
+        "capDeltas": { "magic": 2, "speed": 2, "resistance": 4 }
+      }
+    ],
+    "banes": [
+      {
+        "id": "sickly",
+        "label": "Sickly",
+        "stat": "hp",
+        "baseDeltas": { "hp": -2 },
+        "growthDeltas": { "hp": -10, "defense": -5, "resistance": -5 },
+        "capDeltas": { "strength": -1, "magic": -1, "luck": -1, "defense": -1, "resistance": -1 }
+      },
+      {
+        "id": "weak",
+        "label": "Weak",
+        "stat": "strength",
+        "baseDeltas": { "strength": -1 },
+        "growthDeltas": { "strength": -10, "skill": -5, "defense": -5 },
+        "capDeltas": { "strength": -3, "skill": -1, "defense": -1 }
+      },
+      {
+        "id": "dull",
+        "label": "Dull",
+        "stat": "magic",
+        "baseDeltas": { "magic": -2 },
+        "growthDeltas": { "magic": -15, "speed": -5, "resistance": -5 },
+        "capDeltas": { "magic": -3, "speed": -1, "resistance": -1 }
+      },
+      {
+        "id": "clumsy",
+        "label": "Clumsy",
+        "stat": "skill",
+        "baseDeltas": { "skill": -2 },
+        "growthDeltas": { "strength": -5, "skill": -20, "defense": -5 },
+        "capDeltas": { "strength": -1, "skill": -3, "defense": -1 }
+      },
+      {
+        "id": "slow",
+        "label": "Slow",
+        "stat": "speed",
+        "baseDeltas": { "speed": -1 },
+        "growthDeltas": { "skill": -5, "speed": -10, "luck": -5 },
+        "capDeltas": { "skill": -1, "speed": -3, "luck": -1 }
+      },
+      {
+        "id": "unlucky",
+        "label": "Unlucky",
+        "stat": "luck",
+        "baseDeltas": { "luck": -2 },
+        "growthDeltas": { "strength": -5, "magic": -5, "luck": -20 },
+        "capDeltas": { "strength": -1, "magic": -1, "luck": -3 }
+      },
+      {
+        "id": "fragile",
+        "label": "Fragile",
+        "stat": "defense",
+        "baseDeltas": { "defense": -1 },
+        "growthDeltas": { "luck": -5, "defense": -10, "resistance": -5 },
+        "capDeltas": { "luck": -1, "defense": -3, "resistance": -1 }
+      },
+      {
+        "id": "excitable",
+        "label": "Excitable",
+        "stat": "resistance",
+        "baseDeltas": { "resistance": -1 },
+        "growthDeltas": { "magic": -5, "speed": -5, "resistance": -10 },
+        "capDeltas": { "magic": -1, "speed": -1, "resistance": -3 }
+      }
+    ],
+    "talents": [
+      { "id": "cavalier", "label": "Cavalier", "classId": "cavalier" },
+      { "id": "knight", "label": "Knight", "classId": "knight" },
+      { "id": "fighter", "label": "Fighter", "classId": "fighter" },
+      { "id": "mercenary", "label": "Mercenary", "classId": "mercenary" },
+      { "id": "outlaw", "label": "Outlaw", "classId": "outlaw" },
+      { "id": "samurai", "label": "Samurai", "classId": "samurai" },
+      { "id": "oni_savage", "label": "Oni Savage", "classId": "oni_savage" },
+      { "id": "lancer", "label": "Lancer", "classId": "spear_fighter" },
+      { "id": "diviner", "label": "Diviner", "classId": "diviner" },
+      { "id": "priest", "label": "Monk / Priestess", "classIdByGender": { "male": "monk", "female": "shrine_maiden" } },
+      { "id": "sky_knight", "label": "Sky Knight", "classId": "sky_knight" },
+      { "id": "archer", "label": "Archer", "classId": "archer" },
+      { "id": "dragon", "label": "Dragon", "classId": "wyvern_rider" },
+      { "id": "ninja", "label": "Ninja", "classId": "ninja" },
+      { "id": "mage", "label": "Mage", "classId": "dark_mage" },
+      { "id": "troubadour", "label": "Troubadour", "classId": "troubadour" },
+      { "id": "apothecary", "label": "Apothecary", "classId": "apothecary" }
+    ],
+    "routePromotions": {
+      "birthright": ["hoshido_noble"],
+      "conquest": ["nohr_noble"],
+      "revelation": ["hoshido_noble", "nohr_noble"]
+    },
+    "friendshipSealRule": {
+      "requiredRank": "A",
+      "requiresSameGender": true,
+      "commitsToSingleFriend": false,
+      "bottleneck": "missable_class_access",
+      "note": "Corrin can use a Friendship Seal with every same-gender unit who reaches A support; Corrin does not choose one A+ partner. Plan around class trees that are absent from the route, lost with an unrecruited or permanently departed donor, or otherwise unavailable before the support can reach A."
+    },
+    "pairupRule": {
+      "variableBy": ["boon", "bane"],
+      "note": "Corrin's support-based Attack Stance and Guard Stance bonuses are determined by the selected boon and bane rather than a fixed unit table. Rank bonuses are incremental and cumulative.",
+      "attackStance": {
+        "reviewStatus": "accepted",
+        "semantics": "The base bonus applies with no support. Each rank then adds the selected variant's delta, cumulatively through the reached support rank.",
+        "baseBonus": { "hit": 10 },
+        "variants": [
+          { "boonIds": ["robust", "deft"], "baneIds": ["sickly", "clumsy"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 5, "critical": 3 } } },
+          { "boonIds": ["strong", "clever"], "baneIds": ["sickly", "clumsy"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "critical": 6 } } },
+          { "boonIds": ["quick", "sturdy"], "baneIds": ["sickly", "clumsy"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "critical": 3, "avoid": 5 } } },
+          { "boonIds": ["lucky", "calm"], "baneIds": ["sickly", "clumsy"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "critical": 3, "criticalAvoid": 5 } } },
+          { "boonIds": ["robust", "deft"], "baneIds": ["weak", "dull"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "hit": 5 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 10 } } },
+          { "boonIds": ["strong", "clever"], "baneIds": ["weak", "dull"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 5, "critical": 3 } } },
+          { "boonIds": ["quick", "sturdy"], "baneIds": ["weak", "dull"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "avoid": 5 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 5, "avoid": 5 } } },
+          { "boonIds": ["lucky", "calm"], "baneIds": ["weak", "dull"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "criticalAvoid": 5 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 5, "criticalAvoid": 5 } } },
+          { "boonIds": ["robust", "deft"], "baneIds": ["slow", "fragile"], "rankDeltas": { "C": { "hit": 5 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 5, "critical": 3 } } },
+          { "boonIds": ["strong", "clever"], "baneIds": ["slow", "fragile"], "rankDeltas": { "C": { "critical": 3 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 5, "critical": 3 } } },
+          { "boonIds": ["quick", "sturdy"], "baneIds": ["slow", "fragile"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 5, "critical": 3 } } },
+          { "boonIds": ["lucky", "calm"], "baneIds": ["slow", "fragile"], "rankDeltas": { "C": { "criticalAvoid": 5 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 5, "critical": 3 } } },
+          { "boonIds": ["robust", "deft"], "baneIds": ["unlucky", "excitable"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "hit": 5 }, "S": { "hit": 5, "critical": 3 } } },
+          { "boonIds": ["strong", "clever"], "baneIds": ["unlucky", "excitable"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "critical": 3 }, "S": { "hit": 5, "critical": 3 } } },
+          { "boonIds": ["quick", "sturdy"], "baneIds": ["unlucky", "excitable"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "avoid": 5 }, "S": { "hit": 5, "critical": 3 } } },
+          { "boonIds": ["lucky", "calm"], "baneIds": ["unlucky", "excitable"], "rankDeltas": { "C": { "avoid": 5 }, "B": { "critical": 3 }, "A": { "criticalAvoid": 5 }, "S": { "hit": 5, "critical": 3 } } }
+        ]
+      },
+      "guardStance": {
+        "reviewStatus": "accepted",
+        "semantics": "Pair Up discards Attack Stance support-unit boosts and applies a standard Dodge +5. Personal stat deltas are cumulative across C, B, A, and S and are added to class Pair Up stats.",
+        "baseBonus": { "criticalAvoid": 5 },
+        "variants": [
+          { "boonId": "strong", "baneId": "sickly", "rankDeltas": { "C": { "strength": 1 }, "B": { "strength": 1 }, "A": { "speed": 1 }, "S": { "strength": 1, "skill": 1 } } },
+          { "boonId": "clever", "baneId": "sickly", "rankDeltas": { "C": { "strength": 1 }, "B": { "magic": 1 }, "A": { "speed": 1 }, "S": { "magic": 1, "speed": 1 } } },
+          { "boonId": "deft", "baneId": "sickly", "rankDeltas": { "C": { "strength": 1 }, "B": { "skill": 1 }, "A": { "speed": 1 }, "S": { "skill": 1, "defense": 1 } } },
+          { "boonId": "quick", "baneId": "sickly", "rankDeltas": { "C": { "strength": 1 }, "B": { "speed": 1 }, "A": { "speed": 1 }, "S": { "speed": 1, "luck": 1 } } },
+          { "boonId": "lucky", "baneId": "sickly", "rankDeltas": { "C": { "strength": 1 }, "B": { "luck": 1 }, "A": { "speed": 1 }, "S": { "strength": 1, "luck": 1 } } },
+          { "boonId": "sturdy", "baneId": "sickly", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "speed": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "calm", "baneId": "sickly", "rankDeltas": { "C": { "strength": 1 }, "B": { "resistance": 1 }, "A": { "speed": 1 }, "S": { "magic": 1, "resistance": 1 } } },
+
+          { "boonId": "robust", "baneId": "weak", "rankDeltas": { "C": { "defense": 1 }, "B": { "luck": 1 }, "A": { "speed": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "clever", "baneId": "weak", "rankDeltas": { "C": { "magic": 1 }, "B": { "resistance": 1 }, "A": { "speed": 1 }, "S": { "magic": 1, "resistance": 1 } } },
+          { "boonId": "deft", "baneId": "weak", "rankDeltas": { "C": { "skill": 1 }, "B": { "strength": 1 }, "A": { "speed": 1 }, "S": { "skill": 1, "resistance": 1 } } },
+          { "boonId": "quick", "baneId": "weak", "rankDeltas": { "C": { "speed": 1 }, "B": { "skill": 1 }, "A": { "speed": 1 }, "S": { "speed": 1, "resistance": 1 } } },
+          { "boonId": "lucky", "baneId": "weak", "rankDeltas": { "C": { "luck": 1 }, "B": { "magic": 1 }, "A": { "speed": 1 }, "S": { "luck": 1, "resistance": 1 } } },
+          { "boonId": "sturdy", "baneId": "weak", "rankDeltas": { "C": { "defense": 1 }, "B": { "luck": 1 }, "A": { "speed": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "calm", "baneId": "weak", "rankDeltas": { "C": { "resistance": 1 }, "B": { "speed": 1 }, "A": { "speed": 1 }, "S": { "resistance": 2 } } },
+
+          { "boonId": "robust", "baneId": "dull", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "resistance": 1 }, "S": { "luck": 1, "defense": 1 } } },
+          { "boonId": "strong", "baneId": "dull", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "skill": 1 }, "S": { "strength": 1, "defense": 1 } } },
+          { "boonId": "deft", "baneId": "dull", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "defense": 1 }, "S": { "strength": 1, "skill": 1 } } },
+          { "boonId": "quick", "baneId": "dull", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "luck": 1 }, "S": { "skill": 1, "speed": 1 } } },
+          { "boonId": "lucky", "baneId": "dull", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "strength": 1 }, "S": { "magic": 1, "luck": 1 } } },
+          { "boonId": "sturdy", "baneId": "dull", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "resistance": 1 }, "S": { "luck": 1, "defense": 1 } } },
+          { "boonId": "calm", "baneId": "dull", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "magic": 1 }, "S": { "speed": 1, "resistance": 1 } } },
+
+          { "boonId": "robust", "baneId": "clumsy", "rankDeltas": { "C": { "luck": 1 }, "B": { "resistance": 1 }, "A": { "speed": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "strong", "baneId": "clumsy", "rankDeltas": { "C": { "defense": 1 }, "B": { "skill": 1 }, "A": { "speed": 1 }, "S": { "strength": 1, "resistance": 1 } } },
+          { "boonId": "clever", "baneId": "clumsy", "rankDeltas": { "C": { "resistance": 1 }, "B": { "speed": 1 }, "A": { "speed": 1 }, "S": { "magic": 1, "resistance": 1 } } },
+          { "boonId": "quick", "baneId": "clumsy", "rankDeltas": { "C": { "skill": 1 }, "B": { "luck": 1 }, "A": { "speed": 1 }, "S": { "speed": 1, "resistance": 1 } } },
+          { "boonId": "lucky", "baneId": "clumsy", "rankDeltas": { "C": { "magic": 1 }, "B": { "strength": 1 }, "A": { "speed": 1 }, "S": { "luck": 1, "resistance": 1 } } },
+          { "boonId": "sturdy", "baneId": "clumsy", "rankDeltas": { "C": { "luck": 1 }, "B": { "resistance": 1 }, "A": { "speed": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "calm", "baneId": "clumsy", "rankDeltas": { "C": { "speed": 1 }, "B": { "magic": 1 }, "A": { "speed": 1 }, "S": { "resistance": 2 } } },
+
+          { "boonId": "robust", "baneId": "slow", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "defense": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "strong", "baneId": "slow", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "strength": 1 }, "S": { "strength": 1, "resistance": 1 } } },
+          { "boonId": "clever", "baneId": "slow", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "magic": 1 }, "S": { "magic": 1, "resistance": 1 } } },
+          { "boonId": "deft", "baneId": "slow", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "skill": 1 }, "S": { "skill": 1, "resistance": 1 } } },
+          { "boonId": "lucky", "baneId": "slow", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "luck": 1 }, "S": { "luck": 1, "resistance": 1 } } },
+          { "boonId": "sturdy", "baneId": "slow", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "defense": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "calm", "baneId": "slow", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "resistance": 1 }, "S": { "resistance": 2 } } },
+
+          { "boonId": "robust", "baneId": "unlucky", "rankDeltas": { "C": { "resistance": 1 }, "B": { "defense": 1 }, "A": { "speed": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "strong", "baneId": "unlucky", "rankDeltas": { "C": { "skill": 1 }, "B": { "defense": 1 }, "A": { "speed": 1 }, "S": { "strength": 1, "resistance": 1 } } },
+          { "boonId": "clever", "baneId": "unlucky", "rankDeltas": { "C": { "speed": 1 }, "B": { "defense": 1 }, "A": { "speed": 1 }, "S": { "magic": 1, "resistance": 1 } } },
+          { "boonId": "deft", "baneId": "unlucky", "rankDeltas": { "C": { "defense": 1 }, "B": { "defense": 1 }, "A": { "speed": 1 }, "S": { "skill": 1, "resistance": 1 } } },
+          { "boonId": "quick", "baneId": "unlucky", "rankDeltas": { "C": { "luck": 1 }, "B": { "defense": 1 }, "A": { "speed": 1 }, "S": { "speed": 1, "resistance": 1 } } },
+          { "boonId": "sturdy", "baneId": "unlucky", "rankDeltas": { "C": { "resistance": 1 }, "B": { "defense": 1 }, "A": { "speed": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "calm", "baneId": "unlucky", "rankDeltas": { "C": { "magic": 1 }, "B": { "defense": 1 }, "A": { "speed": 1 }, "S": { "resistance": 2 } } },
+
+          { "boonId": "robust", "baneId": "fragile", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "speed": 1 }, "S": { "defense": 1, "resistance": 1 } } },
+          { "boonId": "strong", "baneId": "fragile", "rankDeltas": { "C": { "strength": 1 }, "B": { "strength": 1 }, "A": { "speed": 1 }, "S": { "strength": 1, "skill": 1 } } },
+          { "boonId": "clever", "baneId": "fragile", "rankDeltas": { "C": { "strength": 1 }, "B": { "magic": 1 }, "A": { "speed": 1 }, "S": { "magic": 1, "speed": 1 } } },
+          { "boonId": "deft", "baneId": "fragile", "rankDeltas": { "C": { "strength": 1 }, "B": { "skill": 1 }, "A": { "speed": 1 }, "S": { "skill": 1, "defense": 1 } } },
+          { "boonId": "quick", "baneId": "fragile", "rankDeltas": { "C": { "strength": 1 }, "B": { "speed": 1 }, "A": { "speed": 1 }, "S": { "speed": 1, "luck": 1 } } },
+          { "boonId": "lucky", "baneId": "fragile", "rankDeltas": { "C": { "strength": 1 }, "B": { "luck": 1 }, "A": { "speed": 1 }, "S": { "strength": 1, "luck": 1 } } },
+          { "boonId": "calm", "baneId": "fragile", "rankDeltas": { "C": { "strength": 1 }, "B": { "resistance": 1 }, "A": { "speed": 1 }, "S": { "magic": 1, "resistance": 1 } } },
+
+          { "boonId": "robust", "baneId": "excitable", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "luck": 1 }, "S": { "defense": 2 } } },
+          { "boonId": "strong", "baneId": "excitable", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "defense": 1 }, "S": { "strength": 2 } } },
+          { "boonId": "clever", "baneId": "excitable", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "resistance": 1 }, "S": { "magic": 2 } } },
+          { "boonId": "deft", "baneId": "excitable", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "strength": 1 }, "S": { "skill": 2 } } },
+          { "boonId": "quick", "baneId": "excitable", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "skill": 1 }, "S": { "speed": 2 } } },
+          { "boonId": "lucky", "baneId": "excitable", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "magic": 1 }, "S": { "luck": 2 } } },
+          { "boonId": "sturdy", "baneId": "excitable", "rankDeltas": { "C": { "strength": 1 }, "B": { "defense": 1 }, "A": { "luck": 1 }, "S": { "defense": 2 } } }
+        ]
+      }
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "神威!B13:J32",
+        "fields": ["boons", "banes", "neutralStats"],
+        "reviewStatus": "candidate"
+      },
+      {
+        "sourceId": "serenes-fe14-avatar-creation",
+        "locator": "Profile; Class Options; Support and Marriage Options",
+        "fields": ["defaultName", "genderOptions", "talents", "friendshipSealRule"],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-avatar-growth-rates",
+        "locator": "Avatar > Boon/Bane growth modifiers",
+        "fields": ["boons.growthDeltas", "banes.growthDeltas"],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-avatar-maximum-stats",
+        "locator": "Avatar > Boon/Bane maximum-stat modifiers",
+        "fields": ["boons.capDeltas", "banes.capDeltas"],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-support-bonuses",
+        "locator": "Avatar > boon and bane dropdown tables",
+        "fields": ["pairupRule.attackStance"],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-pair-up-stats",
+        "locator": "Avatar > boon and bane dropdown tables",
+        "fields": ["pairupRule.guardStance"],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-corrin-stats",
+        "locator": "Base stats; Growth rates; Stat cap modifiers; Secondary class",
+        "fields": ["boons", "banes", "talents", "routePromotions", "pairupRule"],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  }
+]

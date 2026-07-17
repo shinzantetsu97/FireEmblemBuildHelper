@@ -1,5 +1,34 @@
 [
   {
+    "id": "supportive",
+    "unitId": "corrin",
+    "names": {
+      "en": "Supportive",
+      "zhHans": "不可思议的魅力"
+    },
+    "effect": "When Corrin is the support unit and has at least C support with the lead unit, the lead unit gains Hit +10, deals 2 more damage, and receives 2 less damage.",
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "神威!D7:F7",
+        "fields": ["names", "effect"],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-personal-skills",
+        "locator": "Avatar > Supportive",
+        "fields": ["names.en", "effect"],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-corrin",
+        "locator": "Fire Emblem Fates > Skill set > Supportive",
+        "fields": ["names.en", "effect"],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "id": "healing_descant",
     "unitId": "azura",
     "names": {
@@ -293,6 +322,668 @@
     ]
   },
   {
+    "id": "make_a_killing",
+    "unitId": "anna",
+    "names": {
+      "en": "Make a Killing",
+      "zhHans": "一夕致富"
+    },
+    "effect": "When Anna initiates combat and defeats the target, she has a Luck% chance to receive a random amount of gold.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-other-personal-skills",
+        "locator": "DLC exclusive > Make a Killing > Anna",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-make-a-killing",
+        "locator": "Data > Fire Emblem Fates; Flavor text > Fire Emblem Fates",
+        "fields": [
+          "names",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "bushido",
+    "unitId": "ryoma",
+    "names": {
+      "en": "Bushido",
+      "zhHans": "武士道"
+    },
+    "effect": "While Ryoma leads and his support unit has a lower level, Ryoma gains Critical +10, deals 2 extra damage, and receives 2 less damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Bushido > Ryoma",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-ryoma",
+        "locator": "Fire Emblem Fates > Skill set > Bushido",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "rallying_cry",
+    "unitId": "hinoka",
+    "names": {
+      "en": "Rallying Cry",
+      "zhHans": "鼓舞"
+    },
+    "effect": "Allies within two tiles of Hinoka deal 2 extra damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Rallying Cry > Hinoka",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinoka",
+        "locator": "Fire Emblem Fates > Skill set > Rallying Cry",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "competitive",
+    "unitId": "takumi",
+    "names": {
+      "en": "Competitive",
+      "zhHans": "竞争心"
+    },
+    "effect": "While Takumi leads and his support unit has a higher level, Takumi gains Critical +10, deals 3 extra damage, and receives 1 less damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Competitive > Takumi",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-takumi",
+        "locator": "Fire Emblem Fates > Skill set > Competitive",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "quiet_strength",
+    "unitId": "sakura",
+    "names": {
+      "en": "Quiet Strength",
+      "zhHans": "小小的声援"
+    },
+    "effect": "Allies within two tiles of Sakura receive 2 less damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Quiet Strength > Sakura",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-sakura",
+        "locator": "Fire Emblem Fates > Skill set > Quiet Strength",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "pyrotechnics",
+    "unitId": "saizo",
+    "names": {
+      "en": "Pyrotechnics",
+      "zhHans": "爆炎使"
+    },
+    "effect": "When Saizo initiates combat below half HP, Saizo and all units within two tiles lose 20% of their maximum HP after combat.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Pyrotechnics > Saizo",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-saizo",
+        "locator": "Fire Emblem Fates > Skill set > Pyrotechnics",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "shuriken_mastery",
+    "unitId": "kagero",
+    "names": {
+      "en": "Shuriken Mastery",
+      "zhHans": "忍法车返"
+    },
+    "effect": "When Kagero is hit by a dagger attack, the attacker takes damage equal to half the damage Kagero actually received and suffers the full value of every stat reduction inflicted on her.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Shuriken Mastery > Kagero",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kagero",
+        "locator": "Fire Emblem Fates > Skill set > Shuriken Mastery",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "pegasusknight-fe14-kagero",
+        "locator": "First-generation unit evaluation > Kagero > Shuriken Mastery",
+        "fields": [
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "optimist",
+    "unitId": "setsuna",
+    "names": {
+      "en": "Optimist",
+      "zhHans": "乐观"
+    },
+    "effect": "Healing Setsuna receives from staves is multiplied by 1.5.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Optimist > Setsuna",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-setsuna",
+        "locator": "Fire Emblem Fates > Skill set > Optimist",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "divine_retribution",
+    "unitId": "azama",
+    "names": {
+      "en": "Divine Retribution",
+      "zhHans": "天罚"
+    },
+    "effect": "When Azama is unarmed and an adjacent enemy damages him, that enemy takes half the damage dealt.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Divine Retribution > Azama",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azama",
+        "locator": "Fire Emblem Fates > Skill set > Divine Retribution",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "triple_threat",
+    "unitId": "hinata",
+    "names": {
+      "en": "Triple Threat",
+      "zhHans": "垂死挣扎"
+    },
+    "effect": "Below half HP, Hinata reflects half the damage he receives from sword, lance, and axe attacks.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Triple Threat > Hinata",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinata",
+        "locator": "Fire Emblem Fates > Skill set > Triple Threat",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "nohr_enmity",
+    "unitId": "oboro",
+    "names": {
+      "en": "Nohr Enmity",
+      "zhHans": "暗夜仇恨"
+    },
+    "effect": "Oboro deals 3 extra damage if the enemy's original class is Nohrian or the enemy is currently in a Nohrian class. An enemy with a Nohrian original class still qualifies after reclassing (for example, Odin as a Samurai), while an enemy with a non-Nohrian original class qualifies while in a Nohrian class (for example, Kaze as a Cavalier). Generic enemies generated for Challenge or skirmish battles are excluded even when they use a Nohrian class.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Nohr Enmity > Oboro",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-oboro",
+        "locator": "Fire Emblem Fates > Skill set > Nohr Enmity",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-nohr-enmity",
+        "locator": "Overview; Stats; affected Nohrian classes and characters",
+        "fields": [
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "atwiki-fe14-oboro",
+        "locator": "Performance > Nohr Enmity",
+        "fields": [
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "fearsome_blow",
+    "unitId": "hana",
+    "names": {
+      "en": "Fearsome Blow",
+      "zhHans": "淘气鬼"
+    },
+    "effect": "When Hana initiates combat and defeats an enemy, enemies adjacent to that enemy lose 20% of their maximum HP.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Fearsome Blow > Hana",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hana",
+        "locator": "Fire Emblem Fates > Skill set > Fearsome Blow",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "perfectionist",
+    "unitId": "subaki",
+    "names": {
+      "en": "Perfectionist",
+      "zhHans": "完美主义"
+    },
+    "effect": "While Subaki is at full HP, he gains Hit +15 and Avoid +15.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Perfectionist > Subaki",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-subaki",
+        "locator": "Fire Emblem Fates > Skill set > Perfectionist",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "pride",
+    "unitId": "hayato",
+    "names": {
+      "en": "Pride",
+      "zhHans": "自尊"
+    },
+    "effect": "When Hayato's effective level is lower than the enemy's, he deals 3 extra damage. For this comparison, promoted units count as their displayed level +20.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Pride > Hayato",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hayato",
+        "locator": "Fire Emblem Fates > Skill set > Pride",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "fiery_blood",
+    "unitId": "rinkah",
+    "names": {
+      "en": "Fiery Blood",
+      "zhHans": "炎之血"
+    },
+    "effect": "While Rinkah is not at full HP, she deals 4 extra damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Fiery Blood > Rinkah",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-rinkah",
+        "locator": "Fire Emblem Fates > Skill set > Fiery Blood",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "capture",
+    "unitId": "orochi",
+    "names": {
+      "en": "Capture",
+      "zhHans": "白夜的捕缚术"
+    },
+    "effect": "If a Prison is available, Orochi can use Capture to send a defeated capturable generic enemy to the Prison instead of killing them.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Capture > Orochi",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-orochi",
+        "locator": "Fire Emblem Fates > Skill set > Capture",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "reciprocity",
+    "unitId": "kaden",
+    "names": {
+      "en": "Reciprocity",
+      "zhHans": "恩返"
+    },
+    "effect": "When another unit heals Kaden with a staff, the healer recovers half the HP restored to Kaden.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Reciprocity > Kaden",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaden",
+        "locator": "Fire Emblem Fates > Skill set > Reciprocity",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "morbid_celebration",
+    "unitId": "reina",
+    "names": {
+      "en": "Morbid Celebration",
+      "zhHans": "杀戮的喜悦"
+    },
+    "effect": "When Reina initiates combat and defeats an enemy, she recovers 20% of her maximum HP.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Morbid Celebration > Reina",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-reina",
+        "locator": "Fire Emblem Fates > Skill set > Morbid Celebration",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "in_extremis",
+    "unitId": "scarlet",
+    "names": {
+      "en": "In Extremis",
+      "zhHans": "临死一搏"
+    },
+    "effect": "While Scarlet is below one-quarter of her maximum HP, she gains Critical +30.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > In Extremis > Scarlet",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-scarlet",
+        "locator": "Fire Emblem Fates > Skill set > In Extremis",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "chivalry",
+    "unitId": "xander",
+    "names": {
+      "en": "Chivalry",
+      "zhHans": "骑士道"
+    },
+    "effect": "Against an enemy at full HP, Xander deals 2 extra damage and receives 2 less damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Chivalry > Xander",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-xander",
+        "locator": "Fire Emblem Fates > Skill set > Chivalry",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "roses_thorns",
+    "unitId": "camilla",
+    "names": {
+      "en": "Rose's Thorns",
+      "zhHans": "妖艳之花"
+    },
+    "effect": "Adjacent allies deal 3 extra damage and receive 1 less damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Rose's Thorns > Camilla",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-camilla",
+        "locator": "Fire Emblem Fates > Skill set > Rose's Thorns",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "pragmatic",
+    "unitId": "leo",
+    "names": {
+      "en": "Pragmatic",
+      "zhHans": "冷静沉着"
+    },
+    "effect": "When attacking an enemy who is not at full HP, Leo deals 3 extra damage and receives 1 less damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Pragmatic > Leo",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-leo",
+        "locator": "Fire Emblem Fates > Skill set > Pragmatic",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "id": "lilys_poise",
     "unitId": "elise",
     "names": {
@@ -327,6 +1018,180 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "fancy_footwork",
+    "unitId": "laslow",
+    "names": {
+      "en": "Fancy Footwork",
+      "zhHans": "青之舞"
+    },
+    "effect": "Using the Rally command grants Strength and Speed +1 to allies within 2 tiles for one turn.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Fancy Footwork > Laslow",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-laslow",
+        "locator": "Fire Emblem Fates > Skill set > Fancy Footwork",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "bloodthirst",
+    "unitId": "peri",
+    "names": {
+      "en": "Bloodthirst",
+      "zhHans": "杀戮本能"
+    },
+    "effect": "When Peri initiates combat and defeats the enemy, Strength, Magic, Skill, and Speed +4 for one turn.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Bloodthirst > Peri",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-peri",
+        "locator": "Fire Emblem Fates > Skill set > Bloodthirst",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "fierce_rival",
+    "unitId": "selena",
+    "names": {
+      "en": "Fierce Rival",
+      "zhHans": "竞争心"
+    },
+    "effect": "When Selena is the support unit and the lead unit triggers a critical hit, Selena's follow-up attack is guaranteed to be critical if it connects.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Fierce Rival > Selena",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-selena",
+        "locator": "Fire Emblem Fates > Skill set > Fierce Rival",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "opportunist",
+    "unitId": "beruka",
+    "names": {
+      "en": "Opportunist",
+      "zhHans": "奇袭之牙"
+    },
+    "effect": "When Beruka initiates combat and the enemy cannot counterattack, damage +4.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Opportunist > Beruka",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-beruka",
+        "locator": "Fire Emblem Fates > Skill set > Opportunist",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "aching_blood",
+    "unitId": "odin",
+    "names": {
+      "en": "Aching Blood",
+      "zhHans": "血之痛"
+    },
+    "effect": "When equipped with a forged weapon whose name is at least 12 characters, Critical rate +10.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Aching Blood > Odin",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-odin",
+        "locator": "Fire Emblem Fates > Skill set > Aching Blood",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "kidnap",
+    "unitId": "niles",
+    "names": {
+      "en": "Kidnap",
+      "zhHans": "绑架"
+    },
+    "effect": "When a Prison is present in My Castle, Niles can capture a defeated generic enemy and send them to the Prison.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Kidnap > Niles",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-niles",
+        "locator": "Fire Emblem Fates > Skill set > Kidnap",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -380,6 +1245,122 @@
       {
         "sourceId": "fandom-fe14-arthur",
         "locator": "Fire Emblem Fates > Skill Set > Misfortunate",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "countercurse",
+    "unitId": "nyx",
+    "names": {
+      "en": "Countercurse",
+      "zhHans": "诅咒反弹"
+    },
+    "effect": "When an enemy initiates combat and inflicts magical damage, the enemy receives half the same damage.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Countercurse > Nyx",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-nyx",
+        "locator": "Fire Emblem Fates > Skill set > Countercurse",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "unmask",
+    "unitId": "charlotte",
+    "names": {
+      "en": "Unmask",
+      "zhHans": "女人的本性"
+    },
+    "effect": "When engaging a female enemy, damage +4 and Critical rate +20.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Unmask > Charlotte",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-charlotte",
+        "locator": "Fire Emblem Fates > Skill set > Unmask",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "fierce_mien",
+    "unitId": "benny",
+    "names": {
+      "en": "Fierce Mien",
+      "zhHans": "强面"
+    },
+    "effect": "Enemies within 2 tiles have Avoid -10.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Fierce Mien > Benny",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-benny",
+        "locator": "Fire Emblem Fates > Skill set > Fierce Mien",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "collector",
+    "unitId": "keaton",
+    "names": {
+      "en": "Collector",
+      "zhHans": "拾荒"
+    },
+    "effect": "After taking an action through turn 7, Keaton has a Luck% chance to obtain three units of a random ore or foodstuff.",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Collector > Keaton",
+        "fields": [
+          "names.en",
+          "effect"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-keaton",
+        "locator": "Fire Emblem Fates > Skill set > Collector",
         "fields": [
           "names.en",
           "effect"

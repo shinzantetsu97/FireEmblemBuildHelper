@@ -2,9 +2,9 @@ FE14 first-generation data validation
 ======================================
 Result: PASS
 Roster units: 48
-Normalized units: 15
+Normalized units: 48
 Errors: 0
-Warnings: 9
+Warnings: 75
 
 Review warnings:
 - [variable_corrin_class_grant] felicia: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
@@ -12,7 +12,73 @@ Review warnings:
 - [variable_corrin_class_grant] kaze: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
 - [variable_corrin_class_grant] silas: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
 - [variable_corrin_class_grant] azura: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] elise: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] arthur: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
 - [variable_corrin_class_grant] effie: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] odin: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] niles: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] nyx: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] camilla: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] selena: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] beruka: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] laslow: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] peri: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] benny: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] charlotte: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] leo: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] keaton: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] xander: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] rinkah: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] sakura: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] hana: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] subaki: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] saizo: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] orochi: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] hinoka: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] azama: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] setsuna: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] hayato: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] oboro: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] hinata: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] takumi: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] kagero: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] reina: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] kaden: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] scarlet: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] ryoma: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
+- [variable_corrin_class_grant] corrin: Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.
 - [workbook_source_pending] jakob: Jakob's 乔卡 workbook sheet still requires direct inspection; current records use independent web, chart, and in-game sources.
 - [workbook_source_pending] kaze: Kaze's 凉风 workbook sheet and its four level/stat notes still require direct inspection; the current carryover rules are independently corroborated by Fire Emblem Wiki prose and Serenes Forest data.
 - [workbook_source_pending] effie: Effie's 艾尔菲 workbook sheet still requires direct inspection; the required local spreadsheet runtime was unavailable, so current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] odin: Odin's 奥丁 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] niles: Niles's 零 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] nyx: Nyx's 纽克斯 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] camilla: Camilla's 卡米拉 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] selena: Selena's 露娜 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] beruka: Beruka's 贝璐卡 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] laslow: Laslow's 拉兹沃德 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] peri: Peri's 皮埃利 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] benny: Benny's 贝诺瓦 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] charlotte: Charlotte's 夏洛特 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] leo: Leo's 里昂 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] keaton: Keaton's 弗拉内尔 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] xander: Xander's 马库斯 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] rinkah: Rinkah's 磷火 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] sakura: Sakura's 樱 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] hana: Hana's 风花 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] subaki: Subaki's 椿 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] saizo: Saizo's 才藏 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] orochi: Orochi's 大蛇 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] hinoka: Hinoka's 日乃香 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] azama: Azama's 浅间 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] setsuna: Setsuna's 刹那 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] hayato: Hayato's 月读 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] oboro: Oboro's 胧 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] hinata: Hinata's 日向 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] takumi: Takumi's 拓海 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] kagero: Kagero's 阳炎 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] reina: Reina's 夕雾 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] kaden: Kaden's 锦 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] scarlet: Scarlet's 克丽姆颂 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] ryoma: Ryoma's 龙马 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.
+- [workbook_source_pending] anna: Anna's 安娜 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.

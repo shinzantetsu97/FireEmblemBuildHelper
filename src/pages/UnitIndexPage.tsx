@@ -11,11 +11,22 @@ const ROUTE_OPTIONS = [
   { value: "birthright", label: "Birthright" },
   { value: "conquest", label: "Conquest" },
   { value: "revelation", label: "Revelation" },
+  { value: "dlc", label: "DLC-exclusive" },
 ] as const;
+
+const ROUTE_KEYS: Record<string, string> = {
+  birthright: "BR",
+  conquest: "CQ",
+  revelation: "RV",
+};
 
 export default function UnitIndexPage({ notFound = false }: { notFound?: boolean }) {
   const [route, setRoute] = useState<(typeof ROUTE_OPTIONS)[number]["value"]>("all");
-  const roster = fe14Data.roster.filter((unit) => route === "all" || unit.availableRoutes.includes(route));
+  const roster = fe14Data.roster.filter((unit) => {
+    if (route === "all") return true;
+    if (route === "dlc") return unit.availabilityCategory === "dlc_exclusive";
+    return unit.availableRoutes.includes(route);
+  });
   const availableCount = roster.filter((unit) => unit.status !== "not_started").length;
 
   return (
@@ -51,11 +62,16 @@ export default function UnitIndexPage({ notFound = false }: { notFound?: boolean
               <>
                 <img src={portrait} alt={`${unit.displayName} portrait`} loading="lazy" />
                 <span className="unit-directory-number">No. {String(unit.unitNo).padStart(2, "0")}</span>
-                <span className="unit-directory-name">{unit.displayName}</span>
-                <span className={`unit-status unit-status-${unit.status}`}>
-                  {unit.status === "accepted" ? "Accepted" : ready ? "In review" : "Queued"}
-                </span>
-                {ready ? <ChevronRight className="unit-directory-arrow" aria-hidden="true" size={17} /> : null}
+                <div className="unit-directory-meta">
+                  <span className="unit-directory-name">{unit.displayName}</span>
+                  <div className="unit-directory-tags">
+                    <span className="unit-directory-routes">{formatRosterRoutes(unit.availableRoutes)}</span>
+                    {unit.availabilityCategory === "dlc_exclusive" ? (
+                      <span className="unit-directory-category">DLC-exclusive</span>
+                    ) : null}
+                  </div>
+                  {ready ? <ChevronRight className="unit-directory-arrow" aria-hidden="true" size={17} /> : null}
+                </div>
               </>
             );
 
@@ -77,4 +93,11 @@ export default function UnitIndexPage({ notFound = false }: { notFound?: boolean
       </Container>
     </main>
   );
+}
+
+function formatRosterRoutes(routes: string[]): string {
+  if (["birthright", "conquest", "revelation"].every((route) => routes.includes(route))) {
+    return "ALL";
+  }
+  return routes.map((route) => ROUTE_KEYS[route] ?? route.toUpperCase()).join(" · ");
 }

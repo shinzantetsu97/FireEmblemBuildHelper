@@ -261,6 +261,13 @@ function validateRelationships(
     }
     supportIds.add(supportId);
     supportPairKeys.add(pairKey);
+    if (support.kind === "platonic" && (support.ranks as string[]).includes("S")) {
+      errors.push({
+        code: "invalid_platonic_support_rank",
+        message: `Platonic support ${supportId} cannot include S rank.`,
+        unitId,
+      });
+    }
     if (!rosterIdSet.has(unitId) || !rosterIdSet.has(partnerUnitId)) {
       errors.push({
         code: "child_or_unknown_support",
@@ -277,6 +284,7 @@ function validateRelationships(
     const sealGrants = accessRecord.sealGrants as JsonObject[];
     const baseClassSet = new Set(accessRecord.baseClassSet as string[]);
     const heartSealClassSet = new Set(accessRecord.heartSealClassSet as string[]);
+    const corrinTalentOnlyClassSet = new Set(accessRecord.corrinTalentOnlyClassSet as string[]);
     validateSealGrantOrdering(accessUnitId, sealGrants, supportById, rosterById, errors);
     for (const grant of sealGrants) {
       const supportId = grant.supportRelationshipId as string;
@@ -321,6 +329,18 @@ function validateRelationships(
         });
       }
     }
+    const mislabeledCorrinOnlyClasses = new Set(
+      sealGrants
+        .map((grant) => grant.grantedClassId as string)
+        .filter((classId) => classId !== "avatar_talent" && corrinTalentOnlyClassSet.has(classId)),
+    );
+    if (mislabeledCorrinOnlyClasses.size > 0) {
+      errors.push({
+        code: "invalid_corrin_talent_only_class",
+        message: `${accessUnitId}'s Corrin Talent-only list includes seal-obtainable class(es): ${[...mislabeledCorrinOnlyClasses].join(", ")}.`,
+        unitId: accessUnitId,
+      });
+    }
   }
 
   const completedUnitCounts: Record<string, { availability: number; baseStats: number }> = {
@@ -329,7 +349,41 @@ function validateRelationships(
     kaze: { availability: 4, baseStats: 4 },
     silas: { availability: 3, baseStats: 2 },
     azura: { availability: 3, baseStats: 1 },
+    elise: { availability: 3, baseStats: 3 },
+    arthur: { availability: 2, baseStats: 2 },
     effie: { availability: 2, baseStats: 2 },
+    odin: { availability: 2, baseStats: 2 },
+    niles: { availability: 2, baseStats: 2 },
+    nyx: { availability: 2, baseStats: 1 },
+    camilla: { availability: 3, baseStats: 2 },
+    selena: { availability: 2, baseStats: 1 },
+    beruka: { availability: 2, baseStats: 1 },
+    laslow: { availability: 2, baseStats: 2 },
+    peri: { availability: 2, baseStats: 2 },
+    benny: { availability: 2, baseStats: 1 },
+    charlotte: { availability: 2, baseStats: 1 },
+    leo: { availability: 3, baseStats: 2 },
+    keaton: { availability: 2, baseStats: 1 },
+    xander: { availability: 3, baseStats: 2 },
+    rinkah: { availability: 1, baseStats: 1 },
+    sakura: { availability: 2, baseStats: 2 },
+    hana: { availability: 2, baseStats: 2 },
+    subaki: { availability: 2, baseStats: 1 },
+    saizo: { availability: 2, baseStats: 2 },
+    orochi: { availability: 2, baseStats: 2 },
+    hinoka: { availability: 3, baseStats: 2 },
+    azama: { availability: 2, baseStats: 2 },
+    setsuna: { availability: 2, baseStats: 2 },
+    hayato: { availability: 2, baseStats: 2 },
+    oboro: { availability: 2, baseStats: 1 },
+    hinata: { availability: 2, baseStats: 1 },
+    takumi: { availability: 3, baseStats: 1 },
+    kagero: { availability: 2, baseStats: 1 },
+    reina: { availability: 2, baseStats: 2 },
+    kaden: { availability: 2, baseStats: 1 },
+    scarlet: { availability: 2, baseStats: 2 },
+    ryoma: { availability: 3, baseStats: 2 },
+    corrin: { availability: 1, baseStats: 1 },
   };
 
   for (const [currentUnitId, counts] of Object.entries(completedUnitCounts)) {
@@ -340,9 +394,10 @@ function validateRelationships(
       ["data/normalized/fe14/unit-base-stats.json", counts.baseStats],
       ["data/normalized/fe14/unit-growths.json", 1],
       ["data/normalized/fe14/unit-cap-modifiers.json", 1],
-      ["data/normalized/fe14/unit-pairup-bonuses.json", 1],
+      ["data/normalized/fe14/unit-pairup-bonuses.json", currentUnitId === "corrin" ? 0 : 1],
       ["data/normalized/fe14/unit-class-access.json", 1],
       ["data/normalized/fe14/personal-skills.json", 1],
+      ["data/normalized/fe14/avatar-configurations.json", currentUnitId === "corrin" ? 1 : 0],
     ];
 
     for (const [relativePath, expectedCount] of requiredCounts) {
@@ -362,8 +417,84 @@ function validateRelationships(
     );
     const accessRecord = classAccess.find((record) => record.unitId === currentUnitId);
     const sealGrants = (accessRecord?.sealGrants ?? []) as JsonObject[];
-    const expectedSupportCounts: Record<string, number> = { effie: 19 };
-    const expectedSealGrantCounts: Record<string, number> = { azura: 24, effie: 18 };
+    const expectedSupportCounts: Record<string, number> = {
+      elise: 19,
+      arthur: 19,
+      effie: 19,
+      odin: 19,
+      niles: 19,
+      nyx: 19,
+      camilla: 19,
+      selena: 19,
+      beruka: 19,
+      laslow: 19,
+      peri: 19,
+      benny: 18,
+      charlotte: 19,
+      leo: 19,
+      keaton: 19,
+      xander: 19,
+      rinkah: 19,
+      sakura: 19,
+      hana: 19,
+      subaki: 19,
+      saizo: 19,
+      orochi: 19,
+      hinoka: 19,
+      azama: 19,
+      setsuna: 19,
+      hayato: 19,
+      oboro: 19,
+      hinata: 19,
+      takumi: 19,
+      kagero: 19,
+      reina: 2,
+      kaden: 19,
+      scarlet: 2,
+      ryoma: 19,
+      anna: 2,
+      corrin: 94,
+    };
+    const expectedSealGrantCounts: Record<string, number> = {
+      azura: 23,
+      mozu: 22,
+      elise: 16,
+      arthur: 18,
+      effie: 18,
+      odin: 18,
+      niles: 19,
+      nyx: 18,
+      camilla: 16,
+      selena: 18,
+      beruka: 18,
+      laslow: 18,
+      peri: 18,
+      benny: 17,
+      charlotte: 18,
+      leo: 16,
+      keaton: 18,
+      xander: 16,
+      rinkah: 18,
+      sakura: 16,
+      hana: 18,
+      subaki: 18,
+      saizo: 18,
+      orochi: 18,
+      hinoka: 16,
+      azama: 18,
+      setsuna: 18,
+      hayato: 18,
+      oboro: 18,
+      hinata: 18,
+      takumi: 16,
+      kagero: 18,
+      reina: 1,
+      kaden: 18,
+      scarlet: 1,
+      ryoma: 16,
+      anna: 1,
+      corrin: 0,
+    };
     const expectedSupports = expectedSupportCounts[currentUnitId] ?? 24;
     const expectedSealGrants = expectedSealGrantCounts[currentUnitId] ?? 23;
     if (unitSupports.length !== expectedSupports || sealGrants.length !== expectedSealGrants) {
@@ -374,12 +505,142 @@ function validateRelationships(
       });
     }
 
+    if (currentUnitId === "silas") {
+      const periGrant = sealGrants.find((grant) => grant.supportRelationshipId === "silas__peri");
+      if (periGrant?.grantedClassId !== "dark_mage" || periGrant?.resolution !== "same_primary_fallback") {
+        errors.push({
+          code: "unit_seal_grant",
+          message: "Silas must receive Peri's Dark Mage Heart Seal class when their shared Cavalier primary triggers same-primary fallback.",
+          unitId: currentUnitId,
+        });
+      }
+    }
+
+    if (["leo", "xander", "hinoka", "takumi", "ryoma"].includes(currentUnitId)) {
+      const guest = availability.find(
+        (record) => record.unitId === currentUnitId && String(record.id).endsWith("_guest"),
+      );
+      if (!guest || guest.gainsExperience !== false) {
+        errors.push({
+          code: "unit_guest_experience",
+          message: `${currentUnitId}'s Chapter 6 guest record must explicitly disable EXP gain.`,
+          unitId: currentUnitId,
+        });
+      }
+    }
+
+    if (currentUnitId === "rinkah") {
+      const commonRecruitment = availability.find((record) => record.id === "rinkah.common");
+      const departure = commonRecruitment?.temporaryDeparture as JsonObject | undefined;
+      const returns = (departure?.returns ?? []) as JsonObject[];
+      const revelationReturn = returns.find((record) => record.route === "revelation");
+      const notes = (rosterById.get(currentUnitId)?.notes ?? []) as string[];
+      const documentsCarryover = notes.some((note) =>
+        /level, EXP, stats, and weapon proficiency.*retained/i.test(note)
+      );
+      if (departure?.afterChapter !== 5 || revelationReturn?.chapter !== 9 || !documentsCarryover) {
+        errors.push({
+          code: "unit_progress_return",
+          message: "Rinkah must leave after Chapter 5 and return in Revelation Chapter 9 with her Chapter 5 level, EXP, stats, and weapon proficiency retained.",
+          unitId: currentUnitId,
+        });
+      }
+    }
+
+    if (currentUnitId === "sakura") {
+      const revelationStats = baseStats.find((record) => record.availabilityId === "sakura.revelation");
+      const carryover = revelationStats?.chapter5Carryover as JsonObject | undefined;
+      const weaponRanks = revelationStats?.weaponRanks as JsonObject | undefined;
+      const azamaGrant = sealGrants.find((grant) => grant.supportRelationshipId === "sakura__azama");
+      if (
+        revelationStats?.level !== 4
+        || weaponRanks?.staff !== "D"
+        || carryover?.levelCalculation !== "template_plus_chapter_5_levels_gained"
+        || carryover?.statCalculation !== "template_plus_chapter_5_level_up_gains"
+        || carryover?.weaponProficiencyCalculation !== "template_plus_chapter_5_proficiency_gained"
+        || azamaGrant?.grantedClassId !== "apothecary"
+        || azamaGrant?.resolution !== "same_primary_fallback"
+      ) {
+        errors.push({
+          code: "unit_progress_return",
+          message: "Sakura must use the enhanced Revelation carryover template and receive Azama's Apothecary secondary class through same-primary fallback.",
+          unitId: currentUnitId,
+        });
+      }
+    }
+
+    if (currentUnitId === "azama") {
+      const sakuraGrant = sealGrants.find((grant) => grant.supportRelationshipId === "sakura__azama");
+      if (sakuraGrant?.grantedClassId !== "sky_knight" || sakuraGrant?.resolution !== "same_primary_fallback") {
+        errors.push({
+          code: "unit_seal_grant",
+          message: "Azama must receive Sakura's Sky Knight secondary class when their shared Monk/Shrine Maiden primary triggers same-primary fallback.",
+          unitId: currentUnitId,
+        });
+      }
+    }
+
+    if (currentUnitId === "reina") {
+      const heartClasses = (accessRecord?.heartSealClassSet ?? []) as string[];
+      if (unitSupports.length !== 2 || heartClasses.join("|") !== "diviner|ninja") {
+        errors.push({
+          code: "unit_special_access",
+          message: "Reina must have Corrin-only supports and both Diviner and Ninja Heart Seal access.",
+          unitId: currentUnitId,
+        });
+      }
+    }
+
+    if (currentUnitId === "scarlet") {
+      const revelationJoin = availability.find((record) => record.id === "scarlet.revelation");
+      const heartClasses = (accessRecord?.heartSealClassSet ?? []) as string[];
+      if (revelationJoin?.permanentlyLeavesAfterChapter !== 18 || unitSupports.length !== 2 || heartClasses.join("|") !== "outlaw|knight") {
+        errors.push({
+          code: "unit_special_access",
+          message: "Scarlet must have Corrin-only supports, Outlaw and Knight Heart Seal access, and permanently leave after Revelation Chapter 18.",
+          unitId: currentUnitId,
+        });
+      }
+    }
+
     const sameGenderCorrinSupportId = {
       felicia: "felicia__corrin_female",
       jakob: "jakob__corrin_male",
       kaze: "kaze__corrin_male",
       silas: "silas__corrin_male",
+      elise: "elise__corrin_female",
+      arthur: "arthur__corrin_male",
       effie: "effie__corrin_female",
+      odin: "odin__corrin_male",
+      nyx: "nyx__corrin_female",
+      camilla: "camilla__corrin_female",
+      selena: "selena__corrin_female",
+      beruka: "beruka__corrin_female",
+      laslow: "laslow__corrin_male",
+      peri: "peri__corrin_female",
+      benny: "benny__corrin_male",
+      charlotte: "charlotte__corrin_female",
+      leo: "leo__corrin_male",
+      keaton: "keaton__corrin_male",
+      xander: "xander__corrin_male",
+      rinkah: "rinkah__corrin_female",
+      sakura: "sakura__corrin_female",
+      hana: "hana__corrin_female",
+      subaki: "subaki__corrin_male",
+      saizo: "saizo__corrin_male",
+      orochi: "orochi__corrin_female",
+      hinoka: "hinoka__corrin_female",
+      azama: "azama__corrin_male",
+      setsuna: "setsuna__corrin_female",
+      hayato: "hayato__corrin_male",
+      oboro: "oboro__corrin_female",
+      hinata: "hinata__corrin_male",
+      takumi: "takumi__corrin_male",
+      kagero: "kagero__corrin_female",
+      reina: "reina__corrin_female",
+      kaden: "kaden__corrin_male",
+      scarlet: "scarlet__corrin_female",
+      ryoma: "ryoma__corrin_male",
     }[currentUnitId];
     if (sameGenderCorrinSupportId && sealGrants.some((grant) => grant.supportRelationshipId === sameGenderCorrinSupportId)) {
       errors.push({
@@ -419,6 +680,49 @@ function validateRelationships(
       unitId: "effie",
     });
   }
+  const pendingWorkbookUnits = [
+    ["odin", "奥丁"],
+    ["niles", "零"],
+    ["nyx", "纽克斯"],
+    ["camilla", "卡米拉"],
+    ["selena", "露娜"],
+    ["beruka", "贝璐卡"],
+    ["laslow", "拉兹沃德"],
+    ["peri", "皮埃利"],
+    ["benny", "贝诺瓦"],
+    ["charlotte", "夏洛特"],
+    ["leo", "里昂"],
+    ["keaton", "弗拉内尔"],
+    ["xander", "马库斯"],
+    ["rinkah", "磷火"],
+    ["sakura", "樱"],
+    ["hana", "风花"],
+    ["subaki", "椿"],
+    ["saizo", "才藏"],
+    ["orochi", "大蛇"],
+    ["hinoka", "日乃香"],
+    ["azama", "浅间"],
+    ["setsuna", "刹那"],
+    ["hayato", "月读"],
+    ["oboro", "胧"],
+    ["hinata", "日向"],
+    ["takumi", "拓海"],
+    ["kagero", "阳炎"],
+    ["reina", "夕雾"],
+    ["kaden", "锦"],
+    ["scarlet", "克丽姆颂"],
+    ["ryoma", "龙马"],
+    ["anna", "安娜"],
+  ] as const;
+  for (const [pendingUnitId, sheetName] of pendingWorkbookUnits) {
+    if (!unitFilter || unitFilter === pendingUnitId) {
+      warnings.push({
+        code: "workbook_source_pending",
+        message: `${pendingUnitId[0].toUpperCase()}${pendingUnitId.slice(1)}'s ${sheetName} workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.`,
+        unitId: pendingUnitId,
+      });
+    }
+  }
 }
 
 function compareUnitOrder(
@@ -451,6 +755,7 @@ function validateUnitRecordOrdering(
     "data/normalized/fe14/unit-growths.json",
     "data/normalized/fe14/unit-cap-modifiers.json",
     "data/normalized/fe14/unit-pairup-bonuses.json",
+    "data/normalized/fe14/avatar-configurations.json",
     "data/normalized/fe14/unit-class-access.json",
     "data/normalized/fe14/personal-skills.json",
   ];

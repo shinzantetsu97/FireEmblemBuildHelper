@@ -16,7 +16,7 @@ export default function AppHeader({ route }: { route: AppRoute }) {
         <Navbar.Toggle aria-controls="primary-navigation" />
         <Navbar.Collapse id="primary-navigation">
           <Nav className="ms-auto app-navigation">
-            <AppLink className={`nav-link${route.kind === "notes" ? " active" : ""}`} to="/">
+            <AppLink className={`nav-link${route.kind === "notes" ? " active" : ""}`} to="/Notes">
               <StickyNote aria-hidden="true" size={17} />
               Notes
             </AppLink>

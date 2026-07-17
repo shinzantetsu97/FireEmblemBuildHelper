@@ -13,6 +13,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -37,6 +38,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -66,6 +68,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -95,6 +98,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -119,6 +123,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -143,6 +148,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -161,6 +167,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -179,6 +186,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -197,6 +205,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -215,6 +224,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -233,12 +243,19 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
         "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "elise"
+        }
+      ]
     },
     {
       "order": 12,
@@ -251,24 +268,32 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
         "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "arthur"
+        }
+      ]
     },
     {
       "order": 13,
       "unitId": "effie",
       "displayName": "Effie",
-      "status": "in_review",
+      "status": "accepted",
       "domains": {
         "identity": true,
         "availability": true,
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -291,559 +316,931 @@
       "order": 14,
       "unitId": "odin",
       "displayName": "Odin",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "odin"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Odin's 奥丁 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "odin"
+        }
+      ]
     },
     {
       "order": 15,
       "unitId": "niles",
       "displayName": "Niles",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "niles"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Niles's 零 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "niles"
+        }
+      ]
     },
     {
       "order": 16,
       "unitId": "nyx",
       "displayName": "Nyx",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "nyx"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Nyx's 纽克斯 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "nyx"
+        }
+      ]
     },
     {
       "order": 17,
       "unitId": "camilla",
       "displayName": "Camilla",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "camilla"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Camilla's 卡米拉 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "camilla"
+        }
+      ]
     },
     {
       "order": 18,
       "unitId": "selena",
       "displayName": "Selena",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "selena"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Selena's 露娜 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "selena"
+        }
+      ]
     },
     {
       "order": 19,
       "unitId": "beruka",
       "displayName": "Beruka",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "beruka"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Beruka's 贝璐卡 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "beruka"
+        }
+      ]
     },
     {
       "order": 20,
       "unitId": "laslow",
       "displayName": "Laslow",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "laslow"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Laslow's 拉兹沃德 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "laslow"
+        }
+      ]
     },
     {
       "order": 21,
       "unitId": "peri",
       "displayName": "Peri",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "peri"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Peri's 皮埃利 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "peri"
+        }
+      ]
     },
     {
       "order": 22,
       "unitId": "benny",
       "displayName": "Benny",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "benny"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Benny's 贝诺瓦 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "benny"
+        }
+      ]
     },
     {
       "order": 23,
       "unitId": "charlotte",
       "displayName": "Charlotte",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "charlotte"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Charlotte's 夏洛特 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "charlotte"
+        }
+      ]
     },
     {
       "order": 24,
       "unitId": "leo",
       "displayName": "Leo",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "leo"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Leo's 里昂 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "leo"
+        }
+      ]
     },
     {
       "order": 25,
       "unitId": "keaton",
       "displayName": "Keaton",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "keaton"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Keaton's 弗拉内尔 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "keaton"
+        }
+      ]
     },
     {
       "order": 26,
       "unitId": "xander",
       "displayName": "Xander",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "xander"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Xander's 马库斯 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "xander"
+        }
+      ]
     },
     {
       "order": 27,
       "unitId": "rinkah",
       "displayName": "Rinkah",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "rinkah"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Rinkah's 磷火 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "rinkah"
+        }
+      ]
     },
     {
       "order": 28,
       "unitId": "sakura",
       "displayName": "Sakura",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "sakura"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Sakura's 樱 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "sakura"
+        }
+      ]
     },
     {
       "order": 29,
       "unitId": "hana",
       "displayName": "Hana",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "hana"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Hana's 风花 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "hana"
+        }
+      ]
     },
     {
       "order": 30,
       "unitId": "subaki",
       "displayName": "Subaki",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "subaki"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Subaki's 椿 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "subaki"
+        }
+      ]
     },
     {
       "order": 31,
       "unitId": "saizo",
       "displayName": "Saizo",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "saizo"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Saizo's 才藏 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "saizo"
+        }
+      ]
     },
     {
       "order": 32,
       "unitId": "orochi",
       "displayName": "Orochi",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "orochi"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Orochi's 大蛇 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "orochi"
+        }
+      ]
     },
     {
       "order": 33,
       "unitId": "hinoka",
       "displayName": "Hinoka",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "hinoka"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Hinoka's 日乃香 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "hinoka"
+        }
+      ]
     },
     {
       "order": 34,
       "unitId": "azama",
       "displayName": "Azama",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "azama"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Azama's 浅间 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "azama"
+        }
+      ]
     },
     {
       "order": 35,
       "unitId": "setsuna",
       "displayName": "Setsuna",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "setsuna"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Setsuna's 刹那 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "setsuna"
+        }
+      ]
     },
     {
       "order": 36,
       "unitId": "hayato",
       "displayName": "Hayato",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "hayato"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Hayato's 月读 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "hayato"
+        }
+      ]
     },
     {
       "order": 37,
       "unitId": "oboro",
       "displayName": "Oboro",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "oboro"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Oboro's 胧 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "oboro"
+        }
+      ]
     },
     {
       "order": 38,
       "unitId": "hinata",
       "displayName": "Hinata",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "hinata"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Hinata's 日向 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "hinata"
+        }
+      ]
     },
     {
       "order": 39,
       "unitId": "takumi",
       "displayName": "Takumi",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "takumi"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Takumi's 拓海 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "takumi"
+        }
+      ]
     },
     {
       "order": 40,
       "unitId": "kagero",
       "displayName": "Kagero",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "kagero"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Kagero's 阳炎 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "kagero"
+        }
+      ]
     },
     {
       "order": 41,
       "unitId": "reina",
       "displayName": "Reina",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
-        "supports": false,
-        "classAccess": false,
-        "personalSkill": false
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "reina"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Reina's 夕雾 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "reina"
+        }
+      ]
     },
     {
       "order": 42,
       "unitId": "kaden",
       "displayName": "Kaden",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "kaden"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Kaden's 锦 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "kaden"
+        }
+      ]
     },
     {
       "order": 43,
       "unitId": "scarlet",
       "displayName": "Scarlet",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
-        "supports": false,
-        "classAccess": false,
-        "personalSkill": false
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "scarlet"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Scarlet's 克丽姆颂 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "scarlet"
+        }
+      ]
     },
     {
       "order": 44,
       "unitId": "ryoma",
       "displayName": "Ryoma",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "ryoma"
+        },
+        {
+          "code": "workbook_source_pending",
+          "message": "Ryoma's 龙马 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "ryoma"
+        }
+      ]
     },
     {
       "order": 45,
@@ -856,6 +1253,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -874,6 +1272,7 @@
         "baseStats": true,
         "growths": true,
         "capModifiers": true,
+        "avatarConfiguration": false,
         "pairupBonuses": true,
         "supports": true,
         "classAccess": true,
@@ -885,37 +1284,51 @@
       "order": 47,
       "unitId": "anna",
       "displayName": "Anna",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
-        "pairupBonuses": false,
-        "supports": false,
-        "classAccess": false,
-        "personalSkill": false
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": false,
+        "pairupBonuses": true,
+        "supports": true,
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "workbook_source_pending",
+          "message": "Anna's 安娜 workbook sheet still requires direct inspection; current records use independent Serenes Forest, Fire Emblem Wiki, and seal-chart sources.",
+          "unitId": "anna"
+        }
+      ]
     },
     {
       "order": 48,
       "unitId": "corrin",
       "displayName": "Corrin",
-      "status": "not_started",
+      "status": "accepted",
       "domains": {
-        "identity": false,
-        "availability": false,
-        "baseStats": false,
-        "growths": false,
-        "capModifiers": false,
+        "identity": true,
+        "availability": true,
+        "baseStats": true,
+        "growths": true,
+        "capModifiers": true,
+        "avatarConfiguration": true,
         "pairupBonuses": false,
         "supports": true,
-        "classAccess": false,
-        "personalSkill": false
+        "classAccess": true,
+        "personalSkill": true
       },
-      "openIssues": []
+      "openIssues": [
+        {
+          "code": "variable_corrin_class_grant",
+          "message": "Corrin's Partner Seal grant depends on the selected Talent and requires runtime resolution.",
+          "unitId": "corrin"
+        }
+      ]
     }
   ]
 }

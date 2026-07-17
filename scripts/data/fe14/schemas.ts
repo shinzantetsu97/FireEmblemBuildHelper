@@ -50,6 +50,7 @@ export const rosterSchema = z.object({
       unitNo: z.number().int().positive(),
       processingOrder: z.number().int().positive(),
       availableRoutes: z.array(routeSchema).min(1),
+      availabilityCategory: z.enum(["dlc_exclusive"]).optional(),
       slug: z.string().min(1),
       displayName: z.string().min(1),
       portraitFile: z.string().min(1),
@@ -106,6 +107,24 @@ const availabilitySchema = z.object({
       { message: "My Castle recruitment must specify either facilityId or facilityIds" },
     )
     .optional(),
+  dlcRecruitment: z
+    .object({
+      mapId: z.string().min(1),
+      mapName: z.string().min(1),
+      accessRequirement: z.literal("dragon_gate_unlocked"),
+      recruitmentTiming: z.literal("first_clear"),
+      recruitedUnitScaling: z.literal("fixed"),
+      npcScaling: z.object({
+        basis: z.literal("displayed_story_chapter"),
+        minimumLevel: z.number().int().positive(),
+        maximumLevel: z.number().int().positive(),
+        earliestChapter: z.number().int().nonnegative(),
+        latestChapter: z.number().int().nonnegative(),
+        carriesIntoRecruitedUnit: z.literal(false),
+        note: z.string().min(1),
+      }),
+    })
+    .optional(),
   autoLevel: z
     .object({
       basis: z.literal("displayed_story_chapter"),
@@ -134,6 +153,7 @@ const availabilitySchema = z.object({
     })
     .optional(),
   temporarilyLeavesAfterChapter: z.number().int().nonnegative().optional(),
+  permanentlyLeavesAfterChapter: z.number().int().nonnegative().optional(),
   returnsChapter: z.number().int().nonnegative().optional(),
   temporaryDeparture: z
     .object({
@@ -228,6 +248,19 @@ export const baseStatsFileSchema = z.array(
         }),
       )
       .optional(),
+    weaponRankProgressByAvailability: z
+      .record(
+        z.string(),
+        z.record(
+          z.string(),
+          z.object({
+            towardRank: z.enum(["D", "C", "B", "A", "S"]),
+            barFraction: z.number().min(0).max(1),
+            precision: z.enum(["exact", "approximate"]),
+          }),
+        ),
+      )
+      .optional(),
     startingSkillIds: z.array(z.string().min(1)),
     chapter5Carryover: z
       .object({
@@ -268,6 +301,103 @@ export const capModifiersFileSchema = z.array(
   z.object({
     unitId: z.string().min(1),
     modifiers: statBlockSchema.omit({ hp: true }),
+    provenance: z.array(sourceRefSchema).min(1),
+  }),
+);
+
+const avatarDeltaSchema = z.record(
+  z.enum(["hp", "strength", "magic", "skill", "speed", "luck", "defense", "resistance"]),
+  z.number().int(),
+);
+
+const avatarCapDeltaSchema = z.record(
+  z.enum(["strength", "magic", "skill", "speed", "luck", "defense", "resistance"]),
+  z.number().int(),
+);
+
+const avatarChoiceSchema = z.object({
+  id: z.string().min(1),
+  label: z.string().min(1),
+  stat: z.enum(["hp", "strength", "magic", "skill", "speed", "luck", "defense", "resistance"]),
+  baseDeltas: avatarDeltaSchema,
+  growthDeltas: avatarDeltaSchema,
+  capDeltas: avatarCapDeltaSchema,
+});
+
+const avatarStanceBonusSchema = z.object({
+  strength: z.number().int().optional(),
+  magic: z.number().int().optional(),
+  skill: z.number().int().optional(),
+  speed: z.number().int().optional(),
+  luck: z.number().int().optional(),
+  defense: z.number().int().optional(),
+  resistance: z.number().int().optional(),
+  hit: z.number().int().optional(),
+  avoid: z.number().int().optional(),
+  critical: z.number().int().optional(),
+  criticalAvoid: z.number().int().optional(),
+});
+
+const avatarStanceRankDeltasSchema = z.object({
+  C: avatarStanceBonusSchema,
+  B: avatarStanceBonusSchema,
+  A: avatarStanceBonusSchema,
+  S: avatarStanceBonusSchema,
+});
+
+export const avatarConfigurationsFileSchema = z.array(
+  z.object({
+    unitId: z.literal("corrin"),
+    defaultName: z.string().min(1),
+    genderOptions: z.tuple([z.literal("male"), z.literal("female")]),
+    boons: z.array(avatarChoiceSchema).length(8),
+    banes: z.array(avatarChoiceSchema).length(8),
+    talents: z.array(
+      z.object({
+        id: z.string().min(1),
+        label: z.string().min(1),
+        classId: z.string().min(1).optional(),
+        classIdByGender: z.object({ male: z.string().min(1), female: z.string().min(1) }).optional(),
+      }).refine(({ classId, classIdByGender }) => Boolean(classId) !== Boolean(classIdByGender), {
+        message: "Avatar Talent must define either classId or classIdByGender.",
+      }),
+    ).length(17),
+    routePromotions: z.object({
+      birthright: z.array(z.string().min(1)).min(1),
+      conquest: z.array(z.string().min(1)).min(1),
+      revelation: z.array(z.string().min(1)).min(1),
+    }),
+    friendshipSealRule: z.object({
+      requiredRank: z.literal("A"),
+      requiresSameGender: z.literal(true),
+      commitsToSingleFriend: z.literal(false),
+      bottleneck: z.literal("missable_class_access"),
+      note: z.string().min(1),
+    }),
+    pairupRule: z.object({
+      variableBy: z.tuple([z.literal("boon"), z.literal("bane")]),
+      note: z.string().min(1),
+      attackStance: z.object({
+        reviewStatus: z.literal("accepted"),
+        semantics: z.string().min(1),
+        baseBonus: avatarStanceBonusSchema,
+        variants: z.array(z.object({
+          boonIds: z.array(z.string().min(1)).length(2),
+          baneIds: z.array(z.string().min(1)).length(2),
+          rankDeltas: avatarStanceRankDeltasSchema,
+        })).length(16),
+      }),
+      guardStance: z.object({
+        reviewStatus: z.literal("accepted"),
+        semantics: z.string().min(1),
+        baseBonus: avatarStanceBonusSchema,
+        variants: z.array(z.object({
+          boonId: z.string().min(1),
+          baneId: z.string().min(1),
+          rankDeltas: avatarStanceRankDeltasSchema,
+        })).length(56),
+      }),
+    }),
     provenance: z.array(sourceRefSchema).min(1),
   }),
 );
@@ -396,6 +526,7 @@ export const domainSchemas = {
   "data/normalized/fe14/unit-base-stats.json": baseStatsFileSchema,
   "data/normalized/fe14/unit-growths.json": growthsFileSchema,
   "data/normalized/fe14/unit-cap-modifiers.json": capModifiersFileSchema,
+  "data/normalized/fe14/avatar-configurations.json": avatarConfigurationsFileSchema,
   "data/normalized/fe14/unit-pairup-bonuses.json": pairupFileSchema,
   "data/normalized/fe14/support-relationships.json": supportsFileSchema,
   "data/normalized/fe14/unit-class-access.json": classAccessFileSchema,

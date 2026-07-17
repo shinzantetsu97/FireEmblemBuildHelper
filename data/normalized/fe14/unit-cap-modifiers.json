@@ -1,5 +1,31 @@
 [
   {
+    "unitId": "corrin",
+    "modifiers": {
+      "strength": 0,
+      "magic": 0,
+      "skill": 0,
+      "speed": 0,
+      "luck": 0,
+      "defense": 0,
+      "resistance": 0
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-avatar-maximum-stats",
+        "locator": "Avatar > modifiers before applying boon and bane",
+        "fields": ["modifiers"],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-corrin-stats",
+        "locator": "Stat cap modifiers > neutral modifiers",
+        "fields": ["modifiers"],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "azura",
     "modifiers": {
       "strength": 0,
@@ -240,6 +266,666 @@
     ]
   },
   {
+    "unitId": "anna",
+    "modifiers": {
+      "strength": -1,
+      "magic": 1,
+      "skill": 0,
+      "speed": -1,
+      "luck": 2,
+      "defense": -2,
+      "resistance": 2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-other-maximum-stats",
+        "locator": "DLC exclusive > Anna",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-anna-fates",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "ryoma",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": 2,
+      "speed": 1,
+      "luck": 1,
+      "defense": -2,
+      "resistance": -2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Ryoma",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-ryoma",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hinoka",
+    "modifiers": {
+      "strength": 1,
+      "magic": -1,
+      "skill": -1,
+      "speed": 1,
+      "luck": 0,
+      "defense": -1,
+      "resistance": 2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Hinoka",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinoka",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "takumi",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": 3,
+      "speed": -2,
+      "luck": 1,
+      "defense": 0,
+      "resistance": -2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Takumi",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-takumi",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "sakura",
+    "modifiers": {
+      "strength": 0,
+      "magic": 2,
+      "skill": -1,
+      "speed": 1,
+      "luck": 0,
+      "defense": -1,
+      "resistance": 0
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Sakura",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-sakura",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "saizo",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": 3,
+      "speed": -2,
+      "luck": 0,
+      "defense": 1,
+      "resistance": -2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Saizo",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-saizo",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kagero",
+    "modifiers": {
+      "strength": 3,
+      "magic": 0,
+      "skill": -1,
+      "speed": -1,
+      "luck": 0,
+      "defense": -1,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Kagero",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kagero",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "setsuna",
+    "modifiers": {
+      "strength": 0,
+      "magic": 0,
+      "skill": 1,
+      "speed": 3,
+      "luck": -1,
+      "defense": -1,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Setsuna",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-setsuna",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "azama",
+    "modifiers": {
+      "strength": 2,
+      "magic": -3,
+      "skill": 0,
+      "speed": 1,
+      "luck": 0,
+      "defense": 1,
+      "resistance": 0
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Azama",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azama",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hinata",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": -1,
+      "speed": -2,
+      "luck": 0,
+      "defense": 2,
+      "resistance": 0
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Hinata",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinata",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "oboro",
+    "modifiers": {
+      "strength": 1,
+      "magic": -1,
+      "skill": 1,
+      "speed": 1,
+      "luck": -1,
+      "defense": 1,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Oboro",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-oboro",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hana",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": 1,
+      "speed": 2,
+      "luck": -1,
+      "defense": -3,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Hana",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "subaki",
+    "modifiers": {
+      "strength": -1,
+      "magic": 0,
+      "skill": 2,
+      "speed": -2,
+      "luck": -1,
+      "defense": 3,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Subaki",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-subaki",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hayato",
+    "modifiers": {
+      "strength": 0,
+      "magic": 1,
+      "skill": -1,
+      "speed": 2,
+      "luck": 1,
+      "defense": -1,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Hayato",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hayato",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "rinkah",
+    "modifiers": {
+      "strength": -1,
+      "magic": 0,
+      "skill": -2,
+      "speed": 1,
+      "luck": 0,
+      "defense": 2,
+      "resistance": 0
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Rinkah",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-rinkah",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "orochi",
+    "modifiers": {
+      "strength": 0,
+      "magic": 3,
+      "skill": 2,
+      "speed": -2,
+      "luck": -1,
+      "defense": -2,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Orochi",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-orochi",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kaden",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": -3,
+      "speed": 2,
+      "luck": 1,
+      "defense": -2,
+      "resistance": 2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Kaden",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaden",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "reina",
+    "modifiers": {
+      "strength": 2,
+      "magic": 0,
+      "skill": 0,
+      "speed": 2,
+      "luck": -1,
+      "defense": -2,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Reina",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-reina",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "scarlet",
+    "modifiers": {
+      "strength": 2,
+      "magic": 0,
+      "skill": 0,
+      "speed": 1,
+      "luck": -1,
+      "defense": 0,
+      "resistance": -2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-maximum-stats",
+        "locator": "Exclusive Characters > Scarlet",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-scarlet",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "xander",
+    "modifiers": {
+      "strength": 2,
+      "magic": -1,
+      "skill": -1,
+      "speed": -1,
+      "luck": 2,
+      "defense": 1,
+      "resistance": -2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Xander",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-xander",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "camilla",
+    "modifiers": {
+      "strength": 1,
+      "magic": -1,
+      "skill": 1,
+      "speed": 1,
+      "luck": -2,
+      "defense": 1,
+      "resistance": 0
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Camilla",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-camilla",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "leo",
+    "modifiers": {
+      "strength": -2,
+      "magic": 2,
+      "skill": 0,
+      "speed": -2,
+      "luck": 0,
+      "defense": 0,
+      "resistance": 2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Leo",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-leo",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "elise",
     "modifiers": {
       "strength": -1,
@@ -266,6 +952,186 @@
           "modifiers"
         ],
         "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "laslow",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": 2,
+      "speed": -1,
+      "luck": 1,
+      "defense": -1,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Laslow",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-laslow",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "peri",
+    "modifiers": {
+      "strength": 1,
+      "magic": 0,
+      "skill": -1,
+      "speed": 1,
+      "luck": 0,
+      "defense": -2,
+      "resistance": 2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Peri",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-peri",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "selena",
+    "modifiers": {
+      "strength": -1,
+      "magic": 0,
+      "skill": -1,
+      "speed": 2,
+      "luck": 0,
+      "defense": 1,
+      "resistance": 0
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Selena",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-selena",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "beruka",
+    "modifiers": {
+      "strength": -1,
+      "magic": 0,
+      "skill": 2,
+      "speed": -2,
+      "luck": 0,
+      "defense": 2,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Beruka",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-beruka",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "odin",
+    "modifiers": {
+      "strength": 0,
+      "magic": 1,
+      "skill": 1,
+      "speed": -1,
+      "luck": 1,
+      "defense": 0,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Odin",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-odin",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "niles",
+    "modifiers": {
+      "strength": -2,
+      "magic": 0,
+      "skill": -1,
+      "speed": 3,
+      "luck": 0,
+      "defense": 0,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Niles",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-niles",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -322,6 +1188,126 @@
       {
         "sourceId": "fandom-fe14-arthur",
         "locator": "Fire Emblem Fates > Max Stat Modifiers",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "nyx",
+    "modifiers": {
+      "strength": 0,
+      "magic": 3,
+      "skill": -2,
+      "speed": 2,
+      "luck": -1,
+      "defense": -2,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Nyx",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-nyx",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "charlotte",
+    "modifiers": {
+      "strength": 3,
+      "magic": 0,
+      "skill": 0,
+      "speed": 2,
+      "luck": 0,
+      "defense": -2,
+      "resistance": -2
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Charlotte",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-charlotte",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "benny",
+    "modifiers": {
+      "strength": 0,
+      "magic": 0,
+      "skill": 0,
+      "speed": -3,
+      "luck": 0,
+      "defense": 3,
+      "resistance": 1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Benny",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-benny",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable > Mods",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "unitId": "keaton",
+    "modifiers": {
+      "strength": 3,
+      "magic": 0,
+      "skill": -2,
+      "speed": -1,
+      "luck": 0,
+      "defense": 2,
+      "resistance": -1
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-maximum-stats",
+        "locator": "Exclusive Characters > Keaton",
+        "fields": [
+          "modifiers"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-keaton",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Mods",
         "fields": [
           "modifiers"
         ],

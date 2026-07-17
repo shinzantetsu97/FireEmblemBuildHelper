@@ -132,6 +132,8 @@ data/
       sources.json
   normalized/
     fe14/
+      avatar-configurations.json
+      class-trees.json
       units/
         first-generation.json
       unit-availability.json
@@ -286,42 +288,42 @@ Process units in this exact order unless the user explicitly changes it. Corrin 
 | 10 | `flora` | Flora | `芙洛拉` | [x] Nohr/special |
 | 11 | `elise` | Elise | `艾丽泽` | [x] Nohr |
 | 12 | `arthur` | Arthur | `哈罗德` | [x] Nohr |
-| 13 | `effie` | Effie | `艾尔菲` | Nohr |
-| 14 | `odin` | Odin | `奥丁` | Nohr |
-| 15 | `niles` | Niles | `零` | Nohr |
-| 16 | `nyx` | Nyx | `纽克斯` | Nohr |
-| 17 | `camilla` | Camilla | `卡米拉` | Nohr |
-| 18 | `selena` | Selena | `露娜` | Nohr |
-| 19 | `beruka` | Beruka | `贝璐卡` | Nohr |
-| 20 | `laslow` | Laslow | `拉兹沃德` | Nohr |
-| 21 | `peri` | Peri | `皮埃利` | Nohr |
-| 22 | `benny` | Benny | `贝诺瓦` | Nohr |
-| 23 | `charlotte` | Charlotte | `夏洛特` | Nohr |
-| 24 | `leo` | Leo | `里昂` | Nohr |
-| 25 | `keaton` | Keaton | `弗拉内尔` | Nohr |
-| 26 | `xander` | Xander | `马库斯` | Nohr |
-| 27 | `rinkah` | Rinkah | `磷火` | Hoshido |
-| 28 | `sakura` | Sakura | `樱` | Hoshido |
-| 29 | `hana` | Hana | `风花` | Hoshido |
-| 30 | `subaki` | Subaki | `椿` | Hoshido |
-| 31 | `saizo` | Saizo | `才藏` | Hoshido |
-| 32 | `orochi` | Orochi | `大蛇` | Hoshido |
-| 33 | `hinoka` | Hinoka | `日乃香` | Hoshido |
-| 34 | `azama` | Azama | `浅间` | Hoshido |
-| 35 | `setsuna` | Setsuna | `刹那` | Hoshido |
-| 36 | `hayato` | Hayato | `月读` | Hoshido |
-| 37 | `oboro` | Oboro | `胧` | Hoshido |
-| 38 | `hinata` | Hinata | `日向` | Hoshido |
-| 39 | `takumi` | Takumi | `拓海` | Hoshido |
-| 40 | `kagero` | Kagero | `阳炎` | Hoshido |
-| 41 | `reina` | Reina | `夕雾` | Hoshido/special |
-| 42 | `kaden` | Kaden | `锦` | Hoshido |
-| 43 | `scarlet` | Scarlet | `克里姆森` | Hoshido/special |
-| 44 | `ryoma` | Ryoma | `龙马` | Hoshido |
+| 13 | `effie` | Effie | `艾尔菲` | [x] Nohr |
+| 14 | `odin` | Odin | `奥丁` | [x] Nohr |
+| 15 | `niles` | Niles | `零` | [x] Nohr |
+| 16 | `nyx` | Nyx | `纽克斯` | [x] Nohr |
+| 17 | `camilla` | Camilla | `卡米拉` | [x] Nohr |
+| 18 | `selena` | Selena | `露娜` | [x] Nohr |
+| 19 | `beruka` | Beruka | `贝璐卡` | [x] Nohr |
+| 20 | `laslow` | Laslow | `拉兹沃德` | [x] Nohr |
+| 21 | `peri` | Peri | `皮埃利` | [x] Nohr |
+| 22 | `benny` | Benny | `贝诺瓦` | [x] Nohr |
+| 23 | `charlotte` | Charlotte | `夏洛特` | [x] Nohr |
+| 24 | `leo` | Leo | `里昂` | [x] Nohr |
+| 25 | `keaton` | Keaton | `弗拉内尔` | [x] Nohr |
+| 26 | `xander` | Xander | `马库斯` | [x] Nohr |
+| 27 | `rinkah` | Rinkah | `磷火` | [x] Hoshido |
+| 28 | `sakura` | Sakura | `樱` | [x] Hoshido |
+| 29 | `hana` | Hana | `风花` | [x] Hoshido |
+| 30 | `subaki` | Subaki | `椿` | [x] Hoshido |
+| 31 | `saizo` | Saizo | `才藏` | [x] Hoshido |
+| 32 | `orochi` | Orochi | `大蛇` | [x] Hoshido |
+| 33 | `hinoka` | Hinoka | `日乃香` | [x] Hoshido |
+| 34 | `azama` | Azama | `浅间` | [x] Hoshido |
+| 35 | `setsuna` | Setsuna | `刹那` | [x] Hoshido |
+| 36 | `hayato` | Hayato | `月读` | [x] Hoshido |
+| 37 | `oboro` | Oboro | `胧` | [x] Hoshido |
+| 38 | `hinata` | Hinata | `日向` | [x] Hoshido |
+| 39 | `takumi` | Takumi | `拓海` | [x] Hoshido |
+| 40 | `kagero` | Kagero | `阳炎` | [x] Hoshido |
+| 41 | `reina` | Reina | `夕雾` | [x] Hoshido/special |
+| 42 | `kaden` | Kaden | `锦` | [x] Hoshido |
+| 43 | `scarlet` | Scarlet | `克里姆森` | [x] Hoshido/special |
+| 44 | `ryoma` | Ryoma | `龙马` | [x] Hoshido |
 | 45 | `yukimura` | Yukimura | `幸村` | [x] Hoshido/special |
 | 46 | `fuga` | Fuga | `风雅` | [x] Revelation/special |
-| 47 | `anna` | Anna | `安娜` | DLC |
-| 48 | `corrin` | Corrin | `神威` | Avatar; always last |
+| 47 | `anna` | Anna | `安娜` | [x] DLC |
+| 48 | `corrin` | Corrin | `神威` | [x] Avatar; always last |
 
 The English names and canonical IDs in this table are proposed roster identifiers. Validate aliases and workbook-sheet mappings during bootstrap, but do not reorder the unit sequence casually.
 
@@ -652,6 +654,62 @@ Confirm explicitly that no child unit appears in normalized or runtime files.
 - Validation reports contain no hidden or silently discarded errors.
 - Runtime JSON is deterministic and generated only from validated normalized data.
 - Data validation, tests, typecheck, build, and diff checks pass.
+
+## Final Decisions and Delivered Extras
+
+This section records the final, user-approved implementation decisions made while the roster was reviewed. The earlier scope language remains above as the historical starting contract; where this section differs, this section describes what was actually delivered for the completed milestone.
+
+### Completed Data Scope
+
+- All 48 first-generation units are present and marked `accepted`. Felicia remained the first golden unit, Anna remained the DLC unit immediately before Corrin, and Corrin remained the final processed unit.
+- `unitNo` is the stable canonical directory number. `processingOrder` records the review sequence. These are intentionally separate.
+- Human-readable normalized files are ordered first by applicable route count, descending, and then by canonical unit number. Runtime sorting is not used as a substitute for readable source data.
+- The normalized boundary expanded by two files: `class-trees.json` stores the non-DLC base-class promotion map used by class-access explanations, and `avatar-configurations.json` stores Corrin's variable gender, boon, bane, Talent, route-promotion, Friendship Seal, and pair-up rules.
+- Recruitment is represented by 103 typed scenarios and 80 linked base-stat snapshots rather than compound chapter prose. The model supports route joins, Avatar-gender branches, difficulty variants, temporary departures and returns, retained Chapter 4/5 training, weapon-rank progress, castle recruitment, autoleveling, and DLC recruitment.
+- Route-identical starting snapshots share one normalized scenario or stat block when their values are the same. Route-specific records exist only when class, level, inventory, stats, weapon rank, timing, or another verified condition differs.
+- Generic `levelCap` data was rejected. Exceptional behavior, such as Felicia and Jakob's built-in Eternal Seal effect, is stored as an explicit unit note instead of implying that every profile needs a level-cap field.
+- Castle recruits Izana, Yukimura, Flora, and Fuga retain explicit uncertainty notes around their scaling. Their current records use the most defensible castle-recruit autolevel interpretation, described as Offspring Seal-esque level scaling rather than claiming that the child Offspring Seal table applies directly.
+- Anna is modeled as `dlc_exclusive`. Her map NPC's story-progress scaling is separate from the fixed recruited level 10 unit and does not leak into the recruited base-stat record.
+- Scarlet's Revelation departure is modeled as a route-specific permanent departure and receives a prominent frontend warning. Birthright remains unaffected.
+
+### Stats, Classes, Supports, and Pair-Up Decisions
+
+- Every unit has exactly one personal growth vector and one seven-stat personal cap-modifier vector. Growth totals shown in the frontend are derived display values, not duplicated canonical inputs.
+- Corrin begins from a neutral base, growth, and cap template. Boon and bane deltas are applied at runtime from `avatar-configurations.json`; precomputed Corrin permutations are intentionally not stored.
+- Forty-seven units use fixed Attack and Guard Stance records. Corrin's variable stance rules live in the Avatar configuration because boon and bane choices change the result.
+- Support relationships are stored once as 433 directed-view records with route, rank, direction, and partner-gender context. Friendship and Partner Seal outcomes remain separate directed grants because reciprocal support does not guarantee reciprocal class access.
+- A support with Corrin does not automatically grant the non-Corrin unit a Friendship Seal class. Corrin may borrow eligible same-gender first-generation classes; the reverse direction is not inferred without a valid seal relationship.
+- Class access distinguishes starting/base classes, Heart Seal classes, Corrin Talent-only access, Friendship Seal grants, Partner Seal grants, substitutions, fallbacks, and classes already owned through another route.
+- `alreadyOwned` outcomes remain visible in relationship data. The frontend marks them with a compact caution indicator and explains whether the granted tree already exists through the base or Heart Seal set.
+- Duplicate-class and special-class substitutions are explicit. Examples reviewed during the milestone include parallel-class fallbacks, secondary-class grants, gendered Troubadour promotions, and class trees that expose a promoted class without exposing every sibling base class.
+- Class-tree hover labels show the two standard promotions for each non-DLC base tree. DLC classes remain deferred.
+- Personal skills remain sourced descriptive records rather than executable rules. Niche wording corrections, including Oboro's Nohr-class/origin condition and Kagero's reflected damage/debuff distinction, are preserved as prose without pretending the app can execute the skill.
+
+### Approved Frontend Expansion
+
+- The original prompt excluded frontend work. During review, that boundary was explicitly expanded to build the FE14 unit visualizer alongside the data so every unit could be inspected in context.
+- `/FE14/Units` now provides a portrait roster with canonical numbers, route filtering, `ALL` / `BR` / `CQ` / `RV` availability labels, and a separate DLC-exclusive filter. Completed review-state labels are no longer shown to users.
+- Roster cards show the full square portrait with the unit number on the image. Unit name, route labels, DLC status, and navigation affordance sit in a separate metadata row below the portrait.
+- `/FE14/Units/:unit` provides one route-addressable profile per unit. Profiles expose availability, recruitment and starting snapshots, personal growths and cap modifiers, class access, supports and seal results, Attack and Guard Stance bonuses, notes, warnings, and compact paper-style references.
+- Every profile includes an Overview / JSON segmented control. The JSON view is an expandable visualizer of the same generated runtime object used by the overview.
+- Profile headers show available routes, Dragon Vein access, and applicable Dragon/Beast tags. Personal-skill prose remains in the body rather than crowding the header.
+- Corrin received a dedicated interactive profile. Gender, boon, bane, and Talent controls are synchronized across starting bases, personal growths, cap modifiers, class coverage, portrait, supports, and stance bonuses. Talent trees highlight the current selection and dim alternatives.
+- Corrin's profile documents the male-Corrin paralogue bottleneck and reports route/gender class trees still missable after the selected Talent and eligible first-generation Friendship access.
+- Route and unit exceptions are surfaced where they matter: castle-recruit reliability banners, Scarlet's Revelation warning, temporary-playability notes, retained-training notes, Felicia/Jakob Eternal Seal behavior, and other unit-specific recruitment caveats.
+- The browser-local Notes workspace was moved to `/Notes`. The application root is now the project home page, with a Game Library entry for Fire Emblem If / Fates and a concise version log based on user-visible product milestones rather than test-only or merge commits.
+- GitHub Pages deep-link restoration remains supported through `public/404.html` and the redirect handoff in `index.html`.
+
+### Validation Outcome and Accepted Limitations
+
+- The generated runtime bundle contains 48 roster entries, 48 joined unit objects, 22 non-DLC class trees, and 126 compact source records.
+- The final normalized counts are 48 identities, 48 personal skills, 48 growth vectors, 48 cap-modifier vectors, 48 class-access records, 103 availability scenarios, 80 base-stat snapshots, 433 support records, 47 fixed pair-up records, and one Corrin Avatar configuration.
+- Validation currently reports zero errors and 75 explicit warnings. Forty warnings are `variable_corrin_class_grant`, identifying Partner Seal outcomes that depend on the selected Talent. Thirty-five are `workbook_source_pending`, identifying units whose local workbook sheet was not directly inspected even though their accepted records use independent web, chart, or observed-game sources.
+- `workbook_source_pending` is an audit reminder, not a claim that the corresponding data is unsourced. It remains visible so later workbook reconciliation can improve provenance without blocking otherwise corroborated records.
+- User-observed game data, including explicitly identified 3DS observations, is retained with scoped wording rather than generalized beyond the observed route, chapter, difficulty, or version.
+- Known unresolved mechanics remain prose-level limitations instead of invented precision. These include exact late castle-recruit milestones for some special units and whether Gunter's early EXP, level, and weapon proficiency carry into later appearances.
+- Child portraits may exist in the imported asset folder, but no child identity, stat, support, inheritance, or runtime record is included in this milestone.
+- No new dependency was required. Zod, TypeScript, `tsx`, Vitest, React, React Bootstrap, and the existing icon library were sufficient.
+- Projected growth-by-selected-class charts remain a later planner feature. Child units, child inheritance, DLC class trees, executable skill effects, combat calculations, and build optimization remain out of scope after this milestone.
 
 ## Stop Conditions
 

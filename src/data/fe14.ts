@@ -8,6 +8,7 @@ import berukaPortrait from "../../assets/character_portraits/Belka.png";
 import camillaPortrait from "../../assets/character_portraits/Camilla.png";
 import charlottePortrait from "../../assets/character_portraits/Charlotte.png";
 import corrinPortrait from "../../assets/character_portraits/Kamui.png";
+import corrinFemalePortrait from "../../assets/character_portraits/Kamui2.png";
 import effiePortrait from "../../assets/character_portraits/Elfie.png";
 import elisePortrait from "../../assets/character_portraits/Elise.png";
 import feliciaPortrait from "../../assets/character_portraits/Felicia.png";
@@ -60,6 +61,7 @@ export interface UnitIdentity {
   unitNo: number;
   processingOrder: number;
   availableRoutes: string[];
+  availabilityCategory?: "dlc_exclusive";
   slug: string;
   displayName: string;
   portraitFile: string;
@@ -85,6 +87,62 @@ export interface StatBlock {
   resistance: number;
 }
 
+export interface AvatarChoice {
+  id: string;
+  label: string;
+  stat: keyof StatBlock;
+  baseDeltas: Partial<StatBlock>;
+  growthDeltas: Partial<StatBlock>;
+  capDeltas: Partial<Omit<StatBlock, "hp">>;
+}
+
+export interface AvatarConfiguration {
+  unitId: "corrin";
+  defaultName: string;
+  genderOptions: ["male", "female"];
+  boons: AvatarChoice[];
+  banes: AvatarChoice[];
+  talents: Array<{
+    id: string;
+    label: string;
+    classId?: string;
+    classIdByGender?: { male: string; female: string };
+  }>;
+  routePromotions: Record<"birthright" | "conquest" | "revelation", string[]>;
+  friendshipSealRule: {
+    requiredRank: "A";
+    requiresSameGender: true;
+    commitsToSingleFriend: false;
+    bottleneck: "missable_class_access";
+    note: string;
+  };
+  pairupRule: {
+    variableBy: ["boon", "bane"];
+    note: string;
+    attackStance: {
+      reviewStatus: "accepted";
+      semantics: string;
+      baseBonus: Record<string, number>;
+      variants: Array<{
+        boonIds: string[];
+        baneIds: string[];
+        rankDeltas: Record<string, Record<string, number>>;
+      }>;
+    };
+    guardStance: {
+      reviewStatus: "accepted";
+      semantics: string;
+      baseBonus: Record<string, number>;
+      variants: Array<{
+        boonId: string;
+        baneId: string;
+        rankDeltas: Record<string, Record<string, number>>;
+      }>;
+    };
+  };
+  provenance: SourceRef[];
+}
+
 export interface UnitRuntime {
   identity: UnitIdentity;
   availability: Array<Record<string, unknown> & {
@@ -101,6 +159,22 @@ export interface UnitRuntime {
       facilityLevel: number;
       refreshMethods: Array<"real_time" | "map_completion">;
       note: string;
+    };
+    dlcRecruitment?: {
+      mapId: string;
+      mapName: string;
+      accessRequirement: "dragon_gate_unlocked";
+      recruitmentTiming: "first_clear";
+      recruitedUnitScaling: "fixed";
+      npcScaling: {
+        basis: "displayed_story_chapter";
+        minimumLevel: number;
+        maximumLevel: number;
+        earliestChapter: number;
+        latestChapter: number;
+        carriesIntoRecruitedUnit: false;
+        note: string;
+      };
     };
     autoLevel?: {
       basis: "displayed_story_chapter";
@@ -130,6 +204,7 @@ export interface UnitRuntime {
       lunatic: string[];
     };
     temporarilyLeavesAfterChapter?: number;
+    permanentlyLeavesAfterChapter?: number;
     returnsChapter?: number;
     temporaryDeparture?: {
       afterChapter: number;
@@ -160,6 +235,7 @@ export interface UnitRuntime {
     weaponRanks: Record<string, string>;
     weaponRanksByAvailability?: Record<string, Record<string, string>>;
     weaponRankProgress?: Record<string, { towardRank: string; barFraction: number; precision: "exact" | "approximate" }>;
+    weaponRankProgressByAvailability?: Record<string, Record<string, { towardRank: string; barFraction: number; precision: "exact" | "approximate" }>>;
     chapter5Carryover?: {
       sourceAvailabilityId: string;
       checkpoint: "end_of_chapter_5";
@@ -172,8 +248,15 @@ export interface UnitRuntime {
   }>;
   growths: Array<Record<string, unknown> & { rates: StatBlock }>;
   capModifiers: (Record<string, unknown> & { modifiers: Omit<StatBlock, "hp"> }) | null;
+  avatarConfiguration: AvatarConfiguration | null;
   pairupBonuses: (Record<string, unknown> & { attackStance: StanceBonuses; guardStance: StanceBonuses }) | null;
-  supports: Array<Record<string, unknown> & { id: string; partnerUnitId: string; kind: string; routes: string[] }>;
+  supports: Array<Record<string, unknown> & {
+    id: string;
+    partnerUnitId: string;
+    partnerGender?: "female" | "male";
+    kind: string;
+    routes: string[];
+  }>;
   classAccess: (Record<string, unknown> & { startingClassId: string; baseClassSet: string[]; heartSealClassSet: string[]; corrinTalentOnlyClassSet: string[]; sealGrants: SealGrant[] }) | null;
   personalSkill: (Record<string, unknown> & { names: { en: string }; effect: string }) | null;
 }
@@ -263,7 +346,8 @@ const portraitUrls: Record<string, string> = {
 
 export const fe14Data = runtimeJson as unknown as Fe14Runtime;
 
-export function getPortraitUrl(unit: UnitIdentity): string {
+export function getPortraitUrl(unit: UnitIdentity, avatarGender?: "male" | "female"): string {
+  if (unit.id === "corrin" && avatarGender === "female") return corrinFemalePortrait;
   return portraitUrls[unit.portraitFile] ?? "";
 }
 

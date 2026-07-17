@@ -1,6 +1,7 @@
 import { useEffect, useState, type MouseEvent, type ReactNode } from "react";
 
 export type AppRoute =
+  | { kind: "home" }
   | { kind: "notes" }
   | { kind: "unit-index" }
   | { kind: "unit-detail"; slug: string }
@@ -65,6 +66,9 @@ function parseRoute(pathname: string): AppRoute {
   const normalized = path.length > 1 ? path.replace(/\/$/, "") : path;
 
   if (normalized === "/") {
+    return { kind: "home" };
+  }
+  if (normalized.toLowerCase() === "/notes") {
     return { kind: "notes" };
   }
   if (normalized.toLowerCase() === "/fe14/units") {

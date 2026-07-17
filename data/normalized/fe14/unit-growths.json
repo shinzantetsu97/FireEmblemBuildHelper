@@ -1,5 +1,39 @@
 [
   {
+    "unitId": "corrin",
+    "kind": "personal",
+    "rates": {
+      "hp": 45,
+      "strength": 45,
+      "magic": 30,
+      "skill": 40,
+      "speed": 45,
+      "luck": 45,
+      "defense": 35,
+      "resistance": 25
+    },
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "神威!B26:K26",
+        "fields": ["rates"],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-avatar-growth-rates",
+        "locator": "Shared Characters > Avatar neutral personal growths",
+        "fields": ["rates"],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-corrin-stats",
+        "locator": "Growth rates > neutral personal rates after removing Nohr Prince(ss) class growths",
+        "fields": ["rates"],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "azura",
     "kind": "personal",
     "rates": {
@@ -288,6 +322,710 @@
     ]
   },
   {
+    "unitId": "anna",
+    "kind": "personal",
+    "rates": {
+      "hp": 35,
+      "strength": 30,
+      "magic": 55,
+      "skill": 30,
+      "speed": 40,
+      "luck": 70,
+      "defense": 20,
+      "resistance": 45
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-other-growth-rates",
+        "locator": "DLC exclusive > Anna",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-anna-fates",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing Outlaw class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "ryoma",
+    "kind": "personal",
+    "rates": {
+      "hp": 50,
+      "strength": 45,
+      "magic": 0,
+      "skill": 50,
+      "speed": 45,
+      "luck": 40,
+      "defense": 35,
+      "resistance": 25
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Ryoma",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-ryoma",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hinoka",
+    "kind": "personal",
+    "rates": {
+      "hp": 45,
+      "strength": 45,
+      "magic": 15,
+      "skill": 40,
+      "speed": 45,
+      "luck": 40,
+      "defense": 35,
+      "resistance": 40
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Hinoka",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinoka",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "takumi",
+    "kind": "personal",
+    "rates": {
+      "hp": 50,
+      "strength": 35,
+      "magic": 0,
+      "skill": 60,
+      "speed": 40,
+      "luck": 45,
+      "defense": 35,
+      "resistance": 20
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Takumi",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-takumi",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "sakura",
+    "kind": "personal",
+    "rates": {
+      "hp": 45,
+      "strength": 30,
+      "magic": 50,
+      "skill": 40,
+      "speed": 40,
+      "luck": 55,
+      "defense": 30,
+      "resistance": 20
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Sakura",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-sakura",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "saizo",
+    "kind": "personal",
+    "rates": {
+      "hp": 40,
+      "strength": 50,
+      "magic": 45,
+      "skill": 60,
+      "speed": 30,
+      "luck": 55,
+      "defense": 45,
+      "resistance": 10
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Saizo",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-saizo",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kagero",
+    "kind": "personal",
+    "rates": {
+      "hp": 30,
+      "strength": 65,
+      "magic": 0,
+      "skill": 20,
+      "speed": 50,
+      "luck": 30,
+      "defense": 25,
+      "resistance": 40
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Kagero",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kagero",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "setsuna",
+    "kind": "personal",
+    "rates": {
+      "hp": 30,
+      "strength": 20,
+      "magic": 0,
+      "skill": 30,
+      "speed": 60,
+      "luck": 30,
+      "defense": 15,
+      "resistance": 40
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Setsuna",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-setsuna",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "azama",
+    "kind": "personal",
+    "rates": {
+      "hp": 55,
+      "strength": 50,
+      "magic": 20,
+      "skill": 40,
+      "speed": 45,
+      "luck": 40,
+      "defense": 40,
+      "resistance": 20
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Azama",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azama",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hinata",
+    "kind": "personal",
+    "rates": {
+      "hp": 55,
+      "strength": 35,
+      "magic": 0,
+      "skill": 25,
+      "speed": 15,
+      "luck": 45,
+      "defense": 45,
+      "resistance": 15
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Hinata",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinata",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "oboro",
+    "kind": "personal",
+    "rates": {
+      "hp": 30,
+      "strength": 40,
+      "magic": 20,
+      "skill": 40,
+      "speed": 40,
+      "luck": 40,
+      "defense": 40,
+      "resistance": 30
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Oboro",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-oboro",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hana",
+    "kind": "personal",
+    "rates": {
+      "hp": 25,
+      "strength": 55,
+      "magic": 10,
+      "skill": 45,
+      "speed": 55,
+      "luck": 25,
+      "defense": 20,
+      "resistance": 30
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Hana",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hana",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "subaki",
+    "kind": "personal",
+    "rates": {
+      "hp": 55,
+      "strength": 30,
+      "magic": 20,
+      "skill": 50,
+      "speed": 20,
+      "luck": 25,
+      "defense": 45,
+      "resistance": 5
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Subaki",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-subaki",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "hayato",
+    "kind": "personal",
+    "rates": {
+      "hp": 50,
+      "strength": 30,
+      "magic": 40,
+      "skill": 30,
+      "speed": 45,
+      "luck": 60,
+      "defense": 40,
+      "resistance": 20
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Hayato",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hayato",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "rinkah",
+    "kind": "personal",
+    "rates": {
+      "hp": 20,
+      "strength": 25,
+      "magic": 15,
+      "skill": 50,
+      "speed": 45,
+      "luck": 35,
+      "defense": 45,
+      "resistance": 20
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Rinkah",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-rinkah",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "orochi",
+    "kind": "personal",
+    "rates": {
+      "hp": 35,
+      "strength": 5,
+      "magic": 65,
+      "skill": 50,
+      "speed": 15,
+      "luck": 35,
+      "defense": 25,
+      "resistance": 45
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Orochi",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-orochi",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "kaden",
+    "kind": "personal",
+    "rates": {
+      "hp": 45,
+      "strength": 40,
+      "magic": 10,
+      "skill": 25,
+      "speed": 45,
+      "luck": 50,
+      "defense": 35,
+      "resistance": 40
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Kaden",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaden",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "reina",
+    "kind": "personal",
+    "rates": {
+      "hp": 40,
+      "strength": 45,
+      "magic": 5,
+      "skill": 20,
+      "speed": 45,
+      "luck": 10,
+      "defense": 20,
+      "resistance": 10
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Reina",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-reina",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "scarlet",
+    "kind": "personal",
+    "rates": {
+      "hp": 30,
+      "strength": 45,
+      "magic": 20,
+      "skill": 40,
+      "speed": 50,
+      "luck": 40,
+      "defense": 25,
+      "resistance": 20
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-growth-rates",
+        "locator": "Exclusive Characters > Scarlet",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-scarlet",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "xander",
+    "kind": "personal",
+    "rates": {
+      "hp": 45,
+      "strength": 50,
+      "magic": 5,
+      "skill": 40,
+      "speed": 35,
+      "luck": 60,
+      "defense": 40,
+      "resistance": 15
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Xander",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-xander",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "camilla",
+    "kind": "personal",
+    "rates": {
+      "hp": 40,
+      "strength": 50,
+      "magic": 25,
+      "skill": 50,
+      "speed": 55,
+      "luck": 25,
+      "defense": 35,
+      "resistance": 45
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Camilla",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-camilla",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "leo",
+    "kind": "personal",
+    "rates": {
+      "hp": 45,
+      "strength": 25,
+      "magic": 55,
+      "skill": 35,
+      "speed": 45,
+      "luck": 45,
+      "defense": 30,
+      "resistance": 45
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Leo",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-leo",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "unitId": "elise",
     "kind": "personal",
     "rates": {
@@ -320,6 +1058,198 @@
       {
         "sourceId": "fandom-fe14-elise",
         "locator": "Fire Emblem Fates > Growth Rates; personal growths after removing Troubadour class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "laslow",
+    "kind": "personal",
+    "rates": {
+      "hp": 50,
+      "strength": 45,
+      "magic": 0,
+      "skill": 45,
+      "speed": 30,
+      "luck": 55,
+      "defense": 35,
+      "resistance": 25
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Laslow",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-laslow",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "peri",
+    "kind": "personal",
+    "rates": {
+      "hp": 30,
+      "strength": 50,
+      "magic": 5,
+      "skill": 30,
+      "speed": 50,
+      "luck": 35,
+      "defense": 25,
+      "resistance": 45
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Peri",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-peri",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "selena",
+    "kind": "personal",
+    "rates": {
+      "hp": 40,
+      "strength": 30,
+      "magic": 5,
+      "skill": 25,
+      "speed": 45,
+      "luck": 30,
+      "defense": 45,
+      "resistance": 30
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Selena",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-selena",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "beruka",
+    "kind": "personal",
+    "rates": {
+      "hp": 45,
+      "strength": 30,
+      "magic": 10,
+      "skill": 55,
+      "speed": 30,
+      "luck": 45,
+      "defense": 40,
+      "resistance": 25
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Beruka",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-beruka",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "odin",
+    "kind": "personal",
+    "rates": {
+      "hp": 55,
+      "strength": 35,
+      "magic": 30,
+      "skill": 55,
+      "speed": 35,
+      "luck": 60,
+      "defense": 40,
+      "resistance": 20
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Odin",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-odin",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "niles",
+    "kind": "personal",
+    "rates": {
+      "hp": 40,
+      "strength": 35,
+      "magic": 20,
+      "skill": 40,
+      "speed": 50,
+      "luck": 30,
+      "defense": 30,
+      "resistance": 40
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Niles",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-niles",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
         "fields": [
           "rates"
         ],
@@ -384,6 +1314,134 @@
       {
         "sourceId": "fandom-fe14-arthur",
         "locator": "Fire Emblem Fates > Growth Rates; personal growths after removing Fighter class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "nyx",
+    "kind": "personal",
+    "rates": {
+      "hp": 30,
+      "strength": 5,
+      "magic": 50,
+      "skill": 35,
+      "speed": 50,
+      "luck": 20,
+      "defense": 15,
+      "resistance": 30
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Nyx",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-nyx",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "charlotte",
+    "kind": "personal",
+    "rates": {
+      "hp": 65,
+      "strength": 55,
+      "magic": 0,
+      "skill": 35,
+      "speed": 50,
+      "luck": 45,
+      "defense": 20,
+      "resistance": 5
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Charlotte",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-charlotte",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "benny",
+    "kind": "personal",
+    "rates": {
+      "hp": 50,
+      "strength": 40,
+      "magic": 0,
+      "skill": 50,
+      "speed": 10,
+      "luck": 35,
+      "defense": 55,
+      "resistance": 45
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Benny",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-benny",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable; personal rates after removing class growths",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "unitId": "keaton",
+    "kind": "personal",
+    "rates": {
+      "hp": 60,
+      "strength": 60,
+      "magic": 0,
+      "skill": 20,
+      "speed": 35,
+      "luck": 30,
+      "defense": 50,
+      "resistance": 25
+    },
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-growth-rates",
+        "locator": "Exclusive Characters > Keaton",
+        "fields": [
+          "rates"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-keaton",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates; personal rates after removing class growths",
         "fields": [
           "rates"
         ],

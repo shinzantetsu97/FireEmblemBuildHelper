@@ -383,7 +383,7 @@
       "id": "serenes-fe14-revelation-character-data",
       "kind": "web",
       "title": "Fire Emblem Fates: Revelation - Character Data",
-      "location": "https://serenesforest.net/fire-emblem-fates/revelation/character-data/",
+      "location": "https://serenesforest.net/fire-emblem-fates/invisible-kingdom/character-data/",
       "language": "en",
       "reviewStatus": "accepted",
       "notes": "Corroborates Fuga's empty inventory, minimum weapon ranks and skills, and states that later recruitment raises his level, ranks, and learned skills."
@@ -435,6 +435,63 @@
       "location": "https://serenesforest.net/fire-emblem-fates/revelation/supports/support-bonus/",
       "language": "en",
       "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-other-base-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Other Characters - Base Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/other-characters/base-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-other-recruitment",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Other Characters - Recruitment",
+      "location": "https://serenesforest.net/fire-emblem-fates/other-characters/recruitment/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-other-supports",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Other Characters - Supports",
+      "location": "https://serenesforest.net/fire-emblem-fates/other-characters/supports/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-other-support-bonuses",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Other Characters - Support Bonus",
+      "location": "https://serenesforest.net/fire-emblem-fates/other-characters/supports/support-bonus/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-anna-fates",
+      "kind": "web",
+      "title": "Anna (Fates) - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Anna_(Fates)",
+      "language": "en",
+      "reviewStatus": "corroborated"
+    },
+    {
+      "id": "fewiki-anna-on-the-run",
+      "kind": "web",
+      "title": "Anna on the Run - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Anna_on_the_Run",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Separates the story-scaled NPC Anna from the fixed level-10 unit recruited after the first clear."
+    },
+    {
+      "id": "fewiki-make-a-killing",
+      "kind": "web",
+      "title": "Make a Killing - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Make_a_Killing",
+      "language": "en",
+      "reviewStatus": "corroborated"
     },
     {
       "id": "user-3ds-fe14-felicia",
@@ -564,6 +621,425 @@
       "language": "en",
       "reviewStatus": "corroborated",
       "notes": "Corroborates Arthur's Conquest and Revelation base blocks, personal growths, cap modifiers, pair-up bonuses, supports, and class sets."
+    },
+    {
+      "id": "fewiki-odin",
+      "kind": "web",
+      "title": "Owain - Fire Emblem Wiki (Odin in Fates)",
+      "location": "https://fireemblemwiki.org/wiki/Owain",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-niles",
+      "kind": "web",
+      "title": "Niles - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Niles",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-nyx",
+      "kind": "web",
+      "title": "Nyx - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Nyx",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-camilla",
+      "kind": "web",
+      "title": "Camilla - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Camilla",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-selena",
+      "kind": "web",
+      "title": "Severa - Fire Emblem Wiki (Selena in Fates)",
+      "location": "https://fireemblemwiki.org/wiki/Severa",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-beruka",
+      "kind": "web",
+      "title": "Beruka - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Beruka",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-laslow",
+      "kind": "web",
+      "title": "Inigo - Fire Emblem Wiki (Laslow in Fates)",
+      "location": "https://fireemblemwiki.org/wiki/Inigo",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-peri",
+      "kind": "web",
+      "title": "Peri - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Peri",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-benny",
+      "kind": "web",
+      "title": "Benny - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Benny",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-charlotte",
+      "kind": "web",
+      "title": "Charlotte - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/Charlotte",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-hoshidan-recruitment",
+      "kind": "web",
+      "title": "Serenes Forest - Hoshidan Character Recruitment",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/recruitment/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-hoshidan-base-stats",
+      "kind": "web",
+      "title": "Serenes Forest - Hoshidan Character Base Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/base-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-hoshidan-growth-rates",
+      "kind": "web",
+      "title": "Serenes Forest - Hoshidan Character Growth Rates",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/growth-rates/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-hoshidan-maximum-stats",
+      "kind": "web",
+      "title": "Serenes Forest - Hoshidan Character Maximum Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/maximum-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-hoshidan-pair-up-stats",
+      "kind": "web",
+      "title": "Serenes Forest - Hoshidan Character Pair Up Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/pair-up-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-hoshidan-class-sets",
+      "kind": "web",
+      "title": "Serenes Forest - Hoshidan Character Class Sets",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/class-sets/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-hoshidan-personal-skills",
+      "kind": "web",
+      "title": "Serenes Forest - Hoshidan Character Personal Skills",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-hoshidan-supports",
+      "kind": "web",
+      "title": "Serenes Forest - Hoshidan Character Supports",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/supports/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-hoshidan-support-bonuses",
+      "kind": "web",
+      "title": "Serenes Forest - Hoshidan Support Bonuses",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/supports/support-bonus/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-revelation-character-base-stats",
+      "kind": "web",
+      "title": "Serenes Forest - Revelation Character Base Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/revelation/character-base-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-leo",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Leo",
+      "location": "https://fireemblemwiki.org/wiki/Leo",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-keaton",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Keaton",
+      "location": "https://fireemblemwiki.org/wiki/Keaton",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-xander",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Xander",
+      "location": "https://fireemblemwiki.org/wiki/Xander",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-rinkah",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Rinkah",
+      "location": "https://fireemblemwiki.org/wiki/Rinkah",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fandom-fe14-wanderer",
+      "kind": "web",
+      "title": "Wanderer - Fire Emblem Wiki",
+      "location": "https://fireemblem.fandom.com/wiki/Wanderer",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "States that Rinkah rejoins in Revelation Chapter 9 with the training she received in the early chapters."
+    },
+    {
+      "id": "atwiki-fe14-rinkah",
+      "kind": "web",
+      "title": "Rinkah (Fire Emblem if) - Aniota Wiki",
+      "location": "https://w.atwiki.jp/aniwotawiki/pages/38816.html",
+      "language": "ja",
+      "reviewStatus": "corroborated",
+      "notes": "Explicitly states that Revelation Chapter 9 inherits Rinkah's Chapter 5 data, including the context of her low weapon proficiency."
+    },
+    {
+      "id": "user-fe14-sakura-carryover",
+      "kind": "game_data",
+      "title": "Sakura Chapter 5 progress carryover - user verification",
+      "location": "User's direct Fire Emblem Fates verification",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Revelation applies Sakura's stronger level 4 stats and D staff rank, then retains the levels, rolled stat gains, partial EXP, and staff proficiency earned in Chapter 5."
+    },
+    {
+      "id": "fewiki-sakura",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Sakura",
+      "location": "https://fireemblemwiki.org/wiki/Sakura",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-hana",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Hana",
+      "location": "https://fireemblemwiki.org/wiki/Hana",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-subaki",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Subaki",
+      "location": "https://fireemblemwiki.org/wiki/Subaki",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-saizo",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Saizo",
+      "location": "https://fireemblemwiki.org/wiki/Saizo",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-orochi",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Orochi",
+      "location": "https://fireemblemwiki.org/wiki/Orochi",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-hinoka",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Hinoka",
+      "location": "https://fireemblemwiki.org/wiki/Hinoka",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-azama",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Azama",
+      "location": "https://fireemblemwiki.org/wiki/Azama",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-setsuna",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Setsuna",
+      "location": "https://fireemblemwiki.org/wiki/Setsuna",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-hayato",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Hayato",
+      "location": "https://fireemblemwiki.org/wiki/Hayato",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-oboro",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Oboro",
+      "location": "https://fireemblemwiki.org/wiki/Oboro",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fandom-fe14-nohr-enmity",
+      "kind": "web",
+      "title": "Fire Emblem Wiki (Fandom) - Nohr Enmity",
+      "location": "https://fireemblem.fandom.com/wiki/Nohr_Enmity",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "atwiki-fe14-oboro",
+      "kind": "web",
+      "title": "Aniwotawiki - Oboro (FE)",
+      "location": "https://w.atwiki.jp/aniwotawiki/pages/38343.html",
+      "language": "ja",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-hinata",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Hinata",
+      "location": "https://fireemblemwiki.org/wiki/Hinata",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-takumi",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Takumi",
+      "location": "https://fireemblemwiki.org/wiki/Takumi",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-kagero",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Kagero",
+      "location": "https://fireemblemwiki.org/wiki/Kagero",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "pegasusknight-fe14-kagero",
+      "kind": "web",
+      "title": "Pegasus Knight FE14 Wiki - First-generation unit evaluation",
+      "location": "https://www.pegasusknight.com/wiki/fe14/%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88/%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E8%A9%95%E4%BE%A1%EF%BC%88%E8%A6%AA%E4%B8%96%E4%BB%A3%EF%BC%89",
+      "language": "ja",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-reina",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Reina",
+      "location": "https://fireemblemwiki.org/wiki/Reina",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-kaden",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Kaden",
+      "location": "https://fireemblemwiki.org/wiki/Kaden",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-scarlet",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Scarlet",
+      "location": "https://fireemblemwiki.org/wiki/Scarlet",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-ryoma",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Ryoma",
+      "location": "https://fireemblemwiki.org/wiki/Ryoma",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-avatar-creation",
+      "kind": "web",
+      "title": "Fire Emblem Fates - Avatar Creation",
+      "location": "https://serenesforest.net/fire-emblem-fates/avatar-creation/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-avatar-growth-rates",
+      "kind": "web",
+      "title": "Fire Emblem Fates - Avatar Growth Rates",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/growth-rates/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-avatar-maximum-stats",
+      "kind": "web",
+      "title": "Fire Emblem Fates - Avatar Maximum Stats",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/maximum-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-corrin",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Corrin",
+      "location": "https://fireemblemwiki.org/wiki/Corrin",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "fewiki-corrin-stats",
+      "kind": "web",
+      "title": "Fire Emblem Wiki - Corrin Stats",
+      "location": "https://fireemblemwiki.org/wiki/Corrin/Stats",
+      "language": "en",
+      "reviewStatus": "accepted"
     }
   ]
 }

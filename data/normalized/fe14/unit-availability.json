@@ -1,5 +1,34 @@
 [
   {
+    "id": "corrin.prologue",
+    "unitId": "corrin",
+    "scenarioLabel": "Prologue recruitment",
+    "routeJoins": [
+      { "route": "birthright", "chapter": 0, "timing": "start" },
+      { "route": "conquest", "chapter": 0, "timing": "start" },
+      { "route": "revelation", "chapter": 0, "timing": "start" }
+    ],
+    "level": 1,
+    "classId": "nohr_prince",
+    "inventory": [
+      "bronze_sword"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fe14-workbook-cn",
+        "locator": "神威!D4:I6",
+        "fields": ["routeJoins", "level", "classId", "inventory"],
+        "reviewStatus": "candidate"
+      },
+      {
+        "sourceId": "fewiki-corrin",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates",
+        "fields": ["routeJoins", "level", "classId", "inventory"],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
     "id": "azura.chapter_5",
     "unitId": "azura",
     "scenarioLabel": "Chapter 5 recruitment",
@@ -1035,6 +1064,2081 @@
     ]
   },
   {
+    "id": "anna.dlc",
+    "unitId": "anna",
+    "scenarioLabel": "DLC recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 7,
+        "timing": "conditional"
+      },
+      {
+        "route": "conquest",
+        "chapter": 7,
+        "timing": "conditional"
+      },
+      {
+        "route": "revelation",
+        "chapter": 7,
+        "timing": "conditional"
+      }
+    ],
+    "level": 10,
+    "classId": "outlaw",
+    "dlcRecruitment": {
+      "mapId": "anna_on_the_run",
+      "mapName": "Anna on the Run",
+      "accessRequirement": "dragon_gate_unlocked",
+      "recruitmentTiming": "first_clear",
+      "recruitedUnitScaling": "fixed",
+      "npcScaling": {
+        "basis": "displayed_story_chapter",
+        "minimumLevel": 10,
+        "maximumLevel": 18,
+        "earliestChapter": 7,
+        "latestChapter": 27,
+        "carriesIntoRecruitedUnit": false,
+        "note": "NPC Anna scales from level 10 at the earliest Chapter 7 access to level 18 at Chapter 27. After the first clear, the recruited Anna is reset to her fixed level 10 join data; the NPC's scaled level, stats, weapon rank, and carried battle items do not transfer."
+      }
+    },
+    "inventory": [
+      "arms_scroll"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-other-recruitment",
+        "locator": "DLC exclusive > Anna",
+        "fields": [
+          "routeJoins",
+          "classId",
+          "dlcRecruitment"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-anna-fates",
+        "locator": "Fire Emblem Fates > Role; Starting stats and growth rates",
+        "fields": [
+          "level",
+          "classId",
+          "inventory",
+          "dlcRecruitment"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fewiki-anna-on-the-run",
+        "locator": "Character data; NPC data",
+        "fields": [
+          "routeJoins",
+          "dlcRecruitment"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "ryoma.birthright_guest",
+    "unitId": "ryoma",
+    "scenarioLabel": "Birthright Chapter 6 guest",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 6,
+        "timing": "start"
+      }
+    ],
+    "level": 4,
+    "classId": "swordmaster",
+    "gainsExperience": false,
+    "inventory": [
+      "raijinto"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Ryoma recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-ryoma",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright Chapter 6 guest",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "gainsExperience"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "ryoma.birthright",
+    "unitId": "ryoma",
+    "scenarioLabel": "Birthright permanent recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 13,
+        "timing": "end"
+      }
+    ],
+    "level": 4,
+    "classId": "swordmaster",
+    "inventory": [
+      "raijinto"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Ryoma recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-ryoma",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright permanent recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "ryoma.revelation",
+    "unitId": "ryoma",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 16,
+        "timing": "start"
+      }
+    ],
+    "level": 4,
+    "classId": "swordmaster",
+    "inventory": [
+      "raijinto",
+      "master_seal"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Ryoma recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-ryoma",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "hinoka.birthright_guest",
+    "unitId": "hinoka",
+    "scenarioLabel": "Birthright Chapter 6 guest",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 6,
+        "timing": "start"
+      }
+    ],
+    "level": 8,
+    "classId": "sky_knight",
+    "gainsExperience": false,
+    "inventory": [
+      "iron_naginata"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Hinoka recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinoka",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright Chapter 6 guest",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "gainsExperience"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "hinoka.birthright",
+    "unitId": "hinoka",
+    "scenarioLabel": "Birthright permanent recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 8,
+        "timing": "conditional"
+      }
+    ],
+    "level": 8,
+    "classId": "sky_knight",
+    "inventory": [
+      "guard_naginata"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Hinoka recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinoka",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright permanent recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "hinoka.revelation",
+    "unitId": "hinoka",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 16,
+        "timing": "start"
+      }
+    ],
+    "level": 17,
+    "classId": "sky_knight",
+    "inventory": [
+      "guard_naginata"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Hinoka recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinoka",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "takumi.birthright_guest",
+    "unitId": "takumi",
+    "scenarioLabel": "Birthright Chapter 6 guest",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 6,
+        "timing": "start"
+      }
+    ],
+    "level": 11,
+    "classId": "archer",
+    "gainsExperience": false,
+    "inventory": [
+      "fujin_yumi"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Takumi recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-takumi",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright Chapter 6 guest",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "gainsExperience"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "takumi.birthright",
+    "unitId": "takumi",
+    "scenarioLabel": "Birthright permanent recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 10,
+        "timing": "conditional"
+      }
+    ],
+    "level": 11,
+    "classId": "archer",
+    "inventory": [
+      "fujin_yumi"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Takumi recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-takumi",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright permanent recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "takumi.revelation",
+    "unitId": "takumi",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 10,
+        "timing": "end"
+      }
+    ],
+    "level": 11,
+    "classId": "archer",
+    "inventory": [
+      "fujin_yumi",
+      "iron_yumi"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Takumi recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-takumi",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "sakura.chapter_5",
+    "unitId": "sakura",
+    "scenarioLabel": "Chapter 5 recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 5,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 5,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 5,
+        "timing": "start"
+      }
+    ],
+    "level": 1,
+    "classId": "shrine_maiden",
+    "temporaryDeparture": {
+      "afterChapter": 5,
+      "routes": [
+        "conquest",
+        "revelation"
+      ],
+      "returns": [
+        {
+          "route": "revelation",
+          "chapter": 8,
+          "timing": "end"
+        }
+      ]
+    },
+    "inventory": [
+      "bloom_festal"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Sakura recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-sakura",
+        "locator": "Fire Emblem Fates > Role and starting stats > Chapter 5 recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "sakura.revelation",
+    "unitId": "sakura",
+    "scenarioLabel": "Revelation fixed return",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 8,
+        "timing": "end"
+      }
+    ],
+    "level": 4,
+    "classId": "shrine_maiden",
+    "inventory": [
+      "bloom_festal"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Sakura recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-sakura",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation fixed return",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "saizo.birthright",
+    "unitId": "saizo",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 7,
+        "timing": "end"
+      }
+    ],
+    "level": 7,
+    "classId": "ninja",
+    "inventory": [
+      "steel_shuriken",
+      "brass_shuriken"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Saizo recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-saizo",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "saizo.revelation",
+    "unitId": "saizo",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 11,
+        "timing": "conditional"
+      }
+    ],
+    "level": 9,
+    "classId": "ninja",
+    "inventory": [
+      "steel_shuriken",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Saizo recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-saizo",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "kagero.birthright",
+    "unitId": "kagero",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 10,
+        "timing": "end"
+      }
+    ],
+    "level": 10,
+    "classId": "ninja",
+    "inventory": [
+      "sting_shuriken"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Kagero recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kagero",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "kagero.revelation",
+    "unitId": "kagero",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 11,
+        "timing": "end"
+      }
+    ],
+    "level": 10,
+    "classId": "ninja",
+    "inventory": [],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Kagero recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kagero",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "setsuna.birthright",
+    "unitId": "setsuna",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 8,
+        "timing": "conditional"
+      }
+    ],
+    "level": 3,
+    "classId": "archer",
+    "inventory": [
+      "iron_yumi"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Setsuna recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-setsuna",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "setsuna.revelation",
+    "unitId": "setsuna",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 16,
+        "timing": "start"
+      }
+    ],
+    "level": 11,
+    "classId": "archer",
+    "inventory": [
+      "steel_yumi"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Setsuna recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-setsuna",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "azama.birthright",
+    "unitId": "azama",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 8,
+        "timing": "conditional"
+      }
+    ],
+    "level": 7,
+    "classId": "monk",
+    "inventory": [
+      "sun_festal"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Azama recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azama",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "azama.revelation",
+    "unitId": "azama",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 16,
+        "timing": "start"
+      }
+    ],
+    "level": 13,
+    "classId": "monk",
+    "inventory": [
+      "bloom_festal",
+      "sun_festal"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Azama recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-azama",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "hinata.birthright",
+    "unitId": "hinata",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 9,
+        "timing": "conditional"
+      }
+    ],
+    "level": 10,
+    "classId": "samurai",
+    "inventory": [
+      "steel_katana"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Hinata recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinata",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "hinata.revelation",
+    "unitId": "hinata",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 10,
+        "timing": "end"
+      }
+    ],
+    "level": 10,
+    "classId": "samurai",
+    "inventory": [
+      "iron_katana"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Hinata recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hinata",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "oboro.birthright",
+    "unitId": "oboro",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 9,
+        "timing": "conditional"
+      }
+    ],
+    "level": 10,
+    "classId": "spear_fighter",
+    "inventory": [
+      "steel_naginata"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Oboro recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-oboro",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "oboro.revelation",
+    "unitId": "oboro",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 10,
+        "timing": "end"
+      }
+    ],
+    "level": 10,
+    "classId": "spear_fighter",
+    "inventory": [
+      "iron_naginata"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Oboro recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-oboro",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "hana.birthright",
+    "unitId": "hana",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 7,
+        "timing": "start"
+      }
+    ],
+    "level": 4,
+    "classId": "samurai",
+    "inventory": [
+      "iron_katana"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Hana recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hana",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "hana.revelation",
+    "unitId": "hana",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 8,
+        "timing": "end"
+      }
+    ],
+    "level": 4,
+    "classId": "samurai",
+    "inventory": [
+      "iron_katana"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Hana recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hana",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "subaki.birthright",
+    "unitId": "subaki",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 7,
+        "timing": "start"
+      }
+    ],
+    "level": 5,
+    "classId": "sky_knight",
+    "inventory": [
+      "iron_naginata"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Subaki recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-subaki",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "subaki.revelation",
+    "unitId": "subaki",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 8,
+        "timing": "end"
+      }
+    ],
+    "level": 5,
+    "classId": "sky_knight",
+    "inventory": [
+      "iron_naginata"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Subaki recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-subaki",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "hayato.birthright",
+    "unitId": "hayato",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 8,
+        "timing": "end"
+      }
+    ],
+    "level": 1,
+    "classId": "diviner",
+    "inventory": [
+      "ox_spirit"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Hayato recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hayato",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "hayato.revelation",
+    "unitId": "hayato",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 9,
+        "timing": "end"
+      }
+    ],
+    "level": 9,
+    "classId": "diviner",
+    "inventory": [
+      "rat_spirit"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Hayato recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-hayato",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "rinkah.common",
+    "unitId": "rinkah",
+    "scenarioLabel": "Pre-route recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 4,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 4,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 4,
+        "timing": "start"
+      }
+    ],
+    "level": 4,
+    "classId": "oni_savage",
+    "temporaryDeparture": {
+      "afterChapter": 5,
+      "routes": [
+        "conquest",
+        "revelation"
+      ],
+      "returns": [
+        {
+          "route": "revelation",
+          "chapter": 9,
+          "timing": "start"
+        }
+      ]
+    },
+    "inventory": [
+      "brass_club"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Rinkah recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-rinkah",
+        "locator": "Fire Emblem Fates > Role and starting stats > Pre-route recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "fandom-fe14-wanderer",
+        "locator": "Strategy > Rinkah rejoins with her earlier training",
+        "fields": [
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "atwiki-fe14-rinkah",
+        "locator": "透魔編 > 5章のデータを引き継いで加入",
+        "fields": [
+          "temporaryDeparture"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "orochi.birthright",
+    "unitId": "orochi",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 7,
+        "timing": "end"
+      }
+    ],
+    "level": 5,
+    "classId": "diviner",
+    "inventory": [
+      "rat_spirit"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Orochi recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-orochi",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "orochi.revelation",
+    "unitId": "orochi",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 11,
+        "timing": "conditional"
+      }
+    ],
+    "level": 7,
+    "classId": "diviner",
+    "inventory": [
+      "ox_spirit",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Orochi recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-orochi",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "kaden.birthright",
+    "unitId": "kaden",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 12,
+        "timing": "start"
+      }
+    ],
+    "level": 14,
+    "classId": "kitsune",
+    "inventory": [
+      "beaststone"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Kaden recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaden",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "kaden.revelation",
+    "unitId": "kaden",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 13,
+        "timing": "start"
+      }
+    ],
+    "level": 14,
+    "classId": "kitsune",
+    "inventory": [
+      "beaststone"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Kaden recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaden",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "reina.birthright",
+    "unitId": "reina",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 11,
+        "timing": "conditional"
+      }
+    ],
+    "level": 1,
+    "classId": "kinshi_knight",
+    "inventory": [
+      "iron_yumi",
+      "steel_naginata",
+      "concoction"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Reina recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-reina",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "reina.revelation",
+    "unitId": "reina",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 11,
+        "timing": "conditional"
+      }
+    ],
+    "level": 1,
+    "classId": "kinshi_knight",
+    "inventory": [
+      "iron_naginata",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Reina recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-reina",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "scarlet.birthright",
+    "unitId": "scarlet",
+    "scenarioLabel": "Birthright recruitment",
+    "routeJoins": [
+      {
+        "route": "birthright",
+        "chapter": 13,
+        "timing": "end"
+      }
+    ],
+    "level": 1,
+    "classId": "wyvern_lord",
+    "inventory": [
+      "killer_axe"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-recruitment",
+        "locator": "Scarlet recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-scarlet",
+        "locator": "Fire Emblem Fates > Role and starting stats > Birthright recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "scarlet.revelation",
+    "unitId": "scarlet",
+    "scenarioLabel": "Revelation temporary recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 16,
+        "timing": "start"
+      }
+    ],
+    "level": 3,
+    "classId": "wyvern_lord",
+    "permanentlyLeavesAfterChapter": 18,
+    "inventory": [
+      "killer_axe",
+      "hand_axe"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Scarlet recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-scarlet",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation temporary recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "permanentlyLeavesAfterChapter"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "xander.conquest_guest",
+    "unitId": "xander",
+    "scenarioLabel": "Conquest Chapter 6 guest",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 6,
+        "timing": "start"
+      }
+    ],
+    "level": 3,
+    "classId": "paladin",
+    "gainsExperience": false,
+    "inventory": [
+      "siegfried",
+      "elixir"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Xander recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-xander",
+        "locator": "Fire Emblem Fates > Role and starting stats > Conquest Chapter 6 guest",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "gainsExperience"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "xander.conquest",
+    "unitId": "xander",
+    "scenarioLabel": "Conquest permanent recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 16,
+        "timing": "start"
+      }
+    ],
+    "level": 4,
+    "classId": "paladin",
+    "inventory": [
+      "siegfried"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Xander recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-xander",
+        "locator": "Fire Emblem Fates > Role and starting stats > Conquest permanent recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "xander.revelation",
+    "unitId": "xander",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 17,
+        "timing": "during",
+        "turn": 2
+      }
+    ],
+    "level": 4,
+    "classId": "paladin",
+    "inventory": [
+      "siegfried"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Xander recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-xander",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "camilla.conquest_guest",
+    "unitId": "camilla",
+    "scenarioLabel": "Conquest Chapter 6 guest",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 6,
+        "timing": "start"
+      }
+    ],
+    "level": 1,
+    "classId": "malig_knight",
+    "inventory": [
+      "steel_axe",
+      "fire"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Camilla recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Camilla character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-camilla",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ],
+    "gainsExperience": false
+  },
+  {
+    "id": "camilla.conquest",
+    "unitId": "camilla",
+    "scenarioLabel": "Conquest permanent recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 10,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 1,
+    "classId": "malig_knight",
+    "inventory": [
+      "steel_axe",
+      "thunder"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Camilla recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Camilla character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-camilla",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "camilla.revelation",
+    "unitId": "camilla",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 12,
+        "timing": "end"
+      }
+    ],
+    "level": 1,
+    "classId": "malig_knight",
+    "inventory": [
+      "steel_axe",
+      "hand_axe"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Camilla recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Camilla character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-camilla",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "leo.conquest_guest",
+    "unitId": "leo",
+    "scenarioLabel": "Conquest Chapter 6 guest",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 6,
+        "timing": "start"
+      }
+    ],
+    "level": 1,
+    "classId": "dark_knight",
+    "gainsExperience": false,
+    "inventory": [
+      "brynhildr",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Leo recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-leo",
+        "locator": "Fire Emblem Fates > Role and starting stats > Conquest Chapter 6 guest",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory",
+          "gainsExperience"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "leo.conquest",
+    "unitId": "leo",
+    "scenarioLabel": "Conquest permanent recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 14,
+        "timing": "start"
+      }
+    ],
+    "level": 2,
+    "classId": "dark_knight",
+    "inventory": [
+      "brynhildr",
+      "iron_sword"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Leo recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-leo",
+        "locator": "Fire Emblem Fates > Role and starting stats > Conquest permanent recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "leo.revelation",
+    "unitId": "leo",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 17,
+        "timing": "during",
+        "turn": 2
+      }
+    ],
+    "level": 2,
+    "classId": "dark_knight",
+    "inventory": [
+      "brynhildr"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Leo recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-leo",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "id": "elise.conquest_guest",
     "unitId": "elise",
     "scenarioLabel": "Conquest Chapter 6 guest",
@@ -1194,6 +3298,599 @@
           "inventory"
         ],
         "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "laslow.conquest",
+    "unitId": "laslow",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 12,
+        "timing": "start"
+      }
+    ],
+    "level": 12,
+    "classId": "mercenary",
+    "inventory": [
+      "steel_sword",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Laslow recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Laslow character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-laslow",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "laslow.revelation",
+    "unitId": "laslow",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 17,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 16,
+    "classId": "mercenary",
+    "inventory": [
+      "steel_sword",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Laslow recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Laslow character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-laslow",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "peri.conquest",
+    "unitId": "peri",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 12,
+        "timing": "start"
+      }
+    ],
+    "level": 10,
+    "classId": "cavalier",
+    "inventory": [
+      "steel_lance",
+      "iron_sword"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Peri recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Peri character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-peri",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "peri.revelation",
+    "unitId": "peri",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 17,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 16,
+    "classId": "cavalier",
+    "inventory": [
+      "javelin",
+      "steel_lance",
+      "iron_sword"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Peri recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Peri character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-peri",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena.conquest",
+    "unitId": "selena",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 10,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 10,
+    "classId": "mercenary",
+    "inventory": [
+      "iron_sword",
+      "bronze_sword",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Selena recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Selena character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-selena",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "selena.revelation",
+    "unitId": "selena",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 12,
+        "timing": "end"
+      }
+    ],
+    "level": 10,
+    "classId": "mercenary",
+    "inventory": [
+      "iron_sword"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Selena recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Selena character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-selena",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka.conquest",
+    "unitId": "beruka",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 10,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 9,
+    "classId": "wyvern_rider",
+    "inventory": [
+      "iron_axe"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Beruka recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Beruka character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-beruka",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "beruka.revelation",
+    "unitId": "beruka",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 12,
+        "timing": "end"
+      }
+    ],
+    "level": 9,
+    "classId": "wyvern_rider",
+    "inventory": [
+      "iron_axe"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Beruka recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Beruka character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-beruka",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin.conquest",
+    "unitId": "odin",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 8,
+        "timing": "during",
+        "turn": 2
+      }
+    ],
+    "level": 5,
+    "classId": "dark_mage",
+    "inventory": [
+      "thunder",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Odin recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Odin character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-odin",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "odin.revelation",
+    "unitId": "odin",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 17,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 12,
+    "classId": "dark_mage",
+    "inventory": [
+      "thunder"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Odin recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Odin character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-odin",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles.conquest",
+    "unitId": "niles",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 8,
+        "timing": "during",
+        "turn": 2
+      }
+    ],
+    "level": 8,
+    "classId": "outlaw",
+    "inventory": [
+      "iron_bow"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Niles recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Niles character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-niles",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "niles.revelation",
+    "unitId": "niles",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 17,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 14,
+    "classId": "outlaw",
+    "inventory": [
+      "steel_bow",
+      "vulnerary"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Niles recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Niles character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-niles",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1396,6 +4093,378 @@
       {
         "sourceId": "fandom-fe14-arthur",
         "locator": "Fire Emblem Fates > Base Stats > Revelation Chapter 14",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "nyx.conquest",
+    "unitId": "nyx",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 9,
+        "timing": "during"
+      }
+    ],
+    "level": 9,
+    "classId": "dark_mage",
+    "inventory": [
+      "fire",
+      "fimbulvetr"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Nyx recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Nyx character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-nyx",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "nyx.revelation",
+    "unitId": "nyx",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 15,
+        "timing": "during"
+      }
+    ],
+    "level": 9,
+    "classId": "dark_mage",
+    "inventory": [
+      "fire"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Nyx recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Nyx character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-nyx",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "charlotte.conquest",
+    "unitId": "charlotte",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 13,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 10,
+    "classId": "fighter",
+    "inventory": [
+      "steel_axe"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Charlotte recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Charlotte character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-charlotte",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "charlotte.revelation",
+    "unitId": "charlotte",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 14,
+        "timing": "start"
+      }
+    ],
+    "level": 10,
+    "classId": "fighter",
+    "inventory": [
+      "steel_axe"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Charlotte recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Charlotte character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-charlotte",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "benny.conquest",
+    "unitId": "benny",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 13,
+        "timing": "during",
+        "turn": 3
+      }
+    ],
+    "level": 15,
+    "classId": "knight",
+    "inventory": [
+      "steel_lance"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Benny recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-other-data",
+        "locator": "Benny character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-benny",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "benny.revelation",
+    "unitId": "benny",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 14,
+        "timing": "start"
+      }
+    ],
+    "level": 15,
+    "classId": "knight",
+    "inventory": [
+      "iron_lance"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Benny recruitment",
+        "fields": [
+          "routeJoins"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-revelation-character-data",
+        "locator": "Benny character data",
+        "fields": [
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-benny",
+        "locator": "Fire Emblem Fates > Starting stats and growth rates > Playable",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "keaton.conquest",
+    "unitId": "keaton",
+    "scenarioLabel": "Conquest recruitment",
+    "routeJoins": [
+      {
+        "route": "conquest",
+        "chapter": 14,
+        "timing": "conditional"
+      }
+    ],
+    "level": 15,
+    "classId": "wolfskin",
+    "inventory": [
+      "beaststone",
+      "beastrune"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-recruitment",
+        "locator": "Keaton recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-keaton",
+        "locator": "Fire Emblem Fates > Role and starting stats > Conquest recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
+    "id": "keaton.revelation",
+    "unitId": "keaton",
+    "scenarioLabel": "Revelation recruitment",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 13,
+        "timing": "start"
+      }
+    ],
+    "level": 15,
+    "classId": "wolfskin",
+    "inventory": [
+      "beaststone"
+    ],
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-revelation-recruitment",
+        "locator": "Keaton recruitment",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-keaton",
+        "locator": "Fire Emblem Fates > Role and starting stats > Revelation recruitment",
         "fields": [
           "routeJoins",
           "level",
