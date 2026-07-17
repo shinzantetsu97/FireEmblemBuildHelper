@@ -122,6 +122,27 @@ describe("Shigure father scenarios", () => {
   });
 });
 
+describe("exhaustive offspring class collisions", () => {
+  it("resolves the three parallel-tree inheritance exceptions", () => {
+    const shigure = fe14Data.units.find((unit) => unit.identity.id === "shigure")!;
+    const nina = fe14Data.units.find((unit) => unit.identity.id === "nina")!;
+    const percy = fe14Data.units.find((unit) => unit.identity.id === "percy")!;
+
+    expect(resolveOffspringScenario(shigure, "jakob")).toMatchObject({
+      inheritedClassId: "troubadour",
+      fixedInheritedClassId: "wyvern_rider",
+    });
+    expect(resolveOffspringScenario(nina, "nyx")).toMatchObject({
+      fixedInheritedClassId: "dark_mage",
+      inheritedClassId: "diviner",
+    });
+    expect(resolveOffspringScenario(percy, "beruka")).toMatchObject({
+      fixedInheritedClassId: "fighter",
+      inheritedClassId: "sky_knight",
+    });
+  });
+});
+
 describe("Kana avatar-child scenarios", () => {
   const kana = fe14Data.units.find((unit) => unit.identity.id === "kana")!;
   const corrin = fe14Data.units.find((unit) => unit.identity.id === "corrin")!;

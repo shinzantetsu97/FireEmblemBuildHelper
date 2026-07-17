@@ -10,6 +10,11 @@ Fire Emblem Fates / Fire Emblem if / FE14 is the first supported game. Later gam
 
 The product is moving toward a rules-aware Fire Emblem build and run planner. Its foundation is curated, validated game data; its user-facing value is helping players explore legal build paths and understand their campaign-wide consequences.
 
+## Immediate TODO
+
+- [ ] **Add the FE14 skill-data foundation as soon as possible.** Create validated skill JSON with stable IDs, localized names, effects, acquisition requirements, and source provenance. Associate class-learned skills with their class tree, class level, and other relevant restrictions so unit pages and the planner can calculate which skills a build can legally access.
+- [ ] **Allow players to freely configure unit-page layouts.** Support changing section order and visibility, including a layout that places accessible skills near the top for planning-focused use. Treat layout choices as player preferences and preserve them across unit navigation and browser sessions once the shared IndexedDB state boundary is available.
+
 ## Phase 1: Local Foundation
 
 **Outcome:** A player can create and revisit browser-local planning space, understand how to protect it, and use a real frontend interaction.

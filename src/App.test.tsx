@@ -20,6 +20,8 @@ describe("notes workspace", () => {
     expect(screen.getByRole("heading", { name: "Game Library" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Fire Emblem If \/ Fates/ })).toHaveAttribute("href", "/FE14/Units");
     expect(screen.getByRole("heading", { name: "Version log", level: 2 })).toBeInTheDocument();
+    expect(screen.getByText("v0.4.1")).toBeInTheDocument();
+    expect(screen.getByText("Offspring inheritance edge-case fixes")).toBeInTheDocument();
     expect(screen.getByText("v0.3.0")).toBeInTheDocument();
     expect(screen.getByText("Complete FE14 first-generation roster")).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Notes" })).toHaveAttribute("href", "/Notes");
