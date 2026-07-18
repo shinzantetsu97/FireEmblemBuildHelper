@@ -7,6 +7,10 @@
     "firstGenerationUnits": 48,
     "secondGenerationUnits": 21,
     "normalizedUnits": 69,
+    "classSkills": 106,
+    "classSkillAcquisitionEdges": 113,
+    "personalSkills": 69,
+    "skillIcons": 175,
     "errors": 0,
     "warnings": 75
   },

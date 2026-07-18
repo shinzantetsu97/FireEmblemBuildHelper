@@ -5,6 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "data:inventory:skills": "tsx scripts/data/fe14/extract-skill-source-inventory.ts",
+    "data:report:skills": "tsx scripts/data/fe14/summarize-skill-source-inventory.ts",
+    "data:manifest:skill-icons": "tsx scripts/data/fe14/generate-skill-icon-manifest.ts",
+    "data:download:skill-icons": "tsx scripts/data/fe14/download-skill-icons.ts",
+    "data:build:class-skills": "tsx scripts/data/fe14/generate-class-skills.ts",
+    "data:consolidate:personal-skills": "tsx scripts/data/fe14/consolidate-personal-skills.ts",
     "data:validate": "tsx scripts/data/fe14/validate.ts",
     "data:build": "tsx scripts/data/fe14/generate-runtime.ts",
     "data:seed:offspring": "tsx scripts/data/fe14/generate-offspring-data.ts",

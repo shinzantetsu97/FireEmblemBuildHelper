@@ -12,7 +12,8 @@ describe("notes workspace", () => {
     await resetBrowserStorage();
   });
 
-  it("uses the project home page at root and keeps notes on their own route", () => {
+  it("uses the project home page at root and keeps the complete release archive concise", async () => {
+    const user = userEvent.setup();
     window.history.replaceState({}, "", "/");
     render(<App />);
 
@@ -20,10 +21,17 @@ describe("notes workspace", () => {
     expect(screen.getByRole("heading", { name: "Game Library" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Fire Emblem If \/ Fates/ })).toHaveAttribute("href", "/FE14/Units");
     expect(screen.getByRole("heading", { name: "Version log", level: 2 })).toBeInTheDocument();
+    expect(screen.getByText("v0.5.0")).toBeInTheDocument();
+    expect(screen.getByText("FE14 skill data and accessible class planning")).toBeInTheDocument();
     expect(screen.getByText("v0.4.2")).toBeInTheDocument();
     expect(screen.getByText("Offspring inheritance edge-case fixes")).toBeInTheDocument();
+    expect(screen.queryByText("v0.3.0")).not.toBeInTheDocument();
+    expect(screen.getAllByText(/^v\d/)).toHaveLength(5);
+    await user.click(screen.getByRole("button", { name: "View complete history" }));
     expect(screen.getByText("v0.3.0")).toBeInTheDocument();
     expect(screen.getByText("Complete FE14 first-generation roster")).toBeInTheDocument();
+    expect(screen.getByText("v0.0.1")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Show newest releases only" })).toHaveAttribute("aria-expanded", "true");
     expect(screen.getByRole("link", { name: "Notes" })).toHaveAttribute("href", "/Notes");
     expect(screen.queryByRole("link", { name: "Updates" })).not.toBeInTheDocument();
   });
@@ -134,16 +142,53 @@ describe("notes workspace", () => {
     expect(screen.getByText("Spear Fighter")).toBeInTheDocument();
     expect(screen.getByText("Apothecary")).toBeInTheDocument();
     expect(screen.getByText("Wyvern Rider")).toBeInTheDocument();
-    expect(screen.getAllByText("Troubadour")[0]).toHaveAttribute(
+    const personalSkill = screen.getByText("Devoted Partner").closest(".skill-block") as HTMLElement;
+    const personalSkillIcon = personalSkill.querySelector("img") as HTMLImageElement;
+    expect(personalSkillIcon.getAttribute("src")).toContain("devoted_partner.png");
+    expect(personalSkillIcon).toHaveAttribute("alt", "");
+    expect(personalSkillIcon).toHaveAttribute("width", "24");
+    expect(personalSkill.querySelector("svg")).not.toBeInTheDocument();
+    const nativeClassAccess = screen.getByRole("heading", { name: "Native class access" }).closest("section") as HTMLElement;
+    expect(within(nativeClassAccess).getByText("Troubadour")).toHaveAttribute(
       "title",
       "Troubadour promotes to Strategist or Maid / Butler.",
     );
+    expect(screen.queryByRole("button", { name: "Gentilhomme: view skill details" })).not.toBeInTheDocument();
+    await user.hover(screen.getByRole("button", { name: "Demoiselle: view skill details" }));
+    expect(await screen.findByText("Male allies within a 2 tile radius receive 2 less damage during battles.")).toBeInTheDocument();
+    expect(screen.getByText(/Level 10 as Troubadour \(Female only\)/i)).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "References" })).toBeInTheDocument();
     expect(screen.queryByText("Audit trail")).not.toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "JSON" }));
     expect(screen.getByLabelText("Felicia JSON tree")).toBeInTheDocument();
     expect(screen.getAllByText('"felicia"').length).toBeGreaterThan(0);
+  });
+
+  it("opens the complete FE14 class-skill directory from its direct route", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE14/Skills");
+    const view = render(<App />);
+
+    expect(screen.getByRole("heading", { name: "FE14 Class Skills", level: 1 })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "FE14 Skills" })).toHaveClass("active");
+    expect(view.container.querySelectorAll(".class-skill-class-row input[type='checkbox']")).toHaveLength(65);
+    expect(view.container.querySelectorAll(".class-skill-result")).toHaveLength(106);
+    expect(screen.getAllByText("Locktouch")).toHaveLength(1);
+
+    await user.click(screen.getByRole("button", { name: "Nohrian Class" }));
+    expect(screen.getByRole("checkbox", { name: "Outlaw" })).toBeChecked();
+    expect(screen.queryByRole("checkbox", { name: "Ninja" })).not.toBeInTheDocument();
+  });
+
+  it("navigates to FE14 Skills without a page reload", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE14/Units");
+    render(<App />);
+
+    await user.click(screen.getByRole("link", { name: "FE14 Skills" }));
+    expect(window.location.pathname).toBe("/FE14/Skills");
+    expect(screen.getByRole("heading", { name: "FE14 Class Skills", level: 1 })).toBeInTheDocument();
   });
 
   it("opens Jakob's complete review slice", async () => {
@@ -157,8 +202,8 @@ describe("notes workspace", () => {
     expect(screen.getAllByText("Chapter 16")).toHaveLength(3);
     expect(screen.getByText("Dagger D, Staff D")).toBeInTheDocument();
     expect(screen.getByText("Dagger C (~1/3 to B), Staff C (~1/3 to B)")).toBeInTheDocument();
-    expect(screen.getByText("Outlaw")).toBeInTheDocument();
-    expect(screen.getByText("Apothecary")).toBeInTheDocument();
+    expect(screen.getAllByText("Outlaw").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Apothecary").length).toBeGreaterThan(0);
     expect(screen.getByText(/With female Corrin, Jakob leaves after Chapter 3/i)).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "JSON" }));
@@ -182,8 +227,8 @@ describe("notes workspace", () => {
     expect(screen.getAllByText("Dagger D + retained Chapter 5 proficiency")).toHaveLength(2);
     expect(screen.getByText(/level 9 template, then adds every level gained/i)).toBeInTheDocument();
     expect(screen.getByText(/remains in the army after Chapter 15 only if Corrin has reached A support/i)).toBeInTheDocument();
-    expect(screen.getByText("Outlaw")).toBeInTheDocument();
-    expect(screen.getByText("Apothecary")).toBeInTheDocument();
+    expect(screen.getAllByText("Outlaw").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Apothecary").length).toBeGreaterThan(0);
     expect(screen.getAllByText("Str")).not.toHaveLength(0);
     expect(screen.queryByText(/fixed \+4 Strength adjustment/i)).not.toBeInTheDocument();
 
@@ -205,8 +250,8 @@ describe("notes workspace", () => {
     expect(screen.getByText("Sword C, Lance D")).toBeInTheDocument();
     expect(screen.getByText("Sword D, Lance E")).toBeInTheDocument();
     expect(screen.getByText("Sword B, Lance B")).toBeInTheDocument();
-    expect(screen.getByText("Outlaw")).toBeInTheDocument();
-    expect(screen.getByText("Apothecary")).toBeInTheDocument();
+    expect(screen.getAllByText("Outlaw").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Apothecary").length).toBeGreaterThan(0);
 
     await user.click(screen.getByRole("button", { name: "JSON" }));
     expect(screen.getByLabelText("Silas JSON tree")).toBeInTheDocument();
@@ -252,9 +297,9 @@ describe("notes workspace", () => {
     expect(screen.getByText(/talking to her with Corrin in Paralogue 1/i)).toBeInTheDocument();
     expect(screen.getByText(/Aptitude, which adds 10% to every growth rate/i)).toBeInTheDocument();
     expect(screen.getByText(/cannot access Apothecary, but she still reaches Merchant/i)).toBeInTheDocument();
-    expect(screen.getByText("Oni Savage")).toBeInTheDocument();
-    expect(screen.getByText("Wyvern Rider")).toBeInTheDocument();
-    expect(screen.getByText("Apothecary")).toBeInTheDocument();
+    expect(screen.getAllByText("Oni Savage").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Wyvern Rider").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Apothecary").length).toBeGreaterThan(0);
     expect(screen.getAllByText("Villager")[0]).toHaveAttribute(
       "title",
       "Villager promotes to Merchant or Master of Arms.",
@@ -345,8 +390,8 @@ describe("notes workspace", () => {
     expect(screen.getByText("Dagger B, Staff B")).toBeInTheDocument();
     expect(screen.getByText("Dagger C, Staff B")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Friendship Seal (A+)" })).toBeInTheDocument();
-    expect(screen.getAllByText("Mercenary")).toHaveLength(2);
-    expect(screen.getByText("Dark Mage")).toBeInTheDocument();
+    expect(screen.getAllByText("Mercenary").length).toBeGreaterThan(1);
+    expect(screen.getAllByText("Dark Mage").length).toBeGreaterThan(0);
     const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
     const feliciaRow = within(relationships).getByText("Felicia").closest(".support-row") as HTMLElement | null;
     expect(feliciaRow).not.toBeNull();
@@ -449,7 +494,7 @@ describe("notes workspace", () => {
     expect(within(arthurHeader).queryByText("Personal skill")).not.toBeInTheDocument();
     expect(within(arthurHeader).queryByText("Misfortunate")).not.toBeInTheDocument();
     expect(screen.getByText("255%")).toBeInTheDocument();
-    expect(screen.getAllByText("Outlaw")).toHaveLength(2);
+    expect(screen.getAllByText("Outlaw").length).toBeGreaterThan(1);
     expect(screen.getByText("Female Corrin Talent only")).toBeInTheDocument();
     const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
     const friendshipGroup = within(relationships).getByRole("heading", { name: "Friendship Seal (A+)" }).parentElement;
@@ -460,7 +505,7 @@ describe("notes workspace", () => {
     expect(friendshipGroup?.parentElement).toHaveClass("support-column-friendship");
     expect(noGrantGroup?.parentElement).toBe(friendshipGroup?.parentElement);
     expect(partnerGroup?.parentElement).toHaveClass("support-column-partner");
-    expect(Array.from(friendshipGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent)).toEqual([
+    expect(Array.from(friendshipGroup!.querySelectorAll(".support-row > span:nth-child(2)"), (node) => node.textContent)).toEqual([
       "Niles",
       "Benny",
       "Keaton",
@@ -468,7 +513,7 @@ describe("notes workspace", () => {
     ]);
     expect(within(noGrantGroup!).getByText("Corrin (M)")).toBeInTheDocument();
     expect(within(noGrantGroup!).getByText("No class grant")).toBeInTheDocument();
-    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent).slice(0, 6)).toEqual([
+    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:nth-child(2)"), (node) => node.textContent).slice(0, 6)).toEqual([
       "Corrin (F)",
       "Azura",
       "Felicia",
@@ -503,7 +548,7 @@ describe("notes workspace", () => {
     const partnerGroup = within(relationships).getByRole("heading", { name: "Partner Seal (S)" }).parentElement;
     expect(friendshipGroup).not.toBeNull();
     expect(partnerGroup).not.toBeNull();
-    expect(Array.from(friendshipGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent)).toEqual([
+    expect(Array.from(friendshipGroup!.querySelectorAll(".support-row > span:nth-child(2)"), (node) => node.textContent)).toEqual([
       "Mozu",
       "Elise",
       "Nyx",
@@ -511,7 +556,7 @@ describe("notes workspace", () => {
     ]);
     expect(within(noGrantGroup!).getByText("Corrin (F)")).toBeInTheDocument();
     expect(within(noGrantGroup!).getByText("No class grant")).toBeInTheDocument();
-    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent).slice(0, 6)).toEqual([
+    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:nth-child(2)"), (node) => node.textContent).slice(0, 6)).toEqual([
       "Corrin (M)",
       "Jakob",
       "Silas",
@@ -569,7 +614,7 @@ describe("notes workspace", () => {
     { slug: "Orochi", name: "Orochi", cards: 2, levels: ["Lv. 5 Diviner", "Lv. 7 Diviner"], growth: "275%", skill: "Capture" },
     { slug: "Hinoka", name: "Hinoka", cards: 3, levels: ["Lv. 8 Sky Knight", "Lv. 17 Sky Knight"], growth: "305%", skill: "Rallying Cry" },
     { slug: "Azama", name: "Azama", cards: 2, levels: ["Lv. 7 Monk", "Lv. 13 Monk"], growth: "310%", skill: "Divine Retribution" },
-    { slug: "Setsuna", name: "Setsuna", cards: 2, levels: ["Lv. 3 Archer", "Lv. 11 Archer"], growth: "225%", skill: "Optimist" },
+    { slug: "Setsuna", name: "Setsuna", cards: 2, levels: ["Lv. 3 Archer", "Lv. 11 Archer"], growth: "225%", skill: "Optimistic" },
     { slug: "Hayato", name: "Hayato", cards: 2, levels: ["Lv. 1 Diviner", "Lv. 9 Diviner"], growth: "315%", skill: "Pride" },
     { slug: "Oboro", name: "Oboro", cards: 2, levels: ["Lv. 10 Spear Fighter"], growth: "280%", skill: "Nohr Enmity" },
     { slug: "Hinata", name: "Hinata", cards: 2, levels: ["Lv. 10 Samurai"], growth: "235%", skill: "Triple Threat" },
@@ -627,8 +672,8 @@ describe("notes workspace", () => {
     window.history.replaceState({}, "", "/FE14/Units/Reina");
     const { unmount } = render(<App />);
     expect(screen.getByText(/Reina supports only Corrin/i)).toBeInTheDocument();
-    expect(screen.getByText("Diviner")).toBeInTheDocument();
-    expect(screen.getByText("Ninja")).toBeInTheDocument();
+    expect(screen.getAllByText("Diviner").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Ninja").length).toBeGreaterThan(0);
     unmount();
 
     window.history.replaceState({}, "", "/FE14/Units/Scarlet");
@@ -637,8 +682,8 @@ describe("notes workspace", () => {
     expect(screen.getByText("WARNING for Revelation player")).toBeInTheDocument();
     expect(screen.getByText(/permanently leaves the playable army at the end of Revelation Chapter 18/i)).toBeInTheDocument();
     expect(screen.getByText(/This warning does not apply to Birthright/i)).toBeInTheDocument();
-    expect(screen.getByText("Outlaw")).toBeInTheDocument();
-    expect(screen.getByText("Knight")).toBeInTheDocument();
+    expect(screen.getAllByText("Outlaw").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Knight").length).toBeGreaterThan(0);
     expect(screen.getByText(/In Revelation only, Scarlet permanently leaves the playable army at the end of Chapter 18/i)).toBeInTheDocument();
     expect(screen.getAllByText(/In Revelation only/i)).toHaveLength(1);
   });
@@ -651,6 +696,10 @@ describe("notes workspace", () => {
     expect(screen.getByRole("heading", { name: "Corrin", level: 1 })).toBeInTheDocument();
     expect(screen.getAllByText("Prologue")).toHaveLength(3);
     expect(screen.getByRole("heading", { name: "Corrin configuration" })).toBeInTheDocument();
+    const modifierMatrices = screen.getByText("Boon and bane modifier matrices").closest("details") as HTMLDetailsElement;
+    expect(modifierMatrices).not.toHaveAttribute("open");
+    await user.click(screen.getByText("Boon and bane modifier matrices"));
+    expect(modifierMatrices).toHaveAttribute("open");
     expect(screen.getByRole("heading", { name: "Starting base modifiers" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Personal growth modifiers" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Cap modifiers" })).toBeInTheDocument();
@@ -676,6 +725,9 @@ describe("notes workspace", () => {
     expect(within(friendshipGroup).queryByText("Felicia")).not.toBeInTheDocument();
     expect(within(partnerGroup).getByText("Felicia")).toBeInTheDocument();
     expect(within(partnerGroup).queryByText("Jakob")).not.toBeInTheDocument();
+    const sakuraRow = within(partnerGroup).getByText("Sakura").closest(".support-row") as HTMLElement;
+    expect(within(sakuraRow).getByText("Monk")).toBeInTheDocument();
+    expect(within(sakuraRow).queryByText("Shrine Maiden")).not.toBeInTheDocument();
 
     await user.click(within(genderToggle).getByRole("button", { name: "Female" }));
     expect(screen.getByAltText("Female Corrin portrait").getAttribute("src")).not.toBe(malePortraitSource);
@@ -683,6 +735,9 @@ describe("notes workspace", () => {
     expect(within(friendshipGroup).queryByText("Jakob")).not.toBeInTheDocument();
     expect(within(partnerGroup).getByText("Jakob")).toBeInTheDocument();
     expect(within(partnerGroup).queryByText("Felicia")).not.toBeInTheDocument();
+    const azamaRow = within(partnerGroup).getByText("Azama").closest(".support-row") as HTMLElement;
+    expect(within(azamaRow).getByText("Shrine Maiden")).toBeInTheDocument();
+    expect(within(azamaRow).queryByText("Monk")).not.toBeInTheDocument();
 
     const startingBoon = screen.getByLabelText("Starting bases boon");
     const startingBane = screen.getByLabelText("Starting bases bane");
@@ -806,7 +861,7 @@ describe("notes workspace", () => {
     const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
     const partnerGroup = within(relationships).getByRole("heading", { name: "Partner Seal (S)" }).parentElement;
     expect(partnerGroup).not.toBeNull();
-    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:first-child"), (node) => node.textContent).filter((name) => name?.startsWith("Corrin ("))).toEqual([
+    expect(Array.from(partnerGroup!.querySelectorAll(".support-row > span:nth-child(2)"), (node) => node.textContent).filter((name) => name?.startsWith("Corrin ("))).toEqual([
       "Corrin (F)",
       "Corrin (M)",
     ]);
@@ -846,6 +901,9 @@ describe("notes workspace", () => {
 
     const header = screen.getByRole("heading", { name: "Dwyer", level: 1 }).closest(".unit-header") as HTMLElement;
     expect(within(header).getByText("Dragon Vein").nextElementSibling).toHaveTextContent("Parent-dependent");
+    const personalSkill = screen.getByText("Born Steward").closest(".skill-block") as HTMLElement;
+    expect(personalSkill.querySelector("img")?.getAttribute("src")).toContain("born_steward.png");
+    expect(personalSkill.querySelector("svg")).not.toBeInTheDocument();
   });
 
   it("updates an offspring's inherited unit traits with the selected parent", async () => {
@@ -871,8 +929,9 @@ describe("notes workspace", () => {
     await user.selectOptions(screen.getByLabelText("Father"), "jakob");
     const parentScenario = screen.getByRole("region", { name: "Choose Shigure's father" });
     expect(within(parentScenario).getByText("Sibling").nextElementSibling).toHaveTextContent("Dwyer");
-    expect(screen.getByText("From Azura").nextElementSibling).toHaveTextContent("Wyvern Rider");
-    expect(screen.getByText("From Jakob").nextElementSibling).toHaveTextContent("Troubadour");
+    const resolvedAccess = screen.getByRole("heading", { name: "Resolved class access" }).closest("section") as HTMLElement;
+    expect(within(resolvedAccess).getByText("From Azura").nextElementSibling).toHaveTextContent("Wyvern Rider");
+    expect(within(resolvedAccess).getByText("From Jakob").nextElementSibling).toHaveTextContent("Troubadour");
   });
 
   it("resolves Kana's gender, Talent, and offspring-parent scenario from one control set", async () => {
@@ -891,7 +950,8 @@ describe("notes workspace", () => {
     expect(screen.getByLabelText("Sophie's mother")).toBeInTheDocument();
     await user.selectOptions(screen.getByLabelText("Sophie's mother"), "felicia");
     expect(screen.getByText("Cap inheritance bonus").nextElementSibling).toHaveTextContent("+0 (offspring parent)");
-    expect(screen.getByText("From Sophie").nextElementSibling).toHaveTextContent("Mercenary");
+    const resolvedAccess = screen.getByRole("heading", { name: "Resolved class access" }).closest("section") as HTMLElement;
+    expect(within(resolvedAccess).getByText("From Sophie").nextElementSibling).toHaveTextContent("Mercenary");
     expect(screen.getByText(/Sophie's rates are first resolved with Felicia/i)).toBeInTheDocument();
 
     await user.selectOptions(screen.getByLabelText("Kana gender"), "male");
@@ -904,6 +964,124 @@ describe("notes workspace", () => {
 
     await user.selectOptions(screen.getByLabelText("Parent"), "jakob");
     await user.selectOptions(screen.getByLabelText("Corrin Talent"), "troubadour");
-    expect(screen.getByText("From Corrin (F)").nextElementSibling).toHaveTextContent("No additional tree");
+    expect(within(resolvedAccess).getByText("From Corrin (F)").nextElementSibling).toHaveTextContent("No additional tree");
+  });
+
+  it("previews one Friendship and one Partner Seal class tree independently", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE14/Units/Felicia");
+    render(<App />);
+
+    const sources = screen.getByLabelText("Class access sources");
+    const browser = screen.getByRole("region", { name: "Available class skills" });
+    const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
+    expect(within(sources).getByText("Native")).toBeInTheDocument();
+    expect(within(sources).getByText("Heart Seal")).toBeInTheDocument();
+    expect(within(browser).queryByText("Cavalier")).not.toBeInTheDocument();
+
+    await user.click(within(relationships).getByRole("radio", { name: "Preview Peri Friendship Seal class skills" }));
+    expect(within(sources).getByText("Friendship: Peri")).toBeInTheDocument();
+    expect(within(browser).getByText("Cavalier")).toBeInTheDocument();
+
+    await user.click(within(relationships).getByRole("radio", { name: "Preview Niles Partner Seal class skills" }));
+    expect(within(sources).getByText("Partner: Niles")).toBeInTheDocument();
+    expect(within(browser).getByText("Outlaw")).toBeInTheDocument();
+
+    await user.click(within(relationships).getByRole("radio", { name: "Preview Hana Friendship Seal class skills" }));
+    expect(within(sources).queryByText("Friendship: Peri")).not.toBeInTheDocument();
+    expect(within(sources).getByText("Friendship: Hana")).toBeInTheDocument();
+    expect(within(browser).queryByText("Cavalier")).not.toBeInTheDocument();
+    expect(within(browser).getByText("Samurai")).toBeInTheDocument();
+    expect(within(browser).getByText("Outlaw")).toBeInTheDocument();
+
+    const friendshipPreview = within(relationships).getByRole("radiogroup", { name: "Friendship Seal (A+) skill preview" });
+    await user.click(within(friendshipPreview).getByRole("radio", { name: "None" }));
+    expect(within(sources).queryByText("Friendship: Hana")).not.toBeInTheDocument();
+    expect(within(browser).queryByText("Samurai")).not.toBeInTheDocument();
+    expect(within(browser).getByText("Outlaw")).toBeInTheDocument();
+  });
+
+  it("updates offspring class skills from parentage and seal previews", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE14/Units/Dwyer");
+    render(<App />);
+
+    const sources = screen.getByLabelText("Class access sources");
+    const browser = screen.getByRole("region", { name: "Available class skills" });
+    expect(within(sources).getByText("From Corrin")).toBeInTheDocument();
+    expect(within(browser).getByText("Nohr Prince")).toBeInTheDocument();
+
+    await user.selectOptions(screen.getByLabelText("Mother"), "felicia");
+    expect(within(sources).getByText("From Felicia")).toBeInTheDocument();
+    expect(within(browser).getByText("Mercenary")).toBeInTheDocument();
+    expect(within(browser).queryByText("Nohr Prince")).not.toBeInTheDocument();
+
+    const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
+    await user.click(within(relationships).getByRole("radio", { name: "Preview Kiragi Friendship Seal class skills" }));
+    await user.click(within(relationships).getByRole("radio", { name: "Preview Nina Partner Seal class skills" }));
+    expect(within(sources).getByText("Friendship: Kiragi")).toBeInTheDocument();
+    expect(within(sources).getByText("Partner: Nina")).toBeInTheDocument();
+    expect(within(browser).getByText("Archer")).toBeInTheDocument();
+    expect(within(browser).getByText("Outlaw")).toBeInTheDocument();
+  });
+
+  it("keeps Corrin and Kana skill previews synchronized with their live configurations", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE14/Units/Corrin");
+    const view = render(<App />);
+
+    expect(screen.getByRole("heading", { name: "Accessible class skills" })).toBeInTheDocument();
+    let sources = screen.getByLabelText("Class access sources");
+    let browser = screen.getByRole("region", { name: "Available class skills" });
+    expect(browser.querySelectorAll(".unit-class-skill-card")).toHaveLength(6);
+    const showAllClasses = screen.getByRole("button", { name: /Show all \d+ class trees/ });
+    await user.click(showAllClasses);
+    expect(browser.querySelectorAll(".unit-class-skill-card").length).toBeGreaterThan(6);
+    const maleTroubadourCard = within(sources).getByText("Friendship: Jakob").closest(".unit-class-skill-card") as HTMLElement;
+    expect(within(maleTroubadourCard).getByRole("heading", { name: "Butler" })).toBeInTheDocument();
+    expect(within(maleTroubadourCard).queryByRole("heading", { name: "Maid" })).not.toBeInTheDocument();
+    const maleMonkCard = within(sources).getByText("Friendship: Azama").closest(".unit-class-skill-card") as HTMLElement;
+    expect(within(maleMonkCard).getByRole("heading", { name: "Monk" })).toBeInTheDocument();
+    let talentCard = within(sources).getByText("Heart Seal Talent").closest(".unit-class-skill-card") as HTMLElement;
+    expect(within(talentCard).getByRole("heading", { name: "Cavalier" })).toBeInTheDocument();
+    await user.selectOptions(screen.getByLabelText("Corrin Talent"), "dragon");
+    talentCard = within(sources).getByText("Heart Seal Talent").closest(".unit-class-skill-card") as HTMLElement;
+    expect(within(talentCard).getByRole("heading", { name: "Wyvern Rider" })).toBeInTheDocument();
+
+    let relationships = screen.getByRole("region", { name: "Supports and seal grants" });
+    expect(within(relationships).getByText(/does not commit to a single A\+ partner/i)).toBeInTheDocument();
+    expect(within(relationships).queryByRole("radio", { name: /Kaze Friendship Seal class skills/ })).not.toBeInTheDocument();
+    await user.click(within(relationships).getByRole("radio", { name: "Preview Felicia Partner Seal class skills" }));
+    expect(within(sources).getByText("Friendship: Kaze")).toBeInTheDocument();
+    expect(within(sources).getByText("Partner: Felicia")).toBeInTheDocument();
+    const orderedCards = Array.from(browser.querySelectorAll(".unit-class-skill-card"));
+    expect(orderedCards.indexOf(within(sources).getByText("Heart Seal Talent").closest(".unit-class-skill-card")!)).toBe(1);
+    expect(orderedCards.indexOf(within(sources).getByText("Partner: Felicia").closest(".unit-class-skill-card")!)).toBe(2);
+    expect(within(browser).getByText("Ninja")).toBeInTheDocument();
+    expect(within(browser).getByText("Troubadour")).toBeInTheDocument();
+
+    await user.click(within(screen.getByRole("group", { name: "Corrin gender" })).getByRole("button", { name: "Female" }));
+    await waitFor(() => {
+      expect(within(sources).queryByText("Friendship: Kaze")).not.toBeInTheDocument();
+      expect(within(sources).queryByText("Partner: Felicia")).not.toBeInTheDocument();
+    });
+    const femaleTroubadourCard = within(sources).getByText("Friendship: Felicia").closest(".unit-class-skill-card") as HTMLElement;
+    expect(within(femaleTroubadourCard).getByRole("heading", { name: "Maid" })).toBeInTheDocument();
+    expect(within(femaleTroubadourCard).queryByRole("heading", { name: "Butler" })).not.toBeInTheDocument();
+    const femaleShrineCard = within(sources).getByText("Friendship: Sakura").closest(".unit-class-skill-card") as HTMLElement;
+    expect(within(femaleShrineCard).getByRole("heading", { name: "Shrine Maiden" })).toBeInTheDocument();
+
+    view.unmount();
+    window.history.replaceState({}, "", "/FE14/Units/Kana");
+    render(<App />);
+    sources = screen.getByLabelText("Class access sources");
+    relationships = screen.getByRole("region", { name: "Supports and seal grants" });
+    await user.click(within(relationships).getByRole("radio", { name: "Preview Midori Friendship Seal class skills" }));
+    expect(within(sources).getByText("Friendship: Midori")).toBeInTheDocument();
+    await user.selectOptions(screen.getByLabelText("Parent"), "midori");
+    await waitFor(() => {
+      expect(within(sources).queryByText("Friendship: Midori")).not.toBeInTheDocument();
+      expect(within(screen.getByRole("region", { name: "Supports and seal grants" })).queryByText("Midori")).not.toBeInTheDocument();
+    });
   });
 });

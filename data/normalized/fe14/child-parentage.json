@@ -14,12 +14,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "sky_knight",
-        "inheritedClassReason": "restricted_primary_fallback",
         "inheritanceClassCandidates": {
           "primaryClassId": "songstress",
           "secondaryClassId": "sky_knight"
         },
+        "inheritedClassId": "sky_knight",
+        "inheritedClassReason": "restricted_primary_fallback",
         "siblingUnitId": "shigure"
       },
       {
@@ -31,12 +31,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "troubadour",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "troubadour",
           "secondaryClassId": "mercenary"
-        }
+        },
+        "inheritedClassId": "troubadour",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "jakob",
@@ -47,12 +47,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "troubadour",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "troubadour",
           "secondaryClassId": "cavalier"
         },
+        "inheritedClassId": "troubadour",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "dwyer"
       },
       {
@@ -64,12 +64,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "cavalier",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "cavalier",
           "secondaryClassId": "mercenary"
         },
+        "inheritedClassId": "cavalier",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "sophie"
       },
       {
@@ -81,12 +81,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "ninja",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "ninja",
           "secondaryClassId": "samurai"
         },
+        "inheritedClassId": "ninja",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "midori"
       },
       {
@@ -98,12 +98,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "villager",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "villager",
           "secondaryClassId": "archer"
-        }
+        },
+        "inheritedClassId": "villager",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "shura",
@@ -114,12 +114,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "outlaw",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "outlaw",
           "secondaryClassId": "ninja"
-        }
+        },
+        "inheritedClassId": "outlaw",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "ryoma",
@@ -129,12 +129,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "samurai",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "samurai",
           "secondaryClassId": "sky_knight"
         },
+        "inheritedClassId": "samurai",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "shiro"
       },
       {
@@ -145,12 +145,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "sky_knight",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "sky_knight",
           "secondaryClassId": "spear_fighter"
-        }
+        },
+        "inheritedClassId": "sky_knight",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "takumi",
@@ -160,12 +160,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "archer",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "archer",
           "secondaryClassId": "spear_fighter"
         },
+        "inheritedClassId": "archer",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "kiragi"
       },
       {
@@ -176,12 +176,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "shrine_maiden",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "shrine_maiden",
           "secondaryClassId": "sky_knight"
-        }
+        },
+        "inheritedClassId": "shrine_maiden",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "saizo",
@@ -191,12 +191,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "ninja",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "ninja",
           "secondaryClassId": "samurai"
         },
+        "inheritedClassId": "ninja",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "asugi"
       },
       {
@@ -207,12 +207,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "ninja",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "ninja",
           "secondaryClassId": "diviner"
-        }
+        },
+        "inheritedClassId": "ninja",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "setsuna",
@@ -222,12 +222,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "archer",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "archer",
           "secondaryClassId": "ninja"
-        }
+        },
+        "inheritedClassId": "archer",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "azama",
@@ -237,12 +237,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "monk",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "monk",
           "secondaryClassId": "apothecary"
         },
+        "inheritedClassId": "monk",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "mitama"
       },
       {
@@ -253,12 +253,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "samurai",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "samurai",
           "secondaryClassId": "oni_savage"
         },
+        "inheritedClassId": "samurai",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "hisame"
       },
       {
@@ -269,12 +269,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "spear_fighter",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "spear_fighter",
           "secondaryClassId": "apothecary"
-        }
+        },
+        "inheritedClassId": "spear_fighter",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "hana",
@@ -284,12 +284,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "samurai",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "samurai",
           "secondaryClassId": "shrine_maiden"
-        }
+        },
+        "inheritedClassId": "samurai",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "subaki",
@@ -299,12 +299,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "sky_knight",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "sky_knight",
           "secondaryClassId": "samurai"
         },
+        "inheritedClassId": "sky_knight",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "caeldori"
       },
       {
@@ -315,12 +315,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "diviner",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "diviner",
           "secondaryClassId": "oni_savage"
         },
+        "inheritedClassId": "diviner",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "rhajat"
       },
       {
@@ -331,12 +331,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "oni_savage",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "oni_savage",
           "secondaryClassId": "ninja"
-        }
+        },
+        "inheritedClassId": "oni_savage",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "orochi",
@@ -346,12 +346,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "diviner",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "diviner",
           "secondaryClassId": "apothecary"
-        }
+        },
+        "inheritedClassId": "diviner",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "kaden",
@@ -361,12 +361,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "diviner",
-        "inheritedClassReason": "restricted_primary_fallback",
         "inheritanceClassCandidates": {
           "primaryClassId": "kitsune",
           "secondaryClassId": "diviner"
         },
+        "inheritedClassId": "diviner",
+        "inheritedClassReason": "restricted_primary_fallback",
         "siblingUnitId": "selkie"
       },
       {
@@ -377,12 +377,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "sky_knight",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "sky_knight",
           "secondaryClassId": "diviner"
-        }
+        },
+        "inheritedClassId": "sky_knight",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "scarlet",
@@ -392,12 +392,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "wyvern_rider",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "wyvern_rider",
           "secondaryClassId": "outlaw"
-        }
+        },
+        "inheritedClassId": "wyvern_rider",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "xander",
@@ -407,12 +407,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "cavalier",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "cavalier",
           "secondaryClassId": "wyvern_rider"
         },
+        "inheritedClassId": "cavalier",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "siegbert"
       },
       {
@@ -423,12 +423,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "wyvern_rider",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "wyvern_rider",
           "secondaryClassId": "dark_mage"
-        }
+        },
+        "inheritedClassId": "wyvern_rider",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "leo",
@@ -438,12 +438,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "dark_mage",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "dark_mage",
           "secondaryClassId": "troubadour"
         },
+        "inheritedClassId": "dark_mage",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "forrest"
       },
       {
@@ -454,12 +454,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "troubadour",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "troubadour",
           "secondaryClassId": "wyvern_rider"
-        }
+        },
+        "inheritedClassId": "troubadour",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "laslow",
@@ -469,12 +469,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "mercenary",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "mercenary",
           "secondaryClassId": "ninja"
         },
+        "inheritedClassId": "mercenary",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "soleil"
       },
       {
@@ -485,12 +485,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "dark_mage",
-        "inheritedClassReason": "duplicate_primary_fallback",
         "inheritanceClassCandidates": {
           "primaryClassId": "cavalier",
           "secondaryClassId": "dark_mage"
-        }
+        },
+        "inheritedClassId": "dark_mage",
+        "inheritedClassReason": "duplicate_primary_fallback"
       },
       {
         "unitId": "selena",
@@ -500,12 +500,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "mercenary",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "mercenary",
           "secondaryClassId": "sky_knight"
-        }
+        },
+        "inheritedClassId": "mercenary",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "beruka",
@@ -515,12 +515,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "wyvern_rider",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "wyvern_rider",
           "secondaryClassId": "fighter"
-        }
+        },
+        "inheritedClassId": "wyvern_rider",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "odin",
@@ -530,12 +530,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "dark_mage",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "dark_mage",
           "secondaryClassId": "samurai"
         },
+        "inheritedClassId": "dark_mage",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "ophelia"
       },
       {
@@ -546,12 +546,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "outlaw",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "outlaw",
           "secondaryClassId": "dark_mage"
         },
+        "inheritedClassId": "outlaw",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "nina"
       },
       {
@@ -562,12 +562,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "knight",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "knight",
           "secondaryClassId": "troubadour"
-        }
+        },
+        "inheritedClassId": "knight",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "arthur",
@@ -577,12 +577,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "fighter",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "fighter",
           "secondaryClassId": "cavalier"
         },
+        "inheritedClassId": "fighter",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "percy"
       },
       {
@@ -593,12 +593,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "dark_mage",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "dark_mage",
           "secondaryClassId": "outlaw"
-        }
+        },
+        "inheritedClassId": "dark_mage",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "charlotte",
@@ -608,12 +608,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "fighter",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "fighter",
           "secondaryClassId": "troubadour"
-        }
+        },
+        "inheritedClassId": "fighter",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "benny",
@@ -623,12 +623,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "knight",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "knight",
           "secondaryClassId": "fighter"
         },
+        "inheritedClassId": "knight",
+        "inheritedClassReason": "direct",
         "siblingUnitId": "ignatius"
       },
       {
@@ -639,12 +639,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "fighter",
-        "inheritedClassReason": "restricted_primary_fallback",
         "inheritanceClassCandidates": {
           "primaryClassId": "wolfskin",
           "secondaryClassId": "fighter"
         },
+        "inheritedClassId": "fighter",
+        "inheritedClassReason": "restricted_primary_fallback",
         "siblingUnitId": "velouria"
       },
       {
@@ -654,12 +654,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "cavalier",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "cavalier",
           "secondaryClassId": "mercenary"
-        }
+        },
+        "inheritedClassId": "cavalier",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "flora",
@@ -669,12 +669,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "troubadour",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "troubadour",
           "secondaryClassId": "mercenary"
-        }
+        },
+        "inheritedClassId": "troubadour",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "yukimura",
@@ -683,12 +683,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "apothecary",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "apothecary",
           "secondaryClassId": "samurai"
-        }
+        },
+        "inheritedClassId": "apothecary",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "izana",
@@ -698,12 +698,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "monk",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "monk",
           "secondaryClassId": "samurai"
-        }
+        },
+        "inheritedClassId": "monk",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "fuga",
@@ -712,12 +712,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "first",
-        "inheritedClassId": "samurai",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "samurai",
           "secondaryClassId": "oni_savage"
-        }
+        },
+        "inheritedClassId": "samurai",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "anna",
@@ -728,12 +728,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "first",
-        "inheritedClassId": "outlaw",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "outlaw",
           "secondaryClassId": "troubadour"
-        }
+        },
+        "inheritedClassId": "outlaw",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "shigure",
@@ -744,12 +744,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "sky_knight",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "sky_knight",
           "secondaryClassId": "troubadour"
-        }
+        },
+        "inheritedClassId": "sky_knight",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "dwyer",
@@ -760,12 +760,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "troubadour",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "troubadour",
           "secondaryClassId": "cavalier"
-        }
+        },
+        "inheritedClassId": "troubadour",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "sophie",
@@ -776,12 +776,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "mercenary",
-        "inheritedClassReason": "duplicate_primary_fallback",
         "inheritanceClassCandidates": {
           "primaryClassId": "cavalier",
           "secondaryClassId": "mercenary"
-        }
+        },
+        "inheritedClassId": "mercenary",
+        "inheritedClassReason": "duplicate_primary_fallback"
       },
       {
         "unitId": "midori",
@@ -792,12 +792,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "apothecary",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "apothecary",
           "secondaryClassId": "ninja"
-        }
+        },
+        "inheritedClassId": "apothecary",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "shiro",
@@ -807,12 +807,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "spear_fighter",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "spear_fighter",
           "secondaryClassId": "samurai"
-        }
+        },
+        "inheritedClassId": "spear_fighter",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "kiragi",
@@ -822,12 +822,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "archer",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "archer",
           "secondaryClassId": "spear_fighter"
-        }
+        },
+        "inheritedClassId": "archer",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "asugi",
@@ -837,12 +837,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "ninja",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "ninja",
           "secondaryClassId": "samurai"
-        }
+        },
+        "inheritedClassId": "ninja",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "selkie",
@@ -852,12 +852,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "diviner",
-        "inheritedClassReason": "restricted_primary_fallback",
         "inheritanceClassCandidates": {
           "primaryClassId": "kitsune",
           "secondaryClassId": "diviner"
-        }
+        },
+        "inheritedClassId": "diviner",
+        "inheritedClassReason": "restricted_primary_fallback"
       },
       {
         "unitId": "hisame",
@@ -867,12 +867,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "samurai",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "samurai",
           "secondaryClassId": "oni_savage"
-        }
+        },
+        "inheritedClassId": "samurai",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "mitama",
@@ -882,12 +882,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "shrine_maiden",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "shrine_maiden",
           "secondaryClassId": "apothecary"
-        }
+        },
+        "inheritedClassId": "shrine_maiden",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "caeldori",
@@ -897,12 +897,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "sky_knight",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "sky_knight",
           "secondaryClassId": "samurai"
-        }
+        },
+        "inheritedClassId": "sky_knight",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "rhajat",
@@ -912,12 +912,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "diviner",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "diviner",
           "secondaryClassId": "oni_savage"
-        }
+        },
+        "inheritedClassId": "diviner",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "siegbert",
@@ -927,12 +927,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "cavalier",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "cavalier",
           "secondaryClassId": "wyvern_rider"
-        }
+        },
+        "inheritedClassId": "cavalier",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "forrest",
@@ -942,12 +942,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "troubadour",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "troubadour",
           "secondaryClassId": "dark_mage"
-        }
+        },
+        "inheritedClassId": "troubadour",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "ignatius",
@@ -957,12 +957,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "knight",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "knight",
           "secondaryClassId": "fighter"
-        }
+        },
+        "inheritedClassId": "knight",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "velouria",
@@ -972,12 +972,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "fighter",
-        "inheritedClassReason": "restricted_primary_fallback",
         "inheritanceClassCandidates": {
           "primaryClassId": "wolfskin",
           "secondaryClassId": "fighter"
-        }
+        },
+        "inheritedClassId": "fighter",
+        "inheritedClassReason": "restricted_primary_fallback"
       },
       {
         "unitId": "percy",
@@ -987,12 +987,12 @@
         ],
         "childGender": "male",
         "parentGeneration": "second",
-        "inheritedClassId": "wyvern_rider",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "wyvern_rider",
           "secondaryClassId": "fighter"
-        }
+        },
+        "inheritedClassId": "wyvern_rider",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "ophelia",
@@ -1002,12 +1002,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "dark_mage",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "dark_mage",
           "secondaryClassId": "samurai"
-        }
+        },
+        "inheritedClassId": "dark_mage",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "soleil",
@@ -1017,12 +1017,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "mercenary",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "mercenary",
           "secondaryClassId": "ninja"
-        }
+        },
+        "inheritedClassId": "mercenary",
+        "inheritedClassReason": "direct"
       },
       {
         "unitId": "nina",
@@ -1032,12 +1032,12 @@
         ],
         "childGender": "female",
         "parentGeneration": "second",
-        "inheritedClassId": "outlaw",
-        "inheritedClassReason": "direct",
         "inheritanceClassCandidates": {
           "primaryClassId": "outlaw",
           "secondaryClassId": "dark_mage"
-        }
+        },
+        "inheritedClassId": "outlaw",
+        "inheritedClassReason": "direct"
       }
     ],
     "fixedInheritedClassId": "avatar_talent",
@@ -1058,14 +1058,6 @@
       "Kana omits the usual +1 cap-modifier inheritance bonus when Corrin's spouse is an offspring unit.",
       "Class inheritance follows child, father, then mother order. Corrin contributes the selected Avatar Talent; a duplicate Talent can therefore change the spouse fallback or leave male Kana without a third inherited tree."
     ],
-    "personalSkill": {
-      "id": "draconic_heir",
-      "names": {
-        "en": "Draconic Heir",
-        "zhHans": "龙之御子"
-      },
-      "effect": "At the start of the turn, if Kana has a Dragonstone equipped, Kana restores 15% of maximum HP."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + generation_bonus",
@@ -3110,14 +3102,6 @@
       "The selected father's linked offspring becomes Shigure's sibling and replaces any friendship or romantic support between them.",
       "Jakob is the class-inheritance exception: Jakob gives Shigure Troubadour, so Azura's otherwise duplicated inheritance resolves to Wyvern Rider."
     ],
-    "personalSkill": {
-      "id": "perfect_pitch",
-      "names": {
-        "en": "Perfect Pitch",
-        "zhHans": "完美音调"
-      },
-      "effect": "When Shigure uses Rally, allies within 2 spaces whose current HP is lower than his recover 10% of their maximum HP."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -4006,14 +3990,6 @@
       "defense": 30,
       "resistance": 35
     },
-    "personalSkill": {
-      "id": "born_steward",
-      "names": {
-        "en": "Born Steward",
-        "zhHans": "管家的素养"
-      },
-      "effect": "During My Castle battles, Dwyer gains Hit +20 and Avoid +20, deals 2 extra damage, and takes 2 less damage."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -4622,14 +4598,6 @@
       "defense": 25,
       "resistance": 35
     },
-    "personalSkill": {
-      "id": "mischievous",
-      "names": {
-        "en": "Mischievous",
-        "zhHans": "冒失"
-      },
-      "effect": "When Sophie initiates combat and her attack connects, the enemy loses 3 Defense after combat and has its clothing stripped."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -5228,14 +5196,6 @@
       "defense": 30,
       "resistance": 20
     },
-    "personalSkill": {
-      "id": "lucky_charm",
-      "names": {
-        "en": "Lucky Charm",
-        "zhHans": "幸运儿"
-      },
-      "effect": "Increases the activation rate of Luck-based skills by 20 percentage points."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -5758,14 +5718,6 @@
       "defense": 45,
       "resistance": 30
     },
-    "personalSkill": {
-      "id": "noble_cause",
-      "names": {
-        "en": "Noble Cause",
-        "zhHans": "大义"
-      },
-      "effect": "While Shiro is the lead unit with a support unit whose HP is not full, he deals 3 extra damage and takes 1 extra damage."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -6256,14 +6208,6 @@
       "luck": 45,
       "defense": 40,
       "resistance": 15
-    },
-    "personalSkill": {
-      "id": "optimist",
-      "names": {
-        "en": "Optimist",
-        "zhHans": "乐观"
-      },
-      "effect": "After Kiragi uses Wait, he gains 4 Speed and 8 Luck for one turn."
     },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
@@ -6773,14 +6717,6 @@
       "defense": 30,
       "resistance": 20
     },
-    "personalSkill": {
-      "id": "sweet_tooth",
-      "names": {
-        "en": "Sweet Tooth",
-        "zhHans": "甜食党"
-      },
-      "effect": "After Asugi uses Wait, he restores 4 HP."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -7288,14 +7224,6 @@
       "luck": 60,
       "defense": 30,
       "resistance": 50
-    },
-    "personalSkill": {
-      "id": "playthings",
-      "names": {
-        "en": "Playthings",
-        "zhHans": "好玩具"
-      },
-      "effect": "At the start of the turn, adjacent enemies lose 5 HP."
     },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
@@ -7806,14 +7734,6 @@
       "defense": 30,
       "resistance": 20
     },
-    "personalSkill": {
-      "id": "calm",
-      "names": {
-        "en": "Calm",
-        "zhHans": "冷静"
-      },
-      "effect": "After Hisame uses Wait, he gains 4 Skill and 4 Resistance for one turn."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -8321,14 +8241,6 @@
       "luck": 50,
       "defense": 30,
       "resistance": 20
-    },
-    "personalSkill": {
-      "id": "haiku",
-      "names": {
-        "en": "Haiku",
-        "zhHans": "俳句"
-      },
-      "effect": "At the start of the turn, if allies stand directly above and below Mitama, she restores 7 HP and each of those allies restores 5 HP."
     },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
@@ -8842,14 +8754,6 @@
     "notes": [
       "If Selena is Caeldori's mother, their A-rank support uses special dialogue."
     ],
-    "personalSkill": {
-      "id": "prodigy",
-      "names": {
-        "en": "Prodigy",
-        "zhHans": "天才"
-      },
-      "effect": "Compare Caeldori's higher offensive stat (Strength or Magic) with the enemy's matching stat. If the enemy's stat is higher, Caeldori deals 4 extra damage."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -9358,14 +9262,6 @@
       "defense": 25,
       "resistance": 35
     },
-    "personalSkill": {
-      "id": "vendetta",
-      "names": {
-        "en": "Vendetta",
-        "zhHans": "執念"
-      },
-      "effect": "When Rhajat initiates combat against an enemy she has already fought on the same map, she deals 4 extra damage."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -9863,14 +9759,6 @@
       "defense": 35,
       "resistance": 20
     },
-    "personalSkill": {
-      "id": "gallant",
-      "names": {
-        "en": "Gallant",
-        "zhHans": "紳士"
-      },
-      "effect": "While Siegbert supports a female lead unit, that lead unit deals 2 extra damage."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -10361,14 +10249,6 @@
       "luck": 25,
       "defense": 25,
       "resistance": 55
-    },
-    "personalSkill": {
-      "id": "fierce_counter",
-      "names": {
-        "en": "Fierce Counter",
-        "zhHans": "强烈反击"
-      },
-      "effect": "When a male enemy initiates combat, Forrest deals 2 extra damage."
     },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
@@ -10878,14 +10758,6 @@
       "defense": 45,
       "resistance": 35
     },
-    "personalSkill": {
-      "id": "guarded_bravery",
-      "names": {
-        "en": "Guarded Bravery",
-        "zhHans": "谨慎勇敢"
-      },
-      "effect": "While Ignatius is the lead unit in Attack or Guard Stance, he takes 2 less damage; while unsupported, he takes 2 extra damage."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -11393,14 +11265,6 @@
       "luck": 35,
       "defense": 45,
       "resistance": 30
-    },
-    "personalSkill": {
-      "id": "goody_basket",
-      "names": {
-        "en": "Goody Basket",
-        "zhHans": "捡到宝"
-      },
-      "effect": "At the start of the turn, Velouria has a Luck% chance to restore 10 HP."
     },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
@@ -11910,14 +11774,6 @@
       "luck": 75,
       "defense": 55,
       "resistance": 15
-    },
-    "personalSkill": {
-      "id": "fortunate_son",
-      "names": {
-        "en": "Fortunate Son",
-        "zhHans": "幸运星"
-      },
-      "effect": "Allies within 2 tiles gain 15 Critical Avoid; Percy gains 5 Critical Avoid."
     },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
@@ -12444,14 +12300,6 @@
       "defense": 20,
       "resistance": 30
     },
-    "personalSkill": {
-      "id": "bibliophile",
-      "names": {
-        "en": "Bibliophile",
-        "zhHans": "魔导书狂"
-      },
-      "effect": "While carrying at least three tomes or scrolls, Ophelia gains 10 Critical."
-    },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + 1",
@@ -12938,14 +12786,6 @@
       "luck": 45,
       "defense": 35,
       "resistance": 40
-    },
-    "personalSkill": {
-      "id": "sisterhood",
-      "names": {
-        "en": "Sisterhood",
-        "zhHans": "女子力"
-      },
-      "effect": "While supported by a female ally, Soleil deals 2 extra damage and takes 2 less damage."
     },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
@@ -13454,14 +13294,6 @@
       "luck": 50,
       "defense": 25,
       "resistance": 45
-    },
-    "personalSkill": {
-      "id": "daydream",
-      "names": {
-        "en": "Daydream",
-        "zhHans": "邪念"
-      },
-      "effect": "While adjacent to two male units paired in Guard Stance, Nina deals 2 extra damage and takes 2 less damage."
     },
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",

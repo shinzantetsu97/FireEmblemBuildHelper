@@ -1,0 +1,2959 @@
+{
+  "gameId": "fe14",
+  "scope": "standard_non_dlc",
+  "skills": [
+    {
+      "id": "dragon_ward",
+      "names": {
+        "en": "Dragon Ward"
+      },
+      "description": "Allies adjacent to the user have a Luck x 0.5% chance of receiving half damage from enemy attacks.",
+      "iconAssetId": "dragon_ward",
+      "acquisition": [
+        {
+          "classId": "hoshido_noble",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Hoshido Noble > Dragon Ward > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hoshidan_unity",
+      "names": {
+        "en": "Hoshidan Unity"
+      },
+      "description": "Adds 10% to skill activation rates.",
+      "iconAssetId": "hoshidan_unity",
+      "acquisition": [
+        {
+          "classId": "hoshido_noble",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Hoshido Noble > Hoshidan Unity > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "duelists_blow",
+      "names": {
+        "en": "Duelist’s Blow"
+      },
+      "description": "When user triggers the battle, Avoid +30.",
+      "iconAssetId": "duelists_blow",
+      "acquisition": [
+        {
+          "classId": "samurai",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Samurai > Duelist’s Blow > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "vantage",
+      "names": {
+        "en": "Vantage"
+      },
+      "description": "At the start of battle, when the user has under half HP, they attack first.",
+      "iconAssetId": "vantage",
+      "acquisition": [
+        {
+          "classId": "samurai",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Samurai > Vantage > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "astra",
+      "names": {
+        "en": "Astra"
+      },
+      "description": "Skill x 0.5% chance of triggering 5 consecutive hits with half damage.",
+      "iconAssetId": "astra",
+      "acquisition": [
+        {
+          "classId": "swordmaster",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Swordmaster > Astra > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "swordfaire",
+      "names": {
+        "en": "Swordfaire"
+      },
+      "description": "When user is equipped with a Sword, damage +5 during battle.",
+      "iconAssetId": "swordfaire",
+      "acquisition": [
+        {
+          "classId": "swordmaster",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Swordmaster > Swordfaire > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "seal_strength",
+      "names": {
+        "en": "Seal Strength"
+      },
+      "description": "After battle, enemy's Strength -6.",
+      "iconAssetId": "seal_strength",
+      "acquisition": [
+        {
+          "classId": "master_of_arms",
+          "level": 5
+        }
+      ],
+      "notes": [
+        "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Master of Arms > Seal Strength > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "life_and_death",
+      "names": {
+        "en": "Life and Death"
+      },
+      "description": "During battles, damage +10, damage received +10.",
+      "iconAssetId": "life_and_death",
+      "acquisition": [
+        {
+          "classId": "master_of_arms",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Master of Arms > Life and Death > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "seal_resistance",
+      "names": {
+        "en": "Seal Resistance"
+      },
+      "description": "After battle, enemy's Resistance -6.",
+      "iconAssetId": "seal_resistance",
+      "acquisition": [
+        {
+          "classId": "oni_savage",
+          "level": 1
+        }
+      ],
+      "notes": [
+        "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Oni Savage > Seal Resistance > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shove",
+      "names": {
+        "en": "Shove"
+      },
+      "description": "Select the \"Shove\" command to push an adjacent ally 1 tile.",
+      "iconAssetId": "shove",
+      "acquisition": [
+        {
+          "classId": "oni_savage",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Oni Savage > Shove > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "death_blow",
+      "names": {
+        "en": "Death Blow"
+      },
+      "description": "When user triggers the battle, Critical rate +20.",
+      "iconAssetId": "death_blow",
+      "acquisition": [
+        {
+          "classId": "oni_chieftain",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Oni Chieftain > Death Blow > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "counter",
+      "names": {
+        "en": "Counter"
+      },
+      "description": "When an adjacent enemy triggers the battle and inflicts damage, the enemy receives the same damage.",
+      "iconAssetId": "counter",
+      "acquisition": [
+        {
+          "classId": "oni_chieftain",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Oni Chieftain > Counter > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "salvage_blow",
+      "names": {
+        "en": "Salvage Blow"
+      },
+      "description": "When user triggers the battle, Luck% chance of receiving a Katana, Naginata, Club, Yumi or Shuriken if the user defeats the enemy.",
+      "iconAssetId": "salvage_blow",
+      "acquisition": [
+        {
+          "classId": "blacksmith",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Blacksmith > Salvage Blow > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lancebreaker",
+      "names": {
+        "en": "Lancebreaker"
+      },
+      "description": "Hit rate and Avoid +50 when the enemy is equipped with a Lance.",
+      "iconAssetId": "lancebreaker",
+      "acquisition": [
+        {
+          "classId": "blacksmith",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Blacksmith > Lancebreaker > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "seal_defense",
+      "names": {
+        "en": "Seal Defense"
+      },
+      "description": "After battle, enemy's Defense -6.",
+      "iconAssetId": "seal_defense",
+      "acquisition": [
+        {
+          "classId": "spear_fighter",
+          "level": 1
+        }
+      ],
+      "notes": [
+        "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn.",
+        "Serenes Forest uses \"Seal Defence\"; the canonical name uses the localized \"Seal Defense\" spelling already established by accepted FE14 data."
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Spear Fighter > Seal Defence > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "swap",
+      "names": {
+        "en": "Swap"
+      },
+      "description": "Select the \"Swap\" command to swap places with an adjacent ally on the map.",
+      "iconAssetId": "swap",
+      "acquisition": [
+        {
+          "classId": "spear_fighter",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Spear Fighter > Swap > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "seal_speed",
+      "names": {
+        "en": "Seal Speed"
+      },
+      "description": "After battle, enemy's Speed -6.",
+      "iconAssetId": "seal_speed",
+      "acquisition": [
+        {
+          "classId": "spear_master",
+          "level": 5
+        }
+      ],
+      "notes": [
+        "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Spear Master > Seal Speed > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lancefaire",
+      "names": {
+        "en": "Lancefaire"
+      },
+      "description": "When user is equipped with a Lance, damage +5 during battle.",
+      "iconAssetId": "lancefaire",
+      "acquisition": [
+        {
+          "classId": "spear_master",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Spear Master > Lancefaire > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rend_heaven",
+      "names": {
+        "en": "Rend Heaven"
+      },
+      "description": "Skill x 1.5% chance of adding half the enemy's Strength (if user has a physical weapon) or Magic (if user has a magical weapon) as damage.",
+      "iconAssetId": "rend_heaven",
+      "acquisition": [
+        {
+          "classId": "basara",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Basara > Rend Heaven > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "quixotic",
+      "names": {
+        "en": "Quixotic"
+      },
+      "description": "User and enemy's Hit rate +30 and skill activation rate +15% during battle.",
+      "iconAssetId": "quixotic",
+      "acquisition": [
+        {
+          "classId": "basara",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Basara > Quixotic > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "magic_plus_2",
+      "names": {
+        "en": "Magic +2"
+      },
+      "description": "Magic +2.",
+      "iconAssetId": "magic_plus_2",
+      "acquisition": [
+        {
+          "classId": "diviner",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Diviner > Magic +2 > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "future_sight",
+      "names": {
+        "en": "Future Sight"
+      },
+      "description": "When user triggers the battle, Luck% chance of gaining double experience when user defeats the enemy.",
+      "iconAssetId": "future_sight",
+      "acquisition": [
+        {
+          "classId": "diviner",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Diviner > Future Sight > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rally_magic",
+      "names": {
+        "en": "Rally Magic"
+      },
+      "description": "Magic +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "iconAssetId": "rally_magic",
+      "acquisition": [
+        {
+          "classId": "onmyoji",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Onmyoji > Rally Magic > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "tomefaire",
+      "names": {
+        "en": "Tomefaire"
+      },
+      "description": "When user is equipped with a Tome, damage +5 during battle.",
+      "iconAssetId": "tomefaire",
+      "acquisition": [
+        {
+          "classId": "onmyoji",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Onmyoji > Tomefaire > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "miracle",
+      "names": {
+        "en": "Miracle"
+      },
+      "description": "Luck% chance of leaving the user with 1 HP when they have 2 or more HP.",
+      "iconAssetId": "miracle",
+      "acquisition": [
+        {
+          "classId": "monk",
+          "level": 1
+        },
+        {
+          "classId": "shrine_maiden",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Monk, Shrine Maiden > Miracle > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rally_luck",
+      "names": {
+        "en": "Rally Luck"
+      },
+      "description": "Luck +8 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "iconAssetId": "rally_luck",
+      "acquisition": [
+        {
+          "classId": "monk",
+          "level": 10
+        },
+        {
+          "classId": "shrine_maiden",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Monk, Shrine Maiden > Rally Luck > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "renewal",
+      "names": {
+        "en": "Renewal"
+      },
+      "description": "Recover 30% HP at the start of the user's Turn.",
+      "iconAssetId": "renewal",
+      "acquisition": [
+        {
+          "classId": "great_master",
+          "level": 5
+        },
+        {
+          "classId": "priestess",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Great Master, Priestess > Renewal > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "countermagic",
+      "names": {
+        "en": "Countermagic"
+      },
+      "description": "When the enemy triggers the battle and inflicts magical damage, the enemy receives the same damage.",
+      "iconAssetId": "countermagic",
+      "acquisition": [
+        {
+          "classId": "great_master",
+          "level": 15
+        },
+        {
+          "classId": "priestess",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Great Master, Priestess > Countermagic > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "darting_blow",
+      "names": {
+        "en": "Darting Blow"
+      },
+      "description": "When user triggers the battle, follow up attack speed +5.",
+      "iconAssetId": "darting_blow",
+      "acquisition": [
+        {
+          "classId": "sky_knight",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Sky Knight > Darting Blow > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "camaraderie",
+      "names": {
+        "en": "Camaraderie"
+      },
+      "description": "Recover 10% HP at the start of the user's Turn if there are allies within a 2 tile radius.",
+      "iconAssetId": "camaraderie",
+      "acquisition": [
+        {
+          "classId": "sky_knight",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Sky Knight > Camaraderie > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rally_speed",
+      "names": {
+        "en": "Rally Speed"
+      },
+      "description": "Speed +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "iconAssetId": "rally_speed",
+      "acquisition": [
+        {
+          "classId": "falcon_knight",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Falcon Knight > Rally Speed > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "warding_blow",
+      "names": {
+        "en": "Warding Blow"
+      },
+      "description": "When user triggers the battle, magical damage received -20.",
+      "iconAssetId": "warding_blow",
+      "acquisition": [
+        {
+          "classId": "falcon_knight",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Falcon Knight > Warding Blow > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "air_superiority",
+      "names": {
+        "en": "Air Superiority"
+      },
+      "description": "Hit rate and Avoid +30 when facing Flying enemies.",
+      "iconAssetId": "air_superiority",
+      "acquisition": [
+        {
+          "classId": "kinshi_knight",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Kinshi Knight > Air Superiority > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "amaterasu",
+      "names": {
+        "en": "Amaterasu"
+      },
+      "description": "Allies within a 2 tile radius recover 20% HP at the start of the user's Turn.",
+      "iconAssetId": "amaterasu",
+      "acquisition": [
+        {
+          "classId": "kinshi_knight",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Kinshi Knight > Amaterasu > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "skill_plus_2",
+      "names": {
+        "en": "Skill +2"
+      },
+      "description": "Skill +2.",
+      "iconAssetId": "skill_plus_2",
+      "acquisition": [
+        {
+          "classId": "archer",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Archer > Skill +2 > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "quick_draw",
+      "names": {
+        "en": "Quick Draw"
+      },
+      "description": "When user triggers the battle, damage +4.",
+      "iconAssetId": "quick_draw",
+      "acquisition": [
+        {
+          "classId": "archer",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Archer > Quick Draw > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "certain_blow",
+      "names": {
+        "en": "Certain Blow"
+      },
+      "description": "When user triggers the battle, Hit rate +40.",
+      "iconAssetId": "certain_blow",
+      "acquisition": [
+        {
+          "classId": "sniper",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Sniper > Certain Blow > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bowfaire",
+      "names": {
+        "en": "Bowfaire"
+      },
+      "description": "When user is equipped with a Bow, damage +5 during battle.",
+      "iconAssetId": "bowfaire",
+      "acquisition": [
+        {
+          "classId": "sniper",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Sniper > Bowfaire > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "locktouch",
+      "names": {
+        "en": "Locktouch"
+      },
+      "description": "User can open doors and chests without requiring keys.",
+      "iconAssetId": "locktouch",
+      "acquisition": [
+        {
+          "classId": "ninja",
+          "level": 1
+        },
+        {
+          "classId": "outlaw",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Ninja > Locktouch > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Outlaw > Locktouch > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "poison_strike",
+      "names": {
+        "en": "Poison Strike"
+      },
+      "description": "When user triggers the battle, the enemy's HP is reduced by 20% after the battle.",
+      "iconAssetId": "poison_strike",
+      "acquisition": [
+        {
+          "classId": "ninja",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Ninja > Poison Strike > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lethality",
+      "names": {
+        "en": "Lethality"
+      },
+      "description": "Skill x 0.25% chance of instantly defeating the enemy when dealing 1 or more damage.",
+      "iconAssetId": "lethality",
+      "acquisition": [
+        {
+          "classId": "master_ninja",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Master Ninja > Lethality > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shurikenfaire",
+      "names": {
+        "en": "Shurikenfaire"
+      },
+      "description": "When user is equipped with a Dagger, damage +5 during battle.",
+      "iconAssetId": "shurikenfaire",
+      "acquisition": [
+        {
+          "classId": "master_ninja",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Master Ninja > Shurikenfaire > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "golembane",
+      "names": {
+        "en": "Golembane"
+      },
+      "description": "Attacks are effective against Mechanists, Automatons and Stoneborn.",
+      "iconAssetId": "golembane",
+      "acquisition": [
+        {
+          "classId": "mechanist",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Mechanist > Golembane > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "replicate",
+      "names": {
+        "en": "Replicate"
+      },
+      "description": "Select the \"Replicate\" command once per map to create a replica with the same appearance, stats, inventory and HP as the user (Anything that happens to the replica happens to the user and vice versa - even death).",
+      "iconAssetId": "replicate",
+      "acquisition": [
+        {
+          "classId": "mechanist",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Mechanist > Replicate > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "potent_potion",
+      "names": {
+        "en": "Potent Potion"
+      },
+      "description": "The effect of HP recovery and stat-boosting potions is increased by 50%.",
+      "iconAssetId": "potent_potion",
+      "acquisition": [
+        {
+          "classId": "apothecary",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Apothecary > Potent Potion > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "quick_salve",
+      "names": {
+        "en": "Quick Salve"
+      },
+      "description": "After consuming a HP recovery or stat-boosting potion, the user can perform another action.",
+      "iconAssetId": "quick_salve",
+      "acquisition": [
+        {
+          "classId": "apothecary",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Apothecary > Quick Salve > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "profiteer",
+      "names": {
+        "en": "Profiteer"
+      },
+      "description": "Luck% chance of obtaining a Gold Bar after moving during the first seven Turns.",
+      "iconAssetId": "profiteer",
+      "acquisition": [
+        {
+          "classId": "merchant",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Merchant > Profiteer > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "spendthrift",
+      "names": {
+        "en": "Spendthrift"
+      },
+      "description": "During battles, user spends a Gold Bar for damage +10 and damage received -10.",
+      "iconAssetId": "spendthrift",
+      "acquisition": [
+        {
+          "classId": "merchant",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Merchant > Spendthrift > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "evenhanded",
+      "names": {
+        "en": "Evenhanded"
+      },
+      "description": "During even-numbered Turns, damage +4.",
+      "iconAssetId": "evenhanded",
+      "acquisition": [
+        {
+          "classId": "kitsune",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Kitsune > Evenhanded > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "beastbane",
+      "names": {
+        "en": "Beastbane"
+      },
+      "description": "When user is a Wolfskin or Kitsune, their attacks are effective against Beast units.",
+      "iconAssetId": "beastbane",
+      "acquisition": [
+        {
+          "classId": "kitsune",
+          "level": 10
+        },
+        {
+          "classId": "wolfskin",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Kitsune > Beastbane > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Wolfskin > Beastbane > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "even_better",
+      "names": {
+        "en": "Even Better"
+      },
+      "description": "Recover 40% HP at the start of even-numbered Turns.",
+      "iconAssetId": "even_better",
+      "acquisition": [
+        {
+          "classId": "nine_tails",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Nine-Tails > Even Better > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "grisly_wound",
+      "names": {
+        "en": "Grisly Wound"
+      },
+      "description": "The enemy's HP is reduced by 20% after the battle.",
+      "iconAssetId": "grisly_wound",
+      "acquisition": [
+        {
+          "classId": "nine_tails",
+          "level": 15
+        },
+        {
+          "classId": "wolfssegner",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Nine-Tails > Grisly Wound > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Wolfssegner > Grisly Wound > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "luck_plus_4",
+      "names": {
+        "en": "Luck +4"
+      },
+      "description": "Luck +4.",
+      "iconAssetId": "luck_plus_4",
+      "acquisition": [
+        {
+          "classId": "songstress",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Songstress > Luck +4 > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "inspiring_song",
+      "names": {
+        "en": "Inspiring Song"
+      },
+      "description": "Skill, Speed and Luck +3 for one Turn for the unit who receives the user's song.",
+      "iconAssetId": "inspiring_song",
+      "acquisition": [
+        {
+          "classId": "songstress",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Songstress > Inspiring Song > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "voice_of_peace",
+      "names": {
+        "en": "Voice of Peace"
+      },
+      "description": "Enemies within a 2 tile radius deal 2 less physical damage.",
+      "iconAssetId": "voice_of_peace",
+      "acquisition": [
+        {
+          "classId": "songstress",
+          "level": 25
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Songstress > Voice of Peace > Level 25",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "foreign_princess",
+      "names": {
+        "en": "Foreign Princess"
+      },
+      "description": "\"Foreign Army\" enemies within a 2 tile radius deal 2 less damage and receive 2 extra damage.",
+      "iconAssetId": "foreign_princess",
+      "acquisition": [
+        {
+          "classId": "songstress",
+          "level": 35
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Songstress > Foreign Princess > Level 35",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "aptitude",
+      "names": {
+        "en": "Aptitude"
+      },
+      "description": "Adds 10% to all growth rates during Level Ups.",
+      "iconAssetId": "aptitude",
+      "acquisition": [
+        {
+          "classId": "villager",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Villager > Aptitude > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "underdog",
+      "names": {
+        "en": "Underdog"
+      },
+      "description": "Hit rate and Avoid +15 when user's Level is lower than the enemy (promoted units count as Level +20).",
+      "iconAssetId": "underdog",
+      "acquisition": [
+        {
+          "classId": "villager",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-skills",
+          "locator": "Villager > Underdog > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "nobility",
+      "names": {
+        "en": "Nobility"
+      },
+      "description": "Experience gained x 1.2.",
+      "iconAssetId": "nobility",
+      "acquisition": [
+        {
+          "classId": "nohr_prince",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Nohr Prince(ss) > Nobility > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dragon_fang",
+      "names": {
+        "en": "Dragon Fang"
+      },
+      "description": "Skill x 0.75% chance of adding 50% of the user's Attack Power as damage.",
+      "iconAssetId": "dragon_fang",
+      "acquisition": [
+        {
+          "classId": "nohr_prince",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Nohr Prince(ss) > Dragon Fang > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "draconic_hex",
+      "names": {
+        "en": "Draconic Hex"
+      },
+      "description": "After battle, enemy's stats -4.",
+      "iconAssetId": "draconic_hex",
+      "acquisition": [
+        {
+          "classId": "nohr_noble",
+          "level": 5
+        }
+      ],
+      "notes": [
+        "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Nohr Noble > Draconic Hex > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "nohrian_trust",
+      "names": {
+        "en": "Nohrian Trust"
+      },
+      "description": "User shares their support unit's battle skills.",
+      "iconAssetId": "nohrian_trust",
+      "acquisition": [
+        {
+          "classId": "nohr_noble",
+          "level": 15
+        }
+      ],
+      "notes": [
+        "Battle skills are activation-rate skills that can trigger during battle, such as Astra, Luna, Sol, Miracle, Pavise, and Aegis."
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Nohr Noble > Nohrian Trust > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elbow_room",
+      "names": {
+        "en": "Elbow Room"
+      },
+      "description": "When user fights in terrain with no terrain effects, damage +3 during battles.",
+      "iconAssetId": "elbow_room",
+      "acquisition": [
+        {
+          "classId": "cavalier",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Cavalier > Elbow Room > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shelter",
+      "names": {
+        "en": "Shelter"
+      },
+      "description": "Select the \"Shelter\" command to make an adjacent ally the user's support unit.",
+      "iconAssetId": "shelter",
+      "acquisition": [
+        {
+          "classId": "cavalier",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Cavalier > Shelter > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "defender",
+      "names": {
+        "en": "Defender"
+      },
+      "description": "When user is the lead unit while paired up, all stats +1.",
+      "iconAssetId": "defender",
+      "acquisition": [
+        {
+          "classId": "paladin",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Paladin > Defender > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "aegis",
+      "names": {
+        "en": "Aegis"
+      },
+      "description": "Skill% chance of halving damage from Bow, Magic, Dagger, Dragonstone, Breath or Stone attacks.",
+      "iconAssetId": "aegis",
+      "acquisition": [
+        {
+          "classId": "paladin",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Paladin > Aegis > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "luna",
+      "names": {
+        "en": "Luna"
+      },
+      "description": "Skill% chance of ignoring half the enemy's Defense (if user has a physical weapon) or Resistance (if user has a magical weapon).",
+      "iconAssetId": "luna",
+      "acquisition": [
+        {
+          "classId": "great_knight",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Great Knight > Luna > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "armored_blow",
+      "names": {
+        "en": "Armored Blow"
+      },
+      "description": "When user triggers the battle, physical damage received -10.",
+      "iconAssetId": "armored_blow",
+      "acquisition": [
+        {
+          "classId": "great_knight",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Great Knight > Armored Blow > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "defense_plus_2",
+      "names": {
+        "en": "Defense +2"
+      },
+      "description": "Defense +2.",
+      "iconAssetId": "defense_plus_2",
+      "acquisition": [
+        {
+          "classId": "knight",
+          "level": 1
+        }
+      ],
+      "notes": [
+        "Serenes Forest uses \"Defence +2\"; the canonical name uses the localized \"Defense +2\" spelling already established by accepted FE14 data."
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Knight > Defence +2 > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "natural_cover",
+      "names": {
+        "en": "Natural Cover"
+      },
+      "description": "When user fights in terrain with terrain effects, damage received -3 during battles.",
+      "iconAssetId": "natural_cover",
+      "acquisition": [
+        {
+          "classId": "knight",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Knight > Natural Cover > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wary_fighter",
+      "names": {
+        "en": "Wary Fighter"
+      },
+      "description": "During battles, neither the user or enemy can perform follow up attacks.",
+      "iconAssetId": "wary_fighter",
+      "acquisition": [
+        {
+          "classId": "general",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "General > Wary Fighter > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "pavise",
+      "names": {
+        "en": "Pavise"
+      },
+      "description": "Skill% chance of halving damage from Sword, Lance, Axe, Beaststone, Claw or Puppet attacks.",
+      "iconAssetId": "pavise",
+      "acquisition": [
+        {
+          "classId": "general",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "General > Pavise > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hp_plus_5",
+      "names": {
+        "en": "HP +5"
+      },
+      "description": "Maximum HP +5.",
+      "iconAssetId": "hp_plus_5",
+      "acquisition": [
+        {
+          "classId": "fighter",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Fighter > HP +5 > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gamble",
+      "names": {
+        "en": "Gamble"
+      },
+      "description": "Hit rate -10, Critical rate +10.",
+      "iconAssetId": "gamble",
+      "acquisition": [
+        {
+          "classId": "fighter",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Fighter > Gamble > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rally_strength",
+      "names": {
+        "en": "Rally Strength"
+      },
+      "description": "Strength +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "iconAssetId": "rally_strength",
+      "acquisition": [
+        {
+          "classId": "berserker",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Berserker > Rally Strength > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "axefaire",
+      "names": {
+        "en": "Axefaire"
+      },
+      "description": "When user is equipped with an Axe, damage +5 during battle.",
+      "iconAssetId": "axefaire",
+      "acquisition": [
+        {
+          "classId": "berserker",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Berserker > Axefaire > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "good_fortune",
+      "names": {
+        "en": "Good Fortune"
+      },
+      "description": "Luck% chance of recovering 20% HP at the start of the user's Turn.",
+      "iconAssetId": "good_fortune",
+      "acquisition": [
+        {
+          "classId": "mercenary",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Mercenary > Good Fortune > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "strong_riposte",
+      "names": {
+        "en": "Strong Riposte"
+      },
+      "description": "When enemy triggers the battle, damage +3.",
+      "iconAssetId": "strong_riposte",
+      "acquisition": [
+        {
+          "classId": "mercenary",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Mercenary > Strong Riposte > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sol",
+      "names": {
+        "en": "Sol"
+      },
+      "description": "Skill% chance of restoring half the damage dealt to the enemy.",
+      "iconAssetId": "sol",
+      "acquisition": [
+        {
+          "classId": "hero",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Hero > Sol > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "axebreaker",
+      "names": {
+        "en": "Axebreaker"
+      },
+      "description": "Hit rate and Avoid +50 when the enemy is equipped with an Axe.",
+      "iconAssetId": "axebreaker",
+      "acquisition": [
+        {
+          "classId": "hero",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Hero > Axebreaker > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rally_skill",
+      "names": {
+        "en": "Rally Skill"
+      },
+      "description": "Skill +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "iconAssetId": "rally_skill",
+      "acquisition": [
+        {
+          "classId": "bow_knight",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Bow Knight > Rally Skill > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shurikenbreaker",
+      "names": {
+        "en": "Shurikenbreaker"
+      },
+      "description": "Hit rate and Avoid +50 when the enemy is equipped with a Dagger.",
+      "iconAssetId": "shurikenbreaker",
+      "acquisition": [
+        {
+          "classId": "bow_knight",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Bow Knight > Shurikenbreaker > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "movement_plus_1",
+      "names": {
+        "en": "Movement +1"
+      },
+      "description": "Movement +1.",
+      "iconAssetId": "movement_plus_1",
+      "acquisition": [
+        {
+          "classId": "outlaw",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Outlaw > Movement +1 > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lucky_seven",
+      "names": {
+        "en": "Lucky Seven"
+      },
+      "description": "Hit rate and Avoid +20 for the first seven Turns.",
+      "iconAssetId": "lucky_seven",
+      "acquisition": [
+        {
+          "classId": "adventurer",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Adventurer > Lucky Seven > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "pass",
+      "names": {
+        "en": "Pass"
+      },
+      "description": "User can pass through tiles occupied by enemy units.",
+      "iconAssetId": "pass",
+      "acquisition": [
+        {
+          "classId": "adventurer",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Adventurer > Pass > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "strength_plus_2",
+      "names": {
+        "en": "Strength +2"
+      },
+      "description": "Strength +2.",
+      "iconAssetId": "strength_plus_2",
+      "acquisition": [
+        {
+          "classId": "wyvern_rider",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Wyvern Rider > Strength +2 > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lunge",
+      "names": {
+        "en": "Lunge"
+      },
+      "description": "Select the \"Lunge\" command to swap places with an enemy after an attack.",
+      "iconAssetId": "lunge",
+      "acquisition": [
+        {
+          "classId": "wyvern_rider",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Wyvern Rider > Lunge > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rally_defense",
+      "names": {
+        "en": "Rally Defense"
+      },
+      "description": "Defense +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "iconAssetId": "rally_defense",
+      "acquisition": [
+        {
+          "classId": "wyvern_lord",
+          "level": 5
+        }
+      ],
+      "notes": [
+        "Serenes Forest uses \"Rally Defence\"; the canonical name uses the localized \"Rally Defense\" spelling already established by accepted FE14 data."
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Wyvern Lord > Rally Defence > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "swordbreaker",
+      "names": {
+        "en": "Swordbreaker"
+      },
+      "description": "Hit rate and Avoid +50 when the enemy is equipped with a Sword.",
+      "iconAssetId": "swordbreaker",
+      "acquisition": [
+        {
+          "classId": "wyvern_lord",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Wyvern Lord > Swordbreaker > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "savage_blow",
+      "names": {
+        "en": "Savage Blow"
+      },
+      "description": "When user triggers the battle, enemies within a 2 tile radius have their HP reduced by 20% after the battle.",
+      "iconAssetId": "savage_blow",
+      "acquisition": [
+        {
+          "classId": "malig_knight",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Malig Knight > Savage Blow > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "trample",
+      "names": {
+        "en": "Trample"
+      },
+      "description": "Unless enemy is on a mount, damage +5.",
+      "iconAssetId": "trample",
+      "acquisition": [
+        {
+          "classId": "malig_knight",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Malig Knight > Trample > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "heartseeker",
+      "names": {
+        "en": "Heartseeker"
+      },
+      "description": "When fighting adjacent to an enemy, enemy's Avoid -20.",
+      "iconAssetId": "heartseeker",
+      "acquisition": [
+        {
+          "classId": "dark_mage",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Dark Mage > Heartseeker > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "malefic_aura",
+      "names": {
+        "en": "Malefic Aura"
+      },
+      "description": "Enemies within a 2 tile radius receive 2 extra damage from magical attacks.",
+      "iconAssetId": "malefic_aura",
+      "acquisition": [
+        {
+          "classId": "dark_mage",
+          "level": 10
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Dark Mage > Malefic Aura > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "vengeance",
+      "names": {
+        "en": "Vengeance"
+      },
+      "description": "Skill x 1.5% chance of adding half the user's (Max HP - Current HP) as damage.",
+      "iconAssetId": "vengeance",
+      "acquisition": [
+        {
+          "classId": "sorcerer",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Sorcerer > Vengeance > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bowbreaker",
+      "names": {
+        "en": "Bowbreaker"
+      },
+      "description": "Hit rate and Avoid +50 when the enemy is equipped with a Bow.",
+      "iconAssetId": "bowbreaker",
+      "acquisition": [
+        {
+          "classId": "sorcerer",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Sorcerer > Bowbreaker > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "seal_magic",
+      "names": {
+        "en": "Seal Magic"
+      },
+      "description": "After battle, enemy's Magic -6.",
+      "iconAssetId": "seal_magic",
+      "acquisition": [
+        {
+          "classId": "dark_knight",
+          "level": 5
+        }
+      ],
+      "notes": [
+        "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Dark Knight > Seal Magic > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lifetaker",
+      "names": {
+        "en": "Lifetaker"
+      },
+      "description": "When user triggers the battle, recover 50% HP after defeating the enemy.",
+      "iconAssetId": "lifetaker",
+      "acquisition": [
+        {
+          "classId": "dark_knight",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Dark Knight > Lifetaker > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "resistance_plus_2",
+      "names": {
+        "en": "Resistance +2"
+      },
+      "description": "Resistance +2.",
+      "iconAssetId": "resistance_plus_2",
+      "acquisition": [
+        {
+          "classId": "troubadour",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Troubadour > Resistance +2 > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gentilhomme",
+      "names": {
+        "en": "Gentilhomme"
+      },
+      "description": "Female allies within a 2 tile radius receive 2 less damage during battles.",
+      "iconAssetId": "gentilhomme",
+      "acquisition": [
+        {
+          "classId": "troubadour",
+          "level": 10,
+          "gender": "male"
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Troubadour(M) > Gentilhomme > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "demoiselle",
+      "names": {
+        "en": "Demoiselle"
+      },
+      "description": "Male allies within a 2 tile radius receive 2 less damage during battles.",
+      "iconAssetId": "demoiselle",
+      "acquisition": [
+        {
+          "classId": "troubadour",
+          "level": 10,
+          "gender": "female"
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Troubadour (F) > Demoiselle > Level 10",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rally_resistance",
+      "names": {
+        "en": "Rally Resistance"
+      },
+      "description": "Resistance +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "iconAssetId": "rally_resistance",
+      "acquisition": [
+        {
+          "classId": "strategist",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Strategist > Rally Resistance > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "inspiration",
+      "names": {
+        "en": "Inspiration"
+      },
+      "description": "Allies within a 2 tile radius deal 2 extra damage and receive 2 less damage during battles.",
+      "iconAssetId": "inspiration",
+      "acquisition": [
+        {
+          "classId": "strategist",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Strategist > Inspiration > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "live_to_serve",
+      "names": {
+        "en": "Live to Serve"
+      },
+      "description": "When healing an ally, the user recovers the same amount of HP.",
+      "iconAssetId": "live_to_serve",
+      "acquisition": [
+        {
+          "classId": "attendant",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Maid, Butler > Live to Serve > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "tomebreaker",
+      "names": {
+        "en": "Tomebreaker"
+      },
+      "description": "Hit rate and Avoid +50 when the enemy is equipped with a Tome.",
+      "iconAssetId": "tomebreaker",
+      "acquisition": [
+        {
+          "classId": "attendant",
+          "level": 15
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Maid, Butler > Tomebreaker > Level 15",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "odd_shaped",
+      "names": {
+        "en": "Odd Shaped"
+      },
+      "description": "During odd-numbered Turns, damage +4.",
+      "iconAssetId": "odd_shaped",
+      "acquisition": [
+        {
+          "classId": "wolfskin",
+          "level": 1
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Wolfskin > Odd Shaped > Level 1",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "better_odds",
+      "names": {
+        "en": "Better Odds"
+      },
+      "description": "Recover 40% HP at the start of odd-numbered Turns.",
+      "iconAssetId": "better_odds",
+      "acquisition": [
+        {
+          "classId": "wolfssegner",
+          "level": 5
+        }
+      ],
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-nohrian-class-skills",
+          "locator": "Wolfssegner > Better Odds > Level 5",
+          "fields": [
+            "names.en",
+            "description",
+            "iconAssetId",
+            "acquisition"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

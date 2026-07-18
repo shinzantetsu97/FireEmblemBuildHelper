@@ -1,0 +1,38 @@
+FE14 Milestone 007 - Skill extraction summary
+
+Hoshidan class rows: 58
+Nohrian class rows: 51
+Unique class skills: 106
+Class acquisition edges: 113
+Class-label mappings: 55/55
+Personal-skill source rows: 83
+Unique playable personal skills: 69
+Accepted playable personal skills: 69
+Missing icon URLs: 0
+Duplicate source-image groups: 17
+Validation errors: 0
+Validation warnings: 0
+
+Shared class skills:
+- Locktouch: Ninja + Outlaw (icon matches; description matches)
+- Beastbane: Kitsune + Wolfskin (icon matches; description matches)
+- Grisly Wound: Nine-Tails + Wolfssegner (icon matches; description matches)
+
+Exceptional class-label mappings:
+- Monk, Shrine Maiden -> monk, shrine_maiden
+- Great Master, Priestess -> great_master, priestess
+- Nohr Prince(ss) -> nohr_prince
+- Troubadour(M) -> troubadour (male only)
+- Troubadour (F) -> troubadour (female only)
+- Maid, Butler -> attendant
+
+Reviewed decisions:
+- setsuna: keep Optimistic. Serenes swaps the localized Optimist/Optimistic labels; Setsuna uses Optimistic in game.
+- kiragi: keep Optimist. Serenes swaps the localized Optimist/Optimistic labels; Kiragi uses Optimist in game.
+- camilla: keep Rose's Thorns. The accepted in-game localization is plural despite the singular Serenes label.
+
+Warnings:
+- None
+
+Errors:
+- None

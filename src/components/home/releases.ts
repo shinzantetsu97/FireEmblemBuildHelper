@@ -1,10 +1,22 @@
 export const RELEASES = [
   {
+    version: "0.5.0",
+    date: "2026-07-18",
+    dateLabel: "July 18, 2026",
+    title: "FE14 skill data and accessible class planning",
+    current: true,
+    changes: [
+      "Added 106 validated standard class skills with canonical IDs, acquisition edges, source-backed effects, and locally stored icons, plus local personal-skill icons for all 69 playable roster slots.",
+      "Added the searchable FE14 skill directory with Hoshidan, Nohrian, and special-class filters, class-tree selection controls, and deduplicated skill results.",
+      "Added compact class-skill cards to every unit profile, including hover details, gender-aware class and skill labels, dynamic offspring inheritance, and Friendship or Partner Seal access previews.",
+      "Expanded Corrin's build access to resolve every same-gender A-support tree at once, preserve the selected Talent and Partner Seal priorities, and handle Monk, Shrine Maiden, Butler, and Maid gender parallels.",
+    ],
+  },
+  {
     version: "0.4.2",
     date: "2026-07-17",
     dateLabel: "July 17, 2026",
     title: "FE14 autolevel scaling corrections",
-    current: true,
     changes: [
       "Replaced the speculative castle-recruit model with verified level schedules for Izana, Flora, Yukimura, and Fuga, and recorded the shared story-scaling rules used by offspring and Offspring Seals. Thanks to FE14 modder ltranc@ for identifying and explaining the underlying mechanic.",
       "Simplified castle-recruit profiles by removing the obsolete uncertainty banner and showing compact chapter-to-level progressions while retaining technical details in the JSON data.",

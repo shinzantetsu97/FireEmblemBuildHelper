@@ -769,6 +769,15 @@
       "reviewStatus": "accepted"
     },
     {
+      "id": "user-fe14-personal-skill-localization",
+      "kind": "game_data",
+      "title": "FE14 localized personal-skill names - user review",
+      "location": "User-reviewed in-game Fire Emblem Fates localization",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Confirms Setsuna's Optimistic, Kiragi's Optimist, and Camilla's Rose's Thorns despite conflicting labels on the approved Serenes Forest extraction pages."
+    },
+    {
       "id": "serenes-fe14-hoshidan-supports",
       "kind": "web",
       "title": "Serenes Forest - Hoshidan Character Supports",
@@ -1086,10 +1095,26 @@
       "reviewStatus": "accepted"
     },
     {
+      "id": "serenes-fe14-hoshidan-class-skills",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan class skills",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
       "id": "serenes-fe14-nohrian-class-maximum-stats",
       "kind": "web",
       "title": "Fire Emblem Fates: Nohrian class maximum stats",
       "location": "https://serenesforest.net/fire-emblem-fates/nohrian-classes/maximum-stats/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "serenes-fe14-nohrian-class-skills",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Nohrian class skills",
+      "location": "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/",
       "language": "en",
       "reviewStatus": "accepted"
     },

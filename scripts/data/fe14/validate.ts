@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { existsSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import type { ZodTypeAny } from "zod";
@@ -209,7 +210,8 @@ function validateRelationships(
       !relativePath.endsWith("units/first-generation.json") &&
       !relativePath.endsWith("units/second-generation.json") &&
       !relativePath.endsWith("class-trees.json") &&
-      !relativePath.endsWith("class-stats.json"),
+      !relativePath.endsWith("class-stats.json") &&
+      !relativePath.endsWith("class-skills.json"),
   );
 
   for (const relativePath of domainPaths) {
@@ -259,7 +261,6 @@ function validateRelationships(
   const standardClassIds = new Set<string>([
     ...classTreeRows.map((entry) => entry.id as string),
     ...classTreeRows.flatMap((entry) => (entry.promotions as JsonObject[]).map((promotion) => promotion.id as string)),
-    "songstress",
   ]);
   const profileIds = classProfiles.map((profile) => profile.classId as string);
   for (const classId of standardClassIds) {
@@ -275,6 +276,16 @@ function validateRelationships(
   if (new Set(profileIds).size !== profileIds.length) {
     errors.push({ code: "duplicate_class_stat_profile", message: "Class stat profiles contain duplicate class IDs." });
   }
+
+  validateSkillData(
+    parsed,
+    errors,
+    sourceIds,
+    allRoster,
+    standardClassIds,
+    classTreeRows,
+    classProfiles,
+  );
 
   const availability = parsed["data/normalized/fe14/unit-availability.json"] as JsonObject[];
   const availabilityIds = new Set(availability.map((record) => record.id as string));
@@ -815,6 +826,315 @@ function compareUnitOrder(
 
 function unitNo(unitId: string, rosterById: Map<string, JsonObject>): number {
   return (rosterById.get(unitId)?.unitNo as number | undefined) ?? Number.MAX_SAFE_INTEGER;
+}
+
+function validateSkillData(
+  parsed: Record<string, unknown>,
+  errors: ValidationMessage[],
+  sourceIds: Set<string>,
+  roster: JsonObject[],
+  standardClassIds: Set<string>,
+  classTreeRows: JsonObject[],
+  classProfiles: JsonObject[],
+): void {
+  const classSkillFile = parsed[
+    "data/normalized/fe14/class-skills.json"
+  ] as JsonObject;
+  const classSkills = classSkillFile.skills as JsonObject[];
+  const personalSkills = parsed[
+    "data/normalized/fe14/personal-skills.json"
+  ] as JsonObject[];
+  const iconManifest = parsed[
+    "data/sources/fe14/skill-icon-sources.json"
+  ] as JsonObject;
+  const iconEntries = iconManifest.entries as JsonObject[];
+
+  validateUniqueIds(classSkills, "class skill", errors);
+  validateUniqueIds(personalSkills, "personal skill", errors);
+
+  const classNodes = classTreeRows.flatMap((tree) => [
+    tree,
+    ...(tree.promotions as JsonObject[]),
+  ]);
+  const classNodeGroups = new Map<string, JsonObject[]>();
+  for (const node of classNodes) {
+    const classId = node.id as string;
+    classNodeGroups.set(classId, [...(classNodeGroups.get(classId) ?? []), node]);
+  }
+  const profileById = new Map(
+    classProfiles.map((profile) => [profile.classId as string, profile]),
+  );
+  for (const [classId, nodes] of classNodeGroups) {
+    const labels = new Set(nodes.map((node) => node.label as string));
+    const affiliations = new Set(nodes.map((node) => node.affiliation as string));
+    if (labels.size !== 1 || affiliations.size !== 1) {
+      errors.push({
+        code: "inconsistent_class_tree_node",
+        message: `Class ${classId} has inconsistent labels or affiliations across class trees.`,
+      });
+    }
+    if (profileById.get(classId)?.displayName !== nodes[0].label) {
+      errors.push({
+        code: "class_tree_label_mismatch",
+        message: `Class-tree label for ${classId} does not match its class-stat profile.`,
+      });
+    }
+  }
+  const songstressTree = classTreeRows.find((tree) => tree.id === "songstress");
+  if (
+    !songstressTree ||
+    (songstressTree.affiliation as string) !== "special" ||
+    (songstressTree.promotions as JsonObject[]).length !== 0
+  ) {
+    errors.push({
+      code: "invalid_songstress_tree",
+      message: "Songstress must be a standalone special class-tree node.",
+    });
+  }
+  const nohrPrinceTree = classTreeRows.find((tree) => tree.id === "nohr_prince");
+  const nohrPrincePromotions = new Map(
+    ((nohrPrinceTree?.promotions as JsonObject[] | undefined) ?? []).map((node) => [
+      node.id as string,
+      node.affiliation as string,
+    ]),
+  );
+  if (
+    nohrPrinceTree?.affiliation !== "special" ||
+    nohrPrincePromotions.get("hoshido_noble") !== "hoshidan" ||
+    nohrPrincePromotions.get("nohr_noble") !== "nohrian"
+  ) {
+    errors.push({
+      code: "invalid_nohr_prince_affiliation",
+      message: "The Nohr Prince tree must preserve its special base and mixed promotion affiliations.",
+    });
+  }
+  const expectedSpecialClassTrees = ["kitsune", "nohr_prince", "songstress", "villager", "wolfskin"];
+  const actualSpecialClassTrees = classTreeRows
+    .filter((tree) => ((tree.categories as string[] | undefined) ?? []).includes("special"))
+    .map((tree) => tree.id as string)
+    .sort();
+  if (JSON.stringify(actualSpecialClassTrees) !== JSON.stringify(expectedSpecialClassTrees)) {
+    errors.push({
+      code: "invalid_special_class_category",
+      message: `Special class-tree category must contain exactly: ${expectedSpecialClassTrees.join(", ")}.`,
+    });
+  }
+
+  const classSkillIds = new Set(classSkills.map((skill) => skill.id as string));
+  const classIdsWithSkills = new Set<string>();
+  const acquisitionKeys = new Set<string>();
+  const approvedClassSkillSources = new Set([
+    "serenes-fe14-hoshidan-class-skills",
+    "serenes-fe14-nohrian-class-skills",
+  ]);
+  for (const skill of classSkills) {
+    const skillId = skill.id as string;
+    const acquisition = skill.acquisition as JsonObject[];
+    for (const edge of acquisition) {
+      const classId = edge.classId as string;
+      const level = edge.level as number;
+      const gender = edge.gender as string | undefined;
+      classIdsWithSkills.add(classId);
+      if (!standardClassIds.has(classId)) {
+        errors.push({
+          code: "unknown_class_skill_class",
+          message: `Class skill ${skillId} references unknown class ${classId}.`,
+        });
+      }
+      if (![1, 5, 10, 15, 25, 35].includes(level)) {
+        errors.push({
+          code: "invalid_class_skill_level",
+          message: `Class skill ${skillId} has invalid acquisition level ${String(level)}.`,
+        });
+      }
+      if (gender && (classId !== "troubadour" || level !== 10)) {
+        errors.push({
+          code: "invalid_class_skill_gender",
+          message: `Gender condition on ${skillId} is outside the Troubadour level-10 exception.`,
+        });
+      }
+      const edgeKey = `${skillId}:${classId}:${String(level)}:${gender ?? "all"}`;
+      if (acquisitionKeys.has(edgeKey)) {
+        errors.push({
+          code: "duplicate_class_skill_edge",
+          message: `Duplicate class-skill acquisition edge ${edgeKey}.`,
+        });
+      }
+      acquisitionKeys.add(edgeKey);
+    }
+    const provenance = skill.provenance as JsonObject[];
+    if (
+      provenance.some(
+        (sourceRef) =>
+          !approvedClassSkillSources.has(sourceRef.sourceId as string),
+      )
+    ) {
+      errors.push({
+        code: "class_skill_scope",
+        message: `Class skill ${skillId} uses a source outside the approved standard class-skill pages.`,
+      });
+    }
+  }
+  for (const classId of standardClassIds) {
+    if (!classIdsWithSkills.has(classId)) {
+      errors.push({
+        code: "class_without_skills",
+        message: `Standard class ${classId} has no class-skill acquisition mapping.`,
+      });
+    }
+  }
+
+  const personalSkillIds = new Set(personalSkills.map((skill) => skill.id as string));
+  const personalSkillOwners = new Set<string>();
+  for (const skill of personalSkills) {
+    const unitId = skill.unitId as string;
+    if (personalSkillOwners.has(unitId)) {
+      errors.push({
+        code: "duplicate_personal_skill_owner",
+        message: `Unit ${unitId} owns more than one personal skill.`,
+        unitId,
+      });
+    }
+    personalSkillOwners.add(unitId);
+    if (skill.iconAssetId !== skill.id) {
+      errors.push({
+        code: "personal_skill_icon_id",
+        message: `Personal skill ${String(skill.id)} must use the same icon asset ID.`,
+        unitId,
+      });
+    }
+  }
+  for (const unit of roster) {
+    const unitId = unit.id as string;
+    const skillId = unit.personalSkillId as string | undefined;
+    const skill = personalSkills.find((record) => record.unitId === unitId);
+    if (!skill || !skillId || skill.id !== skillId) {
+      errors.push({
+        code: "personal_skill_owner_mismatch",
+        message: `Unit ${unitId} does not resolve to exactly one matching personal skill.`,
+        unitId,
+      });
+    }
+  }
+
+  const manifestCounts = iconManifest.counts as JsonObject;
+  const manifestKeys = new Set<string>();
+  const manifestDestinations = new Set<string>();
+  const manifestByKey = new Map<string, JsonObject>();
+  let classIconCount = 0;
+  let personalIconCount = 0;
+  const assetRoot = path.resolve("src/games/fe14/assets");
+  const pngSignature = "89504e470d0a1a0a";
+  for (const entry of iconEntries) {
+    const skillId = entry.skillId as string;
+    const skillType = entry.skillType as "class" | "personal";
+    const key = `${skillType}:${skillId}`;
+    const destination = entry.localDestination as string;
+    const absoluteDestination = path.resolve(destination);
+    const relativeDestination = path.relative(assetRoot, absoluteDestination);
+    if (manifestKeys.has(key)) {
+      errors.push({
+        code: "duplicate_icon_manifest_key",
+        message: `Duplicate icon manifest key ${key}.`,
+      });
+    }
+    manifestKeys.add(key);
+    manifestByKey.set(key, entry);
+    if (manifestDestinations.has(destination)) {
+      errors.push({
+        code: "duplicate_icon_destination",
+        message: `Duplicate icon destination ${destination}.`,
+      });
+    }
+    manifestDestinations.add(destination);
+    if (
+      relativeDestination.startsWith("..") ||
+      path.isAbsolute(relativeDestination)
+    ) {
+      errors.push({
+        code: "icon_destination_scope",
+        message: `Icon destination escapes the FE14 asset root: ${destination}.`,
+      });
+    }
+    for (const sourcePageId of entry.sourcePageIds as string[]) {
+      if (!sourceIds.has(sourcePageId)) {
+        errors.push({
+          code: "unknown_icon_source_page",
+          message: `Icon ${key} references unknown source page ${sourcePageId}.`,
+        });
+      }
+    }
+    if (!existsSync(absoluteDestination)) {
+      errors.push({
+        code: "missing_icon_file",
+        message: `Missing icon file ${destination}.`,
+      });
+    } else if (
+      statSync(absoluteDestination).size === 0 ||
+      readFileSync(absoluteDestination).subarray(0, 8).toString("hex") !==
+        pngSignature
+    ) {
+      errors.push({
+        code: "invalid_icon_file",
+        message: `Icon file is empty or not PNG: ${destination}.`,
+      });
+    }
+    if (skillType === "class") classIconCount += 1;
+    else personalIconCount += 1;
+  }
+  if (
+    manifestCounts.classIcons !== classIconCount ||
+    manifestCounts.personalIcons !== personalIconCount ||
+    manifestCounts.totalIcons !== iconEntries.length
+  ) {
+    errors.push({
+      code: "icon_manifest_count",
+      message: "Icon manifest declared counts do not match its entries.",
+    });
+  }
+
+  for (const skill of classSkills) {
+    const skillId = skill.id as string;
+    const manifestEntry = manifestByKey.get(`class:${skillId}`);
+    if (
+      !manifestEntry ||
+      manifestEntry.canonicalName !== (skill.names as JsonObject).en ||
+      skill.iconAssetId !== skillId
+    ) {
+      errors.push({
+        code: "class_skill_icon_manifest",
+        message: `Class skill ${skillId} does not match its icon manifest entry.`,
+      });
+    }
+  }
+  for (const skill of personalSkills) {
+    const skillId = skill.id as string;
+    const manifestEntry = manifestByKey.get(`personal:${skillId}`);
+    if (
+      !manifestEntry ||
+      manifestEntry.unitId !== skill.unitId ||
+      manifestEntry.canonicalName !== (skill.names as JsonObject).en
+    ) {
+      errors.push({
+        code: "personal_skill_icon_manifest",
+        message: `Personal skill ${skillId} does not match its icon manifest entry.`,
+        unitId: skill.unitId as string,
+      });
+    }
+  }
+  for (const entry of iconEntries) {
+    const id = entry.skillId as string;
+    const type = entry.skillType as string;
+    if (
+      (type === "class" && !classSkillIds.has(id)) ||
+      (type === "personal" && !personalSkillIds.has(id))
+    ) {
+      errors.push({
+        code: "orphan_icon_manifest_entry",
+        message: `Icon manifest entry ${type}:${id} has no canonical skill record.`,
+      });
+    }
+  }
 }
 
 function validateUnitRecordOrdering(

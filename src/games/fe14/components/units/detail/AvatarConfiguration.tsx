@@ -1,7 +1,7 @@
 import Alert from "react-bootstrap/Alert";
 import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
-import { TriangleAlert } from "lucide-react";
+import { ChevronDown, TriangleAlert } from "lucide-react";
 import { displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data";
 import { ClassTreeList } from "./ClassTree";
 import GrowthBar from "./GrowthBar";
@@ -61,13 +61,18 @@ export function AvatarConfigurationSection({ unit, selection }: { unit: UnitRunt
         </Table>
       </div>
 
-      <div className="avatar-modifier-matrices">
-        <h3>Boon and bane modifier matrices</h3>
-        <p>Each populated cell shows the boon delta first and the corresponding bane delta second.</p>
-        <AvatarBaseModifierArray config={config} />
-        <AvatarModifierMatrix title="Personal growth modifiers" config={config} field="growthDeltas" percentage />
-        <AvatarModifierMatrix title="Cap modifiers" config={config} field="capDeltas" />
-      </div>
+      <details className="avatar-modifier-matrices">
+        <summary>
+          <span>Boon and bane modifier matrices</span>
+          <ChevronDown aria-hidden="true" size={18} />
+        </summary>
+        <div className="avatar-modifier-matrix-content">
+          <p>Each populated cell shows the boon delta first and the corresponding bane delta second.</p>
+          <AvatarBaseModifierArray config={config} />
+          <AvatarModifierMatrix title="Personal growth modifiers" config={config} field="growthDeltas" percentage />
+          <AvatarModifierMatrix title="Cap modifiers" config={config} field="capDeltas" />
+        </div>
+      </details>
 
       <div className="avatar-class-grid">
         <div>
@@ -256,7 +261,7 @@ function FriendshipCoverageTable({ unit, selection }: { unit: UnitRuntime; selec
             const available = new Set(
               unit.supports
                 .filter((support) => support.kind !== "romantic" && support.partnerGender === gender && support.routes.includes(route))
-                .map((support) => corrinBorrowedClassId(support.partnerUnitId))
+                .map((support) => corrinBorrowedClassId(support.partnerUnitId, gender))
                 .filter((classId): classId is string => Boolean(classId)),
             );
             const talentClasses = config.talents.map((talent) => talent.classId ?? talent.classIdByGender?.[gender]).filter((classId): classId is string => Boolean(classId));

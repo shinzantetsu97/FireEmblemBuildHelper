@@ -1,15 +1,17 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
-import { ArrowRight, Baby, GitBranch, ShieldCheck, TriangleAlert } from "lucide-react";
+import { ArrowRight, Baby, GitBranch, TriangleAlert } from "lucide-react";
 import { displayId, fe14Data, type AvatarChoice, type SealGrant, type StatBlock, type UnitRuntime } from "../../../data";
 import { calculateOffspringRecruitmentStat, resolveOffspringScenario, roundHalfUp } from "../../../offspring";
+import PersonalSkill from "../../skills/PersonalSkill";
+import UnitClassSkills from "../../skills/UnitClassSkills";
 import { ClassTreeLabel } from "./ClassTree";
 import GrowthBar from "./GrowthBar";
 import PairupTable from "./PairupTable";
 import SectionHeading from "./SectionHeading";
-import SupportDirectory from "./SupportDirectory";
+import SupportDirectory, { type SealGrantPreview, type SealGrantPreviews, type SealPreviewKind } from "./SupportDirectory";
 import { STAT_KEYS, type AvatarGender } from "./types";
 import { corrinNobleBaseLabel } from "./UnitHeader";
 import UnitReferences from "./UnitReferences";
@@ -37,6 +39,7 @@ export default function OffspringOverview({
   const [baneId, setBaneId] = useState("weak");
   const [talentId, setTalentId] = useState(config?.talents[0]?.id ?? "cavalier");
   const [nestedParentId, setNestedParentId] = useState("");
+  const [selectedSealPreviews, setSelectedSealPreviews] = useState<SealGrantPreviews>({});
   const boon = config?.boons.find((choice) => choice.id === boonId) ?? config?.boons[0];
   const bane = config?.banes.find((choice) => choice.id === baneId) ?? config?.banes[1];
 
@@ -49,6 +52,14 @@ export default function OffspringOverview({
     () => resolveOffspringScenario(unit, parentId, boon, bane, { corrinTalentId: talentId, nestedVariableParentId: nestedParentId }),
     [unit, parentId, boon, bane, talentId, nestedParentId],
   );
+  const handleSealPreviewChange = useCallback((seal: SealPreviewKind, preview: SealGrantPreview | null) => {
+    setSelectedSealPreviews((current) => {
+      const next = { ...current };
+      if (preview) next[seal] = preview;
+      else delete next[seal];
+      return next;
+    });
+  }, []);
 
   if (!parentage || !recruitment || !scenario) return null;
   const selectedOption = parentage.variableParentOptions.find((option) => option.unitId === parentId)!;
@@ -146,6 +157,16 @@ export default function OffspringOverview({
 
       <RecruitmentPanel unit={unit} scenario={scenario} />
 
+      <UnitClassSkills
+        gender={scenario.childGender}
+        sources={[
+          { label: "Own class", classIds: [parentage.childBaseClassId] },
+          { label: `From ${fixedParentName}`, classIds: [scenario.fixedInheritedClassId] },
+          { label: `From ${scenario.variableParent.identity.displayName}`, classIds: [scenario.inheritedClassId] },
+        ]}
+        selectedSealPreviews={selectedSealPreviews}
+      />
+
       <section className="data-section" aria-labelledby="offspring-stats-heading">
         <SectionHeading eyebrow="Resolved numbers" title="Personal growth and cap modifiers" id="offspring-stats-heading" />
         <div className="offspring-stat-layout">
@@ -157,10 +178,7 @@ export default function OffspringOverview({
       <section className="data-section two-column-data" aria-label="Skill and class access">
         <div>
           <SectionHeading eyebrow="Identity" title="Personal skill" id="skill-heading" />
-          <div className="skill-block" aria-labelledby="skill-heading">
-            <ShieldCheck aria-hidden="true" size={22} />
-            <div><strong>{unit.personalSkill?.names.en}</strong><p>{unit.personalSkill?.effect}</p></div>
-          </div>
+          {unit.personalSkill ? <PersonalSkill skill={unit.personalSkill} labelledBy="skill-heading" /> : null}
         </div>
         <div>
           <SectionHeading eyebrow="Inheritance" title="Resolved class access" id="class-heading" />
@@ -178,7 +196,12 @@ export default function OffspringOverview({
         <p className="offspring-rule-note">Ranks alternate parent contributions: Attack Stance uses {scenario.mother.identity.displayName} C, {scenario.father.identity.displayName} B, {scenario.mother.identity.displayName} A, {scenario.father.identity.displayName} S; Guard Stance uses {scenario.father.identity.displayName} C, {scenario.mother.identity.displayName} B, {scenario.father.identity.displayName} A, {scenario.mother.identity.displayName} S.</p>
       </section>
 
-      <OffspringSupports unit={unit} scenario={scenario} />
+      <OffspringSupports
+        unit={unit}
+        scenario={scenario}
+        selectedSealPreviews={selectedSealPreviews}
+        onSealPreviewChange={handleSealPreviewChange}
+      />
       <UnitReferences unit={unit} />
     </div>
   );
@@ -396,7 +419,7 @@ function RecruitmentStatWalkthrough({
         <div>
           <span>Calculator inputs</span>
           <h4>Both parents' complete inheritance stat lines</h4>
-          <p><strong>Before stat boosters:</strong> use personal base + level-up gains only. Subtract class bases; exclude permanent stat-booster items, Pair Up, equipment, meals, tonics, and statues. Fed Jakob the whole pantry before checking? SOL. You likely did not miss much: <code>floor(2 + C / 10)</code> clamps the inherited bonus pretty hard.</p>
+          <p><strong>Before stat boosters:</strong> use personal base + level-up gains only. Subtract class bases; exclude permanent stat-booster items, Pair Up, equipment, meals, tonics, and statues. Don't remember how much you feed the parents? SOL. You likely did not miss much: <code>floor(2 + C / 10)</code> clamps the inherited bonus pretty hard.</p>
         </div>
         <Table responsive>
           <thead>
@@ -540,9 +563,13 @@ function ParentGrowthPanel({ name, growth, nestedParentName }: { name: string; g
 function OffspringSupports({
   unit,
   scenario,
+  selectedSealPreviews,
+  onSealPreviewChange,
 }: {
   unit: UnitRuntime;
   scenario: NonNullable<ReturnType<typeof resolveOffspringScenario>>;
+  selectedSealPreviews: SealGrantPreviews;
+  onSealPreviewChange: (seal: SealPreviewKind, preview: SealGrantPreview | null) => void;
 }) {
   const parentage = unit.offspring!.parentage;
   const nativeClasses = new Set([parentage.childBaseClassId, scenario.fixedInheritedClassId, scenario.inheritedClassId].filter((classId): classId is string => Boolean(classId)));
@@ -597,7 +624,12 @@ function OffspringSupports({
         <span><strong>Mother</strong> {parentName(scenario.mother, scenario.childGender === "male" ? "female" : undefined)} (C-A)</span>
         {siblingName ? <span><strong>Sibling</strong> {siblingName} (C-A)</span> : null}
       </div>
-      <SupportDirectory unit={supportUnit} avatarSelection={null} />
+      <SupportDirectory
+        unit={supportUnit}
+        avatarSelection={null}
+        selectedSealPreviews={selectedSealPreviews}
+        onSealPreviewChange={onSealPreviewChange}
+      />
       {azuraClausePartnerName ? (
         <p className="offspring-rule-note offspring-special-note">
           <strong>Azura clause:</strong> {azuraClausePartnerName} is unavailable because Corrin married Azura's other offspring, making {azuraClausePartnerName} Kana's aunt or uncle. Apparently the double-spoiler family tree is where Fates finally draws a line: incest, unfortunately, is not wincest here. The support is removed entirely, so there is no C-A chain, S rank, or seal grant.

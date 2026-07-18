@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { BookOpen, StickyNote } from "lucide-react";
+import { BookOpen, Sparkles, StickyNote } from "lucide-react";
 import { AppLink, type AppRoute } from "../router";
 
 export default function AppHeader({ route }: { route: AppRoute }) {
@@ -23,6 +23,10 @@ export default function AppHeader({ route }: { route: AppRoute }) {
             <AppLink className={`nav-link${unitsActive ? " active" : ""}`} to="/FE14/Units">
               <BookOpen aria-hidden="true" size={17} />
               FE14 Units
+            </AppLink>
+            <AppLink className={`nav-link${route.kind === "skill-index" ? " active" : ""}`} to="/FE14/Skills">
+              <Sparkles aria-hidden="true" size={17} />
+              FE14 Skills
             </AppLink>
           </Nav>
         </Navbar.Collapse>

@@ -2,30 +2,403 @@
   "gameId": "fe14",
   "scope": "standard_non_dlc",
   "classes": [
-    { "id": "apothecary", "promotions": [{ "id": "merchant", "label": "Merchant" }, { "id": "mechanist", "label": "Mechanist" }] },
-    { "id": "archer", "promotions": [{ "id": "sniper", "label": "Sniper" }, { "id": "kinshi_knight", "label": "Kinshi Knight" }] },
-    { "id": "cavalier", "promotions": [{ "id": "paladin", "label": "Paladin" }, { "id": "great_knight", "label": "Great Knight" }] },
-    { "id": "dark_mage", "promotions": [{ "id": "sorcerer", "label": "Sorcerer" }, { "id": "dark_knight", "label": "Dark Knight" }] },
-    { "id": "diviner", "promotions": [{ "id": "onmyoji", "label": "Onmyoji" }, { "id": "basara", "label": "Basara" }] },
-    { "id": "fighter", "promotions": [{ "id": "hero", "label": "Hero" }, { "id": "berserker", "label": "Berserker" }] },
-    { "id": "kitsune", "promotions": [{ "id": "nine_tails", "label": "Nine-Tails" }] },
-    { "id": "knight", "promotions": [{ "id": "general", "label": "General" }, { "id": "great_knight", "label": "Great Knight" }] },
-    { "id": "mercenary", "promotions": [{ "id": "hero", "label": "Hero" }, { "id": "bow_knight", "label": "Bow Knight" }] },
-    { "id": "monk", "promotions": [{ "id": "great_master", "label": "Great Master" }, { "id": "onmyoji", "label": "Onmyoji" }] },
-    { "id": "ninja", "promotions": [{ "id": "master_ninja", "label": "Master Ninja" }, { "id": "mechanist", "label": "Mechanist" }] },
-    { "id": "nohr_prince", "promotions": [{ "id": "nohr_noble", "label": "Nohr Noble" }, { "id": "hoshido_noble", "label": "Hoshido Noble" }] },
-    { "id": "oni_savage", "promotions": [{ "id": "oni_chieftain", "label": "Oni Chieftain" }, { "id": "blacksmith", "label": "Blacksmith" }] },
-    { "id": "outlaw", "promotions": [{ "id": "adventurer", "label": "Adventurer" }, { "id": "bow_knight", "label": "Bow Knight" }] },
-    { "id": "samurai", "promotions": [{ "id": "swordmaster", "label": "Swordmaster" }, { "id": "master_of_arms", "label": "Master of Arms" }] },
-    { "id": "shrine_maiden", "promotions": [{ "id": "priestess", "label": "Priestess" }, { "id": "onmyoji", "label": "Onmyoji" }] },
-    { "id": "sky_knight", "promotions": [{ "id": "falcon_knight", "label": "Falcon Knight" }, { "id": "kinshi_knight", "label": "Kinshi Knight" }] },
-    { "id": "spear_fighter", "promotions": [{ "id": "spear_master", "label": "Spear Master" }, { "id": "basara", "label": "Basara" }] },
-    { "id": "troubadour", "promotions": [{ "id": "strategist", "label": "Strategist" }, { "id": "attendant", "label": "Maid / Butler" }] },
-    { "id": "villager", "promotions": [{ "id": "merchant", "label": "Merchant" }, { "id": "master_of_arms", "label": "Master of Arms" }] },
-    { "id": "wolfskin", "promotions": [{ "id": "wolfssegner", "label": "Wolfssegner" }] },
-    { "id": "wyvern_rider", "promotions": [{ "id": "wyvern_lord", "label": "Wyvern Lord" }, { "id": "malig_knight", "label": "Malig Knight" }] }
+    {
+      "id": "apothecary",
+      "label": "Apothecary",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "merchant",
+          "label": "Merchant",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "mechanist",
+          "label": "Mechanist",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "archer",
+      "label": "Archer",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "sniper",
+          "label": "Sniper",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "kinshi_knight",
+          "label": "Kinshi Knight",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "cavalier",
+      "label": "Cavalier",
+      "affiliation": "nohrian",
+      "promotions": [
+        {
+          "id": "paladin",
+          "label": "Paladin",
+          "affiliation": "nohrian"
+        },
+        {
+          "id": "great_knight",
+          "label": "Great Knight",
+          "affiliation": "nohrian"
+        }
+      ]
+    },
+    {
+      "id": "dark_mage",
+      "label": "Dark Mage",
+      "affiliation": "nohrian",
+      "promotions": [
+        {
+          "id": "sorcerer",
+          "label": "Sorcerer",
+          "affiliation": "nohrian"
+        },
+        {
+          "id": "dark_knight",
+          "label": "Dark Knight",
+          "affiliation": "nohrian"
+        }
+      ]
+    },
+    {
+      "id": "diviner",
+      "label": "Diviner",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "onmyoji",
+          "label": "Onmyoji",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "basara",
+          "label": "Basara",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "fighter",
+      "label": "Fighter",
+      "affiliation": "nohrian",
+      "promotions": [
+        {
+          "id": "hero",
+          "label": "Hero",
+          "affiliation": "nohrian"
+        },
+        {
+          "id": "berserker",
+          "label": "Berserker",
+          "affiliation": "nohrian"
+        }
+      ]
+    },
+    {
+      "id": "kitsune",
+      "label": "Kitsune",
+      "affiliation": "hoshidan",
+      "categories": ["special"],
+      "promotions": [
+        {
+          "id": "nine_tails",
+          "label": "Nine-Tails",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "knight",
+      "label": "Knight",
+      "affiliation": "nohrian",
+      "promotions": [
+        {
+          "id": "general",
+          "label": "General",
+          "affiliation": "nohrian"
+        },
+        {
+          "id": "great_knight",
+          "label": "Great Knight",
+          "affiliation": "nohrian"
+        }
+      ]
+    },
+    {
+      "id": "mercenary",
+      "label": "Mercenary",
+      "affiliation": "nohrian",
+      "promotions": [
+        {
+          "id": "hero",
+          "label": "Hero",
+          "affiliation": "nohrian"
+        },
+        {
+          "id": "bow_knight",
+          "label": "Bow Knight",
+          "affiliation": "nohrian"
+        }
+      ]
+    },
+    {
+      "id": "monk",
+      "label": "Monk",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "great_master",
+          "label": "Great Master",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "onmyoji",
+          "label": "Onmyoji",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "ninja",
+      "label": "Ninja",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "master_ninja",
+          "label": "Master Ninja",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "mechanist",
+          "label": "Mechanist",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "nohr_prince",
+      "label": "Nohr Prince / Princess",
+      "affiliation": "special",
+      "categories": ["special"],
+      "promotions": [
+        {
+          "id": "nohr_noble",
+          "label": "Nohr Noble",
+          "affiliation": "nohrian"
+        },
+        {
+          "id": "hoshido_noble",
+          "label": "Hoshido Noble",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "oni_savage",
+      "label": "Oni Savage",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "oni_chieftain",
+          "label": "Oni Chieftain",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "blacksmith",
+          "label": "Blacksmith",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "outlaw",
+      "label": "Outlaw",
+      "affiliation": "nohrian",
+      "promotions": [
+        {
+          "id": "adventurer",
+          "label": "Adventurer",
+          "affiliation": "nohrian"
+        },
+        {
+          "id": "bow_knight",
+          "label": "Bow Knight",
+          "affiliation": "nohrian"
+        }
+      ]
+    },
+    {
+      "id": "samurai",
+      "label": "Samurai",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "swordmaster",
+          "label": "Swordmaster",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "master_of_arms",
+          "label": "Master of Arms",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "shrine_maiden",
+      "label": "Shrine Maiden",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "priestess",
+          "label": "Priestess",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "onmyoji",
+          "label": "Onmyoji",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "sky_knight",
+      "label": "Sky Knight",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "falcon_knight",
+          "label": "Falcon Knight",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "kinshi_knight",
+          "label": "Kinshi Knight",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "spear_fighter",
+      "label": "Spear Fighter",
+      "affiliation": "hoshidan",
+      "promotions": [
+        {
+          "id": "spear_master",
+          "label": "Spear Master",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "basara",
+          "label": "Basara",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "troubadour",
+      "label": "Troubadour",
+      "affiliation": "nohrian",
+      "promotions": [
+        {
+          "id": "strategist",
+          "label": "Strategist",
+          "affiliation": "nohrian"
+        },
+        {
+          "id": "attendant",
+          "label": "Maid / Butler",
+          "affiliation": "nohrian"
+        }
+      ]
+    },
+    {
+      "id": "villager",
+      "label": "Villager",
+      "affiliation": "hoshidan",
+      "categories": ["special"],
+      "promotions": [
+        {
+          "id": "merchant",
+          "label": "Merchant",
+          "affiliation": "hoshidan"
+        },
+        {
+          "id": "master_of_arms",
+          "label": "Master of Arms",
+          "affiliation": "hoshidan"
+        }
+      ]
+    },
+    {
+      "id": "wolfskin",
+      "label": "Wolfskin",
+      "affiliation": "nohrian",
+      "categories": ["special"],
+      "promotions": [
+        {
+          "id": "wolfssegner",
+          "label": "Wolfssegner",
+          "affiliation": "nohrian"
+        }
+      ]
+    },
+    {
+      "id": "wyvern_rider",
+      "label": "Wyvern Rider",
+      "affiliation": "nohrian",
+      "promotions": [
+        {
+          "id": "wyvern_lord",
+          "label": "Wyvern Lord",
+          "affiliation": "nohrian"
+        },
+        {
+          "id": "malig_knight",
+          "label": "Malig Knight",
+          "affiliation": "nohrian"
+        }
+      ]
+    },
+    {
+      "id": "songstress",
+      "label": "Songstress",
+      "affiliation": "special",
+      "categories": ["special"],
+      "promotions": []
+    }
   ],
   "provenance": [
-    { "sourceId": "fewiki-fe14-classes", "locator": "Class table > Changes to", "fields": ["classes.promotions"], "reviewStatus": "accepted" }
+    {
+      "sourceId": "fewiki-fe14-classes",
+      "locator": "Class table > Changes to",
+      "fields": [
+        "classes.id",
+        "classes.label",
+        "classes.affiliation",
+        "classes.promotions"
+      ],
+      "reviewStatus": "accepted"
+    },
+    {
+      "sourceId": "serenes-fe14-hoshidan-class-skills",
+      "locator": "Songstress class-skill rows",
+      "fields": [
+        "classes.id",
+        "classes.label",
+        "classes.affiliation"
+      ],
+      "reviewStatus": "accepted"
+    }
   ]
 }

@@ -3,6 +3,7 @@ import { useEffect, useState, type MouseEvent, type ReactNode } from "react";
 export type AppRoute =
   | { kind: "home" }
   | { kind: "notes" }
+  | { kind: "skill-index" }
   | { kind: "unit-index" }
   | { kind: "unit-detail"; slug: string }
   | { kind: "not-found" };
@@ -73,6 +74,9 @@ function parseRoute(pathname: string): AppRoute {
   }
   if (normalized.toLowerCase() === "/fe14/units") {
     return { kind: "unit-index" };
+  }
+  if (normalized.toLowerCase() === "/fe14/skills") {
+    return { kind: "skill-index" };
   }
 
   const detailMatch = normalized.match(/^\/fe14\/units\/([^/]+)$/i);
