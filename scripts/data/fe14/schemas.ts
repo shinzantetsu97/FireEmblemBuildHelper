@@ -159,11 +159,6 @@ export const childParentageFileSchema = z.array(z.object({
   childBaseClassId: z.string().min(1),
   childBaseGrowth: statBlockSchema,
   notes: z.array(z.string().min(1)).optional(),
-  personalSkill: z.object({
-    id: z.string().min(1),
-    names: z.object({ en: z.string().min(1), zhHans: z.string().min(1) }),
-    effect: z.string().min(1),
-  }),
   formulas: z.object({
     personalGrowth: z.literal("floor((child_base + variable_parent) / 2)"),
     capModifiers: z.enum(["fixed_parent + variable_parent + 1", "fixed_parent + variable_parent + generation_bonus"]),
@@ -658,22 +653,35 @@ export const classAccessFileSchema = z.array(
 
 export const personalSkillsFileSchema = z.array(
   z.object({
-    id: z.string().min(1),
+    id: z.string().regex(/^[a-z][a-z0-9_]*$/),
     unitId: z.string().min(1),
     names: z.object({ en: z.string().min(1), zhHans: z.string().min(1) }),
     effect: z.string().min(1),
+    iconAssetId: z.string().regex(/^[a-z][a-z0-9_]*$/),
     provenance: z.array(sourceRefSchema).min(1),
   }),
 );
+
+export const classAffiliationSchema = z.enum(["hoshidan", "nohrian", "special"]);
+export const classCategorySchema = z.enum(["special"]);
+
+const classTreeNodeSchema = z.object({
+  id: z.string().regex(/^[a-z][a-z0-9_]*$/),
+  label: z.string().min(1),
+  affiliation: classAffiliationSchema,
+});
 
 export const classTreeFileSchema = z.object({
   gameId: z.literal("fe14"),
   scope: z.literal("standard_non_dlc"),
   classes: z.array(
-    z.object({
-      id: z.string().min(1),
-      promotions: z.array(z.object({ id: z.string().min(1), label: z.string().min(1) })).min(1).max(2),
-    }),
+    classTreeNodeSchema.extend({
+      categories: z.array(classCategorySchema).max(1).optional(),
+      promotions: z.array(classTreeNodeSchema).max(2),
+    }).refine(
+      (record) => record.promotions.length > 0 || record.id === "songstress",
+      { message: "Only Songstress may be a standalone class-tree node." },
+    ),
   ).min(1),
   provenance: z.array(sourceRefSchema).min(1),
 });
@@ -691,14 +699,79 @@ export const classStatsFileSchema = z.object({
   provenance: z.array(sourceRefSchema).min(1),
 });
 
+export const classSkillAcquisitionSchema = z.object({
+  classId: z.string().regex(/^[a-z][a-z0-9_]*$/),
+  level: z.number().int().positive(),
+  gender: z.enum(["male", "female"]).optional(),
+});
+
+export const classSkillsFileSchema = z.object({
+  gameId: z.literal("fe14"),
+  scope: z.literal("standard_non_dlc"),
+  skills: z.array(
+    z.object({
+      id: z.string().regex(/^[a-z][a-z0-9_]*$/),
+      names: z.object({ en: z.string().min(1) }),
+      description: z.string().min(1),
+      iconAssetId: z.string().regex(/^[a-z][a-z0-9_]*$/),
+      acquisition: z.array(classSkillAcquisitionSchema).min(1),
+      notes: z.array(z.string().min(1)).optional(),
+      provenance: z.array(sourceRefSchema).min(1),
+    }),
+  ).min(1),
+});
+
+const skillIconManifestEntrySchema = z.object({
+  skillId: z.string().regex(/^[a-z][a-z0-9_]*$/),
+  skillType: z.enum(["class", "personal"]),
+  unitId: z.string().min(1).optional(),
+  canonicalName: z.string().min(1),
+  sourceNames: z.array(z.string().min(1)).min(1),
+  sourcePageIds: z.array(z.string().min(1)).min(1),
+  sourcePageUrls: z.array(z.string().url()).min(1),
+  sourceImageUrl: z.string().url().regex(/\.png$/i),
+  localDestination: z.string().regex(
+    /^src\/games\/fe14\/assets\/(class_skill_icons|personal_skill_icons)\/[a-z][a-z0-9_]*\.png$/,
+  ),
+}).superRefine((entry, context) => {
+  if (entry.skillType === "personal" && !entry.unitId) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "Personal-skill icon entries require unitId.",
+      path: ["unitId"],
+    });
+  }
+  if (entry.skillType === "class" && entry.unitId) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "Class-skill icon entries must not define unitId.",
+      path: ["unitId"],
+    });
+  }
+});
+
+export const skillIconManifestFileSchema = z.object({
+  gameId: z.literal("fe14"),
+  scope: z.literal("milestone-007-standard-class-and-playable-personal-skills"),
+  sourceInventoryCapturedAt: z.string().datetime(),
+  counts: z.object({
+    classIcons: z.number().int().nonnegative(),
+    personalIcons: z.number().int().nonnegative(),
+    totalIcons: z.number().int().nonnegative(),
+  }),
+  entries: z.array(skillIconManifestEntrySchema).min(1),
+});
+
 export const domainSchemas = {
   "data/sources/fe14/sources.json": sourceCatalogSchema,
+  "data/sources/fe14/skill-icon-sources.json": skillIconManifestFileSchema,
   "data/normalized/fe14/units/first-generation.json": rosterSchema,
   "data/normalized/fe14/units/second-generation.json": secondGenerationRosterSchema,
   "data/normalized/fe14/child-parentage.json": childParentageFileSchema,
   "data/normalized/fe14/child-recruitment.json": childRecruitmentFileSchema,
   "data/normalized/fe14/class-trees.json": classTreeFileSchema,
   "data/normalized/fe14/class-stats.json": classStatsFileSchema,
+  "data/normalized/fe14/class-skills.json": classSkillsFileSchema,
   "data/normalized/fe14/unit-availability.json": availabilityFileSchema,
   "data/normalized/fe14/unit-base-stats.json": baseStatsFileSchema,
   "data/normalized/fe14/unit-growths.json": growthsFileSchema,

@@ -71,6 +71,8 @@ export const SOURCE_LOCATIONS = {
     "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/class-sets/",
   "serenes-fe14-hoshidan-personal-skills":
     "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+  "user-fe14-personal-skill-localization":
+    "User-reviewed in-game Fire Emblem Fates localization",
   "serenes-fe14-hoshidan-supports":
     "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/supports/",
   "serenes-fe14-hoshidan-support-bonuses":
@@ -125,8 +127,16 @@ export const SOURCE_LOCATIONS = {
   "atwiki-fe14-child-pairings": "https://w.atwiki.jp/feif/pages/126.html",
   "serenes-fe14-hoshidan-class-maximum-stats":
     "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/maximum-stats/",
+  "serenes-fe14-hoshidan-class-skills":
+    "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/",
   "serenes-fe14-nohrian-class-maximum-stats":
     "https://serenesforest.net/fire-emblem-fates/nohrian-classes/maximum-stats/",
+  "serenes-fe14-nohrian-class-skills":
+    "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/",
+  "serenes-fe14-nohrian-personal-skills":
+    "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/",
+  "serenes-fe14-other-personal-skills":
+    "https://serenesforest.net/fire-emblem-fates/other-characters/personal-skills/",
   "serenes-fe14-nohrian-class-base-stats":
     "https://serenesforest.net/fire-emblem-fates/nohrian-classes/base-stats/",
   "serenes-fe14-nohrian-class-growth-rates":

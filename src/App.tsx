@@ -1,6 +1,7 @@
 import AppHeader from "./components/AppHeader";
 import HomePage from "./pages/HomePage";
 import NotesPage from "./pages/NotesPage";
+import SkillIndexPage from "./games/fe14/pages/SkillIndexPage";
 import UnitDetailPage from "./games/fe14/pages/UnitDetailPage";
 import UnitIndexPage from "./games/fe14/pages/UnitIndexPage";
 import { useAppRoute } from "./router";
@@ -13,6 +14,7 @@ export default function App() {
       <AppHeader route={route} />
       {route.kind === "home" ? <HomePage /> : null}
       {route.kind === "notes" ? <NotesPage /> : null}
+      {route.kind === "skill-index" ? <SkillIndexPage /> : null}
       {route.kind === "unit-index" ? <UnitIndexPage /> : null}
       {route.kind === "unit-detail" ? <UnitDetailPage slug={route.slug} /> : null}
       {route.kind === "not-found" ? <UnitIndexPage notFound /> : null}

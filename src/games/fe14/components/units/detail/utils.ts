@@ -1,14 +1,24 @@
 import { displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data";
 import { STAT_KEYS, type AvailabilityScenario } from "./types";
 
-export function corrinBorrowedClassId(partnerUnitId: string): string | undefined {
+export function corrinBorrowedClassId(
+  partnerUnitId: string,
+  recipientGender: "male" | "female",
+): string | undefined {
   const partner = fe14Data.units.find((unit) => unit.identity.id === partnerUnitId);
   const startingClassId = partner?.classAccess?.startingClassId;
   if (!partner || !startingClassId) return undefined;
   const restricted = new Set(["nohr_prince", "songstress", "kitsune", "wolfskin", "villager"]);
-  return restricted.has(startingClassId)
+  const borrowedClassId = restricted.has(startingClassId)
     ? partner.classAccess?.heartSealClassSet[0]
     : partner.classAccess?.baseClassSet[0];
+  return borrowedClassId ? genderParallelClassId(borrowedClassId, recipientGender) : undefined;
+}
+
+export function genderParallelClassId(classId: string, gender: "male" | "female"): string {
+  if (classId === "shrine_maiden" && gender === "male") return "monk";
+  if (classId === "monk" && gender === "female") return "shrine_maiden";
+  return classId;
 }
 
 export function applyAvatarDeltas(base: StatBlock, ...deltas: Array<Partial<StatBlock>>): StatBlock {

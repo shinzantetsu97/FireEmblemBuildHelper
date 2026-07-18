@@ -1,0 +1,819 @@
+{
+  "gameId": "fe14",
+  "sourceInventoryCapturedAt": "2026-07-18T18:09:39.820Z",
+  "counts": {
+    "hoshidanClassSourceRows": 58,
+    "nohrianClassSourceRows": 51,
+    "totalClassSourceRows": 109,
+    "uniqueClassSkills": 106,
+    "classAcquisitionEdges": 113,
+    "sourceClassLabels": 55,
+    "mappedSourceClassLabels": 55,
+    "personalSkillSourceRows": 83,
+    "uniquePersonalSkills": 69,
+    "acceptedPlayablePersonalSkills": 69,
+    "missingIcons": 0,
+    "duplicateSourceImageGroups": 17,
+    "duplicateSourceImageExtraRows": 17,
+    "validationErrors": 0,
+    "validationWarnings": 0
+  },
+  "duplicateClassSkills": [
+    {
+      "name": "Locktouch",
+      "sourceRows": 2,
+      "classes": [
+        "Ninja",
+        "Outlaw"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-class-skills",
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "iconUrlsMatch": true,
+      "descriptionsMatch": true
+    },
+    {
+      "name": "Beastbane",
+      "sourceRows": 2,
+      "classes": [
+        "Kitsune",
+        "Wolfskin"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-class-skills",
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "iconUrlsMatch": true,
+      "descriptionsMatch": true
+    },
+    {
+      "name": "Grisly Wound",
+      "sourceRows": 2,
+      "classes": [
+        "Nine-Tails",
+        "Wolfssegner"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-class-skills",
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "iconUrlsMatch": true,
+      "descriptionsMatch": true
+    }
+  ],
+  "duplicatePersonalSkills": [
+    {
+      "name": "Supportive",
+      "sourceRows": 2,
+      "characters": [
+        "Avatar"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Devoted Partner",
+      "sourceRows": 2,
+      "characters": [
+        "Felicia"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Evasive Partner",
+      "sourceRows": 2,
+      "characters": [
+        "Jakob"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Miraculous Save",
+      "sourceRows": 2,
+      "characters": [
+        "Kaze"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Healing Descant",
+      "sourceRows": 2,
+      "characters": [
+        "Azura"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Vow of Friendship",
+      "sourceRows": 2,
+      "characters": [
+        "Silas"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Highwayman",
+      "sourceRows": 2,
+      "characters": [
+        "Shura"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Peacebringer",
+      "sourceRows": 2,
+      "characters": [
+        "Izana"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Forager",
+      "sourceRows": 2,
+      "characters": [
+        "Mozu"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Draconic Heir",
+      "sourceRows": 2,
+      "characters": [
+        "Kana"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Born Steward",
+      "sourceRows": 2,
+      "characters": [
+        "Dwyer"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Perfect Pitch",
+      "sourceRows": 2,
+      "characters": [
+        "Shigure"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Mischievous",
+      "sourceRows": 2,
+      "characters": [
+        "Sophie"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    },
+    {
+      "name": "Lucky Charm",
+      "sourceRows": 2,
+      "characters": [
+        "Midori"
+      ],
+      "pageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "iconUrlsMatch": true,
+      "effectsMatch": true
+    }
+  ],
+  "classLabelMappings": [
+    {
+      "sourceLabel": "Hoshido Noble",
+      "classIds": [
+        "hoshido_noble"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Samurai",
+      "classIds": [
+        "samurai"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Swordmaster",
+      "classIds": [
+        "swordmaster"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Master of Arms",
+      "classIds": [
+        "master_of_arms"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Oni Savage",
+      "classIds": [
+        "oni_savage"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Oni Chieftain",
+      "classIds": [
+        "oni_chieftain"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Blacksmith",
+      "classIds": [
+        "blacksmith"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Spear Fighter",
+      "classIds": [
+        "spear_fighter"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Spear Master",
+      "classIds": [
+        "spear_master"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Basara",
+      "classIds": [
+        "basara"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Diviner",
+      "classIds": [
+        "diviner"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Onmyoji",
+      "classIds": [
+        "onmyoji"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Monk, Shrine Maiden",
+      "classIds": [
+        "monk",
+        "shrine_maiden"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Great Master, Priestess",
+      "classIds": [
+        "great_master",
+        "priestess"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Sky Knight",
+      "classIds": [
+        "sky_knight"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Falcon Knight",
+      "classIds": [
+        "falcon_knight"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Kinshi Knight",
+      "classIds": [
+        "kinshi_knight"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Archer",
+      "classIds": [
+        "archer"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Sniper",
+      "classIds": [
+        "sniper"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Ninja",
+      "classIds": [
+        "ninja"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Master Ninja",
+      "classIds": [
+        "master_ninja"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Mechanist",
+      "classIds": [
+        "mechanist"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Apothecary",
+      "classIds": [
+        "apothecary"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Merchant",
+      "classIds": [
+        "merchant"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Kitsune",
+      "classIds": [
+        "kitsune"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Nine-Tails",
+      "classIds": [
+        "nine_tails"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Songstress",
+      "classIds": [
+        "songstress"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Villager",
+      "classIds": [
+        "villager"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Nohr Prince(ss)",
+      "classIds": [
+        "nohr_prince"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Nohr Noble",
+      "classIds": [
+        "nohr_noble"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Cavalier",
+      "classIds": [
+        "cavalier"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Paladin",
+      "classIds": [
+        "paladin"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Great Knight",
+      "classIds": [
+        "great_knight"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Knight",
+      "classIds": [
+        "knight"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "General",
+      "classIds": [
+        "general"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Fighter",
+      "classIds": [
+        "fighter"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Berserker",
+      "classIds": [
+        "berserker"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Mercenary",
+      "classIds": [
+        "mercenary"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Hero",
+      "classIds": [
+        "hero"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Bow Knight",
+      "classIds": [
+        "bow_knight"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Outlaw",
+      "classIds": [
+        "outlaw"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Adventurer",
+      "classIds": [
+        "adventurer"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Wyvern Rider",
+      "classIds": [
+        "wyvern_rider"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Wyvern Lord",
+      "classIds": [
+        "wyvern_lord"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Malig Knight",
+      "classIds": [
+        "malig_knight"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Dark Mage",
+      "classIds": [
+        "dark_mage"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Sorcerer",
+      "classIds": [
+        "sorcerer"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Dark Knight",
+      "classIds": [
+        "dark_knight"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Troubadour",
+      "classIds": [
+        "troubadour"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Troubadour(M)",
+      "classIds": [
+        "troubadour"
+      ],
+      "gender": "male",
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Troubadour (F)",
+      "classIds": [
+        "troubadour"
+      ],
+      "gender": "female",
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Strategist",
+      "classIds": [
+        "strategist"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Maid, Butler",
+      "classIds": [
+        "attendant"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Wolfskin",
+      "classIds": [
+        "wolfskin"
+      ],
+      "allClassIdsKnown": true
+    },
+    {
+      "sourceLabel": "Wolfssegner",
+      "classIds": [
+        "wolfssegner"
+      ],
+      "allClassIdsKnown": true
+    }
+  ],
+  "plannedClassTreeAdditions": [],
+  "reviewDecisions": {
+    "standaloneClasses": [],
+    "personalSkillNames": [
+      {
+        "unitId": "setsuna",
+        "acceptedName": "Optimistic",
+        "note": "Serenes swaps the localized Optimist/Optimistic labels; Setsuna uses Optimistic in game."
+      },
+      {
+        "unitId": "kiragi",
+        "acceptedName": "Optimist",
+        "note": "Serenes swaps the localized Optimist/Optimistic labels; Kiragi uses Optimist in game."
+      },
+      {
+        "unitId": "camilla",
+        "acceptedName": "Rose's Thorns",
+        "note": "The accepted in-game localization is plural despite the singular Serenes label."
+      }
+    ]
+  },
+  "personalSkillReconciliation": {
+    "nameDifferences": [
+      {
+        "unitId": "setsuna",
+        "sourceName": "Optimist",
+        "acceptedName": "Optimistic",
+        "punctuationOnly": false,
+        "reviewed": true
+      },
+      {
+        "unitId": "kiragi",
+        "sourceName": "Optimistic",
+        "acceptedName": "Optimist",
+        "punctuationOnly": false,
+        "reviewed": true
+      },
+      {
+        "unitId": "elise",
+        "sourceName": "Lily’s Poise",
+        "acceptedName": "Lily's Poise",
+        "punctuationOnly": true,
+        "reviewed": false
+      },
+      {
+        "unitId": "camilla",
+        "sourceName": "Rose’s Thorn",
+        "acceptedName": "Rose's Thorns",
+        "punctuationOnly": false,
+        "reviewed": true
+      }
+    ],
+    "duplicateAcceptedIds": []
+  },
+  "duplicateSourceImages": [
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_112.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Locktouch"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_40.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Beastbane"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_103.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Grisly Wound"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_127.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Supportive"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_129.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Devoted Partner"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_130.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Evasive Partner"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_132.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Miraculous Save"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_133.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Healing Descant"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_137.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Vow of Friendship"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_152.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Highwayman"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_169.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Peacebringer"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_173.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Forager"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_174.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Draconic Heir"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_175.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Born Steward"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_176.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Perfect Pitch"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_177.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Mischievous"
+      ]
+    },
+    {
+      "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_178.png",
+      "sourceRows": 2,
+      "skillNames": [
+        "Lucky Charm"
+      ]
+    }
+  ],
+  "validation": {
+    "errors": [],
+    "warnings": []
+  }
+}

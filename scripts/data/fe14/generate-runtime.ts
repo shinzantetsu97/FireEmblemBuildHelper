@@ -11,6 +11,7 @@ const DOMAIN_PATHS = {
   childRecruitment: "data/normalized/fe14/child-recruitment.json",
   classTrees: "data/normalized/fe14/class-trees.json",
   classStats: "data/normalized/fe14/class-stats.json",
+  classSkills: "data/normalized/fe14/class-skills.json",
   availability: "data/normalized/fe14/unit-availability.json",
   baseStats: "data/normalized/fe14/unit-base-stats.json",
   growths: "data/normalized/fe14/unit-growths.json",
@@ -20,6 +21,7 @@ const DOMAIN_PATHS = {
   supports: "data/normalized/fe14/support-relationships.json",
   classAccess: "data/normalized/fe14/unit-class-access.json",
   personalSkills: "data/normalized/fe14/personal-skills.json",
+  skillIconManifest: "data/sources/fe14/skill-icon-sources.json",
   sources: "data/sources/fe14/sources.json",
 } as const;
 
@@ -39,8 +41,39 @@ const secondRoster = secondRosterFile.units as JsonObject[];
 const roster = [...firstRoster, ...secondRoster];
 const classTreeFile = result.parsed[DOMAIN_PATHS.classTrees] as JsonObject;
 const classStatsFile = result.parsed[DOMAIN_PATHS.classStats] as JsonObject;
+const classSkillFile = result.parsed[DOMAIN_PATHS.classSkills] as JsonObject;
 const sourcesFile = result.parsed[DOMAIN_PATHS.sources] as JsonObject;
 const updatedAt = sourcesFile.updatedAt as string;
+const classTrees = classTreeFile.classes as JsonObject[];
+const classStats = classStatsFile.classes as JsonObject[];
+const classSkills = classSkillFile.skills as JsonObject[];
+const classStatsById = new Map(
+  classStats.map((profile) => [profile.classId as string, profile]),
+);
+const skillsByClass = Object.fromEntries(
+  classStats.map((profile) => [profile.classId as string, [] as JsonObject[]]),
+) as Record<string, JsonObject[]>;
+
+for (const skill of classSkills) {
+  for (const edge of skill.acquisition as JsonObject[]) {
+    const classId = edge.classId as string;
+    skillsByClass[classId].push({
+      skillId: skill.id,
+      level: edge.level,
+      ...(edge.gender ? { gender: edge.gender } : {}),
+    });
+  }
+}
+
+const enrichClassNode = (node: JsonObject) => ({
+  ...node,
+  stats: classStatsById.get(node.id as string),
+  skills: skillsByClass[node.id as string],
+});
+const classDirectory = classTrees.map((tree) => ({
+  ...enrichClassNode(tree),
+  promotions: (tree.promotions as JsonObject[]).map(enrichClassNode),
+}));
 
 const runtimeUnits = roster
   .filter((unit) => unit.status !== "not_started")
@@ -70,18 +103,21 @@ const runtimeUnits = roster
         sealGrants: [],
         provenance: parentage?.provenance,
       } : firstRecordFor(result.parsed[DOMAIN_PATHS.classAccess], unitId),
-      personalSkill: parentage?.personalSkill ?? firstRecordFor(result.parsed[DOMAIN_PATHS.personalSkills], unitId),
+      personalSkill: firstRecordFor(result.parsed[DOMAIN_PATHS.personalSkills], unitId),
       offspring: parentage && recruitment ? { parentage, recruitment } : null,
     };
   });
 
 const runtime = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   gameId: "fe14",
   lastUpdated: updatedAt,
   roster,
-  classTrees: classTreeFile.classes,
-  classStats: classStatsFile.classes,
+  classTrees,
+  classStats,
+  classSkills,
+  skillsByClass,
+  classDirectory,
   units: runtimeUnits,
   sources: sourcesFile.sources,
 };
@@ -143,6 +179,14 @@ const validationReport = {
     firstGenerationUnits: firstRoster.length,
     secondGenerationUnits: secondRoster.length,
     normalizedUnits: runtimeUnits.length,
+    classSkills: classSkills.length,
+    classSkillAcquisitionEdges: Object.values(skillsByClass).reduce(
+      (total, edges) => total + edges.length,
+      0,
+    ),
+    personalSkills: (result.parsed[DOMAIN_PATHS.personalSkills] as JsonObject[]).length,
+    skillIcons: ((result.parsed[DOMAIN_PATHS.skillIconManifest] as JsonObject)
+      .entries as JsonObject[]).length,
     errors: result.errors.length,
     warnings: result.warnings.length,
   },
@@ -164,6 +208,9 @@ await Promise.all([
 
 console.log(
   `Generated FE14 runtime data for ${runtimeUnits.length} unit(s); roster manifest contains ${roster.length} units.`,
+);
+console.log(
+  `Generated ${classSkills.length} class skills across ${Object.keys(skillsByClass).length} classes.`,
 );
 for (const warning of result.warnings) {
   console.warn(`WARN ${warning.code}: ${warning.message}`);

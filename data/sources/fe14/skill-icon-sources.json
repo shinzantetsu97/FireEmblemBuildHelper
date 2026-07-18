@@ -1,0 +1,2915 @@
+{
+  "gameId": "fe14",
+  "scope": "milestone-007-standard-class-and-playable-personal-skills",
+  "sourceInventoryCapturedAt": "2026-07-18T18:09:39.820Z",
+  "counts": {
+    "classIcons": 106,
+    "personalIcons": 69,
+    "totalIcons": 175
+  },
+  "entries": [
+    {
+      "skillId": "dragon_ward",
+      "skillType": "class",
+      "canonicalName": "Dragon Ward",
+      "sourceNames": [
+        "Dragon Ward"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_35.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/dragon_ward.png"
+    },
+    {
+      "skillId": "hoshidan_unity",
+      "skillType": "class",
+      "canonicalName": "Hoshidan Unity",
+      "sourceNames": [
+        "Hoshidan Unity"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_43.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/hoshidan_unity.png"
+    },
+    {
+      "skillId": "duelists_blow",
+      "skillType": "class",
+      "canonicalName": "Duelist’s Blow",
+      "sourceNames": [
+        "Duelist’s Blow"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_57.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/duelists_blow.png"
+    },
+    {
+      "skillId": "vantage",
+      "skillType": "class",
+      "canonicalName": "Vantage",
+      "sourceNames": [
+        "Vantage"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_39.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/vantage.png"
+    },
+    {
+      "skillId": "astra",
+      "skillType": "class",
+      "canonicalName": "Astra",
+      "sourceNames": [
+        "Astra"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_27.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/astra.png"
+    },
+    {
+      "skillId": "swordfaire",
+      "skillType": "class",
+      "canonicalName": "Swordfaire",
+      "sourceNames": [
+        "Swordfaire"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_65.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/swordfaire.png"
+    },
+    {
+      "skillId": "seal_strength",
+      "skillType": "class",
+      "canonicalName": "Seal Strength",
+      "sourceNames": [
+        "Seal Strength"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_11.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/seal_strength.png"
+    },
+    {
+      "skillId": "life_and_death",
+      "skillType": "class",
+      "canonicalName": "Life and Death",
+      "sourceNames": [
+        "Life and Death"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_55.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/life_and_death.png"
+    },
+    {
+      "skillId": "seal_resistance",
+      "skillType": "class",
+      "canonicalName": "Seal Resistance",
+      "sourceNames": [
+        "Seal Resistance"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_15.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/seal_resistance.png"
+    },
+    {
+      "skillId": "shove",
+      "skillType": "class",
+      "canonicalName": "Shove",
+      "sourceNames": [
+        "Shove"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_45.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/shove.png"
+    },
+    {
+      "skillId": "death_blow",
+      "skillType": "class",
+      "canonicalName": "Death Blow",
+      "sourceNames": [
+        "Death Blow"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_59.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/death_blow.png"
+    },
+    {
+      "skillId": "counter",
+      "skillType": "class",
+      "canonicalName": "Counter",
+      "sourceNames": [
+        "Counter"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_37.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/counter.png"
+    },
+    {
+      "skillId": "salvage_blow",
+      "skillType": "class",
+      "canonicalName": "Salvage Blow",
+      "sourceNames": [
+        "Salvage Blow"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_104.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/salvage_blow.png"
+    },
+    {
+      "skillId": "lancebreaker",
+      "skillType": "class",
+      "canonicalName": "Lancebreaker",
+      "sourceNames": [
+        "Lancebreaker"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_80.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/lancebreaker.png"
+    },
+    {
+      "skillId": "seal_defense",
+      "skillType": "class",
+      "canonicalName": "Seal Defense",
+      "sourceNames": [
+        "Seal Defence"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_14.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/seal_defense.png"
+    },
+    {
+      "skillId": "swap",
+      "skillType": "class",
+      "canonicalName": "Swap",
+      "sourceNames": [
+        "Swap"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_47.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/swap.png"
+    },
+    {
+      "skillId": "seal_speed",
+      "skillType": "class",
+      "canonicalName": "Seal Speed",
+      "sourceNames": [
+        "Seal Speed"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_13.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/seal_speed.png"
+    },
+    {
+      "skillId": "lancefaire",
+      "skillType": "class",
+      "canonicalName": "Lancefaire",
+      "sourceNames": [
+        "Lancefaire"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_66.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/lancefaire.png"
+    },
+    {
+      "skillId": "rend_heaven",
+      "skillType": "class",
+      "canonicalName": "Rend Heaven",
+      "sourceNames": [
+        "Rend Heaven"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_31.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/rend_heaven.png"
+    },
+    {
+      "skillId": "quixotic",
+      "skillType": "class",
+      "canonicalName": "Quixotic",
+      "sourceNames": [
+        "Quixotic"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_90.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/quixotic.png"
+    },
+    {
+      "skillId": "magic_plus_2",
+      "skillType": "class",
+      "canonicalName": "Magic +2",
+      "sourceNames": [
+        "Magic +2"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_03.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/magic_plus_2.png"
+    },
+    {
+      "skillId": "future_sight",
+      "skillType": "class",
+      "canonicalName": "Future Sight",
+      "sourceNames": [
+        "Future Sight"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_107.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/future_sight.png"
+    },
+    {
+      "skillId": "rally_magic",
+      "skillType": "class",
+      "canonicalName": "Rally Magic",
+      "sourceNames": [
+        "Rally Magic"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_17.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/rally_magic.png"
+    },
+    {
+      "skillId": "tomefaire",
+      "skillType": "class",
+      "canonicalName": "Tomefaire",
+      "sourceNames": [
+        "Tomefaire"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_70.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/tomefaire.png"
+    },
+    {
+      "skillId": "miracle",
+      "skillType": "class",
+      "canonicalName": "Miracle",
+      "sourceNames": [
+        "Miracle"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_36.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/miracle.png"
+    },
+    {
+      "skillId": "rally_luck",
+      "skillType": "class",
+      "canonicalName": "Rally Luck",
+      "sourceNames": [
+        "Rally Luck"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_20.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/rally_luck.png"
+    },
+    {
+      "skillId": "renewal",
+      "skillType": "class",
+      "canonicalName": "Renewal",
+      "sourceNames": [
+        "Renewal"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_94.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/renewal.png"
+    },
+    {
+      "skillId": "countermagic",
+      "skillType": "class",
+      "canonicalName": "Countermagic",
+      "sourceNames": [
+        "Countermagic"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_38.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/countermagic.png"
+    },
+    {
+      "skillId": "darting_blow",
+      "skillType": "class",
+      "canonicalName": "Darting Blow",
+      "sourceNames": [
+        "Darting Blow"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_58.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/darting_blow.png"
+    },
+    {
+      "skillId": "camaraderie",
+      "skillType": "class",
+      "canonicalName": "Camaraderie",
+      "sourceNames": [
+        "Camaraderie"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_93.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/camaraderie.png"
+    },
+    {
+      "skillId": "rally_speed",
+      "skillType": "class",
+      "canonicalName": "Rally Speed",
+      "sourceNames": [
+        "Rally Speed"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_19.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/rally_speed.png"
+    },
+    {
+      "skillId": "warding_blow",
+      "skillType": "class",
+      "canonicalName": "Warding Blow",
+      "sourceNames": [
+        "Warding Blow"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_62.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/warding_blow.png"
+    },
+    {
+      "skillId": "air_superiority",
+      "skillType": "class",
+      "canonicalName": "Air Superiority",
+      "sourceNames": [
+        "Air Superiority"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_88.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/air_superiority.png"
+    },
+    {
+      "skillId": "amaterasu",
+      "skillType": "class",
+      "canonicalName": "Amaterasu",
+      "sourceNames": [
+        "Amaterasu"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_97.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/amaterasu.png"
+    },
+    {
+      "skillId": "skill_plus_2",
+      "skillType": "class",
+      "canonicalName": "Skill +2",
+      "sourceNames": [
+        "Skill +2"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_04.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/skill_plus_2.png"
+    },
+    {
+      "skillId": "quick_draw",
+      "skillType": "class",
+      "canonicalName": "Quick Draw",
+      "sourceNames": [
+        "Quick Draw"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_49.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/quick_draw.png"
+    },
+    {
+      "skillId": "certain_blow",
+      "skillType": "class",
+      "canonicalName": "Certain Blow",
+      "sourceNames": [
+        "Certain Blow"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_60.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/certain_blow.png"
+    },
+    {
+      "skillId": "bowfaire",
+      "skillType": "class",
+      "canonicalName": "Bowfaire",
+      "sourceNames": [
+        "Bowfaire"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_69.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/bowfaire.png"
+    },
+    {
+      "skillId": "locktouch",
+      "skillType": "class",
+      "canonicalName": "Locktouch",
+      "sourceNames": [
+        "Locktouch"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills",
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_112.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/locktouch.png"
+    },
+    {
+      "skillId": "poison_strike",
+      "skillType": "class",
+      "canonicalName": "Poison Strike",
+      "sourceNames": [
+        "Poison Strike"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_101.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/poison_strike.png"
+    },
+    {
+      "skillId": "lethality",
+      "skillType": "class",
+      "canonicalName": "Lethality",
+      "sourceNames": [
+        "Lethality"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_25.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/lethality.png"
+    },
+    {
+      "skillId": "shurikenfaire",
+      "skillType": "class",
+      "canonicalName": "Shurikenfaire",
+      "sourceNames": [
+        "Shurikenfaire"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_68.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/shurikenfaire.png"
+    },
+    {
+      "skillId": "golembane",
+      "skillType": "class",
+      "canonicalName": "Golembane",
+      "sourceNames": [
+        "Golembane"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_41.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/golembane.png"
+    },
+    {
+      "skillId": "replicate",
+      "skillType": "class",
+      "canonicalName": "Replicate",
+      "sourceNames": [
+        "Replicate"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_48.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/replicate.png"
+    },
+    {
+      "skillId": "potent_potion",
+      "skillType": "class",
+      "canonicalName": "Potent Potion",
+      "sourceNames": [
+        "Potent Potion"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_99.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/potent_potion.png"
+    },
+    {
+      "skillId": "quick_salve",
+      "skillType": "class",
+      "canonicalName": "Quick Salve",
+      "sourceNames": [
+        "Quick Salve"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_109.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/quick_salve.png"
+    },
+    {
+      "skillId": "profiteer",
+      "skillType": "class",
+      "canonicalName": "Profiteer",
+      "sourceNames": [
+        "Profiteer"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_105.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/profiteer.png"
+    },
+    {
+      "skillId": "spendthrift",
+      "skillType": "class",
+      "canonicalName": "Spendthrift",
+      "sourceNames": [
+        "Spendthrift"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_56.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/spendthrift.png"
+    },
+    {
+      "skillId": "evenhanded",
+      "skillType": "class",
+      "canonicalName": "Evenhanded",
+      "sourceNames": [
+        "Evenhanded"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_53.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/evenhanded.png"
+    },
+    {
+      "skillId": "beastbane",
+      "skillType": "class",
+      "canonicalName": "Beastbane",
+      "sourceNames": [
+        "Beastbane"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills",
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_40.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/beastbane.png"
+    },
+    {
+      "skillId": "even_better",
+      "skillType": "class",
+      "canonicalName": "Even Better",
+      "sourceNames": [
+        "Even Better"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_95.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/even_better.png"
+    },
+    {
+      "skillId": "grisly_wound",
+      "skillType": "class",
+      "canonicalName": "Grisly Wound",
+      "sourceNames": [
+        "Grisly Wound"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills",
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_103.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/grisly_wound.png"
+    },
+    {
+      "skillId": "luck_plus_4",
+      "skillType": "class",
+      "canonicalName": "Luck +4",
+      "sourceNames": [
+        "Luck +4"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_06.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/luck_plus_4.png"
+    },
+    {
+      "skillId": "inspiring_song",
+      "skillType": "class",
+      "canonicalName": "Inspiring Song",
+      "sourceNames": [
+        "Inspiring Song"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_24.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/inspiring_song.png"
+    },
+    {
+      "skillId": "voice_of_peace",
+      "skillType": "class",
+      "canonicalName": "Voice of Peace",
+      "sourceNames": [
+        "Voice of Peace"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_77.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/voice_of_peace.png"
+    },
+    {
+      "skillId": "foreign_princess",
+      "skillType": "class",
+      "canonicalName": "Foreign Princess",
+      "sourceNames": [
+        "Foreign Princess"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_78.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/foreign_princess.png"
+    },
+    {
+      "skillId": "aptitude",
+      "skillType": "class",
+      "canonicalName": "Aptitude",
+      "sourceNames": [
+        "Aptitude"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_108.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/aptitude.png"
+    },
+    {
+      "skillId": "underdog",
+      "skillType": "class",
+      "canonicalName": "Underdog",
+      "sourceNames": [
+        "Underdog"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_86.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/underdog.png"
+    },
+    {
+      "skillId": "nobility",
+      "skillType": "class",
+      "canonicalName": "Nobility",
+      "sourceNames": [
+        "Nobility"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_106.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/nobility.png"
+    },
+    {
+      "skillId": "dragon_fang",
+      "skillType": "class",
+      "canonicalName": "Dragon Fang",
+      "sourceNames": [
+        "Dragon Fang"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_28.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/dragon_fang.png"
+    },
+    {
+      "skillId": "draconic_hex",
+      "skillType": "class",
+      "canonicalName": "Draconic Hex",
+      "sourceNames": [
+        "Draconic Hex"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_10.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/draconic_hex.png"
+    },
+    {
+      "skillId": "nohrian_trust",
+      "skillType": "class",
+      "canonicalName": "Nohrian Trust",
+      "sourceNames": [
+        "Nohrian Trust"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_42.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/nohrian_trust.png"
+    },
+    {
+      "skillId": "elbow_room",
+      "skillType": "class",
+      "canonicalName": "Elbow Room",
+      "sourceNames": [
+        "Elbow Room"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_51.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/elbow_room.png"
+    },
+    {
+      "skillId": "shelter",
+      "skillType": "class",
+      "canonicalName": "Shelter",
+      "sourceNames": [
+        "Shelter"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_44.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/shelter.png"
+    },
+    {
+      "skillId": "defender",
+      "skillType": "class",
+      "canonicalName": "Defender",
+      "sourceNames": [
+        "Defender"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_71.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/defender.png"
+    },
+    {
+      "skillId": "aegis",
+      "skillType": "class",
+      "canonicalName": "Aegis",
+      "sourceNames": [
+        "Aegis"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_34.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/aegis.png"
+    },
+    {
+      "skillId": "luna",
+      "skillType": "class",
+      "canonicalName": "Luna",
+      "sourceNames": [
+        "Luna"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_30.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/luna.png"
+    },
+    {
+      "skillId": "armored_blow",
+      "skillType": "class",
+      "canonicalName": "Armored Blow",
+      "sourceNames": [
+        "Armored Blow"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_61.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/armored_blow.png"
+    },
+    {
+      "skillId": "defense_plus_2",
+      "skillType": "class",
+      "canonicalName": "Defense +2",
+      "sourceNames": [
+        "Defence +2"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_07.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/defense_plus_2.png"
+    },
+    {
+      "skillId": "natural_cover",
+      "skillType": "class",
+      "canonicalName": "Natural Cover",
+      "sourceNames": [
+        "Natural Cover"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_52.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/natural_cover.png"
+    },
+    {
+      "skillId": "wary_fighter",
+      "skillType": "class",
+      "canonicalName": "Wary Fighter",
+      "sourceNames": [
+        "Wary Fighter"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_64.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/wary_fighter.png"
+    },
+    {
+      "skillId": "pavise",
+      "skillType": "class",
+      "canonicalName": "Pavise",
+      "sourceNames": [
+        "Pavise"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_33.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/pavise.png"
+    },
+    {
+      "skillId": "hp_plus_5",
+      "skillType": "class",
+      "canonicalName": "HP +5",
+      "sourceNames": [
+        "HP +5"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_01.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/hp_plus_5.png"
+    },
+    {
+      "skillId": "gamble",
+      "skillType": "class",
+      "canonicalName": "Gamble",
+      "sourceNames": [
+        "Gamble"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_85.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/gamble.png"
+    },
+    {
+      "skillId": "rally_strength",
+      "skillType": "class",
+      "canonicalName": "Rally Strength",
+      "sourceNames": [
+        "Rally Strength"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_16.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/rally_strength.png"
+    },
+    {
+      "skillId": "axefaire",
+      "skillType": "class",
+      "canonicalName": "Axefaire",
+      "sourceNames": [
+        "Axefaire"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_67.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/axefaire.png"
+    },
+    {
+      "skillId": "good_fortune",
+      "skillType": "class",
+      "canonicalName": "Good Fortune",
+      "sourceNames": [
+        "Good Fortune"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_91.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/good_fortune.png"
+    },
+    {
+      "skillId": "strong_riposte",
+      "skillType": "class",
+      "canonicalName": "Strong Riposte",
+      "sourceNames": [
+        "Strong Riposte"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_50.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/strong_riposte.png"
+    },
+    {
+      "skillId": "sol",
+      "skillType": "class",
+      "canonicalName": "Sol",
+      "sourceNames": [
+        "Sol"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_29.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/sol.png"
+    },
+    {
+      "skillId": "axebreaker",
+      "skillType": "class",
+      "canonicalName": "Axebreaker",
+      "sourceNames": [
+        "Axebreaker"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_81.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/axebreaker.png"
+    },
+    {
+      "skillId": "rally_skill",
+      "skillType": "class",
+      "canonicalName": "Rally Skill",
+      "sourceNames": [
+        "Rally Skill"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_18.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/rally_skill.png"
+    },
+    {
+      "skillId": "shurikenbreaker",
+      "skillType": "class",
+      "canonicalName": "Shurikenbreaker",
+      "sourceNames": [
+        "Shurikenbreaker"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_82.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/shurikenbreaker.png"
+    },
+    {
+      "skillId": "movement_plus_1",
+      "skillType": "class",
+      "canonicalName": "Movement +1",
+      "sourceNames": [
+        "Movement +1"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_09.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/movement_plus_1.png"
+    },
+    {
+      "skillId": "lucky_seven",
+      "skillType": "class",
+      "canonicalName": "Lucky Seven",
+      "sourceNames": [
+        "Lucky Seven"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_87.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/lucky_seven.png"
+    },
+    {
+      "skillId": "pass",
+      "skillType": "class",
+      "canonicalName": "Pass",
+      "sourceNames": [
+        "Pass"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_111.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/pass.png"
+    },
+    {
+      "skillId": "strength_plus_2",
+      "skillType": "class",
+      "canonicalName": "Strength +2",
+      "sourceNames": [
+        "Strength +2"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_02.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/strength_plus_2.png"
+    },
+    {
+      "skillId": "lunge",
+      "skillType": "class",
+      "canonicalName": "Lunge",
+      "sourceNames": [
+        "Lunge"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_46.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/lunge.png"
+    },
+    {
+      "skillId": "rally_defense",
+      "skillType": "class",
+      "canonicalName": "Rally Defense",
+      "sourceNames": [
+        "Rally Defence"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_21.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/rally_defense.png"
+    },
+    {
+      "skillId": "swordbreaker",
+      "skillType": "class",
+      "canonicalName": "Swordbreaker",
+      "sourceNames": [
+        "Swordbreaker"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_79.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/swordbreaker.png"
+    },
+    {
+      "skillId": "savage_blow",
+      "skillType": "class",
+      "canonicalName": "Savage Blow",
+      "sourceNames": [
+        "Savage Blow"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_102.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/savage_blow.png"
+    },
+    {
+      "skillId": "trample",
+      "skillType": "class",
+      "canonicalName": "Trample",
+      "sourceNames": [
+        "Trample"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_63.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/trample.png"
+    },
+    {
+      "skillId": "heartseeker",
+      "skillType": "class",
+      "canonicalName": "Heartseeker",
+      "sourceNames": [
+        "Heartseeker"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_89.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/heartseeker.png"
+    },
+    {
+      "skillId": "malefic_aura",
+      "skillType": "class",
+      "canonicalName": "Malefic Aura",
+      "sourceNames": [
+        "Malefic Aura"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_76.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/malefic_aura.png"
+    },
+    {
+      "skillId": "vengeance",
+      "skillType": "class",
+      "canonicalName": "Vengeance",
+      "sourceNames": [
+        "Vengeance"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_32.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/vengeance.png"
+    },
+    {
+      "skillId": "bowbreaker",
+      "skillType": "class",
+      "canonicalName": "Bowbreaker",
+      "sourceNames": [
+        "Bowbreaker"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_83.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/bowbreaker.png"
+    },
+    {
+      "skillId": "seal_magic",
+      "skillType": "class",
+      "canonicalName": "Seal Magic",
+      "sourceNames": [
+        "Seal Magic"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_12.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/seal_magic.png"
+    },
+    {
+      "skillId": "lifetaker",
+      "skillType": "class",
+      "canonicalName": "Lifetaker",
+      "sourceNames": [
+        "Lifetaker"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_98.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/lifetaker.png"
+    },
+    {
+      "skillId": "resistance_plus_2",
+      "skillType": "class",
+      "canonicalName": "Resistance +2",
+      "sourceNames": [
+        "Resistance +2"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_08.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/resistance_plus_2.png"
+    },
+    {
+      "skillId": "gentilhomme",
+      "skillType": "class",
+      "canonicalName": "Gentilhomme",
+      "sourceNames": [
+        "Gentilhomme"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_73.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/gentilhomme.png"
+    },
+    {
+      "skillId": "demoiselle",
+      "skillType": "class",
+      "canonicalName": "Demoiselle",
+      "sourceNames": [
+        "Demoiselle"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_74.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/demoiselle.png"
+    },
+    {
+      "skillId": "rally_resistance",
+      "skillType": "class",
+      "canonicalName": "Rally Resistance",
+      "sourceNames": [
+        "Rally Resistance"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_22.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/rally_resistance.png"
+    },
+    {
+      "skillId": "inspiration",
+      "skillType": "class",
+      "canonicalName": "Inspiration",
+      "sourceNames": [
+        "Inspiration"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_75.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/inspiration.png"
+    },
+    {
+      "skillId": "live_to_serve",
+      "skillType": "class",
+      "canonicalName": "Live to Serve",
+      "sourceNames": [
+        "Live to Serve"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_100.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/live_to_serve.png"
+    },
+    {
+      "skillId": "tomebreaker",
+      "skillType": "class",
+      "canonicalName": "Tomebreaker",
+      "sourceNames": [
+        "Tomebreaker"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_84.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/tomebreaker.png"
+    },
+    {
+      "skillId": "odd_shaped",
+      "skillType": "class",
+      "canonicalName": "Odd Shaped",
+      "sourceNames": [
+        "Odd Shaped"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_54.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/odd_shaped.png"
+    },
+    {
+      "skillId": "better_odds",
+      "skillType": "class",
+      "canonicalName": "Better Odds",
+      "sourceNames": [
+        "Better Odds"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-class-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_96.png",
+      "localDestination": "src/games/fe14/assets/class_skill_icons/better_odds.png"
+    },
+    {
+      "skillId": "supportive",
+      "skillType": "personal",
+      "unitId": "corrin",
+      "canonicalName": "Supportive",
+      "sourceNames": [
+        "Supportive"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_127.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/supportive.png"
+    },
+    {
+      "skillId": "healing_descant",
+      "skillType": "personal",
+      "unitId": "azura",
+      "canonicalName": "Healing Descant",
+      "sourceNames": [
+        "Healing Descant"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_133.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/healing_descant.png"
+    },
+    {
+      "skillId": "devoted_partner",
+      "skillType": "personal",
+      "unitId": "felicia",
+      "canonicalName": "Devoted Partner",
+      "sourceNames": [
+        "Devoted Partner"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_129.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/devoted_partner.png"
+    },
+    {
+      "skillId": "evasive_partner",
+      "skillType": "personal",
+      "unitId": "jakob",
+      "canonicalName": "Evasive Partner",
+      "sourceNames": [
+        "Evasive Partner"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_130.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/evasive_partner.png"
+    },
+    {
+      "skillId": "vow_of_friendship",
+      "skillType": "personal",
+      "unitId": "silas",
+      "canonicalName": "Vow of Friendship",
+      "sourceNames": [
+        "Vow of Friendship"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_137.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/vow_of_friendship.png"
+    },
+    {
+      "skillId": "miraculous_save",
+      "skillType": "personal",
+      "unitId": "kaze",
+      "canonicalName": "Miraculous Save",
+      "sourceNames": [
+        "Miraculous Save"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_132.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/miraculous_save.png"
+    },
+    {
+      "skillId": "forager",
+      "skillType": "personal",
+      "unitId": "mozu",
+      "canonicalName": "Forager",
+      "sourceNames": [
+        "Forager"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_173.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/forager.png"
+    },
+    {
+      "skillId": "highwayman",
+      "skillType": "personal",
+      "unitId": "shura",
+      "canonicalName": "Highwayman",
+      "sourceNames": [
+        "Highwayman"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_152.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/highwayman.png"
+    },
+    {
+      "skillId": "forceful_partner",
+      "skillType": "personal",
+      "unitId": "gunter",
+      "canonicalName": "Forceful Partner",
+      "sourceNames": [
+        "Forceful Partner"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_128.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/forceful_partner.png"
+    },
+    {
+      "skillId": "make_a_killing",
+      "skillType": "personal",
+      "unitId": "anna",
+      "canonicalName": "Make a Killing",
+      "sourceNames": [
+        "Make a Killing"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-other-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/other-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_195.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/make_a_killing.png"
+    },
+    {
+      "skillId": "draconic_heir",
+      "skillType": "personal",
+      "unitId": "kana",
+      "canonicalName": "Draconic Heir",
+      "sourceNames": [
+        "Draconic Heir"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_174.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/draconic_heir.png"
+    },
+    {
+      "skillId": "perfect_pitch",
+      "skillType": "personal",
+      "unitId": "shigure",
+      "canonicalName": "Perfect Pitch",
+      "sourceNames": [
+        "Perfect Pitch"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_176.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/perfect_pitch.png"
+    },
+    {
+      "skillId": "born_steward",
+      "skillType": "personal",
+      "unitId": "dwyer",
+      "canonicalName": "Born Steward",
+      "sourceNames": [
+        "Born Steward"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_175.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/born_steward.png"
+    },
+    {
+      "skillId": "mischievous",
+      "skillType": "personal",
+      "unitId": "sophie",
+      "canonicalName": "Mischievous",
+      "sourceNames": [
+        "Mischievous"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_177.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/mischievous.png"
+    },
+    {
+      "skillId": "lucky_charm",
+      "skillType": "personal",
+      "unitId": "midori",
+      "canonicalName": "Lucky Charm",
+      "sourceNames": [
+        "Lucky Charm"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_178.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/lucky_charm.png"
+    },
+    {
+      "skillId": "bushido",
+      "skillType": "personal",
+      "unitId": "ryoma",
+      "canonicalName": "Bushido",
+      "sourceNames": [
+        "Bushido"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_150.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/bushido.png"
+    },
+    {
+      "skillId": "rallying_cry",
+      "skillType": "personal",
+      "unitId": "hinoka",
+      "canonicalName": "Rallying Cry",
+      "sourceNames": [
+        "Rallying Cry"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_140.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/rallying_cry.png"
+    },
+    {
+      "skillId": "competitive",
+      "skillType": "personal",
+      "unitId": "takumi",
+      "canonicalName": "Competitive",
+      "sourceNames": [
+        "Competitive"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_146.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/competitive.png"
+    },
+    {
+      "skillId": "quiet_strength",
+      "skillType": "personal",
+      "unitId": "sakura",
+      "canonicalName": "Quiet Strength",
+      "sourceNames": [
+        "Quiet Strength"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_134.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/quiet_strength.png"
+    },
+    {
+      "skillId": "pyrotechnics",
+      "skillType": "personal",
+      "unitId": "saizo",
+      "canonicalName": "Pyrotechnics",
+      "sourceNames": [
+        "Pyrotechnics"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_138.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/pyrotechnics.png"
+    },
+    {
+      "skillId": "shuriken_mastery",
+      "skillType": "personal",
+      "unitId": "kagero",
+      "canonicalName": "Shuriken Mastery",
+      "sourceNames": [
+        "Shuriken Mastery"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_147.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/shuriken_mastery.png"
+    },
+    {
+      "skillId": "optimistic",
+      "skillType": "personal",
+      "unitId": "setsuna",
+      "canonicalName": "Optimistic",
+      "sourceNames": [
+        "Optimist"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_142.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/optimistic.png"
+    },
+    {
+      "skillId": "divine_retribution",
+      "skillType": "personal",
+      "unitId": "azama",
+      "canonicalName": "Divine Retribution",
+      "sourceNames": [
+        "Divine Retribution"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_141.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/divine_retribution.png"
+    },
+    {
+      "skillId": "triple_threat",
+      "skillType": "personal",
+      "unitId": "hinata",
+      "canonicalName": "Triple Threat",
+      "sourceNames": [
+        "Triple Threat"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_145.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/triple_threat.png"
+    },
+    {
+      "skillId": "nohr_enmity",
+      "skillType": "personal",
+      "unitId": "oboro",
+      "canonicalName": "Nohr Enmity",
+      "sourceNames": [
+        "Nohr Enmity"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_144.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/nohr_enmity.png"
+    },
+    {
+      "skillId": "fearsome_blow",
+      "skillType": "personal",
+      "unitId": "hana",
+      "canonicalName": "Fearsome Blow",
+      "sourceNames": [
+        "Fearsome Blow"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_135.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/fearsome_blow.png"
+    },
+    {
+      "skillId": "perfectionist",
+      "skillType": "personal",
+      "unitId": "subaki",
+      "canonicalName": "Perfectionist",
+      "sourceNames": [
+        "Perfectionist"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_136.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/perfectionist.png"
+    },
+    {
+      "skillId": "pride",
+      "skillType": "personal",
+      "unitId": "hayato",
+      "canonicalName": "Pride",
+      "sourceNames": [
+        "Pride"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_143.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/pride.png"
+    },
+    {
+      "skillId": "fiery_blood",
+      "skillType": "personal",
+      "unitId": "rinkah",
+      "canonicalName": "Fiery Blood",
+      "sourceNames": [
+        "Fiery Blood"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_131.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/fiery_blood.png"
+    },
+    {
+      "skillId": "capture",
+      "skillType": "personal",
+      "unitId": "orochi",
+      "canonicalName": "Capture",
+      "sourceNames": [
+        "Capture"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_139.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/capture.png"
+    },
+    {
+      "skillId": "reciprocity",
+      "skillType": "personal",
+      "unitId": "kaden",
+      "canonicalName": "Reciprocity",
+      "sourceNames": [
+        "Reciprocity"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_149.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/reciprocity.png"
+    },
+    {
+      "skillId": "morbid_celebration",
+      "skillType": "personal",
+      "unitId": "reina",
+      "canonicalName": "Morbid Celebration",
+      "sourceNames": [
+        "Morbid Celebration"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_148.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/morbid_celebration.png"
+    },
+    {
+      "skillId": "in_extremis",
+      "skillType": "personal",
+      "unitId": "scarlet",
+      "canonicalName": "In Extremis",
+      "sourceNames": [
+        "In Extremis"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_151.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/in_extremis.png"
+    },
+    {
+      "skillId": "chivalry",
+      "skillType": "personal",
+      "unitId": "xander",
+      "canonicalName": "Chivalry",
+      "sourceNames": [
+        "Chivalry"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_168.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/chivalry.png"
+    },
+    {
+      "skillId": "roses_thorns",
+      "skillType": "personal",
+      "unitId": "camilla",
+      "canonicalName": "Rose's Thorns",
+      "sourceNames": [
+        "Rose’s Thorn"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_159.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/roses_thorns.png"
+    },
+    {
+      "skillId": "pragmatic",
+      "skillType": "personal",
+      "unitId": "leo",
+      "canonicalName": "Pragmatic",
+      "sourceNames": [
+        "Pragmatic"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_166.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/pragmatic.png"
+    },
+    {
+      "skillId": "lilys_poise",
+      "skillType": "personal",
+      "unitId": "elise",
+      "canonicalName": "Lily's Poise",
+      "sourceNames": [
+        "Lily’s Poise"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_153.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/lilys_poise.png"
+    },
+    {
+      "skillId": "fancy_footwork",
+      "skillType": "personal",
+      "unitId": "laslow",
+      "canonicalName": "Fancy Footwork",
+      "sourceNames": [
+        "Fancy Footwork"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_162.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/fancy_footwork.png"
+    },
+    {
+      "skillId": "bloodthirst",
+      "skillType": "personal",
+      "unitId": "peri",
+      "canonicalName": "Bloodthirst",
+      "sourceNames": [
+        "Bloodthirst"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_163.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/bloodthirst.png"
+    },
+    {
+      "skillId": "fierce_rival",
+      "skillType": "personal",
+      "unitId": "selena",
+      "canonicalName": "Fierce Rival",
+      "sourceNames": [
+        "Fierce Rival"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_160.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/fierce_rival.png"
+    },
+    {
+      "skillId": "opportunist",
+      "skillType": "personal",
+      "unitId": "beruka",
+      "canonicalName": "Opportunist",
+      "sourceNames": [
+        "Opportunist"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_161.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/opportunist.png"
+    },
+    {
+      "skillId": "aching_blood",
+      "skillType": "personal",
+      "unitId": "odin",
+      "canonicalName": "Aching Blood",
+      "sourceNames": [
+        "Aching Blood"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_156.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/aching_blood.png"
+    },
+    {
+      "skillId": "kidnap",
+      "skillType": "personal",
+      "unitId": "niles",
+      "canonicalName": "Kidnap",
+      "sourceNames": [
+        "Kidnap"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_157.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/kidnap.png"
+    },
+    {
+      "skillId": "puissance",
+      "skillType": "personal",
+      "unitId": "effie",
+      "canonicalName": "Puissance",
+      "sourceNames": [
+        "Puissance"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_155.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/puissance.png"
+    },
+    {
+      "skillId": "misfortunate",
+      "skillType": "personal",
+      "unitId": "arthur",
+      "canonicalName": "Misfortunate",
+      "sourceNames": [
+        "Misfortunate"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_154.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/misfortunate.png"
+    },
+    {
+      "skillId": "countercurse",
+      "skillType": "personal",
+      "unitId": "nyx",
+      "canonicalName": "Countercurse",
+      "sourceNames": [
+        "Countercurse"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_158.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/countercurse.png"
+    },
+    {
+      "skillId": "unmask",
+      "skillType": "personal",
+      "unitId": "charlotte",
+      "canonicalName": "Unmask",
+      "sourceNames": [
+        "Unmask"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_165.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/unmask.png"
+    },
+    {
+      "skillId": "fierce_mien",
+      "skillType": "personal",
+      "unitId": "benny",
+      "canonicalName": "Fierce Mien",
+      "sourceNames": [
+        "Fierce Mien"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_164.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/fierce_mien.png"
+    },
+    {
+      "skillId": "collector",
+      "skillType": "personal",
+      "unitId": "keaton",
+      "canonicalName": "Collector",
+      "sourceNames": [
+        "Collector"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_167.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/collector.png"
+    },
+    {
+      "skillId": "icy_blood",
+      "skillType": "personal",
+      "unitId": "flora",
+      "canonicalName": "Icy Blood",
+      "sourceNames": [
+        "Icy Blood"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_172.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/icy_blood.png"
+    },
+    {
+      "skillId": "peacebringer",
+      "skillType": "personal",
+      "unitId": "izana",
+      "canonicalName": "Peacebringer",
+      "sourceNames": [
+        "Peacebringer"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills",
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_169.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/peacebringer.png"
+    },
+    {
+      "skillId": "noble_cause",
+      "skillType": "personal",
+      "unitId": "shiro",
+      "canonicalName": "Noble Cause",
+      "sourceNames": [
+        "Noble Cause"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_179.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/noble_cause.png"
+    },
+    {
+      "skillId": "optimist",
+      "skillType": "personal",
+      "unitId": "kiragi",
+      "canonicalName": "Optimist",
+      "sourceNames": [
+        "Optimistic"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_180.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/optimist.png"
+    },
+    {
+      "skillId": "sweet_tooth",
+      "skillType": "personal",
+      "unitId": "asugi",
+      "canonicalName": "Sweet Tooth",
+      "sourceNames": [
+        "Sweet Tooth"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_181.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/sweet_tooth.png"
+    },
+    {
+      "skillId": "playthings",
+      "skillType": "personal",
+      "unitId": "selkie",
+      "canonicalName": "Playthings",
+      "sourceNames": [
+        "Playthings"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_182.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/playthings.png"
+    },
+    {
+      "skillId": "calm",
+      "skillType": "personal",
+      "unitId": "hisame",
+      "canonicalName": "Calm",
+      "sourceNames": [
+        "Calm"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_183.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/calm.png"
+    },
+    {
+      "skillId": "haiku",
+      "skillType": "personal",
+      "unitId": "mitama",
+      "canonicalName": "Haiku",
+      "sourceNames": [
+        "Haiku"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_184.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/haiku.png"
+    },
+    {
+      "skillId": "prodigy",
+      "skillType": "personal",
+      "unitId": "caeldori",
+      "canonicalName": "Prodigy",
+      "sourceNames": [
+        "Prodigy"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_185.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/prodigy.png"
+    },
+    {
+      "skillId": "vendetta",
+      "skillType": "personal",
+      "unitId": "rhajat",
+      "canonicalName": "Vendetta",
+      "sourceNames": [
+        "Vendetta"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_186.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/vendetta.png"
+    },
+    {
+      "skillId": "gallant",
+      "skillType": "personal",
+      "unitId": "siegbert",
+      "canonicalName": "Gallant",
+      "sourceNames": [
+        "Gallant"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_187.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/gallant.png"
+    },
+    {
+      "skillId": "fierce_counter",
+      "skillType": "personal",
+      "unitId": "forrest",
+      "canonicalName": "Fierce Counter",
+      "sourceNames": [
+        "Fierce Counter"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_189.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/fierce_counter.png"
+    },
+    {
+      "skillId": "guarded_bravery",
+      "skillType": "personal",
+      "unitId": "ignatius",
+      "canonicalName": "Guarded Bravery",
+      "sourceNames": [
+        "Guarded Bravery"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_188.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/guarded_bravery.png"
+    },
+    {
+      "skillId": "goody_basket",
+      "skillType": "personal",
+      "unitId": "velouria",
+      "canonicalName": "Goody Basket",
+      "sourceNames": [
+        "Goody Basket"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_190.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/goody_basket.png"
+    },
+    {
+      "skillId": "fortunate_son",
+      "skillType": "personal",
+      "unitId": "percy",
+      "canonicalName": "Fortunate Son",
+      "sourceNames": [
+        "Fortunate Son"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_191.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/fortunate_son.png"
+    },
+    {
+      "skillId": "bibliophile",
+      "skillType": "personal",
+      "unitId": "ophelia",
+      "canonicalName": "Bibliophile",
+      "sourceNames": [
+        "Bibliophile"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_192.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/bibliophile.png"
+    },
+    {
+      "skillId": "sisterhood",
+      "skillType": "personal",
+      "unitId": "soleil",
+      "canonicalName": "Sisterhood",
+      "sourceNames": [
+        "Sisterhood"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_193.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/sisterhood.png"
+    },
+    {
+      "skillId": "daydream",
+      "skillType": "personal",
+      "unitId": "nina",
+      "canonicalName": "Daydream",
+      "sourceNames": [
+        "Daydream"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-nohrian-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_194.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/daydream.png"
+    },
+    {
+      "skillId": "perspicacious",
+      "skillType": "personal",
+      "unitId": "yukimura",
+      "canonicalName": "Perspicacious",
+      "sourceNames": [
+        "Perspicacious"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-hoshidan-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_171.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/perspicacious.png"
+    },
+    {
+      "skillId": "wind_disciple",
+      "skillType": "personal",
+      "unitId": "fuga",
+      "canonicalName": "Wind Disciple",
+      "sourceNames": [
+        "Wind Disciple"
+      ],
+      "sourcePageIds": [
+        "serenes-fe14-other-personal-skills"
+      ],
+      "sourcePageUrls": [
+        "https://serenesforest.net/fire-emblem-fates/other-characters/personal-skills/"
+      ],
+      "sourceImageUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_170.png",
+      "localDestination": "src/games/fe14/assets/personal_skill_icons/wind_disciple.png"
+    }
+  ]
+}

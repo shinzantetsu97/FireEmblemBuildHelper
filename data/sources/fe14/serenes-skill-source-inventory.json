@@ -1,0 +1,1702 @@
+{
+  "gameId": "fe14",
+  "scope": "milestone-007-approved-sources",
+  "capturedAt": "2026-07-18T18:09:39.820Z",
+  "pages": [
+    {
+      "id": "serenes-fe14-hoshidan-class-skills",
+      "title": "Fire Emblem Fates: Hoshidan Classes - Class Skills",
+      "skillType": "class",
+      "category": "hoshidan",
+      "url": "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/",
+      "rowCount": 58,
+      "rows": [
+        {
+          "sourceOrder": 1,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_35.png",
+          "name": "Dragon Ward",
+          "description": "Allies adjacent to the user have a Luck x 0.5% chance of receiving half damage from enemy attacks",
+          "classLabel": "Hoshido Noble",
+          "level": "5",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 2,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_43.png",
+          "name": "Hoshidan Unity",
+          "description": "Adds 10% to skill activation rates",
+          "classLabel": "Hoshido Noble",
+          "level": "15",
+          "cost": "3000"
+        },
+        {
+          "sourceOrder": 3,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_57.png",
+          "name": "Duelist’s Blow",
+          "description": "When user triggers the battle, Avoid +30",
+          "classLabel": "Samurai",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 4,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_39.png",
+          "name": "Vantage",
+          "description": "At the start of battle, when the user has under half HP, they attack first",
+          "classLabel": "Samurai",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 5,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_27.png",
+          "name": "Astra",
+          "description": "Skill x 0.5% chance of triggering 5 consecutive hits with half damage",
+          "classLabel": "Swordmaster",
+          "level": "5",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 6,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_65.png",
+          "name": "Swordfaire",
+          "description": "When user is equipped with a Sword, damage +5 during battle",
+          "classLabel": "Swordmaster",
+          "level": "15",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 7,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_11.png",
+          "name": "Seal Strength",
+          "description": "After battle, enemy’s Strength -6 *1",
+          "classLabel": "Master of Arms",
+          "level": "5",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 8,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_55.png",
+          "name": "Life and Death",
+          "description": "During battles, damage +10, damage received +10",
+          "classLabel": "Master of Arms",
+          "level": "15",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 9,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_15.png",
+          "name": "Seal Resistance",
+          "description": "After battle, enemy’s Resistance -6 *1",
+          "classLabel": "Oni Savage",
+          "level": "1",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 10,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_45.png",
+          "name": "Shove",
+          "description": "Select the “Shove” command to push an adjacent ally 1 tile",
+          "classLabel": "Oni Savage",
+          "level": "10",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 11,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_59.png",
+          "name": "Death Blow",
+          "description": "When user triggers the battle, Critical rate +20",
+          "classLabel": "Oni Chieftain",
+          "level": "5",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 12,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_37.png",
+          "name": "Counter",
+          "description": "When an adjacent enemy triggers the battle and inflicts damage, the enemy receives the same damage",
+          "classLabel": "Oni Chieftain",
+          "level": "15",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 13,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_104.png",
+          "name": "Salvage Blow",
+          "description": "When user triggers the battle, Luck% chance of receiving a Katana, Naginata, Club, Yumi or Shuriken if the user defeats the enemy",
+          "classLabel": "Blacksmith",
+          "level": "5",
+          "cost": "2500"
+        },
+        {
+          "sourceOrder": 14,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_80.png",
+          "name": "Lancebreaker",
+          "description": "Hit rate and Avoid +50 when the enemy is equipped with a Lance",
+          "classLabel": "Blacksmith",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 15,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_14.png",
+          "name": "Seal Defence",
+          "description": "After battle, enemy’s Defence -6 *1",
+          "classLabel": "Spear Fighter",
+          "level": "1",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 16,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_47.png",
+          "name": "Swap",
+          "description": "Select the “Swap” command to swap places with an adjacent ally on the map",
+          "classLabel": "Spear Fighter",
+          "level": "10",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 17,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_13.png",
+          "name": "Seal Speed",
+          "description": "After battle, enemy’s Speed -6 *1",
+          "classLabel": "Spear Master",
+          "level": "5",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 18,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_66.png",
+          "name": "Lancefaire",
+          "description": "When user is equipped with a Lance, damage +5 during battle",
+          "classLabel": "Spear Master",
+          "level": "15",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 19,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_31.png",
+          "name": "Rend Heaven",
+          "description": "Skill x 1.5% chance of adding half the enemy’s Strength (if user has a physical weapon) or Magic (if user has a magical weapon) as damage",
+          "classLabel": "Basara",
+          "level": "5",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 20,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_90.png",
+          "name": "Quixotic",
+          "description": "User and enemy’s Hit rate +30 and skill activation rate +15% during battle",
+          "classLabel": "Basara",
+          "level": "15",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 21,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_03.png",
+          "name": "Magic +2",
+          "description": "Magic +2",
+          "classLabel": "Diviner",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 22,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_107.png",
+          "name": "Future Sight",
+          "description": "When user triggers the battle, Luck% chance of gaining double experience when user defeats the enemy",
+          "classLabel": "Diviner",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 23,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_17.png",
+          "name": "Rally Magic",
+          "description": "Magic +4 to all allies within a 2 tile radius for one Turn when the “Rally” command is used",
+          "classLabel": "Onmyoji",
+          "level": "5",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 24,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_70.png",
+          "name": "Tomefaire",
+          "description": "When user is equipped with a Tome, damage +5 during battle",
+          "classLabel": "Onmyoji",
+          "level": "15",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 25,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_36.png",
+          "name": "Miracle",
+          "description": "Luck% chance of leaving the user with 1 HP when they have 2 or more HP",
+          "classLabel": "Monk, Shrine Maiden",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 26,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_20.png",
+          "name": "Rally Luck",
+          "description": "Luck +8 to all allies within a 2 tile radius for one Turn when the “Rally” command is used",
+          "classLabel": "Monk, Shrine Maiden",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 27,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_94.png",
+          "name": "Renewal",
+          "description": "Recover 30% HP at the start of the user’s Turn",
+          "classLabel": "Great Master, Priestess",
+          "level": "5",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 28,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_38.png",
+          "name": "Countermagic",
+          "description": "When the enemy triggers the battle and inflicts magical damage, the enemy receives the same damage",
+          "classLabel": "Great Master, Priestess",
+          "level": "15",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 29,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_58.png",
+          "name": "Darting Blow",
+          "description": "When user triggers the battle, follow up attack speed +5",
+          "classLabel": "Sky Knight",
+          "level": "1",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 30,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_93.png",
+          "name": "Camaraderie",
+          "description": "Recover 10% HP at the start of the user’s Turn if there are allies within a 2 tile radius",
+          "classLabel": "Sky Knight",
+          "level": "10",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 31,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_19.png",
+          "name": "Rally Speed",
+          "description": "Speed +4 to all allies within a 2 tile radius for one Turn when the “Rally” command is used",
+          "classLabel": "Falcon Knight",
+          "level": "5",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 32,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_62.png",
+          "name": "Warding Blow",
+          "description": "When user triggers the battle, magical damage received -20",
+          "classLabel": "Falcon Knight",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 33,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_88.png",
+          "name": "Air Superiority",
+          "description": "Hit rate and Avoid +30 when facing Flying enemies",
+          "classLabel": "Kinshi Knight",
+          "level": "5",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 34,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_97.png",
+          "name": "Amaterasu",
+          "description": "Allies within a 2 tile radius recover 20% HP at the start of the user’s Turn",
+          "classLabel": "Kinshi Knight",
+          "level": "15",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 35,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_04.png",
+          "name": "Skill +2",
+          "description": "Skill +2",
+          "classLabel": "Archer",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 36,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_49.png",
+          "name": "Quick Draw",
+          "description": "When user triggers the battle, damage +4",
+          "classLabel": "Archer",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 37,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_60.png",
+          "name": "Certain Blow",
+          "description": "When user triggers the battle, Hit rate +40",
+          "classLabel": "Sniper",
+          "level": "5",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 38,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_69.png",
+          "name": "Bowfaire",
+          "description": "When user is equipped with a Bow, damage +5 during battle",
+          "classLabel": "Sniper",
+          "level": "15",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 39,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_112.png",
+          "name": "Locktouch",
+          "description": "User can open doors and chests without requiring keys",
+          "classLabel": "Ninja",
+          "level": "1",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 40,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_101.png",
+          "name": "Poison Strike",
+          "description": "When user triggers the battle, the enemy’s HP is reduced by 20% after the battle",
+          "classLabel": "Ninja",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 41,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_25.png",
+          "name": "Lethality",
+          "description": "Skill x 0.25% chance of instantly defeating the enemy when dealing 1 or more damage",
+          "classLabel": "Master Ninja",
+          "level": "5",
+          "cost": "2500"
+        },
+        {
+          "sourceOrder": 42,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_68.png",
+          "name": "Shurikenfaire",
+          "description": "When user is equipped with a Dagger, damage +5 during battle",
+          "classLabel": "Master Ninja",
+          "level": "15",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 43,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_41.png",
+          "name": "Golembane",
+          "description": "Attacks are effective against Mechanists, Automatons and Stoneborn",
+          "classLabel": "Mechanist",
+          "level": "5",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 44,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_48.png",
+          "name": "Replicate",
+          "description": "Select the “Replicate” command once per map to create a replica with the same appearance, stats, inventory and HP as the user (Anything that happens to the replica happens to the user and vice versa–even death)",
+          "classLabel": "Mechanist",
+          "level": "15",
+          "cost": "3000"
+        },
+        {
+          "sourceOrder": 45,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_99.png",
+          "name": "Potent Potion",
+          "description": "The effect of HP recovery and stat-boosting potions is increased by 50%",
+          "classLabel": "Apothecary",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 46,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_109.png",
+          "name": "Quick Salve",
+          "description": "After consuming a HP recovery or stat-boosting potion, the user can perform another action",
+          "classLabel": "Apothecary",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 47,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_105.png",
+          "name": "Profiteer",
+          "description": "Luck% chance of obtaining a Gold Bar after moving during the first seven Turns",
+          "classLabel": "Merchant",
+          "level": "5",
+          "cost": "2500"
+        },
+        {
+          "sourceOrder": 48,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_56.png",
+          "name": "Spendthrift",
+          "description": "During battles, user spends a Gold Bar for damage +10 and damage received -10",
+          "classLabel": "Merchant",
+          "level": "15",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 49,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_53.png",
+          "name": "Evenhanded",
+          "description": "During even-numbered Turns, damage +4",
+          "classLabel": "Kitsune",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 50,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_40.png",
+          "name": "Beastbane",
+          "description": "When user is a Wolfskin or Kitsune, their attacks are effective against Beast units",
+          "classLabel": "Kitsune",
+          "level": "10",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 51,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_95.png",
+          "name": "Even Better",
+          "description": "Recover 40% HP at the start of even-numbered Turns",
+          "classLabel": "Nine-Tails",
+          "level": "5",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 52,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_103.png",
+          "name": "Grisly Wound",
+          "description": "The enemy’s HP is reduced by 20% after the battle",
+          "classLabel": "Nine-Tails",
+          "level": "15",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 53,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_06.png",
+          "name": "Luck +4",
+          "description": "Luck +4",
+          "classLabel": "Songstress",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 54,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_24.png",
+          "name": "Inspiring Song",
+          "description": "Skill, Speed and Luck +3 for one Turn for the unit who receives the user’s song",
+          "classLabel": "Songstress",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 55,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_77.png",
+          "name": "Voice of Peace",
+          "description": "Enemies within a 2 tile radius deal 2 less physical damage",
+          "classLabel": "Songstress",
+          "level": "25",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 56,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_78.png",
+          "name": "Foreign Princess",
+          "description": "“Foreign Army” enemies within a 2 tile radius deal 2 less damage and receive 2 extra damage",
+          "classLabel": "Songstress",
+          "level": "35",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 57,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_108.png",
+          "name": "Aptitude",
+          "description": "Adds 10% to all growth rates during Level Ups",
+          "classLabel": "Villager",
+          "level": "1",
+          "cost": "5000"
+        },
+        {
+          "sourceOrder": 58,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_86.png",
+          "name": "Underdog",
+          "description": "Hit rate and Avoid +15 when user’s Level is lower than the enemy (promoted units count as Level +20)",
+          "classLabel": "Villager",
+          "level": "10",
+          "cost": "500"
+        }
+      ]
+    },
+    {
+      "id": "serenes-fe14-nohrian-class-skills",
+      "title": "Fire Emblem Fates: Nohrian Classes - Class Skills",
+      "skillType": "class",
+      "category": "nohrian",
+      "url": "https://serenesforest.net/fire-emblem-fates/nohrian-classes/class-skills/",
+      "rowCount": 51,
+      "rows": [
+        {
+          "sourceOrder": 1,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_106.png",
+          "name": "Nobility",
+          "description": "Experience gained x 1.2",
+          "classLabel": "Nohr Prince(ss)",
+          "level": "1",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 2,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_28.png",
+          "name": "Dragon Fang",
+          "description": "Skill x.0.75% chance of adding 50% of the user’s Attack Power as damage",
+          "classLabel": "Nohr Prince(ss)",
+          "level": "10",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 3,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_10.png",
+          "name": "Draconic Hex",
+          "description": "After battle, enemy’s stats -4 *1",
+          "classLabel": "Nohr Noble",
+          "level": "5",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 4,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_42.png",
+          "name": "Nohrian Trust",
+          "description": "User shares their support unit’s battle skills *2",
+          "classLabel": "Nohr Noble",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 5,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_51.png",
+          "name": "Elbow Room",
+          "description": "When user fights in terrain with no terrain effects, damage +3 during battles",
+          "classLabel": "Cavalier",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 6,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_44.png",
+          "name": "Shelter",
+          "description": "Select the “Shelter” command to make an adjacent ally the user’s support unit",
+          "classLabel": "Cavalier",
+          "level": "10",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 7,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_71.png",
+          "name": "Defender",
+          "description": "When user is the lead unit while paired up, all stats +1",
+          "classLabel": "Paladin",
+          "level": "5",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 8,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_34.png",
+          "name": "Aegis",
+          "description": "Skill% chance of halving damage from Bow, Magic, Dagger, Dragonstone, Breath or Stone attacks",
+          "classLabel": "Paladin",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 9,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_30.png",
+          "name": "Luna",
+          "description": "Skill% chance of ignoring half the enemy’s Defence (if user has a physical weapon) or Resistance (if user has a magical weapon)",
+          "classLabel": "Great Knight",
+          "level": "5",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 10,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_61.png",
+          "name": "Armored Blow",
+          "description": "When user triggers the battle, physical damage received -10",
+          "classLabel": "Great Knight",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 11,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_07.png",
+          "name": "Defence +2",
+          "description": "Defence +2",
+          "classLabel": "Knight",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 12,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_52.png",
+          "name": "Natural Cover",
+          "description": "When user fights in terrain with terrain effects, damage received -3 during battles",
+          "classLabel": "Knight",
+          "level": "10",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 13,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_64.png",
+          "name": "Wary Fighter",
+          "description": "During battles, neither the user or enemy can perform follow up attacks",
+          "classLabel": "General",
+          "level": "5",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 14,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_33.png",
+          "name": "Pavise",
+          "description": "Skill% chance of halving damage from Sword, Lance, Axe, Beaststone, Claw or Puppet attacks",
+          "classLabel": "General",
+          "level": "15",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 15,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_01.png",
+          "name": "HP +5",
+          "description": "Maximum HP +5",
+          "classLabel": "Fighter",
+          "level": "1",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 16,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_85.png",
+          "name": "Gamble",
+          "description": "Hit rate -10, Critical rate +10",
+          "classLabel": "Fighter",
+          "level": "10",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 17,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_16.png",
+          "name": "Rally Strength",
+          "description": "Strength +4 to all allies within a 2 tile radius for one Turn when the “Rally” command is used",
+          "classLabel": "Berserker",
+          "level": "5",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 18,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_67.png",
+          "name": "Axefaire",
+          "description": "When user is equipped with an Axe, damage +5 during battle",
+          "classLabel": "Berserker",
+          "level": "15",
+          "cost": "2000"
+        },
+        {
+          "sourceOrder": 19,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_91.png",
+          "name": "Good Fortune",
+          "description": "Luck% chance of recovering 20% HP at the start of the user’s Turn",
+          "classLabel": "Mercenary",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 20,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_50.png",
+          "name": "Strong Riposte",
+          "description": "When enemy triggers the battle, damage +3",
+          "classLabel": "Mercenary",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 21,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_29.png",
+          "name": "Sol",
+          "description": "Skill% chance of restoring half the damage dealt to the enemy",
+          "classLabel": "Hero",
+          "level": "5",
+          "cost": "1750"
+        },
+        {
+          "sourceOrder": 22,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_81.png",
+          "name": "Axebreaker",
+          "description": "Hit rate and Avoid +50 when the enemy is equipped with an Axe",
+          "classLabel": "Hero",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 23,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_18.png",
+          "name": "Rally Skill",
+          "description": "Skill +4 to all allies within a 2 tile radius for one Turn when the “Rally” command is used",
+          "classLabel": "Bow Knight",
+          "level": "5",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 24,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_82.png",
+          "name": "Shurikenbreaker",
+          "description": "Hit rate and Avoid +50 when the enemy is equipped with a Dagger",
+          "classLabel": "Bow Knight",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 25,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_112.png",
+          "name": "Locktouch",
+          "description": "User can open doors and chests without requiring keys",
+          "classLabel": "Outlaw",
+          "level": "1",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 26,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_09.png",
+          "name": "Movement +1",
+          "description": "Movement +1",
+          "classLabel": "Outlaw",
+          "level": "10",
+          "cost": "3000"
+        },
+        {
+          "sourceOrder": 27,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_87.png",
+          "name": "Lucky Seven",
+          "description": "Hit rate and Avoid +20 for the first seven Turns",
+          "classLabel": "Adventurer",
+          "level": "5",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 28,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_111.png",
+          "name": "Pass",
+          "description": "User can pass through tiles occupied by enemy units",
+          "classLabel": "Adventurer",
+          "level": "15",
+          "cost": "1750"
+        },
+        {
+          "sourceOrder": 29,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_02.png",
+          "name": "Strength +2",
+          "description": "Strength +2",
+          "classLabel": "Wyvern Rider",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 30,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_46.png",
+          "name": "Lunge",
+          "description": "Select the “Lunge” command to swap places with an enemy after an attack",
+          "classLabel": "Wyvern Rider",
+          "level": "10",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 31,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_21.png",
+          "name": "Rally Defence",
+          "description": "Defence +4 to all allies within a 2 tile radius for one Turn when the “Rally” command is used",
+          "classLabel": "Wyvern Lord",
+          "level": "5",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 32,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_79.png",
+          "name": "Swordbreaker",
+          "description": "Hit rate and Avoid +50 when the enemy is equipped with a Sword",
+          "classLabel": "Wyvern Lord",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 33,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_102.png",
+          "name": "Savage Blow",
+          "description": "When user triggers the battle, enemies within a 2 tile radius have their HP reduced by 20% after the battle",
+          "classLabel": "Malig Knight",
+          "level": "5",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 34,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_63.png",
+          "name": "Trample",
+          "description": "Unless enemy is on a mount, damage +5",
+          "classLabel": "Malig Knight",
+          "level": "15",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 35,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_89.png",
+          "name": "Heartseeker",
+          "description": "When fighting adjacent to an enemy, enemy’s Avoid -20",
+          "classLabel": "Dark Mage",
+          "level": "1",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 36,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_76.png",
+          "name": "Malefic Aura",
+          "description": "Enemies within a 2 tile radius receive 2 extra damage from magical attacks",
+          "classLabel": "Dark Mage",
+          "level": "10",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 37,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_32.png",
+          "name": "Vengeance",
+          "description": "Skill x 1.5% chance of adding half the user’s (Max HP – Current HP) as damage",
+          "classLabel": "Sorcerer",
+          "level": "5",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 38,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_83.png",
+          "name": "Bowbreaker",
+          "description": "Hit rate and Avoid +50 when the enemy is equipped with a Bow",
+          "classLabel": "Sorcerer",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 39,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_12.png",
+          "name": "Seal Magic",
+          "description": "After battle, enemy’s Magic -6 *1",
+          "classLabel": "Dark Knight",
+          "level": "5",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 40,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_98.png",
+          "name": "Lifetaker",
+          "description": "When user triggers the battle, recover 50% HP after defeating the enemy",
+          "classLabel": "Dark Knight",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 41,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_08.png",
+          "name": "Resistance +2",
+          "description": "Resistance +2",
+          "classLabel": "Troubadour",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 42,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_73.png",
+          "name": "Gentilhomme",
+          "description": "Female allies within a 2 tile radius receive 2 less damage during battles",
+          "classLabel": "Troubadour(M)",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 43,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_74.png",
+          "name": "Demoiselle",
+          "description": "Male allies within a 2 tile radius receive 2 less damage during battles",
+          "classLabel": "Troubadour (F)",
+          "level": "10",
+          "cost": "750"
+        },
+        {
+          "sourceOrder": 44,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_22.png",
+          "name": "Rally Resistance",
+          "description": "Resistance +4 to all allies within a 2 tile radius for one Turn when the “Rally” command is used",
+          "classLabel": "Strategist",
+          "level": "5",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 45,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_75.png",
+          "name": "Inspiration",
+          "description": "Allies within a 2 tile radius deal 2 extra damage and receive 2 less damage during battles",
+          "classLabel": "Strategist",
+          "level": "15",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 46,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_100.png",
+          "name": "Live to Serve",
+          "description": "When healing an ally, the user recovers the same amount of HP",
+          "classLabel": "Maid, Butler",
+          "level": "5",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 47,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_84.png",
+          "name": "Tomebreaker",
+          "description": "Hit rate and Avoid +50 when the enemy is equipped with a Tome",
+          "classLabel": "Maid, Butler",
+          "level": "15",
+          "cost": "1500"
+        },
+        {
+          "sourceOrder": 48,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_54.png",
+          "name": "Odd Shaped",
+          "description": "During odd-numbered Turns, damage +4",
+          "classLabel": "Wolfskin",
+          "level": "1",
+          "cost": "500"
+        },
+        {
+          "sourceOrder": 49,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_40.png",
+          "name": "Beastbane",
+          "description": "When user is a Wolfskin or Kitsune, their attacks are effective against Beast units",
+          "classLabel": "Wolfskin",
+          "level": "10",
+          "cost": "1000"
+        },
+        {
+          "sourceOrder": 50,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_96.png",
+          "name": "Better Odds",
+          "description": "Recover 40% HP at the start of odd-numbered Turns",
+          "classLabel": "Wolfssegner",
+          "level": "5",
+          "cost": "1250"
+        },
+        {
+          "sourceOrder": 51,
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_103.png",
+          "name": "Grisly Wound",
+          "description": "The enemy’s HP is reduced by 20% after the battle",
+          "classLabel": "Wolfssegner",
+          "level": "15",
+          "cost": "1250"
+        }
+      ]
+    },
+    {
+      "id": "serenes-fe14-hoshidan-personal-skills",
+      "title": "Fire Emblem Fates: Hoshidan Characters - Personal Skills",
+      "skillType": "personal",
+      "category": "hoshidan",
+      "url": "https://serenesforest.net/fire-emblem-fates/hoshidan-characters/personal-skills/",
+      "rowCount": 41,
+      "rows": [
+        {
+          "sourceOrder": 1,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_127.png",
+          "name": "Supportive",
+          "effect": "When user is the support unit, if the lead unit has a C Support or higher, the lead unit’s Hit Rate +10, damage +2 and damage received -2",
+          "characterLabel": "Avatar"
+        },
+        {
+          "sourceOrder": 2,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_129.png",
+          "name": "Devoted Partner",
+          "effect": "If the Avatar is the lead unit, Avatar’s damage +2, damage received -2",
+          "characterLabel": "Felicia"
+        },
+        {
+          "sourceOrder": 3,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_130.png",
+          "name": "Evasive Partner",
+          "effect": "If the Avatar is the lead unit, Avatar’s Avoid +15, damage received -3",
+          "characterLabel": "Jakob"
+        },
+        {
+          "sourceOrder": 4,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_132.png",
+          "name": "Miraculous Save",
+          "effect": "When user is the support unit, the lead unit has a Luck% chance of surviving a fatal attack with 1 HP",
+          "characterLabel": "Kaze"
+        },
+        {
+          "sourceOrder": 5,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_133.png",
+          "name": "Healing Descant",
+          "effect": "Allies within a 2 tile radius recover 10% HP at the start of the user’s Turn",
+          "characterLabel": "Azura"
+        },
+        {
+          "sourceOrder": 6,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_137.png",
+          "name": "Vow of Friendship",
+          "effect": "If the Avatar is an ally, when the Avatar is under half HP, user’s damage +3 and damage received -3",
+          "characterLabel": "Silas"
+        },
+        {
+          "sourceOrder": 7,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_152.png",
+          "name": "Highwayman",
+          "effect": "When user triggers the battle, if the enemy cannot counter-attack, enemy’s Strength and Speed -3 after the battle (stats recover by 1 each Turn)",
+          "characterLabel": "Shura"
+        },
+        {
+          "sourceOrder": 8,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_169.png",
+          "name": "Peacebringer",
+          "effect": "Allies and enemies within a 2 tile radius deal 2 less damage",
+          "characterLabel": "Izana"
+        },
+        {
+          "sourceOrder": 9,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_173.png",
+          "name": "Forager",
+          "effect": "When standing on Mountain, Woods, Waste or Field terrain, the user recovers 20% HP at the start of the Turn",
+          "characterLabel": "Mozu"
+        },
+        {
+          "sourceOrder": 10,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_131.png",
+          "name": "Fiery Blood",
+          "effect": "When user’s HP is not full, damage +4",
+          "characterLabel": "Rinkah"
+        },
+        {
+          "sourceOrder": 11,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_134.png",
+          "name": "Quiet Strength",
+          "effect": "Allies within a 2 tile radius receive 2 less damage",
+          "characterLabel": "Sakura"
+        },
+        {
+          "sourceOrder": 12,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_135.png",
+          "name": "Fearsome Blow",
+          "effect": "When user triggers the battle and defeats an enemy, enemies adjacent to the user have their HP reduced by 20%",
+          "characterLabel": "Hana"
+        },
+        {
+          "sourceOrder": 13,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_136.png",
+          "name": "Perfectionist",
+          "effect": "When user’s HP is at maximum, Hit rate and Avoid +15",
+          "characterLabel": "Subaki"
+        },
+        {
+          "sourceOrder": 14,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_138.png",
+          "name": "Pyrotechnics",
+          "effect": "When user triggers the battle at under half HP, the user and enemies within a 2 tile radius have their HP reduced by 20%",
+          "characterLabel": "Saizo"
+        },
+        {
+          "sourceOrder": 15,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_139.png",
+          "name": "Capture",
+          "effect": "When there is a Prison in My Castle, the user can select the “Capture” command. If a generic enemy is defeated, they will be sent to the Prison",
+          "characterLabel": "Orochi"
+        },
+        {
+          "sourceOrder": 16,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_140.png",
+          "name": "Rallying Cry",
+          "effect": "Allies within a 2 tile radius deal 2 extra damage",
+          "characterLabel": "Hinoka"
+        },
+        {
+          "sourceOrder": 17,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_141.png",
+          "name": "Divine Retribution",
+          "effect": "When user doesn’t have a weapon equipped and they sustain damage from an adjacent enemy, the enemy receives half the same damage.",
+          "characterLabel": "Azama"
+        },
+        {
+          "sourceOrder": 18,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_142.png",
+          "name": "Optimist",
+          "effect": "When user is healed by a staff, they recover 1.5 times the normal HP",
+          "characterLabel": "Setsuna"
+        },
+        {
+          "sourceOrder": 19,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_143.png",
+          "name": "Pride",
+          "effect": "When user’s Level is lower than the enemy’s (promoted units count as Level +20), damage +3",
+          "characterLabel": "Hayato"
+        },
+        {
+          "sourceOrder": 20,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_144.png",
+          "name": "Nohr Enmity",
+          "effect": "When engaging a Nohr-related enemy, damage +3",
+          "characterLabel": "Oboro"
+        },
+        {
+          "sourceOrder": 21,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_145.png",
+          "name": "Triple Threat",
+          "effect": "When user is under half HP, half the damage received by Swords, Lances or Axes is also dealt to the enemy",
+          "characterLabel": "Hinata"
+        },
+        {
+          "sourceOrder": 22,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_146.png",
+          "name": "Competitive",
+          "effect": "When user is the lead unit and their Level is lower than their support unit’s Level, Critical rate +10, damage +3 and damage received -1",
+          "characterLabel": "Takumi"
+        },
+        {
+          "sourceOrder": 23,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_147.png",
+          "name": "Shuriken Mastery",
+          "effect": "When user receives damage from a Dagger attack, the enemy receives half the same damage and the Dagger’s stat reduction effect",
+          "characterLabel": "Kagero"
+        },
+        {
+          "sourceOrder": 24,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_148.png",
+          "name": "Morbid Celebration",
+          "effect": "When user triggers the battle, recover 20% HP after defeating the enemy",
+          "characterLabel": "Reina"
+        },
+        {
+          "sourceOrder": 25,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_149.png",
+          "name": "Reciprocity",
+          "effect": "When a unit uses a healing staff on the user, that unit has their HP recovered by half the same amount",
+          "characterLabel": "Kaden"
+        },
+        {
+          "sourceOrder": 26,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_150.png",
+          "name": "Bushido",
+          "effect": "When user is the lead unit, if their Level is higher than their support unit’s Level, Critical rate +10, damage +2 and damage received -2",
+          "characterLabel": "Ryoma"
+        },
+        {
+          "sourceOrder": 27,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_151.png",
+          "name": "In Extremis",
+          "effect": "When user’s HP is under a quarter, Critical rate +30",
+          "characterLabel": "Scarlet"
+        },
+        {
+          "sourceOrder": 28,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_171.png",
+          "name": "Perspicacious",
+          "effect": "Hit rate +5 for all allies",
+          "characterLabel": "Yukimura"
+        },
+        {
+          "sourceOrder": 29,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_174.png",
+          "name": "Draconic Heir",
+          "effect": "When user is equipped with a Dragonstone, they recover 15% HP at the start of their Turn",
+          "characterLabel": "Kana"
+        },
+        {
+          "sourceOrder": 30,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_175.png",
+          "name": "Born Steward",
+          "effect": "When fighting in My Castle, Hit rate and Avoid +20, damage +2 and damage received -2",
+          "characterLabel": "Dwyer"
+        },
+        {
+          "sourceOrder": 31,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_176.png",
+          "name": "Perfect Pitch",
+          "effect": "Allies within a 2 tile radius who have lower HP than the user recover 10% HP when the “Rally” command is used",
+          "characterLabel": "Shigure"
+        },
+        {
+          "sourceOrder": 32,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_177.png",
+          "name": "Mischievous",
+          "effect": "When user triggers the battle and their attack connects with the enemy, enemy’s Defence -3 and enemy is stripped",
+          "characterLabel": "Sophie"
+        },
+        {
+          "sourceOrder": 33,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_178.png",
+          "name": "Lucky Charm",
+          "effect": "Skills with an activation rate dependent on the Luck stat have their rate increased by 20%",
+          "characterLabel": "Midori"
+        },
+        {
+          "sourceOrder": 34,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_179.png",
+          "name": "Noble Cause",
+          "effect": "When user is the lead unit, if their support unit doesn’t have full HP, damage +3 and damage received +1",
+          "characterLabel": "Shiro"
+        },
+        {
+          "sourceOrder": 35,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_180.png",
+          "name": "Optimistic",
+          "effect": "After choosing to Wait, Speed +4 and Luck +8 for one Turn",
+          "characterLabel": "Kiragi"
+        },
+        {
+          "sourceOrder": 36,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_181.png",
+          "name": "Sweet Tooth",
+          "effect": "After choosing to Wait, user recovers 4 HP by eating hidden treats",
+          "characterLabel": "Asugi"
+        },
+        {
+          "sourceOrder": 37,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_182.png",
+          "name": "Playthings",
+          "effect": "After the start of the user’s Turn, all enemies that are adjacent to the user have their HP reduced by 5",
+          "characterLabel": "Selkie"
+        },
+        {
+          "sourceOrder": 38,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_183.png",
+          "name": "Calm",
+          "effect": "After choosing to Wait, Skill and Resistance +4 for one Turn",
+          "characterLabel": "Hisame"
+        },
+        {
+          "sourceOrder": 39,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_184.png",
+          "name": "Haiku",
+          "effect": "At the start of the Turn, when two allies are directly above and below Mitama, Mitama recovers 7 HP, while the the two allies recover 5 HP",
+          "characterLabel": "Mitama"
+        },
+        {
+          "sourceOrder": 40,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_185.png",
+          "name": "Prodigy",
+          "effect": "At the start of the battle, if the enemy’s Strength or Magic (whichever is highest) is higher than Caeldori’s corresponding stat, damage +4",
+          "characterLabel": "Caeldori"
+        },
+        {
+          "sourceOrder": 41,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_186.png",
+          "name": "Vendetta",
+          "effect": "When user triggers the battle, if they’ve already fought the enemy in the same map, damage +4",
+          "characterLabel": "Rhajat"
+        }
+      ]
+    },
+    {
+      "id": "serenes-fe14-nohrian-personal-skills",
+      "title": "Fire Emblem Fates: Nohrian Characters - Personal Skills",
+      "skillType": "personal",
+      "category": "nohrian",
+      "url": "https://serenesforest.net/fire-emblem-fates/nohrian-characters/personal-skills/",
+      "rowCount": 40,
+      "rows": [
+        {
+          "sourceOrder": 1,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_127.png",
+          "name": "Supportive",
+          "effect": "When user is the support unit, if the lead unit has a C Support or higher, the lead unit’s Hit Rate +10, damage +2 and damage received -2",
+          "characterLabel": "Avatar"
+        },
+        {
+          "sourceOrder": 2,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_129.png",
+          "name": "Devoted Partner",
+          "effect": "If the Avatar is the lead unit, Avatar’s damage +2, damage received -2",
+          "characterLabel": "Felicia"
+        },
+        {
+          "sourceOrder": 3,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_130.png",
+          "name": "Evasive Partner",
+          "effect": "If the Avatar is the lead unit, Avatar’s Avoid +15, damage received -3",
+          "characterLabel": "Jakob"
+        },
+        {
+          "sourceOrder": 4,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_132.png",
+          "name": "Miraculous Save",
+          "effect": "When user is the support unit, the lead unit has a Luck% chance of surviving a fatal attack with 1 HP",
+          "characterLabel": "Kaze"
+        },
+        {
+          "sourceOrder": 5,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_133.png",
+          "name": "Healing Descant",
+          "effect": "Allies within a 2 tile radius recover 10% HP at the start of the user’s Turn",
+          "characterLabel": "Azura"
+        },
+        {
+          "sourceOrder": 6,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_137.png",
+          "name": "Vow of Friendship",
+          "effect": "If the Avatar is an ally, when the Avatar is under half HP, user’s damage +3 and damage received -3",
+          "characterLabel": "Silas"
+        },
+        {
+          "sourceOrder": 7,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_152.png",
+          "name": "Highwayman",
+          "effect": "When user triggers the battle, if the enemy cannot counter-attack, enemy’s Strength and Speed -3 after the battle (stats recover by 1 each Turn)",
+          "characterLabel": "Shura"
+        },
+        {
+          "sourceOrder": 8,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_169.png",
+          "name": "Peacebringer",
+          "effect": "Allies and enemies within a 2 tile radius deal 2 less damage",
+          "characterLabel": "Izana"
+        },
+        {
+          "sourceOrder": 9,
+          "section": "Shared Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_173.png",
+          "name": "Forager",
+          "effect": "When standing on Mountain, Woods, Waste or Field terrain, the user recovers 20% HP at the start of the Turn",
+          "characterLabel": "Mozu"
+        },
+        {
+          "sourceOrder": 10,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_128.png",
+          "name": "Forceful Partner",
+          "effect": "If the Avatar is the lead unit, Avatar’s Hit rate +15, damage +3",
+          "characterLabel": "Gunter"
+        },
+        {
+          "sourceOrder": 11,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_153.png",
+          "name": "Lily’s Poise",
+          "effect": "Adjacent allies deal 1 extra damage and received 3 less damage",
+          "characterLabel": "Elise"
+        },
+        {
+          "sourceOrder": 12,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_154.png",
+          "name": "Misfortunate",
+          "effect": "Enemies within a 2 tile radius have their Critical Evade reduced by 15, while the user’s Critical Evade is reduced by 5",
+          "characterLabel": "Arthur"
+        },
+        {
+          "sourceOrder": 13,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_155.png",
+          "name": "Puissance",
+          "effect": "When user’s Strength is 5 or more points higher than the enemy’s Strength, damage +3 during battle",
+          "characterLabel": "Effie"
+        },
+        {
+          "sourceOrder": 14,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_156.png",
+          "name": "Aching Blood",
+          "effect": "When equipped with a forged weapon whose name is at least 12 characters, Critical rate +10",
+          "characterLabel": "Odin"
+        },
+        {
+          "sourceOrder": 15,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_157.png",
+          "name": "Kidnap",
+          "effect": "When there is a Prison in My Castle, the user can select the “Capture” command. If a generic enemy is defeated, they will be sent to the Prison",
+          "characterLabel": "Niles"
+        },
+        {
+          "sourceOrder": 16,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_158.png",
+          "name": "Countercurse",
+          "effect": "When enemy triggers the battle and inflicts magical damage, the enemy receives half the same damage",
+          "characterLabel": "Nyx"
+        },
+        {
+          "sourceOrder": 17,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_159.png",
+          "name": "Rose’s Thorn",
+          "effect": "Adjacent allies deal 3 extra damage and receive 1 less damage",
+          "characterLabel": "Camilla"
+        },
+        {
+          "sourceOrder": 18,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_160.png",
+          "name": "Fierce Rival",
+          "effect": "When user is the support unit, if the lead unit triggers a critical hit, the user is guaranteed a critical hit (if their attack connects)",
+          "characterLabel": "Selena"
+        },
+        {
+          "sourceOrder": 19,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_161.png",
+          "name": "Opportunist",
+          "effect": "When user triggers the battle, if the enemy cannot counter-attack, damage +4",
+          "characterLabel": "Beruka"
+        },
+        {
+          "sourceOrder": 20,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_162.png",
+          "name": "Fancy Footwork",
+          "effect": "Strength and Speed +1 to all allies within a 2 tile radius for one Turn when the “Rally” command is used",
+          "characterLabel": "Laslow"
+        },
+        {
+          "sourceOrder": 21,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_163.png",
+          "name": "Bloodthirst",
+          "effect": "When user triggers the battle and defeats the enemy, Strength, Magic, Skill and Speed +4 for one turn",
+          "characterLabel": "Peri"
+        },
+        {
+          "sourceOrder": 22,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_164.png",
+          "name": "Fierce Mien",
+          "effect": "Enemies within a 2 tile radius have their Avoid reduced by 10",
+          "characterLabel": "Benny"
+        },
+        {
+          "sourceOrder": 23,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_165.png",
+          "name": "Unmask",
+          "effect": "When engaging a female enemy, Damage +4 and Critical rate +20",
+          "characterLabel": "Charlotte"
+        },
+        {
+          "sourceOrder": 24,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_166.png",
+          "name": "Pragmatic",
+          "effect": "When enemy’s HP is not full, damage +3 and damage received -1 during the battle",
+          "characterLabel": "Leo"
+        },
+        {
+          "sourceOrder": 25,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_167.png",
+          "name": "Collector",
+          "effect": "Luck% chance of obtaining 3 Minerals or Foodstuffs after moving up to the 7th Turn",
+          "characterLabel": "Keaton"
+        },
+        {
+          "sourceOrder": 26,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_168.png",
+          "name": "Chivalry",
+          "effect": "When enemy’s HP is at maximum, damage +2 and damage received -2 during the battle",
+          "characterLabel": "Xander"
+        },
+        {
+          "sourceOrder": 27,
+          "section": "Exclusive Characters",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_172.png",
+          "name": "Icy Blood",
+          "effect": "When user’s HP is not full and they sustain damage, the enemy receives the same damage and the enemy’s Skill and Speed is reduced by 3",
+          "characterLabel": "Flora"
+        },
+        {
+          "sourceOrder": 28,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_174.png",
+          "name": "Draconic Heir",
+          "effect": "When user is equipped with a Dragonstone, they recover 15% HP at the start of their Turn",
+          "characterLabel": "Kana"
+        },
+        {
+          "sourceOrder": 29,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_175.png",
+          "name": "Born Steward",
+          "effect": "When fighting in My Castle, Hit rate and Avoid +20, damage +2 and damage received -2",
+          "characterLabel": "Dwyer"
+        },
+        {
+          "sourceOrder": 30,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_176.png",
+          "name": "Perfect Pitch",
+          "effect": "Allies within a 2 tile radius who have lower HP than the user recover 10% HP when the “Rally” command is used",
+          "characterLabel": "Shigure"
+        },
+        {
+          "sourceOrder": 31,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_177.png",
+          "name": "Mischievous",
+          "effect": "When user triggers the battle and their attack connects with the enemy, enemy’s Defence -3 and enemy is stripped",
+          "characterLabel": "Sophie"
+        },
+        {
+          "sourceOrder": 32,
+          "section": "Shared Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_178.png",
+          "name": "Lucky Charm",
+          "effect": "Skills with an activation rate dependent on the Luck stat have their rate increased by 20%",
+          "characterLabel": "Midori"
+        },
+        {
+          "sourceOrder": 33,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_187.png",
+          "name": "Gallant",
+          "effect": "When user is the support unit, if the lead unit is female, the lead unit’s damage +2",
+          "characterLabel": "Siegbert"
+        },
+        {
+          "sourceOrder": 34,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_189.png",
+          "name": "Fierce Counter",
+          "effect": "When a male enemy triggers the battle, damage +2",
+          "characterLabel": "Forrest"
+        },
+        {
+          "sourceOrder": 35,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_188.png",
+          "name": "Guarded Bravery",
+          "effect": "When user is the lead unit, damage received -2. If no support unit available, damage received +2",
+          "characterLabel": "Ignatius"
+        },
+        {
+          "sourceOrder": 36,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_190.png",
+          "name": "Goody Basket",
+          "effect": "At the start of the Turn, Luck% chance of recovering 10% HP",
+          "characterLabel": "Velouria"
+        },
+        {
+          "sourceOrder": 37,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_191.png",
+          "name": "Fortunate Son",
+          "effect": "Allies within a 2 tile radius have their Critical Evade increased by 15, while the user’s Critical Evade is increased by 5",
+          "characterLabel": "Percy"
+        },
+        {
+          "sourceOrder": 38,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_192.png",
+          "name": "Bibliophile",
+          "effect": "When user is carrying 3 or more Tomes, Critical rate +10",
+          "characterLabel": "Ophelia"
+        },
+        {
+          "sourceOrder": 39,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_193.png",
+          "name": "Sisterhood",
+          "effect": "When user is the lead unit, if their support unit is female, damage +2 and damage received -2",
+          "characterLabel": "Soleil"
+        },
+        {
+          "sourceOrder": 40,
+          "section": "Exclusive Children",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_194.png",
+          "name": "Daydream",
+          "effect": "When user is adjacent to two male units paired up, damage +2 and damage received -2",
+          "characterLabel": "Nina"
+        }
+      ]
+    },
+    {
+      "id": "serenes-fe14-other-personal-skills",
+      "title": "Fire Emblem Fates: Other Characters - Personal Skills",
+      "skillType": "personal",
+      "category": "other",
+      "url": "https://serenesforest.net/fire-emblem-fates/other-characters/personal-skills/",
+      "rowCount": 2,
+      "rows": [
+        {
+          "sourceOrder": 1,
+          "section": "3rd route exclusive",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_170.png",
+          "name": "Wind Disciple",
+          "effect": "When user’s HP is not full, Hit rate and Avoid +10",
+          "characterLabel": "Fuga"
+        },
+        {
+          "sourceOrder": 2,
+          "section": "DLC exclusive",
+          "iconUrl": "https://serenesforest.net/wp-content/uploads/2015/06/fe15skill_195.png",
+          "name": "Make a Killing",
+          "effect": "Luck% chance of obtaining Gold after defeating an enemy",
+          "characterLabel": "Anna"
+        }
+      ]
+    }
+  ]
+}

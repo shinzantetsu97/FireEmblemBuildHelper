@@ -302,7 +302,7 @@ const childMapLevelScaling = {
 } as const;
 
 async function main() {
-  const [existingParentage, existingRecruitment, firstRoster, secondRoster, supportRelationships, classAccess, classTrees] = await Promise.all([
+  const [existingParentage, existingRecruitment, firstRoster, secondRoster, supportRelationships, classAccess, classTrees, personalSkills] = await Promise.all([
     readJson<any[]>("child-parentage.json"),
     readJson<any[]>("child-recruitment.json"),
     readJson<any>("units/first-generation.json"),
@@ -310,10 +310,12 @@ async function main() {
     readJson<any[]>("support-relationships.json"),
     readJson<any[]>("unit-class-access.json"),
     readJson<any>("class-trees.json"),
+    readJson<any[]>("personal-skills.json"),
   ]);
   const acceptedDwyerParentage = existingParentage.find((entry) => entry.unitId === "dwyer");
   const acceptedDwyerRecruitment = existingRecruitment.find((entry) => entry.unitId === "dwyer");
   if (!acceptedDwyerParentage || !acceptedDwyerRecruitment) throw new Error("Accepted Dwyer seed is required");
+  delete acceptedDwyerParentage.personalSkill;
   acceptedDwyerRecruitment.mapLevelScaling = childMapLevelScaling;
   if (!acceptedDwyerRecruitment.provenance.some((entry: any) => entry.sourceId === "ltranc-fe14-map-level-scaling")) {
     acceptedDwyerRecruitment.provenance.push({
@@ -346,6 +348,11 @@ async function main() {
     roster.names = { en: roster.displayName, ...localized };
     roster.personalSkillId = child.skill.id;
     if (child.id === "shiro" || child.id === "kiragi") roster.dragonVein = true;
+    const personalSkill = personalSkills.find((record: any) => record.unitId === child.id);
+    if (!personalSkill) throw new Error(`Missing canonical personal skill for ${child.id}`);
+    personalSkill.id = child.skill.id;
+    personalSkill.names = { en: child.skill.en, zhHans: child.skill.zhHans };
+    personalSkill.effect = child.skill.effect;
   }
 
   const shigureRoster = rosterById.get("shigure");
@@ -396,7 +403,6 @@ async function main() {
       ...(child.id === "caeldori"
         ? { notes: ["If Selena is Caeldori's mother, their A-rank support uses special dialogue."] }
         : {}),
-      personalSkill: { id: child.skill.id, names: { en: child.skill.en, zhHans: child.skill.zhHans }, effect: child.skill.effect },
       formulas: acceptedDwyerParentage.formulas,
       supports: buildChildSupports(child, rosterById, childById),
       provenance: [
@@ -453,7 +459,6 @@ async function main() {
       "The selected father's linked offspring becomes Shigure's sibling and replaces any friendship or romantic support between them.",
       "Jakob is the class-inheritance exception: Jakob gives Shigure Troubadour, so Azura's otherwise duplicated inheritance resolves to Wyvern Rider.",
     ],
-    personalSkill: { id: shigure.skill.id, names: { en: shigure.skill.en, zhHans: shigure.skill.zhHans }, effect: shigure.skill.effect },
     formulas: {
       personalGrowth: "floor((child_base + variable_parent) / 2)",
       capModifiers: "fixed_parent + variable_parent + 1",
@@ -537,6 +542,7 @@ async function main() {
     writeJson("child-parentage.json", [kanaParentage, shigureParentage, acceptedDwyerParentage, ...generatedParentage]),
     writeJson("child-recruitment.json", [generatedRecruitment[0], generatedRecruitment[1], acceptedDwyerRecruitment, ...generatedRecruitment.slice(2)]),
     writeJson("units/second-generation.json", secondRoster),
+    writeJson("personal-skills.json", personalSkills),
   ]);
 }
 
@@ -627,7 +633,6 @@ function buildKanaParentage({
       "Kana omits the usual +1 cap-modifier inheritance bonus when Corrin's spouse is an offspring unit.",
       "Class inheritance follows child, father, then mother order. Corrin contributes the selected Avatar Talent; a duplicate Talent can therefore change the spouse fallback or leave male Kana without a third inherited tree.",
     ],
-    personalSkill: { id: kana.skill.id, names: { en: kana.skill.en, zhHans: kana.skill.zhHans }, effect: kana.skill.effect },
     formulas: {
       personalGrowth: "floor((child_base + variable_parent) / 2)",
       capModifiers: "fixed_parent + variable_parent + generation_bonus",

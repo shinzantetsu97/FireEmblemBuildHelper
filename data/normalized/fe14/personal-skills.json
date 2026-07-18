@@ -7,24 +7,50 @@
       "zhHans": "不可思议的魅力"
     },
     "effect": "When Corrin is the support unit and has at least C support with the lead unit, the lead unit gains Hit +10, deals 2 more damage, and receives 2 less damage.",
+    "iconAssetId": "supportive",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
         "locator": "神威!D7:F7",
-        "fields": ["names", "effect"],
+        "fields": [
+          "names",
+          "effect"
+        ],
         "reviewStatus": "corroborated"
       },
       {
         "sourceId": "serenes-fe14-personal-skills",
         "locator": "Avatar > Supportive",
-        "fields": ["names.en", "effect"],
+        "fields": [
+          "names.en",
+          "effect"
+        ],
         "reviewStatus": "accepted"
       },
       {
         "sourceId": "fewiki-corrin",
         "locator": "Fire Emblem Fates > Skill set > Supportive",
-        "fields": ["names.en", "effect"],
+        "fields": [
+          "names.en",
+          "effect"
+        ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Characters > Supportive > Avatar > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Characters > Supportive > Avatar > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -36,6 +62,7 @@
       "zhHans": "治愈之声"
     },
     "effect": "At the start of each turn, adjacent allies within two spaces recover 10% of their maximum HP.",
+    "iconAssetId": "healing_descant",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -63,6 +90,22 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Characters > Healing Descant > Azura > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Characters > Healing Descant > Azura > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -74,6 +117,7 @@
       "zhHans": "绝对援护"
     },
     "effect": "When Corrin is the lead unit, Corrin deals 2 more damage and receives 2 less damage.",
+    "iconAssetId": "devoted_partner",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -101,6 +145,22 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Characters > Devoted Partner > Felicia > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Characters > Devoted Partner > Felicia > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -112,6 +172,7 @@
       "zhHans": "绝对死守"
     },
     "effect": "When Corrin is the lead unit, Corrin gains 15 Avoid and receives 3 less damage.",
+    "iconAssetId": "evasive_partner",
     "provenance": [
       {
         "sourceId": "serenes-fe14-personal-skills",
@@ -138,6 +199,22 @@
           "names.zhHans"
         ],
         "reviewStatus": "candidate"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Characters > Evasive Partner > Jakob > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Characters > Evasive Partner > Jakob > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -149,6 +226,7 @@
       "zhHans": "友情的誓言"
     },
     "effect": "If Corrin is an ally and Corrin is under half HP, Silas deals 3 more damage and receives 3 less damage.",
+    "iconAssetId": "vow_of_friendship",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -176,6 +254,22 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Characters > Vow of Friendship > Silas > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Characters > Vow of Friendship > Silas > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -187,6 +281,7 @@
       "zhHans": "羁绊的祈祷"
     },
     "effect": "When Kaze is the support unit, the lead unit has a chance equal to their Luck stat to survive a fatal attack with 1 HP.",
+    "iconAssetId": "miraculous_save",
     "provenance": [
       {
         "sourceId": "serenes-fe14-personal-skills",
@@ -213,6 +308,22 @@
           "names.zhHans"
         ],
         "reviewStatus": "candidate"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Characters > Miraculous Save > Kaze > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Characters > Miraculous Save > Kaze > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -224,6 +335,7 @@
       "zhHans": "农场主"
     },
     "effect": "When standing on Mountain, Woods, Waste, or Field terrain, Mozu recovers 20% HP at the start of the turn.",
+    "iconAssetId": "forager",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -251,6 +363,22 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Characters > Forager > Mozu > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Characters > Forager > Mozu > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -262,6 +390,7 @@
       "zhHans": "出阴招"
     },
     "effect": "When Shura initiates combat and the enemy cannot counterattack, the enemy's Strength and Speed are reduced by 3 after combat; each recovers by 1 every turn.",
+    "iconAssetId": "highwayman",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -289,6 +418,22 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Characters > Highwayman > Shura > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Characters > Highwayman > Shura > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -300,6 +445,7 @@
       "zhHans": "绝对进攻"
     },
     "effect": "While Gunter is the support unit and Corrin leads, Corrin gains Hit +15 and damage +3.",
+    "iconAssetId": "forceful_partner",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -318,6 +464,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Forceful Partner > Gunter > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -329,6 +483,7 @@
       "zhHans": "一夕致富"
     },
     "effect": "When Anna initiates combat and defeats the target, she has a Luck% chance to receive a random amount of gold.",
+    "iconAssetId": "make_a_killing",
     "provenance": [
       {
         "sourceId": "serenes-fe14-other-personal-skills",
@@ -347,6 +502,254 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-other-personal-skills",
+        "locator": "DLC exclusive > Make a Killing > Anna > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "draconic_heir",
+    "unitId": "kana",
+    "names": {
+      "en": "Draconic Heir",
+      "zhHans": "龙之御子"
+    },
+    "effect": "At the start of the turn, if Kana has a Dragonstone equipped, Kana restores 15% of maximum HP.",
+    "iconAssetId": "draconic_heir",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Draconic Heir > Kana",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Draconic Heir > Kana",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Draconic Heir > Kana > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Draconic Heir > Kana > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "perfect_pitch",
+    "unitId": "shigure",
+    "names": {
+      "en": "Perfect Pitch",
+      "zhHans": "完美音调"
+    },
+    "effect": "When Shigure uses Rally, allies within 2 spaces whose current HP is lower than his recover 10% of their maximum HP.",
+    "iconAssetId": "perfect_pitch",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Perfect Pitch > Shigure",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Perfect Pitch > Shigure",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Perfect Pitch > Shigure > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Perfect Pitch > Shigure > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "born_steward",
+    "unitId": "dwyer",
+    "names": {
+      "en": "Born Steward",
+      "zhHans": "管家的素养"
+    },
+    "effect": "During My Castle battles, Dwyer gains Hit +20 and Avoid +20, deals 2 extra damage, and takes 2 less damage.",
+    "iconAssetId": "born_steward",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Born Steward > Dwyer",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Born Steward > Dwyer",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Born Steward > Dwyer > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Born Steward > Dwyer > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "mischievous",
+    "unitId": "sophie",
+    "names": {
+      "en": "Mischievous",
+      "zhHans": "冒失"
+    },
+    "effect": "When Sophie initiates combat and her attack connects, the enemy loses 3 Defense after combat and has its clothing stripped.",
+    "iconAssetId": "mischievous",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Mischievous > Sophie",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Mischievous > Sophie",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Mischievous > Sophie > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Mischievous > Sophie > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "lucky_charm",
+    "unitId": "midori",
+    "names": {
+      "en": "Lucky Charm",
+      "zhHans": "幸运儿"
+    },
+    "effect": "Increases the activation rate of Luck-based skills by 20 percentage points.",
+    "iconAssetId": "lucky_charm",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Lucky Charm > Midori",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Lucky Charm > Midori",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Children > Lucky Charm > Midori > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Children > Lucky Charm > Midori > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -358,6 +761,7 @@
       "zhHans": "武士道"
     },
     "effect": "While Ryoma leads and his support unit has a lower level, Ryoma gains Critical +10, deals 2 extra damage, and receives 2 less damage.",
+    "iconAssetId": "bushido",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -376,6 +780,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Bushido > Ryoma > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -387,6 +799,7 @@
       "zhHans": "鼓舞"
     },
     "effect": "Allies within two tiles of Hinoka deal 2 extra damage.",
+    "iconAssetId": "rallying_cry",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -405,6 +818,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Rallying Cry > Hinoka > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -416,6 +837,7 @@
       "zhHans": "竞争心"
     },
     "effect": "While Takumi leads and his support unit has a higher level, Takumi gains Critical +10, deals 3 extra damage, and receives 1 less damage.",
+    "iconAssetId": "competitive",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -434,6 +856,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Competitive > Takumi > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -445,6 +875,7 @@
       "zhHans": "小小的声援"
     },
     "effect": "Allies within two tiles of Sakura receive 2 less damage.",
+    "iconAssetId": "quiet_strength",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -463,6 +894,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Quiet Strength > Sakura > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -474,6 +913,7 @@
       "zhHans": "爆炎使"
     },
     "effect": "When Saizo initiates combat below half HP, Saizo and all units within two tiles lose 20% of their maximum HP after combat.",
+    "iconAssetId": "pyrotechnics",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -492,6 +932,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Pyrotechnics > Saizo > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -503,6 +951,7 @@
       "zhHans": "忍法车返"
     },
     "effect": "When Kagero is hit by a dagger attack, the attacker takes damage equal to half the damage Kagero actually received and suffers the full value of every stat reduction inflicted on her.",
+    "iconAssetId": "shuriken_mastery",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -529,35 +978,59 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Shuriken Mastery > Kagero > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
   {
-    "id": "optimist",
+    "id": "optimistic",
     "unitId": "setsuna",
     "names": {
-      "en": "Optimist",
+      "en": "Optimistic",
       "zhHans": "乐观"
     },
     "effect": "Healing Setsuna receives from staves is multiplied by 1.5.",
+    "iconAssetId": "optimistic",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
         "locator": "Exclusive Characters > Optimist > Setsuna",
         "fields": [
-          "names.en",
           "effect"
         ],
-        "reviewStatus": "accepted"
+        "reviewStatus": "corroborated"
       },
       {
         "sourceId": "fewiki-setsuna",
         "locator": "Fire Emblem Fates > Skill set > Optimist",
         "fields": [
-          "names.en",
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "user-fe14-personal-skill-localization",
+        "locator": "Setsuna > Optimistic",
+        "fields": [
+          "id",
+          "names.en"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Optimist > Setsuna > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -569,6 +1042,7 @@
       "zhHans": "天罚"
     },
     "effect": "When Azama is unarmed and an adjacent enemy damages him, that enemy takes half the damage dealt.",
+    "iconAssetId": "divine_retribution",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -587,6 +1061,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Divine Retribution > Azama > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -598,6 +1080,7 @@
       "zhHans": "垂死挣扎"
     },
     "effect": "Below half HP, Hinata reflects half the damage he receives from sword, lance, and axe attacks.",
+    "iconAssetId": "triple_threat",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -616,6 +1099,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Triple Threat > Hinata > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -627,6 +1118,7 @@
       "zhHans": "暗夜仇恨"
     },
     "effect": "Oboro deals 3 extra damage if the enemy's original class is Nohrian or the enemy is currently in a Nohrian class. An enemy with a Nohrian original class still qualifies after reclassing (for example, Odin as a Samurai), while an enemy with a non-Nohrian original class qualifies while in a Nohrian class (for example, Kaze as a Cavalier). Generic enemies generated for Challenge or skirmish battles are excluded even when they use a Nohrian class.",
+    "iconAssetId": "nohr_enmity",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -661,6 +1153,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Nohr Enmity > Oboro > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -672,6 +1172,7 @@
       "zhHans": "淘气鬼"
     },
     "effect": "When Hana initiates combat and defeats an enemy, enemies adjacent to that enemy lose 20% of their maximum HP.",
+    "iconAssetId": "fearsome_blow",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -690,6 +1191,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Fearsome Blow > Hana > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -701,6 +1210,7 @@
       "zhHans": "完美主义"
     },
     "effect": "While Subaki is at full HP, he gains Hit +15 and Avoid +15.",
+    "iconAssetId": "perfectionist",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -719,6 +1229,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Perfectionist > Subaki > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -730,6 +1248,7 @@
       "zhHans": "自尊"
     },
     "effect": "When Hayato's effective level is lower than the enemy's, he deals 3 extra damage. For this comparison, promoted units count as their displayed level +20.",
+    "iconAssetId": "pride",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -748,6 +1267,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Pride > Hayato > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -759,6 +1286,7 @@
       "zhHans": "炎之血"
     },
     "effect": "While Rinkah is not at full HP, she deals 4 extra damage.",
+    "iconAssetId": "fiery_blood",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -777,6 +1305,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Fiery Blood > Rinkah > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -788,6 +1324,7 @@
       "zhHans": "白夜的捕缚术"
     },
     "effect": "If a Prison is available, Orochi can use Capture to send a defeated capturable generic enemy to the Prison instead of killing them.",
+    "iconAssetId": "capture",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -806,6 +1343,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Capture > Orochi > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -817,6 +1362,7 @@
       "zhHans": "恩返"
     },
     "effect": "When another unit heals Kaden with a staff, the healer recovers half the HP restored to Kaden.",
+    "iconAssetId": "reciprocity",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -835,6 +1381,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Reciprocity > Kaden > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -846,6 +1400,7 @@
       "zhHans": "杀戮的喜悦"
     },
     "effect": "When Reina initiates combat and defeats an enemy, she recovers 20% of her maximum HP.",
+    "iconAssetId": "morbid_celebration",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -864,6 +1419,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Morbid Celebration > Reina > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -875,6 +1438,7 @@
       "zhHans": "临死一搏"
     },
     "effect": "While Scarlet is below one-quarter of her maximum HP, she gains Critical +30.",
+    "iconAssetId": "in_extremis",
     "provenance": [
       {
         "sourceId": "serenes-fe14-hoshidan-personal-skills",
@@ -893,6 +1457,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > In Extremis > Scarlet > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -904,6 +1476,7 @@
       "zhHans": "骑士道"
     },
     "effect": "Against an enemy at full HP, Xander deals 2 extra damage and receives 2 less damage.",
+    "iconAssetId": "chivalry",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -922,6 +1495,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Chivalry > Xander > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -933,15 +1514,15 @@
       "zhHans": "妖艳之花"
     },
     "effect": "Adjacent allies deal 3 extra damage and receive 1 less damage.",
+    "iconAssetId": "roses_thorns",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
         "locator": "Exclusive Characters > Rose's Thorns > Camilla",
         "fields": [
-          "names.en",
           "effect"
         ],
-        "reviewStatus": "accepted"
+        "reviewStatus": "corroborated"
       },
       {
         "sourceId": "fewiki-camilla",
@@ -951,6 +1532,23 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "user-fe14-personal-skill-localization",
+        "locator": "Camilla > Rose's Thorns",
+        "fields": [
+          "id",
+          "names.en"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Rose’s Thorn > Camilla > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "corroborated"
       }
     ]
   },
@@ -962,6 +1560,7 @@
       "zhHans": "冷静沉着"
     },
     "effect": "When attacking an enemy who is not at full HP, Leo deals 3 extra damage and receives 1 less damage.",
+    "iconAssetId": "pragmatic",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -980,6 +1579,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Pragmatic > Leo > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -991,6 +1598,7 @@
       "zhHans": "可爱之花"
     },
     "effect": "Adjacent allies deal 1 extra damage and take 3 less damage.",
+    "iconAssetId": "lilys_poise",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -1018,6 +1626,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Lily’s Poise > Elise > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1029,6 +1645,7 @@
       "zhHans": "青之舞"
     },
     "effect": "Using the Rally command grants Strength and Speed +1 to allies within 2 tiles for one turn.",
+    "iconAssetId": "fancy_footwork",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1047,6 +1664,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Fancy Footwork > Laslow > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1058,6 +1683,7 @@
       "zhHans": "杀戮本能"
     },
     "effect": "When Peri initiates combat and defeats the enemy, Strength, Magic, Skill, and Speed +4 for one turn.",
+    "iconAssetId": "bloodthirst",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1076,6 +1702,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Bloodthirst > Peri > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1087,6 +1721,7 @@
       "zhHans": "竞争心"
     },
     "effect": "When Selena is the support unit and the lead unit triggers a critical hit, Selena's follow-up attack is guaranteed to be critical if it connects.",
+    "iconAssetId": "fierce_rival",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1105,6 +1740,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Fierce Rival > Selena > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1116,6 +1759,7 @@
       "zhHans": "奇袭之牙"
     },
     "effect": "When Beruka initiates combat and the enemy cannot counterattack, damage +4.",
+    "iconAssetId": "opportunist",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1134,6 +1778,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Opportunist > Beruka > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1145,6 +1797,7 @@
       "zhHans": "血之痛"
     },
     "effect": "When equipped with a forged weapon whose name is at least 12 characters, Critical rate +10.",
+    "iconAssetId": "aching_blood",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1163,6 +1816,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Aching Blood > Odin > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1174,6 +1835,7 @@
       "zhHans": "绑架"
     },
     "effect": "When a Prison is present in My Castle, Niles can capture a defeated generic enemy and send them to the Prison.",
+    "iconAssetId": "kidnap",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1192,6 +1854,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Kidnap > Niles > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1203,6 +1873,7 @@
       "zhHans": "怪力"
     },
     "effect": "When Effie's Strength is 5 or more points higher than the enemy's Strength, damage +3 during battle.",
+    "iconAssetId": "puissance",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1221,6 +1892,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Puissance > Effie > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1232,6 +1911,7 @@
       "zhHans": "不幸"
     },
     "effect": "Enemies within 2 tiles have Crit Avoid -15, while Arthur has Crit Avoid -5.",
+    "iconAssetId": "misfortunate",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1250,6 +1930,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Misfortunate > Arthur > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1261,6 +1949,7 @@
       "zhHans": "诅咒反弹"
     },
     "effect": "When an enemy initiates combat and inflicts magical damage, the enemy receives half the same damage.",
+    "iconAssetId": "countercurse",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1279,6 +1968,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Countercurse > Nyx > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1290,6 +1987,7 @@
       "zhHans": "女人的本性"
     },
     "effect": "When engaging a female enemy, damage +4 and Critical rate +20.",
+    "iconAssetId": "unmask",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1308,6 +2006,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Unmask > Charlotte > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1319,6 +2025,7 @@
       "zhHans": "强面"
     },
     "effect": "Enemies within 2 tiles have Avoid -10.",
+    "iconAssetId": "fierce_mien",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1337,6 +2044,14 @@
           "effect"
         ],
         "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Fierce Mien > Benny > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1348,6 +2063,7 @@
       "zhHans": "拾荒"
     },
     "effect": "After taking an action through turn 7, Keaton has a Luck% chance to obtain three units of a random ore or foodstuff.",
+    "iconAssetId": "collector",
     "provenance": [
       {
         "sourceId": "serenes-fe14-nohrian-personal-skills",
@@ -1366,6 +2082,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Collector > Keaton > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1377,6 +2101,7 @@
       "zhHans": "冰之血"
     },
     "effect": "When Flora is not at full HP and is attacked from 2 or more spaces away, the attacker takes half the damage dealt and suffers Skill -3 and Speed -3 after combat.",
+    "iconAssetId": "icy_blood",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -1404,6 +2129,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Characters > Icy Blood > Flora > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1415,6 +2148,7 @@
       "zhHans": "美貌的王者"
     },
     "effect": "Allies and enemies within 2 tiles of Izana deal 2 less damage.",
+    "iconAssetId": "peacebringer",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -1442,6 +2176,510 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Shared Characters > Peacebringer > Izana > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Shared Characters > Peacebringer > Izana > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "noble_cause",
+    "unitId": "shiro",
+    "names": {
+      "en": "Noble Cause",
+      "zhHans": "大义"
+    },
+    "effect": "While Shiro is the lead unit with a support unit whose HP is not full, he deals 3 extra damage and takes 1 extra damage.",
+    "iconAssetId": "noble_cause",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Noble Cause > Shiro",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Noble Cause > Shiro > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "optimist",
+    "unitId": "kiragi",
+    "names": {
+      "en": "Optimist",
+      "zhHans": "乐观"
+    },
+    "effect": "After Kiragi uses Wait, he gains 4 Speed and 8 Luck for one turn.",
+    "iconAssetId": "optimist",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Optimistic > Kiragi",
+        "fields": [
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "user-fe14-personal-skill-localization",
+        "locator": "Kiragi > Optimist",
+        "fields": [
+          "id",
+          "names.en"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Optimistic > Kiragi > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sweet_tooth",
+    "unitId": "asugi",
+    "names": {
+      "en": "Sweet Tooth",
+      "zhHans": "甜食党"
+    },
+    "effect": "After Asugi uses Wait, he restores 4 HP.",
+    "iconAssetId": "sweet_tooth",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Sweet Tooth > Asugi",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Sweet Tooth > Asugi > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "playthings",
+    "unitId": "selkie",
+    "names": {
+      "en": "Playthings",
+      "zhHans": "好玩具"
+    },
+    "effect": "At the start of the turn, adjacent enemies lose 5 HP.",
+    "iconAssetId": "playthings",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Playthings > Selkie",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Playthings > Selkie > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "calm",
+    "unitId": "hisame",
+    "names": {
+      "en": "Calm",
+      "zhHans": "冷静"
+    },
+    "effect": "After Hisame uses Wait, he gains 4 Skill and 4 Resistance for one turn.",
+    "iconAssetId": "calm",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Calm > Hisame",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Calm > Hisame > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "haiku",
+    "unitId": "mitama",
+    "names": {
+      "en": "Haiku",
+      "zhHans": "俳句"
+    },
+    "effect": "At the start of the turn, if allies stand directly above and below Mitama, she restores 7 HP and each of those allies restores 5 HP.",
+    "iconAssetId": "haiku",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Haiku > Mitama",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Haiku > Mitama > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "prodigy",
+    "unitId": "caeldori",
+    "names": {
+      "en": "Prodigy",
+      "zhHans": "天才"
+    },
+    "effect": "Compare Caeldori's higher offensive stat (Strength or Magic) with the enemy's matching stat. If the enemy's stat is higher, Caeldori deals 4 extra damage.",
+    "iconAssetId": "prodigy",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Prodigy > Caeldori",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Prodigy > Caeldori > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "vendetta",
+    "unitId": "rhajat",
+    "names": {
+      "en": "Vendetta",
+      "zhHans": "執念"
+    },
+    "effect": "When Rhajat initiates combat against an enemy she has already fought on the same map, she deals 4 extra damage.",
+    "iconAssetId": "vendetta",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Vendetta > Rhajat",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Children > Vendetta > Rhajat > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "gallant",
+    "unitId": "siegbert",
+    "names": {
+      "en": "Gallant",
+      "zhHans": "紳士"
+    },
+    "effect": "While Siegbert supports a female lead unit, that lead unit deals 2 extra damage.",
+    "iconAssetId": "gallant",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Gallant > Siegbert",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Gallant > Siegbert > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "fierce_counter",
+    "unitId": "forrest",
+    "names": {
+      "en": "Fierce Counter",
+      "zhHans": "强烈反击"
+    },
+    "effect": "When a male enemy initiates combat, Forrest deals 2 extra damage.",
+    "iconAssetId": "fierce_counter",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Fierce Counter > Forrest",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Fierce Counter > Forrest > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "guarded_bravery",
+    "unitId": "ignatius",
+    "names": {
+      "en": "Guarded Bravery",
+      "zhHans": "谨慎勇敢"
+    },
+    "effect": "While Ignatius is the lead unit in Attack or Guard Stance, he takes 2 less damage; while unsupported, he takes 2 extra damage.",
+    "iconAssetId": "guarded_bravery",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Guarded Bravery > Ignatius",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Guarded Bravery > Ignatius > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "goody_basket",
+    "unitId": "velouria",
+    "names": {
+      "en": "Goody Basket",
+      "zhHans": "捡到宝"
+    },
+    "effect": "At the start of the turn, Velouria has a Luck% chance to restore 10 HP.",
+    "iconAssetId": "goody_basket",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Goody Basket > Velouria",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Goody Basket > Velouria > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "fortunate_son",
+    "unitId": "percy",
+    "names": {
+      "en": "Fortunate Son",
+      "zhHans": "幸运星"
+    },
+    "effect": "Allies within 2 tiles gain 15 Critical Avoid; Percy gains 5 Critical Avoid.",
+    "iconAssetId": "fortunate_son",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Fortunate Son > Percy",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Fortunate Son > Percy > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "bibliophile",
+    "unitId": "ophelia",
+    "names": {
+      "en": "Bibliophile",
+      "zhHans": "魔导书狂"
+    },
+    "effect": "While carrying at least three tomes or scrolls, Ophelia gains 10 Critical.",
+    "iconAssetId": "bibliophile",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Bibliophile > Ophelia",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Bibliophile > Ophelia > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "sisterhood",
+    "unitId": "soleil",
+    "names": {
+      "en": "Sisterhood",
+      "zhHans": "女子力"
+    },
+    "effect": "While supported by a female ally, Soleil deals 2 extra damage and takes 2 less damage.",
+    "iconAssetId": "sisterhood",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Sisterhood > Soleil",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Sisterhood > Soleil > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      }
+    ]
+  },
+  {
+    "id": "daydream",
+    "unitId": "nina",
+    "names": {
+      "en": "Daydream",
+      "zhHans": "邪念"
+    },
+    "effect": "While adjacent to two male units paired in Guard Stance, Nina deals 2 extra damage and takes 2 less damage.",
+    "iconAssetId": "daydream",
+    "provenance": [
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Daydream > Nina",
+        "fields": [
+          "names.en",
+          "effect",
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "serenes-fe14-nohrian-personal-skills",
+        "locator": "Exclusive Children > Daydream > Nina > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1453,6 +2691,7 @@
       "zhHans": "军略传授"
     },
     "effect": "All allies gain Hit +5 while Yukimura is deployed.",
+    "iconAssetId": "perspicacious",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -1480,6 +2719,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-hoshidan-personal-skills",
+        "locator": "Exclusive Characters > Perspicacious > Yukimura > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   },
@@ -1491,6 +2738,7 @@
       "zhHans": "风之血"
     },
     "effect": "When Fuga is not at full HP, he gains Hit +10 and Avoid +10.",
+    "iconAssetId": "wind_disciple",
     "provenance": [
       {
         "sourceId": "fe14-workbook-cn",
@@ -1518,6 +2766,14 @@
           "effect"
         ],
         "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "serenes-fe14-other-personal-skills",
+        "locator": "3rd route exclusive > Wind Disciple > Fuga > icon",
+        "fields": [
+          "iconAssetId"
+        ],
+        "reviewStatus": "accepted"
       }
     ]
   }

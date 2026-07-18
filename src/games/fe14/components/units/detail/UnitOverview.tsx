@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Alert from "react-bootstrap/Alert";
-import { ShieldCheck, TriangleAlert } from "lucide-react";
-import { type UnitRuntime } from "../../../data";
+import { TriangleAlert } from "lucide-react";
+import { fe14Data, type UnitRuntime } from "../../../data";
+import PersonalSkill from "../../skills/PersonalSkill";
+import UnitClassSkills from "../../skills/UnitClassSkills";
 import {
   AvatarConfigurationSection,
   AvatarPairupSection,
@@ -12,13 +14,13 @@ import PairupTable from "./PairupTable";
 import RecruitmentSection from "./RecruitmentSection";
 import SectionHeading from "./SectionHeading";
 import StatComparison from "./StatComparison";
-import SupportDirectory from "./SupportDirectory";
+import SupportDirectory, { type SealGrantPreview, type SealGrantPreviews, type SealPreviewKind } from "./SupportDirectory";
 import { type AvatarGender } from "./types";
 import { ScarletDepartureAlert } from "./UnitAlerts";
 import { corrinNobleBaseLabel } from "./UnitHeader";
 import UnitReferences from "./UnitReferences";
 import OffspringOverview from "./OffspringOverview";
-import { corrinTalentLabel } from "./utils";
+import { corrinBorrowedClassId, corrinTalentLabel } from "./utils";
 
 export default function UnitOverview({
   unit,
@@ -33,12 +35,23 @@ export default function UnitOverview({
   const [boonId, setBoonId] = useState("robust");
   const [baneId, setBaneId] = useState("weak");
   const [talentId, setTalentId] = useState("cavalier");
+  const [selectedSealPreviews, setSelectedSealPreviews] = useState<SealGrantPreviews>({});
   const boon = config?.boons.find((choice) => choice.id === boonId) ?? config?.boons[0];
   const bane = config?.banes.find((choice) => choice.id === baneId) ?? config?.banes[1];
   const talent = config?.talents.find((choice) => choice.id === talentId) ?? config?.talents[0];
   const avatarSelection = config && boon && bane && talent
     ? { config, boon, bane, talent, gender: avatarGender, boonId, baneId, talentId, setBoonId, setBaneId, setTalentId, setGender: setAvatarGender }
     : null;
+  const handleSealPreviewChange = useCallback((seal: SealPreviewKind, preview: SealGrantPreview | null) => {
+    setSelectedSealPreviews((current) => {
+      const next = { ...current };
+      if (preview) next[seal] = preview;
+      else delete next[seal];
+      return next;
+    });
+  }, []);
+
+  useEffect(() => setSelectedSealPreviews({}), [unit.identity.id]);
 
   if (unit.offspring) {
     return (
@@ -74,6 +87,21 @@ export default function UnitOverview({
 
       {avatarSelection ? <AvatarConfigurationSection unit={unit} selection={avatarSelection} /> : null}
 
+      <UnitClassSkills
+        gender={avatarSelection?.gender ?? resolvedUnitGender(unit.identity.gender)}
+        initialCardLimit={avatarSelection ? 6 : undefined}
+        prioritizePartnerSeal={Boolean(avatarSelection)}
+        sources={avatarSelection ? [
+          { label: "Native", classIds: ["nohr_prince"] },
+          { label: "Heart Seal Talent", classIds: avatarTalentClassIds(avatarSelection.talent, avatarSelection.gender) },
+          ...corrinFriendshipSkillSources(unit, avatarSelection.gender),
+        ] : [
+          { label: "Native", classIds: unit.classAccess?.baseClassSet ?? [] },
+          { label: "Heart Seal", classIds: unit.classAccess?.heartSealClassSet ?? [] },
+        ]}
+        selectedSealPreviews={selectedSealPreviews}
+      />
+
       {!unit.avatarConfiguration ? (
         <section className="data-section" aria-labelledby="stats-heading">
           <SectionHeading eyebrow="Numbers" title="Personal growth and cap modifiers" id="stats-heading" />
@@ -84,13 +112,7 @@ export default function UnitOverview({
       <section className="data-section two-column-data" aria-label="Skill and class access">
         <div>
           <SectionHeading eyebrow="Identity" title="Personal skill" id="skill-heading" />
-          <div className="skill-block" aria-labelledby="skill-heading">
-            <ShieldCheck aria-hidden="true" size={22} />
-            <div>
-              <strong>{unit.personalSkill?.names.en}</strong>
-              <p>{unit.personalSkill?.effect}</p>
-            </div>
-          </div>
+          {unit.personalSkill ? <PersonalSkill skill={unit.personalSkill} labelledBy="skill-heading" /> : null}
         </div>
         <div>
           <SectionHeading eyebrow="Reclassing" title="Native class access" id="class-heading" />
@@ -136,10 +158,32 @@ export default function UnitOverview({
 
       <section className="data-section" aria-labelledby="supports-heading">
         <SectionHeading eyebrow="Relationships" title="Supports and seal grants" id="supports-heading" />
-        <SupportDirectory unit={unit} avatarSelection={avatarSelection} />
+        <SupportDirectory
+          unit={unit}
+          avatarSelection={avatarSelection}
+          selectedSealPreviews={selectedSealPreviews}
+          onSealPreviewChange={handleSealPreviewChange}
+        />
       </section>
 
       <UnitReferences unit={unit} />
     </div>
   );
+}
+
+function resolvedUnitGender(gender?: string): "male" | "female" | undefined {
+  return gender === "male" || gender === "female" ? gender : undefined;
+}
+
+function corrinFriendshipSkillSources(unit: UnitRuntime, gender: AvatarGender) {
+  return unit.supports.flatMap((support) => {
+    if (support.partnerGender !== gender || support.kind === "romantic") return [];
+    const classId = corrinBorrowedClassId(support.partnerUnitId, gender);
+    if (!classId) return [];
+    const partner = fe14Data.roster.find((candidate) => candidate.id === support.partnerUnitId);
+    return [{
+      label: `Friendship: ${partner?.displayName ?? support.partnerUnitId}`,
+      classIds: [classId],
+    }];
+  });
 }

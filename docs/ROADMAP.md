@@ -12,8 +12,12 @@ The product is moving toward a rules-aware Fire Emblem build and run planner. It
 
 ## Immediate TODO
 
-- [ ] **Add the FE14 skill-data foundation as soon as possible.** Create validated skill JSON with stable IDs, localized names, effects, acquisition requirements, and source provenance. Associate class-learned skills with their class tree, class level, and other relevant restrictions so unit pages and the planner can calculate which skills a build can legally access.
+- [x] **Add the FE14 skill-data foundation as soon as possible.** Create validated skill JSON with stable IDs, localized names, effects, acquisition requirements, and source provenance. Associate class-learned skills with their class tree, class level, and other relevant restrictions so unit pages and the planner can calculate which skills a build can legally access.
 - [ ] **Allow players to freely configure unit-page layouts.** Support changing section order and visibility, including a layout that places accessible skills near the top for planning-focused use. Treat layout choices as player preferences and preserve them across unit navigation and browser sessions once the shared IndexedDB state boundary is available.
+
+## Product Backlog
+
+- [x] **Keep the homepage version log concise as release history grows.** Show only the five newest releases on the homepage and provide a separate way to inspect the complete archive rather than allowing the home feed to grow indefinitely.
 
 ## Phase 1: Local Foundation
 
@@ -67,6 +71,29 @@ The product is moving toward a rules-aware Fire Emblem build and run planner. It
 - Add schema versions and migration coverage before persisted unit configurations are treated as durable user data.
 
 This refactor should establish the state and ownership boundary without prematurely building the complete Phase 4 planner.
+
+### Near-Term Mini-Refactor: Route-Driven Unit Base Configuration
+
+**Outcome:** A unit's route-specific starting state becomes a compact, configurable planning surface instead of a sequence of disconnected reference tables.
+
+- Replace the current base-configuration presentation with a route toggle that switches the complete unit state between its available routes.
+- Show joining stats as one horizontal, one-dimensional stat array.
+- Add a growth-rate array that toggles between individual and effective growth rates, with effective growths selected by default.
+- Present Inventory and Skills as two adjacent columns. Skills should show the personal skill first, followed by every class skill already learned at that recruitment point.
+- Add a weapon-level chart showing the unit's current rank for each usable weapon type.
+- Follow with compact sections for cap modifiers, Attack Stance bonuses, and Guard Stance bonuses.
+- Keep Accessible class skills as the primary class-access presentation. This should make most of the old Identity section obsolete; retain only genuinely independent information such as Female Corrin Talent-only access.
+- For offspring units, display the minimum recruitment stats before parental inheritance rather than pretending to provide a final inherited stat line.
+- Preserve route, difficulty, recruitment timing, and other scenario dimensions in the underlying data even when the first interface exposes only the route toggle.
+
+This slice requires the class-data foundation to expose and validate:
+
+- class maximum stats, reusing the existing FE14 class-stat records where complete;
+- class weapon-rank caps for every supported class;
+- local weapon-type icons resolved through stable asset IDs;
+- source provenance from the Serenes Forest Hoshidan and Nohrian maximum-stat tables, including `https://serenesforest.net/fire-emblem-fates/hoshidan-classes/maximum-stats/` and its Nohrian counterpart.
+
+Implement this refactor on a new feature branch after the FE14 skill-data milestone is complete.
 
 ## Phase 4: Fates Build Planner (MVP)
 

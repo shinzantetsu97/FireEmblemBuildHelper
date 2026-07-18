@@ -285,7 +285,12 @@ export interface UnitRuntime {
     routes: string[];
   }>;
   classAccess: (Record<string, unknown> & { startingClassId: string; baseClassSet: string[]; heartSealClassSet: string[]; corrinTalentOnlyClassSet: string[]; sealGrants: SealGrant[] }) | null;
-  personalSkill: (Record<string, unknown> & { names: { en: string }; effect: string }) | null;
+  personalSkill: (Record<string, unknown> & {
+    id: string;
+    names: { en: string };
+    effect: string;
+    iconAssetId: string;
+  }) | null;
   offspring: OffspringData | null;
 }
 
@@ -412,7 +417,19 @@ export interface SealGrant {
 
 export interface ClassTree {
   id: string;
-  promotions: Array<{ id: string; label: string }>;
+  label: string;
+  affiliation: ClassAffiliation;
+  categories?: ClassCategory[];
+  promotions: ClassTreeNode[];
+}
+
+export type ClassAffiliation = "hoshidan" | "nohrian" | "special";
+export type ClassCategory = "special";
+
+export interface ClassTreeNode {
+  id: string;
+  label: string;
+  affiliation: ClassAffiliation;
 }
 
 export interface ClassStatProfile {
@@ -423,6 +440,37 @@ export interface ClassStatProfile {
   weaponRankCaps: Record<string, string>;
 }
 
+export interface ClassSkillAcquisition {
+  classId: string;
+  level: number;
+  gender?: "male" | "female";
+}
+
+export interface ClassSkill {
+  id: string;
+  names: { en: string };
+  description: string;
+  iconAssetId: string;
+  acquisition: ClassSkillAcquisition[];
+  notes?: string[];
+}
+
+export interface ClassSkillIndexEntry {
+  skillId: string;
+  level: number;
+  gender?: "male" | "female";
+}
+
+export interface EnrichedClassNode extends ClassTreeNode {
+  stats: ClassStatProfile;
+  skills: ClassSkillIndexEntry[];
+}
+
+export interface EnrichedClassTree extends EnrichedClassNode {
+  categories?: ClassCategory[];
+  promotions: EnrichedClassNode[];
+}
+
 export interface Fe14Runtime {
   schemaVersion: number;
   gameId: string;
@@ -430,6 +478,9 @@ export interface Fe14Runtime {
   roster: UnitIdentity[];
   classTrees: ClassTree[];
   classStats: ClassStatProfile[];
+  classSkills: ClassSkill[];
+  skillsByClass: Record<string, ClassSkillIndexEntry[]>;
+  classDirectory: EnrichedClassTree[];
   units: UnitRuntime[];
   sources: Array<{ id: string; title: string; location: string; reviewStatus: string }>;
 }
