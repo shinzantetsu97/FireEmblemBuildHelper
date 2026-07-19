@@ -187,8 +187,8 @@ export function BaseConfigurationSurface({
       />
 
       <div className="resolved-config-columns">
-        <InventoryPanel config={config} />
         <StartingSkillsPanel config={config} />
+        <InventoryPanel config={config} />
       </div>
 
       <WeaponLevels config={config} />

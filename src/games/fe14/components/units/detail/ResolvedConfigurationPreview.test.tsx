@@ -32,6 +32,8 @@ describe("resolved configuration preview", () => {
     expect(screen.getByLabelText("Attack Stance").querySelectorAll('[role="cell"]')).toHaveLength(5);
     expect(screen.getByLabelText("Guard Stance").querySelectorAll('[role="cell"]')).toHaveLength(5);
     const skills = screen.getByRole("heading", { name: "Starting skills" }).parentElement!;
+    const inventory = screen.getByRole("heading", { name: "Inventory" }).parentElement!;
+    expect(skills.nextElementSibling).toBe(inventory);
     expect([...skills.querySelectorAll("strong")].map((element) => element.textContent).slice(0, 2)).toEqual([
       "Vow of Friendship",
       "Elbow Room",

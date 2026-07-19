@@ -1,10 +1,19 @@
 export const RELEASES = [
   {
+    version: "0.6.2",
+    date: "2026-07-19",
+    dateLabel: "July 19, 2026",
+    title: "Unit profile layout tweak",
+    current: true,
+    changes: [
+      "Moved Starting Skills ahead of Inventory in route-driven unit profiles.",
+    ],
+  },
+  {
     version: "0.6.1",
     date: "2026-07-19",
     dateLabel: "July 19, 2026",
     title: "Route-state warning fixes",
-    current: true,
     changes: [
       "Corrected Rinkah's Birthright configuration to display as a permanent join instead of a temporary appearance.",
       "Added prominent Conquest warnings for Rinkah and Sakura, who leave after Chapter 5 and do not rejoin on that route.",
