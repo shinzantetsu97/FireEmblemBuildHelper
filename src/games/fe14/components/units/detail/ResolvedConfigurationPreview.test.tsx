@@ -74,6 +74,36 @@ describe("resolved configuration preview", () => {
     expect(screen.getAllByText("Chapter 4, start")).toHaveLength(2);
   });
 
+  it("updates Rinkah's state by route and warns for non-permanent Conquest units", async () => {
+    const user = userEvent.setup();
+    const view = render(
+      <ResolvedConfigurationPreview
+        avatarGender="male"
+        avatarSelection={null}
+        setAvatarGender={vi.fn()}
+        unit={unit("rinkah")}
+      />,
+    );
+
+    expect(screen.getByText("Join")).toBeInTheDocument();
+    await user.click(screen.getByRole("tab", { name: "Conquest" }));
+    expect(screen.getByText("Appearance")).toBeInTheDocument();
+    const rinkahWarning = screen.getByText(/Warning: Rinkah is not a permanent unit on Conquest/);
+    expect(rinkahWarning).toHaveClass("is-warning");
+    expect(rinkahWarning.closest("ul")?.previousElementSibling).toHaveClass("resolved-config-controls");
+
+    view.rerender(
+      <ResolvedConfigurationPreview
+        avatarGender="male"
+        avatarSelection={null}
+        setAvatarGender={vi.fn()}
+        unit={unit("sakura")}
+      />,
+    );
+    await user.click(screen.getByRole("tab", { name: "Conquest" }));
+    expect(screen.getByText(/Warning: Sakura is not a permanent unit on Conquest/)).toHaveClass("is-warning");
+  });
+
   it("renders one-route units as a non-interactive route label", () => {
     render(
       <ResolvedConfigurationPreview

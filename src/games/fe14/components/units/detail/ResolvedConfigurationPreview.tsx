@@ -111,6 +111,8 @@ export function BaseConfigurationSurface({
   const [auditOpen, setAuditOpen] = useState(false);
   const config = resolution.configuration;
   const growthValues = growthMode === "effective" ? config.effectiveGrowths : config.individualGrowths;
+  const warningNotes = config.notes.filter((note) => note.startsWith("Warning:"));
+  const detailNotes = config.notes.filter((note) => !note.startsWith("Warning:"));
 
   useEffect(() => {
     setGrowthMode("effective");
@@ -132,6 +134,12 @@ export function BaseConfigurationSurface({
           {showRouteControl ? <RouteControl resolution={resolution} onChange={onRouteChange} /> : null}
           {extraControls}
         </div>
+      ) : null}
+
+      {warningNotes.length ? (
+        <ul className="resolved-route-notes resolved-route-warnings">
+          {warningNotes.map((note) => <li className="is-warning" key={note}>{note}</li>)}
+        </ul>
       ) : null}
 
       {resolution.stateOptions.length > 1 ? (
@@ -205,9 +213,9 @@ export function BaseConfigurationSurface({
         </div>
       ) : null}
 
-      {config.notes.length ? (
+      {detailNotes.length ? (
         <ul className="resolved-route-notes">
-          {config.notes.map((note) => <li key={note}>{note}</li>)}
+          {detailNotes.map((note) => <li key={note}>{note}</li>)}
         </ul>
       ) : null}
 

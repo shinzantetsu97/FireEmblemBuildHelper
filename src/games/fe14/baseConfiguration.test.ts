@@ -126,6 +126,21 @@ describe("FE14 route-driven base configuration", () => {
     expect(appearance.notes[0]).toMatch(/returns in Chapter 11/i);
   });
 
+  it("classifies Rinkah by route and warns when Rinkah or Sakura are not permanent", () => {
+    const rinkahBirthright = resolveUnitBaseConfiguration(unit("rinkah"), { routeId: "birthright" }).configuration;
+    const rinkahConquest = resolveUnitBaseConfiguration(unit("rinkah"), { routeId: "conquest" }).configuration;
+    const sakuraConquest = resolveUnitBaseConfiguration(unit("sakura"), { routeId: "conquest" }).configuration;
+
+    expect(rinkahBirthright.stateKind).toBe("join");
+    expect(rinkahConquest.stateKind).toBe("appearance");
+    expect(rinkahConquest.notes).toContain(
+      "Warning: Rinkah is not a permanent unit on Conquest and leaves after Chapter 5 without rejoining.",
+    );
+    expect(sakuraConquest.notes).toContain(
+      "Warning: Sakura is not a permanent unit on Conquest and leaves after Chapter 5 without rejoining.",
+    );
+  });
+
   it("retains Felicia's Corrin-gender condition while joining Attendant mechanics", () => {
     const maleCorrin = resolveUnitBaseConfiguration(unit("felicia"), {
       routeId: "birthright",

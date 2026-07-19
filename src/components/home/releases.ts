@@ -1,10 +1,20 @@
 export const RELEASES = [
   {
+    version: "0.6.1",
+    date: "2026-07-19",
+    dateLabel: "July 19, 2026",
+    title: "Route-state warning fixes",
+    current: true,
+    changes: [
+      "Corrected Rinkah's Birthright configuration to display as a permanent join instead of a temporary appearance.",
+      "Added prominent Conquest warnings for Rinkah and Sakura, who leave after Chapter 5 and do not rejoin on that route.",
+    ],
+  },
+  {
     version: "0.6.0",
     date: "2026-07-19",
     dateLabel: "July 19, 2026",
     title: "Route-driven FE14 base configuration",
-    current: true,
     changes: [
       "Rebuilt unit starting-state profiles around a shared route resolver so recruitment timing, joining stats, growths, inventory, learned skills, weapon levels, cap modifiers, and stance bonuses update together.",
       "Added normalized FE14 class growth rates, complete weapon-type metadata with local icons, validated starting-skill derivation, and explicit multi-state handling for temporary appearances and permanent rejoins.",

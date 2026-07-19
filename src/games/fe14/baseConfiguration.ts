@@ -741,12 +741,12 @@ function classifyState(
   const hasLaterState = routeScenarios.some((candidate) =>
     candidate.id !== scenario.id && routeJoinFor(candidate, routeId).chapter > routeJoinFor(scenario, routeId).chapter,
   );
+  const departsOnRoute = scenario.temporaryDeparture?.routes.includes(routeId) ?? false;
   if (
     label.includes("appearance") ||
     label.includes("guest") ||
-    label.includes("early") ||
-    label.includes("pre-route") ||
-    (hasLaterState && scenario.temporaryDeparture?.routes.includes(routeId))
+    ((label.includes("early") || label.includes("pre-route")) && (hasLaterState || departsOnRoute)) ||
+    (hasLaterState && departsOnRoute)
   ) {
     return "appearance";
   }
@@ -919,7 +919,9 @@ function scenarioNotes(
     const returning = scenario.temporaryDeparture.returns.find((entry) => entry.route === routeId);
     notes.push(returning
       ? `${unit.identity.displayName} leaves after Chapter ${scenario.temporaryDeparture.afterChapter} and returns in Chapter ${returning.chapter} (${returning.timing}).`
-      : `${unit.identity.displayName} leaves after Chapter ${scenario.temporaryDeparture.afterChapter} on this route.`);
+      : routeId === "conquest"
+        ? `Warning: ${unit.identity.displayName} is not a permanent unit on Conquest and leaves after Chapter ${scenario.temporaryDeparture.afterChapter} without rejoining.`
+        : `${unit.identity.displayName} leaves after Chapter ${scenario.temporaryDeparture.afterChapter} on this route.`);
   }
   if (scenario.retentionCondition?.route === routeId) notes.push(scenario.retentionCondition.note);
   if (scenario.chapter5Carryover) notes.push(scenario.chapter5Carryover.note);
