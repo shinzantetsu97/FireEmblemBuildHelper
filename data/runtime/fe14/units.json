@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "gameId": "fe14",
-  "lastUpdated": "2026-07-17",
+  "lastUpdated": "2026-07-18",
   "roster": [
     {
       "id": "corrin",
@@ -2281,6 +2281,16 @@
       "classId": "hoshido_noble",
       "displayName": "Hoshido Noble",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 15,
+        "strength": 15,
+        "magic": 10,
+        "skill": 10,
+        "speed": 10,
+        "luck": 10,
+        "defense": 15,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 60,
         "strength": 34,
@@ -2301,6 +2311,16 @@
       "classId": "samurai",
       "displayName": "Samurai",
       "tier": "base",
+      "growthRates": {
+        "hp": 10,
+        "strength": 10,
+        "magic": 0,
+        "skill": 15,
+        "speed": 20,
+        "luck": 15,
+        "defense": 0,
+        "resistance": 10
+      },
       "maximumStats": {
         "hp": 40,
         "strength": 20,
@@ -2319,6 +2339,16 @@
       "classId": "swordmaster",
       "displayName": "Swordmaster",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 10,
+        "magic": 5,
+        "skill": 15,
+        "speed": 20,
+        "luck": 15,
+        "defense": 0,
+        "resistance": 10
+      },
       "maximumStats": {
         "hp": 55,
         "strength": 30,
@@ -2337,6 +2367,16 @@
       "classId": "master_of_arms",
       "displayName": "Master of Arms",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 20,
+        "strength": 15,
+        "magic": 0,
+        "skill": 10,
+        "speed": 10,
+        "luck": 10,
+        "defense": 10,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 65,
         "strength": 33,
@@ -2357,6 +2397,16 @@
       "classId": "oni_savage",
       "displayName": "Oni Savage",
       "tier": "base",
+      "growthRates": {
+        "hp": 20,
+        "strength": 20,
+        "magic": 10,
+        "skill": 0,
+        "speed": 10,
+        "luck": 0,
+        "defense": 20,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 45,
         "strength": 24,
@@ -2375,6 +2425,16 @@
       "classId": "oni_chieftain",
       "displayName": "Oni Chieftain",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 20,
+        "magic": 15,
+        "skill": 0,
+        "speed": 10,
+        "luck": 0,
+        "defense": 20,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 60,
         "strength": 34,
@@ -2394,6 +2454,16 @@
       "classId": "blacksmith",
       "displayName": "Blacksmith",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 20,
+        "strength": 15,
+        "magic": 0,
+        "skill": 15,
+        "speed": 10,
+        "luck": 5,
+        "defense": 15,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 65,
         "strength": 33,
@@ -2413,6 +2483,16 @@
       "classId": "spear_fighter",
       "displayName": "Spear Fighter",
       "tier": "base",
+      "growthRates": {
+        "hp": 15,
+        "strength": 15,
+        "magic": 0,
+        "skill": 15,
+        "speed": 15,
+        "luck": 5,
+        "defense": 10,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 40,
         "strength": 22,
@@ -2431,6 +2511,16 @@
       "classId": "spear_master",
       "displayName": "Spear Master",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 15,
+        "strength": 15,
+        "magic": 0,
+        "skill": 15,
+        "speed": 15,
+        "luck": 5,
+        "defense": 10,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 60,
         "strength": 34,
@@ -2449,6 +2539,16 @@
       "classId": "basara",
       "displayName": "Basara",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 20,
+        "strength": 10,
+        "magic": 10,
+        "skill": 10,
+        "speed": 10,
+        "luck": 15,
+        "defense": 5,
+        "resistance": 10
+      },
       "maximumStats": {
         "hp": 65,
         "strength": 31,
@@ -2468,6 +2568,16 @@
       "classId": "diviner",
       "displayName": "Diviner",
       "tier": "base",
+      "growthRates": {
+        "hp": 0,
+        "strength": 5,
+        "magic": 15,
+        "skill": 10,
+        "speed": 15,
+        "luck": 5,
+        "defense": 0,
+        "resistance": 10
+      },
       "maximumStats": {
         "hp": 35,
         "strength": 17,
@@ -2486,6 +2596,16 @@
       "classId": "onmyoji",
       "displayName": "Onmyoji",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 0,
+        "strength": 0,
+        "magic": 20,
+        "skill": 10,
+        "speed": 15,
+        "luck": 0,
+        "defense": 0,
+        "resistance": 15
+      },
       "maximumStats": {
         "hp": 45,
         "strength": 25,
@@ -2505,6 +2625,16 @@
       "classId": "monk",
       "displayName": "Monk",
       "tier": "base",
+      "growthRates": {
+        "hp": 0,
+        "strength": 5,
+        "magic": 10,
+        "skill": 10,
+        "speed": 15,
+        "luck": 15,
+        "defense": 0,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 35,
         "strength": 18,
@@ -2523,6 +2653,16 @@
       "classId": "shrine_maiden",
       "displayName": "Shrine Maiden",
       "tier": "base",
+      "growthRates": {
+        "hp": 0,
+        "strength": 5,
+        "magic": 10,
+        "skill": 10,
+        "speed": 15,
+        "luck": 15,
+        "defense": 0,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 35,
         "strength": 18,
@@ -2541,6 +2681,16 @@
       "classId": "great_master",
       "displayName": "Great Master",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 15,
+        "magic": 5,
+        "skill": 5,
+        "speed": 15,
+        "luck": 15,
+        "defense": 10,
+        "resistance": 10
+      },
       "maximumStats": {
         "hp": 55,
         "strength": 32,
@@ -2560,6 +2710,16 @@
       "classId": "priestess",
       "displayName": "Priestess",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 10,
+        "magic": 10,
+        "skill": 5,
+        "speed": 15,
+        "luck": 15,
+        "defense": 0,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 50,
         "strength": 29,
@@ -2579,6 +2739,16 @@
       "classId": "sky_knight",
       "displayName": "Sky Knight",
       "tier": "base",
+      "growthRates": {
+        "hp": 0,
+        "strength": 10,
+        "magic": 0,
+        "skill": 10,
+        "speed": 15,
+        "luck": 20,
+        "defense": 0,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 35,
         "strength": 19,
@@ -2597,6 +2767,16 @@
       "classId": "falcon_knight",
       "displayName": "Falcon Knight",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 0,
+        "strength": 10,
+        "magic": 10,
+        "skill": 10,
+        "speed": 15,
+        "luck": 20,
+        "defense": 0,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 55,
         "strength": 28,
@@ -2616,6 +2796,16 @@
       "classId": "kinshi_knight",
       "displayName": "Kinshi Knight",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 0,
+        "strength": 5,
+        "magic": 0,
+        "skill": 15,
+        "speed": 15,
+        "luck": 15,
+        "defense": 0,
+        "resistance": 15
+      },
       "maximumStats": {
         "hp": 50,
         "strength": 27,
@@ -2635,6 +2825,16 @@
       "classId": "archer",
       "displayName": "Archer",
       "tier": "base",
+      "growthRates": {
+        "hp": 10,
+        "strength": 15,
+        "magic": 0,
+        "skill": 15,
+        "speed": 15,
+        "luck": 5,
+        "defense": 10,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 40,
         "strength": 21,
@@ -2653,6 +2853,16 @@
       "classId": "sniper",
       "displayName": "Sniper",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 15,
+        "magic": 0,
+        "skill": 20,
+        "speed": 15,
+        "luck": 5,
+        "defense": 10,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 55,
         "strength": 31,
@@ -2671,6 +2881,16 @@
       "classId": "ninja",
       "displayName": "Ninja",
       "tier": "base",
+      "growthRates": {
+        "hp": 5,
+        "strength": 5,
+        "magic": 0,
+        "skill": 20,
+        "speed": 20,
+        "luck": 0,
+        "defense": 5,
+        "resistance": 15
+      },
       "maximumStats": {
         "hp": 35,
         "strength": 17,
@@ -2689,6 +2909,16 @@
       "classId": "master_ninja",
       "displayName": "Master Ninja",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 5,
+        "strength": 5,
+        "magic": 0,
+        "skill": 20,
+        "speed": 20,
+        "luck": 0,
+        "defense": 5,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 55,
         "strength": 27,
@@ -2708,6 +2938,16 @@
       "classId": "mechanist",
       "displayName": "Mechanist",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 10,
+        "magic": 0,
+        "skill": 15,
+        "speed": 10,
+        "luck": 5,
+        "defense": 5,
+        "resistance": 15
+      },
       "maximumStats": {
         "hp": 60,
         "strength": 30,
@@ -2727,6 +2967,16 @@
       "classId": "apothecary",
       "displayName": "Apothecary",
       "tier": "base",
+      "growthRates": {
+        "hp": 20,
+        "strength": 20,
+        "magic": 0,
+        "skill": 10,
+        "speed": 10,
+        "luck": 5,
+        "defense": 10,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 45,
         "strength": 24,
@@ -2745,6 +2995,16 @@
       "classId": "merchant",
       "displayName": "Merchant",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 20,
+        "strength": 20,
+        "magic": 0,
+        "skill": 10,
+        "speed": 5,
+        "luck": 15,
+        "defense": 10,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 65,
         "strength": 33,
@@ -2764,6 +3024,16 @@
       "classId": "kitsune",
       "displayName": "Kitsune",
       "tier": "base",
+      "growthRates": {
+        "hp": 10,
+        "strength": 10,
+        "magic": 0,
+        "skill": 15,
+        "speed": 20,
+        "luck": 10,
+        "defense": 0,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 40,
         "strength": 20,
@@ -2782,6 +3052,16 @@
       "classId": "nine_tails",
       "displayName": "Nine-Tails",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 10,
+        "magic": 0,
+        "skill": 15,
+        "speed": 20,
+        "luck": 10,
+        "defense": 0,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 55,
         "strength": 29,
@@ -2800,6 +3080,16 @@
       "classId": "songstress",
       "displayName": "Songstress",
       "tier": "special",
+      "growthRates": {
+        "hp": 0,
+        "strength": 10,
+        "magic": 0,
+        "skill": 20,
+        "speed": 20,
+        "luck": 20,
+        "defense": 0,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 45,
         "strength": 28,
@@ -2818,6 +3108,16 @@
       "classId": "villager",
       "displayName": "Villager",
       "tier": "base",
+      "growthRates": {
+        "hp": 10,
+        "strength": 10,
+        "magic": 0,
+        "skill": 10,
+        "speed": 10,
+        "luck": 20,
+        "defense": 10,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 35,
         "strength": 19,
@@ -2836,6 +3136,16 @@
       "classId": "nohr_prince",
       "displayName": "Nohr Prince / Princess",
       "tier": "base",
+      "growthRates": {
+        "hp": 15,
+        "strength": 15,
+        "magic": 10,
+        "skill": 10,
+        "speed": 10,
+        "luck": 10,
+        "defense": 10,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 40,
         "strength": 23,
@@ -2855,6 +3165,16 @@
       "classId": "nohr_noble",
       "displayName": "Nohr Noble",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 15,
+        "strength": 10,
+        "magic": 15,
+        "skill": 5,
+        "speed": 15,
+        "luck": 5,
+        "defense": 5,
+        "resistance": 15
+      },
       "maximumStats": {
         "hp": 60,
         "strength": 32,
@@ -2875,6 +3195,16 @@
       "classId": "cavalier",
       "displayName": "Cavalier",
       "tier": "base",
+      "growthRates": {
+        "hp": 10,
+        "strength": 15,
+        "magic": 0,
+        "skill": 10,
+        "speed": 10,
+        "luck": 15,
+        "defense": 10,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 40,
         "strength": 22,
@@ -2894,6 +3224,16 @@
       "classId": "paladin",
       "displayName": "Paladin",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 15,
+        "magic": 0,
+        "skill": 10,
+        "speed": 10,
+        "luck": 15,
+        "defense": 10,
+        "resistance": 10
+      },
       "maximumStats": {
         "hp": 60,
         "strength": 31,
@@ -2913,6 +3253,16 @@
       "classId": "great_knight",
       "displayName": "Great Knight",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 20,
+        "strength": 20,
+        "magic": 0,
+        "skill": 10,
+        "speed": 5,
+        "luck": 5,
+        "defense": 20,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 65,
         "strength": 35,
@@ -2933,6 +3283,16 @@
       "classId": "knight",
       "displayName": "Knight",
       "tier": "base",
+      "growthRates": {
+        "hp": 20,
+        "strength": 20,
+        "magic": 0,
+        "skill": 15,
+        "speed": 5,
+        "luck": 10,
+        "defense": 20,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 45,
         "strength": 24,
@@ -2951,6 +3311,16 @@
       "classId": "general",
       "displayName": "General",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 25,
+        "strength": 20,
+        "magic": 0,
+        "skill": 15,
+        "speed": 0,
+        "luck": 10,
+        "defense": 20,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 70,
         "strength": 38,
@@ -2970,6 +3340,16 @@
       "classId": "fighter",
       "displayName": "Fighter",
       "tier": "base",
+      "growthRates": {
+        "hp": 20,
+        "strength": 20,
+        "magic": 0,
+        "skill": 15,
+        "speed": 15,
+        "luck": 5,
+        "defense": 5,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 45,
         "strength": 25,
@@ -2988,6 +3368,16 @@
       "classId": "berserker",
       "displayName": "Berserker",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 30,
+        "strength": 25,
+        "magic": 0,
+        "skill": 15,
+        "speed": 15,
+        "luck": 0,
+        "defense": 0,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 70,
         "strength": 40,
@@ -3006,6 +3396,16 @@
       "classId": "mercenary",
       "displayName": "Mercenary",
       "tier": "base",
+      "growthRates": {
+        "hp": 10,
+        "strength": 15,
+        "magic": 0,
+        "skill": 20,
+        "speed": 15,
+        "luck": 5,
+        "defense": 10,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 40,
         "strength": 22,
@@ -3024,6 +3424,16 @@
       "classId": "hero",
       "displayName": "Hero",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 20,
+        "strength": 15,
+        "magic": 0,
+        "skill": 20,
+        "speed": 15,
+        "luck": 5,
+        "defense": 10,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 60,
         "strength": 32,
@@ -3043,6 +3453,16 @@
       "classId": "bow_knight",
       "displayName": "Bow Knight",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 10,
+        "magic": 0,
+        "skill": 15,
+        "speed": 15,
+        "luck": 10,
+        "defense": 0,
+        "resistance": 10
+      },
       "maximumStats": {
         "hp": 55,
         "strength": 29,
@@ -3062,6 +3482,16 @@
       "classId": "outlaw",
       "displayName": "Outlaw",
       "tier": "base",
+      "growthRates": {
+        "hp": 0,
+        "strength": 10,
+        "magic": 5,
+        "skill": 10,
+        "speed": 20,
+        "luck": 0,
+        "defense": 0,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 35,
         "strength": 19,
@@ -3080,6 +3510,16 @@
       "classId": "adventurer",
       "displayName": "Adventurer",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 0,
+        "strength": 5,
+        "magic": 15,
+        "skill": 5,
+        "speed": 20,
+        "luck": 0,
+        "defense": 0,
+        "resistance": 20
+      },
       "maximumStats": {
         "hp": 50,
         "strength": 27,
@@ -3099,6 +3539,16 @@
       "classId": "wyvern_rider",
       "displayName": "Wyvern Rider",
       "tier": "base",
+      "growthRates": {
+        "hp": 10,
+        "strength": 15,
+        "magic": 5,
+        "skill": 10,
+        "speed": 10,
+        "luck": 5,
+        "defense": 20,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 40,
         "strength": 22,
@@ -3117,6 +3567,16 @@
       "classId": "wyvern_lord",
       "displayName": "Wyvern Lord",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 10,
+        "strength": 15,
+        "magic": 0,
+        "skill": 15,
+        "speed": 10,
+        "luck": 5,
+        "defense": 20,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 60,
         "strength": 33,
@@ -3136,6 +3596,16 @@
       "classId": "malig_knight",
       "displayName": "Malig Knight",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 0,
+        "strength": 15,
+        "magic": 15,
+        "skill": 10,
+        "speed": 5,
+        "luck": 0,
+        "defense": 10,
+        "resistance": 15
+      },
       "maximumStats": {
         "hp": 55,
         "strength": 31,
@@ -3155,6 +3625,16 @@
       "classId": "dark_mage",
       "displayName": "Dark Mage",
       "tier": "base",
+      "growthRates": {
+        "hp": 0,
+        "strength": 10,
+        "magic": 20,
+        "skill": 0,
+        "speed": 10,
+        "luck": 0,
+        "defense": 5,
+        "resistance": 10
+      },
       "maximumStats": {
         "hp": 35,
         "strength": 19,
@@ -3173,6 +3653,16 @@
       "classId": "sorcerer",
       "displayName": "Sorcerer",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 0,
+        "strength": 0,
+        "magic": 25,
+        "skill": 0,
+        "speed": 10,
+        "luck": 0,
+        "defense": 5,
+        "resistance": 15
+      },
       "maximumStats": {
         "hp": 50,
         "strength": 25,
@@ -3191,6 +3681,16 @@
       "classId": "dark_knight",
       "displayName": "Dark Knight",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 15,
+        "strength": 20,
+        "magic": 10,
+        "skill": 5,
+        "speed": 5,
+        "luck": 5,
+        "defense": 15,
+        "resistance": 5
+      },
       "maximumStats": {
         "hp": 55,
         "strength": 32,
@@ -3210,6 +3710,16 @@
       "classId": "troubadour",
       "displayName": "Troubadour",
       "tier": "base",
+      "growthRates": {
+        "hp": 0,
+        "strength": 0,
+        "magic": 10,
+        "skill": 20,
+        "speed": 10,
+        "luck": 15,
+        "defense": 0,
+        "resistance": 15
+      },
       "maximumStats": {
         "hp": 35,
         "strength": 16,
@@ -3228,6 +3738,16 @@
       "classId": "strategist",
       "displayName": "Strategist",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 0,
+        "strength": 0,
+        "magic": 15,
+        "skill": 5,
+        "speed": 10,
+        "luck": 20,
+        "defense": 0,
+        "resistance": 15
+      },
       "maximumStats": {
         "hp": 45,
         "strength": 25,
@@ -3247,6 +3767,16 @@
       "classId": "attendant",
       "displayName": "Maid / Butler",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 0,
+        "strength": 10,
+        "magic": 10,
+        "skill": 15,
+        "speed": 15,
+        "luck": 10,
+        "defense": 5,
+        "resistance": 10
+      },
       "maximumStats": {
         "hp": 50,
         "strength": 28,
@@ -3266,6 +3796,16 @@
       "classId": "wolfskin",
       "displayName": "Wolfskin",
       "tier": "base",
+      "growthRates": {
+        "hp": 20,
+        "strength": 20,
+        "magic": 0,
+        "skill": 5,
+        "speed": 15,
+        "luck": 5,
+        "defense": 10,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 45,
         "strength": 24,
@@ -3284,6 +3824,16 @@
       "classId": "wolfssegner",
       "displayName": "Wolfssegner",
       "tier": "advanced",
+      "growthRates": {
+        "hp": 20,
+        "strength": 20,
+        "magic": 0,
+        "skill": 5,
+        "speed": 15,
+        "luck": 5,
+        "defense": 10,
+        "resistance": 0
+      },
       "maximumStats": {
         "hp": 65,
         "strength": 36,
@@ -6254,6 +6804,332 @@
       ]
     }
   ],
+  "weaponTypes": [
+    {
+      "id": "sword",
+      "names": {
+        "en": "Sword"
+      },
+      "iconAssetId": "sword",
+      "displayOrder": 1,
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "fandom-fe14-weapon-list",
+          "locator": "Swords heading > File:FE14 Sword.png",
+          "fields": [
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lance",
+      "names": {
+        "en": "Lance"
+      },
+      "iconAssetId": "lance",
+      "displayOrder": 2,
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "fandom-fe14-weapon-list",
+          "locator": "Lances heading > File:FE14 Lance.png",
+          "fields": [
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "axe",
+      "names": {
+        "en": "Axe"
+      },
+      "iconAssetId": "axe",
+      "displayOrder": 3,
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "fandom-fe14-weapon-list",
+          "locator": "Axes heading > File:FE14 Axe.png",
+          "fields": [
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dagger",
+      "names": {
+        "en": "Dagger"
+      },
+      "iconAssetId": "dagger",
+      "displayOrder": 4,
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank Dagger icon (source file uses kunai)",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank Dagger icon (source file uses kunai)",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "fandom-fe14-weapon-list",
+          "locator": "Daggers heading > File:FE14 Kunai.png",
+          "fields": [
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bow",
+      "names": {
+        "en": "Bow"
+      },
+      "iconAssetId": "bow",
+      "displayOrder": 5,
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "fandom-fe14-weapon-list",
+          "locator": "Bows heading > File:FE14 Bow.png",
+          "fields": [
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "tome",
+      "names": {
+        "en": "Tome"
+      },
+      "iconAssetId": "tome",
+      "displayOrder": 6,
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "fandom-fe14-weapon-list",
+          "locator": "Tomes heading > File:FE14 Tome.png",
+          "fields": [
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "staff",
+      "names": {
+        "en": "Staff"
+      },
+      "iconAssetId": "staff",
+      "displayOrder": 7,
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-maximum-stats",
+          "locator": "Maximum Stats > Weapon Rank icons",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "fandom-fe14-weapon-list",
+          "locator": "Staves heading > File:FE14 Staff.png",
+          "fields": [
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dragonstone",
+      "names": {
+        "en": "Dragonstone"
+      },
+      "iconAssetId": "dragonstone",
+      "displayOrder": 8,
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-maximum-stats",
+          "locator": "Maximum Stats > Dragonstone Weapon Rank icon",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-maximum-stats",
+          "locator": "Maximum Stats > Dragonstone Weapon Rank icon",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "fandom-fe14-weapon-list",
+          "locator": "Stones heading > File:FE14 Stone.png",
+          "fields": [
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "beaststone",
+      "names": {
+        "en": "Beaststone"
+      },
+      "iconAssetId": "beaststone",
+      "displayOrder": 9,
+      "provenance": [
+        {
+          "sourceId": "serenes-fe14-hoshidan-class-maximum-stats",
+          "locator": "Maximum Stats > Beaststone Weapon Rank icon",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe14-nohrian-class-maximum-stats",
+          "locator": "Maximum Stats > Beaststone Weapon Rank icon",
+          "fields": [
+            "names.en",
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "fandom-fe14-weapon-list",
+          "locator": "Stones heading > File:FE14 Beaststone.png",
+          "fields": [
+            "iconAssetId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ],
   "skillsByClass": {
     "hoshido_noble": [
       {
@@ -6834,6 +7710,16 @@
             "classId": "merchant",
             "displayName": "Merchant",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 20,
+              "magic": 0,
+              "skill": 10,
+              "speed": 5,
+              "luck": 15,
+              "defense": 10,
+              "resistance": 5
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 33,
@@ -6868,6 +7754,16 @@
             "classId": "mechanist",
             "displayName": "Mechanist",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 10,
+              "magic": 0,
+              "skill": 15,
+              "speed": 10,
+              "luck": 5,
+              "defense": 5,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 30,
@@ -6899,6 +7795,16 @@
         "classId": "apothecary",
         "displayName": "Apothecary",
         "tier": "base",
+        "growthRates": {
+          "hp": 20,
+          "strength": 20,
+          "magic": 0,
+          "skill": 10,
+          "speed": 10,
+          "luck": 5,
+          "defense": 10,
+          "resistance": 5
+        },
         "maximumStats": {
           "hp": 45,
           "strength": 24,
@@ -6937,6 +7843,16 @@
             "classId": "sniper",
             "displayName": "Sniper",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 15,
+              "magic": 0,
+              "skill": 20,
+              "speed": 15,
+              "luck": 5,
+              "defense": 10,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 31,
@@ -6970,6 +7886,16 @@
             "classId": "kinshi_knight",
             "displayName": "Kinshi Knight",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 5,
+              "magic": 0,
+              "skill": 15,
+              "speed": 15,
+              "luck": 15,
+              "defense": 0,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 50,
               "strength": 27,
@@ -7001,6 +7927,16 @@
         "classId": "archer",
         "displayName": "Archer",
         "tier": "base",
+        "growthRates": {
+          "hp": 10,
+          "strength": 15,
+          "magic": 0,
+          "skill": 15,
+          "speed": 15,
+          "luck": 5,
+          "defense": 10,
+          "resistance": 0
+        },
         "maximumStats": {
           "hp": 40,
           "strength": 21,
@@ -7039,6 +7975,16 @@
             "classId": "paladin",
             "displayName": "Paladin",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 15,
+              "magic": 0,
+              "skill": 10,
+              "speed": 10,
+              "luck": 15,
+              "defense": 10,
+              "resistance": 10
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 31,
@@ -7073,6 +8019,16 @@
             "classId": "great_knight",
             "displayName": "Great Knight",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 20,
+              "magic": 0,
+              "skill": 10,
+              "speed": 5,
+              "luck": 5,
+              "defense": 20,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 35,
@@ -7105,6 +8061,16 @@
         "classId": "cavalier",
         "displayName": "Cavalier",
         "tier": "base",
+        "growthRates": {
+          "hp": 10,
+          "strength": 15,
+          "magic": 0,
+          "skill": 10,
+          "speed": 10,
+          "luck": 15,
+          "defense": 10,
+          "resistance": 5
+        },
         "maximumStats": {
           "hp": 40,
           "strength": 22,
@@ -7144,6 +8110,16 @@
             "classId": "sorcerer",
             "displayName": "Sorcerer",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 0,
+              "magic": 25,
+              "skill": 0,
+              "speed": 10,
+              "luck": 0,
+              "defense": 5,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 50,
               "strength": 25,
@@ -7177,6 +8153,16 @@
             "classId": "dark_knight",
             "displayName": "Dark Knight",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 15,
+              "strength": 20,
+              "magic": 10,
+              "skill": 5,
+              "speed": 5,
+              "luck": 5,
+              "defense": 15,
+              "resistance": 5
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 32,
@@ -7208,6 +8194,16 @@
         "classId": "dark_mage",
         "displayName": "Dark Mage",
         "tier": "base",
+        "growthRates": {
+          "hp": 0,
+          "strength": 10,
+          "magic": 20,
+          "skill": 0,
+          "speed": 10,
+          "luck": 0,
+          "defense": 5,
+          "resistance": 10
+        },
         "maximumStats": {
           "hp": 35,
           "strength": 19,
@@ -7246,6 +8242,16 @@
             "classId": "onmyoji",
             "displayName": "Onmyoji",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 0,
+              "magic": 20,
+              "skill": 10,
+              "speed": 15,
+              "luck": 0,
+              "defense": 0,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 45,
               "strength": 25,
@@ -7280,6 +8286,16 @@
             "classId": "basara",
             "displayName": "Basara",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 10,
+              "magic": 10,
+              "skill": 10,
+              "speed": 10,
+              "luck": 15,
+              "defense": 5,
+              "resistance": 10
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 31,
@@ -7311,6 +8327,16 @@
         "classId": "diviner",
         "displayName": "Diviner",
         "tier": "base",
+        "growthRates": {
+          "hp": 0,
+          "strength": 5,
+          "magic": 15,
+          "skill": 10,
+          "speed": 15,
+          "luck": 5,
+          "defense": 0,
+          "resistance": 10
+        },
         "maximumStats": {
           "hp": 35,
           "strength": 17,
@@ -7349,6 +8375,16 @@
             "classId": "hero",
             "displayName": "Hero",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 15,
+              "magic": 0,
+              "skill": 20,
+              "speed": 15,
+              "luck": 5,
+              "defense": 10,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 32,
@@ -7383,6 +8419,16 @@
             "classId": "berserker",
             "displayName": "Berserker",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 30,
+              "strength": 25,
+              "magic": 0,
+              "skill": 15,
+              "speed": 15,
+              "luck": 0,
+              "defense": 0,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 70,
               "strength": 40,
@@ -7413,6 +8459,16 @@
         "classId": "fighter",
         "displayName": "Fighter",
         "tier": "base",
+        "growthRates": {
+          "hp": 20,
+          "strength": 20,
+          "magic": 0,
+          "skill": 15,
+          "speed": 15,
+          "luck": 5,
+          "defense": 5,
+          "resistance": 0
+        },
         "maximumStats": {
           "hp": 45,
           "strength": 25,
@@ -7454,6 +8510,16 @@
             "classId": "nine_tails",
             "displayName": "Nine-Tails",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 10,
+              "magic": 0,
+              "skill": 15,
+              "speed": 20,
+              "luck": 10,
+              "defense": 0,
+              "resistance": 20
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 29,
@@ -7484,6 +8550,16 @@
         "classId": "kitsune",
         "displayName": "Kitsune",
         "tier": "base",
+        "growthRates": {
+          "hp": 10,
+          "strength": 10,
+          "magic": 0,
+          "skill": 15,
+          "speed": 20,
+          "luck": 10,
+          "defense": 0,
+          "resistance": 20
+        },
         "maximumStats": {
           "hp": 40,
           "strength": 20,
@@ -7522,6 +8598,16 @@
             "classId": "general",
             "displayName": "General",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 25,
+              "strength": 20,
+              "magic": 0,
+              "skill": 15,
+              "speed": 0,
+              "luck": 10,
+              "defense": 20,
+              "resistance": 5
+            },
             "maximumStats": {
               "hp": 70,
               "strength": 38,
@@ -7556,6 +8642,16 @@
             "classId": "great_knight",
             "displayName": "Great Knight",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 20,
+              "magic": 0,
+              "skill": 10,
+              "speed": 5,
+              "luck": 5,
+              "defense": 20,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 35,
@@ -7588,6 +8684,16 @@
         "classId": "knight",
         "displayName": "Knight",
         "tier": "base",
+        "growthRates": {
+          "hp": 20,
+          "strength": 20,
+          "magic": 0,
+          "skill": 15,
+          "speed": 5,
+          "luck": 10,
+          "defense": 20,
+          "resistance": 0
+        },
         "maximumStats": {
           "hp": 45,
           "strength": 24,
@@ -7626,6 +8732,16 @@
             "classId": "hero",
             "displayName": "Hero",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 15,
+              "magic": 0,
+              "skill": 20,
+              "speed": 15,
+              "luck": 5,
+              "defense": 10,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 32,
@@ -7660,6 +8776,16 @@
             "classId": "bow_knight",
             "displayName": "Bow Knight",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 10,
+              "magic": 0,
+              "skill": 15,
+              "speed": 15,
+              "luck": 10,
+              "defense": 0,
+              "resistance": 10
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 29,
@@ -7691,6 +8817,16 @@
         "classId": "mercenary",
         "displayName": "Mercenary",
         "tier": "base",
+        "growthRates": {
+          "hp": 10,
+          "strength": 15,
+          "magic": 0,
+          "skill": 20,
+          "speed": 15,
+          "luck": 5,
+          "defense": 10,
+          "resistance": 5
+        },
         "maximumStats": {
           "hp": 40,
           "strength": 22,
@@ -7729,6 +8865,16 @@
             "classId": "great_master",
             "displayName": "Great Master",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 15,
+              "magic": 5,
+              "skill": 5,
+              "speed": 15,
+              "luck": 15,
+              "defense": 10,
+              "resistance": 10
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 32,
@@ -7763,6 +8909,16 @@
             "classId": "onmyoji",
             "displayName": "Onmyoji",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 0,
+              "magic": 20,
+              "skill": 10,
+              "speed": 15,
+              "luck": 0,
+              "defense": 0,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 45,
               "strength": 25,
@@ -7794,6 +8950,16 @@
         "classId": "monk",
         "displayName": "Monk",
         "tier": "base",
+        "growthRates": {
+          "hp": 0,
+          "strength": 5,
+          "magic": 10,
+          "skill": 10,
+          "speed": 15,
+          "luck": 15,
+          "defense": 0,
+          "resistance": 20
+        },
         "maximumStats": {
           "hp": 35,
           "strength": 18,
@@ -7832,6 +8998,16 @@
             "classId": "master_ninja",
             "displayName": "Master Ninja",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 5,
+              "strength": 5,
+              "magic": 0,
+              "skill": 20,
+              "speed": 20,
+              "luck": 0,
+              "defense": 5,
+              "resistance": 20
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 27,
@@ -7866,6 +9042,16 @@
             "classId": "mechanist",
             "displayName": "Mechanist",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 10,
+              "magic": 0,
+              "skill": 15,
+              "speed": 10,
+              "luck": 5,
+              "defense": 5,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 30,
@@ -7897,6 +9083,16 @@
         "classId": "ninja",
         "displayName": "Ninja",
         "tier": "base",
+        "growthRates": {
+          "hp": 5,
+          "strength": 5,
+          "magic": 0,
+          "skill": 20,
+          "speed": 20,
+          "luck": 0,
+          "defense": 5,
+          "resistance": 15
+        },
         "maximumStats": {
           "hp": 35,
           "strength": 17,
@@ -7938,6 +9134,16 @@
             "classId": "nohr_noble",
             "displayName": "Nohr Noble",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 15,
+              "strength": 10,
+              "magic": 15,
+              "skill": 5,
+              "speed": 15,
+              "luck": 5,
+              "defense": 5,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 32,
@@ -7973,6 +9179,16 @@
             "classId": "hoshido_noble",
             "displayName": "Hoshido Noble",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 15,
+              "strength": 15,
+              "magic": 10,
+              "skill": 10,
+              "speed": 10,
+              "luck": 10,
+              "defense": 15,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 34,
@@ -8005,6 +9221,16 @@
         "classId": "nohr_prince",
         "displayName": "Nohr Prince / Princess",
         "tier": "base",
+        "growthRates": {
+          "hp": 15,
+          "strength": 15,
+          "magic": 10,
+          "skill": 10,
+          "speed": 10,
+          "luck": 10,
+          "defense": 10,
+          "resistance": 5
+        },
         "maximumStats": {
           "hp": 40,
           "strength": 23,
@@ -8044,6 +9270,16 @@
             "classId": "oni_chieftain",
             "displayName": "Oni Chieftain",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 20,
+              "magic": 15,
+              "skill": 0,
+              "speed": 10,
+              "luck": 0,
+              "defense": 20,
+              "resistance": 5
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 34,
@@ -8078,6 +9314,16 @@
             "classId": "blacksmith",
             "displayName": "Blacksmith",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 15,
+              "magic": 0,
+              "skill": 15,
+              "speed": 10,
+              "luck": 5,
+              "defense": 15,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 33,
@@ -8109,6 +9355,16 @@
         "classId": "oni_savage",
         "displayName": "Oni Savage",
         "tier": "base",
+        "growthRates": {
+          "hp": 20,
+          "strength": 20,
+          "magic": 10,
+          "skill": 0,
+          "speed": 10,
+          "luck": 0,
+          "defense": 20,
+          "resistance": 0
+        },
         "maximumStats": {
           "hp": 45,
           "strength": 24,
@@ -8147,6 +9403,16 @@
             "classId": "adventurer",
             "displayName": "Adventurer",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 5,
+              "magic": 15,
+              "skill": 5,
+              "speed": 20,
+              "luck": 0,
+              "defense": 0,
+              "resistance": 20
+            },
             "maximumStats": {
               "hp": 50,
               "strength": 27,
@@ -8181,6 +9447,16 @@
             "classId": "bow_knight",
             "displayName": "Bow Knight",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 10,
+              "magic": 0,
+              "skill": 15,
+              "speed": 15,
+              "luck": 10,
+              "defense": 0,
+              "resistance": 10
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 29,
@@ -8212,6 +9488,16 @@
         "classId": "outlaw",
         "displayName": "Outlaw",
         "tier": "base",
+        "growthRates": {
+          "hp": 0,
+          "strength": 10,
+          "magic": 5,
+          "skill": 10,
+          "speed": 20,
+          "luck": 0,
+          "defense": 0,
+          "resistance": 20
+        },
         "maximumStats": {
           "hp": 35,
           "strength": 19,
@@ -8250,6 +9536,16 @@
             "classId": "swordmaster",
             "displayName": "Swordmaster",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 10,
+              "magic": 5,
+              "skill": 15,
+              "speed": 20,
+              "luck": 15,
+              "defense": 0,
+              "resistance": 10
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 30,
@@ -8283,6 +9579,16 @@
             "classId": "master_of_arms",
             "displayName": "Master of Arms",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 15,
+              "magic": 0,
+              "skill": 10,
+              "speed": 10,
+              "luck": 10,
+              "defense": 10,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 33,
@@ -8315,6 +9621,16 @@
         "classId": "samurai",
         "displayName": "Samurai",
         "tier": "base",
+        "growthRates": {
+          "hp": 10,
+          "strength": 10,
+          "magic": 0,
+          "skill": 15,
+          "speed": 20,
+          "luck": 15,
+          "defense": 0,
+          "resistance": 10
+        },
         "maximumStats": {
           "hp": 40,
           "strength": 20,
@@ -8353,6 +9669,16 @@
             "classId": "priestess",
             "displayName": "Priestess",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 10,
+              "magic": 10,
+              "skill": 5,
+              "speed": 15,
+              "luck": 15,
+              "defense": 0,
+              "resistance": 20
+            },
             "maximumStats": {
               "hp": 50,
               "strength": 29,
@@ -8387,6 +9713,16 @@
             "classId": "onmyoji",
             "displayName": "Onmyoji",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 0,
+              "magic": 20,
+              "skill": 10,
+              "speed": 15,
+              "luck": 0,
+              "defense": 0,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 45,
               "strength": 25,
@@ -8418,6 +9754,16 @@
         "classId": "shrine_maiden",
         "displayName": "Shrine Maiden",
         "tier": "base",
+        "growthRates": {
+          "hp": 0,
+          "strength": 5,
+          "magic": 10,
+          "skill": 10,
+          "speed": 15,
+          "luck": 15,
+          "defense": 0,
+          "resistance": 20
+        },
         "maximumStats": {
           "hp": 35,
           "strength": 18,
@@ -8456,6 +9802,16 @@
             "classId": "falcon_knight",
             "displayName": "Falcon Knight",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 10,
+              "magic": 10,
+              "skill": 10,
+              "speed": 15,
+              "luck": 20,
+              "defense": 0,
+              "resistance": 20
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 28,
@@ -8490,6 +9846,16 @@
             "classId": "kinshi_knight",
             "displayName": "Kinshi Knight",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 5,
+              "magic": 0,
+              "skill": 15,
+              "speed": 15,
+              "luck": 15,
+              "defense": 0,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 50,
               "strength": 27,
@@ -8521,6 +9887,16 @@
         "classId": "sky_knight",
         "displayName": "Sky Knight",
         "tier": "base",
+        "growthRates": {
+          "hp": 0,
+          "strength": 10,
+          "magic": 0,
+          "skill": 10,
+          "speed": 15,
+          "luck": 20,
+          "defense": 0,
+          "resistance": 20
+        },
         "maximumStats": {
           "hp": 35,
           "strength": 19,
@@ -8559,6 +9935,16 @@
             "classId": "spear_master",
             "displayName": "Spear Master",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 15,
+              "strength": 15,
+              "magic": 0,
+              "skill": 15,
+              "speed": 15,
+              "luck": 5,
+              "defense": 10,
+              "resistance": 5
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 34,
@@ -8592,6 +9978,16 @@
             "classId": "basara",
             "displayName": "Basara",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 10,
+              "magic": 10,
+              "skill": 10,
+              "speed": 10,
+              "luck": 15,
+              "defense": 5,
+              "resistance": 10
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 31,
@@ -8623,6 +10019,16 @@
         "classId": "spear_fighter",
         "displayName": "Spear Fighter",
         "tier": "base",
+        "growthRates": {
+          "hp": 15,
+          "strength": 15,
+          "magic": 0,
+          "skill": 15,
+          "speed": 15,
+          "luck": 5,
+          "defense": 10,
+          "resistance": 5
+        },
         "maximumStats": {
           "hp": 40,
           "strength": 22,
@@ -8661,6 +10067,16 @@
             "classId": "strategist",
             "displayName": "Strategist",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 0,
+              "magic": 15,
+              "skill": 5,
+              "speed": 10,
+              "luck": 20,
+              "defense": 0,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 45,
               "strength": 25,
@@ -8695,6 +10111,16 @@
             "classId": "attendant",
             "displayName": "Maid / Butler",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 10,
+              "magic": 10,
+              "skill": 15,
+              "speed": 15,
+              "luck": 10,
+              "defense": 5,
+              "resistance": 10
+            },
             "maximumStats": {
               "hp": 50,
               "strength": 28,
@@ -8726,6 +10152,16 @@
         "classId": "troubadour",
         "displayName": "Troubadour",
         "tier": "base",
+        "growthRates": {
+          "hp": 0,
+          "strength": 0,
+          "magic": 10,
+          "skill": 20,
+          "speed": 10,
+          "luck": 15,
+          "defense": 0,
+          "resistance": 15
+        },
         "maximumStats": {
           "hp": 35,
           "strength": 16,
@@ -8773,6 +10209,16 @@
             "classId": "merchant",
             "displayName": "Merchant",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 20,
+              "magic": 0,
+              "skill": 10,
+              "speed": 5,
+              "luck": 15,
+              "defense": 10,
+              "resistance": 5
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 33,
@@ -8807,6 +10253,16 @@
             "classId": "master_of_arms",
             "displayName": "Master of Arms",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 15,
+              "magic": 0,
+              "skill": 10,
+              "speed": 10,
+              "luck": 10,
+              "defense": 10,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 33,
@@ -8839,6 +10295,16 @@
         "classId": "villager",
         "displayName": "Villager",
         "tier": "base",
+        "growthRates": {
+          "hp": 10,
+          "strength": 10,
+          "magic": 0,
+          "skill": 10,
+          "speed": 10,
+          "luck": 20,
+          "defense": 10,
+          "resistance": 0
+        },
         "maximumStats": {
           "hp": 35,
           "strength": 19,
@@ -8880,6 +10346,16 @@
             "classId": "wolfssegner",
             "displayName": "Wolfssegner",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 20,
+              "strength": 20,
+              "magic": 0,
+              "skill": 5,
+              "speed": 15,
+              "luck": 5,
+              "defense": 10,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 65,
               "strength": 36,
@@ -8910,6 +10386,16 @@
         "classId": "wolfskin",
         "displayName": "Wolfskin",
         "tier": "base",
+        "growthRates": {
+          "hp": 20,
+          "strength": 20,
+          "magic": 0,
+          "skill": 5,
+          "speed": 15,
+          "luck": 5,
+          "defense": 10,
+          "resistance": 0
+        },
         "maximumStats": {
           "hp": 45,
           "strength": 24,
@@ -8948,6 +10434,16 @@
             "classId": "wyvern_lord",
             "displayName": "Wyvern Lord",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 10,
+              "strength": 15,
+              "magic": 0,
+              "skill": 15,
+              "speed": 10,
+              "luck": 5,
+              "defense": 20,
+              "resistance": 0
+            },
             "maximumStats": {
               "hp": 60,
               "strength": 33,
@@ -8982,6 +10478,16 @@
             "classId": "malig_knight",
             "displayName": "Malig Knight",
             "tier": "advanced",
+            "growthRates": {
+              "hp": 0,
+              "strength": 15,
+              "magic": 15,
+              "skill": 10,
+              "speed": 5,
+              "luck": 0,
+              "defense": 10,
+              "resistance": 15
+            },
             "maximumStats": {
               "hp": 55,
               "strength": 31,
@@ -9013,6 +10519,16 @@
         "classId": "wyvern_rider",
         "displayName": "Wyvern Rider",
         "tier": "base",
+        "growthRates": {
+          "hp": 10,
+          "strength": 15,
+          "magic": 5,
+          "skill": 10,
+          "speed": 10,
+          "luck": 5,
+          "defense": 20,
+          "resistance": 0
+        },
         "maximumStats": {
           "hp": 40,
           "strength": 22,
@@ -9050,6 +10566,16 @@
         "classId": "songstress",
         "displayName": "Songstress",
         "tier": "special",
+        "growthRates": {
+          "hp": 0,
+          "strength": 10,
+          "magic": 0,
+          "skill": 20,
+          "speed": 20,
+          "luck": 20,
+          "defense": 0,
+          "resistance": 0
+        },
         "maximumStats": {
           "hp": 45,
           "strength": 28,
@@ -9195,17 +10721,13 @@
           "weaponRanks": {
             "sword": "E"
           },
-          "startingSkillIds": [
-            "nobility"
-          ],
           "provenance": [
             {
               "sourceId": "fe14-workbook-cn",
               "locator": "神威!C24:J28",
               "fields": [
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "candidate"
             },
@@ -9221,8 +10743,7 @@
               "sourceId": "fewiki-corrin",
               "locator": "Fire Emblem Fates > Starting stats and growth rates",
               "fields": [
-                "stats",
-                "startingSkillIds"
+                "stats"
               ],
               "reviewStatus": "corroborated"
             },
@@ -14602,10 +16123,6 @@
           "weaponRanks": {
             "lance": "E"
           },
-          "startingSkillIds": [
-            "healing_descant",
-            "luck_plus_4"
-          ],
           "provenance": [
             {
               "sourceId": "fe14-workbook-cn",
@@ -14614,8 +16131,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             },
@@ -14626,8 +16142,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -16235,8 +17750,7 @@
             "dagger": "D",
             "staff": "D"
           },
-          "startingSkillIds": [
-            "devoted_partner",
+          "startingSkillOverrideIds": [
             "resistance_plus_2",
             "demoiselle"
           ],
@@ -16265,7 +17779,7 @@
               "fields": [
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             }
@@ -16302,11 +17816,9 @@
               "precision": "approximate"
             }
           },
-          "startingSkillIds": [
-            "devoted_partner",
+          "startingSkillOverrideIds": [
             "resistance_plus_2",
-            "demoiselle",
-            "live_to_serve"
+            "demoiselle"
           ],
           "provenance": [
             {
@@ -16333,7 +17845,7 @@
               "fields": [
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -18054,8 +19566,7 @@
             "dagger": "D",
             "staff": "D"
           },
-          "startingSkillIds": [
-            "evasive_partner",
+          "startingSkillOverrideIds": [
             "resistance_plus_2",
             "gentilhomme"
           ],
@@ -18076,7 +19587,7 @@
               "fields": [
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             }
@@ -18113,11 +19624,9 @@
               "precision": "approximate"
             }
           },
-          "startingSkillIds": [
-            "evasive_partner",
+          "startingSkillOverrideIds": [
             "resistance_plus_2",
-            "gentilhomme",
-            "live_to_serve"
+            "gentilhomme"
           ],
           "provenance": [
             {
@@ -18136,7 +19645,7 @@
               "fields": [
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -19756,10 +21265,6 @@
               "lance": "E"
             }
           },
-          "startingSkillIds": [
-            "vow_of_friendship",
-            "elbow_room"
-          ],
           "provenance": [
             {
               "sourceId": "fe14-workbook-cn",
@@ -19776,8 +21281,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -19802,11 +21306,6 @@
             "sword": "B",
             "lance": "B"
           },
-          "startingSkillIds": [
-            "vow_of_friendship",
-            "elbow_room",
-            "shelter"
-          ],
           "provenance": [
             {
               "sourceId": "fe14-workbook-cn",
@@ -19823,8 +21322,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -21620,10 +23118,6 @@
           "weaponRanks": {
             "dagger": "D"
           },
-          "startingSkillIds": [
-            "miraculous_save",
-            "locktouch"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -21640,8 +23134,7 @@
               "locator": "Fire Emblem Fates > Prologue > Playable",
               "fields": [
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -21665,10 +23158,6 @@
           "weaponRanks": {
             "dagger": "D"
           },
-          "startingSkillIds": [
-            "miraculous_save",
-            "locktouch"
-          ],
           "chapter5Carryover": {
             "sourceAvailabilityId": "kaze.common",
             "checkpoint": "end_of_chapter_5",
@@ -21724,10 +23213,6 @@
           "weaponRanks": {
             "dagger": "C"
           },
-          "startingSkillIds": [
-            "miraculous_save",
-            "locktouch"
-          ],
           "chapter5Carryover": {
             "sourceAvailabilityId": "kaze.common",
             "checkpoint": "end_of_chapter_5",
@@ -21745,7 +23230,6 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds",
                 "chapter5Carryover.levelCalculation",
                 "chapter5Carryover.statCalculation"
               ],
@@ -21779,10 +23263,6 @@
           "weaponRanks": {
             "dagger": "D"
           },
-          "startingSkillIds": [
-            "miraculous_save",
-            "locktouch"
-          ],
           "chapter5Carryover": {
             "sourceAvailabilityId": "kaze.common",
             "checkpoint": "end_of_chapter_5",
@@ -21822,8 +23302,7 @@
               "sourceId": "fewiki-kaze",
               "locator": "Fire Emblem Fates > Revelation > Starting stats and growth rates",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -23274,10 +24753,6 @@
           "weaponRanks": {
             "lance": "E"
           },
-          "startingSkillIds": [
-            "forager",
-            "aptitude"
-          ],
           "provenance": [
             {
               "sourceId": "fe14-workbook-cn",
@@ -23286,8 +24761,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             },
@@ -23298,8 +24772,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -24938,11 +26411,9 @@
               "staff": "C"
             }
           },
-          "startingSkillIds": [
-            "highwayman",
+          "startingSkillOverrideIds": [
             "locktouch",
-            "movement_plus_1",
-            "lucky_seven"
+            "movement_plus_1"
           ],
           "provenance": [
             {
@@ -24953,7 +26424,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -24965,7 +26436,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             }
@@ -24990,8 +26461,7 @@
             "bow": "C",
             "staff": "D"
           },
-          "startingSkillIds": [
-            "highwayman",
+          "startingSkillOverrideIds": [
             "locktouch",
             "movement_plus_1"
           ],
@@ -25004,7 +26474,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -25016,7 +26486,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             }
@@ -25562,8 +27032,7 @@
           "weaponRanks": {
             "sword": "B"
           },
-          "startingSkillIds": [
-            "bushido",
+          "startingSkillOverrideIds": [
             "vantage",
             "duelists_blow"
           ],
@@ -25583,7 +27052,7 @@
               "locator": "Ryoma character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -25595,7 +27064,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -25622,8 +27091,7 @@
           "weaponRanks": {
             "sword": "B"
           },
-          "startingSkillIds": [
-            "bushido",
+          "startingSkillOverrideIds": [
             "vantage",
             "duelists_blow"
           ],
@@ -25643,7 +27111,7 @@
               "locator": "Ryoma character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -25655,7 +27123,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -26918,10 +28386,6 @@
           "weaponRanks": {
             "lance": "C"
           },
-          "startingSkillIds": [
-            "rallying_cry",
-            "darting_blow"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -26937,8 +28401,7 @@
               "sourceId": "serenes-fe14-hoshidan-other-data",
               "locator": "Hinoka character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -26949,8 +28412,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -26974,11 +28436,6 @@
           "weaponRanks": {
             "lance": "B"
           },
-          "startingSkillIds": [
-            "rallying_cry",
-            "darting_blow",
-            "camaraderie"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -26994,8 +28451,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Hinoka character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -27006,8 +28462,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -28245,11 +29700,6 @@
           "weaponRanks": {
             "bow": "C"
           },
-          "startingSkillIds": [
-            "competitive",
-            "skill_2",
-            "quick_draw"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -28265,8 +29715,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Takumi character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -28277,8 +29726,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -29518,10 +30966,6 @@
           "weaponRanks": {
             "staff": "E"
           },
-          "startingSkillIds": [
-            "quiet_strength",
-            "miracle"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -29537,8 +30981,7 @@
               "sourceId": "serenes-fe14-hoshidan-other-data",
               "locator": "Sakura character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -29549,8 +30992,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -29574,10 +31016,6 @@
           "weaponRanks": {
             "staff": "D"
           },
-          "startingSkillIds": [
-            "quiet_strength",
-            "miracle"
-          ],
           "chapter5Carryover": {
             "sourceAvailabilityId": "sakura.chapter_5",
             "checkpoint": "end_of_chapter_5",
@@ -29601,8 +31039,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Sakura character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -29613,8 +31050,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             },
@@ -30839,10 +32275,6 @@
           "weaponRanks": {
             "dagger": "C"
           },
-          "startingSkillIds": [
-            "pyrotechnics",
-            "locktouch"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -30858,8 +32290,7 @@
               "sourceId": "serenes-fe14-hoshidan-other-data",
               "locator": "Saizo character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -30870,8 +32301,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -30895,10 +32325,6 @@
           "weaponRanks": {
             "dagger": "C"
           },
-          "startingSkillIds": [
-            "pyrotechnics",
-            "locktouch"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -30914,8 +32340,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Saizo character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -30926,8 +32351,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -32139,11 +33563,6 @@
           "weaponRanks": {
             "dagger": "C"
           },
-          "startingSkillIds": [
-            "shuriken_mastery",
-            "locktouch",
-            "poison_strike"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -32159,8 +33578,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Kagero character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -32171,8 +33589,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -33400,10 +34817,6 @@
           "weaponRanks": {
             "bow": "D"
           },
-          "startingSkillIds": [
-            "optimist",
-            "skill_2"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -33419,8 +34832,7 @@
               "sourceId": "serenes-fe14-hoshidan-other-data",
               "locator": "Setsuna character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -33431,8 +34843,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -33456,11 +34867,6 @@
           "weaponRanks": {
             "bow": "C"
           },
-          "startingSkillIds": [
-            "optimist",
-            "skill_2",
-            "quick_draw"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -33476,8 +34882,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Setsuna character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -33488,8 +34893,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -34711,10 +36115,6 @@
           "weaponRanks": {
             "staff": "D"
           },
-          "startingSkillIds": [
-            "divine_retribution",
-            "miracle"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -34730,8 +36130,7 @@
               "sourceId": "serenes-fe14-hoshidan-other-data",
               "locator": "Azama character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -34742,8 +36141,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -34767,11 +36165,6 @@
           "weaponRanks": {
             "staff": "C"
           },
-          "startingSkillIds": [
-            "divine_retribution",
-            "miracle",
-            "rally_luck"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -34787,8 +36180,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Azama character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -34799,8 +36191,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -36012,11 +37403,6 @@
           "weaponRanks": {
             "sword": "C"
           },
-          "startingSkillIds": [
-            "triple_threat",
-            "duelists_blow",
-            "vantage"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -36032,8 +37418,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Hinata character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -36044,8 +37429,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -37251,11 +38635,6 @@
           "weaponRanks": {
             "lance": "C"
           },
-          "startingSkillIds": [
-            "nohr_enmity",
-            "seal_defense",
-            "swap"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -37271,8 +38650,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Oboro character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -37283,8 +38661,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -38504,10 +39881,6 @@
           "weaponRanks": {
             "sword": "D"
           },
-          "startingSkillIds": [
-            "fearsome_blow",
-            "duelists_blow"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -38523,8 +39896,7 @@
               "sourceId": "serenes-fe14-hoshidan-other-data",
               "locator": "Hana character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -38535,8 +39907,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -38560,10 +39931,6 @@
           "weaponRanks": {
             "sword": "D"
           },
-          "startingSkillIds": [
-            "fearsome_blow",
-            "duelists_blow"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -38579,8 +39946,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Hana character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -38591,8 +39957,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -39824,10 +41189,6 @@
           "weaponRanks": {
             "lance": "D"
           },
-          "startingSkillIds": [
-            "perfectionist",
-            "darting_blow"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -39843,8 +41204,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Subaki character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -39855,8 +41215,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -41056,10 +42415,6 @@
           "weaponRanks": {
             "tome": "D"
           },
-          "startingSkillIds": [
-            "pride",
-            "magic_2"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -41075,8 +42430,7 @@
               "sourceId": "serenes-fe14-hoshidan-other-data",
               "locator": "Hayato character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -41087,8 +42441,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -41112,10 +42465,6 @@
           "weaponRanks": {
             "tome": "D"
           },
-          "startingSkillIds": [
-            "pride",
-            "magic_2"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -41131,8 +42480,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Hayato character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -41143,8 +42491,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -42395,10 +43742,6 @@
           "weaponRanks": {
             "axe": "E"
           },
-          "startingSkillIds": [
-            "fiery_blood",
-            "seal_resistance"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -42414,8 +43757,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Rinkah character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -42426,8 +43768,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -43628,10 +44969,6 @@
           "weaponRanks": {
             "tome": "D"
           },
-          "startingSkillIds": [
-            "capture",
-            "magic_2"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -43647,8 +44984,7 @@
               "sourceId": "serenes-fe14-hoshidan-other-data",
               "locator": "Orochi character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -43659,8 +44995,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -43684,10 +45019,6 @@
           "weaponRanks": {
             "tome": "D"
           },
-          "startingSkillIds": [
-            "capture",
-            "magic_2"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -43703,8 +45034,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Orochi character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -43715,8 +45045,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -44909,11 +46238,6 @@
           "weaponRanks": {
             "beaststone": "C"
           },
-          "startingSkillIds": [
-            "reciprocity",
-            "evenhanded",
-            "beastbane"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-hoshidan-base-stats",
@@ -44929,8 +46253,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Kaden character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -44941,8 +46264,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -46158,8 +47480,7 @@
             "lance": "C",
             "bow": "D"
           },
-          "startingSkillIds": [
-            "morbid_celebration",
+          "startingSkillOverrideIds": [
             "darting_blow",
             "camaraderie"
           ],
@@ -46179,7 +47500,7 @@
               "locator": "Reina character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -46191,7 +47512,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -46216,8 +47537,7 @@
             "lance": "C",
             "bow": "D"
           },
-          "startingSkillIds": [
-            "morbid_celebration",
+          "startingSkillOverrideIds": [
             "darting_blow",
             "camaraderie"
           ],
@@ -46237,7 +47557,7 @@
               "locator": "Reina character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -46249,7 +47569,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -46701,9 +48021,8 @@
             "lance": "D",
             "axe": "C"
           },
-          "startingSkillIds": [
-            "in_extremis",
-            "strength_2",
+          "startingSkillOverrideIds": [
+            "strength_plus_2",
             "lunge"
           ],
           "provenance": [
@@ -46722,7 +48041,7 @@
               "locator": "Scarlet character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -46734,7 +48053,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -46759,9 +48078,8 @@
             "lance": "D",
             "axe": "C"
           },
-          "startingSkillIds": [
-            "in_extremis",
-            "strength_2",
+          "startingSkillOverrideIds": [
+            "strength_plus_2",
             "lunge"
           ],
           "provenance": [
@@ -46780,7 +48098,7 @@
               "locator": "Scarlet character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -46792,7 +48110,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -47284,8 +48602,7 @@
             "sword": "C",
             "lance": "D"
           },
-          "startingSkillIds": [
-            "chivalry",
+          "startingSkillOverrideIds": [
             "elbow_room",
             "shelter"
           ],
@@ -47305,7 +48622,7 @@
               "locator": "Xander character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -47317,7 +48634,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -47345,8 +48662,7 @@
             "sword": "B",
             "lance": "D"
           },
-          "startingSkillIds": [
-            "chivalry",
+          "startingSkillOverrideIds": [
             "elbow_room",
             "shelter"
           ],
@@ -47366,7 +48682,7 @@
               "locator": "Xander character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -47378,7 +48694,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -48629,8 +49945,7 @@
             "axe": "C",
             "tome": "D"
           },
-          "startingSkillIds": [
-            "roses_thorns",
+          "startingSkillOverrideIds": [
             "strength_plus_2",
             "lunge"
           ],
@@ -48650,7 +49965,7 @@
               "locator": "Exclusive Characters > Camilla",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -48662,7 +49977,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             }
@@ -48690,8 +50005,7 @@
             "axe": "C",
             "tome": "D"
           },
-          "startingSkillIds": [
-            "roses_thorns",
+          "startingSkillOverrideIds": [
             "strength_plus_2",
             "lunge"
           ],
@@ -48711,7 +50025,7 @@
               "locator": "Exclusive Characters > Camilla",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -48723,7 +50037,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             }
@@ -49908,8 +51222,7 @@
             "sword": "D",
             "tome": "C"
           },
-          "startingSkillIds": [
-            "pragmatic",
+          "startingSkillOverrideIds": [
             "heartseeker",
             "malefic_aura"
           ],
@@ -49929,7 +51242,7 @@
               "locator": "Leo character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -49941,7 +51254,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -49969,8 +51282,7 @@
             "sword": "D",
             "tome": "C"
           },
-          "startingSkillIds": [
-            "pragmatic",
+          "startingSkillOverrideIds": [
             "heartseeker",
             "malefic_aura"
           ],
@@ -49990,7 +51302,7 @@
               "locator": "Leo character data",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -50002,7 +51314,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -51257,10 +52569,6 @@
           "weaponRanks": {
             "staff": "D"
           },
-          "startingSkillIds": [
-            "lilys_poise",
-            "resistance_plus_2"
-          ],
           "provenance": [
             {
               "sourceId": "fandom-fe14-elise",
@@ -51269,8 +52577,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -51294,10 +52601,6 @@
           "weaponRanks": {
             "staff": "D"
           },
-          "startingSkillIds": [
-            "lilys_poise",
-            "resistance_plus_2"
-          ],
           "provenance": [
             {
               "sourceId": "fe14-workbook-cn",
@@ -51306,8 +52609,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             },
@@ -51325,8 +52627,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Elise",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -51337,8 +52638,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -51362,10 +52662,6 @@
           "weaponRanks": {
             "staff": "D"
           },
-          "startingSkillIds": [
-            "lilys_poise",
-            "resistance_plus_2"
-          ],
           "provenance": [
             {
               "sourceId": "fe14-workbook-cn",
@@ -51374,8 +52670,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             },
@@ -51393,8 +52688,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Exclusive Characters > Elise",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -51405,8 +52699,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -52656,11 +53949,6 @@
           "weaponRanks": {
             "sword": "C"
           },
-          "startingSkillIds": [
-            "fancy_footwork",
-            "good_fortune",
-            "strong_riposte"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-nohrian-base-stats",
@@ -52676,8 +53964,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Laslow",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -52688,8 +53975,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -52713,11 +53999,6 @@
           "weaponRanks": {
             "sword": "C"
           },
-          "startingSkillIds": [
-            "fancy_footwork",
-            "good_fortune",
-            "strong_riposte"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -52733,8 +54014,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Laslow",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -52745,8 +54025,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -53924,11 +55203,6 @@
             "sword": "D",
             "lance": "C"
           },
-          "startingSkillIds": [
-            "bloodthirst",
-            "elbow_room",
-            "shelter"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-nohrian-base-stats",
@@ -53944,8 +55218,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Peri",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -53956,8 +55229,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -53982,11 +55254,6 @@
             "sword": "D",
             "lance": "C"
           },
-          "startingSkillIds": [
-            "bloodthirst",
-            "elbow_room",
-            "shelter"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -54002,8 +55269,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Peri",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -54014,8 +55280,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -55205,11 +56470,6 @@
               }
             }
           },
-          "startingSkillIds": [
-            "fierce_rival",
-            "good_fortune",
-            "strong_riposte"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -55225,8 +56485,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Selena",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -55237,8 +56496,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -56414,10 +57672,6 @@
               }
             }
           },
-          "startingSkillIds": [
-            "opportunist",
-            "strength_plus_2"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -56433,8 +57687,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Beruka",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -56445,8 +57698,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -57626,10 +58878,6 @@
           "weaponRanks": {
             "tome": "D"
           },
-          "startingSkillIds": [
-            "aching_blood",
-            "heartseeker"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-nohrian-base-stats",
@@ -57645,8 +58893,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Odin",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -57657,8 +58904,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -57682,11 +58928,6 @@
           "weaponRanks": {
             "tome": "C"
           },
-          "startingSkillIds": [
-            "aching_blood",
-            "heartseeker",
-            "malefic_aura"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -57702,8 +58943,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Odin",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -57714,8 +58954,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -58894,10 +60133,6 @@
           "weaponRanks": {
             "bow": "D"
           },
-          "startingSkillIds": [
-            "kidnap",
-            "locktouch"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-nohrian-base-stats",
@@ -58913,8 +60148,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Niles",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -58925,8 +60159,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -58950,11 +60183,6 @@
           "weaponRanks": {
             "bow": "C"
           },
-          "startingSkillIds": [
-            "kidnap",
-            "locktouch",
-            "movement_plus_1"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -58970,8 +60198,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Niles",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -58982,8 +60209,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -60208,10 +61434,6 @@
           "weaponRanks": {
             "lance": "D"
           },
-          "startingSkillIds": [
-            "puissance",
-            "defense_plus_2"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-nohrian-base-stats",
@@ -60227,8 +61449,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Effie",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -60239,8 +61460,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -60264,10 +61484,6 @@
           "weaponRanks": {
             "lance": "D"
           },
-          "startingSkillIds": [
-            "puissance",
-            "defense_plus_2"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -60283,8 +61499,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Exclusive Characters > Effie",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -60295,8 +61510,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -61634,10 +62848,6 @@
           "weaponRanks": {
             "axe": "D"
           },
-          "startingSkillIds": [
-            "misfortunate",
-            "hp_plus_5"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-nohrian-base-stats",
@@ -61653,8 +62863,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Arthur",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -61665,8 +62874,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -61690,10 +62898,6 @@
           "weaponRanks": {
             "axe": "D"
           },
-          "startingSkillIds": [
-            "misfortunate",
-            "hp_plus_5"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -61709,8 +62913,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Exclusive Characters > Arthur",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -61721,8 +62924,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -62968,10 +64170,6 @@
           "weaponRanks": {
             "tome": "C"
           },
-          "startingSkillIds": [
-            "countercurse",
-            "heartseeker"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -62987,8 +64185,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Nyx",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -62999,8 +64196,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -64196,11 +65392,6 @@
           "weaponRanks": {
             "axe": "C"
           },
-          "startingSkillIds": [
-            "unmask",
-            "hp_plus_5",
-            "gamble"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -64216,8 +65407,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Charlotte",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -64228,8 +65418,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -65404,11 +66593,6 @@
           "weaponRanks": {
             "lance": "C"
           },
-          "startingSkillIds": [
-            "fierce_mien",
-            "defense_plus_2",
-            "natural_cover"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-base-stats",
@@ -65424,8 +66608,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Benny",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -65436,8 +66619,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             }
@@ -66586,11 +67768,6 @@
           "weaponRanks": {
             "beaststone": "C"
           },
-          "startingSkillIds": [
-            "collector",
-            "odd_shaped",
-            "beastbane"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-nohrian-base-stats",
@@ -66606,8 +67783,7 @@
               "sourceId": "serenes-fe14-revelation-character-data",
               "locator": "Keaton character data",
               "fields": [
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "accepted"
             },
@@ -66618,8 +67794,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -67975,8 +69150,7 @@
             "lance": "C",
             "axe": "D"
           },
-          "startingSkillIds": [
-            "forceful_partner",
+          "startingSkillOverrideIds": [
             "elbow_room",
             "shelter"
           ],
@@ -67989,7 +69163,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -68008,7 +69182,7 @@
               "locator": "Shared Characters > Gunter (early)",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -68017,7 +69191,7 @@
               "locator": "Shared Characters > Gunter",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -68029,7 +69203,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -68055,11 +69229,9 @@
             "lance": "B",
             "axe": "C"
           },
-          "startingSkillIds": [
-            "forceful_partner",
+          "startingSkillOverrideIds": [
             "elbow_room",
-            "shelter",
-            "luna"
+            "shelter"
           ],
           "provenance": [
             {
@@ -68070,7 +69242,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -68089,7 +69261,7 @@
               "locator": "Shared Characters > Gunter (Conquest Chapter 15)",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -68101,7 +69273,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -68859,11 +70031,9 @@
             "dagger": "B",
             "staff": "B"
           },
-          "startingSkillIds": [
-            "icy_blood",
+          "startingSkillOverrideIds": [
             "resistance_plus_2",
-            "demoiselle",
-            "live_to_serve"
+            "demoiselle"
           ],
           "provenance": [
             {
@@ -68874,7 +70044,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -68892,7 +70062,7 @@
               "sourceId": "serenes-fe14-nohrian-other-data",
               "locator": "Exclusive Characters > Flora",
               "fields": [
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -68904,7 +70074,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -68929,11 +70099,9 @@
             "dagger": "C",
             "staff": "B"
           },
-          "startingSkillIds": [
-            "icy_blood",
+          "startingSkillOverrideIds": [
             "resistance_plus_2",
-            "demoiselle",
-            "live_to_serve"
+            "demoiselle"
           ],
           "provenance": [
             {
@@ -68944,7 +70112,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -68956,7 +70124,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -69580,11 +70748,9 @@
             "dagger": "B",
             "bow": "B"
           },
-          "startingSkillIds": [
-            "perspicacious",
+          "startingSkillOverrideIds": [
             "potent_potion",
-            "quick_salve",
-            "golembane"
+            "quick_salve"
           ],
           "provenance": [
             {
@@ -69595,7 +70761,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -69614,7 +70780,7 @@
               "locator": "Exclusive Characters > Yukimura",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -69626,7 +70792,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -70320,11 +71486,9 @@
             "tome": "B",
             "staff": "C"
           },
-          "startingSkillIds": [
-            "peacebringer",
+          "startingSkillOverrideIds": [
             "miracle",
-            "rally_luck",
-            "rally_magic"
+            "rally_luck"
           ],
           "provenance": [
             {
@@ -70335,7 +71499,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -70347,7 +71511,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -70382,11 +71546,9 @@
             "tome": "B",
             "staff": "C"
           },
-          "startingSkillIds": [
-            "peacebringer",
+          "startingSkillOverrideIds": [
             "miracle",
-            "rally_luck",
-            "rally_magic"
+            "rally_luck"
           ],
           "provenance": [
             {
@@ -70395,7 +71557,7 @@
               "fields": [
                 "classId",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -70978,11 +72140,9 @@
             "lance": "C",
             "axe": "C"
           },
-          "startingSkillIds": [
-            "wind_disciple",
+          "startingSkillOverrideIds": [
             "duelists_blow",
-            "vantage",
-            "seal_strength"
+            "vantage"
           ],
           "provenance": [
             {
@@ -70993,7 +72153,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             },
@@ -71012,7 +72172,7 @@
               "locator": "Exclusive Characters > Fuga",
               "fields": [
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "accepted"
             },
@@ -71024,7 +72184,7 @@
                 "classId",
                 "stats",
                 "weaponRanks",
-                "startingSkillIds"
+                "startingSkillOverrideIds"
               ],
               "reviewStatus": "corroborated"
             }
@@ -71605,11 +72765,6 @@
           "weaponRanks": {
             "bow": "C"
           },
-          "startingSkillIds": [
-            "make_a_killing",
-            "locktouch",
-            "movement_plus_1"
-          ],
           "provenance": [
             {
               "sourceId": "serenes-fe14-other-base-stats",
@@ -71628,8 +72783,7 @@
                 "level",
                 "classId",
                 "stats",
-                "weaponRanks",
-                "startingSkillIds"
+                "weaponRanks"
               ],
               "reviewStatus": "corroborated"
             }
@@ -75109,16 +76263,6 @@
           "inventory": [
             "dragonstone"
           ],
-          "startingClassGrowthRates": {
-            "hp": 15,
-            "strength": 15,
-            "magic": 10,
-            "skill": 10,
-            "speed": 10,
-            "luck": 10,
-            "defense": 10,
-            "resistance": 5
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -75222,16 +76366,6 @@
                   "defense": 6,
                   "resistance": 6
                 },
-                "classGrowthRates": {
-                  "hp": 15,
-                  "strength": 10,
-                  "magic": 15,
-                  "skill": 5,
-                  "speed": 15,
-                  "luck": 5,
-                  "defense": 5,
-                  "resistance": 15
-                },
                 "promotionGains": {
                   "hp": 1,
                   "strength": 1,
@@ -75250,13 +76384,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "draconic_hex",
-                    "displayName": "Draconic Hex"
+                    "skillId": "draconic_hex"
                   },
                   {
                     "level": 15,
-                    "skillId": "nohrian_trust",
-                    "displayName": "Nohrian Trust"
+                    "skillId": "nohrian_trust"
                   }
                 ]
               },
@@ -75277,16 +76409,6 @@
                   "defense": 7,
                   "resistance": 3
                 },
-                "classGrowthRates": {
-                  "hp": 15,
-                  "strength": 15,
-                  "magic": 10,
-                  "skill": 10,
-                  "speed": 10,
-                  "luck": 10,
-                  "defense": 15,
-                  "resistance": 0
-                },
                 "promotionGains": {
                   "hp": 2,
                   "strength": 3,
@@ -75305,13 +76427,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "dragon_ward",
-                    "displayName": "Dragon Ward"
+                    "skillId": "dragon_ward"
                   },
                   {
                     "level": 15,
-                    "skillId": "hoshidan_unity",
-                    "displayName": "Hoshidan Unity"
+                    "skillId": "hoshidan_unity"
                   }
                 ]
               }
@@ -75369,7 +76489,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Nohr Prince / Princess and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -76557,16 +77676,6 @@
           "inventory": [
             "iron_naginata"
           ],
-          "startingClassGrowthRates": {
-            "hp": 0,
-            "strength": 10,
-            "magic": 0,
-            "skill": 10,
-            "speed": 15,
-            "luck": 20,
-            "defense": 0,
-            "resistance": 20
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -76666,16 +77775,6 @@
                   "defense": 5,
                   "resistance": 9
                 },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 10,
-                  "magic": 10,
-                  "skill": 10,
-                  "speed": 15,
-                  "luck": 20,
-                  "defense": 0,
-                  "resistance": 20
-                },
                 "promotionGains": {
                   "hp": 2,
                   "strength": 2,
@@ -76693,13 +77792,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rally_speed",
-                    "displayName": "Rally Speed"
+                    "skillId": "rally_speed"
                   },
                   {
                     "level": 15,
-                    "skillId": "warding_blow",
-                    "displayName": "Warding Blow"
+                    "skillId": "warding_blow"
                   }
                 ]
               },
@@ -76715,16 +77812,6 @@
                   "luck": 5,
                   "defense": 4,
                   "resistance": 7
-                },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 5,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 15,
-                  "luck": 15,
-                  "defense": 0,
-                  "resistance": 15
                 },
                 "promotionGains": {
                   "hp": 1,
@@ -76743,13 +77830,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "air_superiority",
-                    "displayName": "Air Superiority"
+                    "skillId": "air_superiority"
                   },
                   {
                     "level": 15,
-                    "skillId": "amaterasu",
-                    "displayName": "Amaterasu"
+                    "skillId": "amaterasu"
                   }
                 ]
               }
@@ -76807,7 +77892,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Sky Knight and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -77656,16 +78740,6 @@
             "sun_festal",
             "physic"
           ],
-          "startingClassGrowthRates": {
-            "hp": 0,
-            "strength": 0,
-            "magic": 10,
-            "skill": 20,
-            "speed": 10,
-            "luck": 15,
-            "defense": 0,
-            "resistance": 15
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -77765,16 +78839,6 @@
                   "defense": 5,
                   "resistance": 4
                 },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 10,
-                  "magic": 10,
-                  "skill": 15,
-                  "speed": 15,
-                  "luck": 10,
-                  "defense": 5,
-                  "resistance": 10
-                },
                 "promotionGains": {
                   "hp": 3,
                   "strength": 4,
@@ -77792,13 +78856,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "live_to_serve",
-                    "displayName": "Live to Serve"
+                    "skillId": "live_to_serve"
                   },
                   {
                     "level": 15,
-                    "skillId": "tomebreaker",
-                    "displayName": "Tomebreaker"
+                    "skillId": "tomebreaker"
                   }
                 ]
               },
@@ -77814,16 +78876,6 @@
                   "luck": 5,
                   "defense": 2,
                   "resistance": 7
-                },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 0,
-                  "magic": 15,
-                  "skill": 5,
-                  "speed": 10,
-                  "luck": 20,
-                  "defense": 0,
-                  "resistance": 15
                 },
                 "promotionGains": {
                   "hp": 1,
@@ -77842,13 +78894,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rally_resistance",
-                    "displayName": "Rally Resistance"
+                    "skillId": "rally_resistance"
                   },
                   {
                     "level": 15,
-                    "skillId": "inspiration",
-                    "displayName": "Inspiration"
+                    "skillId": "inspiration"
                   }
                 ]
               }
@@ -77892,14 +78942,6 @@
               "reviewStatus": "accepted"
             },
             {
-              "sourceId": "serenes-fe14-nohrian-class-growth-rates",
-              "locator": "Troubadour",
-              "fields": [
-                "startingClassGrowthRates"
-              ],
-              "reviewStatus": "accepted"
-            },
-            {
               "sourceId": "fewiki-dwyer-stats",
               "locator": "Fire Emblem Fates > Base stats, chapter scaling, promotion gains, and promoted skills",
               "fields": [
@@ -77917,14 +78959,6 @@
               "locator": "Troubadour, Strategist, Maid / Butler",
               "fields": [
                 "offspringSeal.promotionOptions.classBaseStats"
-              ],
-              "reviewStatus": "accepted"
-            },
-            {
-              "sourceId": "serenes-fe14-nohrian-class-growth-rates",
-              "locator": "Strategist, Maid / Butler",
-              "fields": [
-                "offspringSeal.promotionOptions.classGrowthRates"
               ],
               "reviewStatus": "accepted"
             },
@@ -78746,16 +79780,6 @@
             "iron_sword",
             "vulnerary"
           ],
-          "startingClassGrowthRates": {
-            "hp": 10,
-            "strength": 15,
-            "magic": 0,
-            "skill": 10,
-            "speed": 10,
-            "luck": 15,
-            "defense": 10,
-            "resistance": 5
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -78855,16 +79879,6 @@
                   "defense": 7,
                   "resistance": 6
                 },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 15,
-                  "magic": 0,
-                  "skill": 10,
-                  "speed": 10,
-                  "luck": 15,
-                  "defense": 10,
-                  "resistance": 10
-                },
                 "promotionGains": {
                   "hp": 2,
                   "strength": 2,
@@ -78882,13 +79896,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "defender",
-                    "displayName": "Defender"
+                    "skillId": "defender"
                   },
                   {
                     "level": 15,
-                    "skillId": "aegis",
-                    "displayName": "Aegis"
+                    "skillId": "aegis"
                   }
                 ]
               },
@@ -78904,16 +79916,6 @@
                   "luck": 3,
                   "defense": 10,
                   "resistance": 2
-                },
-                "classGrowthRates": {
-                  "hp": 20,
-                  "strength": 20,
-                  "magic": 0,
-                  "skill": 10,
-                  "speed": 5,
-                  "luck": 5,
-                  "defense": 20,
-                  "resistance": 0
                 },
                 "promotionGains": {
                   "hp": 4,
@@ -78933,13 +79935,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "luna",
-                    "displayName": "Luna"
+                    "skillId": "luna"
                   },
                   {
                     "level": 15,
-                    "skillId": "armored_blow",
-                    "displayName": "Armored Blow"
+                    "skillId": "armored_blow"
                   }
                 ]
               }
@@ -78997,7 +79997,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Cavalier and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -79813,16 +80812,6 @@
           "inventory": [
             "iron_yumi"
           ],
-          "startingClassGrowthRates": {
-            "hp": 20,
-            "strength": 20,
-            "magic": 0,
-            "skill": 10,
-            "speed": 10,
-            "luck": 5,
-            "defense": 10,
-            "resistance": 5
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -79922,16 +80911,6 @@
                   "defense": 8,
                   "resistance": 5
                 },
-                "classGrowthRates": {
-                  "hp": 20,
-                  "strength": 20,
-                  "magic": 0,
-                  "skill": 10,
-                  "speed": 5,
-                  "luck": 15,
-                  "defense": 10,
-                  "resistance": 5
-                },
                 "promotionGains": {
                   "hp": 2,
                   "strength": 2,
@@ -79949,13 +80928,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "profiteer",
-                    "displayName": "Profiteer"
+                    "skillId": "profiteer"
                   },
                   {
                     "level": 15,
-                    "skillId": "spendthrift",
-                    "displayName": "Spendthrift"
+                    "skillId": "spendthrift"
                   }
                 ]
               },
@@ -79971,16 +80948,6 @@
                   "luck": 2,
                   "defense": 6,
                   "resistance": 6
-                },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 10,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 10,
-                  "luck": 5,
-                  "defense": 5,
-                  "resistance": 15
                 },
                 "promotionGains": {
                   "hp": 0,
@@ -79999,13 +80966,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "golembane",
-                    "displayName": "Golembane"
+                    "skillId": "golembane"
                   },
                   {
                     "level": 15,
-                    "skillId": "replicate",
-                    "displayName": "Replicate"
+                    "skillId": "replicate"
                   }
                 ]
               }
@@ -80063,7 +81028,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Apothecary and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -80751,16 +81715,6 @@
             "iron_naginata",
             "vulnerary"
           ],
-          "startingClassGrowthRates": {
-            "hp": 15,
-            "strength": 15,
-            "magic": 0,
-            "skill": 15,
-            "speed": 15,
-            "luck": 5,
-            "defense": 10,
-            "resistance": 5
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -80860,16 +81814,6 @@
                   "defense": 7,
                   "resistance": 3
                 },
-                "classGrowthRates": {
-                  "hp": 15,
-                  "strength": 15,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 15,
-                  "luck": 5,
-                  "defense": 10,
-                  "resistance": 5
-                },
                 "promotionGains": {
                   "hp": 1,
                   "strength": 3,
@@ -80885,13 +81829,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "seal_speed",
-                    "displayName": "Seal Speed"
+                    "skillId": "seal_speed"
                   },
                   {
                     "level": 15,
-                    "skillId": "lancefaire",
-                    "displayName": "Lancefaire"
+                    "skillId": "lancefaire"
                   }
                 ]
               },
@@ -80907,16 +81849,6 @@
                   "luck": 5,
                   "defense": 7,
                   "resistance": 6
-                },
-                "classGrowthRates": {
-                  "hp": 20,
-                  "strength": 10,
-                  "magic": 10,
-                  "skill": 10,
-                  "speed": 10,
-                  "luck": 15,
-                  "defense": 5,
-                  "resistance": 10
                 },
                 "promotionGains": {
                   "hp": 3,
@@ -80935,13 +81867,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rend_heaven",
-                    "displayName": "Rend Heaven"
+                    "skillId": "rend_heaven"
                   },
                   {
                     "level": 15,
-                    "skillId": "quixotic",
-                    "displayName": "Quixotic"
+                    "skillId": "quixotic"
                   }
                 ]
               }
@@ -80999,7 +81929,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Spear Fighter and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -81693,16 +82622,6 @@
             "iron_yumi",
             "vulnerary"
           ],
-          "startingClassGrowthRates": {
-            "hp": 10,
-            "strength": 15,
-            "magic": 0,
-            "skill": 15,
-            "speed": 15,
-            "luck": 5,
-            "defense": 10,
-            "resistance": 0
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -81802,16 +82721,6 @@
                   "defense": 6,
                   "resistance": 2
                 },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 15,
-                  "magic": 0,
-                  "skill": 20,
-                  "speed": 15,
-                  "luck": 5,
-                  "defense": 10,
-                  "resistance": 0
-                },
                 "promotionGains": {
                   "hp": 2,
                   "strength": 2,
@@ -81827,13 +82736,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "certain_blow",
-                    "displayName": "Certain Blow"
+                    "skillId": "certain_blow"
                   },
                   {
                     "level": 15,
-                    "skillId": "bowfaire",
-                    "displayName": "Bowfaire"
+                    "skillId": "bowfaire"
                   }
                 ]
               },
@@ -81849,16 +82756,6 @@
                   "luck": 5,
                   "defense": 4,
                   "resistance": 7
-                },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 5,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 15,
-                  "luck": 15,
-                  "defense": 0,
-                  "resistance": 15
                 },
                 "promotionGains": {
                   "hp": 0,
@@ -81877,13 +82774,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "air_superiority",
-                    "displayName": "Air Superiority"
+                    "skillId": "air_superiority"
                   },
                   {
                     "level": 15,
-                    "skillId": "amaterasu",
-                    "displayName": "Amaterasu"
+                    "skillId": "amaterasu"
                   }
                 ]
               }
@@ -81941,7 +82836,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Archer and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -82643,16 +83537,6 @@
           "inventory": [
             "iron_shuriken"
           ],
-          "startingClassGrowthRates": {
-            "hp": 5,
-            "strength": 5,
-            "magic": 0,
-            "skill": 20,
-            "speed": 20,
-            "luck": 0,
-            "defense": 5,
-            "resistance": 15
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -82752,16 +83636,6 @@
                   "defense": 4,
                   "resistance": 8
                 },
-                "classGrowthRates": {
-                  "hp": 5,
-                  "strength": 5,
-                  "magic": 0,
-                  "skill": 20,
-                  "speed": 20,
-                  "luck": 0,
-                  "defense": 5,
-                  "resistance": 20
-                },
                 "promotionGains": {
                   "hp": 1,
                   "strength": 2,
@@ -82777,13 +83651,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "lethality",
-                    "displayName": "Lethality"
+                    "skillId": "lethality"
                   },
                   {
                     "level": 15,
-                    "skillId": "shurikenfaire",
-                    "displayName": "Shurikenfaire"
+                    "skillId": "shurikenfaire"
                   }
                 ]
               },
@@ -82799,16 +83671,6 @@
                   "luck": 2,
                   "defense": 6,
                   "resistance": 6
-                },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 10,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 10,
-                  "luck": 5,
-                  "defense": 5,
-                  "resistance": 15
                 },
                 "promotionGains": {
                   "hp": 2,
@@ -82827,13 +83689,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "golembane",
-                    "displayName": "Golembane"
+                    "skillId": "golembane"
                   },
                   {
                     "level": 15,
-                    "skillId": "replicate",
-                    "displayName": "Replicate"
+                    "skillId": "replicate"
                   }
                 ]
               }
@@ -82891,7 +83751,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Ninja and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -83599,16 +84458,6 @@
             "beaststone",
             "concoction"
           ],
-          "startingClassGrowthRates": {
-            "hp": 10,
-            "strength": 10,
-            "magic": 0,
-            "skill": 15,
-            "speed": 20,
-            "luck": 10,
-            "defense": 0,
-            "resistance": 20
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -83708,16 +84557,6 @@
                   "defense": 2,
                   "resistance": 8
                 },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 10,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 20,
-                  "luck": 10,
-                  "defense": 0,
-                  "resistance": 20
-                },
                 "promotionGains": {
                   "hp": 3,
                   "strength": 1,
@@ -83733,13 +84572,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "even_better",
-                    "displayName": "Even Better"
+                    "skillId": "even_better"
                   },
                   {
                     "level": 15,
-                    "skillId": "grisly_wound",
-                    "displayName": "Grisly Wound"
+                    "skillId": "grisly_wound"
                   }
                 ]
               }
@@ -83797,7 +84634,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Kitsune and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -84500,16 +85336,6 @@
           "inventory": [
             "iron_katana"
           ],
-          "startingClassGrowthRates": {
-            "hp": 10,
-            "strength": 10,
-            "magic": 0,
-            "skill": 15,
-            "speed": 20,
-            "luck": 15,
-            "defense": 0,
-            "resistance": 10
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -84609,16 +85435,6 @@
                   "defense": 5,
                   "resistance": 5
                 },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 10,
-                  "magic": 5,
-                  "skill": 15,
-                  "speed": 20,
-                  "luck": 15,
-                  "defense": 0,
-                  "resistance": 10
-                },
                 "promotionGains": {
                   "hp": 1,
                   "strength": 2,
@@ -84634,13 +85450,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "astra",
-                    "displayName": "Astra"
+                    "skillId": "astra"
                   },
                   {
                     "level": 15,
-                    "skillId": "swordfaire",
-                    "displayName": "Swordfaire"
+                    "skillId": "swordfaire"
                   }
                 ]
               },
@@ -84656,16 +85470,6 @@
                   "luck": 3,
                   "defense": 7,
                   "resistance": 3
-                },
-                "classGrowthRates": {
-                  "hp": 20,
-                  "strength": 15,
-                  "magic": 0,
-                  "skill": 10,
-                  "speed": 10,
-                  "luck": 10,
-                  "defense": 10,
-                  "resistance": 0
                 },
                 "promotionGains": {
                   "hp": 3,
@@ -84685,13 +85489,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "seal_strength",
-                    "displayName": "Seal Strength"
+                    "skillId": "seal_strength"
                   },
                   {
                     "level": 15,
-                    "skillId": "life_and_death",
-                    "displayName": "Life and Death"
+                    "skillId": "life_and_death"
                   }
                 ]
               }
@@ -84749,7 +85551,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Samurai and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -85456,16 +86257,6 @@
           "inventory": [
             "wane_festal"
           ],
-          "startingClassGrowthRates": {
-            "hp": 0,
-            "strength": 5,
-            "magic": 10,
-            "skill": 10,
-            "speed": 15,
-            "luck": 15,
-            "defense": 0,
-            "resistance": 20
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -85565,16 +86356,6 @@
                   "defense": 5,
                   "resistance": 8
                 },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 10,
-                  "magic": 10,
-                  "skill": 5,
-                  "speed": 15,
-                  "luck": 15,
-                  "defense": 0,
-                  "resistance": 20
-                },
                 "promotionGains": {
                   "hp": 3,
                   "strength": 6,
@@ -85592,13 +86373,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "renewal",
-                    "displayName": "Renewal"
+                    "skillId": "renewal"
                   },
                   {
                     "level": 15,
-                    "skillId": "countermagic",
-                    "displayName": "Countermagic"
+                    "skillId": "countermagic"
                   }
                 ]
               },
@@ -85614,16 +86393,6 @@
                   "luck": 2,
                   "defense": 3,
                   "resistance": 6
-                },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 0,
-                  "magic": 20,
-                  "skill": 10,
-                  "speed": 15,
-                  "luck": 0,
-                  "defense": 0,
-                  "resistance": 15
                 },
                 "promotionGains": {
                   "hp": 0,
@@ -85642,13 +86411,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rally_magic",
-                    "displayName": "Rally Magic"
+                    "skillId": "rally_magic"
                   },
                   {
                     "level": 15,
-                    "skillId": "tomefaire",
-                    "displayName": "Tomefaire"
+                    "skillId": "tomefaire"
                   }
                 ]
               }
@@ -85706,7 +86473,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Shrine Maiden and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -86412,16 +87178,6 @@
             "swordcatcher",
             "iron_naginata"
           ],
-          "startingClassGrowthRates": {
-            "hp": 0,
-            "strength": 10,
-            "magic": 0,
-            "skill": 10,
-            "speed": 15,
-            "luck": 20,
-            "defense": 0,
-            "resistance": 20
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -86521,16 +87277,6 @@
                   "defense": 5,
                   "resistance": 9
                 },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 10,
-                  "magic": 10,
-                  "skill": 10,
-                  "speed": 15,
-                  "luck": 20,
-                  "defense": 0,
-                  "resistance": 20
-                },
                 "promotionGains": {
                   "hp": 2,
                   "strength": 2,
@@ -86548,13 +87294,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rally_speed",
-                    "displayName": "Rally Speed"
+                    "skillId": "rally_speed"
                   },
                   {
                     "level": 15,
-                    "skillId": "warding_blow",
-                    "displayName": "Warding Blow"
+                    "skillId": "warding_blow"
                   }
                 ]
               },
@@ -86570,16 +87314,6 @@
                   "luck": 5,
                   "defense": 4,
                   "resistance": 7
-                },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 5,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 15,
-                  "luck": 15,
-                  "defense": 0,
-                  "resistance": 15
                 },
                 "promotionGains": {
                   "hp": 1,
@@ -86598,13 +87332,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "air_superiority",
-                    "displayName": "Air Superiority"
+                    "skillId": "air_superiority"
                   },
                   {
                     "level": 15,
-                    "skillId": "amaterasu",
-                    "displayName": "Amaterasu"
+                    "skillId": "amaterasu"
                   }
                 ]
               }
@@ -86662,7 +87394,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Sky Knight and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -87372,16 +88103,6 @@
           "inventory": [
             "ox_spirit"
           ],
-          "startingClassGrowthRates": {
-            "hp": 0,
-            "strength": 5,
-            "magic": 15,
-            "skill": 10,
-            "speed": 15,
-            "luck": 5,
-            "defense": 0,
-            "resistance": 10
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -87481,16 +88202,6 @@
                   "defense": 3,
                   "resistance": 6
                 },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 0,
-                  "magic": 20,
-                  "skill": 10,
-                  "speed": 15,
-                  "luck": 0,
-                  "defense": 0,
-                  "resistance": 15
-                },
                 "promotionGains": {
                   "hp": 1,
                   "strength": 0,
@@ -87508,13 +88219,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rally_magic",
-                    "displayName": "Rally Magic"
+                    "skillId": "rally_magic"
                   },
                   {
                     "level": 15,
-                    "skillId": "tomefaire",
-                    "displayName": "Tomefaire"
+                    "skillId": "tomefaire"
                   }
                 ]
               },
@@ -87530,16 +88239,6 @@
                   "luck": 5,
                   "defense": 7,
                   "resistance": 6
-                },
-                "classGrowthRates": {
-                  "hp": 20,
-                  "strength": 10,
-                  "magic": 10,
-                  "skill": 10,
-                  "speed": 10,
-                  "luck": 15,
-                  "defense": 5,
-                  "resistance": 10
                 },
                 "promotionGains": {
                   "hp": 5,
@@ -87558,13 +88257,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rend_heaven",
-                    "displayName": "Rend Heaven"
+                    "skillId": "rend_heaven"
                   },
                   {
                     "level": 15,
-                    "skillId": "quixotic",
-                    "displayName": "Quixotic"
+                    "skillId": "quixotic"
                   }
                 ]
               }
@@ -87622,7 +88319,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Diviner and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -88312,16 +89008,6 @@
             "javelin",
             "concoction"
           ],
-          "startingClassGrowthRates": {
-            "hp": 10,
-            "strength": 15,
-            "magic": 0,
-            "skill": 10,
-            "speed": 10,
-            "luck": 15,
-            "defense": 10,
-            "resistance": 5
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -88421,16 +89107,6 @@
                   "defense": 7,
                   "resistance": 6
                 },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 15,
-                  "magic": 0,
-                  "skill": 10,
-                  "speed": 10,
-                  "luck": 15,
-                  "defense": 10,
-                  "resistance": 10
-                },
                 "promotionGains": {
                   "hp": 2,
                   "strength": 2,
@@ -88448,13 +89124,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "defender",
-                    "displayName": "Defender"
+                    "skillId": "defender"
                   },
                   {
                     "level": 15,
-                    "skillId": "aegis",
-                    "displayName": "Aegis"
+                    "skillId": "aegis"
                   }
                 ]
               },
@@ -88470,16 +89144,6 @@
                   "luck": 3,
                   "defense": 10,
                   "resistance": 2
-                },
-                "classGrowthRates": {
-                  "hp": 20,
-                  "strength": 20,
-                  "magic": 0,
-                  "skill": 10,
-                  "speed": 5,
-                  "luck": 5,
-                  "defense": 20,
-                  "resistance": 0
                 },
                 "promotionGains": {
                   "hp": 4,
@@ -88499,13 +89163,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "luna",
-                    "displayName": "Luna"
+                    "skillId": "luna"
                   },
                   {
                     "level": 15,
-                    "skillId": "armored_blow",
-                    "displayName": "Armored Blow"
+                    "skillId": "armored_blow"
                   }
                 ]
               }
@@ -88563,7 +89225,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Cavalier and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -89246,16 +89907,6 @@
             "staff": "D"
           },
           "inventory": [],
-          "startingClassGrowthRates": {
-            "hp": 0,
-            "strength": 0,
-            "magic": 10,
-            "skill": 20,
-            "speed": 10,
-            "luck": 15,
-            "defense": 0,
-            "resistance": 15
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -89355,16 +90006,6 @@
                   "defense": 2,
                   "resistance": 7
                 },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 0,
-                  "magic": 15,
-                  "skill": 5,
-                  "speed": 10,
-                  "luck": 20,
-                  "defense": 0,
-                  "resistance": 15
-                },
                 "promotionGains": {
                   "hp": 1,
                   "strength": 0,
@@ -89382,13 +90023,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rally_resistance",
-                    "displayName": "Rally Resistance"
+                    "skillId": "rally_resistance"
                   },
                   {
                     "level": 15,
-                    "skillId": "inspiration",
-                    "displayName": "Inspiration"
+                    "skillId": "inspiration"
                   }
                 ]
               },
@@ -89404,16 +90043,6 @@
                   "luck": 4,
                   "defense": 5,
                   "resistance": 4
-                },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 10,
-                  "magic": 10,
-                  "skill": 15,
-                  "speed": 15,
-                  "luck": 10,
-                  "defense": 5,
-                  "resistance": 10
                 },
                 "promotionGains": {
                   "hp": 3,
@@ -89432,13 +90061,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "live_to_serve",
-                    "displayName": "Live to Serve"
+                    "skillId": "live_to_serve"
                   },
                   {
                     "level": 15,
-                    "skillId": "tomebreaker",
-                    "displayName": "Tomebreaker"
+                    "skillId": "tomebreaker"
                   }
                 ]
               }
@@ -89496,7 +90123,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Troubadour and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -90201,16 +90827,6 @@
             "javelin",
             "vulnerary"
           ],
-          "startingClassGrowthRates": {
-            "hp": 20,
-            "strength": 20,
-            "magic": 0,
-            "skill": 15,
-            "speed": 5,
-            "luck": 10,
-            "defense": 20,
-            "resistance": 0
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -90310,16 +90926,6 @@
                   "defense": 12,
                   "resistance": 3
                 },
-                "classGrowthRates": {
-                  "hp": 25,
-                  "strength": 20,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 0,
-                  "luck": 10,
-                  "defense": 20,
-                  "resistance": 5
-                },
                 "promotionGains": {
                   "hp": 3,
                   "strength": 3,
@@ -90337,13 +90943,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "wary_fighter",
-                    "displayName": "Wary Fighter"
+                    "skillId": "wary_fighter"
                   },
                   {
                     "level": 15,
-                    "skillId": "pavise",
-                    "displayName": "Pavise"
+                    "skillId": "pavise"
                   }
                 ]
               },
@@ -90359,16 +90963,6 @@
                   "luck": 3,
                   "defense": 10,
                   "resistance": 2
-                },
-                "classGrowthRates": {
-                  "hp": 20,
-                  "strength": 20,
-                  "magic": 0,
-                  "skill": 10,
-                  "speed": 5,
-                  "luck": 5,
-                  "defense": 20,
-                  "resistance": 0
                 },
                 "promotionGains": {
                   "hp": 2,
@@ -90388,13 +90982,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "luna",
-                    "displayName": "Luna"
+                    "skillId": "luna"
                   },
                   {
                     "level": 15,
-                    "skillId": "armored_blow",
-                    "displayName": "Armored Blow"
+                    "skillId": "armored_blow"
                   }
                 ]
               }
@@ -90452,7 +91044,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Knight and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -91160,16 +91751,6 @@
             "beastrune",
             "vulnerary"
           ],
-          "startingClassGrowthRates": {
-            "hp": 20,
-            "strength": 20,
-            "magic": 0,
-            "skill": 5,
-            "speed": 15,
-            "luck": 5,
-            "defense": 10,
-            "resistance": 0
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -91269,16 +91850,6 @@
                   "defense": 7,
                   "resistance": 1
                 },
-                "classGrowthRates": {
-                  "hp": 20,
-                  "strength": 20,
-                  "magic": 0,
-                  "skill": 5,
-                  "speed": 15,
-                  "luck": 5,
-                  "defense": 10,
-                  "resistance": 0
-                },
                 "promotionGains": {
                   "hp": 3,
                   "strength": 3,
@@ -91294,13 +91865,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "better_odds",
-                    "displayName": "Better Odds"
+                    "skillId": "better_odds"
                   },
                   {
                     "level": 15,
-                    "skillId": "grisly_wound",
-                    "displayName": "Grisly Wound"
+                    "skillId": "grisly_wound"
                   }
                 ]
               }
@@ -91358,7 +91927,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Wolfskin and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -92110,16 +92678,6 @@
             "hand_axe",
             "iron_axe"
           ],
-          "startingClassGrowthRates": {
-            "hp": 10,
-            "strength": 15,
-            "magic": 5,
-            "skill": 10,
-            "speed": 10,
-            "luck": 5,
-            "defense": 20,
-            "resistance": 0
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -92219,16 +92777,6 @@
                   "defense": 10,
                   "resistance": 1
                 },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 15,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 10,
-                  "luck": 5,
-                  "defense": 20,
-                  "resistance": 0
-                },
                 "promotionGains": {
                   "hp": 2,
                   "strength": 2,
@@ -92246,13 +92794,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rally_defense",
-                    "displayName": "Rally Defense"
+                    "skillId": "rally_defense"
                   },
                   {
                     "level": 15,
-                    "skillId": "swordbreaker",
-                    "displayName": "Swordbreaker"
+                    "skillId": "swordbreaker"
                   }
                 ]
               },
@@ -92268,16 +92814,6 @@
                   "luck": 0,
                   "defense": 8,
                   "resistance": 6
-                },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 15,
-                  "magic": 15,
-                  "skill": 10,
-                  "speed": 5,
-                  "luck": 0,
-                  "defense": 10,
-                  "resistance": 15
                 },
                 "promotionGains": {
                   "hp": 1,
@@ -92296,13 +92832,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "savage_blow",
-                    "displayName": "Savage Blow"
+                    "skillId": "savage_blow"
                   },
                   {
                     "level": 15,
-                    "skillId": "trample",
-                    "displayName": "Trample"
+                    "skillId": "trample"
                   }
                 ]
               }
@@ -92360,7 +92894,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Wyvern Rider and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -93042,16 +93575,6 @@
             "thunder",
             "vulnerary"
           ],
-          "startingClassGrowthRates": {
-            "hp": 0,
-            "strength": 10,
-            "magic": 20,
-            "skill": 0,
-            "speed": 10,
-            "luck": 0,
-            "defense": 5,
-            "resistance": 10
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -93151,16 +93674,6 @@
                   "defense": 5,
                   "resistance": 8
                 },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 0,
-                  "magic": 25,
-                  "skill": 0,
-                  "speed": 10,
-                  "luck": 0,
-                  "defense": 5,
-                  "resistance": 15
-                },
                 "promotionGains": {
                   "hp": 1,
                   "strength": 0,
@@ -93176,13 +93689,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "vengeance",
-                    "displayName": "Vengeance"
+                    "skillId": "vengeance"
                   },
                   {
                     "level": 15,
-                    "skillId": "bowbreaker",
-                    "displayName": "Bowbreaker"
+                    "skillId": "bowbreaker"
                   }
                 ]
               },
@@ -93198,16 +93709,6 @@
                   "luck": 3,
                   "defense": 8,
                   "resistance": 6
-                },
-                "classGrowthRates": {
-                  "hp": 15,
-                  "strength": 20,
-                  "magic": 10,
-                  "skill": 5,
-                  "speed": 5,
-                  "luck": 5,
-                  "defense": 15,
-                  "resistance": 5
                 },
                 "promotionGains": {
                   "hp": 3,
@@ -93226,13 +93727,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "seal_magic",
-                    "displayName": "Seal Magic"
+                    "skillId": "seal_magic"
                   },
                   {
                     "level": 15,
-                    "skillId": "lifetaker",
-                    "displayName": "Lifetaker"
+                    "skillId": "lifetaker"
                   }
                 ]
               }
@@ -93290,7 +93789,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Dark Mage and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -93994,16 +94492,6 @@
             "iron_sword",
             "vulnerary"
           ],
-          "startingClassGrowthRates": {
-            "hp": 10,
-            "strength": 15,
-            "magic": 0,
-            "skill": 20,
-            "speed": 15,
-            "luck": 5,
-            "defense": 10,
-            "resistance": 5
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -94103,16 +94591,6 @@
                   "defense": 7,
                   "resistance": 2
                 },
-                "classGrowthRates": {
-                  "hp": 20,
-                  "strength": 15,
-                  "magic": 0,
-                  "skill": 20,
-                  "speed": 15,
-                  "luck": 5,
-                  "defense": 10,
-                  "resistance": 0
-                },
                 "promotionGains": {
                   "hp": 3,
                   "strength": 3,
@@ -94130,13 +94608,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "sol",
-                    "displayName": "Sol"
+                    "skillId": "sol"
                   },
                   {
                     "level": 15,
-                    "skillId": "axebreaker",
-                    "displayName": "Axebreaker"
+                    "skillId": "axebreaker"
                   }
                 ]
               },
@@ -94152,16 +94628,6 @@
                   "luck": 3,
                   "defense": 5,
                   "resistance": 6
-                },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 10,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 15,
-                  "luck": 10,
-                  "defense": 0,
-                  "resistance": 10
                 },
                 "promotionGains": {
                   "hp": 1,
@@ -94180,13 +94646,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rally_skill",
-                    "displayName": "Rally Skill"
+                    "skillId": "rally_skill"
                   },
                   {
                     "level": 15,
-                    "skillId": "shurikenbreaker",
-                    "displayName": "Shurikenbreaker"
+                    "skillId": "shurikenbreaker"
                   }
                 ]
               }
@@ -94244,7 +94708,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Mercenary and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -94976,16 +95439,6 @@
           "inventory": [
             "iron_bow"
           ],
-          "startingClassGrowthRates": {
-            "hp": 0,
-            "strength": 10,
-            "magic": 5,
-            "skill": 10,
-            "speed": 20,
-            "luck": 0,
-            "defense": 0,
-            "resistance": 20
-          },
           "baseStatFormula": {
             "childAptitude": "child personal base + automatic-growth stat gains",
             "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -95085,16 +95538,6 @@
                   "defense": 3,
                   "resistance": 8
                 },
-                "classGrowthRates": {
-                  "hp": 0,
-                  "strength": 5,
-                  "magic": 15,
-                  "skill": 5,
-                  "speed": 20,
-                  "luck": 0,
-                  "defense": 0,
-                  "resistance": 20
-                },
                 "promotionGains": {
                   "hp": 1,
                   "strength": 1,
@@ -95112,13 +95555,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "lucky_seven",
-                    "displayName": "Lucky Seven"
+                    "skillId": "lucky_seven"
                   },
                   {
                     "level": 15,
-                    "skillId": "pass",
-                    "displayName": "Pass"
+                    "skillId": "pass"
                   }
                 ]
               },
@@ -95134,16 +95575,6 @@
                   "luck": 3,
                   "defense": 5,
                   "resistance": 6
-                },
-                "classGrowthRates": {
-                  "hp": 10,
-                  "strength": 10,
-                  "magic": 0,
-                  "skill": 15,
-                  "speed": 15,
-                  "luck": 10,
-                  "defense": 0,
-                  "resistance": 10
                 },
                 "promotionGains": {
                   "hp": 2,
@@ -95162,13 +95593,11 @@
                 "learnedSkills": [
                   {
                     "level": 5,
-                    "skillId": "rally_skill",
-                    "displayName": "Rally Skill"
+                    "skillId": "rally_skill"
                   },
                   {
                     "level": 15,
-                    "skillId": "shurikenbreaker",
-                    "displayName": "Shurikenbreaker"
+                    "skillId": "shurikenbreaker"
                   }
                 ]
               }
@@ -95226,7 +95655,6 @@
               "sourceId": "fewiki-fe14-classes",
               "locator": "Outlaw and promotion rows",
               "fields": [
-                "startingClassGrowthRates",
                 "offspringSeal.promotionOptions"
               ],
               "reviewStatus": "accepted"
@@ -96348,6 +96776,14 @@
       "reviewStatus": "accepted"
     },
     {
+      "id": "serenes-fe14-hoshidan-class-growth-rates",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan class growth rates",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/growth-rates/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
       "id": "serenes-fe14-nohrian-class-maximum-stats",
       "kind": "web",
       "title": "Fire Emblem Fates: Nohrian class maximum stats",
@@ -96468,6 +96904,15 @@
       "language": "en",
       "reviewStatus": "corroborated",
       "notes": "Firsthand localized Revelation report says Male Kana could not support Azura!Midori at all after Female Corrin married Shigure. This independently matches the specialist Japanese Pegasus Knight support matrix."
+    },
+    {
+      "id": "fandom-fe14-weapon-list",
+      "kind": "web",
+      "title": "List of weapons in Fire Emblem Fates - Fire Emblem Wiki (Fandom)",
+      "location": "https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Source page and original file links for the nine FE14 weapon-rank icons used by the route-driven base configuration surface."
     }
   ]
 }

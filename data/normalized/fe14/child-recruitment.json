@@ -40,16 +40,6 @@
     "inventory": [
       "dragonstone"
     ],
-    "startingClassGrowthRates": {
-      "hp": 15,
-      "strength": 15,
-      "magic": 10,
-      "skill": 10,
-      "speed": 10,
-      "luck": 10,
-      "defense": 10,
-      "resistance": 5
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -153,16 +143,6 @@
             "defense": 6,
             "resistance": 6
           },
-          "classGrowthRates": {
-            "hp": 15,
-            "strength": 10,
-            "magic": 15,
-            "skill": 5,
-            "speed": 15,
-            "luck": 5,
-            "defense": 5,
-            "resistance": 15
-          },
           "promotionGains": {
             "hp": 1,
             "strength": 1,
@@ -181,13 +161,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "draconic_hex",
-              "displayName": "Draconic Hex"
+              "skillId": "draconic_hex"
             },
             {
               "level": 15,
-              "skillId": "nohrian_trust",
-              "displayName": "Nohrian Trust"
+              "skillId": "nohrian_trust"
             }
           ]
         },
@@ -208,16 +186,6 @@
             "defense": 7,
             "resistance": 3
           },
-          "classGrowthRates": {
-            "hp": 15,
-            "strength": 15,
-            "magic": 10,
-            "skill": 10,
-            "speed": 10,
-            "luck": 10,
-            "defense": 15,
-            "resistance": 0
-          },
           "promotionGains": {
             "hp": 2,
             "strength": 3,
@@ -236,13 +204,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "dragon_ward",
-              "displayName": "Dragon Ward"
+              "skillId": "dragon_ward"
             },
             {
               "level": 15,
-              "skillId": "hoshidan_unity",
-              "displayName": "Hoshidan Unity"
+              "skillId": "hoshidan_unity"
             }
           ]
         }
@@ -300,7 +266,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Nohr Prince / Princess and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -357,16 +322,6 @@
     "inventory": [
       "iron_naginata"
     ],
-    "startingClassGrowthRates": {
-      "hp": 0,
-      "strength": 10,
-      "magic": 0,
-      "skill": 10,
-      "speed": 15,
-      "luck": 20,
-      "defense": 0,
-      "resistance": 20
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -466,16 +421,6 @@
             "defense": 5,
             "resistance": 9
           },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 10,
-            "magic": 10,
-            "skill": 10,
-            "speed": 15,
-            "luck": 20,
-            "defense": 0,
-            "resistance": 20
-          },
           "promotionGains": {
             "hp": 2,
             "strength": 2,
@@ -493,13 +438,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rally_speed",
-              "displayName": "Rally Speed"
+              "skillId": "rally_speed"
             },
             {
               "level": 15,
-              "skillId": "warding_blow",
-              "displayName": "Warding Blow"
+              "skillId": "warding_blow"
             }
           ]
         },
@@ -515,16 +458,6 @@
             "luck": 5,
             "defense": 4,
             "resistance": 7
-          },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 5,
-            "magic": 0,
-            "skill": 15,
-            "speed": 15,
-            "luck": 15,
-            "defense": 0,
-            "resistance": 15
           },
           "promotionGains": {
             "hp": 1,
@@ -543,13 +476,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "air_superiority",
-              "displayName": "Air Superiority"
+              "skillId": "air_superiority"
             },
             {
               "level": 15,
-              "skillId": "amaterasu",
-              "displayName": "Amaterasu"
+              "skillId": "amaterasu"
             }
           ]
         }
@@ -607,7 +538,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Sky Knight and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -664,16 +594,6 @@
       "sun_festal",
       "physic"
     ],
-    "startingClassGrowthRates": {
-      "hp": 0,
-      "strength": 0,
-      "magic": 10,
-      "skill": 20,
-      "speed": 10,
-      "luck": 15,
-      "defense": 0,
-      "resistance": 15
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -747,16 +667,6 @@
             "defense": 5,
             "resistance": 4
           },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 10,
-            "magic": 10,
-            "skill": 15,
-            "speed": 15,
-            "luck": 10,
-            "defense": 5,
-            "resistance": 10
-          },
           "promotionGains": {
             "hp": 3,
             "strength": 4,
@@ -796,16 +706,6 @@
             "luck": 5,
             "defense": 2,
             "resistance": 7
-          },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 0,
-            "magic": 15,
-            "skill": 5,
-            "speed": 10,
-            "luck": 20,
-            "defense": 0,
-            "resistance": 15
           },
           "promotionGains": {
             "hp": 1,
@@ -874,14 +774,6 @@
         "reviewStatus": "accepted"
       },
       {
-        "sourceId": "serenes-fe14-nohrian-class-growth-rates",
-        "locator": "Troubadour",
-        "fields": [
-          "startingClassGrowthRates"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
         "sourceId": "fewiki-dwyer-stats",
         "locator": "Fire Emblem Fates > Base stats, chapter scaling, promotion gains, and promoted skills",
         "fields": [
@@ -899,14 +791,6 @@
         "locator": "Troubadour, Strategist, Maid / Butler",
         "fields": [
           "offspringSeal.promotionOptions.classBaseStats"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "sourceId": "serenes-fe14-nohrian-class-growth-rates",
-        "locator": "Strategist, Maid / Butler",
-        "fields": [
-          "offspringSeal.promotionOptions.classGrowthRates"
         ],
         "reviewStatus": "accepted"
       },
@@ -997,16 +881,6 @@
       "iron_sword",
       "vulnerary"
     ],
-    "startingClassGrowthRates": {
-      "hp": 10,
-      "strength": 15,
-      "magic": 0,
-      "skill": 10,
-      "speed": 10,
-      "luck": 15,
-      "defense": 10,
-      "resistance": 5
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -1106,16 +980,6 @@
             "defense": 7,
             "resistance": 6
           },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 15,
-            "magic": 0,
-            "skill": 10,
-            "speed": 10,
-            "luck": 15,
-            "defense": 10,
-            "resistance": 10
-          },
           "promotionGains": {
             "hp": 2,
             "strength": 2,
@@ -1133,13 +997,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "defender",
-              "displayName": "Defender"
+              "skillId": "defender"
             },
             {
               "level": 15,
-              "skillId": "aegis",
-              "displayName": "Aegis"
+              "skillId": "aegis"
             }
           ]
         },
@@ -1155,16 +1017,6 @@
             "luck": 3,
             "defense": 10,
             "resistance": 2
-          },
-          "classGrowthRates": {
-            "hp": 20,
-            "strength": 20,
-            "magic": 0,
-            "skill": 10,
-            "speed": 5,
-            "luck": 5,
-            "defense": 20,
-            "resistance": 0
           },
           "promotionGains": {
             "hp": 4,
@@ -1184,13 +1036,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "luna",
-              "displayName": "Luna"
+              "skillId": "luna"
             },
             {
               "level": 15,
-              "skillId": "armored_blow",
-              "displayName": "Armored Blow"
+              "skillId": "armored_blow"
             }
           ]
         }
@@ -1248,7 +1098,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Cavalier and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -1305,16 +1154,6 @@
     "inventory": [
       "iron_yumi"
     ],
-    "startingClassGrowthRates": {
-      "hp": 20,
-      "strength": 20,
-      "magic": 0,
-      "skill": 10,
-      "speed": 10,
-      "luck": 5,
-      "defense": 10,
-      "resistance": 5
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -1414,16 +1253,6 @@
             "defense": 8,
             "resistance": 5
           },
-          "classGrowthRates": {
-            "hp": 20,
-            "strength": 20,
-            "magic": 0,
-            "skill": 10,
-            "speed": 5,
-            "luck": 15,
-            "defense": 10,
-            "resistance": 5
-          },
           "promotionGains": {
             "hp": 2,
             "strength": 2,
@@ -1441,13 +1270,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "profiteer",
-              "displayName": "Profiteer"
+              "skillId": "profiteer"
             },
             {
               "level": 15,
-              "skillId": "spendthrift",
-              "displayName": "Spendthrift"
+              "skillId": "spendthrift"
             }
           ]
         },
@@ -1463,16 +1290,6 @@
             "luck": 2,
             "defense": 6,
             "resistance": 6
-          },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 10,
-            "magic": 0,
-            "skill": 15,
-            "speed": 10,
-            "luck": 5,
-            "defense": 5,
-            "resistance": 15
           },
           "promotionGains": {
             "hp": 0,
@@ -1491,13 +1308,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "golembane",
-              "displayName": "Golembane"
+              "skillId": "golembane"
             },
             {
               "level": 15,
-              "skillId": "replicate",
-              "displayName": "Replicate"
+              "skillId": "replicate"
             }
           ]
         }
@@ -1555,7 +1370,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Apothecary and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -1611,16 +1425,6 @@
       "iron_naginata",
       "vulnerary"
     ],
-    "startingClassGrowthRates": {
-      "hp": 15,
-      "strength": 15,
-      "magic": 0,
-      "skill": 15,
-      "speed": 15,
-      "luck": 5,
-      "defense": 10,
-      "resistance": 5
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -1720,16 +1524,6 @@
             "defense": 7,
             "resistance": 3
           },
-          "classGrowthRates": {
-            "hp": 15,
-            "strength": 15,
-            "magic": 0,
-            "skill": 15,
-            "speed": 15,
-            "luck": 5,
-            "defense": 10,
-            "resistance": 5
-          },
           "promotionGains": {
             "hp": 1,
             "strength": 3,
@@ -1745,13 +1539,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "seal_speed",
-              "displayName": "Seal Speed"
+              "skillId": "seal_speed"
             },
             {
               "level": 15,
-              "skillId": "lancefaire",
-              "displayName": "Lancefaire"
+              "skillId": "lancefaire"
             }
           ]
         },
@@ -1767,16 +1559,6 @@
             "luck": 5,
             "defense": 7,
             "resistance": 6
-          },
-          "classGrowthRates": {
-            "hp": 20,
-            "strength": 10,
-            "magic": 10,
-            "skill": 10,
-            "speed": 10,
-            "luck": 15,
-            "defense": 5,
-            "resistance": 10
           },
           "promotionGains": {
             "hp": 3,
@@ -1795,13 +1577,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rend_heaven",
-              "displayName": "Rend Heaven"
+              "skillId": "rend_heaven"
             },
             {
               "level": 15,
-              "skillId": "quixotic",
-              "displayName": "Quixotic"
+              "skillId": "quixotic"
             }
           ]
         }
@@ -1859,7 +1639,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Spear Fighter and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -1914,16 +1693,6 @@
       "iron_yumi",
       "vulnerary"
     ],
-    "startingClassGrowthRates": {
-      "hp": 10,
-      "strength": 15,
-      "magic": 0,
-      "skill": 15,
-      "speed": 15,
-      "luck": 5,
-      "defense": 10,
-      "resistance": 0
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -2023,16 +1792,6 @@
             "defense": 6,
             "resistance": 2
           },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 15,
-            "magic": 0,
-            "skill": 20,
-            "speed": 15,
-            "luck": 5,
-            "defense": 10,
-            "resistance": 0
-          },
           "promotionGains": {
             "hp": 2,
             "strength": 2,
@@ -2048,13 +1807,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "certain_blow",
-              "displayName": "Certain Blow"
+              "skillId": "certain_blow"
             },
             {
               "level": 15,
-              "skillId": "bowfaire",
-              "displayName": "Bowfaire"
+              "skillId": "bowfaire"
             }
           ]
         },
@@ -2070,16 +1827,6 @@
             "luck": 5,
             "defense": 4,
             "resistance": 7
-          },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 5,
-            "magic": 0,
-            "skill": 15,
-            "speed": 15,
-            "luck": 15,
-            "defense": 0,
-            "resistance": 15
           },
           "promotionGains": {
             "hp": 0,
@@ -2098,13 +1845,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "air_superiority",
-              "displayName": "Air Superiority"
+              "skillId": "air_superiority"
             },
             {
               "level": 15,
-              "skillId": "amaterasu",
-              "displayName": "Amaterasu"
+              "skillId": "amaterasu"
             }
           ]
         }
@@ -2162,7 +1907,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Archer and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -2216,16 +1960,6 @@
     "inventory": [
       "iron_shuriken"
     ],
-    "startingClassGrowthRates": {
-      "hp": 5,
-      "strength": 5,
-      "magic": 0,
-      "skill": 20,
-      "speed": 20,
-      "luck": 0,
-      "defense": 5,
-      "resistance": 15
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -2325,16 +2059,6 @@
             "defense": 4,
             "resistance": 8
           },
-          "classGrowthRates": {
-            "hp": 5,
-            "strength": 5,
-            "magic": 0,
-            "skill": 20,
-            "speed": 20,
-            "luck": 0,
-            "defense": 5,
-            "resistance": 20
-          },
           "promotionGains": {
             "hp": 1,
             "strength": 2,
@@ -2350,13 +2074,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "lethality",
-              "displayName": "Lethality"
+              "skillId": "lethality"
             },
             {
               "level": 15,
-              "skillId": "shurikenfaire",
-              "displayName": "Shurikenfaire"
+              "skillId": "shurikenfaire"
             }
           ]
         },
@@ -2372,16 +2094,6 @@
             "luck": 2,
             "defense": 6,
             "resistance": 6
-          },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 10,
-            "magic": 0,
-            "skill": 15,
-            "speed": 10,
-            "luck": 5,
-            "defense": 5,
-            "resistance": 15
           },
           "promotionGains": {
             "hp": 2,
@@ -2400,13 +2112,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "golembane",
-              "displayName": "Golembane"
+              "skillId": "golembane"
             },
             {
               "level": 15,
-              "skillId": "replicate",
-              "displayName": "Replicate"
+              "skillId": "replicate"
             }
           ]
         }
@@ -2464,7 +2174,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Ninja and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -2520,16 +2229,6 @@
       "beaststone",
       "concoction"
     ],
-    "startingClassGrowthRates": {
-      "hp": 10,
-      "strength": 10,
-      "magic": 0,
-      "skill": 15,
-      "speed": 20,
-      "luck": 10,
-      "defense": 0,
-      "resistance": 20
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -2629,16 +2328,6 @@
             "defense": 2,
             "resistance": 8
           },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 10,
-            "magic": 0,
-            "skill": 15,
-            "speed": 20,
-            "luck": 10,
-            "defense": 0,
-            "resistance": 20
-          },
           "promotionGains": {
             "hp": 3,
             "strength": 1,
@@ -2654,13 +2343,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "even_better",
-              "displayName": "Even Better"
+              "skillId": "even_better"
             },
             {
               "level": 15,
-              "skillId": "grisly_wound",
-              "displayName": "Grisly Wound"
+              "skillId": "grisly_wound"
             }
           ]
         }
@@ -2718,7 +2405,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Kitsune and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -2773,16 +2459,6 @@
     "inventory": [
       "iron_katana"
     ],
-    "startingClassGrowthRates": {
-      "hp": 10,
-      "strength": 10,
-      "magic": 0,
-      "skill": 15,
-      "speed": 20,
-      "luck": 15,
-      "defense": 0,
-      "resistance": 10
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -2882,16 +2558,6 @@
             "defense": 5,
             "resistance": 5
           },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 10,
-            "magic": 5,
-            "skill": 15,
-            "speed": 20,
-            "luck": 15,
-            "defense": 0,
-            "resistance": 10
-          },
           "promotionGains": {
             "hp": 1,
             "strength": 2,
@@ -2907,13 +2573,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "astra",
-              "displayName": "Astra"
+              "skillId": "astra"
             },
             {
               "level": 15,
-              "skillId": "swordfaire",
-              "displayName": "Swordfaire"
+              "skillId": "swordfaire"
             }
           ]
         },
@@ -2929,16 +2593,6 @@
             "luck": 3,
             "defense": 7,
             "resistance": 3
-          },
-          "classGrowthRates": {
-            "hp": 20,
-            "strength": 15,
-            "magic": 0,
-            "skill": 10,
-            "speed": 10,
-            "luck": 10,
-            "defense": 10,
-            "resistance": 0
           },
           "promotionGains": {
             "hp": 3,
@@ -2958,13 +2612,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "seal_strength",
-              "displayName": "Seal Strength"
+              "skillId": "seal_strength"
             },
             {
               "level": 15,
-              "skillId": "life_and_death",
-              "displayName": "Life and Death"
+              "skillId": "life_and_death"
             }
           ]
         }
@@ -3022,7 +2674,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Samurai and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -3080,16 +2731,6 @@
     "inventory": [
       "wane_festal"
     ],
-    "startingClassGrowthRates": {
-      "hp": 0,
-      "strength": 5,
-      "magic": 10,
-      "skill": 10,
-      "speed": 15,
-      "luck": 15,
-      "defense": 0,
-      "resistance": 20
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -3189,16 +2830,6 @@
             "defense": 5,
             "resistance": 8
           },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 10,
-            "magic": 10,
-            "skill": 5,
-            "speed": 15,
-            "luck": 15,
-            "defense": 0,
-            "resistance": 20
-          },
           "promotionGains": {
             "hp": 3,
             "strength": 6,
@@ -3216,13 +2847,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "renewal",
-              "displayName": "Renewal"
+              "skillId": "renewal"
             },
             {
               "level": 15,
-              "skillId": "countermagic",
-              "displayName": "Countermagic"
+              "skillId": "countermagic"
             }
           ]
         },
@@ -3238,16 +2867,6 @@
             "luck": 2,
             "defense": 3,
             "resistance": 6
-          },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 0,
-            "magic": 20,
-            "skill": 10,
-            "speed": 15,
-            "luck": 0,
-            "defense": 0,
-            "resistance": 15
           },
           "promotionGains": {
             "hp": 0,
@@ -3266,13 +2885,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rally_magic",
-              "displayName": "Rally Magic"
+              "skillId": "rally_magic"
             },
             {
               "level": 15,
-              "skillId": "tomefaire",
-              "displayName": "Tomefaire"
+              "skillId": "tomefaire"
             }
           ]
         }
@@ -3330,7 +2947,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Shrine Maiden and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -3385,16 +3001,6 @@
       "swordcatcher",
       "iron_naginata"
     ],
-    "startingClassGrowthRates": {
-      "hp": 0,
-      "strength": 10,
-      "magic": 0,
-      "skill": 10,
-      "speed": 15,
-      "luck": 20,
-      "defense": 0,
-      "resistance": 20
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -3494,16 +3100,6 @@
             "defense": 5,
             "resistance": 9
           },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 10,
-            "magic": 10,
-            "skill": 10,
-            "speed": 15,
-            "luck": 20,
-            "defense": 0,
-            "resistance": 20
-          },
           "promotionGains": {
             "hp": 2,
             "strength": 2,
@@ -3521,13 +3117,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rally_speed",
-              "displayName": "Rally Speed"
+              "skillId": "rally_speed"
             },
             {
               "level": 15,
-              "skillId": "warding_blow",
-              "displayName": "Warding Blow"
+              "skillId": "warding_blow"
             }
           ]
         },
@@ -3543,16 +3137,6 @@
             "luck": 5,
             "defense": 4,
             "resistance": 7
-          },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 5,
-            "magic": 0,
-            "skill": 15,
-            "speed": 15,
-            "luck": 15,
-            "defense": 0,
-            "resistance": 15
           },
           "promotionGains": {
             "hp": 1,
@@ -3571,13 +3155,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "air_superiority",
-              "displayName": "Air Superiority"
+              "skillId": "air_superiority"
             },
             {
               "level": 15,
-              "skillId": "amaterasu",
-              "displayName": "Amaterasu"
+              "skillId": "amaterasu"
             }
           ]
         }
@@ -3635,7 +3217,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Sky Knight and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -3690,16 +3271,6 @@
     "inventory": [
       "ox_spirit"
     ],
-    "startingClassGrowthRates": {
-      "hp": 0,
-      "strength": 5,
-      "magic": 15,
-      "skill": 10,
-      "speed": 15,
-      "luck": 5,
-      "defense": 0,
-      "resistance": 10
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -3799,16 +3370,6 @@
             "defense": 3,
             "resistance": 6
           },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 0,
-            "magic": 20,
-            "skill": 10,
-            "speed": 15,
-            "luck": 0,
-            "defense": 0,
-            "resistance": 15
-          },
           "promotionGains": {
             "hp": 1,
             "strength": 0,
@@ -3826,13 +3387,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rally_magic",
-              "displayName": "Rally Magic"
+              "skillId": "rally_magic"
             },
             {
               "level": 15,
-              "skillId": "tomefaire",
-              "displayName": "Tomefaire"
+              "skillId": "tomefaire"
             }
           ]
         },
@@ -3848,16 +3407,6 @@
             "luck": 5,
             "defense": 7,
             "resistance": 6
-          },
-          "classGrowthRates": {
-            "hp": 20,
-            "strength": 10,
-            "magic": 10,
-            "skill": 10,
-            "speed": 10,
-            "luck": 15,
-            "defense": 5,
-            "resistance": 10
           },
           "promotionGains": {
             "hp": 5,
@@ -3876,13 +3425,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rend_heaven",
-              "displayName": "Rend Heaven"
+              "skillId": "rend_heaven"
             },
             {
               "level": 15,
-              "skillId": "quixotic",
-              "displayName": "Quixotic"
+              "skillId": "quixotic"
             }
           ]
         }
@@ -3940,7 +3487,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Diviner and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -3998,16 +3544,6 @@
       "javelin",
       "concoction"
     ],
-    "startingClassGrowthRates": {
-      "hp": 10,
-      "strength": 15,
-      "magic": 0,
-      "skill": 10,
-      "speed": 10,
-      "luck": 15,
-      "defense": 10,
-      "resistance": 5
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -4107,16 +3643,6 @@
             "defense": 7,
             "resistance": 6
           },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 15,
-            "magic": 0,
-            "skill": 10,
-            "speed": 10,
-            "luck": 15,
-            "defense": 10,
-            "resistance": 10
-          },
           "promotionGains": {
             "hp": 2,
             "strength": 2,
@@ -4134,13 +3660,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "defender",
-              "displayName": "Defender"
+              "skillId": "defender"
             },
             {
               "level": 15,
-              "skillId": "aegis",
-              "displayName": "Aegis"
+              "skillId": "aegis"
             }
           ]
         },
@@ -4156,16 +3680,6 @@
             "luck": 3,
             "defense": 10,
             "resistance": 2
-          },
-          "classGrowthRates": {
-            "hp": 20,
-            "strength": 20,
-            "magic": 0,
-            "skill": 10,
-            "speed": 5,
-            "luck": 5,
-            "defense": 20,
-            "resistance": 0
           },
           "promotionGains": {
             "hp": 4,
@@ -4185,13 +3699,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "luna",
-              "displayName": "Luna"
+              "skillId": "luna"
             },
             {
               "level": 15,
-              "skillId": "armored_blow",
-              "displayName": "Armored Blow"
+              "skillId": "armored_blow"
             }
           ]
         }
@@ -4249,7 +3761,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Cavalier and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -4301,16 +3812,6 @@
       "staff": "D"
     },
     "inventory": [],
-    "startingClassGrowthRates": {
-      "hp": 0,
-      "strength": 0,
-      "magic": 10,
-      "skill": 20,
-      "speed": 10,
-      "luck": 15,
-      "defense": 0,
-      "resistance": 15
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -4410,16 +3911,6 @@
             "defense": 2,
             "resistance": 7
           },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 0,
-            "magic": 15,
-            "skill": 5,
-            "speed": 10,
-            "luck": 20,
-            "defense": 0,
-            "resistance": 15
-          },
           "promotionGains": {
             "hp": 1,
             "strength": 0,
@@ -4437,13 +3928,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rally_resistance",
-              "displayName": "Rally Resistance"
+              "skillId": "rally_resistance"
             },
             {
               "level": 15,
-              "skillId": "inspiration",
-              "displayName": "Inspiration"
+              "skillId": "inspiration"
             }
           ]
         },
@@ -4459,16 +3948,6 @@
             "luck": 4,
             "defense": 5,
             "resistance": 4
-          },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 10,
-            "magic": 10,
-            "skill": 15,
-            "speed": 15,
-            "luck": 10,
-            "defense": 5,
-            "resistance": 10
           },
           "promotionGains": {
             "hp": 3,
@@ -4487,13 +3966,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "live_to_serve",
-              "displayName": "Live to Serve"
+              "skillId": "live_to_serve"
             },
             {
               "level": 15,
-              "skillId": "tomebreaker",
-              "displayName": "Tomebreaker"
+              "skillId": "tomebreaker"
             }
           ]
         }
@@ -4551,7 +4028,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Troubadour and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -4608,16 +4084,6 @@
       "javelin",
       "vulnerary"
     ],
-    "startingClassGrowthRates": {
-      "hp": 20,
-      "strength": 20,
-      "magic": 0,
-      "skill": 15,
-      "speed": 5,
-      "luck": 10,
-      "defense": 20,
-      "resistance": 0
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -4717,16 +4183,6 @@
             "defense": 12,
             "resistance": 3
           },
-          "classGrowthRates": {
-            "hp": 25,
-            "strength": 20,
-            "magic": 0,
-            "skill": 15,
-            "speed": 0,
-            "luck": 10,
-            "defense": 20,
-            "resistance": 5
-          },
           "promotionGains": {
             "hp": 3,
             "strength": 3,
@@ -4744,13 +4200,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "wary_fighter",
-              "displayName": "Wary Fighter"
+              "skillId": "wary_fighter"
             },
             {
               "level": 15,
-              "skillId": "pavise",
-              "displayName": "Pavise"
+              "skillId": "pavise"
             }
           ]
         },
@@ -4766,16 +4220,6 @@
             "luck": 3,
             "defense": 10,
             "resistance": 2
-          },
-          "classGrowthRates": {
-            "hp": 20,
-            "strength": 20,
-            "magic": 0,
-            "skill": 10,
-            "speed": 5,
-            "luck": 5,
-            "defense": 20,
-            "resistance": 0
           },
           "promotionGains": {
             "hp": 2,
@@ -4795,13 +4239,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "luna",
-              "displayName": "Luna"
+              "skillId": "luna"
             },
             {
               "level": 15,
-              "skillId": "armored_blow",
-              "displayName": "Armored Blow"
+              "skillId": "armored_blow"
             }
           ]
         }
@@ -4859,7 +4301,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Knight and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -4915,16 +4356,6 @@
       "beastrune",
       "vulnerary"
     ],
-    "startingClassGrowthRates": {
-      "hp": 20,
-      "strength": 20,
-      "magic": 0,
-      "skill": 5,
-      "speed": 15,
-      "luck": 5,
-      "defense": 10,
-      "resistance": 0
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -5024,16 +4455,6 @@
             "defense": 7,
             "resistance": 1
           },
-          "classGrowthRates": {
-            "hp": 20,
-            "strength": 20,
-            "magic": 0,
-            "skill": 5,
-            "speed": 15,
-            "luck": 5,
-            "defense": 10,
-            "resistance": 0
-          },
           "promotionGains": {
             "hp": 3,
             "strength": 3,
@@ -5049,13 +4470,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "better_odds",
-              "displayName": "Better Odds"
+              "skillId": "better_odds"
             },
             {
               "level": 15,
-              "skillId": "grisly_wound",
-              "displayName": "Grisly Wound"
+              "skillId": "grisly_wound"
             }
           ]
         }
@@ -5113,7 +4532,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Wolfskin and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -5168,16 +4586,6 @@
       "hand_axe",
       "iron_axe"
     ],
-    "startingClassGrowthRates": {
-      "hp": 10,
-      "strength": 15,
-      "magic": 5,
-      "skill": 10,
-      "speed": 10,
-      "luck": 5,
-      "defense": 20,
-      "resistance": 0
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -5277,16 +4685,6 @@
             "defense": 10,
             "resistance": 1
           },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 15,
-            "magic": 0,
-            "skill": 15,
-            "speed": 10,
-            "luck": 5,
-            "defense": 20,
-            "resistance": 0
-          },
           "promotionGains": {
             "hp": 2,
             "strength": 2,
@@ -5304,13 +4702,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rally_defense",
-              "displayName": "Rally Defense"
+              "skillId": "rally_defense"
             },
             {
               "level": 15,
-              "skillId": "swordbreaker",
-              "displayName": "Swordbreaker"
+              "skillId": "swordbreaker"
             }
           ]
         },
@@ -5326,16 +4722,6 @@
             "luck": 0,
             "defense": 8,
             "resistance": 6
-          },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 15,
-            "magic": 15,
-            "skill": 10,
-            "speed": 5,
-            "luck": 0,
-            "defense": 10,
-            "resistance": 15
           },
           "promotionGains": {
             "hp": 1,
@@ -5354,13 +4740,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "savage_blow",
-              "displayName": "Savage Blow"
+              "skillId": "savage_blow"
             },
             {
               "level": 15,
-              "skillId": "trample",
-              "displayName": "Trample"
+              "skillId": "trample"
             }
           ]
         }
@@ -5418,7 +4802,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Wyvern Rider and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -5473,16 +4856,6 @@
       "thunder",
       "vulnerary"
     ],
-    "startingClassGrowthRates": {
-      "hp": 0,
-      "strength": 10,
-      "magic": 20,
-      "skill": 0,
-      "speed": 10,
-      "luck": 0,
-      "defense": 5,
-      "resistance": 10
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -5582,16 +4955,6 @@
             "defense": 5,
             "resistance": 8
           },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 0,
-            "magic": 25,
-            "skill": 0,
-            "speed": 10,
-            "luck": 0,
-            "defense": 5,
-            "resistance": 15
-          },
           "promotionGains": {
             "hp": 1,
             "strength": 0,
@@ -5607,13 +4970,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "vengeance",
-              "displayName": "Vengeance"
+              "skillId": "vengeance"
             },
             {
               "level": 15,
-              "skillId": "bowbreaker",
-              "displayName": "Bowbreaker"
+              "skillId": "bowbreaker"
             }
           ]
         },
@@ -5629,16 +4990,6 @@
             "luck": 3,
             "defense": 8,
             "resistance": 6
-          },
-          "classGrowthRates": {
-            "hp": 15,
-            "strength": 20,
-            "magic": 10,
-            "skill": 5,
-            "speed": 5,
-            "luck": 5,
-            "defense": 15,
-            "resistance": 5
           },
           "promotionGains": {
             "hp": 3,
@@ -5657,13 +5008,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "seal_magic",
-              "displayName": "Seal Magic"
+              "skillId": "seal_magic"
             },
             {
               "level": 15,
-              "skillId": "lifetaker",
-              "displayName": "Lifetaker"
+              "skillId": "lifetaker"
             }
           ]
         }
@@ -5721,7 +5070,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Dark Mage and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -5777,16 +5125,6 @@
       "iron_sword",
       "vulnerary"
     ],
-    "startingClassGrowthRates": {
-      "hp": 10,
-      "strength": 15,
-      "magic": 0,
-      "skill": 20,
-      "speed": 15,
-      "luck": 5,
-      "defense": 10,
-      "resistance": 5
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -5886,16 +5224,6 @@
             "defense": 7,
             "resistance": 2
           },
-          "classGrowthRates": {
-            "hp": 20,
-            "strength": 15,
-            "magic": 0,
-            "skill": 20,
-            "speed": 15,
-            "luck": 5,
-            "defense": 10,
-            "resistance": 0
-          },
           "promotionGains": {
             "hp": 3,
             "strength": 3,
@@ -5913,13 +5241,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "sol",
-              "displayName": "Sol"
+              "skillId": "sol"
             },
             {
               "level": 15,
-              "skillId": "axebreaker",
-              "displayName": "Axebreaker"
+              "skillId": "axebreaker"
             }
           ]
         },
@@ -5935,16 +5261,6 @@
             "luck": 3,
             "defense": 5,
             "resistance": 6
-          },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 10,
-            "magic": 0,
-            "skill": 15,
-            "speed": 15,
-            "luck": 10,
-            "defense": 0,
-            "resistance": 10
           },
           "promotionGains": {
             "hp": 1,
@@ -5963,13 +5279,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rally_skill",
-              "displayName": "Rally Skill"
+              "skillId": "rally_skill"
             },
             {
               "level": 15,
-              "skillId": "shurikenbreaker",
-              "displayName": "Shurikenbreaker"
+              "skillId": "shurikenbreaker"
             }
           ]
         }
@@ -6027,7 +5341,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Mercenary and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"
@@ -6084,16 +5397,6 @@
     "inventory": [
       "iron_bow"
     ],
-    "startingClassGrowthRates": {
-      "hp": 0,
-      "strength": 10,
-      "magic": 5,
-      "skill": 10,
-      "speed": 20,
-      "luck": 0,
-      "defense": 0,
-      "resistance": 20
-    },
     "baseStatFormula": {
       "childAptitude": "child personal base + automatic-growth stat gains",
       "promotedClassAptitude": "promoted-class growth rate * (automatic-growth levels beyond the unpromoted cap - 1) / 100",
@@ -6193,16 +5496,6 @@
             "defense": 3,
             "resistance": 8
           },
-          "classGrowthRates": {
-            "hp": 0,
-            "strength": 5,
-            "magic": 15,
-            "skill": 5,
-            "speed": 20,
-            "luck": 0,
-            "defense": 0,
-            "resistance": 20
-          },
           "promotionGains": {
             "hp": 1,
             "strength": 1,
@@ -6220,13 +5513,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "lucky_seven",
-              "displayName": "Lucky Seven"
+              "skillId": "lucky_seven"
             },
             {
               "level": 15,
-              "skillId": "pass",
-              "displayName": "Pass"
+              "skillId": "pass"
             }
           ]
         },
@@ -6242,16 +5533,6 @@
             "luck": 3,
             "defense": 5,
             "resistance": 6
-          },
-          "classGrowthRates": {
-            "hp": 10,
-            "strength": 10,
-            "magic": 0,
-            "skill": 15,
-            "speed": 15,
-            "luck": 10,
-            "defense": 0,
-            "resistance": 10
           },
           "promotionGains": {
             "hp": 2,
@@ -6270,13 +5551,11 @@
           "learnedSkills": [
             {
               "level": 5,
-              "skillId": "rally_skill",
-              "displayName": "Rally Skill"
+              "skillId": "rally_skill"
             },
             {
               "level": 15,
-              "skillId": "shurikenbreaker",
-              "displayName": "Shurikenbreaker"
+              "skillId": "shurikenbreaker"
             }
           ]
         }
@@ -6334,7 +5613,6 @@
         "sourceId": "fewiki-fe14-classes",
         "locator": "Outlaw and promotion rows",
         "fields": [
-          "startingClassGrowthRates",
           "offspringSeal.promotionOptions"
         ],
         "reviewStatus": "accepted"

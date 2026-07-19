@@ -129,6 +129,8 @@ export const SOURCE_LOCATIONS = {
     "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/maximum-stats/",
   "serenes-fe14-hoshidan-class-skills":
     "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/class-skills/",
+  "serenes-fe14-hoshidan-class-growth-rates":
+    "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/growth-rates/",
   "serenes-fe14-nohrian-class-maximum-stats":
     "https://serenesforest.net/fire-emblem-fates/nohrian-classes/maximum-stats/",
   "serenes-fe14-nohrian-class-skills":
@@ -141,6 +143,8 @@ export const SOURCE_LOCATIONS = {
     "https://serenesforest.net/fire-emblem-fates/nohrian-classes/base-stats/",
   "serenes-fe14-nohrian-class-growth-rates":
     "https://serenesforest.net/fire-emblem-fates/nohrian-classes/growth-rates/",
+  "fandom-fe14-weapon-list":
+    "https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates",
   "serenes-fe14-other-base-stats":
     "https://serenesforest.net/fire-emblem-fates/other-characters/base-stats/",
   "serenes-fe14-other-recruitment":

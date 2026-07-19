@@ -211,7 +211,8 @@ function validateRelationships(
       !relativePath.endsWith("units/second-generation.json") &&
       !relativePath.endsWith("class-trees.json") &&
       !relativePath.endsWith("class-stats.json") &&
-      !relativePath.endsWith("class-skills.json"),
+      !relativePath.endsWith("class-skills.json") &&
+      !relativePath.endsWith("weapon-types.json"),
   );
 
   for (const relativePath of domainPaths) {
@@ -276,6 +277,30 @@ function validateRelationships(
   if (new Set(profileIds).size !== profileIds.length) {
     errors.push({ code: "duplicate_class_stat_profile", message: "Class stat profiles contain duplicate class IDs." });
   }
+  for (const profile of classProfiles) {
+    const growthRates = profile.growthRates as JsonObject;
+    for (const [stat, value] of Object.entries(growthRates)) {
+      if (typeof value !== "number" || value < 0 || value > 100 || value % 5 !== 0) {
+        errors.push({
+          code: "invalid_class_growth_rate",
+          message: `Class ${String(profile.classId)} has invalid ${stat} growth ${String(value)}.`,
+        });
+      }
+    }
+  }
+  const classStatProvenance = classStatsFile.provenance as JsonObject[];
+  for (const sourceId of [
+    "serenes-fe14-hoshidan-class-growth-rates",
+    "serenes-fe14-nohrian-class-growth-rates",
+  ]) {
+    const sourceRef = classStatProvenance.find((entry) => entry.sourceId === sourceId);
+    if (!sourceRef || !(sourceRef.fields as string[]).includes("classes.growthRates")) {
+      errors.push({
+        code: "missing_class_growth_provenance",
+        message: `Class growth data is missing field-level provenance from ${sourceId}.`,
+      });
+    }
+  }
 
   validateSkillData(
     parsed,
@@ -328,6 +353,38 @@ function validateRelationships(
         message: `Base stats reference unknown carryover source ${carryover.sourceAvailabilityId as string}.`,
         unitId: record.unitId as string,
       });
+    }
+  }
+
+  validateWeaponTypeData(
+    parsed,
+    errors,
+    sourceIds,
+    classProfiles,
+    baseStats,
+    childRecruitment,
+  );
+
+  const rawChildRecruitment = JSON.parse(
+    readFileSync(path.resolve("data/normalized/fe14/child-recruitment.json"), "utf8"),
+  ) as JsonObject[];
+  for (const recruitment of rawChildRecruitment) {
+    if ("startingClassGrowthRates" in recruitment) {
+      errors.push({
+        code: "copied_child_class_growth",
+        message: `${String(recruitment.unitId)} copies starting-class growth rates instead of joining class-stats.json.`,
+        unitId: recruitment.unitId as string,
+      });
+    }
+    const offspringSeal = recruitment.offspringSeal as JsonObject;
+    for (const option of offspringSeal.promotionOptions as JsonObject[]) {
+      if ("classGrowthRates" in option) {
+        errors.push({
+          code: "copied_child_promotion_growth",
+          message: `${String(recruitment.unitId)} copies ${String(option.classId)} growth rates instead of joining class-stats.json.`,
+          unitId: recruitment.unitId as string,
+        });
+      }
     }
   }
 
@@ -828,6 +885,185 @@ function unitNo(unitId: string, rosterById: Map<string, JsonObject>): number {
   return (rosterById.get(unitId)?.unitNo as number | undefined) ?? Number.MAX_SAFE_INTEGER;
 }
 
+function validateWeaponTypeData(
+  parsed: Record<string, unknown>,
+  errors: ValidationMessage[],
+  sourceIds: Set<string>,
+  classProfiles: JsonObject[],
+  baseStats: JsonObject[],
+  childRecruitment: JsonObject[],
+): void {
+  const expectedIds = [
+    "sword",
+    "lance",
+    "axe",
+    "dagger",
+    "bow",
+    "tome",
+    "staff",
+    "dragonstone",
+    "beaststone",
+  ];
+  const weaponTypeFile = parsed[
+    "data/normalized/fe14/weapon-types.json"
+  ] as JsonObject;
+  const weaponTypes = weaponTypeFile.weaponTypes as JsonObject[];
+  const manifest = parsed[
+    "data/sources/fe14/weapon-icon-sources.json"
+  ] as JsonObject;
+  const entries = manifest.entries as JsonObject[];
+
+  validateUniqueIds(weaponTypes, "weapon type", errors);
+  const weaponTypeIds = weaponTypes.map((weaponType) => weaponType.id as string);
+  const knownWeaponTypeIds = new Set(weaponTypeIds);
+  if (weaponTypeIds.join("|") !== expectedIds.join("|")) {
+    errors.push({
+      code: "weapon_type_order",
+      message: "Weapon types must use the approved nine-type canonical order.",
+    });
+  }
+  for (const [index, weaponType] of weaponTypes.entries()) {
+    if (
+      weaponType.displayOrder !== index + 1 ||
+      weaponType.iconAssetId !== weaponType.id
+    ) {
+      errors.push({
+        code: "weapon_type_identity",
+        message: `Weapon type ${String(weaponType.id)} has an invalid display order or icon asset ID.`,
+      });
+    }
+  }
+
+  const referencedIds = new Set<string>();
+  const recordWeaponRanks = (value: unknown): void => {
+    if (!value || typeof value !== "object" || Array.isArray(value)) return;
+    for (const weaponTypeId of Object.keys(value as JsonObject)) {
+      referencedIds.add(weaponTypeId);
+    }
+  };
+  for (const profile of classProfiles) recordWeaponRanks(profile.weaponRankCaps);
+  for (const record of baseStats) {
+    recordWeaponRanks(record.weaponRanks);
+    for (const ranks of Object.values(
+      (record.weaponRanksByAvailability as JsonObject | undefined) ?? {},
+    )) {
+      recordWeaponRanks(ranks);
+    }
+  }
+  for (const recruitment of childRecruitment) {
+    recordWeaponRanks(recruitment.weaponRanks);
+    const offspringSeal = recruitment.offspringSeal as JsonObject;
+    for (const option of offspringSeal.promotionOptions as JsonObject[]) {
+      for (const weaponTypeId of [
+        option.primaryWeaponId,
+        option.secondaryWeaponId,
+        ...((option.secondaryWeaponIds as string[] | undefined) ?? []),
+      ]) {
+        if (weaponTypeId) referencedIds.add(weaponTypeId as string);
+      }
+    }
+  }
+  for (const weaponTypeId of referencedIds) {
+    if (!knownWeaponTypeIds.has(weaponTypeId)) {
+      errors.push({
+        code: "unknown_weapon_type",
+        message: `Game data references unknown weapon type ${weaponTypeId}.`,
+      });
+    }
+  }
+  for (const weaponTypeId of knownWeaponTypeIds) {
+    if (!referencedIds.has(weaponTypeId)) {
+      errors.push({
+        code: "unused_weapon_type",
+        message: `Canonical weapon type ${weaponTypeId} is not referenced by FE14 data.`,
+      });
+    }
+  }
+
+  const declaredCount = (manifest.counts as JsonObject).weaponTypeIcons;
+  if (declaredCount !== entries.length || entries.length !== expectedIds.length) {
+    errors.push({
+      code: "weapon_icon_manifest_count",
+      message: "Weapon icon manifest declared count does not match its entries.",
+    });
+  }
+  const manifestIds = new Set<string>();
+  const destinations = new Set<string>();
+  const manifestById = new Map<string, JsonObject>();
+  const assetRoot = path.resolve("src/games/fe14/assets/weapon_type_icons");
+  const pngSignature = "89504e470d0a1a0a";
+  for (const entry of entries) {
+    const weaponTypeId = entry.weaponTypeId as string;
+    const destination = entry.localDestination as string;
+    const absoluteDestination = path.resolve(destination);
+    const relativeDestination = path.relative(assetRoot, absoluteDestination);
+    if (manifestIds.has(weaponTypeId)) {
+      errors.push({
+        code: "duplicate_weapon_icon_manifest_key",
+        message: `Duplicate weapon icon manifest key ${weaponTypeId}.`,
+      });
+    }
+    manifestIds.add(weaponTypeId);
+    manifestById.set(weaponTypeId, entry);
+    if (destinations.has(destination)) {
+      errors.push({
+        code: "duplicate_weapon_icon_destination",
+        message: `Duplicate weapon icon destination ${destination}.`,
+      });
+    }
+    destinations.add(destination);
+    if (relativeDestination.startsWith("..") || path.isAbsolute(relativeDestination)) {
+      errors.push({
+        code: "weapon_icon_destination_scope",
+        message: `Weapon icon destination escapes its asset directory: ${destination}.`,
+      });
+    }
+    for (const sourcePageId of entry.sourcePageIds as string[]) {
+      if (!sourceIds.has(sourcePageId)) {
+        errors.push({
+          code: "unknown_weapon_icon_source_page",
+          message: `Weapon icon ${weaponTypeId} references unknown source page ${sourcePageId}.`,
+        });
+      }
+    }
+    if (!existsSync(absoluteDestination)) {
+      errors.push({
+        code: "missing_weapon_icon_file",
+        message: `Missing weapon icon file ${destination}.`,
+      });
+    } else if (
+      statSync(absoluteDestination).size === 0 ||
+      readFileSync(absoluteDestination).subarray(0, 8).toString("hex") !== pngSignature
+    ) {
+      errors.push({
+        code: "invalid_weapon_icon_file",
+        message: `Weapon icon file is empty or not PNG: ${destination}.`,
+      });
+    }
+  }
+  for (const weaponType of weaponTypes) {
+    const weaponTypeId = weaponType.id as string;
+    const manifestEntry = manifestById.get(weaponTypeId);
+    if (
+      !manifestEntry ||
+      manifestEntry.canonicalName !== (weaponType.names as JsonObject).en
+    ) {
+      errors.push({
+        code: "weapon_type_icon_manifest",
+        message: `Weapon type ${weaponTypeId} does not match its icon manifest entry.`,
+      });
+    }
+  }
+  for (const manifestId of manifestIds) {
+    if (!knownWeaponTypeIds.has(manifestId)) {
+      errors.push({
+        code: "orphan_weapon_icon_manifest_entry",
+        message: `Weapon icon manifest entry ${manifestId} has no canonical weapon-type record.`,
+      });
+    }
+  }
+}
+
 function validateSkillData(
   parsed: Record<string, unknown>,
   errors: ValidationMessage[],
@@ -921,6 +1157,56 @@ function validateSkillData(
   }
 
   const classSkillIds = new Set(classSkills.map((skill) => skill.id as string));
+  const personalSkillIds = new Set(personalSkills.map((skill) => skill.id as string));
+  const classSkillById = new Map(classSkills.map((skill) => [skill.id as string, skill]));
+  const baseStats = parsed["data/normalized/fe14/unit-base-stats.json"] as JsonObject[];
+  const classAliases: Record<string, string> = { maid: "attendant", butler: "attendant" };
+  for (const record of baseStats) {
+    const classId = classAliases[record.classId as string] ?? record.classId as string;
+    const level = record.level as number;
+    const overrides = (record.startingSkillOverrideIds as string[] | undefined) ?? [];
+    for (const skillId of overrides) {
+      const skill = classSkillById.get(skillId);
+      if (!skill) {
+        errors.push({
+          code: personalSkillIds.has(skillId) ? "personal_skill_as_starting_override" : "unknown_starting_skill_override",
+          message: `${String(record.unitId)} has invalid starting-skill override ${skillId}.`,
+          unitId: record.unitId as string,
+        });
+        continue;
+      }
+      const derivable = (skill.acquisition as JsonObject[]).some((edge) => (
+        edge.classId === classId && (edge.level as number) <= level
+      ));
+      if (derivable) {
+        errors.push({
+          code: "redundant_starting_skill_override",
+          message: `${String(record.unitId)} redundantly overrides derivable ${skillId} at ${classId} level ${String(level)}.`,
+          unitId: record.unitId as string,
+        });
+      }
+    }
+  }
+  const childRecruitment = parsed["data/normalized/fe14/child-recruitment.json"] as JsonObject[];
+  for (const recruitment of childRecruitment) {
+    const offspringSeal = recruitment.offspringSeal as JsonObject;
+    for (const promotion of offspringSeal.promotionOptions as JsonObject[]) {
+      for (const learned of promotion.learnedSkills as JsonObject[]) {
+        const skillId = learned.skillId as string;
+        const skill = classSkillById.get(skillId);
+        const matchesPromotion = skill && (skill.acquisition as JsonObject[]).some((edge) => (
+          edge.classId === promotion.classId && edge.level === learned.level
+        ));
+        if (!matchesPromotion) {
+          errors.push({
+            code: "invalid_offspring_seal_skill",
+            message: `${String(recruitment.unitId)} maps ${skillId} to the wrong Offspring Seal class or level.`,
+            unitId: recruitment.unitId as string,
+          });
+        }
+      }
+    }
+  }
   const classIdsWithSkills = new Set<string>();
   const acquisitionKeys = new Set<string>();
   const approvedClassSkillSources = new Set([
@@ -984,7 +1270,6 @@ function validateSkillData(
     }
   }
 
-  const personalSkillIds = new Set(personalSkills.map((skill) => skill.id as string));
   const personalSkillOwners = new Set<string>();
   for (const skill of personalSkills) {
     const unitId = skill.unitId as string;
@@ -1283,7 +1568,7 @@ async function runCli(): Promise<void> {
     console.warn(`WARN ${warning.code}: ${warning.message}`);
   }
   for (const error of result.errors) {
-    console.error(`ERROR ${error.code}: ${error.message}`);
+    console.error(`ERROR ${error.code}: ${error.message}${error.path ? ` (${error.path})` : ""}`);
   }
 
   console.log(

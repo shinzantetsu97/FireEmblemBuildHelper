@@ -17,6 +17,7 @@ export const processingStatusSchema = z.enum([
 ]);
 
 export const routeSchema = z.enum(["birthright", "conquest", "revelation"]);
+export const weaponRankSchema = z.enum(["E", "D", "C", "B", "A", "S"]);
 
 export const sourceRefSchema = z.object({
   sourceId: z.string().min(1),
@@ -34,7 +35,7 @@ export const statBlockSchema = z.object({
   luck: z.number().int(),
   defense: z.number().int(),
   resistance: z.number().int(),
-});
+}).strict();
 
 export const sourceCatalogSchema = z.object({
   gameId: z.literal("fe14"),
@@ -326,9 +327,8 @@ export const childRecruitmentFileSchema = z.array(z.object({
   startingClassId: z.string().min(1),
   level10PersonalBases: statBlockSchema,
   level10MinimumStatsBeforeInheritance: statBlockSchema,
-  weaponRanks: z.record(z.string(), z.enum(["E", "D", "C", "B", "A", "S"])),
+  weaponRanks: z.record(z.string(), weaponRankSchema),
   inventory: z.array(z.string().min(1)),
-  startingClassGrowthRates: statBlockSchema,
   baseStatFormula: z.object({
     childAptitude: z.string().min(1),
     promotedClassAptitude: z.string().min(1),
@@ -361,21 +361,19 @@ export const childRecruitmentFileSchema = z.array(z.object({
       displayName: z.string().min(1),
       routes: z.array(routeSchema).min(1).optional(),
       classBaseStats: statBlockSchema,
-      classGrowthRates: statBlockSchema,
       promotionGains: statBlockSchema,
       primaryWeaponId: z.string().min(1),
       secondaryWeaponIds: z.array(z.string().min(1)),
       learnedSkills: z.array(z.object({
         level: z.number().int().positive(),
         skillId: z.string().min(1),
-        displayName: z.string().min(1),
       })),
     })).min(1),
     weaponRankMilestones: z.array(z.object({
       chapterStart: z.number().int().min(19),
       chapterEnd: z.number().int().min(19),
-      primaryRank: z.enum(["E", "D", "C", "B", "A", "S"]),
-      secondaryRank: z.enum(["E", "D", "C", "B", "A", "S"]),
+      primaryRank: weaponRankSchema,
+      secondaryRank: weaponRankSchema,
     })),
   }),
   provenance: z.array(sourceRefSchema).min(1),
@@ -389,9 +387,9 @@ export const baseStatsFileSchema = z.array(
     level: z.number().int().positive(),
     classId: z.string().min(1),
     stats: statBlockSchema,
-    weaponRanks: z.record(z.string(), z.enum(["E", "D", "C", "B", "A", "S"])),
+    weaponRanks: z.record(z.string(), weaponRankSchema),
     weaponRanksByAvailability: z
-      .record(z.string(), z.record(z.string(), z.enum(["E", "D", "C", "B", "A", "S"])))
+      .record(z.string(), z.record(z.string(), weaponRankSchema))
       .optional(),
     weaponRankProgress: z
       .record(
@@ -416,7 +414,7 @@ export const baseStatsFileSchema = z.array(
         ),
       )
       .optional(),
-    startingSkillIds: z.array(z.string().min(1)),
+    startingSkillOverrideIds: z.array(z.string().min(1)).optional(),
     chapter5Carryover: z
       .object({
         sourceAvailabilityId: z.string().min(1),
@@ -693,10 +691,41 @@ export const classStatsFileSchema = z.object({
     classId: z.string().min(1),
     displayName: z.string().min(1),
     tier: z.enum(["base", "advanced", "special"]),
+    growthRates: statBlockSchema,
     maximumStats: statBlockSchema,
-    weaponRankCaps: z.record(z.string(), z.enum(["E", "D", "C", "B", "A", "S"])),
+    weaponRankCaps: z.record(z.string(), weaponRankSchema),
   })).min(1),
   provenance: z.array(sourceRefSchema).min(1),
+});
+
+const weaponTypeIdSchema = z.string().regex(/^[a-z][a-z0-9_]*$/);
+
+export const weaponTypesFileSchema = z.object({
+  gameId: z.literal("fe14"),
+  scope: z.literal("standard_playable_non_dlc"),
+  weaponTypes: z.array(z.object({
+    id: weaponTypeIdSchema,
+    names: z.object({ en: z.string().min(1) }),
+    iconAssetId: weaponTypeIdSchema,
+    displayOrder: z.number().int().positive(),
+    provenance: z.array(sourceRefSchema).min(1),
+  })).length(9),
+});
+
+export const weaponIconManifestFileSchema = z.object({
+  gameId: z.literal("fe14"),
+  scope: z.literal("milestone-008-standard-weapon-types"),
+  counts: z.object({ weaponTypeIcons: z.number().int().nonnegative() }),
+  entries: z.array(z.object({
+    weaponTypeId: weaponTypeIdSchema,
+    canonicalName: z.string().min(1),
+    sourcePageIds: z.array(z.string().min(1)).min(1),
+    sourcePageUrls: z.array(z.string().url()).min(1),
+    sourceImageUrl: z.string().url().regex(/\.png(?:\/[^?]*)?(?:\?.*)?$/i),
+    localDestination: z.string().regex(
+      /^src\/games\/fe14\/assets\/weapon_type_icons\/[a-z][a-z0-9_]*\.png$/,
+    ),
+  })).length(9),
 });
 
 export const classSkillAcquisitionSchema = z.object({
@@ -765,12 +794,14 @@ export const skillIconManifestFileSchema = z.object({
 export const domainSchemas = {
   "data/sources/fe14/sources.json": sourceCatalogSchema,
   "data/sources/fe14/skill-icon-sources.json": skillIconManifestFileSchema,
+  "data/sources/fe14/weapon-icon-sources.json": weaponIconManifestFileSchema,
   "data/normalized/fe14/units/first-generation.json": rosterSchema,
   "data/normalized/fe14/units/second-generation.json": secondGenerationRosterSchema,
   "data/normalized/fe14/child-parentage.json": childParentageFileSchema,
   "data/normalized/fe14/child-recruitment.json": childRecruitmentFileSchema,
   "data/normalized/fe14/class-trees.json": classTreeFileSchema,
   "data/normalized/fe14/class-stats.json": classStatsFileSchema,
+  "data/normalized/fe14/weapon-types.json": weaponTypesFileSchema,
   "data/normalized/fe14/class-skills.json": classSkillsFileSchema,
   "data/normalized/fe14/unit-availability.json": availabilityFileSchema,
   "data/normalized/fe14/unit-base-stats.json": baseStatsFileSchema,

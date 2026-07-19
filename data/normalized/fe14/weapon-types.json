@@ -1,0 +1,105 @@
+{
+  "gameId": "fe14",
+  "scope": "standard_playable_non_dlc",
+  "weaponTypes": [
+    {
+      "id": "sword",
+      "names": { "en": "Sword" },
+      "iconAssetId": "sword",
+      "displayOrder": 1,
+      "provenance": [
+        { "sourceId": "serenes-fe14-hoshidan-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "serenes-fe14-nohrian-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "fandom-fe14-weapon-list", "locator": "Swords heading > File:FE14 Sword.png", "fields": ["iconAssetId"], "reviewStatus": "accepted" }
+      ]
+    },
+    {
+      "id": "lance",
+      "names": { "en": "Lance" },
+      "iconAssetId": "lance",
+      "displayOrder": 2,
+      "provenance": [
+        { "sourceId": "serenes-fe14-hoshidan-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "serenes-fe14-nohrian-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "fandom-fe14-weapon-list", "locator": "Lances heading > File:FE14 Lance.png", "fields": ["iconAssetId"], "reviewStatus": "accepted" }
+      ]
+    },
+    {
+      "id": "axe",
+      "names": { "en": "Axe" },
+      "iconAssetId": "axe",
+      "displayOrder": 3,
+      "provenance": [
+        { "sourceId": "serenes-fe14-hoshidan-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "serenes-fe14-nohrian-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "fandom-fe14-weapon-list", "locator": "Axes heading > File:FE14 Axe.png", "fields": ["iconAssetId"], "reviewStatus": "accepted" }
+      ]
+    },
+    {
+      "id": "dagger",
+      "names": { "en": "Dagger" },
+      "iconAssetId": "dagger",
+      "displayOrder": 4,
+      "provenance": [
+        { "sourceId": "serenes-fe14-hoshidan-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank Dagger icon (source file uses kunai)", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "serenes-fe14-nohrian-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank Dagger icon (source file uses kunai)", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "fandom-fe14-weapon-list", "locator": "Daggers heading > File:FE14 Kunai.png", "fields": ["iconAssetId"], "reviewStatus": "accepted" }
+      ]
+    },
+    {
+      "id": "bow",
+      "names": { "en": "Bow" },
+      "iconAssetId": "bow",
+      "displayOrder": 5,
+      "provenance": [
+        { "sourceId": "serenes-fe14-hoshidan-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "serenes-fe14-nohrian-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "fandom-fe14-weapon-list", "locator": "Bows heading > File:FE14 Bow.png", "fields": ["iconAssetId"], "reviewStatus": "accepted" }
+      ]
+    },
+    {
+      "id": "tome",
+      "names": { "en": "Tome" },
+      "iconAssetId": "tome",
+      "displayOrder": 6,
+      "provenance": [
+        { "sourceId": "serenes-fe14-hoshidan-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "serenes-fe14-nohrian-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "fandom-fe14-weapon-list", "locator": "Tomes heading > File:FE14 Tome.png", "fields": ["iconAssetId"], "reviewStatus": "accepted" }
+      ]
+    },
+    {
+      "id": "staff",
+      "names": { "en": "Staff" },
+      "iconAssetId": "staff",
+      "displayOrder": 7,
+      "provenance": [
+        { "sourceId": "serenes-fe14-hoshidan-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "serenes-fe14-nohrian-class-maximum-stats", "locator": "Maximum Stats > Weapon Rank icons", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "fandom-fe14-weapon-list", "locator": "Staves heading > File:FE14 Staff.png", "fields": ["iconAssetId"], "reviewStatus": "accepted" }
+      ]
+    },
+    {
+      "id": "dragonstone",
+      "names": { "en": "Dragonstone" },
+      "iconAssetId": "dragonstone",
+      "displayOrder": 8,
+      "provenance": [
+        { "sourceId": "serenes-fe14-hoshidan-class-maximum-stats", "locator": "Maximum Stats > Dragonstone Weapon Rank icon", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "serenes-fe14-nohrian-class-maximum-stats", "locator": "Maximum Stats > Dragonstone Weapon Rank icon", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "fandom-fe14-weapon-list", "locator": "Stones heading > File:FE14 Stone.png", "fields": ["iconAssetId"], "reviewStatus": "accepted" }
+      ]
+    },
+    {
+      "id": "beaststone",
+      "names": { "en": "Beaststone" },
+      "iconAssetId": "beaststone",
+      "displayOrder": 9,
+      "provenance": [
+        { "sourceId": "serenes-fe14-hoshidan-class-maximum-stats", "locator": "Maximum Stats > Beaststone Weapon Rank icon", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "serenes-fe14-nohrian-class-maximum-stats", "locator": "Maximum Stats > Beaststone Weapon Rank icon", "fields": ["names.en", "iconAssetId"], "reviewStatus": "accepted" },
+        { "sourceId": "fandom-fe14-weapon-list", "locator": "Stones heading > File:FE14 Beaststone.png", "fields": ["iconAssetId"], "reviewStatus": "accepted" }
+      ]
+    }
+  ]
+}

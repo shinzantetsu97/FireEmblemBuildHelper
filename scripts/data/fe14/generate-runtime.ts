@@ -12,6 +12,7 @@ const DOMAIN_PATHS = {
   classTrees: "data/normalized/fe14/class-trees.json",
   classStats: "data/normalized/fe14/class-stats.json",
   classSkills: "data/normalized/fe14/class-skills.json",
+  weaponTypes: "data/normalized/fe14/weapon-types.json",
   availability: "data/normalized/fe14/unit-availability.json",
   baseStats: "data/normalized/fe14/unit-base-stats.json",
   growths: "data/normalized/fe14/unit-growths.json",
@@ -42,11 +43,13 @@ const roster = [...firstRoster, ...secondRoster];
 const classTreeFile = result.parsed[DOMAIN_PATHS.classTrees] as JsonObject;
 const classStatsFile = result.parsed[DOMAIN_PATHS.classStats] as JsonObject;
 const classSkillFile = result.parsed[DOMAIN_PATHS.classSkills] as JsonObject;
+const weaponTypeFile = result.parsed[DOMAIN_PATHS.weaponTypes] as JsonObject;
 const sourcesFile = result.parsed[DOMAIN_PATHS.sources] as JsonObject;
 const updatedAt = sourcesFile.updatedAt as string;
 const classTrees = classTreeFile.classes as JsonObject[];
 const classStats = classStatsFile.classes as JsonObject[];
 const classSkills = classSkillFile.skills as JsonObject[];
+const weaponTypes = weaponTypeFile.weaponTypes as JsonObject[];
 const classStatsById = new Map(
   classStats.map((profile) => [profile.classId as string, profile]),
 );
@@ -109,13 +112,14 @@ const runtimeUnits = roster
   });
 
 const runtime = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   gameId: "fe14",
   lastUpdated: updatedAt,
   roster,
   classTrees,
   classStats,
   classSkills,
+  weaponTypes,
   skillsByClass,
   classDirectory,
   units: runtimeUnits,

@@ -22,7 +22,7 @@ describe("Dwyer offspring scenarios", () => {
 
   it("averages Dwyer's child-base growth with the selected mother's personal growth", () => {
     const scenario = resolveOffspringScenario(dwyer, "felicia");
-    expect(scenario?.personalGrowth.hp).toBe(42);
+    expect(scenario?.personalGrowth.hp).toBe(42.5);
     expect(scenario?.inheritedClassId).toBe("mercenary");
   });
 
@@ -113,7 +113,7 @@ describe("Shigure father scenarios", () => {
 
     expect(scenario.father.identity.id).toBe("jakob");
     expect(scenario.mother.identity.id).toBe("azura");
-    expect(scenario.personalGrowth.hp).toBe(Math.floor((35 + jakob.growths[0].rates.hp) / 2));
+    expect(scenario.personalGrowth.hp).toBe((35 + jakob.growths[0].rates.hp) / 2);
   });
 
   it("resolves Jakob's collision to Troubadour from Jakob and Wyvern Rider from Azura", () => {

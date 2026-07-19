@@ -1,6 +1,6 @@
 {
   "gameId": "fe14",
-  "updatedAt": "2026-07-17",
+  "updatedAt": "2026-07-18",
   "sources": [
     {
       "id": "fe14-workbook-cn",
@@ -1103,6 +1103,14 @@
       "reviewStatus": "accepted"
     },
     {
+      "id": "serenes-fe14-hoshidan-class-growth-rates",
+      "kind": "web",
+      "title": "Fire Emblem Fates: Hoshidan class growth rates",
+      "location": "https://serenesforest.net/fire-emblem-fates/hoshidan-classes/growth-rates/",
+      "language": "en",
+      "reviewStatus": "accepted"
+    },
+    {
       "id": "serenes-fe14-nohrian-class-maximum-stats",
       "kind": "web",
       "title": "Fire Emblem Fates: Nohrian class maximum stats",
@@ -1223,6 +1231,15 @@
       "language": "en",
       "reviewStatus": "corroborated",
       "notes": "Firsthand localized Revelation report says Male Kana could not support Azura!Midori at all after Female Corrin married Shigure. This independently matches the specialist Japanese Pegasus Knight support matrix."
+    },
+    {
+      "id": "fandom-fe14-weapon-list",
+      "kind": "web",
+      "title": "List of weapons in Fire Emblem Fates - Fire Emblem Wiki (Fandom)",
+      "location": "https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "notes": "Source page and original file links for the nine FE14 weapon-rank icons used by the route-driven base configuration surface."
     }
   ]
 }

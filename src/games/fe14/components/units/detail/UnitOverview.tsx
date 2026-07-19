@@ -2,22 +2,17 @@ import { useCallback, useEffect, useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import { TriangleAlert } from "lucide-react";
 import { fe14Data, type UnitRuntime } from "../../../data";
-import PersonalSkill from "../../skills/PersonalSkill";
 import UnitClassSkills from "../../skills/UnitClassSkills";
 import {
   AvatarConfigurationSection,
-  AvatarPairupSection,
   avatarTalentClassIds,
 } from "./AvatarConfiguration";
-import { ClassTreeLabel, ClassTreeList } from "./ClassTree";
-import PairupTable from "./PairupTable";
+import { ClassTreeList } from "./ClassTree";
 import RecruitmentSection from "./RecruitmentSection";
 import SectionHeading from "./SectionHeading";
-import StatComparison from "./StatComparison";
 import SupportDirectory, { type SealGrantPreview, type SealGrantPreviews, type SealPreviewKind } from "./SupportDirectory";
 import { type AvatarGender } from "./types";
 import { ScarletDepartureAlert } from "./UnitAlerts";
-import { corrinNobleBaseLabel } from "./UnitHeader";
 import UnitReferences from "./UnitReferences";
 import OffspringOverview from "./OffspringOverview";
 import { corrinBorrowedClassId, corrinTalentLabel } from "./utils";
@@ -83,7 +78,12 @@ export default function UnitOverview({
 
       {unit.identity.id === "scarlet" ? <ScarletDepartureAlert /> : null}
 
-      <RecruitmentSection unit={unit} avatarSelection={avatarSelection} />
+      <RecruitmentSection
+        unit={unit}
+        avatarGender={avatarGender}
+        avatarSelection={avatarSelection}
+        setAvatarGender={setAvatarGender}
+      />
 
       {avatarSelection ? <AvatarConfigurationSection unit={unit} selection={avatarSelection} /> : null}
 
@@ -102,58 +102,16 @@ export default function UnitOverview({
         selectedSealPreviews={selectedSealPreviews}
       />
 
-      {!unit.avatarConfiguration ? (
-        <section className="data-section" aria-labelledby="stats-heading">
-          <SectionHeading eyebrow="Numbers" title="Personal growth and cap modifiers" id="stats-heading" />
-          <StatComparison unit={unit} />
-        </section>
-      ) : null}
-
-      <section className="data-section two-column-data" aria-label="Skill and class access">
-        <div>
-          <SectionHeading eyebrow="Identity" title="Personal skill" id="skill-heading" />
-          {unit.personalSkill ? <PersonalSkill skill={unit.personalSkill} labelledBy="skill-heading" /> : null}
-        </div>
-        <div>
-          <SectionHeading eyebrow="Reclassing" title="Native class access" id="class-heading" />
-          <dl className="class-access-list" aria-labelledby="class-heading">
-            <div>
-              <dt>Starting class</dt>
-              <dd>
-                <ClassTreeLabel
-                  classId={unit.classAccess?.startingClassId ?? ""}
-                  labelOverride={avatarSelection ? corrinNobleBaseLabel(avatarSelection.gender) : undefined}
-                />
-              </dd>
-            </div>
-            <div>
-              <dt>Base tree</dt>
-              <dd>
-                {avatarSelection ? (
-                  <ClassTreeLabel classId="nohr_prince" labelOverride={corrinNobleBaseLabel(avatarSelection.gender)} />
-                ) : (
-                  <ClassTreeList classIds={unit.classAccess?.baseClassSet ?? []} />
-                )}
-              </dd>
-            </div>
-            <div>
-              <dt>{avatarSelection ? "Heart Seal (Talent)" : "Heart Seal"}</dt>
-              <dd><ClassTreeList classIds={avatarSelection ? avatarTalentClassIds(avatarSelection.talent, avatarSelection.gender) : unit.classAccess?.heartSealClassSet ?? []} /></dd>
-            </div>
-            {unit.identity.id !== "corrin" ? (
-              <div><dt>{corrinTalentLabel(unit)}</dt><dd><ClassTreeList classIds={unit.classAccess?.corrinTalentOnlyClassSet ?? []} /></dd></div>
-            ) : null}
-          </dl>
-        </div>
-      </section>
-
-      {avatarSelection ? (
-        <AvatarPairupSection selection={avatarSelection} />
-      ) : unit.pairupBonuses ? (
-        <section className="data-section" aria-labelledby="pairup-heading">
-          <SectionHeading eyebrow="Support bonuses" title="Attack and Guard Stance" id="pairup-heading" />
-          <PairupTable bonuses={unit.pairupBonuses} />
-        </section>
+      {unit.identity.id !== "corrin" && unit.classAccess?.corrinTalentOnlyClassSet.length ? (
+        <aside className="class-access-exception" aria-label={corrinTalentLabel(unit)}>
+          <div>
+            <strong>{corrinTalentLabel(unit)}</strong>
+            <p>This class access is conditional and is not part of the unit's native or Heart Seal trees.</p>
+          </div>
+          <div className="class-access-exception-trees">
+            <ClassTreeList classIds={unit.classAccess.corrinTalentOnlyClassSet} />
+          </div>
+        </aside>
       ) : null}
 
       <section className="data-section" aria-labelledby="supports-heading">

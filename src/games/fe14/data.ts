@@ -258,11 +258,13 @@ export interface UnitRuntime {
     availabilityId?: string;
     availabilityIds?: string[];
     level: number;
+    classId: string;
     stats: StatBlock;
     weaponRanks: Record<string, string>;
     weaponRanksByAvailability?: Record<string, Record<string, string>>;
     weaponRankProgress?: Record<string, { towardRank: string; barFraction: number; precision: "exact" | "approximate" }>;
     weaponRankProgressByAvailability?: Record<string, Record<string, { towardRank: string; barFraction: number; precision: "exact" | "approximate" }>>;
+    startingSkillOverrideIds?: string[];
     chapter5Carryover?: {
       sourceAvailabilityId: string;
       checkpoint: "end_of_chapter_5";
@@ -357,7 +359,6 @@ export interface OffspringData {
     level10MinimumStatsBeforeInheritance: StatBlock;
     weaponRanks: Record<string, string>;
     inventory: string[];
-    startingClassGrowthRates: StatBlock;
     baseStatFormula: {
       childAptitude: string;
       promotedClassAptitude: string;
@@ -386,11 +387,10 @@ export interface OffspringData {
         displayName: string;
         routes?: string[];
         classBaseStats: StatBlock;
-        classGrowthRates: StatBlock;
         promotionGains: StatBlock;
         primaryWeaponId: string;
         secondaryWeaponId: string;
-        learnedSkills: Array<{ level: number; skillId: string; displayName: string }>;
+        learnedSkills: Array<{ level: number; skillId: string }>;
         secondaryWeaponIds: string[];
       }>;
       weaponRankMilestones: Array<{ chapterStart: number; chapterEnd: number; primaryRank: string; secondaryRank: string }>;
@@ -436,6 +436,7 @@ export interface ClassStatProfile {
   classId: string;
   displayName: string;
   tier: "base" | "advanced" | "special";
+  growthRates: StatBlock;
   maximumStats: StatBlock;
   weaponRankCaps: Record<string, string>;
 }
@@ -461,6 +462,13 @@ export interface ClassSkillIndexEntry {
   gender?: "male" | "female";
 }
 
+export interface WeaponType {
+  id: string;
+  names: { en: string };
+  iconAssetId: string;
+  displayOrder: number;
+}
+
 export interface EnrichedClassNode extends ClassTreeNode {
   stats: ClassStatProfile;
   skills: ClassSkillIndexEntry[];
@@ -479,6 +487,7 @@ export interface Fe14Runtime {
   classTrees: ClassTree[];
   classStats: ClassStatProfile[];
   classSkills: ClassSkill[];
+  weaponTypes: WeaponType[];
   skillsByClass: Record<string, ClassSkillIndexEntry[]>;
   classDirectory: EnrichedClassTree[];
   units: UnitRuntime[];

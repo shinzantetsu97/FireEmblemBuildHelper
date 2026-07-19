@@ -1,0 +1,81 @@
+{
+  "gameId": "fe14",
+  "scope": "milestone-008-standard-weapon-types",
+  "counts": {
+    "weaponTypeIcons": 9
+  },
+  "entries": [
+    {
+      "weaponTypeId": "sword",
+      "canonicalName": "Sword",
+      "sourcePageIds": ["fandom-fe14-weapon-list"],
+      "sourcePageUrls": ["https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates"],
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/5/52/FE14_Sword.png/revision/latest?format=original",
+      "localDestination": "src/games/fe14/assets/weapon_type_icons/sword.png"
+    },
+    {
+      "weaponTypeId": "lance",
+      "canonicalName": "Lance",
+      "sourcePageIds": ["fandom-fe14-weapon-list"],
+      "sourcePageUrls": ["https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates"],
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/9/92/FE14_Lance.png/revision/latest?format=original",
+      "localDestination": "src/games/fe14/assets/weapon_type_icons/lance.png"
+    },
+    {
+      "weaponTypeId": "axe",
+      "canonicalName": "Axe",
+      "sourcePageIds": ["fandom-fe14-weapon-list"],
+      "sourcePageUrls": ["https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates"],
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/e/e9/FE14_Axe.png/revision/latest?format=original",
+      "localDestination": "src/games/fe14/assets/weapon_type_icons/axe.png"
+    },
+    {
+      "weaponTypeId": "dagger",
+      "canonicalName": "Dagger",
+      "sourcePageIds": ["fandom-fe14-weapon-list"],
+      "sourcePageUrls": ["https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates"],
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/9/9a/FE14_Kunai.png/revision/latest?format=original",
+      "localDestination": "src/games/fe14/assets/weapon_type_icons/dagger.png"
+    },
+    {
+      "weaponTypeId": "bow",
+      "canonicalName": "Bow",
+      "sourcePageIds": ["fandom-fe14-weapon-list"],
+      "sourcePageUrls": ["https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates"],
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/0/0d/FE14_Bow.png/revision/latest?format=original",
+      "localDestination": "src/games/fe14/assets/weapon_type_icons/bow.png"
+    },
+    {
+      "weaponTypeId": "tome",
+      "canonicalName": "Tome",
+      "sourcePageIds": ["fandom-fe14-weapon-list"],
+      "sourcePageUrls": ["https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates"],
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/a/ae/FE14_Tome.png/revision/latest?format=original",
+      "localDestination": "src/games/fe14/assets/weapon_type_icons/tome.png"
+    },
+    {
+      "weaponTypeId": "staff",
+      "canonicalName": "Staff",
+      "sourcePageIds": ["fandom-fe14-weapon-list"],
+      "sourcePageUrls": ["https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates"],
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/f/f4/FE14_Staff.png/revision/latest?format=original",
+      "localDestination": "src/games/fe14/assets/weapon_type_icons/staff.png"
+    },
+    {
+      "weaponTypeId": "dragonstone",
+      "canonicalName": "Dragonstone",
+      "sourcePageIds": ["fandom-fe14-weapon-list"],
+      "sourcePageUrls": ["https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates"],
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/8/80/FE14_Stone.png/revision/latest?format=original",
+      "localDestination": "src/games/fe14/assets/weapon_type_icons/dragonstone.png"
+    },
+    {
+      "weaponTypeId": "beaststone",
+      "canonicalName": "Beaststone",
+      "sourcePageIds": ["fandom-fe14-weapon-list"],
+      "sourcePageUrls": ["https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates"],
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/8/82/FE14_Beaststone.png/revision/latest?format=original",
+      "localDestination": "src/games/fe14/assets/weapon_type_icons/beaststone.png"
+    }
+  ]
+}

@@ -132,7 +132,7 @@ export function resolveOffspringScenario(
     ?? avatarAdjustedCaps(variableParent, corrinBoon, corrinBane);
   const fixedParentCaps = avatarAdjustedCaps(fixedParent, corrinBoon, corrinBane);
   const personalGrowth = Object.fromEntries(
-    STAT_KEYS.map((stat) => [stat, Math.floor((parentage.childBaseGrowth[stat] + variableParentGrowth[stat]) / 2)]),
+    STAT_KEYS.map((stat) => [stat, (parentage.childBaseGrowth[stat] + variableParentGrowth[stat]) / 2]),
   ) as unknown as StatBlock;
   const generationBonus = parentage.scenarioKind === "avatar_child" && option.parentGeneration === "second" ? 0 : 1;
   const capModifiers = Object.fromEntries(

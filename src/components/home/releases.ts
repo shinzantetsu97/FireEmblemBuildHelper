@@ -1,10 +1,22 @@
 export const RELEASES = [
   {
+    version: "0.6.0",
+    date: "2026-07-19",
+    dateLabel: "July 19, 2026",
+    title: "Route-driven FE14 base configuration",
+    current: true,
+    changes: [
+      "Rebuilt unit starting-state profiles around a shared route resolver so recruitment timing, joining stats, growths, inventory, learned skills, weapon levels, cap modifiers, and stance bonuses update together.",
+      "Added normalized FE14 class growth rates, complete weapon-type metadata with local icons, validated starting-skill derivation, and explicit multi-state handling for temporary appearances and permanent rejoins.",
+      "Added offspring route and parent filtering, earliest-paralogue timing, story-scaled levels, Offspring Seal projections, pre-inheritance growth comparisons, and an editable parent-stat recruitment calculator.",
+      "Consolidated duplicated unit-profile sections into compact stat and support grids while preserving Corrin Talent exceptions, special recruitment notes, supports, seal previews, and JSON inspection.",
+    ],
+  },
+  {
     version: "0.5.0",
     date: "2026-07-18",
     dateLabel: "July 18, 2026",
     title: "FE14 skill data and accessible class planning",
-    current: true,
     changes: [
       "Added 106 validated standard class skills with canonical IDs, acquisition edges, source-backed effects, and locally stored icons, plus local personal-skill icons for all 69 playable roster slots.",
       "Added the searchable FE14 skill directory with Hoshidan, Nohrian, and special-class filters, class-tree selection controls, and deduplicated skill results.",

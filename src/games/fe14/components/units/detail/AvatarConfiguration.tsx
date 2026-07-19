@@ -4,35 +4,21 @@ import Table from "react-bootstrap/Table";
 import { ChevronDown, TriangleAlert } from "lucide-react";
 import { displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data";
 import { ClassTreeList } from "./ClassTree";
-import GrowthBar from "./GrowthBar";
-import PairupTable from "./PairupTable";
 import SectionHeading from "./SectionHeading";
 import {
   STAT_KEYS,
   type AvatarGender,
   type AvatarSelection,
   type AvatarTalent,
-  type PairupTableBonuses,
 } from "./types";
 import {
-  applyAvatarDeltas,
   corrinBorrowedClassId,
   formatAvatarMatrixCell,
-  formatSigned,
   shortStatLabel,
 } from "./utils";
 
 export function AvatarConfigurationSection({ unit, selection }: { unit: UnitRuntime; selection: AvatarSelection }) {
-  const { config, boon, bane } = selection;
-  const neutralGrowths = unit.growths[0]?.rates;
-  const neutralCaps = unit.capModifiers?.modifiers;
-  if (!neutralGrowths || !neutralCaps) return null;
-  const growths = applyAvatarDeltas(neutralGrowths, boon.growthDeltas, bane.growthDeltas);
-  const caps = applyAvatarDeltas(
-    { hp: 0, ...neutralCaps },
-    boon.capDeltas,
-    bane.capDeltas,
-  );
+  const { config } = selection;
 
   return (
     <section className="data-section avatar-configuration" aria-labelledby="avatar-configuration-heading">
@@ -40,26 +26,6 @@ export function AvatarConfigurationSection({ unit, selection }: { unit: UnitRunt
       <p className="avatar-config-intro">
         Boon and bane deltas are added to Corrin's neutral starting stats, personal growths, and zero neutral cap modifiers.
       </p>
-
-      <div className="avatar-current-stats">
-        <div className="avatar-current-stats-heading">
-          <h3>Personal growth and cap modifiers</h3>
-          <AvatarConfigurationControls selection={selection} context="Growth and caps" />
-        </div>
-        <Table className="stat-table" responsive>
-          <thead><tr><th>Stat</th><th>Personal growth</th><th>Cap modifier</th></tr></thead>
-          <tbody>
-            {STAT_KEYS.map((stat) => (
-              <tr key={stat}>
-                <th scope="row">{stat === "hp" ? "HP" : displayId(stat)}</th>
-                <td><GrowthBar value={growths[stat]} /></td>
-                <td>{stat === "hp" ? "—" : formatSigned(caps[stat])}</td>
-              </tr>
-            ))}
-          </tbody>
-          <tfoot><tr><th scope="row">Total</th><td>{Object.values(growths).reduce((sum, value) => sum + value, 0)}%</td><td>—</td></tr></tfoot>
-        </Table>
-      </div>
 
       <details className="avatar-modifier-matrices">
         <summary>
@@ -125,37 +91,6 @@ export function AvatarConfigurationSection({ unit, selection }: { unit: UnitRunt
       </Alert>
 
       <FriendshipCoverageTable unit={unit} selection={selection} />
-    </section>
-  );
-}
-
-export function AvatarPairupSection({ selection }: { selection: AvatarSelection }) {
-  const { pairupRule } = selection.config;
-  const attackVariant = pairupRule.attackStance.variants.find(
-    (variant) => variant.boonIds.includes(selection.boonId) && variant.baneIds.includes(selection.baneId),
-  );
-  const guardVariant = pairupRule.guardStance.variants.find(
-    (variant) => variant.boonId === selection.boonId && variant.baneId === selection.baneId,
-  );
-  if (!attackVariant || !guardVariant) return null;
-
-  const bonuses: PairupTableBonuses = {
-    attackStance: { baseBonus: pairupRule.attackStance.baseBonus, rankDeltas: attackVariant.rankDeltas },
-    guardStance: { baseBonus: pairupRule.guardStance.baseBonus, rankDeltas: guardVariant.rankDeltas },
-  };
-
-  return (
-    <section className="data-section avatar-pairup-section" aria-labelledby="pairup-heading">
-      <SectionHeading eyebrow="Support bonuses" title="Attack and Guard Stance" id="pairup-heading" />
-      <div className="avatar-pairup-controls">
-        <p>{selection.boon.label} boon with {selection.bane.label} bane</p>
-        <AvatarConfigurationControls selection={selection} context="Stance bonuses" />
-      </div>
-      <PairupTable bonuses={bonuses} />
-      <div className="avatar-pairup-notes">
-        <p><strong>Attack Stance:</strong> {pairupRule.attackStance.semantics}</p>
-        <p><strong>Guard Stance:</strong> {pairupRule.guardStance.semantics}</p>
-      </div>
     </section>
   );
 }

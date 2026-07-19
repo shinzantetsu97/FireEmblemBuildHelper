@@ -1,21 +1,21 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
-import { ArrowRight, Baby, GitBranch, TriangleAlert } from "lucide-react";
+import { ArrowRight, TriangleAlert } from "lucide-react";
 import { displayId, fe14Data, type AvatarChoice, type SealGrant, type StatBlock, type UnitRuntime } from "../../../data";
+import { ROUTE_ORDER, resolveUnitBaseConfiguration, type RouteId } from "../../../baseConfiguration";
 import { calculateOffspringRecruitmentStat, resolveOffspringScenario, roundHalfUp } from "../../../offspring";
-import PersonalSkill from "../../skills/PersonalSkill";
 import UnitClassSkills from "../../skills/UnitClassSkills";
 import { ClassTreeLabel } from "./ClassTree";
-import GrowthBar from "./GrowthBar";
-import PairupTable from "./PairupTable";
+import { BaseConfigurationSurface } from "./ResolvedConfigurationPreview";
 import SectionHeading from "./SectionHeading";
 import SupportDirectory, { type SealGrantPreview, type SealGrantPreviews, type SealPreviewKind } from "./SupportDirectory";
 import { STAT_KEYS, type AvatarGender } from "./types";
-import { corrinNobleBaseLabel } from "./UnitHeader";
 import UnitReferences from "./UnitReferences";
-import { formatSigned, shortStatLabel } from "./utils";
+import { shortStatLabel } from "./utils";
 
 export default function OffspringOverview({
   unit,
@@ -32,25 +32,55 @@ export default function OffspringOverview({
   const parentOptions = useMemo(() => parentage?.variableParentOptions.filter((option) => (
     !isAvatarChild || option.childGender === childGender
   )) ?? [], [parentage, isAvatarChild, childGender]);
-  const [parentId, setParentId] = useState(parentOptions[0]?.unitId ?? "");
+  const offspringRoutes = useMemo(() => ROUTE_ORDER.filter((route) => (
+    parentOptions.some((option) => option.routes.includes(route))
+  )), [parentOptions]);
+  const [parentId, setParentId] = useState(parentOptions.find((option) => option.unitId === "corrin")?.unitId ?? parentOptions[0]?.unitId ?? "");
+  const [routeId, setRouteId] = useState<RouteId>(() => firstParentRoute(parentOptions.find((option) => option.unitId === "corrin") ?? parentOptions[0]));
   const corrin = fe14Data.units.find((candidate) => candidate.identity.id === "corrin");
   const config = corrin?.avatarConfiguration;
   const [boonId, setBoonId] = useState("robust");
   const [baneId, setBaneId] = useState("weak");
   const [talentId, setTalentId] = useState(config?.talents[0]?.id ?? "cavalier");
   const [nestedParentId, setNestedParentId] = useState("");
+  const [storyChapter, setStoryChapter] = useState(8);
+  const [promotionClassId, setPromotionClassId] = useState("");
   const [selectedSealPreviews, setSelectedSealPreviews] = useState<SealGrantPreviews>({});
   const boon = config?.boons.find((choice) => choice.id === boonId) ?? config?.boons[0];
   const bane = config?.banes.find((choice) => choice.id === baneId) ?? config?.banes[1];
 
   useEffect(() => {
-    if (!parentOptions.some((option) => option.unitId === parentId)) setParentId(parentOptions[0]?.unitId ?? "");
+    if (!parentOptions.some((option) => option.unitId === parentId)) {
+      setParentId(parentOptions.find((option) => option.unitId === "corrin")?.unitId ?? parentOptions[0]?.unitId ?? "");
+    }
   }, [parentOptions, parentId]);
   useEffect(() => setNestedParentId(""), [parentId]);
 
+  const baseResolution = useMemo(() => resolveUnitBaseConfiguration(unit, {
+    routeId,
+    avatarGender: childGender,
+    boon,
+    bane,
+    talentId,
+    variableParentUnitId: parentId,
+    nestedVariableParentUnitId: nestedParentId,
+    offspringStoryChapter: storyChapter,
+    offspringPromotionClassId: promotionClassId,
+  }), [unit, routeId, childGender, boon, bane, talentId, parentId, nestedParentId, storyChapter, promotionClassId]);
+  const resolvedParentId = baseResolution.selectedParentUnitId ?? parentId;
+  const resolvedNestedParentId = baseResolution.configuration.scenarioConditions.nestedVariableParentUnitId;
+  const resolvedStoryChapter = baseResolution.configuration.offspringContext?.selectedChapter;
+  const resolvedPromotionClassId = baseResolution.configuration.offspringContext?.selectedPromotionClassId;
+  useEffect(() => {
+    if (baseResolution.routeId !== routeId) setRouteId(baseResolution.routeId);
+    if (resolvedParentId !== parentId) setParentId(resolvedParentId);
+    if (resolvedNestedParentId && resolvedNestedParentId !== nestedParentId) setNestedParentId(resolvedNestedParentId);
+    if (resolvedStoryChapter !== undefined && resolvedStoryChapter !== storyChapter) setStoryChapter(resolvedStoryChapter);
+    if (resolvedPromotionClassId && resolvedPromotionClassId !== promotionClassId) setPromotionClassId(resolvedPromotionClassId);
+  }, [baseResolution.routeId, resolvedParentId, resolvedNestedParentId, resolvedStoryChapter, resolvedPromotionClassId, routeId, parentId, nestedParentId, storyChapter, promotionClassId]);
   const scenario = useMemo(
-    () => resolveOffspringScenario(unit, parentId, boon, bane, { corrinTalentId: talentId, nestedVariableParentId: nestedParentId }),
-    [unit, parentId, boon, bane, talentId, nestedParentId],
+    () => resolveOffspringScenario(unit, resolvedParentId, boon, bane, { corrinTalentId: talentId, nestedVariableParentId: resolvedNestedParentId }),
+    [unit, resolvedParentId, boon, bane, talentId, resolvedNestedParentId],
   );
   const handleSealPreviewChange = useCallback((seal: SealPreviewKind, preview: SealGrantPreview | null) => {
     setSelectedSealPreviews((current) => {
@@ -62,7 +92,7 @@ export default function OffspringOverview({
   }, []);
 
   if (!parentage || !recruitment || !scenario) return null;
-  const selectedOption = parentage.variableParentOptions.find((option) => option.unitId === parentId)!;
+  const selectedOption = parentage.variableParentOptions.find((option) => option.unitId === resolvedParentId)!;
   const unitName = unit.identity.displayName;
   const corrinGender = scenario.childGender === "male" ? "female" : "male";
   const fixedParentName = isAvatarChild ? `Corrin (${corrinGender === "male" ? "M" : "F"})` : scenario.fixedParent.identity.displayName;
@@ -97,13 +127,40 @@ export default function OffspringOverview({
         <span>{unitName}'s variable data is resolved from {fixedParentName} and the selected {variableParentLabelLower}. Recruitment bases still require both parents' actual gained-stat snapshots at paralogue entry.</span>
       </Alert>
 
+      <section className="offspring-route-section" aria-labelledby="offspring-route-heading">
+        <div>
+          <span>Planning route</span>
+          <h2 id="offspring-route-heading">Choose Route</h2>
+          <p>The route determines which parents are available and when this paralogue can first unlock.</p>
+        </div>
+        <ButtonGroup aria-label="Choose offspring route" role="tablist">
+          {offspringRoutes.map((route) => (
+            <Button
+              aria-selected={route === baseResolution.routeId}
+              key={route}
+              onClick={() => {
+                setRouteId(route);
+                setStoryChapter(8);
+              }}
+              role="tab"
+              variant={route === baseResolution.routeId ? "dark" : "outline-secondary"}
+            >
+              {route === "birthright" ? "Birthright" : route === "conquest" ? "Conquest" : "Revelation"}
+            </Button>
+          ))}
+        </ButtonGroup>
+      </section>
+
       <section className="data-section offspring-parent-section" aria-labelledby="parent-heading">
         <SectionHeading eyebrow="Parent scenario" title={`Choose ${unitName}'s ${variableParentLabelLower}`} id="parent-heading" />
         <div className="offspring-parent-controls">
           {isAvatarChild ? (
             <Form.Group controlId={`${unit.identity.id}-gender`}>
               <Form.Label>Kana gender</Form.Label>
-              <Form.Select value={childGender} onChange={(event) => setChildGender(event.target.value as AvatarGender)}>
+              <Form.Select value={childGender} onChange={(event) => {
+                setChildGender(event.target.value as AvatarGender);
+                setStoryChapter(8);
+              }}>
                 <option value="female">Female Kana / Corrin (M)</option>
                 <option value="male">Male Kana / Corrin (F)</option>
               </Form.Select>
@@ -111,21 +168,27 @@ export default function OffspringOverview({
           ) : null}
           <Form.Group controlId={`${unit.identity.id}-${variableParentLabelLower}`}>
             <Form.Label>{variableParentLabel}</Form.Label>
-            <Form.Select value={parentId} onChange={(event) => setParentId(event.target.value)}>
-              {parentOptions.map((option) => {
+            <Form.Select value={parentId} onChange={(event) => {
+              setParentId(event.target.value);
+              setStoryChapter(8);
+            }}>
+              {baseResolution.parentOptions?.map((option) => {
                 const parent = fe14Data.roster.find((candidate) => candidate.id === option.unitId);
                 return <option key={option.unitId} value={option.unitId}>{parent?.displayName ?? displayId(option.unitId)} ({formatRoutes(option.routes)})</option>;
               })}
             </Form.Select>
           </Form.Group>
-          {(parentId === "corrin" || isAvatarChild) && config && boon && bane ? (
+          {(resolvedParentId === "corrin" || isAvatarChild) && config && boon && bane ? (
             <CorrinParentControls config={config} boon={boon} bane={bane} boonId={boonId} baneId={baneId} talentId={talentId} showTalent={isAvatarChild} setBoonId={setBoonId} setBaneId={setBaneId} setTalentId={setTalentId} />
           ) : null}
           {scenario.nestedVariableParentOptions.length ? (
             <Form.Group className="offspring-nested-parent" controlId={`${unit.identity.id}-nested-parent`}>
               <Form.Label>{scenario.variableParent.identity.displayName}'s {nestedRoleLabel(scenario.variableParent).toLowerCase()}</Form.Label>
-              <Form.Select value={scenario.nestedVariableParentId ?? ""} onChange={(event) => setNestedParentId(event.target.value)}>
-                {scenario.nestedVariableParentOptions.map((option) => {
+              <Form.Select value={scenario.nestedVariableParentId ?? ""} onChange={(event) => {
+                setNestedParentId(event.target.value);
+                setStoryChapter(8);
+              }}>
+                {scenario.nestedVariableParentOptions.filter((option) => option.routes.includes(routeId)).map((option) => {
                   const parent = fe14Data.roster.find((candidate) => candidate.id === option.unitId);
                   return <option key={option.unitId} value={option.unitId}>{parent?.displayName ?? displayId(option.unitId)} ({formatRoutes(option.routes.filter((route) => selectedOption.routes.includes(route)))})</option>;
                 })}
@@ -147,7 +210,7 @@ export default function OffspringOverview({
             <p className="offspring-rule-note"><strong>Inheritance order:</strong> child, father, then mother. Female Kana resolves Corrin's Talent before her mother's tree; male Kana resolves his father's tree before Corrin's Talent. A duplicate Talent uses that tree's parallel-class fallback rather than reconsidering the father's secondary class.</p>
             <p className="offspring-rule-note offspring-special-note"><strong>No parallel fallback among Corrin Talents:</strong> Apothecary, Troubadour, and Monk / Shrine Maiden. If male Kana's father already supplied the selected tree, Kana receives no additional Corrin tree.</p>
           </>
-        ) : parentId === "corrin" ? (
+        ) : resolvedParentId === "corrin" ? (
           <p className="offspring-rule-note"><strong>Corrin inheritance:</strong> {unitName} receives Nohr Prince and the Dragon unit trait, not Corrin's Talent. The line promotes to Hoshido Noble in Birthright, Nohr Noble in Conquest, and either Noble class in Revelation. Kana reaches the Talent only because Kana already owns the Noble base class.</p>
         ) : selectedOption.inheritedClassReason !== "direct" ? (
           <p className="offspring-rule-note">The selected {variableParentLabelLower}'s primary class cannot be inherited here, so {unitName} receives the resolved fallback tree through {displayId(selectedOption.inheritedClassReason)}.</p>
@@ -155,7 +218,33 @@ export default function OffspringOverview({
         {parentage.notes?.map((note) => <p className="offspring-rule-note offspring-special-note" key={note}>{note}</p>)}
       </section>
 
-      <RecruitmentPanel unit={unit} scenario={scenario} />
+      <section className="data-section" aria-labelledby="offspring-base-heading">
+        <SectionHeading eyebrow="Resolved starting state" title="Base configuration" id="offspring-base-heading" />
+        <BaseConfigurationSurface
+          onOffspringPromotionClassChange={setPromotionClassId}
+          onOffspringStoryChapterChange={setStoryChapter}
+          onRouteChange={(route) => {
+            setRouteId(route);
+            setStoryChapter(8);
+          }}
+          resolution={baseResolution}
+          showRouteControl={false}
+          unit={unit}
+        />
+        <p className="offspring-rule-note">
+          <strong>Stance inheritance:</strong> Attack Stance alternates {scenario.mother.identity.displayName} at C, {scenario.father.identity.displayName} at B, {scenario.mother.identity.displayName} at A, and {scenario.father.identity.displayName} at S. Guard Stance uses {scenario.father.identity.displayName}, {scenario.mother.identity.displayName}, {scenario.father.identity.displayName}, then {scenario.mother.identity.displayName}.
+        </p>
+      </section>
+
+      <details className="offspring-calculator-details">
+        <summary>Open recruitment inheritance calculator and formula walkthrough</summary>
+        <RecruitmentStatWalkthrough
+          chapterStart={resolvedStoryChapter ?? 8}
+          promotionClassId={resolvedPromotionClassId}
+          unit={unit}
+          scenario={scenario}
+        />
+      </details>
 
       <UnitClassSkills
         gender={scenario.childGender}
@@ -166,35 +255,6 @@ export default function OffspringOverview({
         ]}
         selectedSealPreviews={selectedSealPreviews}
       />
-
-      <section className="data-section" aria-labelledby="offspring-stats-heading">
-        <SectionHeading eyebrow="Resolved numbers" title="Personal growth and cap modifiers" id="offspring-stats-heading" />
-        <div className="offspring-stat-layout">
-          <ResolvedStats scenario={scenario} />
-          <ParentGrowthPanel name={scenario.variableParent.identity.displayName} growth={scenario.variableParentGrowth} nestedParentName={scenario.nestedVariableParentScenario?.variableParent.identity.displayName} />
-        </div>
-      </section>
-
-      <section className="data-section two-column-data" aria-label="Skill and class access">
-        <div>
-          <SectionHeading eyebrow="Identity" title="Personal skill" id="skill-heading" />
-          {unit.personalSkill ? <PersonalSkill skill={unit.personalSkill} labelledBy="skill-heading" /> : null}
-        </div>
-        <div>
-          <SectionHeading eyebrow="Inheritance" title="Resolved class access" id="class-heading" />
-          <dl className="class-access-list" aria-labelledby="class-heading">
-            <div><dt>Own class</dt><dd><ClassTreeLabel classId={parentage.childBaseClassId} labelOverride={isAvatarChild ? corrinNobleBaseLabel(childGender) : undefined} /></dd></div>
-            <div><dt>From {fixedParentName}</dt><dd><ResolvedClassLabel classId={scenario.fixedInheritedClassId} /></dd></div>
-            <div><dt>From {scenario.variableParent.identity.displayName}</dt><dd><ResolvedClassLabel classId={scenario.inheritedClassId} /></dd></div>
-          </dl>
-        </div>
-      </section>
-
-      <section className="data-section" aria-labelledby="pairup-heading">
-        <SectionHeading eyebrow="Resolved support bonuses" title="Attack and Guard Stance" id="pairup-heading" />
-        <PairupTable bonuses={scenario.bonuses} />
-        <p className="offspring-rule-note">Ranks alternate parent contributions: Attack Stance uses {scenario.mother.identity.displayName} C, {scenario.father.identity.displayName} B, {scenario.mother.identity.displayName} A, {scenario.father.identity.displayName} S; Guard Stance uses {scenario.father.identity.displayName} C, {scenario.mother.identity.displayName} B, {scenario.father.identity.displayName} A, {scenario.mother.identity.displayName} S.</p>
-      </section>
 
       <OffspringSupports
         unit={unit}
@@ -230,80 +290,41 @@ function CorrinParentControls({
   );
 }
 
-function RecruitmentPanel({
-  unit,
-  scenario,
-}: {
-  unit: UnitRuntime;
-  scenario: NonNullable<ReturnType<typeof resolveOffspringScenario>>;
-}) {
-  const data = unit.offspring!.recruitment;
-  const unitName = unit.identity.displayName;
-  const startingClassName = unit.identity.id === "kana" ? corrinNobleBaseLabel(scenario.childGender ?? "female") : displayId(data.startingClassId);
-  return (
-    <section className="data-section" aria-labelledby="recruitment-heading">
-      <SectionHeading eyebrow={`Paralogue ${data.paralogueNo}`} title={data.paralogueTitle} id="recruitment-heading" />
-      <div className="offspring-recruitment-grid">
-        <div className="offspring-recruitment-summary">
-          <Baby aria-hidden="true" size={22} />
-          <dl>
-            <div><dt>Recruit</dt><dd>{data.recruitment.description}</dd></div>
-            <div><dt>Starts as</dt><dd>{initialFactionLabel(data.initialFaction)}</dd></div>
-            <div><dt>Starting class</dt><dd><ClassTreeLabel classId={data.startingClassId} labelOverride={unit.identity.id === "kana" ? corrinNobleBaseLabel(scenario.childGender ?? "female") : undefined} /></dd></div>
-            <div><dt>Weapon rank</dt><dd>{Object.entries(data.weaponRanks).map(([weapon, rank]) => `${displayId(weapon)} ${rank}`).join(", ")}</dd></div>
-            <div><dt>Inventory</dt><dd>{data.inventory.map(displayId).join(", ")}</dd></div>
-          </dl>
-        </div>
-        <div className="offspring-scaling">
-          <h3>Story-position level</h3>
-          <div>{data.levelByStoryPosition.map((milestone) => <span key={milestone.chapterStart}>Ch. {milestone.chapterStart}{milestone.chapterEnd && milestone.chapterEnd !== milestone.chapterStart ? `-${milestone.chapterEnd}` : ""}: Lv. {milestone.level}</span>)}</div>
-          <p>Child recruitment levels rise with story progress. From Chapter 19 onward, an Offspring Seal supplies the appropriate promoted level and learned class skills.</p>
-          <p><strong>Research credit:</strong> FE14 scaling details were identified and explained by modder ltranc@.</p>
-        </div>
-      </div>
-      {data.recruitmentNotes?.map((note) => <p className="offspring-rule-note" key={note}>{note}</p>)}
-      {data.recruitment.deathBeforeRecruitmentIsPermanent ? <Alert className="offspring-death-warning" variant="danger"><TriangleAlert aria-hidden="true" size={18} /><span>If {unitName} falls before recruitment, {unitName} is permanently lost even in Casual or Phoenix mode.</span></Alert> : null}
-      <Table className="offspring-base-table" responsive>
-        <thead><tr><th>Level-10 baseline</th>{STAT_KEYS.map((stat) => <th key={stat}>{shortStatLabel(stat)}</th>)}</tr></thead>
-        <tbody>
-          <tr><th scope="row">Minimum before inheritance</th>{STAT_KEYS.map((stat) => <td key={stat}>{data.level10MinimumStatsBeforeInheritance[stat]}</td>)}</tr>
-          <tr><th scope="row">Fixed personal base</th>{STAT_KEYS.map((stat) => <td key={stat}>{data.level10PersonalBases[stat]}</td>)}</tr>
-        </tbody>
-      </Table>
-      <p className="offspring-rule-note">The fixed personal base is {unitName}'s class-independent level-10 input. The minimum row adds {startingClassName} class bases but no parent inheritance bonus; the game then adds a capped contribution calculated from both parents' personal stats.</p>
-      <RecruitmentStatWalkthrough unit={unit} scenario={scenario} />
-    </section>
-  );
-}
-
 function RecruitmentStatWalkthrough({
   unit,
   scenario,
+  chapterStart,
+  promotionClassId,
 }: {
   unit: UnitRuntime;
   scenario: NonNullable<ReturnType<typeof resolveOffspringScenario>>;
+  chapterStart: number;
+  promotionClassId?: string;
 }) {
   const data = unit.offspring!.recruitment;
   const unitName = unit.identity.displayName;
   const fatherName = scenario.father.identity.displayName;
   const motherName = scenario.mother.identity.displayName;
   const [stat, setStat] = useState<keyof StatBlock>("strength");
-  const [chapterStart, setChapterStart] = useState(data.levelByStoryPosition[0].chapterStart);
-  const [promotionClassId, setPromotionClassId] = useState(data.offspringSeal.promotionOptions[0].classId);
-  const milestone = data.levelByStoryPosition.find((entry) => entry.chapterStart === chapterStart) ?? data.levelByStoryPosition[0];
+  const milestone = data.levelByStoryPosition.find((entry, index, milestones) => {
+    const chapterEnd = entry.chapterEnd ?? (milestones[index + 1]?.chapterStart ?? 28) - 1;
+    return chapterStart >= entry.chapterStart && chapterStart <= chapterEnd;
+  }) ?? data.levelByStoryPosition[0];
   const promotedLevel = data.offspringSeal.promotedLevelsByChapter[String(chapterStart)];
   const promotion = promotedLevel
     ? data.offspringSeal.promotionOptions.find((option) => option.classId === promotionClassId) ?? data.offspringSeal.promotionOptions[0]
     : undefined;
+  const startingClassGrowthRates = classGrowthRatesFor(data.startingClassId);
+  const promotedClassGrowthRates = promotion ? classGrowthRatesFor(promotion.classId) : undefined;
   const effectiveLevel = promotedLevel ? 20 + promotedLevel : milestone.level;
   const automaticLevels = effectiveLevel - 10;
   const promotedGrowthLevels = promotedLevel ? promotedLevel - 1 : 0;
   const childAptitudes = statBlockFrom((key) => (
     data.level10PersonalBases[key]
-    + Math.floor(automaticLevels * (scenario.personalGrowth[key] + data.startingClassGrowthRates[key]) / 100)
+    + Math.floor(automaticLevels * (scenario.personalGrowth[key] + startingClassGrowthRates[key]) / 100)
   ));
   const promotedClassAptitudes = statBlockFrom((key) => (
-    promotion ? roundHalfUp(promotedGrowthLevels * promotion.classGrowthRates[key] / 100) : 0
+    promotedClassGrowthRates ? roundHalfUp(promotedGrowthLevels * promotedClassGrowthRates[key] / 100) : 0
   ));
   const inheritanceBenchmarks = statBlockFrom((key) => childAptitudes[key] + promotedClassAptitudes[key]);
   const [fatherCurrentStats, setFatherCurrentStats] = useState<StatBlock>(() => statBlockFrom((key) => inheritanceBenchmarks[key] + 4));
@@ -328,23 +349,13 @@ function RecruitmentStatWalkthrough({
 
   const personalBase = data.level10PersonalBases[stat];
   const classBase = currentClassBases[stat];
-  const fullGrowth = scenario.personalGrowth[stat] + data.startingClassGrowthRates[stat];
+  const fullGrowth = scenario.personalGrowth[stat] + startingClassGrowthRates[stat];
   const automaticGrowth = childAptitudes[stat] - personalBase;
   const childAptitude = childAptitudes[stat];
   const promotedClassAptitude = promotedClassAptitudes[stat];
   const inheritanceBenchmark = inheritanceBenchmarks[stat];
   const { fatherSurplus, motherSurplus, quarteredSurplus, inheritanceCap, inheritanceBonus } = calculations[stat];
   const finalStat = finalStats[stat];
-  const weaponRankMilestone = promotedLevel
-    ? data.offspringSeal.weaponRankMilestones.find((entry) => chapterStart >= entry.chapterStart && chapterStart <= entry.chapterEnd)
-    : undefined;
-  const learnedPromotedSkills = promotion?.learnedSkills.filter((skill) => skill.level <= promotedLevel) ?? [];
-  const classStatProfile = promotion
-    ? fe14Data.classStats.find((profile) => profile.classId === promotion.classId)
-    : fe14Data.classStats.find((profile) => profile.classId === data.startingClassId);
-  const resolvedMaximumStats = classStatProfile ? statBlockFrom((key) => (
-    classStatProfile.maximumStats[key] + (key === "hp" ? 0 : scenario.capModifiers[key])
-  )) : null;
 
   function updateParentStat(parent: "father" | "mother", key: keyof StatBlock, value: number) {
     const update = (current: StatBlock) => ({ ...current, [key]: value });
@@ -356,8 +367,9 @@ function RecruitmentStatWalkthrough({
     <div className="recruitment-walkthrough">
       <div className="recruitment-walkthrough-heading">
         <div>
-          <span>Worked example</span>
-          <h3>How one recruitment stat is assembled</h3>
+          <span>Live inheritance calculation</span>
+          <h3>Parent-stat recruitment calculator</h3>
+          <p>Using Chapter {chapterStart} · {promotion ? `${promotion.displayName} Lv. ${promotedLevel}` : `Lv. ${milestone.level}`}. Change recruitment timing or class above.</p>
         </div>
         <div className="recruitment-walkthrough-controls">
           <Form.Group controlId="offspring-formula-stat">
@@ -366,60 +378,14 @@ function RecruitmentStatWalkthrough({
               {STAT_KEYS.map((key) => <option key={key} value={key}>{shortStatLabel(key)}</option>)}
             </Form.Select>
           </Form.Group>
-          <Form.Group controlId="offspring-formula-chapter">
-            <Form.Label>Story position</Form.Label>
-            <Form.Select value={chapterStart} onChange={(event) => setChapterStart(Number(event.target.value))}>
-              {data.levelByStoryPosition.filter((entry) => entry.chapterStart < data.offspringSeal.availableFromChapter).map((entry) => (
-                <option key={entry.chapterStart} value={entry.chapterStart}>
-                  Ch. {entry.chapterStart}{entry.chapterEnd && entry.chapterEnd < data.offspringSeal.availableFromChapter && entry.chapterEnd !== entry.chapterStart ? `-${entry.chapterEnd}` : ""} (Lv. {entry.level})
-                </option>
-              ))}
-              {Object.entries(data.offspringSeal.promotedLevelsByChapter).map(([chapter, level]) => (
-                <option key={chapter} value={chapter}>Ch. {chapter} (Offspring Seal Lv. {level})</option>
-              ))}
-            </Form.Select>
-          </Form.Group>
-          {promotedLevel ? (
-            <Form.Group controlId="offspring-formula-promotion">
-              <Form.Label>Offspring Seal class</Form.Label>
-              <Form.Select value={promotionClassId} onChange={(event) => setPromotionClassId(event.target.value)}>
-                {data.offspringSeal.promotionOptions.map((option) => <option key={option.classId} value={option.classId}>{option.displayName}{option.routes ? ` (${formatRoutes(option.routes)})` : ""}</option>)}
-              </Form.Select>
-            </Form.Group>
-          ) : null}
         </div>
       </div>
-
-      {promotion && weaponRankMilestone ? (
-        <div className="offspring-seal-result">
-          <div><span>Offspring Seal result</span><strong>{promotion.displayName} Lv. {promotedLevel}</strong></div>
-          <div><span>Weapon ranks</span><strong>{displayId(promotion.primaryWeaponId)} {weaponRankMilestone.primaryRank}{promotion.secondaryWeaponIds.length ? ` / ${promotion.secondaryWeaponIds.map((weapon) => `${displayId(weapon)} ${weaponRankMilestone.secondaryRank}`).join(" / ")}` : ""}</strong></div>
-          <div><span>Promoted skills learned</span><strong>{learnedPromotedSkills.length ? learnedPromotedSkills.map((skill) => skill.displayName).join(", ") : "None yet"}</strong></div>
-        </div>
-      ) : null}
-
-      {classStatProfile && resolvedMaximumStats ? (
-        <div className="offspring-class-cap-profile">
-          <div>
-            <span>Selected class ceiling</span>
-            <h4>{promotion?.displayName ?? classStatProfile.displayName} maximum stats</h4>
-            <p>Weapon caps: {Object.entries(classStatProfile.weaponRankCaps).map(([weapon, rank]) => `${displayId(weapon)} ${rank}`).join(" / ")}</p>
-          </div>
-          <Table responsive>
-            <thead><tr><th>Profile</th>{STAT_KEYS.map((key) => <th key={key}>{shortStatLabel(key)}</th>)}</tr></thead>
-            <tbody>
-              <tr><th scope="row">Class maximum</th>{STAT_KEYS.map((key) => <td key={key}>{classStatProfile.maximumStats[key]}</td>)}</tr>
-              <tr><th scope="row">{unitName} maximum</th>{STAT_KEYS.map((key) => <td key={key}>{resolvedMaximumStats[key]}</td>)}</tr>
-            </tbody>
-          </Table>
-        </div>
-      ) : null}
 
       <div className="parent-stat-snapshots">
         <div>
           <span>Calculator inputs</span>
           <h4>Both parents' complete inheritance stat lines</h4>
-          <p><strong>Before stat boosters:</strong> use personal base + level-up gains only. Subtract class bases; exclude permanent stat-booster items, Pair Up, equipment, meals, tonics, and statues. Don't remember how much you feed the parents? SOL. You likely did not miss much: <code>floor(2 + C / 10)</code> clamps the inherited bonus pretty hard.</p>
+          <p>Enter each parent's class-independent personal stats: fixed personal base plus level-up gains. Exclude class bases, stat boosters, Pair Up, equipment, meals, tonics, and statues.</p>
         </div>
         <Table responsive>
           <thead>
@@ -478,21 +444,23 @@ function RecruitmentStatWalkthrough({
         </RecipeStep>
       </div>
 
-      <div className="recruitment-glossary">
-        <p><strong>Automatic-growth gain</strong> is deterministic story catch-up. Because this unit joins above level 10, the game awards the average stat points they would have gained across those missing levels using resolved personal growth plus {displayId(data.startingClassId)} growth: {automaticLevels} levels x {fullGrowth}% = {automaticGrowth} point{automaticGrowth === 1 ? "" : "s"}, after flooring.</p>
-        {promotion ? <p><strong>Promoted-class aptitude</strong> is calculated separately: {promotion.displayName}'s {shortStatLabel(stat)} class growth ({promotion.classGrowthRates[stat]}%) x ({promotedLevel} promoted levels - 1) = {promotedClassAptitude}, rounded to the nearest integer with exact halves rounded up. The promotion itself is not a promoted-class growth level.</p> : null}
-        <p><strong>Parent current stats</strong> are entered as complete eight-stat snapshots so every {unitName} result updates together. These are the class-independent values used for inheritance: each parent's fixed personal value plus points actually earned through level-ups. Class bases and temporary or external bonuses are not inherited.</p>
-        <p><strong>Only surplus counts.</strong> A parent at or below {unitName}'s inheritance benchmark contributes zero. The editable parent values above are illustrative until the planner has parent level-up snapshots.</p>
-      </div>
+      <details className="recruitment-glossary">
+        <summary>Formula definitions</summary>
+        <div>
+          <p><strong>Automatic-growth gain</strong> is deterministic story catch-up. Because this unit joins above level 10, the game awards the average stat points they would have gained across those missing levels using resolved personal growth plus {displayId(data.startingClassId)} growth: {automaticLevels} levels x {fullGrowth}% = {automaticGrowth} point{automaticGrowth === 1 ? "" : "s"}, after flooring.</p>
+          {promotion && promotedClassGrowthRates ? <p><strong>Promoted-class aptitude</strong> is calculated separately: {promotion.displayName}'s {shortStatLabel(stat)} class growth ({promotedClassGrowthRates[stat]}%) x ({promotedLevel} promoted levels - 1) = {promotedClassAptitude}, rounded to the nearest integer with exact halves rounded up. The promotion itself is not a promoted-class growth level.</p> : null}
+          <p><strong>Parent current stats</strong> are entered as complete eight-stat snapshots so every {unitName} result updates together. These are the class-independent values used for inheritance: each parent's fixed personal value plus points actually earned through level-ups. Class bases and temporary or external bonuses are not inherited.</p>
+          <p><strong>Only surplus counts.</strong> A parent at or below {unitName}'s inheritance benchmark contributes zero. The editable parent values above are illustrative until the planner has parent level-up snapshots.</p>
+        </div>
+      </details>
     </div>
   );
 }
 
-function initialFactionLabel(faction: "player" | "npc" | "enemy" | "not_deployed") {
-  if (faction === "player") return "Playable Character";
-  if (faction === "npc") return "NPC";
-  if (faction === "not_deployed") return "Not deployed";
-  return "Enemy";
+function classGrowthRatesFor(classId: string): StatBlock {
+  const profile = fe14Data.classStats.find((entry) => entry.classId === classId);
+  if (!profile) throw new Error(`Missing FE14 class growth rates: ${classId}`);
+  return profile.growthRates;
 }
 
 function ParentStatInputRow({
@@ -536,27 +504,6 @@ function RecipeStep({ number, title, children }: { number: string; title: string
       <header><span>{number}</span><h4>{title}</h4></header>
       <div>{children}</div>
     </div>
-  );
-}
-
-function ResolvedStats({ scenario }: { scenario: NonNullable<ReturnType<typeof resolveOffspringScenario>> }) {
-  return (
-    <Table className="stat-table offspring-resolved-table" responsive>
-      <thead><tr><th>Stat</th><th>Resolved growth</th><th>Resolved cap</th></tr></thead>
-      <tbody>{STAT_KEYS.map((stat) => <tr key={stat}><th scope="row">{shortStatLabel(stat)}</th><td><GrowthBar value={scenario.personalGrowth[stat]} /></td><td>{stat === "hp" ? "-" : formatSigned(scenario.capModifiers[stat])}</td></tr>)}</tbody>
-      <tfoot><tr><th>Total</th><td>{Object.values(scenario.personalGrowth).reduce((sum, value) => sum + value, 0)}%</td><td>-</td></tr></tfoot>
-    </Table>
-  );
-}
-
-function ParentGrowthPanel({ name, growth, nestedParentName }: { name: string; growth: StatBlock; nestedParentName?: string }) {
-  return (
-    <aside className="parent-growth-panel" aria-label={`${name} personal growth rates`}>
-      <div><GitBranch aria-hidden="true" size={19} /><span>Other parent</span></div>
-      <h3>{name}'s personal growths</h3>
-      <dl>{STAT_KEYS.map((stat) => <div key={stat}><dt>{shortStatLabel(stat)}</dt><dd><GrowthBar value={growth[stat]} /></dd></div>)}</dl>
-      <p>{nestedParentName ? `${name}'s rates are first resolved with ${nestedParentName}. ` : ""}The displayed offspring rate is the floored average of this value and the unit's child-base rate.</p>
-    </aside>
   );
 }
 
@@ -648,6 +595,10 @@ function nestedRoleLabel(unit: UnitRuntime) {
   if (role === "father") return "Father";
   if (role === "mother") return "Mother";
   return "Parent";
+}
+
+function firstParentRoute(option?: { routes: string[] }): RouteId {
+  return ROUTE_ORDER.find((route) => option?.routes.includes(route)) ?? "birthright";
 }
 
 function parentName(unit: UnitRuntime, corrinGender?: "female" | "male") {
