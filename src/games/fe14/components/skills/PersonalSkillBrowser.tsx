@@ -6,6 +6,7 @@ import { fe14Data, getPortraitUrl, type UnitRuntime } from "../../data";
 import { getPersonalSkillIconUrl } from "../../skillAssets";
 import { useLocale } from "../../../../i18n/LocaleContext";
 import type { MessageKey } from "../../../../i18n/messages/en";
+import SkillEffectText from "./SkillEffectText";
 
 type RouteFilter = "all" | "birthright" | "conquest" | "revelation" | "dlc";
 type GenerationFilter = "all" | "first" | "second";
@@ -137,7 +138,7 @@ export default function PersonalSkillBrowser() {
                     <strong>{resolve(skill.names, skill.names.en)}</strong>
                     <span className="personal-skill-character">{characterName}</span>
                   </div>
-                  <p>{resolve({ en: skill.effect, zhHans: skill.effectZhHans })}</p>
+                  <p><SkillEffectText en={skill.effect} zhHans={skill.effectZhHans} /></p>
                 </div>
               </article>
             );

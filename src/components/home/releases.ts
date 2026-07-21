@@ -1,10 +1,21 @@
 export const RELEASES = [
   {
+    version: "0.7.1",
+    date: "2026-07-21",
+    dateLabel: "July 21, 2026",
+    title: "Skill wording polish",
+    current: true,
+    changes: [
+      "Reworded English and Simplified Chinese personal- and class-skill descriptions for clearer, more concise conditions and effects without changing mechanics.",
+      "Emphasized key terms, values, thresholds, and ranges throughout skill descriptions.",
+      "Aligned Capture wording, corrected several character-specific descriptions, and polished Simplified Chinese skill-acquisition text.",
+    ],
+  },
+  {
     version: "0.7.0",
     date: "2026-07-21",
     dateLabel: "July 21, 2026",
     title: "Simplified Chinese support",
-    current: true,
     changes: [
       "Added Simplified Chinese language support across navigation, unit profiles, class and personal skills, recruitment data, supports, and offspring planning.",
       "Added a searchable personal-skill directory and reorganized FE14 navigation.",

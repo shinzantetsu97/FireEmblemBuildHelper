@@ -40,10 +40,10 @@ export function formatSigned(value: number): string {
 
 export function formatBonuses(values: Record<string, number>): string {
   const labels: Record<string, string> = {
-    hit: "Hit rate",
+    hit: "Hit",
     avoid: "Avoid",
-    critical: "Critical",
-    criticalAvoid: "Dodge",
+    critical: "Crit",
+    criticalAvoid: "Ddg",
   };
   return Object.entries(values).map(([stat, value]) => `${labels[stat] ?? displayId(stat)} +${value}`).join(", ");
 }

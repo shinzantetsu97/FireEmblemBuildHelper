@@ -13,6 +13,7 @@ import {
 import { getClassSkillIconUrl } from "../../skillAssets";
 import { useLocale } from "../../../../i18n/LocaleContext";
 import type { MessageKey } from "../../../../i18n/messages/en";
+import SkillEffectText from "./SkillEffectText";
 
 type FactionFilter = "all" | "hoshidan" | "nohrian" | "special";
 
@@ -269,7 +270,7 @@ export default function ClassSkillBrowser({
             />
             <div className="class-skill-result-copy">
               <strong>{resolve(skill.names, skill.names.en)}</strong>
-              <p>{resolve({ en: skill.description, zhHans: skill.descriptionZhHans })}</p>
+              <p><SkillEffectText en={skill.description} zhHans={skill.descriptionZhHans} /></p>
               {skill.notes?.map((note, index) => <small key={note}>{resolve({ en: note, zhHans: skill.notesZhHans?.[index] })}</small>)}
               <div className="class-skill-acquisitions">
                 {acquisition.map((edge) => (

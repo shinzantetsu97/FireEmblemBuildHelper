@@ -305,7 +305,7 @@ export const zhHans: Partial<Record<MessageKey, string>> = {
   "skills.cardRegionAria": "可获取的职业特技",
   "skills.cardGridAria": "职业获取来源",
   "skills.learned": "习得：",
-  "skills.learnedText": "以{class}在 {level} 级习得",
+  "skills.learnedText": "{class}在 {level} 级习得",
   "skills.learnedGender": "（限{gender}）",
   "skills.showFirst": "仅显示前 {count} 个职业树",
   "skills.showAll": "显示全部 {count} 个职业树",

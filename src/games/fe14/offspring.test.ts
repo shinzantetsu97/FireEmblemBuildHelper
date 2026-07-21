@@ -371,7 +371,7 @@ describe("offspring batch regressions", () => {
   it("describes Prodigy as comparing Caeldori's higher offensive stat to the matching enemy stat", () => {
     const caeldori = fe14Data.units.find((unit) => unit.identity.id === "caeldori")!;
 
-    expect(caeldori.personalSkill?.effect).toBe("Compare Caeldori's higher offensive stat (Strength or Magic) with the enemy's matching stat. If the enemy's stat is higher, Caeldori deals 4 extra damage.");
+    expect(caeldori.personalSkill?.effect).toBe("When the enemy's matching stat exceeds the higher of Strength or Magic, grants Damage Dealt +4.");
   });
 
   it("uses the fixed Revelation-only offspring support graph", () => {
