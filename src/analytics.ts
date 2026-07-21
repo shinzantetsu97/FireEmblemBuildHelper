@@ -17,9 +17,16 @@ declare global {
   }
 }
 
-const websiteId = import.meta.env.VITE_UMAMI_WEBSITE_ID as string | undefined;
-const scriptSrc =
-  (import.meta.env.VITE_UMAMI_SRC as string | undefined) ?? "https://cloud.umami.is/script.js";
+// Treat empty/whitespace env values as unset. CI passes `${{ vars.X }}` for
+// undefined repo variables as an empty string, which would otherwise defeat
+// the `??` fallback below.
+function envValue(raw: unknown): string | undefined {
+  const value = typeof raw === "string" ? raw.trim() : "";
+  return value === "" ? undefined : value;
+}
+
+const websiteId = envValue(import.meta.env.VITE_UMAMI_WEBSITE_ID);
+const scriptSrc = envValue(import.meta.env.VITE_UMAMI_SRC) ?? "https://cloud.umami.is/script.js";
 
 const enabled = Boolean(websiteId) && typeof document !== "undefined";
 
