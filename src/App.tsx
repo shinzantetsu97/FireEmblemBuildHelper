@@ -7,9 +7,15 @@ import UnitDetailPage from "./games/fe14/pages/UnitDetailPage";
 import UnitIndexPage from "./games/fe14/pages/UnitIndexPage";
 import { useAppRoute } from "./router";
 import { LocaleProvider } from "./i18n/LocaleContext";
+import { trackPageView } from "./analytics";
+import { useEffect } from "react";
 
 export default function App() {
   const route = useAppRoute();
+
+  useEffect(() => {
+    trackPageView(route);
+  }, [route]);
 
   return (
     <LocaleProvider>
