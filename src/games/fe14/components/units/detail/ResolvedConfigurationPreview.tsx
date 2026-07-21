@@ -19,6 +19,7 @@ import { STAT_KEYS, type AvatarGender, type AvatarSelection } from "./types";
 import { formatSigned, shortStatLabel } from "./utils";
 import { useLocale } from "../../../../../i18n/LocaleContext";
 import type { MessageKey } from "../../../../../i18n/messages/en";
+import SkillEffectText from "../../skills/SkillEffectText";
 
 const ROUTE_LABEL_KEYS: Record<RouteId, MessageKey> = {
   birthright: "filter.route.birthright",
@@ -532,7 +533,7 @@ function ResolvedSkill({ skill }: { skill: ResolvedStartingSkill }) {
         <img alt="" height="24" src={iconUrl} width="24" />
         <div>
           <strong>{resolve({ en: skill.name, zhHans: skill.nameZhHans })}</strong>
-          <p>{resolve({ en: skill.description, zhHans: skill.descriptionZhHans })}</p>
+          <p><SkillEffectText en={skill.description} zhHans={skill.descriptionZhHans} /></p>
           {skill.condition ? <small>{resolve({ en: skill.condition, zhHans: skill.conditionZhHans })}</small> : null}
         </div>
       </div>

@@ -6,8 +6,8 @@
       "en": "Supportive",
       "zhHans": "不可思议的魅力"
     },
-    "effect": "When Corrin is the support unit and has at least C support with the lead unit, the lead unit gains Hit +10, deals 2 more damage, and receives 2 less damage.",
-    "effectZhHans": "自己身为后卫时，如果和前卫的支援至少达到C，前卫的命中+10，造成的伤害+2，受到的伤害-2",
+    "effect": "When supporting a lead unit with at least C support, grants that unit Hit +10, Damage Dealt +2, Damage Taken -2.",
+    "effectZhHans": "身为后卫时，如果和前卫的支援至少达到C，前卫命中+10，造成的伤害+2，受到的伤害-2",
     "iconAssetId": "supportive",
     "provenance": [
       {
@@ -63,7 +63,7 @@
       "zhHans": "治愈之声"
     },
     "effect": "At the start of each turn, adjacent allies within two spaces recover 10% of their maximum HP.",
-    "effectZhHans": "回合开始时，自己周围2格内的同伴HP回复10%",
+    "effectZhHans": "回合开始时，周围2格内的同伴HP回复10%",
     "iconAssetId": "healing_descant",
     "provenance": [
       {
@@ -118,8 +118,8 @@
       "en": "Devoted Partner",
       "zhHans": "绝对援护"
     },
-    "effect": "When Corrin is the lead unit, Corrin deals 2 more damage and receives 2 less damage.",
-    "effectZhHans": "自己身为后卫时，如果前卫是主人公，前卫造成的伤害+2，受到的伤害-2",
+    "effect": "When supporting Corrin, grants Corrin Damage Dealt +2, Damage Taken -2.",
+    "effectZhHans": "身为后卫时，如果前卫是主人公，前卫造成的伤害+2，受到的伤害-2",
     "iconAssetId": "devoted_partner",
     "provenance": [
       {
@@ -174,8 +174,8 @@
       "en": "Evasive Partner",
       "zhHans": "绝对死守"
     },
-    "effect": "When Corrin is the lead unit, Corrin gains 15 Avoid and receives 3 less damage.",
-    "effectZhHans": "自己身为后卫时，如果前卫是主人公，前卫的回避+15，受到的伤害-3",
+    "effect": "When supporting Corrin, grants Corrin Avoid +15, Damage Taken -3.",
+    "effectZhHans": "身为后卫时，如果前卫是主人公，前卫回避+15，受到的伤害-3",
     "iconAssetId": "evasive_partner",
     "provenance": [
       {
@@ -229,8 +229,8 @@
       "en": "Vow of Friendship",
       "zhHans": "友情的誓言"
     },
-    "effect": "If Corrin is an ally and Corrin is under half HP, Silas deals 3 more damage and receives 3 less damage.",
-    "effectZhHans": "主人公HP在一半以下时，自己造成的伤害+3，受到的伤害-3",
+    "effect": "If Corrin is deployed and below half HP, grants Damage Dealt +3, Damage Taken -3.",
+    "effectZhHans": "主人公HP在一半以下时，造成的伤害+3，受到的伤害-3",
     "iconAssetId": "vow_of_friendship",
     "provenance": [
       {
@@ -285,7 +285,7 @@
       "en": "Miraculous Save",
       "zhHans": "羁绊的祈祷"
     },
-    "effect": "When Kaze is the support unit, the lead unit has a chance equal to their Luck stat to survive a fatal attack with 1 HP.",
+    "effect": "When supporting a lead unit, grants that unit a Luck% chance to survive a fatal attack with 1 HP.",
     "effectZhHans": "发动率＝前卫的幸运%。身为后卫时，前卫受到致命攻击时可以残留1HP",
     "iconAssetId": "miraculous_save",
     "provenance": [
@@ -340,8 +340,8 @@
       "en": "Forager",
       "zhHans": "农场主"
     },
-    "effect": "When standing on Mountain, Woods, Waste, or Field terrain, Mozu recovers 20% HP at the start of the turn.",
-    "effectZhHans": "回合开始时如果处于山地、林地、荒地、田地地形内，回复自己HP上限的20%",
+    "effect": "When standing on Mountain, Woods, Waste, or Field terrain, restores 20% of maximum HP at the start of the turn.",
+    "effectZhHans": "回合开始时如果处于山地、林地、荒地、田地地形内，HP回复最大HP的20%",
     "iconAssetId": "forager",
     "provenance": [
       {
@@ -396,8 +396,8 @@
       "en": "Highwayman",
       "zhHans": "出阴招"
     },
-    "effect": "When Shura initiates combat and the enemy cannot counterattack, the enemy's Strength and Speed are reduced by 3 after combat; each recovers by 1 every turn.",
-    "effectZhHans": "自己发动攻击、敌方无法反击时，战斗后敌方的力量、速度-3，之后每回合回复1点",
+    "effect": "When initiating combat against an enemy that cannot counterattack, inflicts Strength -3 and Speed -3 after combat; each recovers by 1 every turn.",
+    "effectZhHans": "发动攻击、敌方无法反击时，战斗后敌方力量-3、速度-3，之后每回合回复1点",
     "iconAssetId": "highwayman",
     "provenance": [
       {
@@ -452,8 +452,8 @@
       "en": "Forceful Partner",
       "zhHans": "绝对进攻"
     },
-    "effect": "While Gunter is the support unit and Corrin leads, Corrin gains Hit +15 and damage +3.",
-    "effectZhHans": "身为后卫时，如果前卫是主人公，前卫的命中+15，造成的伤害+3",
+    "effect": "When supporting Corrin, grants Corrin Hit +15, Damage Dealt +3.",
+    "effectZhHans": "身为后卫时，如果前卫是主人公，前卫命中+15，造成的伤害+3",
     "iconAssetId": "forceful_partner",
     "provenance": [
       {
@@ -491,8 +491,8 @@
       "en": "Make a Killing",
       "zhHans": "一夕致富"
     },
-    "effect": "When Anna initiates combat and defeats the target, she has a Luck% chance to receive a random amount of gold.",
-    "effectZhHans": "发动率＝幸运%。自己击倒敌方时，可获得金币",
+    "effect": "When initiating combat and defeating the target, Luck% chance to receive a random amount of gold.",
+    "effectZhHans": "发动率＝幸运%。击倒敌方时，可获得金币",
     "iconAssetId": "make_a_killing",
     "provenance": [
       {
@@ -530,8 +530,8 @@
       "en": "Draconic Heir",
       "zhHans": "龙之御子"
     },
-    "effect": "At the start of the turn, if Kana has a Dragonstone equipped, Kana restores 15% of maximum HP.",
-    "effectZhHans": "回合开始时，如果自己装备着龙石，自己的HP回复15%",
+    "effect": "When equipped with a Dragonstone at the start of the turn, restores 15% of maximum HP.",
+    "effectZhHans": "回合开始时，如果装备着龙石，HP回复15%",
     "iconAssetId": "draconic_heir",
     "provenance": [
       {
@@ -579,8 +579,8 @@
       "en": "Perfect Pitch",
       "zhHans": "完美音调"
     },
-    "effect": "When Shigure uses Rally, allies within 2 spaces whose current HP is lower than his recover 10% of their maximum HP.",
-    "effectZhHans": "可使用支援指令，使周围2格内的HP比自己低的同伴回复10%HP",
+    "effect": "When using Rally, allies within 2 tiles with lower current HP restore 10% of their maximum HP.",
+    "effectZhHans": "可使用支援指令，使周围2格内HP较低的同伴回复10%HP",
     "iconAssetId": "perfect_pitch",
     "provenance": [
       {
@@ -628,8 +628,8 @@
       "en": "Born Steward",
       "zhHans": "管家的素养"
     },
-    "effect": "During My Castle battles, Dwyer gains Hit +20 and Avoid +20, deals 2 extra damage, and takes 2 less damage.",
-    "effectZhHans": "自己在我的城堡战斗时，命中、回避+20，造成的伤害+2，受到的伤害-2",
+    "effect": "When fighting in My Castle, grants Hit +20, Avoid +20, Damage Dealt +2, Damage Taken -2.",
+    "effectZhHans": "在我的城堡战斗时，命中+20、回避+20，造成的伤害+2、受到的伤害-2",
     "iconAssetId": "born_steward",
     "provenance": [
       {
@@ -677,8 +677,8 @@
       "en": "Mischievous",
       "zhHans": "冒失"
     },
-    "effect": "When Sophie initiates combat and her attack connects, the enemy loses 3 Defense after combat and has its clothing stripped.",
-    "effectZhHans": "自己的攻击命中时，敌方的守备-3，衣服会被撕坏",
+    "effect": "When initiating combat and landing an attack, inflicts Defense -3 after combat and strips the enemy's clothing.",
+    "effectZhHans": "攻击命中时，战斗后敌方守备-3，衣服会被撕坏",
     "iconAssetId": "mischievous",
     "provenance": [
       {
@@ -727,7 +727,7 @@
       "zhHans": "幸运儿"
     },
     "effect": "Increases the activation rate of Luck-based skills by 20 percentage points.",
-    "effectZhHans": "自己发动率与幸运相关的特技，发动率+20%",
+    "effectZhHans": "发动的幸运相关特技，其发动率+20%",
     "iconAssetId": "lucky_charm",
     "provenance": [
       {
@@ -775,8 +775,8 @@
       "en": "Bushido",
       "zhHans": "武士道"
     },
-    "effect": "While Ryoma leads and his support unit has a lower level, Ryoma gains Critical +10, deals 2 extra damage, and receives 2 less damage.",
-    "effectZhHans": "自己身为前卫，且自己比后卫等级高时，必杀+10，造成的伤害+2，受到的伤害-2",
+    "effect": "When leading with a lower-level support unit, grants Crit +10, Damage Dealt +2, Damage Taken -2.",
+    "effectZhHans": "身为前卫，且等级高于后卫时，必杀+10，造成的伤害+2、受到的伤害-2",
     "iconAssetId": "bushido",
     "provenance": [
       {
@@ -814,8 +814,8 @@
       "en": "Rallying Cry",
       "zhHans": "鼓舞"
     },
-    "effect": "Allies within two tiles of Hinoka deal 2 extra damage.",
-    "effectZhHans": "自己周围2格内的同伴造成的伤害+2",
+    "effect": "Grants allies within 2 tiles Damage Dealt +2.",
+    "effectZhHans": "周围2格内的同伴造成的伤害+2",
     "iconAssetId": "rallying_cry",
     "provenance": [
       {
@@ -853,8 +853,8 @@
       "en": "Competitive",
       "zhHans": "竞争心"
     },
-    "effect": "While Takumi leads and his support unit has a higher level, Takumi gains Critical +10, deals 3 extra damage, and receives 1 less damage.",
-    "effectZhHans": "自己身为前卫，且自己比后卫等级低时，必杀+10，造成的伤害+3，受到的伤害-1",
+    "effect": "When leading with a higher-level support unit, grants Crit +10, Damage Dealt +3, Damage Taken -1.",
+    "effectZhHans": "身为前卫，且等级低于后卫时，必杀+10，造成的伤害+3、受到的伤害-1",
     "iconAssetId": "competitive",
     "provenance": [
       {
@@ -892,8 +892,8 @@
       "en": "Quiet Strength",
       "zhHans": "小小的声援"
     },
-    "effect": "Allies within two tiles of Sakura receive 2 less damage.",
-    "effectZhHans": "自己周围2格内的同伴受到的伤害-2",
+    "effect": "Grants allies within 2 tiles Damage Taken -2.",
+    "effectZhHans": "周围2格内的同伴受到的伤害-2",
     "iconAssetId": "quiet_strength",
     "provenance": [
       {
@@ -931,8 +931,8 @@
       "en": "Pyrotechnics",
       "zhHans": "爆炎使"
     },
-    "effect": "When Saizo initiates combat below half HP, all enemy units within two tiles lose 20% of their maximum HP after combat.",
-    "effectZhHans": "自己在HP低于一半时发动攻击，自己周围2格内的敌方HP减少20%",
+    "effect": "When initiating combat below half HP, enemies within 2 tiles lose 20% of their maximum HP after combat.",
+    "effectZhHans": "在HP低于一半时发动攻击，周围2格内的敌方HP减少20%",
     "iconAssetId": "pyrotechnics",
     "provenance": [
       {
@@ -970,8 +970,8 @@
       "en": "Shuriken Mastery",
       "zhHans": "忍法车返"
     },
-    "effect": "When Kagero is hit by a dagger attack, the attacker takes damage equal to half the damage Kagero actually received and suffers the full value of every stat reduction inflicted on her.",
-    "effectZhHans": "自己受到暗器系武器攻击时，将受到的伤害的一半反弹给敌方，敌方所施加的能力降低效果也全额反弹给对方",
+    "effect": "When hit by a dagger, reflects half the damage received and all inflicted stat reductions back to the attacker.",
+    "effectZhHans": "受到暗器系武器攻击时，将受到的伤害的一半反弹给敌方，敌方所施加的能力降低效果也全额反弹给对方",
     "iconAssetId": "shuriken_mastery",
     "provenance": [
       {
@@ -1017,8 +1017,8 @@
       "en": "Optimistic",
       "zhHans": "乐观"
     },
-    "effect": "Healing Setsuna receives from staves is multiplied by 1.5.",
-    "effectZhHans": "自己接受杖的回复时，回复量为通常的1.5倍",
+    "effect": "Restores 1.5 times the normal HP from staves.",
+    "effectZhHans": "接受杖的回复时，回复量为通常的1.5倍",
     "iconAssetId": "optimistic",
     "provenance": [
       {
@@ -1063,8 +1063,8 @@
       "en": "Divine Retribution",
       "zhHans": "天罚"
     },
-    "effect": "When Azama is unarmed and an adjacent enemy damages him, that enemy takes half the damage dealt.",
-    "effectZhHans": "自己未装备武器时，受到邻接敌方的攻击后，将受到的伤害的一半反弹给该敌方",
+    "effect": "When unarmed and damaged by an adjacent enemy, reflects half the damage received.",
+    "effectZhHans": "未装备武器时，受到邻接敌方的攻击后，将受到的伤害的一半反弹给该敌方",
     "iconAssetId": "divine_retribution",
     "provenance": [
       {
@@ -1102,8 +1102,8 @@
       "en": "Triple Threat",
       "zhHans": "垂死挣扎"
     },
-    "effect": "Below half HP, Hinata reflects half the damage he receives from sword, lance, and axe attacks.",
-    "effectZhHans": "自己HP低于一半时受到剑、枪、斧的攻击时，将受到的伤害的一半反弹给敌方",
+    "effect": "When below half HP, reflects half the damage received from sword, lance, and axe attacks.",
+    "effectZhHans": "HP低于一半时受到剑、枪、斧的攻击时，将受到的伤害的一半反弹给敌方",
     "iconAssetId": "triple_threat",
     "provenance": [
       {
@@ -1141,8 +1141,8 @@
       "en": "Nohr Enmity",
       "zhHans": "暗夜仇恨"
     },
-    "effect": "Oboro deals 3 extra damage if the enemy's original class is Nohrian or the enemy is currently in a Nohrian class. An enemy with a Nohrian original class still qualifies after reclassing (for example, Odin as a Samurai), while an enemy with a non-Nohrian original class qualifies while in a Nohrian class (for example, Kaze as a Cavalier). Generic enemies generated for Challenge or skirmish battles are excluded even when they use a Nohrian class.",
-    "effectZhHans": "当敌方的原始职业属于暗夜、或敌方当前处于暗夜职业时，自己造成的伤害+3。原始职业为暗夜的敌方在转职后依然符合条件（例如转为武士的奥丁），原始职业并非暗夜的敌方在处于暗夜职业时也符合条件（例如转为轻骑士的凉风）。该个人技只会在主线章节生效。",
+    "effect": "When an enemy's original or current class is Nohrian, grants Damage Dealt +3. An original Nohrian class still qualifies after reclassing (for example, Odin as a Samurai). A non-Nohrian original class qualifies after reclassing into a Nohrian class (for example, Kaze as a Cavalier). Generic enemies in Challenge or skirmish battles do not qualify.",
+    "effectZhHans": "当敌方的原始职业属于暗夜、或敌方当前处于暗夜职业时，造成的伤害+3。原始职业为暗夜的敌方在转职后依然符合条件（例如转为武士的奥丁），原始职业并非暗夜的敌方在处于暗夜职业时也符合条件（例如转为轻骑士的凉风）。该个人技只会在主线章节生效。",
     "iconAssetId": "nohr_enmity",
     "provenance": [
       {
@@ -1196,8 +1196,8 @@
       "en": "Fearsome Blow",
       "zhHans": "淘气鬼"
     },
-    "effect": "When Hana initiates combat and defeats an enemy, enemies adjacent to that enemy lose 20% of their maximum HP.",
-    "effectZhHans": "自己发动攻击且击倒敌方后，和自己邻接的所有敌方HP减少20%",
+    "effect": "When initiating combat and defeating an enemy, enemies adjacent to the defeated unit lose 20% of their maximum HP.",
+    "effectZhHans": "发动攻击且击倒敌方后，与被击倒单位邻接的所有敌方HP减少20%",
     "iconAssetId": "fearsome_blow",
     "provenance": [
       {
@@ -1235,8 +1235,8 @@
       "en": "Perfectionist",
       "zhHans": "完美主义"
     },
-    "effect": "While Subaki is at full HP, he gains Hit +15 and Avoid +15.",
-    "effectZhHans": "自己HP全满时，命中、回避+15",
+    "effect": "When at full HP, grants Hit +15, Avoid +15.",
+    "effectZhHans": "HP全满时，命中+15、回避+15",
     "iconAssetId": "perfectionist",
     "provenance": [
       {
@@ -1274,8 +1274,8 @@
       "en": "Pride",
       "zhHans": "自尊"
     },
-    "effect": "When Hayato's effective level is lower than the enemy's, he deals 3 extra damage. For this comparison, promoted units count as their displayed level +20.",
-    "effectZhHans": "自己比敌方等级低时，造成的伤害+4（上位职业的等级按+20算）",
+    "effect": "When at a lower effective level than the enemy, grants Damage Dealt +3. Promoted units count as their displayed level +20.",
+    "effectZhHans": "等级低于敌方时，造成的伤害+4（上位职业的等级按+20算）",
     "iconAssetId": "pride",
     "provenance": [
       {
@@ -1313,8 +1313,8 @@
       "en": "Fiery Blood",
       "zhHans": "炎之血"
     },
-    "effect": "While Rinkah is not at full HP, she deals 4 extra damage.",
-    "effectZhHans": "自己HP不满时，造成的伤害+4",
+    "effect": "When not at full HP, grants Damage Dealt +4.",
+    "effectZhHans": "HP未满时，造成的伤害+4",
     "iconAssetId": "fiery_blood",
     "provenance": [
       {
@@ -1352,8 +1352,8 @@
       "en": "Capture",
       "zhHans": "白夜的捕缚术"
     },
-    "effect": "If a Prison is available, Orochi can use Capture to send a defeated capturable generic enemy to the Prison instead of killing them.",
-    "effectZhHans": "城堡里有牢房设施后，自己可使用捕获指令，击倒可捕获的敌方即可将其抓入牢房",
+    "effect": "When a Prison is available, can use the Capture command to send a defeated capturable generic enemy to the Prison instead of killing them.",
+    "effectZhHans": "城堡里有牢房设施后，可使用捕获指令，击倒可捕获的敌方即可将其抓入牢房",
     "iconAssetId": "capture",
     "provenance": [
       {
@@ -1391,8 +1391,8 @@
       "en": "Reciprocity",
       "zhHans": "恩返"
     },
-    "effect": "When another unit heals Kaden with a staff, the healer recovers half the HP restored to Kaden.",
-    "effectZhHans": "自己被同伴用杖回复HP时，该同伴也能回复相当于一半回复量的HP",
+    "effect": "When healed by another unit's staff, the healer restores half the same amount of HP.",
+    "effectZhHans": "被同伴用杖回复HP时，该同伴也能回复相当于一半回复量的HP",
     "iconAssetId": "reciprocity",
     "provenance": [
       {
@@ -1430,8 +1430,8 @@
       "en": "Morbid Celebration",
       "zhHans": "杀戮的喜悦"
     },
-    "effect": "When Reina initiates combat and defeats an enemy, she recovers 20% of her maximum HP.",
-    "effectZhHans": "自己发动攻击且击倒敌方后，HP回复20%",
+    "effect": "When initiating combat and defeating an enemy, restores 20% of maximum HP.",
+    "effectZhHans": "发动攻击且击倒敌方后，HP回复20%",
     "iconAssetId": "morbid_celebration",
     "provenance": [
       {
@@ -1469,8 +1469,8 @@
       "en": "In Extremis",
       "zhHans": "临死一搏"
     },
-    "effect": "While Scarlet is below one-quarter of her maximum HP, she gains Critical +30.",
-    "effectZhHans": "自己HP低于1/4时，必杀+30",
+    "effect": "When below one-quarter of maximum HP, grants Crit +30.",
+    "effectZhHans": "HP低于1/4时，必杀+30",
     "iconAssetId": "in_extremis",
     "provenance": [
       {
@@ -1508,8 +1508,8 @@
       "en": "Chivalry",
       "zhHans": "骑士道"
     },
-    "effect": "Against an enemy at full HP, Xander deals 2 extra damage and receives 2 less damage.",
-    "effectZhHans": "战斗时如果敌方HP满，自己造成的伤害+2，受到的伤害-2",
+    "effect": "Against an enemy at full HP, grants Damage Dealt +2, Damage Taken -2.",
+    "effectZhHans": "战斗时如果敌方HP为满，造成的伤害+2、受到的伤害-2",
     "iconAssetId": "chivalry",
     "provenance": [
       {
@@ -1547,8 +1547,8 @@
       "en": "Rose's Thorns",
       "zhHans": "妖艳之花"
     },
-    "effect": "Adjacent allies deal 3 extra damage and receive 1 less damage.",
-    "effectZhHans": "与自己邻接的同伴，造成的伤害+3，受到的伤害-1",
+    "effect": "Grants adjacent allies Damage Dealt +3, Damage Taken -1.",
+    "effectZhHans": "相邻的同伴造成的伤害+3，受到的伤害-1",
     "iconAssetId": "roses_thorns",
     "provenance": [
       {
@@ -1594,8 +1594,8 @@
       "en": "Pragmatic",
       "zhHans": "冷血"
     },
-    "effect": "When attacking an enemy who is not at full HP, Leo deals 3 extra damage and receives 1 less damage.",
-    "effectZhHans": "自己攻击HP未满的敌方时，造成的伤害+3，受到的伤害-1",
+    "effect": "When attacking an enemy who is not at full HP, grants Damage Dealt +3, Damage Taken -1.",
+    "effectZhHans": "攻击HP未满的敌方时，造成的伤害+3、受到的伤害-1",
     "iconAssetId": "pragmatic",
     "provenance": [
       {
@@ -1633,8 +1633,8 @@
       "en": "Lily's Poise",
       "zhHans": "可爱之花"
     },
-    "effect": "Adjacent allies deal 1 extra damage and take 3 less damage.",
-    "effectZhHans": "与自己邻接的同伴，造成的伤害+1，受到的伤害-3",
+    "effect": "Grants adjacent allies Damage Dealt +1, Damage Taken -3.",
+    "effectZhHans": "相邻的同伴造成的伤害+1，受到的伤害-3",
     "iconAssetId": "lilys_poise",
     "provenance": [
       {
@@ -1681,8 +1681,8 @@
       "en": "Fancy Footwork",
       "zhHans": "青之舞"
     },
-    "effect": "Using the Rally command grants Strength and Speed +1 to allies within 2 tiles for one turn.",
-    "effectZhHans": "可使用支援指令，使自己周围2格内的同伴1回合内力、速+1",
+    "effect": "Using the Rally command grants allies within 2 tiles Strength +1, Speed +1 for one turn.",
+    "effectZhHans": "可使用支援指令，使周围2格内的同伴力量+1、速度+1，持续1回合",
     "iconAssetId": "fancy_footwork",
     "provenance": [
       {
@@ -1720,8 +1720,8 @@
       "en": "Bloodthirst",
       "zhHans": "杀戮本能"
     },
-    "effect": "When Peri initiates combat and defeats the enemy, Strength, Magic, Skill, and Speed +4 for one turn.",
-    "effectZhHans": "自己发动攻击且击倒敌方时，力、魔力、技、速+4，持续1回合",
+    "effect": "When initiating combat and defeating the enemy, grants Strength +4, Magic +4, Skill +4, Speed +4 for one turn.",
+    "effectZhHans": "发动攻击且击倒敌方时，力量+4、魔力+4、技+4、速度+4，持续1回合",
     "iconAssetId": "bloodthirst",
     "provenance": [
       {
@@ -1759,8 +1759,8 @@
       "en": "Fierce Rival",
       "zhHans": "竞争心"
     },
-    "effect": "When Selena is the support unit and the lead unit triggers a critical hit, Selena's follow-up attack is guaranteed to be critical if it connects.",
-    "effectZhHans": "自己身为后卫时，如果前卫发动必杀，自己的攻击命中的话也一定是必杀",
+    "effect": "When supporting a lead unit that lands a critical hit, the follow-up attack is guaranteed to be critical if it connects.",
+    "effectZhHans": "身为后卫时，如果前卫发动必杀，后续攻击命中的话也一定是必杀",
     "iconAssetId": "fierce_rival",
     "provenance": [
       {
@@ -1798,8 +1798,8 @@
       "en": "Opportunist",
       "zhHans": "奇袭之牙"
     },
-    "effect": "When Beruka initiates combat and the enemy cannot counterattack, damage +4.",
-    "effectZhHans": "自己发动攻击时，如果敌方无法反击，造成的伤害+4",
+    "effect": "When initiating combat against an enemy that cannot counterattack, grants Damage Dealt +4.",
+    "effectZhHans": "发动攻击时，如果敌方无法反击，造成的伤害+4",
     "iconAssetId": "opportunist",
     "provenance": [
       {
@@ -1837,8 +1837,8 @@
       "en": "Aching Blood",
       "zhHans": "血之痛"
     },
-    "effect": "When equipped with a forged weapon whose name is at least 12 characters, Critical rate +10 (Western version). When equipped with a forged weapon whose name is exactly 8 kanji, Critical rate +10 (JP version).",
-    "effectZhHans": "如果自己装备的武器名称由8个汉字组成，自己的必杀+10（日版）。如果自己装备的武器名称由12及以上个字符组成，自己的必杀+10（美版）",
+    "effect": "When equipped with a forged weapon whose name is at least 12 characters, grants Crit +10 (Western version). When equipped with a forged weapon whose name is exactly 8 kanji, grants Crit +10 (JP version).",
+    "effectZhHans": "如果装备的武器名称由8个汉字组成，必杀+10（日版）。如果装备的武器名称由12及以上个字符组成，必杀+10（美版）",
     "iconAssetId": "aching_blood",
     "provenance": [
       {
@@ -1876,8 +1876,8 @@
       "en": "Kidnap",
       "zhHans": "绑架"
     },
-    "effect": "When a Prison is present in My Castle, Niles can capture a defeated generic enemy and send them to the Prison.",
-    "effectZhHans": "城堡里有牢房设施后，自己可使用捕获指令，击倒敌方即可将其抓入牢房",
+    "effect": "When a Prison is available, can use the Capture command to send a defeated capturable generic enemy to the Prison instead of killing them.",
+    "effectZhHans": "城堡里有牢房设施后，可使用捕获指令，击倒可捕获的敌方即可将其抓入牢房",
     "iconAssetId": "kidnap",
     "provenance": [
       {
@@ -1915,8 +1915,8 @@
       "en": "Puissance",
       "zhHans": "怪力"
     },
-    "effect": "When Effie's Strength is 5 or more points higher than the enemy's Strength, damage +3 during battle.",
-    "effectZhHans": "战斗时，如果自己的力量比敌方高5点及以上，造成的伤害+3",
+    "effect": "When Strength is at least 5 points higher than the enemy's, grants Damage Dealt +3.",
+    "effectZhHans": "战斗时，如果力量比敌方高5点及以上，造成的伤害+3",
     "iconAssetId": "puissance",
     "provenance": [
       {
@@ -1954,8 +1954,8 @@
       "en": "Misfortunate",
       "zhHans": "不幸"
     },
-    "effect": "Enemies within 2 tiles have Crit Avoid -15, while Arthur has Crit Avoid -5.",
-    "effectZhHans": "周围2格内的敌方必杀回避-15，自己的必杀回避-5",
+    "effect": "Grants Ddg -5 and inflicts Ddg -15 on enemies within 2 tiles.",
+    "effectZhHans": "必杀回避-5，周围2格内的敌方必杀回避-15",
     "iconAssetId": "misfortunate",
     "provenance": [
       {
@@ -1994,7 +1994,7 @@
       "zhHans": "诅咒反弹"
     },
     "effect": "When an enemy initiates combat and inflicts magical damage, the enemy receives half the same damage.",
-    "effectZhHans": "敌方对自己使用魔法攻击时，将自己受到的伤害的一半反弹给敌方",
+    "effectZhHans": "敌方使用魔法攻击时，将受到的伤害的一半反弹给敌方",
     "iconAssetId": "countercurse",
     "provenance": [
       {
@@ -2032,8 +2032,8 @@
       "en": "Unmask",
       "zhHans": "女人的本性"
     },
-    "effect": "When engaging a female enemy, damage +4 and Critical rate +20.",
-    "effectZhHans": "自己与女性敌方战斗时，造成的伤害+4，必杀+20",
+    "effect": "When the enemy is female, grants Damage Dealt +4, Crit +20.",
+    "effectZhHans": "与女性敌方战斗时，造成的伤害+4、必杀+20",
     "iconAssetId": "unmask",
     "provenance": [
       {
@@ -2071,8 +2071,8 @@
       "en": "Fierce Mien",
       "zhHans": "强面"
     },
-    "effect": "Enemies within 2 tiles have Avoid -10.",
-    "effectZhHans": "自己周围2格内的敌方回避-10",
+    "effect": "Inflicts Avoid -10 on enemies within 2 tiles.",
+    "effectZhHans": "周围2格内的敌方回避-10",
     "iconAssetId": "fierce_mien",
     "provenance": [
       {
@@ -2110,8 +2110,8 @@
       "en": "Collector",
       "zhHans": "拾荒"
     },
-    "effect": "After taking an action through turn 7, Keaton has a Luck% chance to obtain three units of a random ore or foodstuff.",
-    "effectZhHans": "发动率＝幸运%。前7个回合内，自己每次行动结束后有机会获得3个随机矿石或食材",
+    "effect": "After taking an action through turn 7, Luck% chance to obtain three units of a random ore or foodstuff.",
+    "effectZhHans": "发动率＝幸运%。前7个回合内，每次行动结束后有机会获得3个随机矿石或食材",
     "iconAssetId": "collector",
     "provenance": [
       {
@@ -2149,8 +2149,8 @@
       "en": "Icy Blood",
       "zhHans": "冰之血"
     },
-    "effect": "When Flora is not at full HP and is attacked from 2 or more spaces away, the attacker takes half the damage dealt and suffers Skill -3 and Speed -3 after combat.",
-    "effectZhHans": "自己HP不满且受到间接攻击时，将受到的伤害的一半反弹给敌方，敌方技、速-3",
+    "effect": "When below full HP and attacked from 2 or more tiles away, reflects half the damage dealt; inflicts Skill -3 and Speed -3 on the attacker after combat.",
+    "effectZhHans": "HP未满且受到间接攻击时，将受到的伤害的一半反弹给敌方，战斗后敌方技-3、速度-3",
     "iconAssetId": "icy_blood",
     "provenance": [
       {
@@ -2197,8 +2197,8 @@
       "en": "Peacebringer",
       "zhHans": "美貌的王者"
     },
-    "effect": "Allies and enemies within 2 tiles of Izana deal 2 less damage.",
-    "effectZhHans": "自己周围2格内的敌我双方受到的伤害-2",
+    "effect": "Inflicts Damage Dealt -2 on allies and enemies within 2 tiles.",
+    "effectZhHans": "周围2格内的敌我双方受到的伤害-2",
     "iconAssetId": "peacebringer",
     "provenance": [
       {
@@ -2253,8 +2253,8 @@
       "en": "Noble Cause",
       "zhHans": "大义"
     },
-    "effect": "While Shiro is the lead unit with a support unit whose HP is not full, he deals 3 extra damage and takes 1 extra damage.",
-    "effectZhHans": "自己身为前卫时，如果后卫的HP不满，自己造成的伤害+3，受到的伤害-1",
+    "effect": "When leading with a support unit below full HP, grants Damage Dealt +3, Damage Taken +1.",
+    "effectZhHans": "身为前卫时，如果后卫的HP未满，造成的伤害+3、受到的伤害-1",
     "iconAssetId": "noble_cause",
     "provenance": [
       {
@@ -2284,8 +2284,8 @@
       "en": "Optimist",
       "zhHans": "乐天派"
     },
-    "effect": "After Kiragi uses Wait, he gains 4 Speed and 8 Luck for one turn.",
-    "effectZhHans": "自己使用待机指令后，速+4、幸运+8，持续1回合",
+    "effect": "After using Wait, grants Speed +4, Luck +8 for one turn.",
+    "effectZhHans": "使用待机指令后，速度+4、幸运+8，持续1回合",
     "iconAssetId": "optimist",
     "provenance": [
       {
@@ -2323,8 +2323,8 @@
       "en": "Sweet Tooth",
       "zhHans": "甜食党"
     },
-    "effect": "After Asugi uses Wait, he restores 4 HP.",
-    "effectZhHans": "自己使用待机指令时，偷偷吃一个甜品，回复4点HP",
+    "effect": "After using Wait, restores 4 HP.",
+    "effectZhHans": "使用待机指令时，偷偷吃一个甜品，HP回复4点",
     "iconAssetId": "sweet_tooth",
     "provenance": [
       {
@@ -2355,7 +2355,7 @@
       "zhHans": "好玩具"
     },
     "effect": "At the start of the turn, adjacent enemies lose 5 HP.",
-    "effectZhHans": "回合开始时，和自己邻接的所有敌方HP-5",
+    "effectZhHans": "回合开始时，所有相邻的敌方HP-5",
     "iconAssetId": "playthings",
     "provenance": [
       {
@@ -2385,8 +2385,8 @@
       "en": "Calm",
       "zhHans": "冷静"
     },
-    "effect": "After Hisame uses Wait, he gains 4 Skill and 4 Resistance for one turn.",
-    "effectZhHans": "自己使用待机指令后，技+4、魔防+4，持续1回合",
+    "effect": "After using Wait, grants Skill +4, Resistance +4 for one turn.",
+    "effectZhHans": "使用待机指令后，技+4、魔防+4，持续1回合",
     "iconAssetId": "calm",
     "provenance": [
       {
@@ -2416,8 +2416,8 @@
       "en": "Haiku",
       "zhHans": "俳句"
     },
-    "effect": "At the start of the turn, if allies stand directly above and below Mitama, she restores 7 HP and each of those allies restores 5 HP.",
-    "effectZhHans": "回合开始时，如果有两个同伴以自己为中心排成一直线，三人分别回复5、7、5点HP",
+    "effect": "When allies stand directly above and below at the start of the turn, restores 7 HP and each ally restores 5 HP.",
+    "effectZhHans": "回合开始时，如果两个同伴分列上下并排成一直线，三人分别回复5、7、5点HP",
     "iconAssetId": "haiku",
     "provenance": [
       {
@@ -2447,8 +2447,8 @@
       "en": "Prodigy",
       "zhHans": "天才"
     },
-    "effect": "Compare Caeldori's higher offensive stat (Strength or Magic) with the enemy's matching stat. If the enemy's stat is higher, Caeldori deals 4 extra damage.",
-    "effectZhHans": "取自己的力量与魔力中较高的一项，与敌方的对应属性比较；若敌方该项属性更高，则自己造成的伤害+4",
+    "effect": "When the enemy's matching stat exceeds the higher of Strength or Magic, grants Damage Dealt +4.",
+    "effectZhHans": "取力量与魔力中较高的一项，与敌方的对应属性比较；若敌方该项属性更高，则造成的伤害+4",
     "iconAssetId": "prodigy",
     "provenance": [
       {
@@ -2478,8 +2478,8 @@
       "en": "Vendetta",
       "zhHans": "執念"
     },
-    "effect": "When Rhajat initiates combat against an enemy she has already fought on the same map, she deals 4 extra damage.",
-    "effectZhHans": "自己HP低于1/4时，必杀+30",
+    "effect": "When initiating combat against an enemy already fought on the same map, grants Damage Dealt +4.",
+    "effectZhHans": "HP低于1/4时，必杀+30",
     "iconAssetId": "vendetta",
     "provenance": [
       {
@@ -2509,8 +2509,8 @@
       "en": "Gallant",
       "zhHans": "紳士"
     },
-    "effect": "While Siegbert supports a female lead unit, that lead unit deals 2 extra damage.",
-    "effectZhHans": "自己身为后卫时，如果前卫是女性，前卫造成的伤害+2",
+    "effect": "When supporting a female lead unit, grants that unit Damage Dealt +2.",
+    "effectZhHans": "身为后卫时，如果前卫是女性，前卫造成的伤害+2",
     "iconAssetId": "gallant",
     "provenance": [
       {
@@ -2540,8 +2540,8 @@
       "en": "Fierce Counter",
       "zhHans": "强烈反击"
     },
-    "effect": "When a male enemy initiates combat, Forrest deals 2 extra damage.",
-    "effectZhHans": "自己受到男性敌方攻击时，造成的伤害+2",
+    "effect": "When a male enemy initiates combat, grants Damage Dealt +2.",
+    "effectZhHans": "受到男性敌方攻击时，造成的伤害+2",
     "iconAssetId": "fierce_counter",
     "provenance": [
       {
@@ -2571,8 +2571,8 @@
       "en": "Guarded Bravery",
       "zhHans": "谨慎勇敢"
     },
-    "effect": "While Ignatius is the lead unit in Attack or Guard Stance, he takes 2 less damage; while unsupported, he takes 2 extra damage.",
-    "effectZhHans": "自己身为前卫时，受到的伤害-2。自己不处于攻阵、防阵时，受到的伤害+2",
+    "effect": "When leading in Attack or Guard Stance, grants Damage Taken -2. When unsupported, grants Damage Taken +2.",
+    "effectZhHans": "身为前卫时，受到的伤害-2；不处于攻阵、防阵时，受到的伤害+2",
     "iconAssetId": "guarded_bravery",
     "provenance": [
       {
@@ -2602,8 +2602,8 @@
       "en": "Goody Basket",
       "zhHans": "捡到宝"
     },
-    "effect": "At the start of the turn, Velouria has a Luck% chance to restore 10 HP.",
-    "effectZhHans": "发动率＝幸运%。回合开始时，自己的HP回复10点",
+    "effect": "At the start of the turn, Luck% chance to restore 10 HP.",
+    "effectZhHans": "发动率＝幸运%。回合开始时，HP回复10点",
     "iconAssetId": "goody_basket",
     "provenance": [
       {
@@ -2633,8 +2633,8 @@
       "en": "Fortunate Son",
       "zhHans": "幸运星"
     },
-    "effect": "Allies within 2 tiles gain 15 Critical Avoid; Percy gains 5 Critical Avoid.",
-    "effectZhHans": "自己的必杀回避+5，自己周围2格内的同伴必杀回避+15",
+    "effect": "Grants Ddg +5. Grants allies within 2 tiles Ddg +15.",
+    "effectZhHans": "必杀回避+5，周围2格内的同伴必杀回避+15",
     "iconAssetId": "fortunate_son",
     "provenance": [
       {
@@ -2664,8 +2664,8 @@
       "en": "Bibliophile",
       "zhHans": "魔导书狂"
     },
-    "effect": "While carrying at least three tomes or scrolls, Ophelia gains 10 Critical.",
-    "effectZhHans": "自己携带3本及以上魔法书时，必杀+10",
+    "effect": "When carrying at least three tomes or scrolls, grants Crit +10.",
+    "effectZhHans": "携带3本及以上魔法书时，必杀+10",
     "iconAssetId": "bibliophile",
     "provenance": [
       {
@@ -2695,8 +2695,8 @@
       "en": "Sisterhood",
       "zhHans": "女子力"
     },
-    "effect": "While supported by a female ally, Soleil deals 2 extra damage and takes 2 less damage.",
-    "effectZhHans": "自己身为前卫时，如果后卫是女性，自己造成的伤害+2，受到的伤害-2",
+    "effect": "When supported by a female ally, grants Damage Dealt +2, Damage Taken -2.",
+    "effectZhHans": "身为前卫时，如果后卫是女性，造成的伤害+2、受到的伤害-2",
     "iconAssetId": "sisterhood",
     "provenance": [
       {
@@ -2726,8 +2726,8 @@
       "en": "Daydream",
       "zhHans": "邪念"
     },
-    "effect": "While adjacent to two male units paired in Guard Stance, Nina deals 2 extra damage and takes 2 less damage.",
-    "effectZhHans": "自己与两名结成防阵的男性单位邻接时，自己造成的伤害+2，受到的伤害-2",
+    "effect": "When adjacent to two male units paired in Guard Stance, grants Damage Dealt +2, Damage Taken -2.",
+    "effectZhHans": "与两名结成防阵的男性单位邻接时，造成的伤害+2、受到的伤害-2",
     "iconAssetId": "daydream",
     "provenance": [
       {
@@ -2757,8 +2757,8 @@
       "en": "Perspicacious",
       "zhHans": "军略传授"
     },
-    "effect": "All allies gain Hit +5 while Yukimura is deployed.",
-    "effectZhHans": "自己出击时，我方全员命中+5",
+    "effect": "When deployed, grants all allies Hit +5.",
+    "effectZhHans": "出击时，我方全员命中+5",
     "iconAssetId": "perspicacious",
     "provenance": [
       {
@@ -2805,8 +2805,8 @@
       "en": "Wind Disciple",
       "zhHans": "风之血"
     },
-    "effect": "When Fuga is not at full HP, he gains Hit +10 and Avoid +10.",
-    "effectZhHans": "自己HP不满时，命中、回避+10",
+    "effect": "When not at full HP, grants Hit +10, Avoid +10.",
+    "effectZhHans": "HP未满时，命中+10、回避+10",
     "iconAssetId": "wind_disciple",
     "provenance": [
       {

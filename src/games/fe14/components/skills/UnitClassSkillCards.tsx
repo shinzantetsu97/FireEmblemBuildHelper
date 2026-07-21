@@ -10,6 +10,7 @@ import {
 import { getClassSkillIconUrl } from "../../skillAssets";
 import { useLocale } from "../../../../i18n/LocaleContext";
 import type { Locale } from "../../../../i18n/locale";
+import SkillEffectText from "./SkillEffectText";
 
 export interface UnitClassSkillCard {
   sources: string[];
@@ -120,7 +121,7 @@ function UnitClassSkill({
         {skillName}
       </Popover.Header>
       <Popover.Body>
-        <p>{resolve({ en: skill.description, zhHans: skill.descriptionZhHans })}</p>
+        <p><SkillEffectText en={skill.description} zhHans={skill.descriptionZhHans} /></p>
         <strong>{t("skills.learned")}</strong> {learnedText}
         {skill.notes?.map((note, index) => <small key={note}>{resolve({ en: note, zhHans: skill.notesZhHans?.[index] })}</small>)}
       </Popover.Body>

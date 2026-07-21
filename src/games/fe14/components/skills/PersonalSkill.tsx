@@ -1,6 +1,7 @@
 import { type UnitRuntime } from "../../data";
 import { getPersonalSkillIconUrl } from "../../skillAssets";
 import { useLocale } from "../../../../i18n/LocaleContext";
+import SkillEffectText from "./SkillEffectText";
 
 type PersonalSkillData = NonNullable<UnitRuntime["personalSkill"]>;
 
@@ -23,7 +24,7 @@ export default function PersonalSkill({
       />
       <div>
         <strong>{resolve(skill.names, skill.names.en)}</strong>
-        <p>{resolve({ en: skill.effect, zhHans: skill.effectZhHans })}</p>
+        <p><SkillEffectText en={skill.effect} zhHans={skill.effectZhHans} /></p>
       </div>
     </div>
   );
