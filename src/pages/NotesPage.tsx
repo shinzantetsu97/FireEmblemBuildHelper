@@ -7,15 +7,17 @@ import NoteEditorDialog from "../components/notes/NoteEditorDialog";
 import NotesList from "../components/notes/NotesList";
 import useNotesWorkspace from "../components/notes/useNotesWorkspace";
 import WorkspaceHeader from "../components/notes/WorkspaceHeader";
+import { useLocale } from "../i18n/LocaleContext";
 
 export default function NotesPage() {
   const workspace = useNotesWorkspace();
+  const { t } = useLocale();
 
   if (workspace.isLoading && !workspace.activeWorkspace) {
     return (
       <main className="loading-screen" aria-live="polite">
         <Spinner animation="border" role="status" />
-        <span>Loading workspace</span>
+        <span>{t("notes.loading")}</span>
       </main>
     );
   }

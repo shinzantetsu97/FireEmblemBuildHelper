@@ -1,0 +1,1010 @@
+{
+  "sourceId": "fcfantasy-fe14-class-skills",
+  "sourceUrl": "http://fcfantasy.cn/fe2015/database/class_skills.html",
+  "capturedAt": "2026-07-20T07:42:08.692Z",
+  "rowCount": 167,
+  "rows": [
+    {
+      "className": "黑暗王子/黑暗公主",
+      "skillName": "高贵的血统",
+      "skillNameJa": "高貴なる血統",
+      "description": "获得1.2倍经验值"
+    },
+    {
+      "className": "黑暗王子/黑暗公主",
+      "skillName": "龙穿",
+      "skillNameJa": "竜穿",
+      "description": "发动率＝技×3/4%。伤害+自己攻击力的一半"
+    },
+    {
+      "className": "暗夜血族",
+      "skillName": "龙咒",
+      "skillNameJa": "竜呪",
+      "description": "战斗后，敌人全能力-4，逐回合恢复"
+    },
+    {
+      "className": "暗夜血族",
+      "skillName": "暗夜",
+      "skillNameJa": "暗夜",
+      "description": "以攻阵、防阵战斗时，自己可享有支援同伴的特技"
+    },
+    {
+      "className": "白夜血族",
+      "skillName": "龙盾",
+      "skillNameJa": "竜盾",
+      "description": "发动率=同伴的幸运÷2%。邻接的同伴受到攻击时伤害减半"
+    },
+    {
+      "className": "白夜血族",
+      "skillName": "白夜",
+      "skillNameJa": "白夜",
+      "description": "特技发动率+10%"
+    },
+    {
+      "className": "歌姬",
+      "skillName": "幸运＋４",
+      "skillNameJa": "幸運+4",
+      "description": "幸运+4"
+    },
+    {
+      "className": "歌姬",
+      "skillName": "特别的歌",
+      "skillNameJa": "特別な歌",
+      "description": "被歌声再动的同伴1回合内技、速、幸运+3"
+    },
+    {
+      "className": "歌姬",
+      "skillName": "平和之声",
+      "skillNameJa": "平和の声",
+      "description": "周围2格内的敌方战斗时，物理伤害-2"
+    },
+    {
+      "className": "歌姬",
+      "skillName": "异邦的公主",
+      "skillNameJa": "異邦の王女",
+      "description": "周围2格内势力为“异邦军”的敌方战斗时，伤害-2，受到的伤害+2"
+    },
+    {
+      "className": "轻骑士",
+      "skillName": "广所突击",
+      "skillNameJa": "広所突撃",
+      "description": "自己位于地形效果为0的地形时，战斗时伤害+3"
+    },
+    {
+      "className": "轻骑士",
+      "skillName": "救出",
+      "skillNameJa": "救出",
+      "description": "可使用救出指令，使一个邻接的同伴成为自己的后卫"
+    },
+    {
+      "className": "圣骑士",
+      "skillName": "守护",
+      "skillNameJa": "守り手",
+      "description": "自己是防阵的前卫时，全能力+1"
+    },
+    {
+      "className": "圣骑士",
+      "skillName": "圣盾",
+      "skillNameJa": "聖盾",
+      "description": "发动率＝技%。将来自弓、暗器、魔法书、龙石、龙息、炮车的伤害减半"
+    },
+    {
+      "className": "重甲骑士",
+      "skillName": "守备＋２",
+      "skillNameJa": "守備+2",
+      "description": "守备+2"
+    },
+    {
+      "className": "重甲骑士",
+      "skillName": "闭所防御",
+      "skillNameJa": "閉所防御",
+      "description": "自己位于地形效果不为0的地形时，战斗时受到的伤害-3"
+    },
+    {
+      "className": "将军",
+      "skillName": "守备队形",
+      "skillNameJa": "守備隊形",
+      "description": "战斗双方都无法追击"
+    },
+    {
+      "className": "将军",
+      "skillName": "大盾",
+      "skillNameJa": "大盾",
+      "description": "发动率＝技%。将来自剑、枪、斧、兽石、魔物、傀儡的伤害减半"
+    },
+    {
+      "className": "重骑士",
+      "skillName": "月光",
+      "skillNameJa": "月光",
+      "description": "发动率＝技%。发动使敌方守备、魔防减半的攻击"
+    },
+    {
+      "className": "重骑士",
+      "skillName": "金刚的一击",
+      "skillNameJa": "金剛の一撃",
+      "description": "自己发动攻击时，受到的物理伤害-10"
+    },
+    {
+      "className": "斧战士",
+      "skillName": "最大ＨＰ＋５",
+      "skillNameJa": "最大ＨＰ+5",
+      "description": "最大HP+5"
+    },
+    {
+      "className": "斧战士",
+      "skillName": "挥舞",
+      "skillNameJa": "大振り",
+      "description": "命中-10、必杀+10"
+    },
+    {
+      "className": "狂战士",
+      "skillName": "力之呐喊",
+      "skillNameJa": "力の叫び",
+      "description": "可使用应援（応援）指令，使周围2格内的同伴1回合内力+4"
+    },
+    {
+      "className": "狂战士",
+      "skillName": "斧之专家",
+      "skillNameJa": "斧の達人",
+      "description": "装备斧战斗时，伤害+5"
+    },
+    {
+      "className": "佣兵",
+      "skillName": "倔强之心",
+      "skillNameJa": "しぶとい心",
+      "description": "发动率＝幸运%。回合开始时HP回复20%"
+    },
+    {
+      "className": "佣兵",
+      "skillName": "后手不败",
+      "skillNameJa": "後手不敗",
+      "description": "敌方发动攻击时，自己的伤害+3"
+    },
+    {
+      "className": "勇者",
+      "skillName": "太阳",
+      "skillNameJa": "太陽",
+      "description": "发动率＝技%。将对敌伤害的一半转化为自身HP"
+    },
+    {
+      "className": "勇者",
+      "skillName": "弑斧",
+      "skillNameJa": "斧殺し",
+      "description": "敌方装备斧时，命中、回避+50"
+    },
+    {
+      "className": "盗贼",
+      "skillName": "开锁",
+      "skillNameJa": "鍵開け",
+      "description": "无需钥匙也可开门、开宝箱"
+    },
+    {
+      "className": "盗贼",
+      "skillName": "移动＋１",
+      "skillNameJa": "移動+1",
+      "description": "移动力+1"
+    },
+    {
+      "className": "弓骑士",
+      "skillName": "技之呐喊",
+      "skillNameJa": "技の叫び",
+      "description": "可使用应援（応援）指令，使周围2格内的同伴1回合内技+4"
+    },
+    {
+      "className": "弓骑士",
+      "skillName": "弑暗器",
+      "skillNameJa": "暗器殺し",
+      "description": "敌方装备暗器时，命中、回避+50"
+    },
+    {
+      "className": "冒险家",
+      "skillName": "幸运７",
+      "skillNameJa": "ラッキー7",
+      "description": "每次战斗的前7回合内命中、回避+20"
+    },
+    {
+      "className": "冒险家",
+      "skillName": "穿越",
+      "skillNameJa": "すり抜け",
+      "description": "可通过敌人所站的格子"
+    },
+    {
+      "className": "龙骑士",
+      "skillName": "力＋２",
+      "skillNameJa": "力+2",
+      "description": "力+2"
+    },
+    {
+      "className": "龙骑士",
+      "skillName": "突入",
+      "skillNameJa": "切り込み",
+      "description": "攻击后可使用突入（切り込み）指令，和敌方交换站位"
+    },
+    {
+      "className": "龙骑统帅",
+      "skillName": "守备之呐喊",
+      "skillNameJa": "守備の叫び",
+      "description": "可使用应援（応援）指令，使周围2格内的同伴1回合内守备+4"
+    },
+    {
+      "className": "龙骑统帅",
+      "skillName": "弑剑",
+      "skillNameJa": "剣殺し",
+      "description": "敌方装备剑时，命中、回避+50"
+    },
+    {
+      "className": "魔龙骑士",
+      "skillName": "死之吐息",
+      "skillNameJa": "死の吐息",
+      "description": "自己发动攻击时，战斗后，周围2格内的敌方HP减少各自HP最大值的20%"
+    },
+    {
+      "className": "魔龙骑士",
+      "skillName": "居高临下",
+      "skillNameJa": "見下す者",
+      "description": "敌方不是骑乘单位时，自己的伤害+5"
+    },
+    {
+      "className": "暗魔法师",
+      "skillName": "咒缚",
+      "skillNameJa": "呪縛",
+      "description": "邻接的敌方战斗时回避-20"
+    },
+    {
+      "className": "暗魔法师",
+      "skillName": "魔之风",
+      "skillNameJa": "魔の風",
+      "description": "周围2格内的敌方战斗时，受到的魔法伤害+2"
+    },
+    {
+      "className": "巫师",
+      "skillName": "复仇",
+      "skillNameJa": "復讐",
+      "description": "发动率＝技×1.5%。追加自身受损HP÷2的伤害"
+    },
+    {
+      "className": "巫师",
+      "skillName": "弑弓",
+      "skillNameJa": "弓殺し",
+      "description": "敌方装备弓时，命中、回避+50"
+    },
+    {
+      "className": "黑暗骑士",
+      "skillName": "魔力封印",
+      "skillNameJa": "魔力封じ",
+      "description": "战斗后，敌人魔力-6，逐回合恢复"
+    },
+    {
+      "className": "黑暗骑士",
+      "skillName": "生命吸收",
+      "skillNameJa": "生命吸収",
+      "description": "自己发动攻击时，击倒敌方后自己HP回复50%"
+    },
+    {
+      "className": "杖骑士",
+      "skillName": "魔防＋２",
+      "skillNameJa": "魔防+2",
+      "description": "魔防+2"
+    },
+    {
+      "className": "杖骑士(男)",
+      "skillName": "名门的公子",
+      "skillNameJa": "名家の令息",
+      "description": "周围2格内的女性同伴战斗时，受到的伤害-2"
+    },
+    {
+      "className": "杖骑士(女)",
+      "skillName": "深闺的千金",
+      "skillNameJa": "深窓の令嬢",
+      "description": "周围2格内的男性同伴战斗时，受到的伤害-2"
+    },
+    {
+      "className": "战术师",
+      "skillName": "魔防之呐喊",
+      "skillNameJa": "魔防の叫び",
+      "description": "可使用应援（応援）指令，使周围2格内的同伴1回合内魔防+4"
+    },
+    {
+      "className": "战术师",
+      "skillName": "战斗指挥",
+      "skillNameJa": "戦闘指揮",
+      "description": "周围2格内的同伴战斗时，伤害+2，受到的伤害-2"
+    },
+    {
+      "className": "管家/女仆",
+      "skillName": "乐于奉献",
+      "skillNameJa": "ご奉仕の喜び",
+      "description": "自己用杖给同伴回复HP时，自己能回复等量的HP"
+    },
+    {
+      "className": "管家/女仆",
+      "skillName": "弑魔",
+      "skillNameJa": "魔殺し",
+      "description": "敌方装备魔法书时，命中、回避+50"
+    },
+    {
+      "className": "狼人",
+      "skillName": "奇袭之牙",
+      "skillNameJa": "奇襲の牙",
+      "description": "在奇数回合伤害+4"
+    },
+    {
+      "className": "狼人",
+      "skillName": "兽特效",
+      "skillNameJa": "獣特効",
+      "description": "变身为妖狐、狼人系战斗时，攻击附加兽马系特效"
+    },
+    {
+      "className": "逐月狼人",
+      "skillName": "奇妙的鸣声",
+      "skillNameJa": "奇妙な鳴き声",
+      "description": "奇数回合开始时，HP回复40%"
+    },
+    {
+      "className": "逐月狼人",
+      "skillName": "四牙",
+      "skillNameJa": "四牙",
+      "description": "战斗后敌方HP减少其HP最大值的20%"
+    },
+    {
+      "className": "武士",
+      "skillName": "清流的一击",
+      "skillNameJa": "清流の一撃",
+      "description": "自己发动攻击时，回避+30"
+    },
+    {
+      "className": "武士",
+      "skillName": "伏击",
+      "skillNameJa": "待ち伏せ",
+      "description": "HP一半以下时，受到敌方攻击时先制攻击"
+    },
+    {
+      "className": "剑圣",
+      "skillName": "流星",
+      "skillNameJa": "流星",
+      "description": "发动率＝技÷2%。连续发动伤害减半的5次攻击"
+    },
+    {
+      "className": "剑圣",
+      "skillName": "剑之专家",
+      "skillNameJa": "剣の達人",
+      "description": "装备剑战斗时，伤害+5"
+    },
+    {
+      "className": "村民",
+      "skillName": "优良成长",
+      "skillNameJa": "良成長",
+      "description": "升级时全体成长率+10%"
+    },
+    {
+      "className": "村民",
+      "skillName": "以下克上",
+      "skillNameJa": "下剋上",
+      "description": "自己比敌方等级低时，命中、回避+15（上位职业的等级按+20算）"
+    },
+    {
+      "className": "兵法者",
+      "skillName": "力封印",
+      "skillNameJa": "力封じ",
+      "description": "战斗后，敌人力-6，逐回合恢复"
+    },
+    {
+      "className": "兵法者",
+      "skillName": "死线",
+      "skillNameJa": "死線",
+      "description": "战斗中，对敌方的伤害+10，受到敌方的伤害+10"
+    },
+    {
+      "className": "药商人",
+      "skillName": "特效药",
+      "skillNameJa": "よく効く薬",
+      "description": "HP回复药和能力上升药的效果提升50%"
+    },
+    {
+      "className": "药商人",
+      "skillName": "常备药",
+      "skillNameJa": "常備薬",
+      "description": "使用HP回复药和能力上升药后，仍可以继续行动"
+    },
+    {
+      "className": "大商人",
+      "skillName": "坐享其成",
+      "skillNameJa": "左うちわ",
+      "description": "发动率＝幸运%。在前7个回合每次行动完毕有机会获得1个小金块"
+    },
+    {
+      "className": "大商人",
+      "skillName": "土豪",
+      "skillNameJa": "お大尽",
+      "description": "自己持有小金块发动攻击时，消耗小金块，伤害+10，受到的伤害-10"
+    },
+    {
+      "className": "忍者",
+      "skillName": "开锁",
+      "skillNameJa": "鍵開け",
+      "description": "无需钥匙也可开门、开宝箱"
+    },
+    {
+      "className": "忍者",
+      "skillName": "蛇毒",
+      "skillNameJa": "蛇毒",
+      "description": "自己发动攻击时，战斗后敌方HP减少其HP最大值的20%"
+    },
+    {
+      "className": "上忍",
+      "skillName": "灭杀",
+      "skillNameJa": "滅殺",
+      "description": "发动率＝技÷4%。当攻击能造成至少1点伤害时，一击必杀"
+    },
+    {
+      "className": "上忍",
+      "skillName": "暗器之专家",
+      "skillNameJa": "暗器の達人",
+      "description": "装备暗器战斗时，伤害+5"
+    },
+    {
+      "className": "傀儡师",
+      "skillName": "人偶破坏",
+      "skillNameJa": "人形崩し",
+      "description": "攻击附加对傀儡师、傀儡人偶、石巨人特效"
+    },
+    {
+      "className": "傀儡师",
+      "skillName": "复制人偶",
+      "skillNameJa": "写し身人形",
+      "description": "可使用复制（写し身）指令，复制一个和自己一样的作战单位，共享HP，每场战斗仅限1次"
+    },
+    {
+      "className": "弓使",
+      "skillName": "技＋２",
+      "skillNameJa": "技+2",
+      "description": "技+2"
+    },
+    {
+      "className": "弓使",
+      "skillName": "先手必胜",
+      "skillNameJa": "先手必勝",
+      "description": "自己发动攻击时，伤害+4"
+    },
+    {
+      "className": "弓圣",
+      "skillName": "凶鸟的一击",
+      "skillNameJa": "凶鳥の一撃",
+      "description": "自己发动攻击时，命中+40"
+    },
+    {
+      "className": "弓圣",
+      "skillName": "弓之专家",
+      "skillNameJa": "弓の達人",
+      "description": "装备弓战斗时，伤害+5"
+    },
+    {
+      "className": "天马武者",
+      "skillName": "飞燕的一击",
+      "skillNameJa": "飛燕の一撃",
+      "description": "自己发动攻击时，追击系数+5"
+    },
+    {
+      "className": "天马武者",
+      "skillName": "和平之心",
+      "skillNameJa": "和の心",
+      "description": "回合开始时，若周围2格内有我方，HP回复10%"
+    },
+    {
+      "className": "圣天马武者",
+      "skillName": "速之呐喊",
+      "skillNameJa": "速さの叫び",
+      "description": "可使用应援（応援）指令，使周围2格内的同伴1回合内速+4"
+    },
+    {
+      "className": "圣天马武者",
+      "skillName": "明镜的一击",
+      "skillNameJa": "明鏡の一撃",
+      "description": "自己发动攻击时，受到的魔法伤害-20"
+    },
+    {
+      "className": "金鵄武者",
+      "skillName": "天翔",
+      "skillNameJa": "天翔ける",
+      "description": "敌方是飞行单位时，命中、回避+30"
+    },
+    {
+      "className": "金鵄武者",
+      "skillName": "天照大神",
+      "skillNameJa": "天照らす",
+      "description": "回合开始时，周围2格内我方的HP回复20%"
+    },
+    {
+      "className": "鬼人",
+      "skillName": "魔防封印",
+      "skillNameJa": "魔防封じ",
+      "description": "战斗后，敌人魔防-6，逐回合恢复"
+    },
+    {
+      "className": "鬼人",
+      "skillName": "撞击",
+      "skillNameJa": "体当たり",
+      "description": "可使用撞击（体当たり）指令，将一个邻接的我方撞开1格"
+    },
+    {
+      "className": "修罗",
+      "skillName": "鬼神的一击",
+      "skillNameJa": "鬼神の一撃",
+      "description": "自己发动攻击时，必杀+20"
+    },
+    {
+      "className": "修罗",
+      "skillName": "反击",
+      "skillNameJa": "カウンター",
+      "description": "受到邻接的敌方攻击伤害时，反弹相同的伤害"
+    },
+    {
+      "className": "锻冶",
+      "skillName": "匠之技",
+      "skillNameJa": "匠の技",
+      "description": "发动率＝幸运%。自己发动攻击且击倒敌方，将随机获得铁制的刀、薙刀、金棒、和弓、手里剑之一"
+    },
+    {
+      "className": "锻冶",
+      "skillName": "弑枪",
+      "skillNameJa": "槍殺し",
+      "description": "敌方装备枪时，命中、回避+50"
+    },
+    {
+      "className": "枪术士",
+      "skillName": "守备封印",
+      "skillNameJa": "守備封じ",
+      "description": "战斗后，敌人守备-6，逐回合恢复"
+    },
+    {
+      "className": "枪术士",
+      "skillName": "换位",
+      "skillNameJa": "入れ替え",
+      "description": "可使用换位（入れ替え）指令，和一个邻接的我方交换站位"
+    },
+    {
+      "className": "枪圣",
+      "skillName": "速封印",
+      "skillNameJa": "速さ封じ",
+      "description": "战斗后，敌人速-6，逐回合恢复"
+    },
+    {
+      "className": "枪圣",
+      "skillName": "枪之专家",
+      "skillNameJa": "槍の達人",
+      "description": "装备枪战斗时，伤害+5"
+    },
+    {
+      "className": "婆娑罗",
+      "skillName": "破天",
+      "skillNameJa": "破天",
+      "description": "发动率＝技×1.5%。物理攻击时追加敌方力÷2的伤害，魔法攻击时追加敌方魔力÷2的伤害"
+    },
+    {
+      "className": "婆娑罗",
+      "skillName": "倾奇者",
+      "skillNameJa": "傾奇者",
+      "description": "战斗时双方的命中+30，技能发动率+15"
+    },
+    {
+      "className": "咒术师",
+      "skillName": "魔力＋２",
+      "skillNameJa": "魔力+2",
+      "description": "魔力+2"
+    },
+    {
+      "className": "咒术师",
+      "skillName": "神签",
+      "skillNameJa": "おみくじ",
+      "description": "发动率＝幸运%。自己发动攻击且击倒敌方，获得2倍经验值"
+    },
+    {
+      "className": "阴阳师",
+      "skillName": "魔力之呐喊",
+      "skillNameJa": "魔力の叫び",
+      "description": "可使用应援（応援）指令，使周围2格内的同伴1回合内魔力+4"
+    },
+    {
+      "className": "阴阳师",
+      "skillName": "魔法专家",
+      "skillNameJa": "魔の達人",
+      "description": "装备魔法书战斗时，伤害+5"
+    },
+    {
+      "className": "巫女/修验者",
+      "skillName": "祈祷",
+      "skillNameJa": "祈り",
+      "description": "发动率＝幸运%。受到致命攻击时，若HP不为1则可以残留1HP"
+    },
+    {
+      "className": "巫女/修验者",
+      "skillName": "幸运之呐喊",
+      "skillNameJa": "幸運の叫び",
+      "description": "可使用应援（応援）指令，使周围2格内的同伴1回合内幸运+8"
+    },
+    {
+      "className": "战巫女/山伏",
+      "skillName": "回复",
+      "skillNameJa": "回復",
+      "description": "回合开始时，HP回复30%"
+    },
+    {
+      "className": "战巫女/山伏",
+      "skillName": "魔法反击",
+      "skillNameJa": "魔法カウンター",
+      "description": "受到魔法攻击伤害时，反弹相同的伤害"
+    },
+    {
+      "className": "妖狐",
+      "skillName": "偶像之幻",
+      "skillNameJa": "偶像の幻",
+      "description": "在偶数回合伤害+4"
+    },
+    {
+      "className": "妖狐",
+      "skillName": "兽特效",
+      "skillNameJa": "獣特効",
+      "description": "变身为妖狐、狼人系战斗时，攻击附加兽马系特效"
+    },
+    {
+      "className": "九尾狐",
+      "skillName": "偶然的小憩",
+      "skillNameJa": "偶然のまどろみ",
+      "description": "偶数回合开始时，HP回复40%"
+    },
+    {
+      "className": "九尾狐",
+      "skillName": "四牙",
+      "skillNameJa": "四牙",
+      "description": "战斗后敌方HP减少其HP最大值的20%"
+    },
+    {
+      "className": "黑暗隼骑士",
+      "skillName": "速＋２",
+      "skillNameJa": "速さ+2",
+      "description": "速+2"
+    },
+    {
+      "className": "黑暗隼骑士",
+      "skillName": "恢复",
+      "skillNameJa": "リフレッシュ",
+      "description": "回合开始时，若周围2格内没有其他人，HP回复20%"
+    },
+    {
+      "className": "黑暗隼骑士",
+      "skillName": "移动之呐喊",
+      "skillNameJa": "移動の叫び",
+      "description": "可使用应援（応援）指令，使周围2格内的同伴1回合内移动+1"
+    },
+    {
+      "className": "黑暗隼骑士",
+      "skillName": "疾风迅雷",
+      "skillNameJa": "疾風迅雷",
+      "description": "自己不处于攻阵、防阵，发动攻击击倒敌方后，可再次行动，1回合仅限1次"
+    },
+    {
+      "className": "魔战士",
+      "skillName": "偶人之空蝉",
+      "skillNameJa": "偶人の空蝉",
+      "description": "偶数回合里，受到的魔法伤害-4"
+    },
+    {
+      "className": "魔战士",
+      "skillName": "精神统一",
+      "skillNameJa": "精神統一",
+      "description": "敌方发动攻击时，受到的魔法伤害-4"
+    },
+    {
+      "className": "魔战士",
+      "skillName": "心头灭却",
+      "skillNameJa": "心頭滅却",
+      "description": "从减益效果中恢复的速度比通常加倍"
+    },
+    {
+      "className": "魔战士",
+      "skillName": "居合一闪",
+      "skillNameJa": "居合一閃",
+      "description": "自己发动攻击时，攻击力+7"
+    },
+    {
+      "className": "炮车",
+      "skillName": "测量术",
+      "skillNameJa": "測量術",
+      "description": "可使用炮台（砲台）指令，使炮台的命中+10"
+    },
+    {
+      "className": "炮车",
+      "skillName": "自动炮台",
+      "skillNameJa": "自動砲台",
+      "description": "发动率＝技%。自己是炮车时，回合开始时自动攻击一次范围内的敌方"
+    },
+    {
+      "className": "炮车",
+      "skillName": "炮身改造",
+      "skillNameJa": "砲身改造",
+      "description": "可使用炮台（砲台）指令，使炮台的攻击范围+1，内外射程-1"
+    },
+    {
+      "className": "炮车",
+      "skillName": "恶路踏破",
+      "skillNameJa": "悪路踏破",
+      "description": "自己是炮车时，移动力+1，在各种可移动的地形上的移动力消耗都为1"
+    },
+    {
+      "className": "魔女",
+      "skillName": "黑暗的加护",
+      "skillNameJa": "暗闇の加護",
+      "description": "能够使用暗魔法师系专用的魔法"
+    },
+    {
+      "className": "魔女",
+      "skillName": "魔女的大锅",
+      "skillNameJa": "魔女の大釜",
+      "description": "发动率＝幸运%。在前7个回合每次行动完毕有机会获得1个药"
+    },
+    {
+      "className": "魔女",
+      "skillName": "传送",
+      "skillNameJa": "ワープ",
+      "description": "可使用传送（ワープ）指令，瞬间移动到1个同伴的身边，然后可以继续行动"
+    },
+    {
+      "className": "魔女",
+      "skillName": "魔女的毒药",
+      "skillNameJa": "魔女の毒薬",
+      "description": "发动率＝技×1.5%。自己发动的攻击后，使敌方的移动力=0，回避-20，持续1个回合"
+    },
+    {
+      "className": "星之王",
+      "skillName": "柔剑",
+      "skillNameJa": "柔剣",
+      "description": "速+3，守备-1"
+    },
+    {
+      "className": "星之王",
+      "skillName": "魅力",
+      "skillNameJa": "カリスマ",
+      "description": "周围2格内的同伴战斗时伤害+2"
+    },
+    {
+      "className": "星之王",
+      "skillName": "防阵＋",
+      "skillNameJa": "防陣＋",
+      "description": "自己是防阵的后卫时，获得防御点数的速度+1"
+    },
+    {
+      "className": "星之王",
+      "skillName": "速之吸收",
+      "skillNameJa": "速さの吸収",
+      "description": "击倒敌方后速+2，一章里至多+10，章节结束后清零，不能和其他吸收技能重叠"
+    },
+    {
+      "className": "神将",
+      "skillName": "刚剑",
+      "skillNameJa": "剛剣",
+      "description": "力+3，速-1"
+    },
+    {
+      "className": "神将",
+      "skillName": "历战的直觉",
+      "skillNameJa": "歴戦の勘",
+      "description": "战斗时必杀回避+15"
+    },
+    {
+      "className": "神将",
+      "skillName": "天空",
+      "skillNameJa": "天空",
+      "description": "发动率＝技÷2%。连续发动一次太阳和一次月光攻击"
+    },
+    {
+      "className": "神将",
+      "skillName": "力之吸收",
+      "skillNameJa": "力の吸収",
+      "description": "击倒敌方后力+2，一章里至多+10，章节结束后清零，不能和其他吸收技能重叠"
+    },
+    {
+      "className": "大领主",
+      "skillName": "攻阵＋",
+      "skillNameJa": "攻陣＋",
+      "description": "自己是攻阵的后卫时，伤害+3"
+    },
+    {
+      "className": "大领主",
+      "skillName": "魅力",
+      "skillNameJa": "カリスマ",
+      "description": "周围2格内的同伴战斗时伤害+2"
+    },
+    {
+      "className": "大领主",
+      "skillName": "天空",
+      "skillNameJa": "天空",
+      "description": "发动率＝技÷2%。连续发动一次太阳和一次月光攻击"
+    },
+    {
+      "className": "大领主",
+      "skillName": "觉醒",
+      "skillNameJa": "覚醒",
+      "description": "HP在一半以下时，命中、回避、必杀、必杀回避+30"
+    },
+    {
+      "className": "神军师",
+      "skillName": "战术指南",
+      "skillNameJa": "戦術指南",
+      "description": "自己是防阵的后卫时，前卫的命中+10"
+    },
+    {
+      "className": "神军师",
+      "skillName": "方阵",
+      "skillNameJa": "方陣",
+      "description": "邻接的同伴战斗时，必杀、必杀回避+10"
+    },
+    {
+      "className": "神军师",
+      "skillName": "华炎",
+      "skillNameJa": "華炎",
+      "description": "发动率＝技%。用魔法攻击时伤害追加力÷2，用武器攻击时伤害追加魔力÷2"
+    },
+    {
+      "className": "神军师",
+      "skillName": "七色之呐喊",
+      "skillNameJa": "七色の叫び",
+      "description": "可使用应援（応援）指令，使周围4格内的同伴全能力+2，持续1回合"
+    },
+    {
+      "className": "特技书获得方法",
+      "skillName": "特技名称",
+      "skillNameJa": "日文名称",
+      "description": "特技说明"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "翼盾",
+      "skillNameJa": "翼盾",
+      "description": "对飞行特效免疫，且飞行系也可以享受到地形加成效果"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "兽盾",
+      "skillNameJa": "獣盾",
+      "description": "对兽马特效免疫"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "铠盾",
+      "skillNameJa": "鎧盾",
+      "description": "对重甲特效免疫"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "攻防一体之阵",
+      "skillNameJa": "攻防一体の陣",
+      "description": "自己是防阵的前卫时，后卫也能发动援护攻击。但后卫也无法无条件防御敌方的援护攻击"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "近接射击",
+      "skillNameJa": "近接射撃",
+      "description": "弓可以攻击到射程1"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "精英",
+      "skillNameJa": "エリート",
+      "description": "获得2倍经验值"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "力之吸收",
+      "skillNameJa": "力の吸収",
+      "description": "击倒敌方后力+2，一章里至多+10，章节结束后清零，不能和其他吸收技能重叠"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "魔力之吸收",
+      "skillNameJa": "魔力の吸収",
+      "description": "击倒敌方后魔力+2，一章里至多+10，章节结束后清零，不能和其他吸收技能重叠"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "技之吸收",
+      "skillNameJa": "技の吸収",
+      "description": "击倒敌方后技+2，一章里至多+10，章节结束后清零，不能和其他吸收技能重叠"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "速之吸收",
+      "skillNameJa": "速さの吸収",
+      "description": "击倒敌方后速+2，一章里至多+10，章节结束后清零，不能和其他吸收技能重叠"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "幸运之吸收",
+      "skillNameJa": "幸運の吸収",
+      "description": "击倒敌方后幸运+2，一章里至多+10，章节结束后清零，不能和其他吸收技能重叠"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "守备之吸收",
+      "skillNameJa": "守備の吸収",
+      "description": "击倒敌方后守备+2，一章里至多+10，章节结束后清零，不能和其他吸收技能重叠"
+    },
+    {
+      "className": "尚未发售DLC",
+      "skillName": "魔防之吸收",
+      "skillNameJa": "魔防の吸収",
+      "description": "击倒敌方后魔防+2，一章里至多+10，章节结束后清零，不能和其他吸收技能重叠"
+    },
+    {
+      "className": "习得方法",
+      "skillName": "特技名称",
+      "skillNameJa": "日文名称",
+      "description": "特技说明"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "命中回避＋１０",
+      "skillNameJa": "命中回避+10",
+      "description": "命中、回避+10"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "命中回避＋２０",
+      "skillNameJa": "命中回避+20",
+      "description": "命中、回避+20"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "龙鳞",
+      "skillNameJa": "竜鱗",
+      "description": "受到的伤害减半。降低敌方必杀和奥义的效果。对灭杀、毒系、反击系技能免疫"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "神盾",
+      "skillNameJa": "神盾",
+      "description": "受到的伤害减半。对灭杀、毒系、反击系技能免疫"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "状态异常耐性",
+      "skillNameJa": "状態異常耐性",
+      "description": "受到的能力降低效果、毒的伤害、状态杖的命中率都减半"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "状态异常无效",
+      "skillNameJa": "状態異常無効",
+      "description": "对能力降低、毒伤害、状态杖都免疫"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "虚无之咒",
+      "skillNameJa": "虚無の呪い",
+      "description": "击倒该敌人无法获得经验值"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "自毁",
+      "skillNameJa": "自壊",
+      "description": "HP在一半以下时，对周围2格内的敌人和墙壁造成伤害，自己灭亡"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "无限之杖",
+      "skillNameJa": "無限の杖",
+      "description": "使用杖不消耗耐久，杖的射程如果不足10则增加到10"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "冻结",
+      "skillNameJa": "凍結",
+      "description": "攻击命中后，敌方的移动力变为0，回避-20，持续1回合"
+    },
+    {
+      "className": "敌专用",
+      "skillName": "负之连锁",
+      "skillNameJa": "負の連鎖",
+      "description": "敌人多次受到同种能力减少的效果时，效果会反复累加"
+    }
+  ]
+}

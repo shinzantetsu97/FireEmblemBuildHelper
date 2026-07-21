@@ -5,7 +5,7 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
 import { ArrowRight, TriangleAlert } from "lucide-react";
-import { displayId, fe14Data, type AvatarChoice, type SealGrant, type StatBlock, type UnitRuntime } from "../../../data";
+import { classNames, displayId, fe14Data, type AvatarChoice, type SealGrant, type StatBlock, type UnitRuntime } from "../../../data";
 import { ROUTE_ORDER, resolveUnitBaseConfiguration, type RouteId } from "../../../baseConfiguration";
 import { calculateOffspringRecruitmentStat, resolveOffspringScenario, roundHalfUp } from "../../../offspring";
 import UnitClassSkills from "../../skills/UnitClassSkills";
@@ -16,6 +16,8 @@ import SupportDirectory, { type SealGrantPreview, type SealGrantPreviews, type S
 import { STAT_KEYS, type AvatarGender } from "./types";
 import UnitReferences from "./UnitReferences";
 import { shortStatLabel } from "./utils";
+import { useLocale } from "../../../../../i18n/LocaleContext";
+import type { MessageKey } from "../../../../../i18n/messages/en";
 
 export default function OffspringOverview({
   unit,
@@ -26,6 +28,7 @@ export default function OffspringOverview({
   childGender: AvatarGender;
   setChildGender: (gender: AvatarGender) => void;
 }) {
+  const { t, resolve, locale } = useLocale();
   const parentage = unit.offspring?.parentage;
   const recruitment = unit.offspring?.recruitment;
   const isAvatarChild = parentage?.scenarioKind === "avatar_child";
@@ -93,13 +96,16 @@ export default function OffspringOverview({
 
   if (!parentage || !recruitment || !scenario) return null;
   const selectedOption = parentage.variableParentOptions.find((option) => option.unitId === resolvedParentId)!;
-  const unitName = unit.identity.displayName;
+  const unitName = resolve({ en: unit.identity.displayName, zhHans: unit.identity.names?.zhHans });
   const corrinGender = scenario.childGender === "male" ? "female" : "male";
-  const fixedParentName = isAvatarChild ? `Corrin (${corrinGender === "male" ? "M" : "F"})` : scenario.fixedParent.identity.displayName;
-  const variableParentLabel = parentage.variableParentRole === "parent" ? "Parent" : parentage.variableParentRole === "father" ? "Father" : "Mother";
-  const variableParentLabelLower = variableParentLabel.toLowerCase();
+  const fixedParentName = isAvatarChild ? corrinGenderName(corrinGender, resolve) : parentDisplayName(scenario.fixedParent, resolve);
+  const variableParentLabel = t(`offspring.role.${parentage.variableParentRole}` as MessageKey);
+  const variableParentLabelLower = t(`offspring.roleLower.${parentage.variableParentRole}` as MessageKey);
+  const siblingRoster = scenario.siblingUnitId
+    ? fe14Data.roster.find((candidate) => candidate.id === scenario.siblingUnitId)
+    : undefined;
   const siblingName = scenario.siblingUnitId
-    ? fe14Data.roster.find((candidate) => candidate.id === scenario.siblingUnitId)?.displayName ?? displayId(scenario.siblingUnitId)
+    ? (siblingRoster ? resolve({ en: siblingRoster.displayName, zhHans: siblingRoster.names?.zhHans }) : displayId(scenario.siblingUnitId))
     : undefined;
 
   return (
@@ -108,32 +114,32 @@ export default function OffspringOverview({
         <Alert className="kana-data-warning" variant="danger">
           <div className="kana-data-warning-heading">
             <TriangleAlert aria-hidden="true" size={22} />
-            <Alert.Heading as="h2">Caution: Kana's profile has unusually high bug risk</Alert.Heading>
+            <Alert.Heading as="h2">{t("offspring.kana.heading")}</Alert.Heading>
           </div>
-          <p>Please scrutinize these results and treat observed in-game behavior as authoritative. Calculating one deterministic Kana profile requires the planner to:</p>
+          <p>{t("offspring.kana.intro")}</p>
           <ul>
-            <li>Resolve one of Corrin's 67 available partners, including that unit's stats, primary class, and secondary class.</li>
-            <li>If the partner is an offspring unit, first resolve that unit's other parent and inherited profile.</li>
-            <li>For Female Corrin, handle male Kana's class inheritance failure: when the other parent's original class collides and has no parallel fallback, Kana receives no additional inherited tree.</li>
-            <li>If Corrin marries one of Azura's offspring, remove Azura's other offspring from Kana's support list entirely.</li>
-            <li>Combine Corrin's boon, bane, and Talent with both parents' actual stat lines at paralogue entry.</li>
+            <li>{t("offspring.kana.li1")}</li>
+            <li>{t("offspring.kana.li2")}</li>
+            <li>{t("offspring.kana.li3")}</li>
+            <li>{t("offspring.kana.li4")}</li>
+            <li>{t("offspring.kana.li5")}</li>
           </ul>
-          <p>Kana is not even an especially strong unit because of those poor bases. Somehow this one small dragon requires roughly six configuration choices, recursive parent resolution, live class-fallback logic, conditional support deletion, and both parents' stats just to describe one concrete profile.</p>
-          <p className="kana-data-warning-signoff"><strong>Well done, Intelligent Systems.</strong> You somehow managed to pack incest, eugenics, a reclassing nightmare, class-inheritance edge-case failures, A-tier kawaii, and D-tier combat prowess into one smol dragon package. I have not checked Awakening’s Morgan yet, but I would have thought you’d learned your lesson by now.</p>
+          <p>{t("offspring.kana.body")}</p>
+          <p className="kana-data-warning-signoff"><strong>{t("offspring.kana.signoffLabel")}</strong>{t("offspring.kana.signoff")}</p>
         </Alert>
       ) : null}
       <Alert className="review-alert" variant="warning">
         <TriangleAlert aria-hidden="true" size={19} />
-        <span>{unitName}'s variable data is resolved from {fixedParentName} and the selected {variableParentLabelLower}. Recruitment bases still require both parents' actual gained-stat snapshots at paralogue entry.</span>
+        <span>{t("offspring.reviewAlert", { name: unitName, fixedParent: fixedParentName, role: variableParentLabelLower })}</span>
       </Alert>
 
       <section className="offspring-route-section" aria-labelledby="offspring-route-heading">
         <div>
-          <span>Planning route</span>
-          <h2 id="offspring-route-heading">Choose Route</h2>
-          <p>The route determines which parents are available and when this paralogue can first unlock.</p>
+          <span>{t("offspring.route.eyebrow")}</span>
+          <h2 id="offspring-route-heading">{t("offspring.route.title")}</h2>
+          <p>{t("offspring.route.desc")}</p>
         </div>
-        <ButtonGroup aria-label="Choose offspring route" role="tablist">
+        <ButtonGroup aria-label={t("offspring.route.aria")} role="tablist">
           {offspringRoutes.map((route) => (
             <Button
               aria-selected={route === baseResolution.routeId}
@@ -145,24 +151,24 @@ export default function OffspringOverview({
               role="tab"
               variant={route === baseResolution.routeId ? "dark" : "outline-secondary"}
             >
-              {route === "birthright" ? "Birthright" : route === "conquest" ? "Conquest" : "Revelation"}
+              {t(`filter.route.${route}` as MessageKey)}
             </Button>
           ))}
         </ButtonGroup>
       </section>
 
       <section className="data-section offspring-parent-section" aria-labelledby="parent-heading">
-        <SectionHeading eyebrow="Parent scenario" title={`Choose ${unitName}'s ${variableParentLabelLower}`} id="parent-heading" />
+        <SectionHeading eyebrow={t("offspring.parent.eyebrow")} title={t("offspring.parent.title", { name: unitName, role: variableParentLabelLower })} id="parent-heading" />
         <div className="offspring-parent-controls">
           {isAvatarChild ? (
             <Form.Group controlId={`${unit.identity.id}-gender`}>
-              <Form.Label>Kana gender</Form.Label>
+              <Form.Label>{t("offspring.kanaGender")}</Form.Label>
               <Form.Select value={childGender} onChange={(event) => {
                 setChildGender(event.target.value as AvatarGender);
                 setStoryChapter(8);
               }}>
-                <option value="female">Female Kana / Corrin (M)</option>
-                <option value="male">Male Kana / Corrin (F)</option>
+                <option value="female">{t("offspring.kanaFemale")}</option>
+                <option value="male">{t("offspring.kanaMale")}</option>
               </Form.Select>
             </Form.Group>
           ) : null}
@@ -174,52 +180,52 @@ export default function OffspringOverview({
             }}>
               {baseResolution.parentOptions?.map((option) => {
                 const parent = fe14Data.roster.find((candidate) => candidate.id === option.unitId);
-                return <option key={option.unitId} value={option.unitId}>{parent?.displayName ?? displayId(option.unitId)} ({formatRoutes(option.routes)})</option>;
+                return <option key={option.unitId} value={option.unitId}>{resolve({ en: parent?.displayName ?? displayId(option.unitId), zhHans: parent?.names?.zhHans })} ({formatRoutes(option.routes, locale)})</option>;
               })}
             </Form.Select>
           </Form.Group>
           {(resolvedParentId === "corrin" || isAvatarChild) && config && boon && bane ? (
-            <CorrinParentControls config={config} boon={boon} bane={bane} boonId={boonId} baneId={baneId} talentId={talentId} showTalent={isAvatarChild} setBoonId={setBoonId} setBaneId={setBaneId} setTalentId={setTalentId} />
+            <CorrinParentControls config={config} boon={boon} bane={bane} boonId={boonId} baneId={baneId} talentId={talentId} showTalent={isAvatarChild} gender={childGender} setBoonId={setBoonId} setBaneId={setBaneId} setTalentId={setTalentId} />
           ) : null}
           {scenario.nestedVariableParentOptions.length ? (
             <Form.Group className="offspring-nested-parent" controlId={`${unit.identity.id}-nested-parent`}>
-              <Form.Label>{scenario.variableParent.identity.displayName}'s {nestedRoleLabel(scenario.variableParent).toLowerCase()}</Form.Label>
+              <Form.Label>{t("offspring.nestedLabel", { parent: parentDisplayName(scenario.variableParent, resolve), role: t(`offspring.roleLower.${scenario.variableParent.offspring?.parentage.variableParentRole ?? "parent"}` as MessageKey) })}</Form.Label>
               <Form.Select value={scenario.nestedVariableParentId ?? ""} onChange={(event) => {
                 setNestedParentId(event.target.value);
                 setStoryChapter(8);
               }}>
                 {scenario.nestedVariableParentOptions.filter((option) => option.routes.includes(routeId)).map((option) => {
                   const parent = fe14Data.roster.find((candidate) => candidate.id === option.unitId);
-                  return <option key={option.unitId} value={option.unitId}>{parent?.displayName ?? displayId(option.unitId)} ({formatRoutes(option.routes.filter((route) => selectedOption.routes.includes(route)))})</option>;
+                  return <option key={option.unitId} value={option.unitId}>{resolve({ en: parent?.displayName ?? displayId(option.unitId), zhHans: parent?.names?.zhHans })} ({formatRoutes(option.routes.filter((route) => selectedOption.routes.includes(route)), locale)})</option>;
                 })}
               </Form.Select>
-              <Form.Text>This resolves the selected offspring parent's own inherited profile before Kana is calculated.</Form.Text>
+              <Form.Text>{t("offspring.nestedHelp")}</Form.Text>
             </Form.Group>
           ) : null}
           <div className="offspring-parent-summary">
-            <span>Fixed parent</span><strong>{fixedParentName}</strong>
-            <span>Inherited tree</span><strong><ResolvedClassLabel classId={scenario.inheritedClassId} /></strong>
-            {isAvatarChild ? <><span>Corrin Talent</span><strong><ResolvedClassLabel classId={scenario.fixedInheritedClassId} /></strong><span>Cap inheritance bonus</span><strong>{selectedOption.parentGeneration === "second" ? "+0 (offspring parent)" : "+1"}</strong></> : null}
-            <span>Dragon Vein</span><strong>{unit.identity.dragonVein || scenario.father.identity.dragonVein || scenario.mother.identity.dragonVein ? "Yes" : "No"}</strong>
-            <span>Unit traits</span><strong>{scenario.unitTags.length ? scenario.unitTags.map((tag) => `${displayId(tag)} unit`).join(", ") : "None"}</strong>
-            {siblingName ? <><span>Sibling</span><strong>{siblingName}</strong></> : null}
+            <span>{t("offspring.summary.fixedParent")}</span><strong>{fixedParentName}</strong>
+            <span>{t("offspring.summary.inheritedTree")}</span><strong><ResolvedClassLabel classId={scenario.inheritedClassId} /></strong>
+            {isAvatarChild ? <><span>{t("offspring.summary.corrinTalent")}</span><strong><ResolvedClassLabel classId={scenario.fixedInheritedClassId} /></strong><span>{t("offspring.summary.capBonus")}</span><strong>{selectedOption.parentGeneration === "second" ? t("offspring.summary.capBonusSecond") : t("offspring.summary.capBonusFirst")}</strong></> : null}
+            <span>{t("offspring.summary.dragonVein")}</span><strong>{unit.identity.dragonVein || scenario.father.identity.dragonVein || scenario.mother.identity.dragonVein ? t("common.yes") : t("common.no")}</strong>
+            <span>{t("offspring.summary.unitTraits")}</span><strong>{scenario.unitTags.length ? scenario.unitTags.map((tag) => t(`unit.tag.${tag}` as MessageKey)).join(", ") : t("common.none")}</strong>
+            {siblingName ? <><span>{t("offspring.summary.sibling")}</span><strong>{siblingName}</strong></> : null}
           </div>
         </div>
         {isAvatarChild ? (
           <>
-            <p className="offspring-rule-note"><strong>Inheritance order:</strong> child, father, then mother. Female Kana resolves Corrin's Talent before her mother's tree; male Kana resolves his father's tree before Corrin's Talent. A duplicate Talent uses that tree's parallel-class fallback rather than reconsidering the father's secondary class.</p>
-            <p className="offspring-rule-note offspring-special-note"><strong>No parallel fallback among Corrin Talents:</strong> Apothecary, Troubadour, and Monk / Shrine Maiden. If male Kana's father already supplied the selected tree, Kana receives no additional Corrin tree.</p>
+            <p className="offspring-rule-note"><strong>{t("offspring.note.inheritanceOrderLabel")}</strong>{t("offspring.note.inheritanceOrder")}</p>
+            <p className="offspring-rule-note offspring-special-note"><strong>{t("offspring.note.noParallelLabel")}</strong>{t("offspring.note.noParallel")}</p>
           </>
         ) : resolvedParentId === "corrin" ? (
-          <p className="offspring-rule-note"><strong>Corrin inheritance:</strong> {unitName} receives Nohr Prince and the Dragon unit trait, not Corrin's Talent. The line promotes to Hoshido Noble in Birthright, Nohr Noble in Conquest, and either Noble class in Revelation. Kana reaches the Talent only because Kana already owns the Noble base class.</p>
+          <p className="offspring-rule-note"><strong>{t("offspring.note.corrinLabel")}</strong>{t("offspring.note.corrin", { name: unitName })}</p>
         ) : selectedOption.inheritedClassReason !== "direct" ? (
-          <p className="offspring-rule-note">The selected {variableParentLabelLower}'s primary class cannot be inherited here, so {unitName} receives the resolved fallback tree through {displayId(selectedOption.inheritedClassReason)}.</p>
+          <p className="offspring-rule-note">{t("offspring.note.fallbackTree", { role: variableParentLabelLower, name: unitName, reason: t(`offspring.reason.${selectedOption.inheritedClassReason}` as MessageKey) })}</p>
         ) : null}
-        {parentage.notes?.map((note) => <p className="offspring-rule-note offspring-special-note" key={note}>{note}</p>)}
+        {parentage.notes?.map((note, index) => <p className="offspring-rule-note offspring-special-note" key={note}>{resolve({ en: note, zhHans: parentage.notesZhHans?.[index] })}</p>)}
       </section>
 
       <section className="data-section" aria-labelledby="offspring-base-heading">
-        <SectionHeading eyebrow="Resolved starting state" title="Base configuration" id="offspring-base-heading" />
+        <SectionHeading title={t("section.base.title")} id="offspring-base-heading" />
         <BaseConfigurationSurface
           onOffspringPromotionClassChange={setPromotionClassId}
           onOffspringStoryChapterChange={setStoryChapter}
@@ -232,12 +238,12 @@ export default function OffspringOverview({
           unit={unit}
         />
         <p className="offspring-rule-note">
-          <strong>Stance inheritance:</strong> Attack Stance alternates {scenario.mother.identity.displayName} at C, {scenario.father.identity.displayName} at B, {scenario.mother.identity.displayName} at A, and {scenario.father.identity.displayName} at S. Guard Stance uses {scenario.father.identity.displayName}, {scenario.mother.identity.displayName}, {scenario.father.identity.displayName}, then {scenario.mother.identity.displayName}.
+          <strong>{t("offspring.stanceLabel")}</strong>{t("offspring.stanceInheritance", { mother: parentDisplayName(scenario.mother, resolve), father: parentDisplayName(scenario.father, resolve) })}
         </p>
       </section>
 
       <details className="offspring-calculator-details">
-        <summary>Open recruitment inheritance calculator and formula walkthrough</summary>
+        <summary>{t("offspring.calc.summary")}</summary>
         <RecruitmentStatWalkthrough
           chapterStart={resolvedStoryChapter ?? 8}
           promotionClassId={resolvedPromotionClassId}
@@ -249,9 +255,9 @@ export default function OffspringOverview({
       <UnitClassSkills
         gender={scenario.childGender}
         sources={[
-          { label: "Own class", classIds: [parentage.childBaseClassId] },
-          { label: `From ${fixedParentName}`, classIds: [scenario.fixedInheritedClassId] },
-          { label: `From ${scenario.variableParent.identity.displayName}`, classIds: [scenario.inheritedClassId] },
+          { label: t("offspring.skills.ownClass"), classIds: [parentage.childBaseClassId] },
+          { label: t("offspring.skills.fromParent", { name: fixedParentName }), classIds: [scenario.fixedInheritedClassId] },
+          { label: t("offspring.skills.fromParent", { name: parentDisplayName(scenario.variableParent, resolve) }), classIds: [scenario.inheritedClassId] },
         ]}
         selectedSealPreviews={selectedSealPreviews}
       />
@@ -268,7 +274,7 @@ export default function OffspringOverview({
 }
 
 function CorrinParentControls({
-  config, boon, bane, boonId, baneId, talentId, showTalent, setBoonId, setBaneId, setTalentId,
+  config, boon, bane, boonId, baneId, talentId, showTalent, gender, setBoonId, setBaneId, setTalentId,
 }: {
   config: NonNullable<UnitRuntime["avatarConfiguration"]>;
   boon: AvatarChoice;
@@ -277,15 +283,21 @@ function CorrinParentControls({
   baneId: string;
   talentId: string;
   showTalent: boolean;
+  gender: AvatarGender;
   setBoonId: (id: string) => void;
   setBaneId: (id: string) => void;
   setTalentId: (id: string) => void;
 }) {
+  const { t, resolve, locale } = useLocale();
+  const talentLabel = (talent: NonNullable<UnitRuntime["avatarConfiguration"]>["talents"][number]) => {
+    const classId = talent.classId ?? talent.classIdByGender?.[gender];
+    return resolve({ en: talent.label, zhHans: classId ? classNames(classId)?.zhHans : undefined });
+  };
   return (
     <div className="offspring-corrin-controls">
-      <Form.Group controlId="offspring-corrin-boon"><Form.Label>Corrin boon</Form.Label><Form.Select value={boonId} onChange={(event) => setBoonId(event.target.value)}>{config.boons.map((choice) => <option key={choice.id} value={choice.id} disabled={choice.stat === bane.stat}>{choice.label} ({shortStatLabel(choice.stat)})</option>)}</Form.Select></Form.Group>
-      <Form.Group controlId="offspring-corrin-bane"><Form.Label>Corrin bane</Form.Label><Form.Select value={baneId} onChange={(event) => setBaneId(event.target.value)}>{config.banes.map((choice) => <option key={choice.id} value={choice.id} disabled={choice.stat === boon.stat}>{choice.label} ({shortStatLabel(choice.stat)})</option>)}</Form.Select></Form.Group>
-      {showTalent ? <Form.Group controlId="offspring-corrin-talent"><Form.Label>Corrin Talent</Form.Label><Form.Select value={talentId} onChange={(event) => setTalentId(event.target.value)}>{config.talents.map((talent) => <option key={talent.id} value={talent.id}>{talent.label}</option>)}</Form.Select></Form.Group> : null}
+      <Form.Group controlId="offspring-corrin-boon"><Form.Label>{t("offspring.corrinBoon")}</Form.Label><Form.Select value={boonId} onChange={(event) => setBoonId(event.target.value)}>{config.boons.map((choice) => <option key={choice.id} value={choice.id} disabled={choice.stat === bane.stat}>{resolve({ en: choice.label, zhHans: choice.labelZhHans })} ({shortStatLabel(choice.stat, locale)})</option>)}</Form.Select></Form.Group>
+      <Form.Group controlId="offspring-corrin-bane"><Form.Label>{t("offspring.corrinBane")}</Form.Label><Form.Select value={baneId} onChange={(event) => setBaneId(event.target.value)}>{config.banes.map((choice) => <option key={choice.id} value={choice.id} disabled={choice.stat === boon.stat}>{resolve({ en: choice.label, zhHans: choice.labelZhHans })} ({shortStatLabel(choice.stat, locale)})</option>)}</Form.Select></Form.Group>
+      {showTalent ? <Form.Group controlId="offspring-corrin-talent"><Form.Label>{t("offspring.corrinTalent")}</Form.Label><Form.Select value={talentId} onChange={(event) => setTalentId(event.target.value)}>{config.talents.map((talent) => <option key={talent.id} value={talent.id}>{talentLabel(talent)}</option>)}</Form.Select></Form.Group> : null}
     </div>
   );
 }
@@ -301,10 +313,12 @@ function RecruitmentStatWalkthrough({
   chapterStart: number;
   promotionClassId?: string;
 }) {
+  const { t, locale, resolve } = useLocale();
   const data = unit.offspring!.recruitment;
-  const unitName = unit.identity.displayName;
-  const fatherName = scenario.father.identity.displayName;
-  const motherName = scenario.mother.identity.displayName;
+  const unitName = resolve({ en: unit.identity.displayName, zhHans: unit.identity.names?.zhHans });
+  const fatherName = parentDisplayName(scenario.father, resolve);
+  const motherName = parentDisplayName(scenario.mother, resolve);
+  const enPlural = (n: number) => (locale === "en" && n !== 1 ? "s" : "");
   const [stat, setStat] = useState<keyof StatBlock>("strength");
   const milestone = data.levelByStoryPosition.find((entry, index, milestones) => {
     const chapterEnd = entry.chapterEnd ?? (milestones[index + 1]?.chapterStart ?? 28) - 1;
@@ -367,15 +381,15 @@ function RecruitmentStatWalkthrough({
     <div className="recruitment-walkthrough">
       <div className="recruitment-walkthrough-heading">
         <div>
-          <span>Live inheritance calculation</span>
-          <h3>Parent-stat recruitment calculator</h3>
-          <p>Using Chapter {chapterStart} · {promotion ? `${promotion.displayName} Lv. ${promotedLevel}` : `Lv. ${milestone.level}`}. Change recruitment timing or class above.</p>
+          <span>{t("offspring.walk.eyebrow")}</span>
+          <h3>{t("offspring.walk.title")}</h3>
+          <p>{t("offspring.walk.using", { chapter: chapterStart, context: promotion ? `${promotion.displayName} Lv. ${promotedLevel}` : `Lv. ${milestone.level}` })}</p>
         </div>
         <div className="recruitment-walkthrough-controls">
           <Form.Group controlId="offspring-formula-stat">
-            <Form.Label>Stat</Form.Label>
+            <Form.Label>{t("config.offspring.colStat")}</Form.Label>
             <Form.Select value={stat} onChange={(event) => setStat(event.target.value as keyof StatBlock)}>
-              {STAT_KEYS.map((key) => <option key={key} value={key}>{shortStatLabel(key)}</option>)}
+              {STAT_KEYS.map((key) => <option key={key} value={key}>{shortStatLabel(key, locale)}</option>)}
             </Form.Select>
           </Form.Group>
         </div>
@@ -383,13 +397,13 @@ function RecruitmentStatWalkthrough({
 
       <div className="parent-stat-snapshots">
         <div>
-          <span>Calculator inputs</span>
-          <h4>Both parents' complete inheritance stat lines</h4>
-          <p>Enter each parent's class-independent personal stats: fixed personal base plus level-up gains. Exclude class bases, stat boosters, Pair Up, equipment, meals, tonics, and statues.</p>
+          <span>{t("offspring.walk.inputsEyebrow")}</span>
+          <h4>{t("offspring.walk.inputsTitle")}</h4>
+          <p>{t("offspring.walk.inputsDesc")}</p>
         </div>
         <Table responsive>
           <thead>
-            <tr><th>Unit</th>{STAT_KEYS.map((key) => <th className={key === stat ? "is-selected" : undefined} key={key}>{shortStatLabel(key)}</th>)}</tr>
+            <tr><th>{t("offspring.walk.unit")}</th>{STAT_KEYS.map((key) => <th className={key === stat ? "is-selected" : undefined} key={key}>{shortStatLabel(key, locale)}</th>)}</tr>
           </thead>
           <tbody>
             <ParentStatInputRow
@@ -407,50 +421,50 @@ function RecruitmentStatWalkthrough({
               onChange={updateParentStat}
             />
             <tr className="parent-stat-result">
-              <th scope="row">{unitName} result</th>
+              <th scope="row">{t("offspring.walk.result", { name: unitName })}</th>
               {STAT_KEYS.map((key) => <td className={key === stat ? "is-selected" : undefined} key={key}>{finalStats[key]}</td>)}
             </tr>
           </tbody>
         </Table>
       </div>
 
-      <div className="recruitment-recipe" aria-label={`${shortStatLabel(stat)} recruitment stat calculation`}>
-        <RecipeStep number="1" title={`${unitName}'s own stat`}>
-          <p><strong>{personalBase}</strong> fixed personal base</p>
-          <p>+ <strong>{automaticGrowth}</strong> base-line automatic growth</p>
-          {promotion ? <p>+ <strong>{promotedClassAptitude}</strong> {promotion.displayName} aptitude</p> : null}
-          <output>= {inheritanceBenchmark} inheritance benchmark at {promotion ? `${promotion.displayName} Lv. ${promotedLevel}` : `Lv. ${milestone.level}`}</output>
+      <div className="recruitment-recipe" aria-label={t("offspring.walk.recipeAria", { stat: shortStatLabel(stat, locale) })}>
+        <RecipeStep number="1" title={t("offspring.walk.step1Title", { name: unitName })}>
+          <p><strong>{personalBase}</strong> {t("offspring.walk.fixedBase")}</p>
+          <p>+ <strong>{automaticGrowth}</strong> {t("offspring.walk.autoGrowth")}</p>
+          {promotion ? <p>+ <strong>{promotedClassAptitude}</strong> {t("offspring.walk.aptitude", { class: promotion.displayName })}</p> : null}
+          <output>= {inheritanceBenchmark} {t("offspring.walk.benchmarkAt", { context: promotion ? `${promotion.displayName} Lv. ${promotedLevel}` : `Lv. ${milestone.level}` })}</output>
         </RecipeStep>
         <ArrowRight aria-hidden="true" size={20} />
-        <RecipeStep number="2" title="Parents' usable surplus">
-          <p>{fatherName}'s current {shortStatLabel(stat)}: <strong>{fatherCurrentStats[stat]}</strong></p>
-          <p>{motherName}'s current {shortStatLabel(stat)}: <strong>{motherCurrentStats[stat]}</strong></p>
-          <p>Subtract {unitName}'s benchmark: <strong>{inheritanceBenchmark}</strong></p>
-          <output>{fatherSurplus} + {motherSurplus} = {fatherSurplus + motherSurplus} surplus</output>
+        <RecipeStep number="2" title={t("offspring.walk.step2Title")}>
+          <p>{t("offspring.walk.parentCurrent", { name: fatherName, stat: shortStatLabel(stat, locale) })} <strong>{fatherCurrentStats[stat]}</strong></p>
+          <p>{t("offspring.walk.parentCurrent", { name: motherName, stat: shortStatLabel(stat, locale) })} <strong>{motherCurrentStats[stat]}</strong></p>
+          <p>{t("offspring.walk.subtractBenchmark", { name: unitName })} <strong>{inheritanceBenchmark}</strong></p>
+          <output>{fatherSurplus} + {motherSurplus} = {fatherSurplus + motherSurplus} {t("offspring.walk.surplusUnit")}</output>
         </RecipeStep>
         <ArrowRight aria-hidden="true" size={20} />
-        <RecipeStep number="3" title="Quarter it, then cap it">
-          <p>One quarter, floored: <strong>{quarteredSurplus}</strong></p>
-          <p>Maximum allowed here: <strong>{inheritanceCap}</strong></p>
-          <output>= {inheritanceBonus} inherited point{inheritanceBonus === 1 ? "" : "s"}</output>
+        <RecipeStep number="3" title={t("offspring.walk.step3Title")}>
+          <p>{t("offspring.walk.quarter")} <strong>{quarteredSurplus}</strong></p>
+          <p>{t("offspring.walk.maxAllowed")} <strong>{inheritanceCap}</strong></p>
+          <output>= {inheritanceBonus} {t("offspring.walk.inheritedPoint")}{enPlural(inheritanceBonus)}</output>
         </RecipeStep>
         <ArrowRight aria-hidden="true" size={20} />
-        <RecipeStep number="4" title="Final recruitment stat">
-          <p><strong>{classBase}</strong> {promotion?.displayName ?? displayId(data.startingClassId)} class base</p>
-          <p>+ <strong>{childAptitude}</strong> {unitName}'s child aptitude</p>
-          {promotion ? <p>+ <strong>{promotedClassAptitude}</strong> promoted-class aptitude</p> : null}
-          <p>+ <strong>{inheritanceBonus}</strong> parent inheritance</p>
-          <output>= {finalStat} {shortStatLabel(stat)}</output>
+        <RecipeStep number="4" title={t("offspring.walk.step4Title")}>
+          <p><strong>{classBase}</strong> {t("offspring.walk.classBase", { class: promotion?.displayName ?? displayId(data.startingClassId) })}</p>
+          <p>+ <strong>{childAptitude}</strong> {t("offspring.walk.childAptitude", { name: unitName })}</p>
+          {promotion ? <p>+ <strong>{promotedClassAptitude}</strong> {t("offspring.walk.promotedAptitude")}</p> : null}
+          <p>+ <strong>{inheritanceBonus}</strong> {t("offspring.walk.parentInheritance")}</p>
+          <output>= {finalStat} {shortStatLabel(stat, locale)}</output>
         </RecipeStep>
       </div>
 
       <details className="recruitment-glossary">
-        <summary>Formula definitions</summary>
+        <summary>{t("offspring.walk.glossarySummary")}</summary>
         <div>
-          <p><strong>Automatic-growth gain</strong> is deterministic story catch-up. Because this unit joins above level 10, the game awards the average stat points they would have gained across those missing levels using resolved personal growth plus {displayId(data.startingClassId)} growth: {automaticLevels} levels x {fullGrowth}% = {automaticGrowth} point{automaticGrowth === 1 ? "" : "s"}, after flooring.</p>
-          {promotion && promotedClassGrowthRates ? <p><strong>Promoted-class aptitude</strong> is calculated separately: {promotion.displayName}'s {shortStatLabel(stat)} class growth ({promotedClassGrowthRates[stat]}%) x ({promotedLevel} promoted levels - 1) = {promotedClassAptitude}, rounded to the nearest integer with exact halves rounded up. The promotion itself is not a promoted-class growth level.</p> : null}
-          <p><strong>Parent current stats</strong> are entered as complete eight-stat snapshots so every {unitName} result updates together. These are the class-independent values used for inheritance: each parent's fixed personal value plus points actually earned through level-ups. Class bases and temporary or external bonuses are not inherited.</p>
-          <p><strong>Only surplus counts.</strong> A parent at or below {unitName}'s inheritance benchmark contributes zero. The editable parent values above are illustrative until the planner has parent level-up snapshots.</p>
+          <p><strong>{t("offspring.walk.gloss.autoLabel")}</strong>{t("offspring.walk.gloss.auto", { class: displayId(data.startingClassId), levels: automaticLevels, growth: fullGrowth, points: automaticGrowth })}{enPlural(automaticGrowth)}{t("offspring.walk.gloss.autoTail")}</p>
+          {promotion && promotedClassGrowthRates ? <p><strong>{t("offspring.walk.gloss.promotedLabel")}</strong>{t("offspring.walk.gloss.promoted", { class: promotion.displayName, stat: shortStatLabel(stat, locale), rate: promotedClassGrowthRates[stat], level: promotedLevel ?? 0, value: promotedClassAptitude })}</p> : null}
+          <p><strong>{t("offspring.walk.gloss.parentLabel")}</strong>{t("offspring.walk.gloss.parent", { name: unitName })}</p>
+          <p><strong>{t("offspring.walk.gloss.surplusLabel")}</strong>{t("offspring.walk.gloss.surplus", { name: unitName })}</p>
         </div>
       </details>
     </div>
@@ -476,13 +490,14 @@ function ParentStatInputRow({
   stats: StatBlock;
   onChange: (parent: "father" | "mother", stat: keyof StatBlock, value: number) => void;
 }) {
+  const { t, locale } = useLocale();
   return (
     <tr>
       <th scope="row">{label}</th>
       {STAT_KEYS.map((key) => (
         <td className={key === selectedStat ? "is-selected" : undefined} key={key}>
           <input
-            aria-label={`${label} current ${shortStatLabel(key)}`}
+            aria-label={t("offspring.walk.parentCurrentAria", { name: label, stat: shortStatLabel(key, locale) })}
             min="0"
             type="number"
             value={stats[key]}
@@ -518,6 +533,7 @@ function OffspringSupports({
   selectedSealPreviews: SealGrantPreviews;
   onSealPreviewChange: (seal: SealPreviewKind, preview: SealGrantPreview | null) => void;
 }) {
+  const { t, resolve } = useLocale();
   const parentage = unit.offspring!.parentage;
   const nativeClasses = new Set([parentage.childBaseClassId, scenario.fixedInheritedClassId, scenario.inheritedClassId].filter((classId): classId is string => Boolean(classId)));
   const azuraClausePartnerId = unit.identity.id === "kana"
@@ -561,15 +577,17 @@ function OffspringSupports({
     supports,
     classAccess: unit.classAccess ? { ...unit.classAccess, sealGrants } : null,
   };
-  const siblingName = fe14Data.roster.find((candidate) => candidate.id === scenario.siblingUnitId)?.displayName ?? (scenario.siblingUnitId ? displayId(scenario.siblingUnitId) : undefined);
-  const azuraClausePartnerName = fe14Data.roster.find((candidate) => candidate.id === azuraClausePartnerId)?.displayName;
+  const siblingRoster = fe14Data.roster.find((candidate) => candidate.id === scenario.siblingUnitId);
+  const siblingName = siblingRoster ? resolve({ en: siblingRoster.displayName, zhHans: siblingRoster.names?.zhHans }) : (scenario.siblingUnitId ? displayId(scenario.siblingUnitId) : undefined);
+  const azuraRoster = fe14Data.roster.find((candidate) => candidate.id === azuraClausePartnerId);
+  const azuraClausePartnerName = azuraRoster ? resolve({ en: azuraRoster.displayName, zhHans: azuraRoster.names?.zhHans }) : undefined;
   return (
     <section className="data-section" aria-labelledby="supports-heading">
-      <SectionHeading eyebrow="Relationships" title="Supports and seal grants" id="supports-heading" />
+      <SectionHeading title={t("section.supports.title")} id="supports-heading" />
       <div className="offspring-family-strip">
-        <span><strong>Father</strong> {parentName(scenario.father, scenario.childGender === "female" ? "male" : undefined)} (C-A)</span>
-        <span><strong>Mother</strong> {parentName(scenario.mother, scenario.childGender === "male" ? "female" : undefined)} (C-A)</span>
-        {siblingName ? <span><strong>Sibling</strong> {siblingName} (C-A)</span> : null}
+        <span><strong>{t("offspring.family.father")}</strong> {parentName(scenario.father, resolve, scenario.childGender === "female" ? "male" : undefined)} (C-A)</span>
+        <span><strong>{t("offspring.family.mother")}</strong> {parentName(scenario.mother, resolve, scenario.childGender === "male" ? "female" : undefined)} (C-A)</span>
+        {siblingName ? <span><strong>{t("offspring.family.sibling")}</strong> {siblingName} (C-A)</span> : null}
       </div>
       <SupportDirectory
         unit={supportUnit}
@@ -579,7 +597,7 @@ function OffspringSupports({
       />
       {azuraClausePartnerName ? (
         <p className="offspring-rule-note offspring-special-note">
-          <strong>Azura clause:</strong> {azuraClausePartnerName} is unavailable because Corrin married Azura's other offspring, making {azuraClausePartnerName} Kana's aunt or uncle. Apparently the double-spoiler family tree is where Fates finally draws a line: incest, unfortunately, is not wincest here. The support is removed entirely, so there is no C-A chain, S rank, or seal grant.
+          <strong>{t("offspring.azuraLabel")}</strong>{t("offspring.azuraClause", { name: azuraClausePartnerName })}
         </p>
       ) : null}
     </section>
@@ -587,23 +605,25 @@ function OffspringSupports({
 }
 
 function ResolvedClassLabel({ classId }: { classId: string | null }) {
-  return classId ? <ClassTreeLabel classId={classId} /> : <span>No additional tree</span>;
+  const { t } = useLocale();
+  return classId ? <ClassTreeLabel classId={classId} /> : <span>{t("offspring.summary.noTree")}</span>;
 }
 
-function nestedRoleLabel(unit: UnitRuntime) {
-  const role = unit.offspring?.parentage.variableParentRole;
-  if (role === "father") return "Father";
-  if (role === "mother") return "Mother";
-  return "Parent";
+function parentDisplayName(unit: UnitRuntime, resolve: ReturnType<typeof useLocale>["resolve"]): string {
+  return resolve({ en: unit.identity.displayName, zhHans: unit.identity.names?.zhHans });
 }
 
 function firstParentRoute(option?: { routes: string[] }): RouteId {
   return ROUTE_ORDER.find((route) => option?.routes.includes(route)) ?? "birthright";
 }
 
-function parentName(unit: UnitRuntime, corrinGender?: "female" | "male") {
-  if (unit.identity.id !== "corrin" || !corrinGender) return unit.identity.displayName;
-  return `Corrin (${corrinGender === "male" ? "M" : "F"})`;
+function parentName(unit: UnitRuntime, resolve: ReturnType<typeof useLocale>["resolve"], corrinGender?: "female" | "male") {
+  if (unit.identity.id !== "corrin" || !corrinGender) return parentDisplayName(unit, resolve);
+  return corrinGenderName(corrinGender, resolve);
+}
+
+function corrinGenderName(gender: "female" | "male", resolve: ReturnType<typeof useLocale>["resolve"]): string {
+  return resolve({ en: `Corrin (${gender === "male" ? "M" : "F"})`, zhHans: gender === "male" ? "神威（男）" : "神威（女）" });
 }
 
 function resolveSupportGrant(
@@ -631,7 +651,10 @@ function resolveSupportGrant(
   return { classId: parallelClass ? genderClass(parallelClass) : primary, resolution: parallelClass ? "parallel_class_fallback" : "variable" };
 }
 
-function formatRoutes(routes: string[]): string {
-  if (routes.length === 3) return "ALL";
-  return routes.map((route) => ({ birthright: "BR", conquest: "CQ", revelation: "RV" })[route] ?? route).join(" / ");
+function formatRoutes(routes: string[], locale: string): string {
+  if (routes.length === 3) return locale === "zhHans" ? "全部路线" : "ALL";
+  const labels: Record<string, string> = locale === "zhHans"
+    ? { birthright: "白夜", conquest: "暗夜", revelation: "透魔" }
+    : { birthright: "BR", conquest: "CQ", revelation: "RV" };
+  return routes.map((route) => labels[route] ?? route).join(" / ");
 }

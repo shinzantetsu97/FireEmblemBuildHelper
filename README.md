@@ -37,6 +37,10 @@ The app remains static and browser-local when deployed. Each visitor's notes sta
 
 `npm run db:init` initializes an earlier SQLite development experiment at `data/app.db`. The public application does not use that database, Express, or a backend API. Retiring or repurposing those legacy files and dependencies should be a separate, deliberate cleanup task.
 
+## Localization Credits
+
+The Simplified Chinese (zh-Hans) localization — terminology and the skill and name translations — builds on the longstanding Fire Emblem localization work of the [FC Fantasy (fcfantasy.cn)](http://fcfantasy.cn) and 3DM communities. Specific data sources are recorded in `data/sources/fe14/sources.json`.
+
 ## Data Folders
 
 - `data/raw` will later hold source files such as spreadsheets and documents.

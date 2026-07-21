@@ -1,6 +1,6 @@
 {
   "gameId": "fe14",
-  "updatedAt": "2026-07-18",
+  "updatedAt": "2026-07-20",
   "units": [
     {
       "order": 1,
@@ -82,7 +82,7 @@
         },
         {
           "code": "workbook_source_pending",
-          "message": "Kaze's 凉风 workbook sheet and its four level/stat notes still require direct inspection; the current carryover rules are independently corroborated by Fire Emblem Wiki prose and Serenes Forest data.",
+          "message": "Kaze's 凉风 workbook sheet and its three level/stat records still require direct inspection; the current route records are independently corroborated by Fire Emblem Wiki prose and Serenes Forest data.",
           "unitId": "kaze"
         }
       ]

@@ -1,10 +1,12 @@
 import { useMemo } from "react";
 import { fe14Data, type SourceRef, type UnitRuntime } from "../../../data";
+import { useLocale } from "../../../../../i18n/LocaleContext";
 
 export default function UnitReferences({ unit }: { unit: UnitRuntime }) {
+  const { t } = useLocale();
   return (
     <section className="unit-references" aria-labelledby="sources-heading">
-      <h2 id="sources-heading">References</h2>
+      <h2 id="sources-heading">{t("unit.references")}</h2>
       <SourceList unit={unit} />
     </section>
   );

@@ -487,7 +487,7 @@ function validateRelationships(
   const completedUnitCounts: Record<string, { availability: number; baseStats: number }> = {
     felicia: { availability: 2, baseStats: 2 },
     jakob: { availability: 2, baseStats: 2 },
-    kaze: { availability: 4, baseStats: 4 },
+    kaze: { availability: 3, baseStats: 3 },
     silas: { availability: 3, baseStats: 2 },
     azura: { availability: 3, baseStats: 1 },
     elise: { availability: 3, baseStats: 3 },
@@ -506,7 +506,7 @@ function validateRelationships(
     leo: { availability: 3, baseStats: 2 },
     keaton: { availability: 2, baseStats: 1 },
     xander: { availability: 3, baseStats: 2 },
-    rinkah: { availability: 1, baseStats: 1 },
+    rinkah: { availability: 2, baseStats: 1 },
     sakura: { availability: 2, baseStats: 2 },
     hana: { availability: 2, baseStats: 2 },
     subaki: { availability: 2, baseStats: 1 },
@@ -675,9 +675,9 @@ function validateRelationships(
       const departure = commonRecruitment?.temporaryDeparture as JsonObject | undefined;
       const returns = (departure?.returns ?? []) as JsonObject[];
       const revelationReturn = returns.find((record) => record.route === "revelation");
-      const notes = (rosterById.get(currentUnitId)?.notes ?? []) as string[];
+      const notes = (rosterById.get(currentUnitId)?.notes ?? []) as JsonObject[];
       const documentsCarryover = notes.some((note) =>
-        /level, EXP, stats, and weapon proficiency.*retained/i.test(note)
+        /level, EXP, stats, and weapon proficiency.*retained/i.test(String(note.text ?? ""))
       );
       if (departure?.afterChapter !== 5 || revelationReturn?.chapter !== 9 || !documentsCarryover) {
         errors.push({
@@ -810,7 +810,7 @@ function validateRelationships(
   if (!unitFilter || unitFilter === "kaze") {
     warnings.push({
       code: "workbook_source_pending",
-      message: "Kaze's 凉风 workbook sheet and its four level/stat notes still require direct inspection; the current carryover rules are independently corroborated by Fire Emblem Wiki prose and Serenes Forest data.",
+      message: "Kaze's 凉风 workbook sheet and its three level/stat records still require direct inspection; the current route records are independently corroborated by Fire Emblem Wiki prose and Serenes Forest data.",
       unitId: "kaze",
     });
   }

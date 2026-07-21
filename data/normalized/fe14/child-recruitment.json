@@ -3,14 +3,19 @@
     "unitId": "kana",
     "paralogueNo": 2,
     "paralogueTitle": "Dragon Blood",
+    "paralogueTitleZhHans": "龙之血",
     "initialFaction": "not_deployed",
     "recruitment": {
       "description": "Kana joins automatically after the map is completed.",
+      "descriptionZhHans": "地图完成后神流自动加入。",
       "automaticAtMapEndIfSurvives": true,
       "deathBeforeRecruitmentIsPermanent": false
     },
     "recruitmentNotes": [
       "Kana appears during Dragon Blood as an uncontrolled dragon NPC; the playable Nohr Prince or Princess joins after the chapter ends."
+    ],
+    "recruitmentNotesZhHans": [
+      "在「龙之血」中，神流会以不受控的龙族 NPC 出现；可使用的黑暗王子或黑暗公主在该章结束后加入。"
     ],
     "startingClassId": "nohr_prince",
     "level10PersonalBases": {
@@ -110,7 +115,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -286,14 +292,19 @@
     "unitId": "shigure",
     "paralogueNo": 3,
     "paralogueTitle": "Surprise Duet",
+    "paralogueTitleZhHans": "意外的二重奏",
     "initialFaction": "not_deployed",
     "recruitment": {
       "description": "Shigure joins automatically after the map is completed.",
+      "descriptionZhHans": "地图完成后时雨自动加入。",
       "automaticAtMapEndIfSurvives": true,
       "deathBeforeRecruitmentIsPermanent": false
     },
     "recruitmentNotes": [
       "Shigure is not deployed during Surprise Duet; he joins after the chapter ends."
+    ],
+    "recruitmentNotesZhHans": [
+      "在「意外的二重奏」中时雨不会出击；他在该章结束后加入。"
     ],
     "startingClassId": "sky_knight",
     "level10PersonalBases": {
@@ -392,7 +403,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -558,9 +570,11 @@
     "unitId": "dwyer",
     "paralogueNo": 4,
     "paralogueTitle": "Fight or Flight",
+    "paralogueTitleZhHans": "战或逃",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Jakob talks to Dwyer, or Dwyer survives until map completion.",
+      "descriptionZhHans": "乔卡与迪亚对话，或迪亚存活至地图完成。",
       "talkUnitId": "jakob",
       "automaticAtMapEndIfSurvives": true,
       "deathBeforeRecruitmentIsPermanent": true
@@ -837,16 +851,19 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     }
   },
   {
     "unitId": "sophie",
     "paralogueNo": 5,
     "paralogueTitle": "Bold Approach",
+    "paralogueTitleZhHans": "大胆的接近",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Silas talks to Sophie, or Sophie survives until map completion.",
+      "descriptionZhHans": "塞拉斯与佐菲对话，或佐菲存活至地图完成。",
       "talkUnitId": "silas",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": true
@@ -951,7 +968,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -1118,14 +1136,19 @@
     "unitId": "midori",
     "paralogueNo": 6,
     "paralogueTitle": "Herbal Remedy",
+    "paralogueTitleZhHans": "草药良方",
     "initialFaction": "player",
     "recruitment": {
       "description": "Midori joins automatically at the start of the paralogue.",
+      "descriptionZhHans": "外传开始时绿子自动加入。",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": false
     },
     "recruitmentNotes": [
       "In Birthright, Herbal Remedy cannot be unlocked until Kaze passes his Chapter 15 survival check."
+    ],
+    "recruitmentNotesZhHans": [
+      "在白夜线，「草药良方」必须等到凉风通过其第 15 章存活判定后才能解锁。"
     ],
     "startingClassId": "apothecary",
     "level10PersonalBases": {
@@ -1224,7 +1247,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -1390,9 +1414,11 @@
     "unitId": "shiro",
     "paralogueNo": 7,
     "paralogueTitle": "Father & Liege",
+    "paralogueTitleZhHans": "父亲与主君",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Ryoma talks to Shiro during the battle.",
+      "descriptionZhHans": "战斗中龙马与东刚对话。",
       "talkUnitId": "ryoma",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": true
@@ -1495,7 +1521,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -1659,9 +1686,11 @@
     "unitId": "kiragi",
     "paralogueNo": 8,
     "paralogueTitle": "A Great Hunt",
+    "paralogueTitleZhHans": "盛大的狩猎",
     "initialFaction": "player",
     "recruitment": {
       "description": "Kiragi joins automatically on turn 1.",
+      "descriptionZhHans": "如月在第 1 回合自动加入。",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": false
     },
@@ -1763,7 +1792,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -1927,9 +1957,11 @@
     "unitId": "asugi",
     "paralogueNo": 9,
     "paralogueTitle": "Saizo vs. Saizo",
+    "paralogueTitleZhHans": "才藏对才藏",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Asugi joins automatically when the map is completed.",
+      "descriptionZhHans": "地图完成时暮井自动加入。",
       "automaticAtMapEndIfSurvives": true,
       "deathBeforeRecruitmentIsPermanent": false
     },
@@ -2030,7 +2062,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -2194,9 +2227,11 @@
     "unitId": "selkie",
     "paralogueNo": 10,
     "paralogueTitle": "Hunter & Prey",
+    "paralogueTitleZhHans": "猎人与猎物",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Kaden talks to Selkie during the battle.",
+      "descriptionZhHans": "战斗中锦与绢对话。",
       "talkUnitId": "kaden",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": true
@@ -2299,7 +2334,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -2425,9 +2461,11 @@
     "unitId": "hisame",
     "paralogueNo": 11,
     "paralogueTitle": "A Long Grudge",
+    "paralogueTitleZhHans": "宿怨",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Hinata talks to Hisame during the battle.",
+      "descriptionZhHans": "战斗中日向与冰雨对话。",
       "talkUnitId": "hinata",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": true
@@ -2529,7 +2567,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -2694,15 +2733,20 @@
     "unitId": "mitama",
     "paralogueNo": 12,
     "paralogueTitle": "Sweet Dreams",
+    "paralogueTitleZhHans": "甜美的梦",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Visit Mitama's village three times with Azama, or complete the map while she remains inside.",
+      "descriptionZhHans": "与浅间三次访问三珠的村庄，或在她仍在村内时完成地图。",
       "talkUnitId": "azama",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": false
     },
     "recruitmentNotes": [
       "The village visit count is the active-recruitment method; clearing the map also recruits Mitama."
+    ],
+    "recruitmentNotesZhHans": [
+      "访问村庄的次数是当前的招募方式；完成地图同样可招募三珠。"
     ],
     "startingClassId": "shrine_maiden",
     "level10PersonalBases": {
@@ -2801,7 +2845,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -2967,9 +3012,11 @@
     "unitId": "caeldori",
     "paralogueNo": 13,
     "paralogueTitle": "Truly Talented",
+    "paralogueTitleZhHans": "天赋异禀",
     "initialFaction": "player",
     "recruitment": {
       "description": "Caeldori joins automatically on turn 1.",
+      "descriptionZhHans": "缠在第 1 回合自动加入。",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": false
     },
@@ -3071,7 +3118,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -3237,9 +3285,11 @@
     "unitId": "rhajat",
     "paralogueNo": 14,
     "paralogueTitle": "After the End",
+    "paralogueTitleZhHans": "终结之后",
     "initialFaction": "enemy",
     "recruitment": {
       "description": "Hayato talks to Rhajat, or Rhajat joins automatically when the map is completed.",
+      "descriptionZhHans": "月读与莎拉对话，或地图完成时莎拉自动加入。",
       "talkUnitId": "hayato",
       "automaticAtMapEndIfSurvives": true,
       "deathBeforeRecruitmentIsPermanent": false
@@ -3341,7 +3391,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -3507,9 +3558,11 @@
     "unitId": "siegbert",
     "paralogueNo": 15,
     "paralogueTitle": "Hidden Bravery",
+    "paralogueTitleZhHans": "潜藏的勇气",
     "initialFaction": "player",
     "recruitment": {
       "description": "Siegbert joins automatically on turn 1.",
+      "descriptionZhHans": "西格贝特在第 1 回合自动加入。",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": false
     },
@@ -3614,7 +3667,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -3781,9 +3835,11 @@
     "unitId": "forrest",
     "paralogueNo": 16,
     "paralogueTitle": "Abducted",
+    "paralogueTitleZhHans": "被掳走",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Forrest joins automatically after the map if he survives.",
+      "descriptionZhHans": "若弗利欧存活，地图完成后自动加入。",
       "automaticAtMapEndIfSurvives": true,
       "deathBeforeRecruitmentIsPermanent": true
     },
@@ -3882,7 +3938,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -4048,9 +4105,11 @@
     "unitId": "ignatius",
     "paralogueNo": 17,
     "paralogueTitle": "Two Defenders",
+    "paralogueTitleZhHans": "两位守护者",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Benny talks to Ignatius during the battle.",
+      "descriptionZhHans": "战斗中贝诺瓦与伊格尼斯对话。",
       "talkUnitId": "benny",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": true
@@ -4154,7 +4213,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -4321,9 +4381,11 @@
     "unitId": "velouria",
     "paralogueNo": 18,
     "paralogueTitle": "Nutty Family",
+    "paralogueTitleZhHans": "疯狂的一家",
     "initialFaction": "player",
     "recruitment": {
       "description": "Velouria appears on the next turn after the army crosses the rightmost mountain row, or joins when the map is completed first.",
+      "descriptionZhHans": "军队越过最右侧的山脉行后，维璐亚会在下一回合出现；若先完成地图则于完成时加入。",
       "automaticAtMapEndIfSurvives": true,
       "deathBeforeRecruitmentIsPermanent": false
     },
@@ -4426,7 +4488,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -4552,9 +4615,11 @@
     "unitId": "percy",
     "paralogueNo": 19,
     "paralogueTitle": "Great Heroism",
+    "paralogueTitleZhHans": "大英雄",
     "initialFaction": "enemy",
     "recruitment": {
       "description": "Percy joins automatically when the map is completed.",
+      "descriptionZhHans": "地图完成时露兹自动加入。",
       "automaticAtMapEndIfSurvives": true,
       "deathBeforeRecruitmentIsPermanent": false
     },
@@ -4656,7 +4721,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -4822,9 +4888,11 @@
     "unitId": "ophelia",
     "paralogueNo": 20,
     "paralogueTitle": "Ultimate Power",
+    "paralogueTitleZhHans": "究极之力",
     "initialFaction": "player",
     "recruitment": {
       "description": "Ophelia joins automatically on turn 1.",
+      "descriptionZhHans": "奥菲利亚在第 1 回合自动加入。",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": false
     },
@@ -4926,7 +4994,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -5090,9 +5159,11 @@
     "unitId": "soleil",
     "paralogueNo": 21,
     "paralogueTitle": "In Endless Dreams",
+    "paralogueTitleZhHans": "无尽梦境",
     "initialFaction": "npc",
     "recruitment": {
       "description": "Laslow talks to Soleil during the battle.",
+      "descriptionZhHans": "战斗中拉兹沃德与索雷尤对话。",
       "talkUnitId": "laslow",
       "automaticAtMapEndIfSurvives": false,
       "deathBeforeRecruitmentIsPermanent": true
@@ -5195,7 +5266,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,
@@ -5361,14 +5433,19 @@
     "unitId": "nina",
     "paralogueNo": 22,
     "paralogueTitle": "Abrupt Clash",
+    "paralogueTitleZhHans": "突如其来的冲突",
     "initialFaction": "enemy",
     "recruitment": {
       "description": "Nina joins automatically when the map is completed.",
+      "descriptionZhHans": "地图完成时艾潘妮自动加入。",
       "automaticAtMapEndIfSurvives": true,
       "deathBeforeRecruitmentIsPermanent": false
     },
     "recruitmentNotes": [
       "Only female Corrin can be Nina's variable parent. Niles's S support with male Corrin does not unlock Nina's paralogue."
+    ],
+    "recruitmentNotesZhHans": [
+      "只有女神威能作为艾潘妮的可变父母。零与男神威的 S 支援不会解锁艾潘妮的外传。"
     ],
     "startingClassId": "outlaw",
     "level10PersonalBases": {
@@ -5467,7 +5544,8 @@
         "26": 36,
         "27": 38
       },
-      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20."
+      "note": "Children use internal level 10. Before promotion, their displayed level follows the applicable map level once it exceeds 10. From Chapter 19 onward, the Offspring Seal promotes them and converts map level 22-38 into promoted level 2-18 by subtracting the promoted internal-level offset of 20.",
+      "noteZhHans": "子女使用内部等级 10。进阶前，其显示等级在超过 10 后跟随适用的地图等级。自第 19 章起，子代之证使其进阶，并通过减去进阶内部等级偏移 20，将地图等级 22–38 转换为进阶等级 2–18。"
     },
     "offspringSeal": {
       "availableFromChapter": 19,

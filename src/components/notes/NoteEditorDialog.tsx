@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import type { Note } from "../../types";
 import type { NoteDraft } from "./types";
+import { useLocale } from "../../i18n/LocaleContext";
 
 export default function NoteEditorDialog({
   draft,
@@ -25,16 +26,17 @@ export default function NoteEditorDialog({
   onSubmit: (event: FormEvent<HTMLFormElement>) => void;
   show: boolean;
 }) {
+  const { t } = useLocale();
   return (
     <Modal show={show} onHide={onHide} centered>
       <Form onSubmit={onSubmit}>
         <Modal.Header closeButton>
-          <Modal.Title>{editingNote ? "Edit note" : "New note"}</Modal.Title>
+          <Modal.Title>{editingNote ? t("notes.editor.editTitle") : t("notes.editor.newTitle")}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {error ? <Alert variant="danger">{error}</Alert> : null}
           <Form.Group className="mb-3" controlId="note-title">
-            <Form.Label>Title</Form.Label>
+            <Form.Label>{t("notes.editor.title")}</Form.Label>
             <Form.Control
               autoFocus
               maxLength={120}
@@ -44,7 +46,7 @@ export default function NoteEditorDialog({
             />
           </Form.Group>
           <Form.Group controlId="note-content">
-            <Form.Label>Content</Form.Label>
+            <Form.Label>{t("notes.editor.content")}</Form.Label>
             <Form.Control
               as="textarea"
               maxLength={10_000}
@@ -56,9 +58,9 @@ export default function NoteEditorDialog({
           </Form.Group>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="outline-secondary" onClick={onHide}>Cancel</Button>
+          <Button variant="outline-secondary" onClick={onHide}>{t("common.cancel")}</Button>
           <Button type="submit" disabled={isSaving || !draft.title.trim() || !draft.content.trim()}>
-            {isSaving ? "Saving..." : "Save note"}
+            {isSaving ? t("notes.editor.saving") : t("notes.editor.save")}
           </Button>
         </Modal.Footer>
       </Form>

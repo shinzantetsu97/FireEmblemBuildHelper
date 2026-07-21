@@ -489,61 +489,6 @@
   },
   {
     "unitId": "kaze",
-    "availabilityId": "kaze.birthright",
-    "level": 3,
-    "classId": "ninja",
-    "stats": {
-      "hp": 19,
-      "strength": 7,
-      "magic": 0,
-      "skill": 9,
-      "speed": 12,
-      "luck": 4,
-      "defense": 5,
-      "resistance": 10
-    },
-    "weaponRanks": {
-      "dagger": "D"
-    },
-    "chapter5Carryover": {
-      "sourceAvailabilityId": "kaze.common",
-      "checkpoint": "end_of_chapter_5",
-      "levelCalculation": "retain_chapter_5_level",
-      "statCalculation": "retain_chapter_5_stats",
-      "weaponProficiencyCalculation": "retain_chapter_5_proficiency",
-      "note": "Birthright continues with Kaze's exact level, rolled stat gains, and weapon proficiency from the end of Chapter 5; the displayed values are the no-gain template."
-    },
-    "provenance": [
-      {
-        "sourceId": "fewiki-kaze",
-        "locator": "Fire Emblem Fates > Birthright > Role",
-        "fields": [
-          "chapter5Carryover"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "sourceId": "user-fe14-kaze-proficiency",
-        "locator": "Chapter 4 and 5 weapon-proficiency carryover",
-        "fields": [
-          "chapter5Carryover.weaponProficiencyCalculation"
-        ],
-        "reviewStatus": "accepted"
-      },
-      {
-        "sourceId": "serenes-fe14-base-stats",
-        "locator": "Shared Characters > Kaze",
-        "fields": [
-          "level",
-          "classId",
-          "stats"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
-    "unitId": "kaze",
     "availabilityId": "kaze.conquest",
     "level": 9,
     "classId": "ninja",
@@ -2107,7 +2052,10 @@
   },
   {
     "unitId": "rinkah",
-    "availabilityId": "rinkah.common",
+    "availabilityIds": [
+      "rinkah.common",
+      "rinkah.revelation"
+    ],
     "level": 4,
     "classId": "oni_savage",
     "stats": {

@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import { CheckCheck, ChevronDown, ChevronRight, Search, Square } from "lucide-react";
 import {
+  classNames,
   type ClassAffiliation,
   type ClassSkill,
   type ClassSkillAcquisition,
@@ -10,6 +11,8 @@ import {
   type EnrichedClassTree,
 } from "../../data";
 import { getClassSkillIconUrl } from "../../skillAssets";
+import { useLocale } from "../../../../i18n/LocaleContext";
+import type { MessageKey } from "../../../../i18n/messages/en";
 
 type FactionFilter = "all" | "hoshidan" | "nohrian" | "special";
 
@@ -19,14 +22,23 @@ export interface ClassSkillBrowserProps {
   classSkills: ClassSkill[];
   skillsByClass: Record<string, ClassSkillIndexEntry[]>;
   scope: "directory" | "unit-profile";
+  // Per-class display-label overrides (e.g. merging gendered duplicates on the
+  // directory) that do not affect the shared class-name data.
+  labelOverrides?: Record<string, { en: string; zhHans?: string }>;
 }
 
-const FACTION_OPTIONS: Array<{ id: FactionFilter; label: string }> = [
-  { id: "all", label: "All" },
-  { id: "hoshidan", label: "Hoshidan Class" },
-  { id: "nohrian", label: "Nohrian Class" },
-  { id: "special", label: "Special Class" },
+const FACTION_OPTIONS: Array<{ id: FactionFilter; labelKey: MessageKey }> = [
+  { id: "all", labelKey: "class.affiliation.all" },
+  { id: "hoshidan", labelKey: "class.affiliation.hoshidan" },
+  { id: "nohrian", labelKey: "class.affiliation.nohrian" },
+  { id: "special", labelKey: "class.affiliation.special" },
 ];
+
+const AFFILIATION_BADGE_KEYS: Record<ClassAffiliation, MessageKey> = {
+  hoshidan: "class.affiliationBadge.hoshidan",
+  nohrian: "class.affiliationBadge.nohrian",
+  special: "class.affiliationBadge.special",
+};
 
 export default function ClassSkillBrowser({
   availableClassIds,
@@ -34,8 +46,13 @@ export default function ClassSkillBrowser({
   classSkills,
   skillsByClass,
   scope,
+  labelOverrides,
 }: ClassSkillBrowserProps) {
   const instanceId = useId();
+  const { resolve, t } = useLocale();
+  const labelBag = (classId: string, en: string, zh?: string) =>
+    labelOverrides?.[classId] ?? classNames(classId) ?? { en, zhHans: zh };
+  const classLabel = (classId: string, en: string, zh?: string) => resolve(labelBag(classId, en, zh), en);
   const observedClassIds = useRef(new Set(availableClassIds));
   const [faction, setFaction] = useState<FactionFilter>("all");
   const [skillSearch, setSkillSearch] = useState("");
@@ -55,10 +72,10 @@ export default function ClassSkillBrowser({
 
   const classLabels = useMemo(() => new Map(
     classTrees.flatMap((tree) => [
-      [tree.id, tree.label] as const,
-      ...tree.promotions.map((promotion) => [promotion.id, promotion.label] as const),
+      [tree.id, classLabel(tree.id, tree.label, tree.labelZhHans)] as const,
+      ...tree.promotions.map((promotion) => [promotion.id, classLabel(promotion.id, promotion.label, promotion.labelZhHans)] as const),
     ]),
-  ), [classTrees]);
+  ), [classTrees, resolve, labelOverrides]);
   const skillLookup = useMemo(() => new Map(classSkills.map((skill) => [skill.id, skill])), [classSkills]);
   const visibleTrees = useMemo(() => classTrees.flatMap((tree) => {
     const specialTree = tree.categories?.includes("special") ?? false;
@@ -67,15 +84,15 @@ export default function ClassSkillBrowser({
       availableClassIds.has(promotion.id) && matchesClassFilter(promotion.affiliation, faction, specialTree)
     ));
     const searchableClasses = [
-      ...(rootSelectable ? [{ id: tree.id, label: tree.label }] : []),
-      ...promotions.map((promotion) => ({ id: promotion.id, label: promotion.label })),
+      ...(rootSelectable ? [{ id: tree.id, ...toEnZh(labelBag(tree.id, tree.label, tree.labelZhHans)) }] : []),
+      ...promotions.map((promotion) => ({ id: promotion.id, ...toEnZh(labelBag(promotion.id, promotion.label, promotion.labelZhHans)) })),
     ];
     const matchesClassSearch = !classSearch.trim()
-      || searchableClasses.some((classNode) => matchesNameSearch(classNode.label, classSearch));
+      || searchableClasses.some((classNode) => matchesLocalizedName(classNode.en, classNode.zh, classSearch));
     const matchesSkillSearch = !skillSearch.trim()
       || searchableClasses.some((classNode) => (skillsByClass[classNode.id] ?? []).some((edge) => {
         const skill = skillLookup.get(edge.skillId);
-        return skill ? matchesNameSearch(skill.names.en, skillSearch) : false;
+        return skill ? matchesLocalizedName(skill.names.en, skill.names.zhHans, skillSearch) : false;
       }));
 
     return searchableClasses.length > 0 && matchesClassSearch && matchesSkillSearch
@@ -124,11 +141,11 @@ export default function ClassSkillBrowser({
   return (
     <section
       className={`class-skill-browser class-skill-browser-${scope}`}
-      aria-label={scope === "directory" ? "FE14 class skill directory" : "Available class skills"}
+      aria-label={scope === "directory" ? t("class.browser.ariaDirectory") : t("class.browser.ariaUnitProfile")}
     >
       <div className="class-skill-browser-toolbar">
         <div className="class-skill-browser-filters">
-          <ButtonGroup aria-label="Class faction">
+          <ButtonGroup aria-label={t("class.affiliation.aria")}>
             {FACTION_OPTIONS.map((option) => (
               <Button
                 key={option.id}
@@ -138,35 +155,35 @@ export default function ClassSkillBrowser({
                 aria-pressed={faction === option.id}
                 onClick={() => setFaction(option.id)}
               >
-                {option.label}
+                {t(option.labelKey)}
               </Button>
             ))}
           </ButtonGroup>
           <label className="class-skill-search-control">
             <Search aria-hidden="true" size={15} />
-            <span>Skill</span>
+            <span>{t("search.skill")}</span>
             <input
               type="search"
               value={skillSearch}
-              aria-label="Search skill names"
+              aria-label={t("search.skillNames.aria")}
               onChange={(event) => setSkillSearch(event.target.value)}
             />
           </label>
           <label className="class-skill-search-control">
             <Search aria-hidden="true" size={15} />
-            <span>Class</span>
+            <span>{t("search.class")}</span>
             <input
               type="search"
               value={classSearch}
-              aria-label="Search class names"
+              aria-label={t("search.class.aria")}
               onChange={(event) => setClassSearch(event.target.value)}
             />
           </label>
         </div>
-        <span>{selectedClassIds.length} classes · {visibleSkills.length} skills</span>
+        <span>{t("class.browser.count", { classes: selectedClassIds.length, skills: visibleSkills.length })}</span>
       </div>
 
-      <div className="class-skill-tree" aria-label="Class selection">
+      <div className="class-skill-tree" aria-label={t("class.browser.treeAria")}>
         <div className="class-skill-tree-actions">
           <Button
             type="button"
@@ -176,7 +193,7 @@ export default function ClassSkillBrowser({
             disabled={visibleClassIds.length === 0 || allVisibleSelected}
           >
             <CheckCheck aria-hidden="true" size={15} />
-            Select all
+            {t("common.selectAll")}
           </Button>
           <Button
             type="button"
@@ -186,7 +203,7 @@ export default function ClassSkillBrowser({
             disabled={visibleClassIds.length === 0 || selectedClassIds.length === 0}
           >
             <Square aria-hidden="true" size={14} />
-            Deselect all
+            {t("common.deselectAll")}
           </Button>
         </div>
         {visibleTrees.map(({ tree, rootSelectable, promotions }) => {
@@ -203,7 +220,7 @@ export default function ClassSkillBrowser({
               <div className="class-skill-tree-group-header">
                 <TreeSelectionCheckbox
                   allSelected={allTreeClassesSelected}
-                  label={tree.label}
+                  label={classLabel(tree.id, tree.label, tree.labelZhHans)}
                   partiallySelected={selectedTreeClassCount > 0 && !allTreeClassesSelected}
                   onChange={() => setClassesSelected(treeClassIds, !allTreeClassesSelected)}
                 />
@@ -214,7 +231,7 @@ export default function ClassSkillBrowser({
                   contextOnly={!rootSelectable}
                   controlId={`${instanceId}-${tree.id}`}
                   expanded={hasPromotions ? expanded : undefined}
-                  label={tree.label}
+                  label={classLabel(tree.id, tree.label, tree.labelZhHans)}
                   onDisclosure={hasPromotions ? () => toggleTree(tree.id) : undefined}
                   onToggle={() => toggleClass(tree.id)}
                 />
@@ -228,7 +245,7 @@ export default function ClassSkillBrowser({
                       checked={checkedClassIds.has(promotion.id)}
                       classId={promotion.id}
                       controlId={`${instanceId}-${tree.id}-${promotion.id}`}
-                      label={promotion.label}
+                      label={classLabel(promotion.id, promotion.label, promotion.labelZhHans)}
                       onToggle={() => toggleClass(promotion.id)}
                     />
                   ))}
@@ -237,7 +254,7 @@ export default function ClassSkillBrowser({
             </div>
           );
         })}
-        {visibleTrees.length === 0 ? <p className="class-skill-tree-empty">No matching class trees.</p> : null}
+        {visibleTrees.length === 0 ? <p className="class-skill-tree-empty">{t("class.browser.noTrees")}</p> : null}
       </div>
 
       <div className="class-skill-results" aria-live="polite">
@@ -251,9 +268,9 @@ export default function ClassSkillBrowser({
               height={24}
             />
             <div className="class-skill-result-copy">
-              <strong>{skill.names.en}</strong>
-              <p>{skill.description}</p>
-              {skill.notes?.map((note) => <small key={note}>{note}</small>)}
+              <strong>{resolve(skill.names, skill.names.en)}</strong>
+              <p>{resolve({ en: skill.description, zhHans: skill.descriptionZhHans })}</p>
+              {skill.notes?.map((note, index) => <small key={note}>{resolve({ en: note, zhHans: skill.notesZhHans?.[index] })}</small>)}
               <div className="class-skill-acquisitions">
                 {acquisition.map((edge) => (
                   <span key={`${edge.classId}-${edge.level}-${edge.gender ?? "all"}`}>
@@ -265,7 +282,7 @@ export default function ClassSkillBrowser({
             </div>
           </article>
         )) : (
-          <p className="class-skill-empty">No class skills selected.</p>
+          <p className="class-skill-empty">{t("class.browser.noneSelected")}</p>
         )}
       </div>
     </section>
@@ -318,6 +335,7 @@ function ClassRow({
   onDisclosure?: () => void;
   onToggle: () => void;
 }) {
+  const { t } = useLocale();
   const childContainerId = `${controlId}-promotions`;
   return (
     <div className={`class-skill-class-row${contextOnly ? " is-context-only" : ""}`} data-class-id={classId}>
@@ -325,10 +343,10 @@ function ClassRow({
         <button
           type="button"
           className="class-skill-disclosure"
-          aria-label={`${expanded ? "Collapse" : "Expand"} ${label} promotions`}
+          aria-label={t(expanded ? "class.collapsePromotions" : "class.expandPromotions", { label })}
           aria-controls={childContainerId}
           aria-expanded={expanded}
-          title={`${expanded ? "Collapse" : "Expand"} ${label} promotions`}
+          title={t(expanded ? "class.collapsePromotions" : "class.expandPromotions", { label })}
           onClick={onDisclosure}
         >
           {expanded ? <ChevronDown aria-hidden="true" size={16} /> : <ChevronRight aria-hidden="true" size={16} />}
@@ -346,7 +364,7 @@ function ClassRow({
           />
           <label htmlFor={controlId}>{label}</label>
           <span className={`class-affiliation class-affiliation-${affiliation}`}>
-            {affiliation === "special" ? "Special" : capitalize(affiliation)}
+            {t(AFFILIATION_BADGE_KEYS[affiliation])}
           </span>
         </>
       )}
@@ -380,6 +398,18 @@ function matchesClassFilter(
   if (faction === "all") return true;
   if (faction === "special") return specialTree;
   return affiliation === faction;
+}
+
+function toEnZh(bag: { en: string; zhHans?: string }): { en: string; zh: string | undefined } {
+  return { en: bag.en, zh: bag.zhHans };
+}
+
+// Matches an English name (word-based) or a Simplified-Chinese name (substring,
+// so CJK queries work) against the query.
+function matchesLocalizedName(en: string, zh: string | undefined, query: string): boolean {
+  if (matchesNameSearch(en, query)) return true;
+  const trimmed = query.trim().toLocaleLowerCase();
+  return Boolean(zh && trimmed && zh.toLocaleLowerCase().includes(trimmed));
 }
 
 function matchesNameSearch(name: string, query: string): boolean {

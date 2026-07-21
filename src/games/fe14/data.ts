@@ -94,11 +94,18 @@ export interface UnitIdentity {
   dragonVein?: boolean;
   unitTags?: Array<"dragon" | "beast">;
   personalSkillId?: string;
-  notes?: string[];
+  notes?: Array<{
+    text: string;
+    textZhHans?: string;
+    routes?: string[];
+    availabilityIds?: string[];
+  }>;
   supportNotes?: string[];
+  supportNotesZhHans?: string[];
   generation: "first" | "second";
   paralogueNo?: number;
   paralogueTitle?: string;
+  paralogueTitleZhHans?: string;
   fixedParentUnitId?: string;
 }
 
@@ -116,6 +123,7 @@ export interface StatBlock {
 export interface AvatarChoice {
   id: string;
   label: string;
+  labelZhHans?: string;
   stat: keyof StatBlock;
   baseDeltas: Partial<StatBlock>;
   growthDeltas: Partial<StatBlock>;
@@ -141,10 +149,12 @@ export interface AvatarConfiguration {
     commitsToSingleFriend: false;
     bottleneck: "missable_class_access";
     note: string;
+    noteZhHans?: string;
   };
   pairupRule: {
     variableBy: ["boon", "bane"];
     note: string;
+    noteZhHans?: string;
     attackStance: {
       reviewStatus: "accepted";
       semantics: string;
@@ -175,7 +185,14 @@ export interface UnitRuntime {
     id: string;
     scenarioLabel?: string;
     avatarGender?: string;
-    routeJoins: Array<{ route: string; chapter: number; timing: string; turn?: number }>;
+    routeJoins: Array<{
+      route: string;
+      chapter: number;
+      timing: string;
+      turn?: number;
+      condition?: string;
+      conditionZhHans?: string;
+    }>;
     level: number;
     classId: string;
     gainsExperience?: boolean;
@@ -185,6 +202,7 @@ export interface UnitRuntime {
       facilityLevel: number;
       refreshMethods: Array<"real_time" | "map_completion">;
       note: string;
+      noteZhHans?: string;
     };
     dlcRecruitment?: {
       mapId: string;
@@ -200,6 +218,7 @@ export interface UnitRuntime {
         latestChapter: number;
         carriesIntoRecruitedUnit: false;
         note: string;
+        noteZhHans?: string;
       };
     };
     autoLevel?: {
@@ -223,6 +242,7 @@ export interface UnitRuntime {
       weaponProficiencyMilestonesStatus: "unresolved";
       evidenceStatus: "tested" | "partial" | "accepted";
       note: string;
+      noteZhHans?: string;
     };
     inventory: string[];
     inventoryByDifficulty?: {
@@ -244,6 +264,7 @@ export interface UnitRuntime {
       requirement: { kind: "support_rank"; partnerUnitId: string; minimumRank: string };
       onFailure: "permanent_departure";
       note: string;
+      noteZhHans?: string;
     };
     chapter5Carryover?: {
       sourceAvailabilityId: string;
@@ -252,6 +273,7 @@ export interface UnitRuntime {
       statCalculation: string;
       weaponProficiencyCalculation?: string;
       note: string;
+      noteZhHans?: string;
     };
   }>;
   baseStats: Array<Record<string, unknown> & {
@@ -289,8 +311,9 @@ export interface UnitRuntime {
   classAccess: (Record<string, unknown> & { startingClassId: string; baseClassSet: string[]; heartSealClassSet: string[]; corrinTalentOnlyClassSet: string[]; sealGrants: SealGrant[] }) | null;
   personalSkill: (Record<string, unknown> & {
     id: string;
-    names: { en: string };
+    names: { en: string; zhHans?: string };
     effect: string;
+    effectZhHans?: string;
     iconAssetId: string;
   }) | null;
   offspring: OffspringData | null;
@@ -322,6 +345,7 @@ export interface OffspringData {
     childBaseClassId: string;
     childBaseGrowth: StatBlock;
     notes?: string[];
+    notesZhHans?: string[];
     formulas: Record<string, unknown>;
     supports: Array<{
       partnerUnitId: string;
@@ -346,14 +370,17 @@ export interface OffspringData {
   recruitment: {
     paralogueNo: number;
     paralogueTitle: string;
+    paralogueTitleZhHans?: string;
     initialFaction: "player" | "npc" | "enemy" | "not_deployed";
     recruitment: {
       description: string;
+      descriptionZhHans?: string;
       talkUnitId?: string;
       automaticAtMapEndIfSurvives: boolean;
       deathBeforeRecruitmentIsPermanent: boolean;
     };
     recruitmentNotes?: string[];
+    recruitmentNotesZhHans?: string[];
     startingClassId: string;
     level10PersonalBases: StatBlock;
     level10MinimumStatsBeforeInheritance: StatBlock;
@@ -378,6 +405,7 @@ export interface OffspringData {
       offspringSealLevelFormula: "map_level - promoted_internal_level_offset";
       knownMapLevelsByChapter: Record<string, number>;
       note: string;
+      noteZhHans?: string;
     };
     offspringSeal: {
       availableFromChapter: 19;
@@ -385,6 +413,7 @@ export interface OffspringData {
       promotionOptions: Array<{
         classId: string;
         displayName: string;
+        displayNameZhHans?: string;
         routes?: string[];
         classBaseStats: StatBlock;
         promotionGains: StatBlock;
@@ -418,6 +447,7 @@ export interface SealGrant {
 export interface ClassTree {
   id: string;
   label: string;
+  labelZhHans?: string;
   affiliation: ClassAffiliation;
   categories?: ClassCategory[];
   promotions: ClassTreeNode[];
@@ -429,12 +459,14 @@ export type ClassCategory = "special";
 export interface ClassTreeNode {
   id: string;
   label: string;
+  labelZhHans?: string;
   affiliation: ClassAffiliation;
 }
 
 export interface ClassStatProfile {
   classId: string;
   displayName: string;
+  displayNameZhHans?: string;
   tier: "base" | "advanced" | "special";
   growthRates: StatBlock;
   maximumStats: StatBlock;
@@ -449,11 +481,13 @@ export interface ClassSkillAcquisition {
 
 export interface ClassSkill {
   id: string;
-  names: { en: string };
+  names: { en: string; zhHans?: string };
   description: string;
+  descriptionZhHans?: string;
   iconAssetId: string;
   acquisition: ClassSkillAcquisition[];
   notes?: string[];
+  notesZhHans?: string[];
 }
 
 export interface ClassSkillIndexEntry {
@@ -464,7 +498,7 @@ export interface ClassSkillIndexEntry {
 
 export interface WeaponType {
   id: string;
-  names: { en: string };
+  names: { en: string; zhHans?: string };
   iconAssetId: string;
   displayOrder: number;
 }
@@ -578,6 +612,19 @@ export function findUnitBySlug(slug: string): UnitRuntime | undefined {
   return fe14Data.units.find(
     (unit) => unit.identity.slug.toLocaleLowerCase() === slug.toLocaleLowerCase(),
   );
+}
+
+const classLabelById = new Map<string, { en: string; zhHans?: string }>();
+for (const tree of fe14Data.classTrees) {
+  classLabelById.set(tree.id, { en: tree.label, zhHans: tree.labelZhHans });
+  for (const promotion of tree.promotions) {
+    classLabelById.set(promotion.id, { en: promotion.label, zhHans: promotion.labelZhHans });
+  }
+}
+
+// Localized class-name bag for a class id, for use with the i18n resolver.
+export function classNames(classId: string): { en: string; zhHans?: string } | undefined {
+  return classLabelById.get(classId);
 }
 
 export function displayId(value: string): string {

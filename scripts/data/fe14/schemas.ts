@@ -76,8 +76,14 @@ const rosterUnitSchema = z.object({
   dragonVein: z.boolean().optional(),
   unitTags: z.array(z.enum(["dragon", "beast"])).max(2).optional(),
   personalSkillId: z.string().optional(),
-  notes: z.array(z.string().min(1)).optional(),
+  notes: z.array(z.object({
+    text: z.string().min(1),
+    textZhHans: z.string().min(1).optional(),
+    routes: z.array(routeSchema).min(1).optional(),
+    availabilityIds: z.array(z.string().min(1)).min(1).optional(),
+  })).optional(),
   supportNotes: z.array(z.string().min(1)).optional(),
+  supportNotesZhHans: z.array(z.string().min(1)).optional(),
 });
 
 export const rosterSchema = z.object({
@@ -93,6 +99,7 @@ export const secondGenerationRosterSchema = z.object({
     generation: z.literal("second"),
     paralogueNo: z.number().int().min(2).max(22),
     paralogueTitle: z.string().min(1),
+    paralogueTitleZhHans: z.string().min(1).optional(),
     fixedParentUnitId: z.string().min(1),
   })).length(21),
 });
@@ -160,6 +167,7 @@ export const childParentageFileSchema = z.array(z.object({
   childBaseClassId: z.string().min(1),
   childBaseGrowth: statBlockSchema,
   notes: z.array(z.string().min(1)).optional(),
+  notesZhHans: z.array(z.string().min(1)).optional(),
   formulas: z.object({
     personalGrowth: z.literal("floor((child_base + variable_parent) / 2)"),
     capModifiers: z.enum(["fixed_parent + variable_parent + 1", "fixed_parent + variable_parent + generation_bonus"]),
@@ -182,6 +190,16 @@ const availabilitySchema = z.object({
         chapter: z.number().int().nonnegative(),
         timing: z.enum(["start", "during", "end", "conditional"]),
         turn: z.number().int().positive().optional(),
+        condition: z.string().min(1).optional(),
+        conditionZhHans: z.string().min(1).optional(),
+      }).superRefine((join, context) => {
+        if (join.timing === "conditional" && !join.condition) {
+          context.addIssue({
+            code: z.ZodIssueCode.custom,
+            path: ["condition"],
+            message: "Conditional route joins must explain their recruitment condition",
+          });
+        }
       }),
     )
     .min(1),
@@ -197,6 +215,7 @@ const availabilitySchema = z.object({
         .array(z.enum(["real_time", "map_completion"]))
         .min(1),
       note: z.string().min(1),
+      noteZhHans: z.string().min(1).optional(),
     })
     .refine(
       ({ facilityId, facilityIds }) => Boolean(facilityId) !== Boolean(facilityIds),
@@ -218,6 +237,7 @@ const availabilitySchema = z.object({
         latestChapter: z.number().int().nonnegative(),
         carriesIntoRecruitedUnit: z.literal(false),
         note: z.string().min(1),
+        noteZhHans: z.string().min(1).optional(),
       }),
     })
     .optional(),
@@ -247,6 +267,7 @@ const availabilitySchema = z.object({
       weaponProficiencyMilestonesStatus: z.literal("unresolved"),
       evidenceStatus: z.enum(["tested", "partial", "accepted"]),
       note: z.string().min(1),
+      noteZhHans: z.string().min(1).optional(),
     })
     .optional(),
   temporarilyLeavesAfterChapter: z.number().int().nonnegative().optional(),
@@ -276,6 +297,7 @@ const availabilitySchema = z.object({
       }),
       onFailure: z.literal("permanent_departure"),
       note: z.string().min(1),
+      noteZhHans: z.string().min(1).optional(),
     })
     .optional(),
   chapter5Carryover: z
@@ -297,6 +319,7 @@ const availabilitySchema = z.object({
         ])
         .optional(),
       note: z.string().min(1),
+      noteZhHans: z.string().min(1).optional(),
     })
     .optional(),
   inventory: z.array(z.string().min(1)),
@@ -316,14 +339,17 @@ export const childRecruitmentFileSchema = z.array(z.object({
   unitId: z.string().min(1),
   paralogueNo: z.number().int().min(2).max(22),
   paralogueTitle: z.string().min(1),
+  paralogueTitleZhHans: z.string().min(1).optional(),
   initialFaction: z.enum(["player", "npc", "enemy", "not_deployed"]),
   recruitment: z.object({
     description: z.string().min(1),
+    descriptionZhHans: z.string().min(1).optional(),
     talkUnitId: z.string().min(1).optional(),
     automaticAtMapEndIfSurvives: z.boolean(),
     deathBeforeRecruitmentIsPermanent: z.boolean(),
   }),
   recruitmentNotes: z.array(z.string().min(1)).optional(),
+  recruitmentNotesZhHans: z.array(z.string().min(1)).optional(),
   startingClassId: z.string().min(1),
   level10PersonalBases: statBlockSchema,
   level10MinimumStatsBeforeInheritance: statBlockSchema,
@@ -352,6 +378,7 @@ export const childRecruitmentFileSchema = z.array(z.object({
     offspringSealLevelFormula: z.literal("map_level - promoted_internal_level_offset"),
     knownMapLevelsByChapter: z.record(z.string(), z.number().int().nonnegative()),
     note: z.string().min(1),
+    noteZhHans: z.string().min(1).optional(),
   }),
   offspringSeal: z.object({
     availableFromChapter: z.literal(19),
@@ -359,6 +386,7 @@ export const childRecruitmentFileSchema = z.array(z.object({
     promotionOptions: z.array(z.object({
       classId: z.string().min(1),
       displayName: z.string().min(1),
+      displayNameZhHans: z.string().min(1).optional(),
       routes: z.array(routeSchema).min(1).optional(),
       classBaseStats: statBlockSchema,
       promotionGains: statBlockSchema,
@@ -471,6 +499,7 @@ const avatarCapDeltaSchema = z.record(
 const avatarChoiceSchema = z.object({
   id: z.string().min(1),
   label: z.string().min(1),
+  labelZhHans: z.string().min(1).optional(),
   stat: z.enum(["hp", "strength", "magic", "skill", "speed", "luck", "defense", "resistance"]),
   baseDeltas: avatarDeltaSchema,
   growthDeltas: avatarDeltaSchema,
@@ -526,10 +555,12 @@ export const avatarConfigurationsFileSchema = z.array(
       commitsToSingleFriend: z.literal(false),
       bottleneck: z.literal("missable_class_access"),
       note: z.string().min(1),
+      noteZhHans: z.string().min(1).optional(),
     }),
     pairupRule: z.object({
       variableBy: z.tuple([z.literal("boon"), z.literal("bane")]),
       note: z.string().min(1),
+      noteZhHans: z.string().min(1).optional(),
       attackStance: z.object({
         reviewStatus: z.literal("accepted"),
         semantics: z.string().min(1),
@@ -655,6 +686,7 @@ export const personalSkillsFileSchema = z.array(
     unitId: z.string().min(1),
     names: z.object({ en: z.string().min(1), zhHans: z.string().min(1) }),
     effect: z.string().min(1),
+    effectZhHans: z.string().min(1).optional(),
     iconAssetId: z.string().regex(/^[a-z][a-z0-9_]*$/),
     provenance: z.array(sourceRefSchema).min(1),
   }),
@@ -666,6 +698,7 @@ export const classCategorySchema = z.enum(["special"]);
 const classTreeNodeSchema = z.object({
   id: z.string().regex(/^[a-z][a-z0-9_]*$/),
   label: z.string().min(1),
+  labelZhHans: z.string().min(1).optional(),
   affiliation: classAffiliationSchema,
 });
 
@@ -690,6 +723,7 @@ export const classStatsFileSchema = z.object({
   classes: z.array(z.object({
     classId: z.string().min(1),
     displayName: z.string().min(1),
+    displayNameZhHans: z.string().min(1).optional(),
     tier: z.enum(["base", "advanced", "special"]),
     growthRates: statBlockSchema,
     maximumStats: statBlockSchema,
@@ -705,7 +739,7 @@ export const weaponTypesFileSchema = z.object({
   scope: z.literal("standard_playable_non_dlc"),
   weaponTypes: z.array(z.object({
     id: weaponTypeIdSchema,
-    names: z.object({ en: z.string().min(1) }),
+    names: z.object({ en: z.string().min(1), zhHans: z.string().min(1).optional() }),
     iconAssetId: weaponTypeIdSchema,
     displayOrder: z.number().int().positive(),
     provenance: z.array(sourceRefSchema).min(1),
@@ -740,11 +774,13 @@ export const classSkillsFileSchema = z.object({
   skills: z.array(
     z.object({
       id: z.string().regex(/^[a-z][a-z0-9_]*$/),
-      names: z.object({ en: z.string().min(1) }),
+      names: z.object({ en: z.string().min(1), zhHans: z.string().min(1).optional() }),
       description: z.string().min(1),
+      descriptionZhHans: z.string().min(1).optional(),
       iconAssetId: z.string().regex(/^[a-z][a-z0-9_]*$/),
       acquisition: z.array(classSkillAcquisitionSchema).min(1),
       notes: z.array(z.string().min(1)).optional(),
+      notesZhHans: z.array(z.string().min(1)).optional(),
       provenance: z.array(sourceRefSchema).min(1),
     }),
   ).min(1),

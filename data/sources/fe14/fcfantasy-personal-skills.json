@@ -1,0 +1,353 @@
+{
+  "sourceId": "fcfantasy-fe14-personal-skills",
+  "sourceUrl": "http://fcfantasy.cn/fe2015/database/personal_skills.html",
+  "capturedAt": "2026-07-20T07:42:08.692Z",
+  "rowCount": 69,
+  "rows": [
+    {
+      "character": "神威 カムイ Kamui",
+      "skill": "不可思议的魅力 不思議な魅力",
+      "description": "充当后卫时，如果和前卫的支援至少达到C，前卫的命中+10，伤害+2，受到的伤害-2"
+    },
+    {
+      "character": "菲利西亚 フェリシア Felicia",
+      "skill": "绝对援护 絶対援護",
+      "description": "充当后卫时，如果前卫是主人公，前卫的伤害+2，受到的伤害-2"
+    },
+    {
+      "character": "乔克 ジョーカー Joker",
+      "skill": "绝对死守 絶対死守",
+      "description": "充当后卫时，如果前卫是主人公，前卫的回避+15，受到的伤害-3"
+    },
+    {
+      "character": "凉风 スズカゼ Suzukaze",
+      "skill": "羁绊的祈祷 絆の祈り",
+      "description": "发动率＝前卫的幸运%。充当后卫时，前卫受到致命攻击时可以残留1HP"
+    },
+    {
+      "character": "阿库娅 アクア Aqua",
+      "skill": "治愈之声 癒しの声",
+      "description": "回合开始时，周围2格内的同伴HP回复10%"
+    },
+    {
+      "character": "塞拉斯 サイラス Silas",
+      "skill": "友情的誓言 友情の誓い",
+      "description": "我方的主人公HP在一半以下时，自己的伤害+3，受到的伤害-3"
+    },
+    {
+      "character": "物集 モズメ Mozume",
+      "skill": "农场主 農地の主",
+      "description": "回合开始时如果在山地、林地、荒地、田地等地形，HP回复20%"
+    },
+    {
+      "character": "阿修罗 アシュラ Ashura",
+      "skill": "出阴招 ダーティファイト",
+      "description": "自己发动攻击，敌方无法反击时，战斗后敌方的力、速-3，持续1回合"
+    },
+    {
+      "character": "伊邪那 イザナ Izana",
+      "skill": "美貌的王者 美しき王",
+      "description": "周围2格内的敌我双方受到的伤害-2"
+    },
+    {
+      "character": "樱 サクラ Sakura",
+      "skill": "小声声援 小さな声援",
+      "description": "周围2格内的同伴受到的伤害-2"
+    },
+    {
+      "character": "燐火 リンカ Rinka",
+      "skill": "炎之血 炎の血",
+      "description": "HP不满时伤害+4"
+    },
+    {
+      "character": "风花 カザハナ Kazahana",
+      "skill": "野丫头 お転婆",
+      "description": "自己发动攻击且击倒敌方后，和自己邻接的所有敌方HP减少20%"
+    },
+    {
+      "character": "椿 ツバキ Tsubaki",
+      "skill": "完美主义 完璧主義",
+      "description": "HP满时命中、回避+15"
+    },
+    {
+      "character": "才藏 サイゾウ Saizou",
+      "skill": "爆炎使 爆炎使い",
+      "description": "自己在HP低于一半时发动攻击，自己周围2格内的敌方HP减少20%"
+    },
+    {
+      "character": "远吕智 オロチ Orochi",
+      "skill": "白夜的捕缚术 白夜の捕縛術",
+      "description": "城堡里有牢房设施后，可使用捕获指令，击倒敌方即可将他抓入牢房"
+    },
+    {
+      "character": "日乃香 ヒノカ Hinoka",
+      "skill": "叱咤激励 叱咤激励",
+      "description": "周围2格内的同伴伤害+2"
+    },
+    {
+      "character": "浅间 アサマ Asama",
+      "skill": "天罚 天罰",
+      "description": "自己没有装备武器时受到邻接敌方的攻击，将伤害的一半反弹给敌方"
+    },
+    {
+      "character": "刹那 セツナ Setsuna",
+      "skill": "无所事事 ぼんやり",
+      "description": "接受杖回复时回复量为通常的1.5倍"
+    },
+    {
+      "character": "月读 ツクヨミ Tsukuyomi",
+      "skill": "骄傲自大 尊大",
+      "description": "自己比敌方等级低时，伤害+4（上位职业的等级按+20算）"
+    },
+    {
+      "character": "胧 オボロ Oboro",
+      "skill": "讨厌暗夜 暗夜嫌い",
+      "description": "和暗夜相关的敌方战斗时，伤害+3"
+    },
+    {
+      "character": "日向 ヒナタ Hinata",
+      "skill": "垂死挣扎 悪あがき",
+      "description": "自己HP低于一半时受到剑、枪、斧的攻击时，将伤害的一半反弹给敌方"
+    },
+    {
+      "character": "拓海 タクミ Takumi",
+      "skill": "对抗意识 対抗意識",
+      "description": "充当前卫，且自己比后卫等级低时，必杀+10，伤害+3，受到的伤害-1"
+    },
+    {
+      "character": "阳炎 カゲロウ Kagerou",
+      "skill": "忍法车返 忍法車返し",
+      "description": "受到暗器系武器攻击时，将伤害的一半反弹给敌方，能力减少效果也反弹给敌方"
+    },
+    {
+      "character": "夕雾 ユウギリ Yuugiri",
+      "skill": "胜者的愉悦 勝者の愉悦",
+      "description": "自己发动攻击且击倒敌方后，HP回复20%"
+    },
+    {
+      "character": "锦 ニシキ Nishiki",
+      "skill": "报恩 恩返し",
+      "description": "被同伴用杖回复HP时，同伴也能回复一半量的HP"
+    },
+    {
+      "character": "龙马 リョウマ Ryouma",
+      "skill": "武士道 武士道",
+      "description": "充当前卫，且自己比后卫等级高时，必杀+10，伤害+2，受到的伤害-2"
+    },
+    {
+      "character": "克莉莫森 クリムゾン Crimson",
+      "skill": "胜利的执念 勝利への執念",
+      "description": "自己HP低于1/4时，必杀+30"
+    },
+    {
+      "character": "幸村 ユキムラ Yukimura",
+      "skill": "军略传授 軍略伝授",
+      "description": "我方全员命中+5"
+    },
+    {
+      "character": "爱丽丝 エリーゼ Elise",
+      "skill": "可爱之花 可憐な花",
+      "description": "邻接的同伴伤害+1，受到的伤害-3"
+    },
+    {
+      "character": "哈罗德 ハロルド Harold",
+      "skill": "倒霉蛋 不運の塊",
+      "description": "周围2格内的敌方必杀回避-15，自己的必杀回避-5"
+    },
+    {
+      "character": "艾尔菲 エルフィ Elfie",
+      "skill": "怪力 怪力",
+      "description": "战斗时，如果自己的力比敌方高5点及以上，伤害+3"
+    },
+    {
+      "character": "奥丁 オーディン Odin",
+      "skill": "血之痛感 血の疼き",
+      "description": "如果装备的武器名称由8个汉字组成，必杀+10"
+    },
+    {
+      "character": "零 ゼロ Zero",
+      "skill": "暗夜的拘束术 暗夜の拘束術",
+      "description": "城堡里有牢房设施后，可使用捕获指令，击倒敌方即可将他抓入牢房"
+    },
+    {
+      "character": "妮克丝 ニュクス Nyx",
+      "skill": "诅咒返还 呪詛返し",
+      "description": "敌方使用魔法攻击时，将伤害的一半反弹给敌方"
+    },
+    {
+      "character": "卡米拉 カミラ Camilla",
+      "skill": "妖艳之花 妖艶な花",
+      "description": "邻接的同伴伤害+3，受到的伤害-1"
+    },
+    {
+      "character": "露娜 ルーナ Luna",
+      "skill": "争强好胜 負けん気",
+      "description": "自己充当后卫时，如果前卫发动必杀，自己的攻击命中的话也一定是必杀"
+    },
+    {
+      "character": "贝尔卡 ベルカ Belka",
+      "skill": "奇袭任务 奇襲任務",
+      "description": "自己发动攻击时，如果敌方无法反击，伤害+4"
+    },
+    {
+      "character": "拉兹沃德 ラズワルド Lazward",
+      "skill": "青色的舞蹈 青の踊り",
+      "description": "可使用应援（応援）指令，使周围2格内的同伴1回合内力、速+1"
+    },
+    {
+      "character": "皮艾莉 ピエリ Pieri",
+      "skill": "杀戮本能 殺戮本能",
+      "description": "自己发动攻击且击倒敌方时，力、魔力、技、速+4，持续1回合"
+    },
+    {
+      "character": "贝诺特 ブノワ Benoit",
+      "skill": "强面 強面",
+      "description": "周围2格内的敌方回避-10"
+    },
+    {
+      "character": "夏洛特 シャーロッテ Charlotte",
+      "skill": "女人的本性 女の本性",
+      "description": "敌方是女性时，伤害+4，必杀+20"
+    },
+    {
+      "character": "利昂 レオン Leon",
+      "skill": "冷血 冷血",
+      "description": "战斗时如果敌方HP不满，自己的伤害+3，受到的伤害-1"
+    },
+    {
+      "character": "弗拉内尔 フランネル Flannel",
+      "skill": "采集 拾いもの",
+      "description": "发动率＝幸运%。在前7个回合每次行动完毕有机会获得3个矿石和食材"
+    },
+    {
+      "character": "甘特 ギュンター Gunter",
+      "skill": "绝对进攻 絶対進攻",
+      "description": "充当后卫时，如果前卫是主人公，前卫的命中+15，伤害+3"
+    },
+    {
+      "character": "马克斯 マークス Marx",
+      "skill": "骑士道 騎士道",
+      "description": "战斗时如果敌方HP满，自己的伤害+2，受到的伤害-2"
+    },
+    {
+      "character": "芙洛拉 フローラ Flora",
+      "skill": "冰之血 氷の血",
+      "description": "自己HP不满且受到间接攻击时，将伤害的一半反弹给敌方，敌方技、速-3"
+    },
+    {
+      "character": "神奈 カンナ Kanna",
+      "skill": "龙之子 竜の御子",
+      "description": "回合开始时如果装备着龙石，HP回复15%"
+    },
+    {
+      "character": "时雨 シグレ Shigure",
+      "skill": "调音 チューニング",
+      "description": "可使用应援（応援）指令，使周围2格内的HP比自己低的同伴回复10%HP"
+    },
+    {
+      "character": "迪尔 ディーア Deere",
+      "skill": "管家的素养 執事の嗜み",
+      "description": "在我的城堡战斗时，命中、回避+20，伤害+2，受到的伤害-2"
+    },
+    {
+      "character": "索菲 ゾフィー Sophie",
+      "skill": "冒失鬼 おっちょこちょい",
+      "description": "自己的攻击命中时，敌方的守备-3，衣服会被撕坏"
+    },
+    {
+      "character": "绿子 ミドリコ Midoriko",
+      "skill": "幸运的符咒 幸運のおまじない",
+      "description": "发动率和幸运相关的特技发动率+20%"
+    },
+    {
+      "character": "东云 シノノメ Shinonome",
+      "skill": "大义之勇 大義の勇",
+      "description": "自己充当前卫时，如果后卫的HP不满，自己伤害+3，受到的伤害-1"
+    },
+    {
+      "character": "如月 キサラギ Kisaragi",
+      "skill": "乐天派 前向き",
+      "description": "使用待机指令时，速+4，幸运+8，持续1回合"
+    },
+    {
+      "character": "暮井 グレイ Grey",
+      "skill": "甜品控 甘党",
+      "description": "使用待机指令时，偷偷吃一个甜品以回复4点HP"
+    },
+    {
+      "character": "绢 キヌ Kinu",
+      "skill": "游戏时间 じゃれつき",
+      "description": "回合开始时，和自己邻接的所有敌方HP-5"
+    },
+    {
+      "character": "冰雨 ヒサメ Hisame",
+      "skill": "冷静沉着 冷静沈着",
+      "description": "使用待机指令时，技+4，魔防+4，持续1回合"
+    },
+    {
+      "character": "御灵 ミタマ Mitama",
+      "skill": "五七五 五・七・五",
+      "description": "回合开始时，如果两个同伴以御灵为中心排成一直线，三人各回复5、7、5点HP"
+    },
+    {
+      "character": "缠 マトイ Matoi",
+      "skill": "天才 天才肌",
+      "description": "战斗开始时，敌方力和魔力的较高者如果比自己的相应属性高，自己的伤害+4"
+    },
+    {
+      "character": "沙罗 シャラ Shara",
+      "skill": "执念 執念",
+      "description": "在重复进行的地图中战斗时，伤害+4"
+    },
+    {
+      "character": "齐格贝特 ジークベルト Siegbert",
+      "skill": "女士优先 レディーファースト",
+      "description": "自己充当后卫时，如果前卫是女性，前卫的伤害+2"
+    },
+    {
+      "character": "弗利欧 フォレオ Foleo",
+      "skill": "欺骗攻击 だまし討ち",
+      "description": "受到男性敌方的攻击时，伤害+2"
+    },
+    {
+      "character": "伊格尼斯 イグニス Ignis",
+      "skill": "胆小鬼 臆病",
+      "description": "自己充当前卫时，受到的伤害-2。自己不处于攻阵、防阵时，受到的伤害+2"
+    },
+    {
+      "character": "维露娅 ベロア Velour",
+      "skill": "不挑食 ひろい食い",
+      "description": "发动率＝幸运%。回合开始时HP回复10"
+    },
+    {
+      "character": "露兹 ルッツ Lutz",
+      "skill": "幸运儿 強運の塊",
+      "description": "必杀回避+5，周围2格内的同伴必杀回避+15"
+    },
+    {
+      "character": "奥菲利娅 オフェリア Ophelia",
+      "skill": "少女之心的跳动 乙女心の躍動",
+      "description": "携带3本及以上魔法书时，必杀+10"
+    },
+    {
+      "character": "索莱尔 ソレイユ Soleil",
+      "skill": "喜欢女性 女の子好き",
+      "description": "自己充当前卫时，如果后卫是女性，自己的伤害+2，受到的伤害-2"
+    },
+    {
+      "character": "艾潘妮 エポニーヌ Eponine",
+      "skill": "邪恶的空想 邪な空想",
+      "description": "自己和男性组成防阵、或和男性邻接时，自己的伤害+2，受到的伤害-2"
+    },
+    {
+      "character": "安娜 アンナ Anna",
+      "skill": "一攫千金 一攫千金",
+      "description": "发动率＝幸运%。击倒敌方时可获得金币"
+    },
+    {
+      "character": "风雅 フウガ Fuuga",
+      "skill": "风之血 風の血",
+      "description": "HP不满时命中、回避+10"
+    }
+  ]
+}

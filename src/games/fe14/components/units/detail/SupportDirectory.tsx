@@ -5,6 +5,23 @@ import { ClassTreeLabel } from "./ClassTree";
 import { avatarTalentClassIds } from "./AvatarConfiguration";
 import type { AvatarSelection } from "./types";
 import { corrinBorrowedClassId, formatRoute } from "./utils";
+import { useLocale } from "../../../../../i18n/LocaleContext";
+
+type LocaleApi = ReturnType<typeof useLocale>;
+type Translate = LocaleApi["t"];
+type Resolver = LocaleApi["resolve"];
+
+function partnerNameOf(
+  support: UnitRuntime["supports"][number],
+  partnerIdentity: UnitRuntime["identity"] | undefined,
+  t: Translate,
+  resolve: Resolver,
+): string {
+  if (support.partnerUnitId !== "corrin") {
+    return partnerIdentity ? resolve(partnerIdentity.names, partnerIdentity.displayName) : displayId(support.partnerUnitId);
+  }
+  return t(support.partnerGender === "male" ? "support.corrinMale" : "support.corrinFemale");
+}
 
 export type SealPreviewKind = "friendship" | "partner";
 
@@ -29,6 +46,7 @@ export default function SupportDirectory({
   selectedSealPreviews: SealGrantPreviews;
   onSealPreviewChange: (seal: SealPreviewKind, preview: SealGrantPreview | null) => void;
 }) {
+  const { t, resolve } = useLocale();
   const grantsBySupport = new Map<string, SealGrant>(
     (unit.classAccess?.sealGrants ?? []).map((grant) => [grant.supportRelationshipId, grant]),
   );
@@ -81,8 +99,8 @@ export default function SupportDirectory({
   const previewOptions = {
     friendship: unit.identity.id === "corrin"
       ? []
-      : buildPreviewOptions(friendship, grantsBySupport, rosterById, "friendship"),
-    partner: buildPreviewOptions(romantic, grantsBySupport, rosterById, "partner"),
+      : buildPreviewOptions(friendship, grantsBySupport, rosterById, "friendship", t, resolve),
+    partner: buildPreviewOptions(romantic, grantsBySupport, rosterById, "partner", t, resolve),
   };
   const friendshipOptionSignature = previewOptions.friendship
     .map((option) => `${option.supportId}:${option.grantedClassId}`)
@@ -115,22 +133,20 @@ export default function SupportDirectory({
 
   return (
     <div>
-      {unit.identity.supportNotes?.map((note) => (
+      {unit.identity.supportNotes?.map((note, index) => (
         <p className="support-availability-note" key={note}>
-          <strong>Support availability:</strong> {note}
+          <strong>{t("support.availability")}</strong> {resolve({ en: note, zhHans: unit.identity.supportNotesZhHans?.[index] })}
         </p>
       ))}
       {unit.identity.id === "corrin" ? (
         <p className="support-availability-note">
-          <strong>Friendship Seal access:</strong> Every same-gender A support grants its listed class tree. Corrin
-          does not commit to a single A+ partner, so all currently available Friendship trees appear together in
-          Build access.
+          <strong>{t("support.friendshipAccessTitle")}</strong> {t("support.friendshipAccessBody")}
         </p>
       ) : null}
       <div className="support-groups">
         <div className="support-column support-column-friendship">
           <SupportGroup
-            title={unit.identity.id === "corrin" ? "Friendship Seal (same-gender A)" : "Friendship Seal (A+)"}
+            title={unit.identity.id === "corrin" ? t("support.group.friendshipCorrin") : t("support.group.friendship")}
             supports={friendship}
             grants={grantsBySupport}
             groupName={unit.identity.id === "corrin" ? undefined : `${unit.identity.id}-friendship-seal-preview`}
@@ -138,11 +154,11 @@ export default function SupportDirectory({
             selectedPreview={unit.identity.id === "corrin" ? undefined : selectedSealPreviews.friendship}
             onPreviewChange={unit.identity.id === "corrin" ? undefined : onSealPreviewChange}
           />
-          <SupportGroup title="A support (no class grant)" supports={noClassGrant} grants={grantsBySupport} />
+          <SupportGroup title={t("support.group.noGrant")} supports={noClassGrant} grants={grantsBySupport} />
         </div>
         <div className="support-column support-column-partner">
           <SupportGroup
-            title="Partner Seal (S)"
+            title={t("support.group.partner")}
             supports={romantic}
             grants={grantsBySupport}
             groupName={`${unit.identity.id}-partner-seal-preview`}
@@ -156,8 +172,8 @@ export default function SupportDirectory({
         <p className="seal-owned-legend">
           <TriangleAlert aria-hidden="true" size={17} />
           <span>
-            <strong>Caution:</strong> Marked classes are already available through this unit&apos;s{" "}
-            {formatOwnedSources(alreadyOwnedVia)}. The listed seal does not add a new class tree.
+            <strong>{t("support.caution")}</strong>{" "}
+            {t("support.ownedBody", { sources: formatOwnedSources(alreadyOwnedVia, t) })}
           </span>
         </p>
       ) : null}
@@ -182,15 +198,16 @@ function SupportGroup({
   selectedPreview?: SealGrantPreview;
   onPreviewChange?: (seal: SealPreviewKind, preview: SealGrantPreview | null) => void;
 }) {
+  const { t, resolve, locale } = useLocale();
   if (supports.length === 0) return null;
   const rosterById = new Map(fe14Data.roster.map((unit) => [unit.id, unit]));
   const previewBySupportId = new Map(
-    seal ? buildPreviewOptions(supports, grants, rosterById, seal).map((preview) => [preview.supportId, preview]) : [],
+    seal ? buildPreviewOptions(supports, grants, rosterById, seal, t, resolve).map((preview) => [preview.supportId, preview]) : [],
   );
   return (
     <div className="support-group">
       <h3>{title}</h3>
-      <div className="support-list" role={seal ? "radiogroup" : undefined} aria-label={seal ? `${title} skill preview` : undefined}>
+      <div className="support-list" role={seal ? "radiogroup" : undefined} aria-label={seal ? t("support.previewAria", { title }) : undefined}>
         {seal && groupName && previewBySupportId.size > 0 ? (
           <label className="support-preview-none">
             <input
@@ -199,7 +216,7 @@ function SupportGroup({
               checked={!selectedPreview}
               onChange={() => onPreviewChange?.(seal, null)}
             />
-            <span>None</span>
+            <span>{t("support.previewNone")}</span>
           </label>
         ) : null}
         {supports.map((support) => {
@@ -214,21 +231,21 @@ function SupportGroup({
                     type="radio"
                     name={groupName}
                     checked={selectedPreview?.supportId === support.id}
-                    aria-label={`Preview ${preview.partnerName} ${seal === "friendship" ? "Friendship" : "Partner"} Seal class skills`}
+                    aria-label={t("support.previewItemAria", { name: preview.partnerName, seal: t(seal === "friendship" ? "support.seal.friendship" : "support.seal.partner") })}
                     onChange={() => onPreviewChange?.(seal, preview)}
                   />
                 ) : null}
               </span>
-              <span>{formatSupportPartnerName(support, partner?.displayName)}</span>
+              <span>{partnerNameOf(support, partner, t, resolve)}</span>
               <span>
-                {support.routes.map(formatRoute).join(" / ")}
+                {support.routes.map((route) => formatRoute(route, locale)).join(" / ")}
               </span>
               <div className="support-grant-result">
                 <strong>
-                  {grant ? <ClassTreeLabel classId={grant.grantedClassId} /> : "No class grant"}
+                  {grant ? <ClassTreeLabel classId={grant.grantedClassId} /> : t("support.noClassGrant")}
                   {grant?.alreadyOwnedVia ? (
                     <TriangleAlert
-                      aria-label={`Already available via ${grant.alreadyOwnedVia === "base" ? "Base class" : "Heart Seal"}`}
+                      aria-label={t("support.alreadyVia", { source: t(grant.alreadyOwnedVia === "base" ? "support.via.base" : "support.via.heartSeal") })}
                       className="seal-owned-marker"
                       size={16}
                     />
@@ -248,6 +265,8 @@ function buildPreviewOptions(
   grants: Map<string, SealGrant>,
   rosterById: Map<string, UnitRuntime["identity"]>,
   seal: SealPreviewKind,
+  t: Translate,
+  resolve: Resolver,
 ): SealGrantPreview[] {
   return supports.flatMap((support) => {
     const grant = grants.get(support.id);
@@ -260,22 +279,14 @@ function buildPreviewOptions(
       supportId: support.id,
       seal,
       partnerUnitId: support.partnerUnitId,
-      partnerName: formatSupportPartnerName(support, partner?.displayName),
+      partnerName: partnerNameOf(support, partner, t, resolve),
       grantedClassId: grant.grantedClassId,
     }];
   });
 }
 
-function formatSupportPartnerName(
-  support: UnitRuntime["supports"][number],
-  displayName?: string,
-): string {
-  if (support.partnerUnitId !== "corrin") return displayName ?? displayId(support.partnerUnitId);
-  return `Corrin (${support.partnerGender === "male" ? "M" : "F"})`;
-}
-
-function formatOwnedSources(sources: Set<"base" | "heart_seal">): string {
-  if (sources.has("base") && sources.has("heart_seal")) return "base class set or Heart Seal options";
-  if (sources.has("base")) return "base class set";
-  return "Heart Seal options";
+function formatOwnedSources(sources: Set<"base" | "heart_seal">, t: Translate): string {
+  if (sources.has("base") && sources.has("heart_seal")) return t("support.owned.both");
+  if (sources.has("base")) return t("support.owned.base");
+  return t("support.owned.heartSeal");
 }

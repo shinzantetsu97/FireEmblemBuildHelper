@@ -1,6 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import Alert from "react-bootstrap/Alert";
-import { TriangleAlert } from "lucide-react";
 import { fe14Data, type UnitRuntime } from "../../../data";
 import UnitClassSkills from "../../skills/UnitClassSkills";
 import {
@@ -16,6 +14,7 @@ import { ScarletDepartureAlert } from "./UnitAlerts";
 import UnitReferences from "./UnitReferences";
 import OffspringOverview from "./OffspringOverview";
 import { corrinBorrowedClassId, corrinTalentLabel } from "./utils";
+import { useLocale } from "../../../../../i18n/LocaleContext";
 
 export default function UnitOverview({
   unit,
@@ -26,6 +25,7 @@ export default function UnitOverview({
   avatarGender: AvatarGender;
   setAvatarGender: (gender: AvatarGender) => void;
 }) {
+  const { t, resolve } = useLocale();
   const config = unit.avatarConfiguration;
   const [boonId, setBoonId] = useState("robust");
   const [baneId, setBaneId] = useState("weak");
@@ -60,22 +60,6 @@ export default function UnitOverview({
 
   return (
     <div className="unit-overview">
-      {unit.identity.id === "corrin" ? (
-        <Alert className="review-alert" variant="warning">
-          <TriangleAlert aria-hidden="true" size={19} />
-          <span>Corrin's displayed data begins from the neutral Avatar template. Apply one boon and one different-stat bane from the configuration tables below.</span>
-        </Alert>
-      ) : (
-        <Alert className="review-alert" variant="warning">
-          <TriangleAlert aria-hidden="true" size={19} />
-          <span>
-            Corrin's Partner Seal grant depends on the selected Talent and remains a runtime-variable
-            class outcome. {unit.identity.displayName}'s Attack and Guard Stance bonuses are independently corroborated.
-            {unit.identity.id === "kaze" ? " The four 凉风 workbook notes remain pending direct inspection." : ""}
-          </span>
-        </Alert>
-      )}
-
       {unit.identity.id === "scarlet" ? <ScarletDepartureAlert /> : null}
 
       <RecruitmentSection
@@ -92,30 +76,28 @@ export default function UnitOverview({
         initialCardLimit={avatarSelection ? 6 : undefined}
         prioritizePartnerSeal={Boolean(avatarSelection)}
         sources={avatarSelection ? [
-          { label: "Native", classIds: ["nohr_prince"] },
-          { label: "Heart Seal Talent", classIds: avatarTalentClassIds(avatarSelection.talent, avatarSelection.gender) },
-          ...corrinFriendshipSkillSources(unit, avatarSelection.gender),
+          { label: t("skills.source.native"), classIds: ["nohr_prince"] },
+          { label: t("skills.source.heartSealTalent"), classIds: avatarTalentClassIds(avatarSelection.talent, avatarSelection.gender) },
+          ...corrinFriendshipSkillSources(unit, avatarSelection.gender, (name) => t("skills.source.friendship", { name }), resolve),
         ] : [
-          { label: "Native", classIds: unit.classAccess?.baseClassSet ?? [] },
-          { label: "Heart Seal", classIds: unit.classAccess?.heartSealClassSet ?? [] },
+          { label: t("skills.source.native"), classIds: unit.classAccess?.baseClassSet ?? [] },
+          { label: t("skills.source.heartSeal"), classIds: unit.classAccess?.heartSealClassSet ?? [] },
         ]}
         selectedSealPreviews={selectedSealPreviews}
       />
 
-      {unit.identity.id !== "corrin" && unit.classAccess?.corrinTalentOnlyClassSet.length ? (
-        <aside className="class-access-exception" aria-label={corrinTalentLabel(unit)}>
-          <div>
-            <strong>{corrinTalentLabel(unit)}</strong>
-            <p>This class access is conditional and is not part of the unit's native or Heart Seal trees.</p>
-          </div>
-          <div className="class-access-exception-trees">
-            <ClassTreeList classIds={unit.classAccess.corrinTalentOnlyClassSet} />
-          </div>
-        </aside>
-      ) : null}
-
       <section className="data-section" aria-labelledby="supports-heading">
-        <SectionHeading eyebrow="Relationships" title="Supports and seal grants" id="supports-heading" />
+        <SectionHeading title={t("section.supports.title")} id="supports-heading" />
+        {unit.identity.id !== "corrin" && unit.classAccess?.corrinTalentOnlyClassSet.length ? (
+          <aside className="class-access-exception" aria-label={corrinTalentLabel(unit, t)}>
+            <div>
+              <strong>{corrinTalentLabel(unit, t)}</strong>
+            </div>
+            <div className="class-access-exception-trees">
+              <ClassTreeList classIds={unit.classAccess.corrinTalentOnlyClassSet} />
+            </div>
+          </aside>
+        ) : null}
         <SupportDirectory
           unit={unit}
           avatarSelection={avatarSelection}
@@ -133,14 +115,19 @@ function resolvedUnitGender(gender?: string): "male" | "female" | undefined {
   return gender === "male" || gender === "female" ? gender : undefined;
 }
 
-function corrinFriendshipSkillSources(unit: UnitRuntime, gender: AvatarGender) {
+function corrinFriendshipSkillSources(
+  unit: UnitRuntime,
+  gender: AvatarGender,
+  friendshipLabel: (name: string) => string,
+  resolve: ReturnType<typeof useLocale>["resolve"],
+) {
   return unit.supports.flatMap((support) => {
     if (support.partnerGender !== gender || support.kind === "romantic") return [];
     const classId = corrinBorrowedClassId(support.partnerUnitId, gender);
     if (!classId) return [];
     const partner = fe14Data.roster.find((candidate) => candidate.id === support.partnerUnitId);
     return [{
-      label: `Friendship: ${partner?.displayName ?? support.partnerUnitId}`,
+      label: friendshipLabel(resolve({ en: partner?.displayName ?? support.partnerUnitId, zhHans: partner?.names?.zhHans })),
       classIds: [classId],
     }];
   });

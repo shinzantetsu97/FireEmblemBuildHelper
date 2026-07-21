@@ -1,11 +1,23 @@
 import Container from "react-bootstrap/Container";
+import Dropdown from "react-bootstrap/Dropdown";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { BookOpen, Sparkles, StickyNote } from "lucide-react";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { BookOpen, Languages, StickyNote } from "lucide-react";
 import { AppLink, type AppRoute } from "../router";
+import { useLocale } from "../i18n/LocaleContext";
+import { LOCALE_LABELS, LOCALES } from "../i18n/locale";
+
+const FE14_ROUTE_KINDS: AppRoute["kind"][] = [
+  "unit-index",
+  "unit-detail",
+  "skill-index",
+  "personal-skill-index",
+];
 
 export default function AppHeader({ route }: { route: AppRoute }) {
-  const unitsActive = route.kind === "unit-index" || route.kind === "unit-detail";
+  const fe14Active = FE14_ROUTE_KINDS.includes(route.kind);
+  const { locale, setLocale, t } = useLocale();
 
   return (
     <Navbar className="app-header" expand="md">
@@ -18,16 +30,50 @@ export default function AppHeader({ route }: { route: AppRoute }) {
           <Nav className="ms-auto app-navigation">
             <AppLink className={`nav-link${route.kind === "notes" ? " active" : ""}`} to="/Notes">
               <StickyNote aria-hidden="true" size={17} />
-              Notes
+              {t("nav.notes")}
             </AppLink>
-            <AppLink className={`nav-link${unitsActive ? " active" : ""}`} to="/FE14/Units">
-              <BookOpen aria-hidden="true" size={17} />
-              FE14 Units
-            </AppLink>
-            <AppLink className={`nav-link${route.kind === "skill-index" ? " active" : ""}`} to="/FE14/Skills">
-              <Sparkles aria-hidden="true" size={17} />
-              FE14 Skills
-            </AppLink>
+            <NavDropdown
+              id="fe14-menu"
+              className={`app-fe14-menu${fe14Active ? " active" : ""}`}
+              title={
+                <span className="app-fe14-menu-title">
+                  <BookOpen aria-hidden="true" size={17} />
+                  {t("nav.fe14")}
+                </span>
+              }
+            >
+              <NavDropdown.Item as={AppLink} to="/FE14/Units" active={route.kind === "unit-index" || route.kind === "unit-detail"}>
+                {t("nav.units")}
+              </NavDropdown.Item>
+              <NavDropdown.Item as={AppLink} to="/FE14/Skills" active={route.kind === "skill-index"}>
+                {t("nav.classSkills")}
+              </NavDropdown.Item>
+              <NavDropdown.Item as={AppLink} to="/FE14/PersonalSkills" active={route.kind === "personal-skill-index"}>
+                {t("nav.personalSkills")}
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Dropdown align="end" className="app-language-menu">
+              <Dropdown.Toggle
+                variant="link"
+                className="nav-link app-language-toggle"
+                id="language-menu"
+                aria-label={t("language.menuLabel")}
+              >
+                <Languages aria-hidden="true" size={17} />
+                {LOCALE_LABELS[locale]}
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                {LOCALES.map((option) => (
+                  <Dropdown.Item
+                    key={option}
+                    active={option === locale}
+                    onClick={() => setLocale(option)}
+                  >
+                    {LOCALE_LABELS[option]}
+                  </Dropdown.Item>
+                ))}
+              </Dropdown.Menu>
+            </Dropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>

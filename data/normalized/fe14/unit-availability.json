@@ -4,9 +4,21 @@
     "unitId": "corrin",
     "scenarioLabel": "Prologue recruitment",
     "routeJoins": [
-      { "route": "birthright", "chapter": 0, "timing": "start" },
-      { "route": "conquest", "chapter": 0, "timing": "start" },
-      { "route": "revelation", "chapter": 0, "timing": "start" }
+      {
+        "route": "birthright",
+        "chapter": 0,
+        "timing": "start"
+      },
+      {
+        "route": "conquest",
+        "chapter": 0,
+        "timing": "start"
+      },
+      {
+        "route": "revelation",
+        "chapter": 0,
+        "timing": "start"
+      }
     ],
     "level": 1,
     "classId": "nohr_prince",
@@ -17,13 +29,23 @@
       {
         "sourceId": "fe14-workbook-cn",
         "locator": "神威!D4:I6",
-        "fields": ["routeJoins", "level", "classId", "inventory"],
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
         "reviewStatus": "candidate"
       },
       {
         "sourceId": "fewiki-corrin",
         "locator": "Fire Emblem Fates > Starting stats and growth rates",
-        "fields": ["routeJoins", "level", "classId", "inventory"],
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId",
+          "inventory"
+        ],
         "reviewStatus": "accepted"
       }
     ]
@@ -111,7 +133,8 @@
       "checkpoint": "end_of_chapter_5",
       "levelCalculation": "retain_chapter_5_level",
       "statCalculation": "retain_chapter_5_stats",
-      "note": "Conquest restores Azura with the stats she had at the end of Chapter 5; her Chapter 9 inventory is a Vulnerary and Chest Key. Weapon-proficiency carryover is intentionally not asserted here."
+      "note": "Conquest restores Azura with the stats she had at the end of Chapter 5; her Chapter 9 inventory is a Vulnerary and Chest Key. Weapon-proficiency carryover is intentionally not asserted here.",
+      "noteZhHans": "暗夜线会以阿库娅在第 5 章结束时的属性使其复归；她第 9 章的物品为伤药与宝箱钥匙。此处有意不主张武器熟练度的继承。"
     },
     "inventory": [
       "vulnerary",
@@ -492,44 +515,6 @@
     ]
   },
   {
-    "id": "kaze.birthright",
-    "unitId": "kaze",
-    "scenarioLabel": "Birthright continuation",
-    "routeJoins": [
-      {
-        "route": "birthright",
-        "chapter": 6,
-        "timing": "start"
-      }
-    ],
-    "level": 3,
-    "classId": "ninja",
-    "retentionCondition": {
-      "route": "birthright",
-      "afterChapter": 15,
-      "requirement": {
-        "kind": "support_rank",
-        "partnerUnitId": "corrin",
-        "minimumRank": "A"
-      },
-      "onFailure": "permanent_departure",
-      "note": "Kaze remains in the army after Chapter 15 only if Corrin has reached A support or higher with him."
-    },
-    "inventory": [],
-    "provenance": [
-      {
-        "sourceId": "fewiki-kaze",
-        "locator": "Fire Emblem Fates > Birthright > Role",
-        "fields": [
-          "routeJoins",
-          "retentionCondition",
-          "level"
-        ],
-        "reviewStatus": "accepted"
-      }
-    ]
-  },
-  {
     "id": "kaze.common",
     "unitId": "kaze",
     "scenarioLabel": "Pre-route",
@@ -571,6 +556,18 @@
         }
       ]
     },
+    "retentionCondition": {
+      "route": "birthright",
+      "afterChapter": 15,
+      "requirement": {
+        "kind": "support_rank",
+        "partnerUnitId": "corrin",
+        "minimumRank": "A"
+      },
+      "onFailure": "permanent_departure",
+      "note": "Kaze remains in the army after Chapter 15 only if Corrin has reached A support or higher with him.",
+      "noteZhHans": "只有当神威与凉风达到 A 支援或以上时，凉风才会在第 15 章后留在队伍中。"
+    },
     "inventory": [
       "iron_shuriken",
       "vulnerary"
@@ -609,6 +606,14 @@
         "locator": "Chapter 4 recruitment inventory by difficulty",
         "fields": [
           "inventoryByDifficulty"
+        ],
+        "reviewStatus": "accepted"
+      },
+      {
+        "sourceId": "fewiki-kaze",
+        "locator": "Fire Emblem Fates > Birthright > Role",
+        "fields": [
+          "retentionCondition"
         ],
         "reviewStatus": "accepted"
       }
@@ -682,17 +687,23 @@
       {
         "route": "birthright",
         "chapter": 7,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Mozu with Corrin, or complete the map while she survives.",
+        "conditionZhHans": "用神威与物集对话，或在物集存活时完成地图。"
       },
       {
         "route": "conquest",
         "chapter": 7,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Mozu with Corrin, or complete the map while she survives.",
+        "conditionZhHans": "用神威与物集对话，或在物集存活时完成地图。"
       },
       {
         "route": "revelation",
         "chapter": 7,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Mozu with Corrin, or complete the map while she survives.",
+        "conditionZhHans": "用神威与物集对话，或在物集存活时完成地图。"
       }
     ],
     "level": 1,
@@ -776,7 +787,9 @@
       {
         "route": "conquest",
         "chapter": 16,
-        "timing": "end"
+        "timing": "conditional",
+        "condition": "Choose to spare Shura at the end of the chapter; killing him awards Boots instead.",
+        "conditionZhHans": "章节结束时选择放过阿修罗；若处决他则改为获得靴子。"
       }
     ],
     "level": 2,
@@ -818,7 +831,9 @@
       {
         "route": "revelation",
         "chapter": 15,
-        "timing": "during"
+        "timing": "conditional",
+        "condition": "Talk to Shura with Corrin.",
+        "conditionZhHans": "用神威与阿修罗对话。"
       }
     ],
     "level": 10,
@@ -1071,17 +1086,23 @@
       {
         "route": "birthright",
         "chapter": 7,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Clear Anna on the Run for the first time after the Dragon's Gate is unlocked.",
+        "conditionZhHans": "龙之门解锁后，首次通关“安娜在逃亡”。"
       },
       {
         "route": "conquest",
         "chapter": 7,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Clear Anna on the Run for the first time after the Dragon's Gate is unlocked.",
+        "conditionZhHans": "龙之门解锁后，首次通关“安娜在逃亡”。"
       },
       {
         "route": "revelation",
         "chapter": 7,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Clear Anna on the Run for the first time after the Dragon's Gate is unlocked.",
+        "conditionZhHans": "龙之门解锁后，首次通关“安娜在逃亡”。"
       }
     ],
     "level": 10,
@@ -1099,7 +1120,8 @@
         "earliestChapter": 7,
         "latestChapter": 27,
         "carriesIntoRecruitedUnit": false,
-        "note": "NPC Anna scales from level 10 at the earliest Chapter 7 access to level 18 at Chapter 27. After the first clear, the recruited Anna is reset to her fixed level 10 join data; the NPC's scaled level, stats, weapon rank, and carried battle items do not transfer."
+        "note": "NPC Anna scales from level 10 at the earliest Chapter 7 access to level 18 at Chapter 27. After the first clear, the recruited Anna is reset to her fixed level 10 join data; the NPC's scaled level, stats, weapon rank, and carried battle items do not transfer.",
+        "noteZhHans": "NPC 安娜的等级从最早可在第 7 章进入时的 10 级，随章节缩放至第 27 章的 18 级。首次通关后，被招募的安娜会重置为其固定的 10 级加入数据；NPC 缩放后的等级、属性、武器等级与携带的战斗道具都不会转移。"
       }
     },
     "inventory": [
@@ -1311,7 +1333,9 @@
       {
         "route": "birthright",
         "chapter": 8,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Hinoka with Corrin, or complete the chapter while she survives.",
+        "conditionZhHans": "用神威与日乃香对话，或在日乃香存活时完成章节。"
       }
     ],
     "level": 8,
@@ -1433,7 +1457,9 @@
       {
         "route": "birthright",
         "chapter": 10,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Takumi with Azura, or complete the chapter; Takumi joins even if he was defeated.",
+        "conditionZhHans": "用阿库娅与拓海对话，或完成章节；即使拓海被击败，他仍会加入。"
       }
     ],
     "level": 11,
@@ -1660,7 +1686,9 @@
       {
         "route": "revelation",
         "chapter": 11,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Saizo with Corrin, or complete the chapter while he survives.",
+        "conditionZhHans": "用神威与才藏对话，或在才藏存活时完成章节。"
       }
     ],
     "level": 9,
@@ -1779,7 +1807,9 @@
       {
         "route": "birthright",
         "chapter": 8,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Recruit Hinoka while Setsuna is still alive.",
+        "conditionZhHans": "在刹那存活时招募日乃香。"
       }
     ],
     "level": 3,
@@ -1859,7 +1889,9 @@
       {
         "route": "birthright",
         "chapter": 8,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Recruit Hinoka while Azama is still alive.",
+        "conditionZhHans": "在浅间存活时招募日乃香。"
       }
     ],
     "level": 7,
@@ -1940,7 +1972,9 @@
       {
         "route": "birthright",
         "chapter": 9,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Hinata with Corrin, or complete the chapter while he survives.",
+        "conditionZhHans": "用神威与日向对话，或在日向存活时完成章节。"
       }
     ],
     "level": 10,
@@ -2020,7 +2054,9 @@
       {
         "route": "birthright",
         "chapter": 9,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Oboro with Corrin, or complete the chapter while she survives.",
+        "conditionZhHans": "用神威与胧对话，或在胧存活时完成章节。"
       }
     ],
     "level": 10,
@@ -2414,6 +2450,45 @@
     ]
   },
   {
+    "id": "rinkah.revelation",
+    "unitId": "rinkah",
+    "scenarioLabel": "Revelation rejoin",
+    "routeJoins": [
+      {
+        "route": "revelation",
+        "chapter": 9,
+        "timing": "start"
+      }
+    ],
+    "level": 4,
+    "classId": "oni_savage",
+    "inventory": [
+      "brass_club"
+    ],
+    "provenance": [
+      {
+        "sourceId": "fandom-fe14-wanderer",
+        "locator": "Strategy > Rinkah rejoins with her earlier training",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "corroborated"
+      },
+      {
+        "sourceId": "atwiki-fe14-rinkah",
+        "locator": "透魔編 > 5章のデータを引き継いで加入",
+        "fields": [
+          "routeJoins",
+          "level",
+          "classId"
+        ],
+        "reviewStatus": "corroborated"
+      }
+    ]
+  },
+  {
     "id": "orochi.birthright",
     "unitId": "orochi",
     "scenarioLabel": "Birthright recruitment",
@@ -2461,7 +2536,9 @@
       {
         "route": "revelation",
         "chapter": 11,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Recruit Saizo while Orochi is still alive; Corrin can talk to Saizo during the map, or both can survive to chapter completion.",
+        "conditionZhHans": "在大蛇存活时招募才藏；可在地图中用神威与才藏对话，或让两人都存活至章节结束。"
       }
     ],
     "level": 7,
@@ -2582,7 +2659,9 @@
       {
         "route": "birthright",
         "chapter": 11,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Reina with Corrin, or complete the chapter while she survives.",
+        "conditionZhHans": "用神威与夕雾对话，或在夕雾存活时完成章节。"
       }
     ],
     "level": 1,
@@ -2624,7 +2703,9 @@
       {
         "route": "revelation",
         "chapter": 11,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Recruit Saizo while Reina is still alive; Corrin can talk to Saizo during the map, or both can survive to chapter completion.",
+        "conditionZhHans": "在夕雾存活时招募才藏；可在地图中用神威与才藏对话，或让两人都存活至章节结束。"
       }
     ],
     "level": 1,
@@ -4111,7 +4192,9 @@
       {
         "route": "conquest",
         "chapter": 9,
-        "timing": "during"
+        "timing": "conditional",
+        "condition": "Talk to Nyx with Corrin.",
+        "conditionZhHans": "用神威与纽克斯对话。"
       }
     ],
     "level": 9,
@@ -4160,7 +4243,9 @@
       {
         "route": "revelation",
         "chapter": 15,
-        "timing": "during"
+        "timing": "conditional",
+        "condition": "Talk to Nyx with Corrin.",
+        "conditionZhHans": "用神威与纽克斯对话。"
       }
     ],
     "level": 9,
@@ -4257,7 +4342,9 @@
       {
         "route": "revelation",
         "chapter": 14,
-        "timing": "start"
+        "timing": "conditional",
+        "condition": "Talk to Charlotte with Elise.",
+        "conditionZhHans": "用艾丽泽与夏洛特对话。"
       }
     ],
     "level": 10,
@@ -4354,7 +4441,9 @@
       {
         "route": "revelation",
         "chapter": 14,
-        "timing": "start"
+        "timing": "conditional",
+        "condition": "Talk to Benny with Elise.",
+        "conditionZhHans": "用艾丽泽与贝诺瓦对话。"
       }
     ],
     "level": 15,
@@ -4402,7 +4491,9 @@
       {
         "route": "conquest",
         "chapter": 14,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "Talk to Keaton with Corrin.",
+        "conditionZhHans": "用神威与弗拉内尔对话。"
       }
     ],
     "level": 15,
@@ -4483,7 +4574,9 @@
       {
         "route": "conquest",
         "chapter": 18,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "After Chapter 18, raise the Fire Orb to level 3 and refresh My Castle by waiting for the real-time update or completing any map.",
+        "conditionZhHans": "第18章后，将火焰台升至3级，并等待实时刷新或完成任意地图以刷新我的城堡。"
       }
     ],
     "level": 5,
@@ -4495,7 +4588,8 @@
         "real_time",
         "map_completion"
       ],
-      "note": "After Chapter 18 is complete, upgrade the Fire Orb to level 3 and refresh My Castle by waiting for the real-time update or by completing any map."
+      "note": "After Chapter 18 is complete, upgrade the Fire Orb to level 3 and refresh My Castle by waiting for the real-time update or by completing any map.",
+      "noteZhHans": "第 18 章完成后，将火焰宝珠升至 3 级，并通过等待实时更新或完成任意地图来刷新我的城堡。"
     },
     "autoLevel": {
       "basis": "map_level",
@@ -4558,7 +4652,8 @@
       "weaponProficiencyScales": true,
       "weaponProficiencyMilestonesStatus": "unresolved",
       "evidenceStatus": "accepted",
-      "note": "The game compares the applicable chapter map level with Flora's internal level 28. Her joining level is 5 + max(0, map level - 28), capped at level 15. Stats use (Flora's individual growth rates + Maid class growth rates) from her level 5 Conquest bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved."
+      "note": "The game compares the applicable chapter map level with Flora's internal level 28. Her joining level is 5 + max(0, map level - 28), capped at level 15. Stats use (Flora's individual growth rates + Maid class growth rates) from her level 5 Conquest bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved.",
+      "noteZhHans": "游戏会将适用章节的地图等级与芙洛拉的内部等级 28 比较。她的加入等级为 5 + max(0, 地图等级 − 28)，上限为 15 级。属性采用（芙洛拉的个人成长率 + 女仆职业成长率），基于她第 5 章暗夜线的基础值，恰为 0.5 时向上取整。确切的武器等级里程碑仍未确定。"
     },
     "inventory": [],
     "provenance": [
@@ -4638,7 +4733,9 @@
       {
         "route": "revelation",
         "chapter": 22,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "After Chapter 22, raise any Ballista, Fire Orb, or Launcher to level 3 and refresh My Castle by waiting for the real-time update or completing any map.",
+        "conditionZhHans": "第22章后，将弩炮台、火焰台或发射台中的任意一种升至3级，并等待实时刷新或完成任意地图以刷新我的城堡。"
       }
     ],
     "level": 7,
@@ -4654,7 +4751,8 @@
         "real_time",
         "map_completion"
       ],
-      "note": "After Chapter 22 is complete, upgrade any Ballista, Fire Orb, or Launcher to level 3 and refresh My Castle by waiting for the real-time update or by completing any map."
+      "note": "After Chapter 22 is complete, upgrade any Ballista, Fire Orb, or Launcher to level 3 and refresh My Castle by waiting for the real-time update or by completing any map.",
+      "noteZhHans": "第 22 章完成后，将任意弩炮、火焰宝珠或发射器升至 3 级，并通过等待实时更新或完成任意地图来刷新我的城堡。"
     },
     "autoLevel": {
       "basis": "map_level",
@@ -4697,7 +4795,8 @@
       "weaponProficiencyScales": true,
       "weaponProficiencyMilestonesStatus": "unresolved",
       "evidenceStatus": "accepted",
-      "note": "The game compares the applicable chapter map level with Flora's internal level 28. Her joining level is 5 + max(0, map level - 28), capped at level 15; Revelation therefore begins at level 7 after Chapter 22. Stats use (Flora's individual growth rates + Maid class growth rates) from her level 5 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved."
+      "note": "The game compares the applicable chapter map level with Flora's internal level 28. Her joining level is 5 + max(0, map level - 28), capped at level 15; Revelation therefore begins at level 7 after Chapter 22. Stats use (Flora's individual growth rates + Maid class growth rates) from her level 5 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved.",
+      "noteZhHans": "游戏会将适用章节的地图等级与芙洛拉的内部等级 28 比较。她的加入等级为 5 + max(0, 地图等级 − 28)，上限为 15 级；因此透魔线在第 22 章后从 7 级开始。属性采用（芙洛拉的个人成长率 + 女仆职业成长率），基于她第 5 章的基础值，恰为 0.5 时向上取整。确切的武器等级里程碑仍未确定。"
     },
     "inventory": [],
     "provenance": [
@@ -4768,7 +4867,9 @@
       {
         "route": "birthright",
         "chapter": 18,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "After Chapter 18, raise the Hot Spring to level 3 and refresh My Castle by waiting for the real-time update or completing any map.",
+        "conditionZhHans": "第18章后，将温泉升至3级，并等待实时刷新或完成任意地图以刷新我的城堡。"
       }
     ],
     "level": 5,
@@ -4780,7 +4881,8 @@
         "real_time",
         "map_completion"
       ],
-      "note": "After Chapter 18 is complete, refresh My Castle by waiting for the real-time update or by completing any map."
+      "note": "After Chapter 18 is complete, refresh My Castle by waiting for the real-time update or by completing any map.",
+      "noteZhHans": "第 18 章完成后，通过等待实时更新或完成任意地图来刷新我的城堡。"
     },
     "autoLevel": {
       "basis": "map_level",
@@ -4843,7 +4945,8 @@
       "weaponProficiencyScales": true,
       "weaponProficiencyMilestonesStatus": "unresolved",
       "evidenceStatus": "accepted",
-      "note": "The game compares the applicable chapter map level with Izana's internal level 28. His joining level is 5 + max(0, map level - 28), capped at level 15. Stats use (Izana's individual growth rates + Onmyoji class growth rates) from his level 5 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved."
+      "note": "The game compares the applicable chapter map level with Izana's internal level 28. His joining level is 5 + max(0, map level - 28), capped at level 15. Stats use (Izana's individual growth rates + Onmyoji class growth rates) from his level 5 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved.",
+      "noteZhHans": "游戏会将适用章节的地图等级与伊邪那的内部等级 28 比较。他的加入等级为 5 + max(0, 地图等级 − 28)，上限为 15 级。属性采用（伊邪那的个人成长率 + 阴阳师职业成长率），基于他第 5 章的基础值，恰为 0.5 时向上取整。确切的武器等级里程碑仍未确定。"
     },
     "inventory": [],
     "provenance": [
@@ -4920,7 +5023,9 @@
       {
         "route": "conquest",
         "chapter": 22,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "After Chapter 22, raise the Hot Spring to level 3 and refresh My Castle by waiting for the real-time update or completing any map.",
+        "conditionZhHans": "第22章后，将温泉升至3级，并等待实时刷新或完成任意地图以刷新我的城堡。"
       }
     ],
     "level": 7,
@@ -4932,7 +5037,8 @@
         "real_time",
         "map_completion"
       ],
-      "note": "After Chapter 22 is complete, refresh My Castle by waiting for the real-time update or by completing any map."
+      "note": "After Chapter 22 is complete, refresh My Castle by waiting for the real-time update or by completing any map.",
+      "noteZhHans": "第 22 章完成后，通过等待实时更新或完成任意地图来刷新我的城堡。"
     },
     "autoLevel": {
       "basis": "map_level",
@@ -4975,7 +5081,8 @@
       "weaponProficiencyScales": true,
       "weaponProficiencyMilestonesStatus": "unresolved",
       "evidenceStatus": "accepted",
-      "note": "The game compares the applicable chapter map level with Izana's internal level 28. His joining level is 5 + max(0, map level - 28), capped at level 15; Conquest therefore begins at level 7 after Chapter 22. Stats use (Izana's individual growth rates + Onmyoji class growth rates) from his level 5 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved."
+      "note": "The game compares the applicable chapter map level with Izana's internal level 28. His joining level is 5 + max(0, map level - 28), capped at level 15; Conquest therefore begins at level 7 after Chapter 22. Stats use (Izana's individual growth rates + Onmyoji class growth rates) from his level 5 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved.",
+      "noteZhHans": "游戏会将适用章节的地图等级与伊邪那的内部等级 28 比较。他的加入等级为 5 + max(0, 地图等级 − 28)，上限为 15 级；因此暗夜线在第 22 章后从 7 级开始。属性采用（伊邪那的个人成长率 + 阴阳师职业成长率），基于他第 5 章的基础值，恰为 0.5 时向上取整。确切的武器等级里程碑仍未确定。"
     },
     "inventory": [],
     "provenance": [
@@ -5052,7 +5159,9 @@
       {
         "route": "birthright",
         "chapter": 21,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "After Chapter 21, raise any Puppet to level 3 and refresh My Castle by waiting for the real-time update or completing any map.",
+        "conditionZhHans": "第21章后，将任意傀儡升至3级，并等待实时刷新或完成任意地图以刷新我的城堡。"
       }
     ],
     "level": 10,
@@ -5064,7 +5173,8 @@
         "real_time",
         "map_completion"
       ],
-      "note": "After Chapter 21 is complete, upgrade any Puppet to level 3 and refresh My Castle by waiting for the real-time update or by completing any map."
+      "note": "After Chapter 21 is complete, upgrade any Puppet to level 3 and refresh My Castle by waiting for the real-time update or by completing any map.",
+      "noteZhHans": "第 21 章完成后，将任意人偶升至 3 级，并通过等待实时更新或完成任意地图来刷新我的城堡。"
     },
     "autoLevel": {
       "basis": "map_level",
@@ -5112,7 +5222,8 @@
       "weaponProficiencyScales": true,
       "weaponProficiencyMilestonesStatus": "unresolved",
       "evidenceStatus": "accepted",
-      "note": "The game compares the applicable chapter map level with Yukimura's internal level 33. His joining level is 10 + max(0, map level - 33), capped at level 15, so he remains level 10 through Chapter 24 before reaching levels 11, 13, and 15 in Chapters 25-27. Stats use (Yukimura's individual growth rates + Mechanist class growth rates) from his level 10 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved."
+      "note": "The game compares the applicable chapter map level with Yukimura's internal level 33. His joining level is 10 + max(0, map level - 33), capped at level 15, so he remains level 10 through Chapter 24 before reaching levels 11, 13, and 15 in Chapters 25-27. Stats use (Yukimura's individual growth rates + Mechanist class growth rates) from his level 10 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved.",
+      "noteZhHans": "游戏会将适用章节的地图等级与幸村的内部等级 33 比较。他的加入等级为 10 + max(0, 地图等级 − 33)，上限为 15 级，因此他在第 24 章前保持 10 级，随后在第 25–27 章达到 11、13、15 级。属性采用（幸村的个人成长率 + 傀儡师职业成长率），基于他第 10 级的基础值，恰为 0.5 时向上取整。确切的武器等级里程碑仍未确定。"
     },
     "inventory": [],
     "provenance": [
@@ -5183,7 +5294,9 @@
       {
         "route": "revelation",
         "chapter": 18,
-        "timing": "conditional"
+        "timing": "conditional",
+        "condition": "After Chapter 18, raise the Hot Spring to level 3 and refresh My Castle by waiting for the real-time update or completing any map.",
+        "conditionZhHans": "第18章后，将温泉升至3级，并等待实时刷新或完成任意地图以刷新我的城堡。"
       }
     ],
     "level": 10,
@@ -5195,7 +5308,8 @@
         "real_time",
         "map_completion"
       ],
-      "note": "After Chapter 18 is complete, upgrade the Hot Spring to level 3 and refresh My Castle by waiting for the real-time update or by completing any map."
+      "note": "After Chapter 18 is complete, upgrade the Hot Spring to level 3 and refresh My Castle by waiting for the real-time update or by completing any map.",
+      "noteZhHans": "第 18 章完成后，将温泉升至 3 级，并通过等待实时更新或完成任意地图来刷新我的城堡。"
     },
     "autoLevel": {
       "basis": "map_level",
@@ -5258,7 +5372,8 @@
       "weaponProficiencyScales": true,
       "weaponProficiencyMilestonesStatus": "unresolved",
       "evidenceStatus": "accepted",
-      "note": "The game compares the applicable chapter map level with Fuga's internal level 33. His joining level is 10 + max(0, map level - 33), capped at level 15, so he remains level 10 through Chapter 24 before reaching levels 11, 13, and 15 in Chapters 25-27. Stats use (Fuga's individual growth rates + Master of Arms class growth rates) from his level 10 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved."
+      "note": "The game compares the applicable chapter map level with Fuga's internal level 33. His joining level is 10 + max(0, map level - 33), capped at level 15, so he remains level 10 through Chapter 24 before reaching levels 11, 13, and 15 in Chapters 25-27. Stats use (Fuga's individual growth rates + Master of Arms class growth rates) from his level 10 bases, with exact 0.5 results rounded up. Exact weapon-rank milestones remain unresolved.",
+      "noteZhHans": "游戏会将适用章节的地图等级与风雅的内部等级 33 比较。他的加入等级为 10 + max(0, 地图等级 − 33)，上限为 15 级，因此他在第 24 章前保持 10 级，随后在第 25–27 章达到 11、13、15 级。属性采用（风雅的个人成长率 + 兵法者职业成长率），基于他第 10 级的基础值，恰为 0.5 时向上取整。确切的武器等级里程碑仍未确定。"
     },
     "inventory": [],
     "provenance": [

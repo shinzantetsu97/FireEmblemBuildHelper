@@ -30,12 +30,22 @@
       ],
       "paralogueNo": 2,
       "paralogueTitle": "Dragon Blood",
+      "paralogueTitleZhHans": "龙之血",
       "fixedParentUnitId": "corrin",
       "personalSkillId": "draconic_heir",
       "notes": [
-        "Kana's gender is always opposite Corrin's. The selected spouse resolves Kana's growths, caps, traits, class inheritance, sibling, and support bonuses.",
-        "If Corrin marries an offspring unit, that spouse's own variable parent must also be selected before Kana's inherited data is fully resolved.",
-        "Male Corrin with Niles or female Corrin with Rhajat does not unlock Dragon Blood and produces no Kana."
+        {
+          "text": "Kana's gender is always opposite Corrin's. The selected spouse resolves Kana's growths, caps, traits, class inheritance, sibling, and support bonuses.",
+          "textZhHans": "神流的性别始终与神威相反。所选配偶决定神流的成长率、上限、属性、职业继承、兄弟姐妹与支援加成。"
+        },
+        {
+          "text": "If Corrin marries an offspring unit, that spouse's own variable parent must also be selected before Kana's inherited data is fully resolved.",
+          "textZhHans": "若神威与子女单位结婚，则需先选定该配偶自身的可变父母，神流的继承数据才能完全解析。"
+        },
+        {
+          "text": "Male Corrin with Niles or female Corrin with Rhajat does not unlock Dragon Blood and produces no Kana.",
+          "textZhHans": "男神威与零，或女神威与莎拉的组合不会解锁「龙之血」，也不会诞生神流。"
+        }
       ]
     },
     {
@@ -63,11 +73,18 @@
       "dragonVein": true,
       "paralogueNo": 3,
       "paralogueTitle": "Surprise Duet",
+      "paralogueTitleZhHans": "意外的二重奏",
       "fixedParentUnitId": "azura",
       "personalSkillId": "perfect_pitch",
       "notes": [
-        "Shigure is Azura's fixed offspring unit; selecting Azura's S-support partner resolves his father-dependent growths, caps, traits, sibling, class access, and support bonuses.",
-        "If Jakob is Shigure's father, Jakob supplies Troubadour first and Azura's inheritance resolves to Wyvern Rider instead."
+        {
+          "text": "Shigure is Azura's fixed offspring unit; selecting Azura's S-support partner resolves his father-dependent growths, caps, traits, sibling, class access, and support bonuses.",
+          "textZhHans": "时雨是阿库娅的固定子女单位；选择阿库娅的 S 支援对象即可决定其取决于父亲的成长率、上限、属性、兄弟姐妹、职业获取与支援加成。"
+        },
+        {
+          "text": "If Jakob is Shigure's father, Jakob supplies Troubadour first and Azura's inheritance resolves to Wyvern Rider instead.",
+          "textZhHans": "若乔卡是时雨的父亲，乔卡会先提供杖骑士，阿库娅的继承则改为解析为龙骑士。"
+        }
       ]
     },
     {
@@ -96,10 +113,13 @@
       "personalSkillId": "born_steward",
       "paralogueNo": 4,
       "paralogueTitle": "Fight or Flight",
+      "paralogueTitleZhHans": "战或逃",
       "fixedParentUnitId": "jakob",
       "notes": [
-        "Dwyer begins Fight or Flight as an allied NPC. Jakob can recruit him by talking to him; Dwyer also joins after the map if he survives.",
-        "His level, recruitment bases, and Offspring Seal outcome depend on story progress and the selected variable parent."
+        {
+          "text": "His level, recruitment bases, and Offspring Seal outcome depend on story progress and the selected variable parent.",
+          "textZhHans": "他的等级、招募基础值与子代之证的结果取决于剧情进度与所选的可变父母。"
+        }
       ]
     },
     {
@@ -120,6 +140,7 @@
       "gender": "female",
       "paralogueNo": 5,
       "paralogueTitle": "Bold Approach",
+      "paralogueTitleZhHans": "大胆的接近",
       "fixedParentUnitId": "silas",
       "names": {
         "en": "Sophie",
@@ -147,6 +168,7 @@
       "gender": "female",
       "paralogueNo": 6,
       "paralogueTitle": "Herbal Remedy",
+      "paralogueTitleZhHans": "草药良方",
       "fixedParentUnitId": "kaze",
       "names": {
         "en": "Midori",
@@ -173,6 +195,7 @@
       "gender": "male",
       "paralogueNo": 7,
       "paralogueTitle": "Father & Liege",
+      "paralogueTitleZhHans": "父亲与主君",
       "fixedParentUnitId": "ryoma",
       "names": {
         "en": "Shiro",
@@ -200,6 +223,7 @@
       "gender": "male",
       "paralogueNo": 8,
       "paralogueTitle": "A Great Hunt",
+      "paralogueTitleZhHans": "盛大的狩猎",
       "fixedParentUnitId": "takumi",
       "names": {
         "en": "Kiragi",
@@ -227,6 +251,7 @@
       "gender": "male",
       "paralogueNo": 9,
       "paralogueTitle": "Saizo vs. Saizo",
+      "paralogueTitleZhHans": "才藏对才藏",
       "fixedParentUnitId": "saizo",
       "names": {
         "en": "Asugi",
@@ -256,6 +281,7 @@
       ],
       "paralogueNo": 10,
       "paralogueTitle": "Hunter & Prey",
+      "paralogueTitleZhHans": "猎人与猎物",
       "fixedParentUnitId": "kaden",
       "names": {
         "en": "Selkie",
@@ -282,6 +308,7 @@
       "gender": "male",
       "paralogueNo": 11,
       "paralogueTitle": "A Long Grudge",
+      "paralogueTitleZhHans": "宿怨",
       "fixedParentUnitId": "hinata",
       "names": {
         "en": "Hisame",
@@ -308,6 +335,7 @@
       "gender": "female",
       "paralogueNo": 12,
       "paralogueTitle": "Sweet Dreams",
+      "paralogueTitleZhHans": "甜美的梦",
       "fixedParentUnitId": "azama",
       "names": {
         "en": "Mitama",
@@ -334,6 +362,7 @@
       "gender": "female",
       "paralogueNo": 13,
       "paralogueTitle": "Truly Talented",
+      "paralogueTitleZhHans": "天赋异禀",
       "fixedParentUnitId": "subaki",
       "names": {
         "en": "Caeldori",
@@ -360,6 +389,7 @@
       "gender": "female",
       "paralogueNo": 14,
       "paralogueTitle": "After the End",
+      "paralogueTitleZhHans": "终结之后",
       "fixedParentUnitId": "hayato",
       "names": {
         "en": "Rhajat",
@@ -387,6 +417,7 @@
       "dragonVein": true,
       "paralogueNo": 15,
       "paralogueTitle": "Hidden Bravery",
+      "paralogueTitleZhHans": "潜藏的勇气",
       "fixedParentUnitId": "xander",
       "names": {
         "en": "Siegbert",
@@ -414,6 +445,7 @@
       "dragonVein": true,
       "paralogueNo": 16,
       "paralogueTitle": "Abducted",
+      "paralogueTitleZhHans": "被掳走",
       "fixedParentUnitId": "leo",
       "names": {
         "en": "Forrest",
@@ -440,6 +472,7 @@
       "gender": "male",
       "paralogueNo": 17,
       "paralogueTitle": "Two Defenders",
+      "paralogueTitleZhHans": "两位守护者",
       "fixedParentUnitId": "benny",
       "names": {
         "en": "Ignatius",
@@ -469,6 +502,7 @@
       ],
       "paralogueNo": 18,
       "paralogueTitle": "Nutty Family",
+      "paralogueTitleZhHans": "疯狂的一家",
       "fixedParentUnitId": "keaton",
       "names": {
         "en": "Velouria",
@@ -495,6 +529,7 @@
       "gender": "male",
       "paralogueNo": 19,
       "paralogueTitle": "Great Heroism",
+      "paralogueTitleZhHans": "大英雄",
       "fixedParentUnitId": "arthur",
       "names": {
         "en": "Percy",
@@ -521,6 +556,7 @@
       "gender": "female",
       "paralogueNo": 20,
       "paralogueTitle": "Ultimate Power",
+      "paralogueTitleZhHans": "究极之力",
       "fixedParentUnitId": "odin",
       "names": {
         "en": "Ophelia",
@@ -547,6 +583,7 @@
       "gender": "female",
       "paralogueNo": 21,
       "paralogueTitle": "In Endless Dreams",
+      "paralogueTitleZhHans": "无尽梦境",
       "fixedParentUnitId": "laslow",
       "names": {
         "en": "Soleil",
@@ -573,6 +610,7 @@
       "gender": "female",
       "paralogueNo": 22,
       "paralogueTitle": "Abrupt Clash",
+      "paralogueTitleZhHans": "突如其来的冲突",
       "fixedParentUnitId": "niles",
       "names": {
         "en": "Nina",

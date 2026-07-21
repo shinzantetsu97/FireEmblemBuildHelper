@@ -1,10 +1,25 @@
 export const RELEASES = [
   {
+    version: "0.7.0",
+    date: "2026-07-21",
+    dateLabel: "July 21, 2026",
+    title: "Simplified Chinese support",
+    current: true,
+    changes: [
+      "Added Simplified Chinese language support across navigation, unit profiles, class and personal skills, recruitment data, supports, and offspring planning.",
+      "Added a searchable personal-skill directory and reorganized FE14 navigation.",
+      "Refactored localized data and route-resolved profiles so notes, labels, recruitment conditions, and character states follow the selected route.",
+      "Restored character notes beneath the stat profile and moved conditional join requirements into Recruitment.",
+      "Corrected several recruitment and availability records, including Charlotte and Benny requiring Elise in Revelation and Kaze remaining continuously available in Birthright.",
+      "Fixed assorted duplicated notes, localization gaps, class labels, search behavior, and unit-profile presentation issues.",
+      "Simplified Chinese terminology and skill translations build on work by the FC Fantasy and 3DM communities.",
+    ],
+  },
+  {
     version: "0.6.2",
     date: "2026-07-19",
     dateLabel: "July 19, 2026",
     title: "Unit profile layout tweak",
-    current: true,
     changes: [
       "Moved Starting Skills ahead of Inventory in route-driven unit profiles.",
     ],

@@ -4,7 +4,7 @@
   "weaponTypes": [
     {
       "id": "sword",
-      "names": { "en": "Sword" },
+      "names": { "en": "Sword", "zhHans": "剑" },
       "iconAssetId": "sword",
       "displayOrder": 1,
       "provenance": [
@@ -15,7 +15,7 @@
     },
     {
       "id": "lance",
-      "names": { "en": "Lance" },
+      "names": { "en": "Lance", "zhHans": "枪" },
       "iconAssetId": "lance",
       "displayOrder": 2,
       "provenance": [
@@ -26,7 +26,7 @@
     },
     {
       "id": "axe",
-      "names": { "en": "Axe" },
+      "names": { "en": "Axe", "zhHans": "斧" },
       "iconAssetId": "axe",
       "displayOrder": 3,
       "provenance": [
@@ -37,7 +37,7 @@
     },
     {
       "id": "dagger",
-      "names": { "en": "Dagger" },
+      "names": { "en": "Dagger", "zhHans": "暗器" },
       "iconAssetId": "dagger",
       "displayOrder": 4,
       "provenance": [
@@ -48,7 +48,7 @@
     },
     {
       "id": "bow",
-      "names": { "en": "Bow" },
+      "names": { "en": "Bow", "zhHans": "弓" },
       "iconAssetId": "bow",
       "displayOrder": 5,
       "provenance": [
@@ -59,7 +59,7 @@
     },
     {
       "id": "tome",
-      "names": { "en": "Tome" },
+      "names": { "en": "Tome", "zhHans": "魔法书" },
       "iconAssetId": "tome",
       "displayOrder": 6,
       "provenance": [
@@ -70,7 +70,7 @@
     },
     {
       "id": "staff",
-      "names": { "en": "Staff" },
+      "names": { "en": "Staff", "zhHans": "杖" },
       "iconAssetId": "staff",
       "displayOrder": 7,
       "provenance": [
@@ -81,7 +81,7 @@
     },
     {
       "id": "dragonstone",
-      "names": { "en": "Dragonstone" },
+      "names": { "en": "Dragonstone", "zhHans": "龙石" },
       "iconAssetId": "dragonstone",
       "displayOrder": 8,
       "provenance": [
@@ -92,7 +92,7 @@
     },
     {
       "id": "beaststone",
-      "names": { "en": "Beaststone" },
+      "names": { "en": "Beaststone", "zhHans": "兽石" },
       "iconAssetId": "beaststone",
       "displayOrder": 9,
       "provenance": [

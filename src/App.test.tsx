@@ -94,11 +94,36 @@ describe("application regressions", () => {
     window.history.replaceState({}, "", "/FE14/Units");
     const view = render(<App />);
 
-    await user.click(screen.getByRole("link", { name: "FE14 Skills" }));
+    await user.click(screen.getByText("FE14"));
+    await user.click(await screen.findByRole("link", { name: "Class Skills" }));
     expect(window.location.pathname).toBe("/FE14/Skills");
     expect(screen.getByRole("heading", { name: "FE14 Class Skills", level: 1 })).toBeInTheDocument();
-    expect(view.container.querySelectorAll(".class-skill-class-row input[type='checkbox']")).toHaveLength(65);
+    // Monk/Great Master are hidden on the directory (duplicates of Shrine Maiden/Priestess),
+    // removing their two rows plus the redundant Onmyoji row under the Monk tree.
+    expect(view.container.querySelectorAll(".class-skill-class-row input[type='checkbox']")).toHaveLength(62);
     expect(view.container.querySelectorAll(".class-skill-result")).toHaveLength(106);
+    expect(screen.getByRole("checkbox", { name: "Shrine Maiden/Monk" })).toBeInTheDocument();
+    expect(screen.queryByRole("checkbox", { name: "Monk" })).not.toBeInTheDocument();
+  });
+
+  it("filters the personal-skill directory by route, generation, and substring search", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE14/Units");
+    const view = render(<App />);
+
+    await user.click(screen.getByText("FE14"));
+    await user.click(await screen.findByRole("link", { name: "Personal Skills" }));
+    expect(window.location.pathname).toBe("/FE14/PersonalSkills");
+    expect(screen.getByRole("heading", { name: "FE14 Personal Skills", level: 1 })).toBeInTheDocument();
+
+    // Every unit with a personal skill is listed by default.
+    const total = fe14Data.units.filter((unit) => unit.personalSkill !== null).length;
+    expect(view.container.querySelectorAll(".personal-skill-result")).toHaveLength(total);
+
+    // Character-name substring search narrows to a single unit.
+    await user.type(screen.getByLabelText("Search character names"), "Felicia");
+    expect(view.container.querySelectorAll(".personal-skill-result")).toHaveLength(1);
+    expect(screen.getByText("Felicia")).toBeInTheDocument();
   });
 
   it("renders Felicia through the shared base configuration and keeps JSON inspection", async () => {
@@ -107,7 +132,7 @@ describe("application regressions", () => {
     render(<App />);
 
     expect(screen.getByRole("heading", { name: "Felicia", level: 1 })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Base configuration", level: 2 })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Character Profile", level: 2 })).toBeInTheDocument();
     expect(screen.getByRole("table", { name: "Stat profile" })).toBeInTheDocument();
     expect(screen.getByLabelText("Joining stats")).toBeInTheDocument();
     expect(screen.getByLabelText("Effective growth rates")).toBeInTheDocument();
@@ -167,7 +192,7 @@ describe("application regressions", () => {
     view.unmount();
     window.history.replaceState({}, "", "/FE14/Units/Subaki");
     render(<App />);
-    expect(screen.getByRole("complementary", { name: "Female Corrin Talent only" })).toBeInTheDocument();
+    expect(screen.getByRole("complementary", { name: "Classes that can only be obtained via S supporting female Corrin with the corresponding talent" })).toBeInTheDocument();
   });
 
   it("preserves every legal Corrin boon and bane stance lookup", () => {
@@ -245,7 +270,7 @@ describe("application regressions", () => {
 
     const sources = screen.getByLabelText("Class access sources");
     const skills = screen.getByRole("region", { name: "Available class skills" });
-    const relationships = screen.getByRole("region", { name: "Supports and seal grants" });
+    const relationships = screen.getByRole("region", { name: "Supports and Reclass Options" });
     await user.click(within(relationships).getByRole("radio", { name: "Preview Peri Friendship Seal class skills" }));
     expect(within(sources).getByText("Friendship: Peri")).toBeInTheDocument();
     expect(within(skills).getByText("Cavalier")).toBeInTheDocument();

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "data:scrape:fcfantasy": "tsx scripts/data/fe14/scrape-fcfantasy-skills.ts",
     "data:inventory:skills": "tsx scripts/data/fe14/extract-skill-source-inventory.ts",
     "data:report:skills": "tsx scripts/data/fe14/summarize-skill-source-inventory.ts",
     "data:manifest:skill-icons": "tsx scripts/data/fe14/generate-skill-icon-manifest.ts",

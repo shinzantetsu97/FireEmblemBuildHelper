@@ -5,6 +5,7 @@ import { Download, FileText, ShieldAlert, Upload } from "lucide-react";
 import type { Workspace } from "../../types";
 import IconButton from "./IconButton";
 import { formatDateTime } from "./utils";
+import { useLocale } from "../../i18n/LocaleContext";
 
 export default function BackupBanner({
   activeWorkspace,
@@ -19,39 +20,37 @@ export default function BackupBanner({
   onImport: (event: ChangeEvent<HTMLInputElement>) => void;
   onTextExport: () => void;
 }) {
+  const { t } = useLocale();
   return (
     <Alert className="data-warning" variant="warning">
       <div className="warning-copy">
         <ShieldAlert aria-hidden="true" size={22} />
         <div>
-          <strong>Back up this browser-local workspace.</strong>
-          <p>
-            Clearing site data, using private browsing, or switching browsers or devices can
-            remove your notes. JSON backups restore data; text summaries are for reading.
-          </p>
+          <strong>{t("notes.backup.title")}</strong>
+          <p>{t("notes.backup.body")}</p>
           {activeWorkspace?.lastExportedAt ? (
-            <span>Last JSON backup: {formatDateTime(activeWorkspace.lastExportedAt)}</span>
+            <span>{t("notes.backup.last", { date: formatDateTime(activeWorkspace.lastExportedAt) })}</span>
           ) : (
-            <span>No JSON backup recorded yet.</span>
+            <span>{t("notes.backup.none")}</span>
           )}
         </div>
       </div>
       <div className="warning-actions">
         <Button variant="dark" size="sm" onClick={onBackup}>
           <Download aria-hidden="true" size={16} />
-          Backup JSON
+          {t("notes.backup.backupBtn")}
         </Button>
         <Button variant="outline-dark" size="sm" onClick={() => fileInputRef.current?.click()}>
           <Upload aria-hidden="true" size={16} />
-          Restore backup
+          {t("notes.backup.restoreBtn")}
         </Button>
-        <IconButton label="Download readable text summary" onClick={onTextExport}>
+        <IconButton label={t("notes.backup.textExportAria")} onClick={onTextExport}>
           <FileText aria-hidden="true" size={18} />
         </IconButton>
         <input
           ref={fileInputRef}
           accept="application/json,.json"
-          aria-label="Choose JSON backup file"
+          aria-label={t("notes.backup.fileAria")}
           className="visually-hidden"
           type="file"
           onChange={onImport}

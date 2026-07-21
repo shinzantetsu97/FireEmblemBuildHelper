@@ -1,6 +1,6 @@
 {
   "gameId": "fe14",
-  "updatedAt": "2026-07-18",
+  "updatedAt": "2026-07-20",
   "sources": [
     {
       "id": "fe14-workbook-cn",
@@ -1240,6 +1240,24 @@
       "language": "en",
       "reviewStatus": "accepted",
       "notes": "Source page and original file links for the nine FE14 weapon-rank icons used by the route-driven base configuration surface."
+    },
+    {
+      "id": "fcfantasy-fe14-class-skills",
+      "kind": "web",
+      "title": "FC Fantasy (fcfantasy.cn) - FE Fates Class Skills",
+      "location": "http://fcfantasy.cn/fe2015/database/class_skills.html",
+      "language": "zh-Hans",
+      "reviewStatus": "candidate",
+      "notes": "Chinese community skill database (FC Fantasy; draws on the fan-localization lineage credited to the FC Fantasy community and 3DM). Simplified-Chinese class-skill names and descriptions plus Japanese names. HTTPS certificate expired; fetch over HTTP."
+    },
+    {
+      "id": "fcfantasy-fe14-personal-skills",
+      "kind": "web",
+      "title": "FC Fantasy (fcfantasy.cn) - FE Fates Personal Skills",
+      "location": "http://fcfantasy.cn/fe2015/database/personal_skills.html",
+      "language": "zh-Hans",
+      "reviewStatus": "candidate",
+      "notes": "Chinese community skill database (FC Fantasy; draws on the fan-localization lineage credited to the FC Fantasy community and 3DM). Simplified-Chinese personal-skill names and effects. HTTPS certificate expired; fetch over HTTP."
     }
   ]
 }

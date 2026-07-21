@@ -107,6 +107,52 @@ describe("FE14 route-driven base configuration", () => {
     ]);
   });
 
+  it("keeps route and state notes scoped to the selected configuration", () => {
+    const birthrightGuest = resolveUnitBaseConfiguration(unit("takumi"), {
+      routeId: "birthright",
+      availabilityId: "takumi.birthright_guest",
+    }).configuration;
+    const birthrightJoin = resolveUnitBaseConfiguration(unit("takumi"), {
+      routeId: "birthright",
+      availabilityId: "takumi.birthright",
+    }).configuration;
+    const revelation = resolveUnitBaseConfiguration(unit("takumi"), { routeId: "revelation" }).configuration;
+
+    expect(birthrightGuest.notes).toContain("Takumi is a temporary guest in Birthright Chapter 6 and cannot gain EXP there.");
+    expect(birthrightJoin.notes).not.toContain("Takumi is a temporary guest in Birthright Chapter 6 and cannot gain EXP there.");
+    expect(birthrightJoin.notes).toContain("Takumi is unavailable for deployment in Birthright Chapter 16.");
+    expect(revelation.notes).not.toContain("Takumi is unavailable for deployment in Birthright Chapter 16.");
+  });
+
+  it("puts conditional join requirements in recruitment context", () => {
+    const mozu = resolveUnitBaseConfiguration(unit("mozu"), { routeId: "birthright" }).configuration;
+    const charlotteConquest = resolveUnitBaseConfiguration(unit("charlotte"), { routeId: "conquest" }).configuration;
+    const charlotteRevelation = resolveUnitBaseConfiguration(unit("charlotte"), { routeId: "revelation" }).configuration;
+    const bennyConquest = resolveUnitBaseConfiguration(unit("benny"), { routeId: "conquest" }).configuration;
+    const bennyRevelation = resolveUnitBaseConfiguration(unit("benny"), { routeId: "revelation" }).configuration;
+
+    expect(mozu.join).toMatchObject({
+      chapter: 7,
+      timing: "conditional",
+      condition: "Talk to Mozu with Corrin, or complete the map while she survives.",
+    });
+    expect(mozu.notes.join(" ")).not.toMatch(/recruit mozu|talk to mozu/i);
+    expect(charlotteConquest.join).toEqual({ kind: "story", chapter: 13, timing: "during", turn: 3 });
+    expect(bennyConquest.join).toEqual({ kind: "story", chapter: 13, timing: "during", turn: 3 });
+    expect(charlotteRevelation.join).toMatchObject({
+      kind: "story",
+      chapter: 14,
+      timing: "conditional",
+      condition: "Talk to Charlotte with Elise.",
+    });
+    expect(bennyRevelation.join).toMatchObject({
+      kind: "story",
+      chapter: 14,
+      timing: "conditional",
+      condition: "Talk to Benny with Elise.",
+    });
+  });
+
   it("exposes Kaze's appearance and rejoin as separate selectable states", () => {
     const defaultResult = resolveUnitBaseConfiguration(unit("kaze"), { routeId: "conquest" });
 
@@ -124,6 +170,46 @@ describe("FE14 route-driven base configuration", () => {
     expect(appearance.stateKind).toBe("appearance");
     expect(appearance.join).toEqual({ kind: "story", chapter: 4, timing: "start" });
     expect(appearance.notes[0]).toMatch(/returns in Chapter 11/i);
+  });
+
+  it("keeps Kaze in one continuous Birthright state", () => {
+    const result = resolveUnitBaseConfiguration(unit("kaze"), { routeId: "birthright" });
+
+    expect(result.stateOptions).toEqual([
+      expect.objectContaining({ availabilityId: "kaze.common" }),
+    ]);
+    expect(result.selectedAvailabilityId).toBe("kaze.common");
+    expect(result.configuration.join).toEqual({ kind: "story", chapter: 4, timing: "start" });
+    expect(result.configuration.notes).toContain(
+      "Kaze remains in the army after Chapter 15 only if Corrin has reached A support or higher with him.",
+    );
+  });
+
+  it("omits redundant Corrin stance prose and localizes both attendant level-cap notes", () => {
+    const corrin = resolveUnitBaseConfiguration(unit("corrin"), { routeId: "birthright" }).configuration;
+    const felicia = resolveUnitBaseConfiguration(unit("felicia"), {
+      routeId: "birthright",
+      avatarGender: "male",
+    }).configuration;
+    const jakob = resolveUnitBaseConfiguration(unit("jakob"), {
+      routeId: "birthright",
+      avatarGender: "female",
+    }).configuration;
+
+    expect(corrin.notes.join(" ")).not.toMatch(/Attack Stance|Guard Stance/);
+    expect(corrin.notesZhHans.join(" ")).not.toMatch(/攻阵|防阵/);
+    expect(felicia.notes).toContain(
+      "Felicia has the effect of four built-in Eternal Seals, allowing her to reach level 40 despite starting in the promoted Maid class.",
+    );
+    expect(felicia.notesZhHans).toContain(
+      "菲利希亚内置了相当于使用四枚永恒之证的效果，因此即使初始职业是上级职业女仆，等级上限也能达到40级。",
+    );
+    expect(jakob.notes).toContain(
+      "Jakob has the effect of four built-in Eternal Seals, allowing him to reach level 40 despite starting in the promoted Butler class.",
+    );
+    expect(jakob.notesZhHans).toContain(
+      "乔卡内置了相当于使用四枚永恒之证的效果，因此即使初始职业是上级职业管家，等级上限也能达到40级。",
+    );
   });
 
   it("classifies Rinkah by route and warns when Rinkah or Sakura are not permanent", () => {

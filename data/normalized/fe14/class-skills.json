@@ -5,9 +5,11 @@
     {
       "id": "dragon_ward",
       "names": {
-        "en": "Dragon Ward"
+        "en": "Dragon Ward",
+        "zhHans": "龙盾"
       },
       "description": "Allies adjacent to the user have a Luck x 0.5% chance of receiving half damage from enemy attacks.",
+      "descriptionZhHans": "发动率=同伴的幸运÷2%。邻接的同伴受到攻击时伤害减半",
       "iconAssetId": "dragon_ward",
       "acquisition": [
         {
@@ -32,9 +34,11 @@
     {
       "id": "hoshidan_unity",
       "names": {
-        "en": "Hoshidan Unity"
+        "en": "Hoshidan Unity",
+        "zhHans": "白夜"
       },
       "description": "Adds 10% to skill activation rates.",
+      "descriptionZhHans": "特技发动率+10%",
       "iconAssetId": "hoshidan_unity",
       "acquisition": [
         {
@@ -59,9 +63,11 @@
     {
       "id": "duelists_blow",
       "names": {
-        "en": "Duelist’s Blow"
+        "en": "Duelist’s Blow",
+        "zhHans": "清流一击"
       },
       "description": "When user triggers the battle, Avoid +30.",
+      "descriptionZhHans": "自己发动攻击时，回避+30",
       "iconAssetId": "duelists_blow",
       "acquisition": [
         {
@@ -86,9 +92,11 @@
     {
       "id": "vantage",
       "names": {
-        "en": "Vantage"
+        "en": "Vantage",
+        "zhHans": "埋伏"
       },
       "description": "At the start of battle, when the user has under half HP, they attack first.",
+      "descriptionZhHans": "HP一半以下时，受到敌方攻击时先制攻击",
       "iconAssetId": "vantage",
       "acquisition": [
         {
@@ -113,9 +121,11 @@
     {
       "id": "astra",
       "names": {
-        "en": "Astra"
+        "en": "Astra",
+        "zhHans": "流星"
       },
       "description": "Skill x 0.5% chance of triggering 5 consecutive hits with half damage.",
+      "descriptionZhHans": "发动率＝技÷2%。连续发动伤害减半的5次攻击",
       "iconAssetId": "astra",
       "acquisition": [
         {
@@ -140,9 +150,11 @@
     {
       "id": "swordfaire",
       "names": {
-        "en": "Swordfaire"
+        "en": "Swordfaire",
+        "zhHans": "剑术专家"
       },
       "description": "When user is equipped with a Sword, damage +5 during battle.",
+      "descriptionZhHans": "装备剑战斗时，造成的伤害+5",
       "iconAssetId": "swordfaire",
       "acquisition": [
         {
@@ -167,9 +179,11 @@
     {
       "id": "seal_strength",
       "names": {
-        "en": "Seal Strength"
+        "en": "Seal Strength",
+        "zhHans": "力量封锁"
       },
       "description": "After battle, enemy's Strength -6.",
+      "descriptionZhHans": "战斗后，敌人力-6，逐回合恢复",
       "iconAssetId": "seal_strength",
       "acquisition": [
         {
@@ -179,6 +193,9 @@
       ],
       "notes": [
         "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "notesZhHans": [
+        "敌方减益不会与对同一属性的另一减益叠加；取较大值生效，受影响的属性每回合恢复 1 点。"
       ],
       "provenance": [
         {
@@ -197,9 +214,11 @@
     {
       "id": "life_and_death",
       "names": {
-        "en": "Life and Death"
+        "en": "Life and Death",
+        "zhHans": "死线"
       },
       "description": "During battles, damage +10, damage received +10.",
+      "descriptionZhHans": "战斗中，对敌方造成的伤害+10，受到敌方造成的伤害+10",
       "iconAssetId": "life_and_death",
       "acquisition": [
         {
@@ -224,9 +243,11 @@
     {
       "id": "seal_resistance",
       "names": {
-        "en": "Seal Resistance"
+        "en": "Seal Resistance",
+        "zhHans": "魔防封锁"
       },
       "description": "After battle, enemy's Resistance -6.",
+      "descriptionZhHans": "战斗后，敌人魔防-6，逐回合恢复",
       "iconAssetId": "seal_resistance",
       "acquisition": [
         {
@@ -236,6 +257,9 @@
       ],
       "notes": [
         "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "notesZhHans": [
+        "敌方减益不会与对同一属性的另一减益叠加；取较大值生效，受影响的属性每回合恢复 1 点。"
       ],
       "provenance": [
         {
@@ -254,9 +278,11 @@
     {
       "id": "shove",
       "names": {
-        "en": "Shove"
+        "en": "Shove",
+        "zhHans": "撞击"
       },
       "description": "Select the \"Shove\" command to push an adjacent ally 1 tile.",
+      "descriptionZhHans": "可使用撞击（体当たり）指令，将一个邻接的我方撞开1格",
       "iconAssetId": "shove",
       "acquisition": [
         {
@@ -281,9 +307,11 @@
     {
       "id": "death_blow",
       "names": {
-        "en": "Death Blow"
+        "en": "Death Blow",
+        "zhHans": "鬼神一击"
       },
       "description": "When user triggers the battle, Critical rate +20.",
+      "descriptionZhHans": "自己发动攻击时，必杀+20",
       "iconAssetId": "death_blow",
       "acquisition": [
         {
@@ -308,9 +336,11 @@
     {
       "id": "counter",
       "names": {
-        "en": "Counter"
+        "en": "Counter",
+        "zhHans": "反击"
       },
       "description": "When an adjacent enemy triggers the battle and inflicts damage, the enemy receives the same damage.",
+      "descriptionZhHans": "受到邻接的敌方攻击伤害时，反弹相同的伤害",
       "iconAssetId": "counter",
       "acquisition": [
         {
@@ -335,9 +365,11 @@
     {
       "id": "salvage_blow",
       "names": {
-        "en": "Salvage Blow"
+        "en": "Salvage Blow",
+        "zhHans": "匠之技"
       },
       "description": "When user triggers the battle, Luck% chance of receiving a Katana, Naginata, Club, Yumi or Shuriken if the user defeats the enemy.",
+      "descriptionZhHans": "发动率＝幸运%。自己发动攻击且击倒敌方，将随机获得铁制的刀、薙刀、金棒、和弓、手里剑之一",
       "iconAssetId": "salvage_blow",
       "acquisition": [
         {
@@ -362,9 +394,11 @@
     {
       "id": "lancebreaker",
       "names": {
-        "en": "Lancebreaker"
+        "en": "Lancebreaker",
+        "zhHans": "破枪者"
       },
       "description": "Hit rate and Avoid +50 when the enemy is equipped with a Lance.",
+      "descriptionZhHans": "敌方装备枪时，命中、回避+50",
       "iconAssetId": "lancebreaker",
       "acquisition": [
         {
@@ -389,9 +423,11 @@
     {
       "id": "seal_defense",
       "names": {
-        "en": "Seal Defense"
+        "en": "Seal Defense",
+        "zhHans": "防守封锁"
       },
       "description": "After battle, enemy's Defense -6.",
+      "descriptionZhHans": "战斗后，敌人守备-6，逐回合恢复",
       "iconAssetId": "seal_defense",
       "acquisition": [
         {
@@ -402,6 +438,10 @@
       "notes": [
         "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn.",
         "Serenes Forest uses \"Seal Defence\"; the canonical name uses the localized \"Seal Defense\" spelling already established by accepted FE14 data."
+      ],
+      "notesZhHans": [
+        "敌方减益不会与对同一属性的另一减益叠加；取较大值生效，受影响的属性每回合恢复 1 点。",
+        "Serenes Forest 使用 “Seal Defence” 拼写；此处采用 FE14 既定数据中已确立的本地化 “Seal Defense” 拼写。"
       ],
       "provenance": [
         {
@@ -420,9 +460,11 @@
     {
       "id": "swap",
       "names": {
-        "en": "Swap"
+        "en": "Swap",
+        "zhHans": "换位"
       },
       "description": "Select the \"Swap\" command to swap places with an adjacent ally on the map.",
+      "descriptionZhHans": "可使用换位（入れ替え）指令，和一个邻接的我方交换站位",
       "iconAssetId": "swap",
       "acquisition": [
         {
@@ -447,9 +489,11 @@
     {
       "id": "seal_speed",
       "names": {
-        "en": "Seal Speed"
+        "en": "Seal Speed",
+        "zhHans": "速度封锁"
       },
       "description": "After battle, enemy's Speed -6.",
+      "descriptionZhHans": "战斗后，敌人速-6，逐回合恢复",
       "iconAssetId": "seal_speed",
       "acquisition": [
         {
@@ -459,6 +503,9 @@
       ],
       "notes": [
         "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "notesZhHans": [
+        "敌方减益不会与对同一属性的另一减益叠加；取较大值生效，受影响的属性每回合恢复 1 点。"
       ],
       "provenance": [
         {
@@ -477,9 +524,11 @@
     {
       "id": "lancefaire",
       "names": {
-        "en": "Lancefaire"
+        "en": "Lancefaire",
+        "zhHans": "枪术专家"
       },
       "description": "When user is equipped with a Lance, damage +5 during battle.",
+      "descriptionZhHans": "装备枪战斗时，造成的伤害+5",
       "iconAssetId": "lancefaire",
       "acquisition": [
         {
@@ -504,9 +553,11 @@
     {
       "id": "rend_heaven",
       "names": {
-        "en": "Rend Heaven"
+        "en": "Rend Heaven",
+        "zhHans": "破天"
       },
       "description": "Skill x 1.5% chance of adding half the enemy's Strength (if user has a physical weapon) or Magic (if user has a magical weapon) as damage.",
+      "descriptionZhHans": "发动率＝技×1.5%。物理攻击时追加敌方力÷2的伤害，魔法攻击时追加敌方魔力÷2的伤害",
       "iconAssetId": "rend_heaven",
       "acquisition": [
         {
@@ -531,9 +582,11 @@
     {
       "id": "quixotic",
       "names": {
-        "en": "Quixotic"
+        "en": "Quixotic",
+        "zhHans": "倾奇者"
       },
       "description": "User and enemy's Hit rate +30 and skill activation rate +15% during battle.",
+      "descriptionZhHans": "战斗时双方的命中+30，技能发动率+15",
       "iconAssetId": "quixotic",
       "acquisition": [
         {
@@ -558,9 +611,11 @@
     {
       "id": "magic_plus_2",
       "names": {
-        "en": "Magic +2"
+        "en": "Magic +2",
+        "zhHans": "魔力＋２"
       },
       "description": "Magic +2.",
+      "descriptionZhHans": "魔力+2",
       "iconAssetId": "magic_plus_2",
       "acquisition": [
         {
@@ -585,9 +640,11 @@
     {
       "id": "future_sight",
       "names": {
-        "en": "Future Sight"
+        "en": "Future Sight",
+        "zhHans": "神签"
       },
       "description": "When user triggers the battle, Luck% chance of gaining double experience when user defeats the enemy.",
+      "descriptionZhHans": "发动率＝幸运%。自己发动攻击且击倒敌方，获得2倍经验值",
       "iconAssetId": "future_sight",
       "acquisition": [
         {
@@ -612,9 +669,11 @@
     {
       "id": "rally_magic",
       "names": {
-        "en": "Rally Magic"
+        "en": "Rally Magic",
+        "zhHans": "魔力支援"
       },
       "description": "Magic +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "descriptionZhHans": "可使用支援指令，使周围2格内的同伴1回合内魔力+4",
       "iconAssetId": "rally_magic",
       "acquisition": [
         {
@@ -639,9 +698,11 @@
     {
       "id": "tomefaire",
       "names": {
-        "en": "Tomefaire"
+        "en": "Tomefaire",
+        "zhHans": "魔法专家"
       },
       "description": "When user is equipped with a Tome, damage +5 during battle.",
+      "descriptionZhHans": "装备魔法书战斗时，造成的伤害+5",
       "iconAssetId": "tomefaire",
       "acquisition": [
         {
@@ -666,9 +727,11 @@
     {
       "id": "miracle",
       "names": {
-        "en": "Miracle"
+        "en": "Miracle",
+        "zhHans": "祈祷"
       },
       "description": "Luck% chance of leaving the user with 1 HP when they have 2 or more HP.",
+      "descriptionZhHans": "发动率＝幸运%。受到致命攻击时，若HP不为1则可以残留1HP",
       "iconAssetId": "miracle",
       "acquisition": [
         {
@@ -697,9 +760,11 @@
     {
       "id": "rally_luck",
       "names": {
-        "en": "Rally Luck"
+        "en": "Rally Luck",
+        "zhHans": "幸运支援"
       },
       "description": "Luck +8 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "descriptionZhHans": "可使用支援指令，使周围2格内的同伴1回合内幸运+8",
       "iconAssetId": "rally_luck",
       "acquisition": [
         {
@@ -728,9 +793,11 @@
     {
       "id": "renewal",
       "names": {
-        "en": "Renewal"
+        "en": "Renewal",
+        "zhHans": "回复"
       },
       "description": "Recover 30% HP at the start of the user's Turn.",
+      "descriptionZhHans": "回合开始时，HP回复30%",
       "iconAssetId": "renewal",
       "acquisition": [
         {
@@ -759,9 +826,11 @@
     {
       "id": "countermagic",
       "names": {
-        "en": "Countermagic"
+        "en": "Countermagic",
+        "zhHans": "魔法反击"
       },
       "description": "When the enemy triggers the battle and inflicts magical damage, the enemy receives the same damage.",
+      "descriptionZhHans": "受到魔法攻击伤害时，反弹相同的伤害",
       "iconAssetId": "countermagic",
       "acquisition": [
         {
@@ -790,9 +859,11 @@
     {
       "id": "darting_blow",
       "names": {
-        "en": "Darting Blow"
+        "en": "Darting Blow",
+        "zhHans": "飞燕一击"
       },
       "description": "When user triggers the battle, follow up attack speed +5.",
+      "descriptionZhHans": "自己发动攻击时，追击系数+5",
       "iconAssetId": "darting_blow",
       "acquisition": [
         {
@@ -817,9 +888,11 @@
     {
       "id": "camaraderie",
       "names": {
-        "en": "Camaraderie"
+        "en": "Camaraderie",
+        "zhHans": "和平之心"
       },
       "description": "Recover 10% HP at the start of the user's Turn if there are allies within a 2 tile radius.",
+      "descriptionZhHans": "回合开始时，若周围2格内有我方，HP回复10%",
       "iconAssetId": "camaraderie",
       "acquisition": [
         {
@@ -844,9 +917,11 @@
     {
       "id": "rally_speed",
       "names": {
-        "en": "Rally Speed"
+        "en": "Rally Speed",
+        "zhHans": "速度支援"
       },
       "description": "Speed +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "descriptionZhHans": "可使用支援指令，使周围2格内的同伴1回合内速+4",
       "iconAssetId": "rally_speed",
       "acquisition": [
         {
@@ -871,9 +946,11 @@
     {
       "id": "warding_blow",
       "names": {
-        "en": "Warding Blow"
+        "en": "Warding Blow",
+        "zhHans": "明镜一击"
       },
       "description": "When user triggers the battle, magical damage received -20.",
+      "descriptionZhHans": "自己发动攻击时，受到的魔法伤害-20",
       "iconAssetId": "warding_blow",
       "acquisition": [
         {
@@ -898,9 +975,11 @@
     {
       "id": "air_superiority",
       "names": {
-        "en": "Air Superiority"
+        "en": "Air Superiority",
+        "zhHans": "天翔"
       },
       "description": "Hit rate and Avoid +30 when facing Flying enemies.",
+      "descriptionZhHans": "敌方是飞行单位时，命中、回避+30",
       "iconAssetId": "air_superiority",
       "acquisition": [
         {
@@ -925,9 +1004,11 @@
     {
       "id": "amaterasu",
       "names": {
-        "en": "Amaterasu"
+        "en": "Amaterasu",
+        "zhHans": "天照"
       },
       "description": "Allies within a 2 tile radius recover 20% HP at the start of the user's Turn.",
+      "descriptionZhHans": "回合开始时，周围2格内我方的HP回复20%",
       "iconAssetId": "amaterasu",
       "acquisition": [
         {
@@ -952,9 +1033,11 @@
     {
       "id": "skill_plus_2",
       "names": {
-        "en": "Skill +2"
+        "en": "Skill +2",
+        "zhHans": "技＋２"
       },
       "description": "Skill +2.",
+      "descriptionZhHans": "技+2",
       "iconAssetId": "skill_plus_2",
       "acquisition": [
         {
@@ -979,9 +1062,11 @@
     {
       "id": "quick_draw",
       "names": {
-        "en": "Quick Draw"
+        "en": "Quick Draw",
+        "zhHans": "先发制人"
       },
       "description": "When user triggers the battle, damage +4.",
+      "descriptionZhHans": "自己发动攻击时，造成的伤害+4",
       "iconAssetId": "quick_draw",
       "acquisition": [
         {
@@ -1006,9 +1091,11 @@
     {
       "id": "certain_blow",
       "names": {
-        "en": "Certain Blow"
+        "en": "Certain Blow",
+        "zhHans": "凶鸟一击"
       },
       "description": "When user triggers the battle, Hit rate +40.",
+      "descriptionZhHans": "自己发动攻击时，命中+40",
       "iconAssetId": "certain_blow",
       "acquisition": [
         {
@@ -1033,9 +1120,11 @@
     {
       "id": "bowfaire",
       "names": {
-        "en": "Bowfaire"
+        "en": "Bowfaire",
+        "zhHans": "弓术专家"
       },
       "description": "When user is equipped with a Bow, damage +5 during battle.",
+      "descriptionZhHans": "装备弓战斗时，造成的伤害+5",
       "iconAssetId": "bowfaire",
       "acquisition": [
         {
@@ -1060,9 +1149,11 @@
     {
       "id": "locktouch",
       "names": {
-        "en": "Locktouch"
+        "en": "Locktouch",
+        "zhHans": "开锁"
       },
       "description": "User can open doors and chests without requiring keys.",
+      "descriptionZhHans": "无需钥匙也可开门、开宝箱",
       "iconAssetId": "locktouch",
       "acquisition": [
         {
@@ -1102,9 +1193,11 @@
     {
       "id": "poison_strike",
       "names": {
-        "en": "Poison Strike"
+        "en": "Poison Strike",
+        "zhHans": "蛇毒"
       },
       "description": "When user triggers the battle, the enemy's HP is reduced by 20% after the battle.",
+      "descriptionZhHans": "自己发动攻击时，战斗后敌方HP减少其HP最大值的20%",
       "iconAssetId": "poison_strike",
       "acquisition": [
         {
@@ -1129,9 +1222,11 @@
     {
       "id": "lethality",
       "names": {
-        "en": "Lethality"
+        "en": "Lethality",
+        "zhHans": "灭杀"
       },
       "description": "Skill x 0.25% chance of instantly defeating the enemy when dealing 1 or more damage.",
+      "descriptionZhHans": "发动率＝技÷4%。当攻击能造成至少1点伤害时，一击必杀",
       "iconAssetId": "lethality",
       "acquisition": [
         {
@@ -1156,9 +1251,11 @@
     {
       "id": "shurikenfaire",
       "names": {
-        "en": "Shurikenfaire"
+        "en": "Shurikenfaire",
+        "zhHans": "暗器术专家"
       },
       "description": "When user is equipped with a Dagger, damage +5 during battle.",
+      "descriptionZhHans": "装备暗器战斗时，造成的伤害+5",
       "iconAssetId": "shurikenfaire",
       "acquisition": [
         {
@@ -1183,9 +1280,11 @@
     {
       "id": "golembane",
       "names": {
-        "en": "Golembane"
+        "en": "Golembane",
+        "zhHans": "人偶破坏"
       },
       "description": "Attacks are effective against Mechanists, Automatons and Stoneborn.",
+      "descriptionZhHans": "攻击附加对傀儡师、傀儡人偶、石巨人特效",
       "iconAssetId": "golembane",
       "acquisition": [
         {
@@ -1210,9 +1309,11 @@
     {
       "id": "replicate",
       "names": {
-        "en": "Replicate"
+        "en": "Replicate",
+        "zhHans": "分身"
       },
       "description": "Select the \"Replicate\" command once per map to create a replica with the same appearance, stats, inventory and HP as the user (Anything that happens to the replica happens to the user and vice versa - even death).",
+      "descriptionZhHans": "可使用复制（写し身）指令，复制一个和自己一样的作战单位，共享HP，每场战斗仅限1次",
       "iconAssetId": "replicate",
       "acquisition": [
         {
@@ -1237,9 +1338,11 @@
     {
       "id": "potent_potion",
       "names": {
-        "en": "Potent Potion"
+        "en": "Potent Potion",
+        "zhHans": "特效药"
       },
       "description": "The effect of HP recovery and stat-boosting potions is increased by 50%.",
+      "descriptionZhHans": "HP回复药和能力上升药的效果提升50%",
       "iconAssetId": "potent_potion",
       "acquisition": [
         {
@@ -1264,9 +1367,11 @@
     {
       "id": "quick_salve",
       "names": {
-        "en": "Quick Salve"
+        "en": "Quick Salve",
+        "zhHans": "常备药"
       },
       "description": "After consuming a HP recovery or stat-boosting potion, the user can perform another action.",
+      "descriptionZhHans": "使用HP回复药和能力上升药后，仍可以继续行动",
       "iconAssetId": "quick_salve",
       "acquisition": [
         {
@@ -1291,9 +1396,11 @@
     {
       "id": "profiteer",
       "names": {
-        "en": "Profiteer"
+        "en": "Profiteer",
+        "zhHans": "坐享其成"
       },
       "description": "Luck% chance of obtaining a Gold Bar after moving during the first seven Turns.",
+      "descriptionZhHans": "发动率＝幸运%。在前7个回合每次行动完毕有机会获得1个小金块",
       "iconAssetId": "profiteer",
       "acquisition": [
         {
@@ -1318,9 +1425,11 @@
     {
       "id": "spendthrift",
       "names": {
-        "en": "Spendthrift"
+        "en": "Spendthrift",
+        "zhHans": "一掷千金"
       },
       "description": "During battles, user spends a Gold Bar for damage +10 and damage received -10.",
+      "descriptionZhHans": "自己持有小金块发动攻击时，消耗小金块，造成的伤害+10，受到的伤害-10",
       "iconAssetId": "spendthrift",
       "acquisition": [
         {
@@ -1345,9 +1454,11 @@
     {
       "id": "evenhanded",
       "names": {
-        "en": "Evenhanded"
+        "en": "Evenhanded",
+        "zhHans": "偶像之幻"
       },
       "description": "During even-numbered Turns, damage +4.",
+      "descriptionZhHans": "在偶数回合造成的伤害+4",
       "iconAssetId": "evenhanded",
       "acquisition": [
         {
@@ -1372,9 +1483,11 @@
     {
       "id": "beastbane",
       "names": {
-        "en": "Beastbane"
+        "en": "Beastbane",
+        "zhHans": "兽特效"
       },
       "description": "When user is a Wolfskin or Kitsune, their attacks are effective against Beast units.",
+      "descriptionZhHans": "变身为妖狐、狼人系战斗时，攻击附加兽马系特效",
       "iconAssetId": "beastbane",
       "acquisition": [
         {
@@ -1414,9 +1527,11 @@
     {
       "id": "even_better",
       "names": {
-        "en": "Even Better"
+        "en": "Even Better",
+        "zhHans": "偶然的小憩"
       },
       "description": "Recover 40% HP at the start of even-numbered Turns.",
+      "descriptionZhHans": "偶数回合开始时，HP回复40%",
       "iconAssetId": "even_better",
       "acquisition": [
         {
@@ -1441,9 +1556,11 @@
     {
       "id": "grisly_wound",
       "names": {
-        "en": "Grisly Wound"
+        "en": "Grisly Wound",
+        "zhHans": "四牙"
       },
       "description": "The enemy's HP is reduced by 20% after the battle.",
+      "descriptionZhHans": "战斗后敌方HP减少其HP最大值的20%",
       "iconAssetId": "grisly_wound",
       "acquisition": [
         {
@@ -1483,9 +1600,11 @@
     {
       "id": "luck_plus_4",
       "names": {
-        "en": "Luck +4"
+        "en": "Luck +4",
+        "zhHans": "幸运＋４"
       },
       "description": "Luck +4.",
+      "descriptionZhHans": "幸运+4",
       "iconAssetId": "luck_plus_4",
       "acquisition": [
         {
@@ -1510,9 +1629,11 @@
     {
       "id": "inspiring_song",
       "names": {
-        "en": "Inspiring Song"
+        "en": "Inspiring Song",
+        "zhHans": "特别的歌"
       },
       "description": "Skill, Speed and Luck +3 for one Turn for the unit who receives the user's song.",
+      "descriptionZhHans": "被歌声再动的同伴1回合内技、速、幸运+3",
       "iconAssetId": "inspiring_song",
       "acquisition": [
         {
@@ -1537,9 +1658,11 @@
     {
       "id": "voice_of_peace",
       "names": {
-        "en": "Voice of Peace"
+        "en": "Voice of Peace",
+        "zhHans": "平和之声"
       },
       "description": "Enemies within a 2 tile radius deal 2 less physical damage.",
+      "descriptionZhHans": "周围2格内的敌方战斗时，物理伤害-2",
       "iconAssetId": "voice_of_peace",
       "acquisition": [
         {
@@ -1564,9 +1687,11 @@
     {
       "id": "foreign_princess",
       "names": {
-        "en": "Foreign Princess"
+        "en": "Foreign Princess",
+        "zhHans": "异邦的公主"
       },
       "description": "\"Foreign Army\" enemies within a 2 tile radius deal 2 less damage and receive 2 extra damage.",
+      "descriptionZhHans": "周围2格内势力为“异邦军”的敌方战斗时，伤害-2，受到的伤害+2",
       "iconAssetId": "foreign_princess",
       "acquisition": [
         {
@@ -1591,9 +1716,11 @@
     {
       "id": "aptitude",
       "names": {
-        "en": "Aptitude"
+        "en": "Aptitude",
+        "zhHans": "优良成长"
       },
       "description": "Adds 10% to all growth rates during Level Ups.",
+      "descriptionZhHans": "升级时全体成长率+10%",
       "iconAssetId": "aptitude",
       "acquisition": [
         {
@@ -1618,9 +1745,11 @@
     {
       "id": "underdog",
       "names": {
-        "en": "Underdog"
+        "en": "Underdog",
+        "zhHans": "下克上"
       },
       "description": "Hit rate and Avoid +15 when user's Level is lower than the enemy (promoted units count as Level +20).",
+      "descriptionZhHans": "自己比敌方等级低时，命中、回避+15（上位职业的等级按+20算）",
       "iconAssetId": "underdog",
       "acquisition": [
         {
@@ -1645,9 +1774,11 @@
     {
       "id": "nobility",
       "names": {
-        "en": "Nobility"
+        "en": "Nobility",
+        "zhHans": "高贵的血统"
       },
       "description": "Experience gained x 1.2.",
+      "descriptionZhHans": "获得1.2倍经验值",
       "iconAssetId": "nobility",
       "acquisition": [
         {
@@ -1672,9 +1803,11 @@
     {
       "id": "dragon_fang",
       "names": {
-        "en": "Dragon Fang"
+        "en": "Dragon Fang",
+        "zhHans": "龙穿"
       },
       "description": "Skill x 0.75% chance of adding 50% of the user's Attack Power as damage.",
+      "descriptionZhHans": "发动率＝技×3/4%。造成的伤害+自己攻击力的一半",
       "iconAssetId": "dragon_fang",
       "acquisition": [
         {
@@ -1699,9 +1832,11 @@
     {
       "id": "draconic_hex",
       "names": {
-        "en": "Draconic Hex"
+        "en": "Draconic Hex",
+        "zhHans": "龙咒"
       },
       "description": "After battle, enemy's stats -4.",
+      "descriptionZhHans": "战斗后，敌人全能力-4，逐回合恢复",
       "iconAssetId": "draconic_hex",
       "acquisition": [
         {
@@ -1711,6 +1846,9 @@
       ],
       "notes": [
         "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "notesZhHans": [
+        "敌方减益不会与对同一属性的另一减益叠加；取较大值生效，受影响的属性每回合恢复 1 点。"
       ],
       "provenance": [
         {
@@ -1729,9 +1867,11 @@
     {
       "id": "nohrian_trust",
       "names": {
-        "en": "Nohrian Trust"
+        "en": "Nohrian Trust",
+        "zhHans": "暗夜"
       },
       "description": "User shares their support unit's battle skills.",
+      "descriptionZhHans": "以攻阵、防阵战斗时，自己可享有支援同伴的特技",
       "iconAssetId": "nohrian_trust",
       "acquisition": [
         {
@@ -1741,6 +1881,9 @@
       ],
       "notes": [
         "Battle skills are activation-rate skills that can trigger during battle, such as Astra, Luna, Sol, Miracle, Pavise, and Aegis."
+      ],
+      "notesZhHans": [
+        "战斗特技是可在战斗中发动的概率发动型特技，例如流星、月环、日光、祈祷、大盾与圣盾。"
       ],
       "provenance": [
         {
@@ -1759,9 +1902,11 @@
     {
       "id": "elbow_room",
       "names": {
-        "en": "Elbow Room"
+        "en": "Elbow Room",
+        "zhHans": "广所突击"
       },
       "description": "When user fights in terrain with no terrain effects, damage +3 during battles.",
+      "descriptionZhHans": "自己位于地形效果为0的地形时，战斗时造成的伤害+3",
       "iconAssetId": "elbow_room",
       "acquisition": [
         {
@@ -1786,9 +1931,11 @@
     {
       "id": "shelter",
       "names": {
-        "en": "Shelter"
+        "en": "Shelter",
+        "zhHans": "救出"
       },
       "description": "Select the \"Shelter\" command to make an adjacent ally the user's support unit.",
+      "descriptionZhHans": "可使用救出指令，使一个邻接的同伴成为自己的后卫",
       "iconAssetId": "shelter",
       "acquisition": [
         {
@@ -1813,9 +1960,11 @@
     {
       "id": "defender",
       "names": {
-        "en": "Defender"
+        "en": "Defender",
+        "zhHans": "守护"
       },
       "description": "When user is the lead unit while paired up, all stats +1.",
+      "descriptionZhHans": "自己是防阵的前卫时，全能力+1",
       "iconAssetId": "defender",
       "acquisition": [
         {
@@ -1840,9 +1989,11 @@
     {
       "id": "aegis",
       "names": {
-        "en": "Aegis"
+        "en": "Aegis",
+        "zhHans": "圣盾"
       },
       "description": "Skill% chance of halving damage from Bow, Magic, Dagger, Dragonstone, Breath or Stone attacks.",
+      "descriptionZhHans": "发动率＝技%。将来自弓、暗器、魔法书、龙石、龙息、炮车的伤害减半",
       "iconAssetId": "aegis",
       "acquisition": [
         {
@@ -1867,9 +2018,11 @@
     {
       "id": "luna",
       "names": {
-        "en": "Luna"
+        "en": "Luna",
+        "zhHans": "月光"
       },
       "description": "Skill% chance of ignoring half the enemy's Defense (if user has a physical weapon) or Resistance (if user has a magical weapon).",
+      "descriptionZhHans": "发动率＝技%。发动使敌方守备、魔防减半的攻击",
       "iconAssetId": "luna",
       "acquisition": [
         {
@@ -1894,9 +2047,11 @@
     {
       "id": "armored_blow",
       "names": {
-        "en": "Armored Blow"
+        "en": "Armored Blow",
+        "zhHans": "金刚一击"
       },
       "description": "When user triggers the battle, physical damage received -10.",
+      "descriptionZhHans": "自己发动攻击时，受到的物理伤害-10",
       "iconAssetId": "armored_blow",
       "acquisition": [
         {
@@ -1921,9 +2076,11 @@
     {
       "id": "defense_plus_2",
       "names": {
-        "en": "Defense +2"
+        "en": "Defense +2",
+        "zhHans": "守备＋２"
       },
       "description": "Defense +2.",
+      "descriptionZhHans": "守备+2",
       "iconAssetId": "defense_plus_2",
       "acquisition": [
         {
@@ -1933,6 +2090,9 @@
       ],
       "notes": [
         "Serenes Forest uses \"Defence +2\"; the canonical name uses the localized \"Defense +2\" spelling already established by accepted FE14 data."
+      ],
+      "notesZhHans": [
+        "Serenes Forest 使用 “Defence +2” 拼写；此处采用 FE14 既定数据中已确立的本地化 “Defense +2” 拼写。"
       ],
       "provenance": [
         {
@@ -1951,9 +2111,11 @@
     {
       "id": "natural_cover",
       "names": {
-        "en": "Natural Cover"
+        "en": "Natural Cover",
+        "zhHans": "闭所防御"
       },
       "description": "When user fights in terrain with terrain effects, damage received -3 during battles.",
+      "descriptionZhHans": "自己位于地形效果不为0的地形时，战斗时受到的伤害-3",
       "iconAssetId": "natural_cover",
       "acquisition": [
         {
@@ -1978,9 +2140,11 @@
     {
       "id": "wary_fighter",
       "names": {
-        "en": "Wary Fighter"
+        "en": "Wary Fighter",
+        "zhHans": "守备态势"
       },
       "description": "During battles, neither the user or enemy can perform follow up attacks.",
+      "descriptionZhHans": "战斗双方都无法追击",
       "iconAssetId": "wary_fighter",
       "acquisition": [
         {
@@ -2005,9 +2169,11 @@
     {
       "id": "pavise",
       "names": {
-        "en": "Pavise"
+        "en": "Pavise",
+        "zhHans": "大盾"
       },
       "description": "Skill% chance of halving damage from Sword, Lance, Axe, Beaststone, Claw or Puppet attacks.",
+      "descriptionZhHans": "发动率＝技%。将来自剑、枪、斧、兽石、魔物、傀儡的伤害减半",
       "iconAssetId": "pavise",
       "acquisition": [
         {
@@ -2032,9 +2198,11 @@
     {
       "id": "hp_plus_5",
       "names": {
-        "en": "HP +5"
+        "en": "HP +5",
+        "zhHans": "HP上限+5"
       },
       "description": "Maximum HP +5.",
+      "descriptionZhHans": "最大HP+5",
       "iconAssetId": "hp_plus_5",
       "acquisition": [
         {
@@ -2059,9 +2227,11 @@
     {
       "id": "gamble",
       "names": {
-        "en": "Gamble"
+        "en": "Gamble",
+        "zhHans": "挥舞"
       },
       "description": "Hit rate -10, Critical rate +10.",
+      "descriptionZhHans": "命中-10、必杀+10",
       "iconAssetId": "gamble",
       "acquisition": [
         {
@@ -2086,9 +2256,11 @@
     {
       "id": "rally_strength",
       "names": {
-        "en": "Rally Strength"
+        "en": "Rally Strength",
+        "zhHans": "力量支援"
       },
       "description": "Strength +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "descriptionZhHans": "可使用支援指令，使周围2格内的同伴1回合内力+4",
       "iconAssetId": "rally_strength",
       "acquisition": [
         {
@@ -2113,9 +2285,11 @@
     {
       "id": "axefaire",
       "names": {
-        "en": "Axefaire"
+        "en": "Axefaire",
+        "zhHans": "斧术专家"
       },
       "description": "When user is equipped with an Axe, damage +5 during battle.",
+      "descriptionZhHans": "装备斧战斗时，造成的伤害+5",
       "iconAssetId": "axefaire",
       "acquisition": [
         {
@@ -2140,9 +2314,11 @@
     {
       "id": "good_fortune",
       "names": {
-        "en": "Good Fortune"
+        "en": "Good Fortune",
+        "zhHans": "倔强之心"
       },
       "description": "Luck% chance of recovering 20% HP at the start of the user's Turn.",
+      "descriptionZhHans": "发动率＝幸运%。回合开始时HP回复20%",
       "iconAssetId": "good_fortune",
       "acquisition": [
         {
@@ -2167,9 +2343,11 @@
     {
       "id": "strong_riposte",
       "names": {
-        "en": "Strong Riposte"
+        "en": "Strong Riposte",
+        "zhHans": "后发制人"
       },
       "description": "When enemy triggers the battle, damage +3.",
+      "descriptionZhHans": "敌方发动攻击时，自己造成的伤害+3",
       "iconAssetId": "strong_riposte",
       "acquisition": [
         {
@@ -2194,9 +2372,11 @@
     {
       "id": "sol",
       "names": {
-        "en": "Sol"
+        "en": "Sol",
+        "zhHans": "太阳"
       },
       "description": "Skill% chance of restoring half the damage dealt to the enemy.",
+      "descriptionZhHans": "发动率＝技%。将对敌伤害的一半转化为自身HP",
       "iconAssetId": "sol",
       "acquisition": [
         {
@@ -2221,9 +2401,11 @@
     {
       "id": "axebreaker",
       "names": {
-        "en": "Axebreaker"
+        "en": "Axebreaker",
+        "zhHans": "破斧者"
       },
       "description": "Hit rate and Avoid +50 when the enemy is equipped with an Axe.",
+      "descriptionZhHans": "敌方装备斧时，命中、回避+50",
       "iconAssetId": "axebreaker",
       "acquisition": [
         {
@@ -2248,9 +2430,11 @@
     {
       "id": "rally_skill",
       "names": {
-        "en": "Rally Skill"
+        "en": "Rally Skill",
+        "zhHans": "技巧支援"
       },
       "description": "Skill +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "descriptionZhHans": "可使用支援指令，使周围2格内的同伴1回合内技+4",
       "iconAssetId": "rally_skill",
       "acquisition": [
         {
@@ -2275,9 +2459,11 @@
     {
       "id": "shurikenbreaker",
       "names": {
-        "en": "Shurikenbreaker"
+        "en": "Shurikenbreaker",
+        "zhHans": "破暗器者"
       },
       "description": "Hit rate and Avoid +50 when the enemy is equipped with a Dagger.",
+      "descriptionZhHans": "敌方装备暗器时，命中、回避+50",
       "iconAssetId": "shurikenbreaker",
       "acquisition": [
         {
@@ -2302,9 +2488,11 @@
     {
       "id": "movement_plus_1",
       "names": {
-        "en": "Movement +1"
+        "en": "Movement +1",
+        "zhHans": "移动＋１"
       },
       "description": "Movement +1.",
+      "descriptionZhHans": "移动力+1",
       "iconAssetId": "movement_plus_1",
       "acquisition": [
         {
@@ -2329,9 +2517,11 @@
     {
       "id": "lucky_seven",
       "names": {
-        "en": "Lucky Seven"
+        "en": "Lucky Seven",
+        "zhHans": "幸运７"
       },
       "description": "Hit rate and Avoid +20 for the first seven Turns.",
+      "descriptionZhHans": "每次战斗的前7回合内命中、回避+20",
       "iconAssetId": "lucky_seven",
       "acquisition": [
         {
@@ -2356,9 +2546,11 @@
     {
       "id": "pass",
       "names": {
-        "en": "Pass"
+        "en": "Pass",
+        "zhHans": "穿越"
       },
       "description": "User can pass through tiles occupied by enemy units.",
+      "descriptionZhHans": "可通过敌人所站的格子",
       "iconAssetId": "pass",
       "acquisition": [
         {
@@ -2383,9 +2575,11 @@
     {
       "id": "strength_plus_2",
       "names": {
-        "en": "Strength +2"
+        "en": "Strength +2",
+        "zhHans": "力＋２"
       },
       "description": "Strength +2.",
+      "descriptionZhHans": "力+2",
       "iconAssetId": "strength_plus_2",
       "acquisition": [
         {
@@ -2410,9 +2604,11 @@
     {
       "id": "lunge",
       "names": {
-        "en": "Lunge"
+        "en": "Lunge",
+        "zhHans": "突入"
       },
       "description": "Select the \"Lunge\" command to swap places with an enemy after an attack.",
+      "descriptionZhHans": "攻击后可使用突入（切り込み）指令，和敌方交换站位",
       "iconAssetId": "lunge",
       "acquisition": [
         {
@@ -2437,9 +2633,11 @@
     {
       "id": "rally_defense",
       "names": {
-        "en": "Rally Defense"
+        "en": "Rally Defense",
+        "zhHans": "防守支援"
       },
       "description": "Defense +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "descriptionZhHans": "可使用支援指令，使周围2格内的同伴1回合内守备+4",
       "iconAssetId": "rally_defense",
       "acquisition": [
         {
@@ -2449,6 +2647,9 @@
       ],
       "notes": [
         "Serenes Forest uses \"Rally Defence\"; the canonical name uses the localized \"Rally Defense\" spelling already established by accepted FE14 data."
+      ],
+      "notesZhHans": [
+        "Serenes Forest 使用 “Rally Defence” 拼写；此处采用 FE14 既定数据中已确立的本地化 “Rally Defense” 拼写。"
       ],
       "provenance": [
         {
@@ -2467,9 +2668,11 @@
     {
       "id": "swordbreaker",
       "names": {
-        "en": "Swordbreaker"
+        "en": "Swordbreaker",
+        "zhHans": "破剑者"
       },
       "description": "Hit rate and Avoid +50 when the enemy is equipped with a Sword.",
+      "descriptionZhHans": "敌方装备剑时，命中、回避+50",
       "iconAssetId": "swordbreaker",
       "acquisition": [
         {
@@ -2494,9 +2697,11 @@
     {
       "id": "savage_blow",
       "names": {
-        "en": "Savage Blow"
+        "en": "Savage Blow",
+        "zhHans": "死之吐息"
       },
       "description": "When user triggers the battle, enemies within a 2 tile radius have their HP reduced by 20% after the battle.",
+      "descriptionZhHans": "自己发动攻击时，战斗后，周围2格内的敌方HP减少各自HP最大值的20%",
       "iconAssetId": "savage_blow",
       "acquisition": [
         {
@@ -2521,9 +2726,11 @@
     {
       "id": "trample",
       "names": {
-        "en": "Trample"
+        "en": "Trample",
+        "zhHans": "居高临下"
       },
       "description": "Unless enemy is on a mount, damage +5.",
+      "descriptionZhHans": "敌方不是骑乘单位时，自己造成的伤害+5",
       "iconAssetId": "trample",
       "acquisition": [
         {
@@ -2548,9 +2755,11 @@
     {
       "id": "heartseeker",
       "names": {
-        "en": "Heartseeker"
+        "en": "Heartseeker",
+        "zhHans": "咒缚"
       },
       "description": "When fighting adjacent to an enemy, enemy's Avoid -20.",
+      "descriptionZhHans": "邻接的敌方战斗时回避-20",
       "iconAssetId": "heartseeker",
       "acquisition": [
         {
@@ -2575,9 +2784,11 @@
     {
       "id": "malefic_aura",
       "names": {
-        "en": "Malefic Aura"
+        "en": "Malefic Aura",
+        "zhHans": "魔之风"
       },
       "description": "Enemies within a 2 tile radius receive 2 extra damage from magical attacks.",
+      "descriptionZhHans": "周围2格内的敌方战斗时，受到的魔法伤害+2",
       "iconAssetId": "malefic_aura",
       "acquisition": [
         {
@@ -2602,9 +2813,11 @@
     {
       "id": "vengeance",
       "names": {
-        "en": "Vengeance"
+        "en": "Vengeance",
+        "zhHans": "复仇"
       },
       "description": "Skill x 1.5% chance of adding half the user's (Max HP - Current HP) as damage.",
+      "descriptionZhHans": "发动率＝技×1.5%。追加自身受损HP÷2的伤害",
       "iconAssetId": "vengeance",
       "acquisition": [
         {
@@ -2629,9 +2842,11 @@
     {
       "id": "bowbreaker",
       "names": {
-        "en": "Bowbreaker"
+        "en": "Bowbreaker",
+        "zhHans": "破弓者"
       },
       "description": "Hit rate and Avoid +50 when the enemy is equipped with a Bow.",
+      "descriptionZhHans": "敌方装备弓时，命中、回避+50",
       "iconAssetId": "bowbreaker",
       "acquisition": [
         {
@@ -2656,9 +2871,11 @@
     {
       "id": "seal_magic",
       "names": {
-        "en": "Seal Magic"
+        "en": "Seal Magic",
+        "zhHans": "魔力封锁"
       },
       "description": "After battle, enemy's Magic -6.",
+      "descriptionZhHans": "战斗后，敌人魔力-6，逐回合恢复",
       "iconAssetId": "seal_magic",
       "acquisition": [
         {
@@ -2668,6 +2885,9 @@
       ],
       "notes": [
         "Enemy debuffs do not stack with another debuff to the same stat; the larger value takes priority, and affected stats recover by 1 each turn."
+      ],
+      "notesZhHans": [
+        "敌方减益不会与对同一属性的另一减益叠加；取较大值生效，受影响的属性每回合恢复 1 点。"
       ],
       "provenance": [
         {
@@ -2686,9 +2906,11 @@
     {
       "id": "lifetaker",
       "names": {
-        "en": "Lifetaker"
+        "en": "Lifetaker",
+        "zhHans": "生命吸收"
       },
       "description": "When user triggers the battle, recover 50% HP after defeating the enemy.",
+      "descriptionZhHans": "自己发动攻击时，击倒敌方后自己HP回复50%",
       "iconAssetId": "lifetaker",
       "acquisition": [
         {
@@ -2713,9 +2935,11 @@
     {
       "id": "resistance_plus_2",
       "names": {
-        "en": "Resistance +2"
+        "en": "Resistance +2",
+        "zhHans": "魔防＋２"
       },
       "description": "Resistance +2.",
+      "descriptionZhHans": "魔防+2",
       "iconAssetId": "resistance_plus_2",
       "acquisition": [
         {
@@ -2740,9 +2964,11 @@
     {
       "id": "gentilhomme",
       "names": {
-        "en": "Gentilhomme"
+        "en": "Gentilhomme",
+        "zhHans": "名门的公子"
       },
       "description": "Female allies within a 2 tile radius receive 2 less damage during battles.",
+      "descriptionZhHans": "周围2格内的女性同伴战斗时，受到的伤害-2",
       "iconAssetId": "gentilhomme",
       "acquisition": [
         {
@@ -2768,9 +2994,11 @@
     {
       "id": "demoiselle",
       "names": {
-        "en": "Demoiselle"
+        "en": "Demoiselle",
+        "zhHans": "深闺的千金"
       },
       "description": "Male allies within a 2 tile radius receive 2 less damage during battles.",
+      "descriptionZhHans": "周围2格内的男性同伴战斗时，受到的伤害-2",
       "iconAssetId": "demoiselle",
       "acquisition": [
         {
@@ -2796,9 +3024,11 @@
     {
       "id": "rally_resistance",
       "names": {
-        "en": "Rally Resistance"
+        "en": "Rally Resistance",
+        "zhHans": "魔防支援"
       },
       "description": "Resistance +4 to all allies within a 2 tile radius for one Turn when the \"Rally\" command is used.",
+      "descriptionZhHans": "可使用支援指令，使周围2格内的同伴1回合内魔防+4",
       "iconAssetId": "rally_resistance",
       "acquisition": [
         {
@@ -2823,9 +3053,11 @@
     {
       "id": "inspiration",
       "names": {
-        "en": "Inspiration"
+        "en": "Inspiration",
+        "zhHans": "战斗指挥"
       },
       "description": "Allies within a 2 tile radius deal 2 extra damage and receive 2 less damage during battles.",
+      "descriptionZhHans": "周围2格内的同伴战斗时，造成的伤害+2，受到的伤害-2",
       "iconAssetId": "inspiration",
       "acquisition": [
         {
@@ -2850,9 +3082,11 @@
     {
       "id": "live_to_serve",
       "names": {
-        "en": "Live to Serve"
+        "en": "Live to Serve",
+        "zhHans": "奉献的喜悦"
       },
       "description": "When healing an ally, the user recovers the same amount of HP.",
+      "descriptionZhHans": "自己用杖给同伴回复HP时，自己能回复等量的HP",
       "iconAssetId": "live_to_serve",
       "acquisition": [
         {
@@ -2877,9 +3111,11 @@
     {
       "id": "tomebreaker",
       "names": {
-        "en": "Tomebreaker"
+        "en": "Tomebreaker",
+        "zhHans": "破魔者"
       },
       "description": "Hit rate and Avoid +50 when the enemy is equipped with a Tome.",
+      "descriptionZhHans": "敌方装备魔法书时，命中、回避+50",
       "iconAssetId": "tomebreaker",
       "acquisition": [
         {
@@ -2904,9 +3140,11 @@
     {
       "id": "odd_shaped",
       "names": {
-        "en": "Odd Shaped"
+        "en": "Odd Shaped",
+        "zhHans": "奇袭之牙"
       },
       "description": "During odd-numbered Turns, damage +4.",
+      "descriptionZhHans": "在奇数回合造成的伤害+4",
       "iconAssetId": "odd_shaped",
       "acquisition": [
         {
@@ -2931,9 +3169,11 @@
     {
       "id": "better_odds",
       "names": {
-        "en": "Better Odds"
+        "en": "Better Odds",
+        "zhHans": "奇妙的鸣声"
       },
       "description": "Recover 40% HP at the start of odd-numbered Turns.",
+      "descriptionZhHans": "奇数回合开始时，HP回复40%",
       "iconAssetId": "better_odds",
       "acquisition": [
         {

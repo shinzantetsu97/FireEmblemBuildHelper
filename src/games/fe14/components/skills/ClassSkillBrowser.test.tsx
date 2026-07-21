@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 import { fe14Data } from "../../data";
 import ClassSkillBrowser from "./ClassSkillBrowser";
+import { LocaleProvider } from "../../../../i18n/LocaleContext";
 
 const allClassIds = new Set(fe14Data.classDirectory.flatMap((tree) => [
   tree.id,
@@ -11,13 +12,15 @@ const allClassIds = new Set(fe14Data.classDirectory.flatMap((tree) => [
 
 function renderBrowser(availableClassIds: ReadonlySet<string> = allClassIds) {
   return render(
-    <ClassSkillBrowser
-      availableClassIds={availableClassIds}
-      classTrees={fe14Data.classDirectory}
-      classSkills={fe14Data.classSkills}
-      skillsByClass={fe14Data.skillsByClass}
-      scope="directory"
-    />,
+    <LocaleProvider>
+      <ClassSkillBrowser
+        availableClassIds={availableClassIds}
+        classTrees={fe14Data.classDirectory}
+        classSkills={fe14Data.classSkills}
+        skillsByClass={fe14Data.skillsByClass}
+        scope="directory"
+      />
+    </LocaleProvider>,
   );
 }
 
@@ -182,13 +185,15 @@ describe("FE14 class skill browser", () => {
     expect(view.container.querySelectorAll(".class-skill-result")).toHaveLength(4);
 
     view.rerender(
-      <ClassSkillBrowser
-        availableClassIds={new Set([...ninjaClasses, "outlaw"])}
-        classTrees={fe14Data.classDirectory}
-        classSkills={fe14Data.classSkills}
-        skillsByClass={fe14Data.skillsByClass}
-        scope="unit-profile"
-      />,
+      <LocaleProvider>
+        <ClassSkillBrowser
+          availableClassIds={new Set([...ninjaClasses, "outlaw"])}
+          classTrees={fe14Data.classDirectory}
+          classSkills={fe14Data.classSkills}
+          skillsByClass={fe14Data.skillsByClass}
+          scope="unit-profile"
+        />
+      </LocaleProvider>,
     );
     await waitFor(() => expect(screen.getByRole("checkbox", { name: "Outlaw" })).toBeChecked());
   });

@@ -1,5 +1,6 @@
 import { type UnitRuntime } from "../../data";
 import { getPersonalSkillIconUrl } from "../../skillAssets";
+import { useLocale } from "../../../../i18n/LocaleContext";
 
 type PersonalSkillData = NonNullable<UnitRuntime["personalSkill"]>;
 
@@ -10,6 +11,7 @@ export default function PersonalSkill({
   skill: PersonalSkillData;
   labelledBy: string;
 }) {
+  const { resolve } = useLocale();
   return (
     <div className="skill-block" aria-labelledby={labelledBy}>
       <img
@@ -20,8 +22,8 @@ export default function PersonalSkill({
         height={24}
       />
       <div>
-        <strong>{skill.names.en}</strong>
-        <p>{skill.effect}</p>
+        <strong>{resolve(skill.names, skill.names.en)}</strong>
+        <p>{resolve({ en: skill.effect, zhHans: skill.effectZhHans })}</p>
       </div>
     </div>
   );

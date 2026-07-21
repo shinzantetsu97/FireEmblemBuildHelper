@@ -1058,6 +1058,12 @@
       "Kana omits the usual +1 cap-modifier inheritance bonus when Corrin's spouse is an offspring unit.",
       "Class inheritance follows child, father, then mother order. Corrin contributes the selected Avatar Talent; a duplicate Talent can therefore change the spouse fallback or leave male Kana without a third inherited tree."
     ],
+    "notesZhHans": [
+      "神流的性别与神威相反。神威与零或莎拉的同性组合不会解锁此外传。",
+      "当神威的配偶是子女单位时，先解析该配偶自身的可变父母。神流随后使用该配偶解析后的成长率、上限修正、支援加成，以及龙族或兽族属性。",
+      "当神威的配偶是子女单位时，神流不获得通常的 +1 上限修正继承加成。",
+      "职业继承遵循子女、父亲、然后母亲的顺序。神威提供所选的主角天赋；因此重复的天赋可能改变配偶的替补，或使男神流缺少第三棵继承职业树。"
+    ],
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
       "capModifiers": "fixed_parent + variable_parent + generation_bonus",
@@ -3101,6 +3107,11 @@
       "Shigure always inherits Dragon Vein access from Azura. Corrin adds the Dragon unit trait; Kaden or Keaton adds the Beast unit trait.",
       "The selected father's linked offspring becomes Shigure's sibling and replaces any friendship or romantic support between them.",
       "Jakob is the class-inheritance exception: Jakob gives Shigure Troubadour, so Azura's otherwise duplicated inheritance resolves to Wyvern Rider."
+    ],
+    "notesZhHans": [
+      "时雨始终从阿库娅继承龙脉。神威追加龙族属性；锦或弗拉内尔追加兽族属性。",
+      "所选父亲对应的子女会成为时雨的兄弟姐妹，并取代他们之间的任何友情或恋爱支援。",
+      "乔卡是职业继承的例外：乔卡给予时雨杖骑士，因此阿库娅原本重复的继承会解析为龙骑士。"
     ],
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",
@@ -8753,6 +8764,9 @@
     },
     "notes": [
       "If Selena is Caeldori's mother, their A-rank support uses special dialogue."
+    ],
+    "notesZhHans": [
+      "若露娜是缠的母亲，她们的 A 级支援会使用特殊对话。"
     ],
     "formulas": {
       "personalGrowth": "floor((child_base + variable_parent) / 2)",

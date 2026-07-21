@@ -1,6 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import type { Note } from "../../types";
+import { useLocale } from "../../i18n/LocaleContext";
 
 export default function DeleteNoteDialog({
   isSaving,
@@ -13,15 +14,16 @@ export default function DeleteNoteDialog({
   onConfirm: () => void;
   onHide: () => void;
 }) {
+  const { t } = useLocale();
   return (
     <Modal show={note !== null} onHide={onHide} centered>
-      <Modal.Header closeButton><Modal.Title>Delete note?</Modal.Title></Modal.Header>
+      <Modal.Header closeButton><Modal.Title>{t("notes.delete.title")}</Modal.Title></Modal.Header>
       <Modal.Body>
-        <p>Delete <strong>{note?.title}</strong>? This cannot be undone unless you restore a backup.</p>
+        <p>{t("notes.delete.bodyPrefix")}<strong>{note?.title}</strong>{t("notes.delete.bodySuffix")}</p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="outline-secondary" onClick={onHide}>Cancel</Button>
-        <Button variant="danger" onClick={onConfirm} disabled={isSaving}>Delete note</Button>
+        <Button variant="outline-secondary" onClick={onHide}>{t("common.cancel")}</Button>
+        <Button variant="danger" onClick={onConfirm} disabled={isSaving}>{t("notes.delete.confirm")}</Button>
       </Modal.Footer>
     </Modal>
   );

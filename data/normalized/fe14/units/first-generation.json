@@ -29,13 +29,26 @@
       ],
       "personalSkillId": "supportive",
       "notes": [
-        "Corrin's display name, gender, boon, bane, and Talent are selected by the player.",
-        "Corrin begins with the Bronze Sword in the Prologue, then receives Ganglari in Chapter 2, the Dragonstone in Chapter 5, and Yato in Chapter 6.",
-        "Corrin's Dragonstone weapon rank is absent during the early game and appears at D after Dragonstone access unlocks in Chapter 5."
+        {
+          "text": "Corrin's display name, gender, boon, bane, and Talent are selected by the player.",
+          "textZhHans": "神威的显示名称、性别、增益、减益与天赋均由玩家选择。"
+        },
+        {
+          "text": "Corrin begins with the Bronze Sword in the Prologue, then receives Ganglari in Chapter 2, the Dragonstone in Chapter 5, and Yato in Chapter 6.",
+          "textZhHans": "神威在序章持有青铜剑，随后在第2章获得刚加拉尔，第5章获得龙石，第6章获得夜刀神。"
+        },
+        {
+          "text": "Corrin's Dragonstone weapon rank is absent during the early game and appears at D after Dragonstone access unlocks in Chapter 5.",
+          "textZhHans": "神威的龙石武器等级在前期不存在，待第5章解锁龙石后以 D 级出现。"
+        }
       ],
       "supportNotes": [
         "Corrin can support every normally playable character. Same-gender A supports unlock Friendship Seal access without choosing a single A+ partner; opposite-gender S supports unlock Partner Seal access, with Niles and Rhajat as same-gender S-support exceptions.",
         "To keep every child paralogue obtainable, male Corrin must marry a female Corrin-exclusive partner (a Corrinsexual) or a female offspring unit other than Kana. Marrying a standard first-generation bachelorette leaves another father's child paralogue permanently unavailable; marrying Niles also prevents Kana and Nina's paralogues."
+      ],
+      "supportNotesZhHans": [
+        "神威可与所有可正常使用的角色支援。同性别 A 级支援无需固定一名 A+ 搭档即可解锁友情之证获取；异性别 S 级支援可解锁婚姻之证获取，其中零与莎拉是同性别 S 支援的例外。",
+        "为使所有子女外传都可获得，男神威必须与仅限神威的女性搭档（Corrinsexual）或除神流以外的女性子女单位结婚。若与普通的初代女性单身角色结婚，会使另一位父亲的子女外传永久无法获得；与零结婚还会阻止神流与艾潘妮的外传。"
       ]
     },
     {
@@ -86,7 +99,10 @@
       "dragonVein": false,
       "personalSkillId": "devoted_partner",
       "notes": [
-        "Felicia has the effect of four built-in Eternal Seals, allowing her to reach level 40 despite starting in the promoted Maid class."
+        {
+          "text": "Felicia has the effect of four built-in Eternal Seals, allowing her to reach level 40 despite starting in the promoted Maid class.",
+          "textZhHans": "菲利希亚内置了相当于使用四枚永恒之证的效果，因此即使初始职业是上级职业女仆，等级上限也能达到40级。"
+        }
       ]
     },
     {
@@ -111,7 +127,13 @@
       },
       "gender": "male",
       "dragonVein": false,
-      "personalSkillId": "evasive_partner"
+      "personalSkillId": "evasive_partner",
+      "notes": [
+        {
+          "text": "Jakob has the effect of four built-in Eternal Seals, allowing him to reach level 40 despite starting in the promoted Butler class.",
+          "textZhHans": "乔卡内置了相当于使用四枚永恒之证的效果，因此即使初始职业是上级职业管家，等级上限也能达到40级。"
+        }
+      ]
     },
     {
       "id": "silas",
@@ -185,9 +207,14 @@
       "dragonVein": true,
       "personalSkillId": "forager",
       "notes": [
-        "Recruit Mozu by talking to her with Corrin in Paralogue 1.",
-        "Mozu begins with Aptitude, which adds 10% to every growth rate. The personal growth values shown above exclude this skill bonus.",
-        "Mozu cannot access Apothecary, but she still reaches Merchant through Villager and can access Mechanist through a Ninja seal grant."
+        {
+          "text": "Mozu begins with Aptitude, which adds 10% to every growth rate. The personal growth values shown above exclude this skill bonus.",
+          "textZhHans": "物集初始携带才能，使每项成长率提升 10%。上方显示的个人成长率不含此特技加成。"
+        },
+        {
+          "text": "Mozu cannot access Apothecary, but she still reaches Merchant through Villager and can access Mechanist through a Ninja seal grant.",
+          "textZhHans": "物集无法使用药商，但仍可通过村民转职为商人，并可通过忍者的转职印获取傀儡师。"
+        }
       ]
     },
     {
@@ -212,11 +239,7 @@
       },
       "gender": "male",
       "dragonVein": false,
-      "personalSkillId": "highwayman",
-      "notes": [
-        "In Conquest Chapter 16, spare Shura to recruit him; killing him instead awards Boots.",
-        "In Revelation Chapter 15, recruit Shura by talking to him with Corrin."
-      ]
+      "personalSkillId": "highwayman"
     },
     {
       "id": "ryoma",
@@ -241,7 +264,13 @@
       "dragonVein": true,
       "personalSkillId": "bushido",
       "notes": [
-        "Ryoma is a temporary guest in Birthright Chapter 6 and cannot gain EXP there."
+        {
+          "text": "Ryoma is a temporary guest in Birthright Chapter 6 and cannot gain EXP there.",
+          "textZhHans": "龙马在白夜线第6章为临时客将，无法在此获得经验。",
+          "availabilityIds": [
+            "ryoma.birthright_guest"
+          ]
+        }
       ]
     },
     {
@@ -267,8 +296,13 @@
       "dragonVein": true,
       "personalSkillId": "rallying_cry",
       "notes": [
-        "Hinoka is a temporary guest in Birthright Chapter 6 and cannot gain EXP there.",
-        "In Birthright Chapter 8, Corrin can recruit Hinoka during the map; she also joins at the end if she survives."
+        {
+          "text": "Hinoka is a temporary guest in Birthright Chapter 6 and cannot gain EXP there.",
+          "textZhHans": "日乃香在白夜线第6章为临时客将，无法在此获得经验。",
+          "availabilityIds": [
+            "hinoka.birthright_guest"
+          ]
+        }
       ]
     },
     {
@@ -294,9 +328,20 @@
       "dragonVein": true,
       "personalSkillId": "competitive",
       "notes": [
-        "Takumi is a temporary guest in Birthright Chapter 6 and cannot gain EXP there.",
-        "In Birthright Chapter 10, Azura can recruit Takumi during the map; he joins automatically at the end even if defeated.",
-        "Takumi is unavailable for deployment in Birthright Chapter 16."
+        {
+          "text": "Takumi is a temporary guest in Birthright Chapter 6 and cannot gain EXP there.",
+          "textZhHans": "拓海在白夜线第6章为临时客将，无法在此获得经验。",
+          "availabilityIds": [
+            "takumi.birthright_guest"
+          ]
+        },
+        {
+          "text": "Takumi is unavailable for deployment in Birthright Chapter 16.",
+          "textZhHans": "拓海无法在白夜线第16章出击。",
+          "routes": [
+            "birthright"
+          ]
+        }
       ]
     },
     {
@@ -322,7 +367,23 @@
       "dragonVein": true,
       "personalSkillId": "quiet_strength",
       "notes": [
-        "Sakura is playable in Chapter 5 before the route split. In Revelation, she leaves after Chapter 5 and rejoins at the end of Chapter 8 using her stronger level 4 Revelation template while retaining the levels, rolled stat gains, partial EXP, and staff proficiency earned in Chapter 5."
+        {
+          "text": "Sakura is playable in Chapter 5 before the route split.",
+          "textZhHans": "樱在路线分歧前的第5章可供使用。",
+          "availabilityIds": [
+            "sakura.chapter_5"
+          ]
+        },
+        {
+          "text": "In Revelation, Sakura leaves after Chapter 5 and rejoins at the end of Chapter 8 using her stronger level 4 Revelation template while retaining the levels, rolled stat gains, partial EXP, and staff proficiency earned in Chapter 5.",
+          "textZhHans": "在透魔线，樱在第5章后离队，并在第8章结束时以更强的透魔线4级模板重新加入，同时保留其在第5章获得的等级、随机属性成长、部分经验以及杖熟练度。",
+          "routes": [
+            "revelation"
+          ],
+          "availabilityIds": [
+            "sakura.revelation"
+          ]
+        }
       ]
     },
     {
@@ -346,10 +407,7 @@
       },
       "gender": "male",
       "dragonVein": false,
-      "personalSkillId": "pyrotechnics",
-      "notes": [
-        "In Revelation Chapter 11, Corrin can recruit Saizo during the map; he also joins at the end if he survives."
-      ]
+      "personalSkillId": "pyrotechnics"
     },
     {
       "id": "kagero",
@@ -395,10 +453,7 @@
       },
       "gender": "female",
       "dragonVein": false,
-      "personalSkillId": "optimistic",
-      "notes": [
-        "Setsuna joins in Birthright Chapter 8 when Hinoka is recruited, provided she is still alive."
-      ]
+      "personalSkillId": "optimistic"
     },
     {
       "id": "azama",
@@ -421,10 +476,7 @@
       },
       "gender": "male",
       "dragonVein": false,
-      "personalSkillId": "divine_retribution",
-      "notes": [
-        "Azama joins in Birthright Chapter 8 when Hinoka is recruited, provided he is still alive."
-      ]
+      "personalSkillId": "divine_retribution"
     },
     {
       "id": "hinata",
@@ -447,10 +499,7 @@
       },
       "gender": "male",
       "dragonVein": false,
-      "personalSkillId": "triple_threat",
-      "notes": [
-        "In Birthright Chapter 9, Corrin can recruit Hinata during the map; he also joins at the end if he survives."
-      ]
+      "personalSkillId": "triple_threat"
     },
     {
       "id": "oboro",
@@ -473,10 +522,7 @@
       },
       "gender": "female",
       "dragonVein": false,
-      "personalSkillId": "nohr_enmity",
-      "notes": [
-        "In Birthright Chapter 9, Corrin can recruit Oboro during the map; she also joins at the end if she survives."
-      ]
+      "personalSkillId": "nohr_enmity"
     },
     {
       "id": "hana",
@@ -570,7 +616,23 @@
       "dragonVein": false,
       "personalSkillId": "fiery_blood",
       "notes": [
-        "Rinkah is playable in Chapters 4 and 5 before the route split. In Revelation, she leaves after Chapter 5 and rejoins at the start of Chapter 9 with her level, EXP, stats, and weapon proficiency from Chapter 5 retained."
+        {
+          "text": "Rinkah is playable in Chapters 4 and 5 before the route split.",
+          "textZhHans": "磷火在路线分歧前的第4、5章可供使用。",
+          "availabilityIds": [
+            "rinkah.common"
+          ]
+        },
+        {
+          "text": "In Revelation, Rinkah leaves after Chapter 5 and rejoins at the start of Chapter 9 with her level, EXP, stats, and weapon proficiency from Chapter 5 retained.",
+          "textZhHans": "在透魔线，磷火在第5章后离队，并在第9章开始时重新加入，保留其第5章的等级、经验、属性与武器熟练度。",
+          "routes": [
+            "revelation"
+          ],
+          "availabilityIds": [
+            "rinkah.revelation"
+          ]
+        }
       ]
     },
     {
@@ -594,10 +656,7 @@
       },
       "gender": "female",
       "dragonVein": false,
-      "personalSkillId": "capture",
-      "notes": [
-        "In Revelation Chapter 11, Orochi joins alongside Saizo when Corrin talks to him, or at the end if both survive."
-      ]
+      "personalSkillId": "capture"
     },
     {
       "id": "kaden",
@@ -648,10 +707,14 @@
       "dragonVein": false,
       "personalSkillId": "morbid_celebration",
       "notes": [
-        "Reina supports only Corrin.",
-        "For EXP calculations, Reina's displayed level is treated as 15 levels higher, equivalent to promoting at level 10 or 11.",
-        "In Birthright Chapter 11, Corrin can recruit Reina during the map; she also joins at the end if she survives.",
-        "In Revelation Chapter 11, Reina joins alongside Saizo when Corrin talks to him, or at the end if both survive."
+        {
+          "text": "Reina supports only Corrin.",
+          "textZhHans": "夕雾仅能与神威支援。"
+        },
+        {
+          "text": "For EXP calculations, Reina's displayed level is treated as 15 levels higher, equivalent to promoting at level 10 or 11.",
+          "textZhHans": "在经验计算中，夕雾的显示等级会被视为高出 15 级，相当于在 10 或 11 级进阶。"
+        }
       ]
     },
     {
@@ -677,8 +740,24 @@
       "dragonVein": false,
       "personalSkillId": "in_extremis",
       "notes": [
-        "Scarlet supports only Corrin.",
-        "In Revelation only, Scarlet permanently leaves the playable army at the end of Chapter 18. She remains available normally in Birthright."
+        {
+          "text": "Scarlet supports only Corrin.",
+          "textZhHans": "克丽姆颂仅能与神威支援。"
+        },
+        {
+          "text": "Scarlet permanently leaves the playable army at the end of Revelation Chapter 18.",
+          "textZhHans": "克丽姆颂在透魔线第18章结束后永久离队。",
+          "routes": [
+            "revelation"
+          ]
+        },
+        {
+          "text": "Scarlet remains available normally in Birthright.",
+          "textZhHans": "克丽姆颂在白夜线正常可用。",
+          "routes": [
+            "birthright"
+          ]
+        }
       ]
     },
     {
@@ -704,7 +783,13 @@
       "dragonVein": true,
       "personalSkillId": "chivalry",
       "notes": [
-        "Xander is a temporary guest in Conquest Chapter 6 and cannot gain EXP there."
+        {
+          "text": "Xander is a temporary guest in Conquest Chapter 6 and cannot gain EXP there.",
+          "textZhHans": "马库斯在暗夜线第6章为临时客将，无法在此获得经验。",
+          "availabilityIds": [
+            "xander.conquest_guest"
+          ]
+        }
       ]
     },
     {
@@ -730,8 +815,17 @@
       "dragonVein": true,
       "personalSkillId": "roses_thorns",
       "notes": [
-        "Camilla is a temporary guest in Conquest Chapter 6 and cannot gain EXP there. She permanently joins on turn 3 of Chapter 10.",
-        "For EXP calculations, Camilla's displayed level is treated as 15 levels higher, equivalent to an early promotion around level 10 or 11."
+        {
+          "text": "Camilla is a temporary guest in Conquest Chapter 6 and cannot gain EXP there.",
+          "textZhHans": "卡米拉在暗夜线第6章为临时客将，无法在此获得经验。",
+          "availabilityIds": [
+            "camilla.conquest_guest"
+          ]
+        },
+        {
+          "text": "For EXP calculations, Camilla's displayed level is treated as 15 levels higher, equivalent to an early promotion around level 10 or 11.",
+          "textZhHans": "在经验计算中，卡米拉的显示等级会被视为高出 15 级，相当于在 10 或 11 级左右提前进阶。"
+        }
       ]
     },
     {
@@ -757,8 +851,17 @@
       "dragonVein": true,
       "personalSkillId": "pragmatic",
       "notes": [
-        "Leo is a temporary guest in Conquest Chapter 6 and cannot gain EXP there.",
-        "For EXP calculations, Leo's displayed level is treated as 18 levels higher, equivalent to promoting at level 16 or 17."
+        {
+          "text": "Leo is a temporary guest in Conquest Chapter 6 and cannot gain EXP there.",
+          "textZhHans": "里昂在暗夜线第6章为临时客将，无法在此获得经验。",
+          "availabilityIds": [
+            "leo.conquest_guest"
+          ]
+        },
+        {
+          "text": "For EXP calculations, Leo's displayed level is treated as 18 levels higher, equivalent to promoting at level 16 or 17.",
+          "textZhHans": "在经验计算中，里昂的显示等级会被视为高出 18 级，相当于在 16 或 17 级进阶。"
+        }
       ]
     },
     {
@@ -784,9 +887,27 @@
       "dragonVein": true,
       "personalSkillId": "lilys_poise",
       "notes": [
-        "Elise is a temporary guest in Conquest Chapter 6. She cannot gain EXP there, leaves at the end of the chapter, and permanently joins on turn 3 of Chapter 7.",
-        "Uses of Elise's Chapter 6 staves do not carry forward; her Heal and Freeze return at full durability when she permanently joins in Chapter 7.",
-        "Elise is unavailable for deployment in Conquest Chapter 12 because she is incapacitated by illness."
+        {
+          "text": "Elise is a temporary guest in Conquest Chapter 6. She cannot gain EXP there and leaves at the end of the chapter.",
+          "textZhHans": "艾丽泽在暗夜线第6章为临时客将，无法在此获得经验，并在该章结束时离队。",
+          "availabilityIds": [
+            "elise.conquest_guest"
+          ]
+        },
+        {
+          "text": "Uses of Elise's Chapter 6 staves do not carry forward; her Heal and Freeze return at full durability when she permanently joins in Chapter 7.",
+          "textZhHans": "艾丽泽第6章使用杖的次数不会延续；当她在第7章正式加入时，治愈杖与冻结杖会以满耐久度返还。",
+          "availabilityIds": [
+            "elise.conquest_guest"
+          ]
+        },
+        {
+          "text": "Elise is unavailable for deployment in Conquest Chapter 12 because she is incapacitated by illness.",
+          "textZhHans": "艾丽泽因病无法在暗夜线第12章出击。",
+          "routes": [
+            "conquest"
+          ]
+        }
       ]
     },
     {
@@ -904,7 +1025,10 @@
       "dragonVein": false,
       "personalSkillId": "aching_blood",
       "notes": [
-        "Localization note: Aching Blood has a different activation condition in the Japanese release. The English version requires a forged weapon name at least 12 characters long; Japanese 血の疼き requires all eight available name characters to be kanji."
+        {
+          "text": "Localization note: Aching Blood has a different activation condition in the Japanese release. The English version requires a forged weapon name at least 12 characters long; Japanese 血の疼き requires all eight available name characters to be kanji.",
+          "textZhHans": "本地化说明：「血之悸动」在日版的发动条件不同。英文版要求锻造武器名称至少 12 个字符；日版「血の疼き」要求名称的全部八个可用字符均为汉字。"
+        }
       ]
     },
     {
@@ -997,10 +1121,7 @@
       },
       "gender": "female",
       "dragonVein": false,
-      "personalSkillId": "countercurse",
-      "notes": [
-        "Talk to Nyx with Corrin to recruit her in both Conquest Chapter 9 and Revelation Chapter 15."
-      ]
+      "personalSkillId": "countercurse"
     },
     {
       "id": "charlotte",
@@ -1072,9 +1193,6 @@
       "personalSkillId": "collector",
       "unitTags": [
         "beast"
-      ],
-      "notes": [
-        "In Conquest Chapter 14, Corrin must talk to Keaton to recruit him."
       ]
     },
     {
@@ -1101,11 +1219,34 @@
       "dragonVein": false,
       "personalSkillId": "forceful_partner",
       "notes": [
-        "Gunter is temporarily playable in Chapter 2 on all routes, leaves after Chapter 3, and never returns in Birthright.",
-        "Whether Chapter 2-3 EXP progress, level gains, and weapon proficiency carry into his Conquest or Revelation return remains unverified. The displayed return blocks use the published fixed joining states until a controlled in-game test confirms the carryover behavior."
+        {
+          "text": "Gunter is temporarily playable in Chapter 2, then leaves after Chapter 3.",
+          "textZhHans": "玖塔在第2章为临时可用，随后在第3章后离队。",
+          "availabilityIds": [
+            "gunter.common"
+          ]
+        },
+        {
+          "text": "Gunter never returns in Birthright.",
+          "textZhHans": "玖塔在白夜线不会归队。",
+          "routes": [
+            "birthright"
+          ]
+        },
+        {
+          "text": "Whether Chapter 2-3 EXP progress, level gains, and weapon proficiency carry into Gunter's return remains unverified. The displayed return block uses the published fixed joining state until a controlled in-game test confirms the carryover behavior.",
+          "textZhHans": "第2至3章的经验进度、等级成长与武器熟练度是否会带入玖塔的归队尚未证实。在受控的游戏内测试确认继承行为之前，此处显示的归队数据采用公开的固定加入状态。",
+          "availabilityIds": [
+            "gunter.conquest_return",
+            "gunter.revelation_return"
+          ]
+        }
       ],
       "supportNotes": [
         "Gunter cannot initiate support conversations or receive support bonuses in Revelation; his Corrin and Jakob supports are Conquest-only."
+      ],
+      "supportNotesZhHans": [
+        "玖塔在透魔线无法发起支援对话，也不能获得支援加成；他与神威、乔卡的支援仅限暗夜线。"
       ]
     },
     {
@@ -1131,11 +1272,25 @@
       "dragonVein": false,
       "personalSkillId": "icy_blood",
       "notes": [
-        "Flora becomes recruitable in Conquest after Chapter 18 once the Fire Orb reaches level 3 and My Castle refreshes. In Revelation, she becomes recruitable after Chapter 22 once any Ballista, Fire Orb, or Launcher reaches level 3 and My Castle refreshes.",
-        "Waiting for the real-time refresh or completing any map can advance the refresh; recruitment is not locked to completing the next story chapter.",
-        "Flora starts gaining automatic levels in Chapter 23 and reaches her level 15 cap in Chapter 27; Revelation therefore begins at level 7 after Chapter 22.",
-        "Scaled stats use (individual growth rates + Maid class growth rates) from the level 5 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
-        "Scaling details were identified and explained by FE14 modder ltranc@."
+        {
+          "text": "Flora starts gaining automatic levels in Chapter 23 and reaches her level 15 cap in Chapter 27.",
+          "textZhHans": "芙洛拉自第23章起开始自动升级，并在第27章达到 15 级上限。"
+        },
+        {
+          "text": "Flora therefore begins at level 7 after Revelation Chapter 22.",
+          "textZhHans": "因此芙洛拉在透魔线第22章后从 7 级开始。",
+          "routes": [
+            "revelation"
+          ]
+        },
+        {
+          "text": "Scaled stats use (individual growth rates + Maid class growth rates) from the level 5 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
+          "textZhHans": "缩放后的属性采用（个人成长率 + 女仆职业成长率），基于 5 级的基础属性组计算，恰为 0.5 时向上取整。武器熟练度与已习得的职业特技也会缩放，但确切的武器等级里程碑仍未确定。"
+        },
+        {
+          "text": "Scaling details were identified and explained by FE14 modder ltranc@.",
+          "textZhHans": "缩放细节由 FE14 模组作者 ltranc@ 发现并解释。"
+        }
       ]
     },
     {
@@ -1160,11 +1315,22 @@
       "dragonVein": false,
       "personalSkillId": "perspicacious",
       "notes": [
-        "Yukimura becomes recruitable in Birthright after Chapter 21 once any Puppet reaches level 3 and My Castle refreshes. Waiting for the real-time refresh or completing any map can advance the refresh.",
-        "Yukimura starts gaining automatic levels in Chapter 25 and reaches his level 15 cap in Chapter 27.",
-        "Scaled stats use (individual growth rates + Mechanist class growth rates) from the level 10 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
-        "Scaling details were identified and explained by FE14 modder ltranc@.",
-        "Yukimura cannot be recruited in Conquest or Revelation, even though Revelation allows level 3 Puppets."
+        {
+          "text": "Yukimura starts gaining automatic levels in Chapter 25 and reaches his level 15 cap in Chapter 27.",
+          "textZhHans": "幸村自第25章起开始自动升级，并在第27章达到 15 级上限。"
+        },
+        {
+          "text": "Scaled stats use (individual growth rates + Mechanist class growth rates) from the level 10 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
+          "textZhHans": "缩放后的属性采用（个人成长率 + 傀儡师职业成长率），基于 10 级的基础属性组计算，恰为 0.5 时向上取整。武器熟练度与已习得的职业特技也会缩放，但确切的武器等级里程碑仍未确定。"
+        },
+        {
+          "text": "Scaling details were identified and explained by FE14 modder ltranc@.",
+          "textZhHans": "缩放细节由 FE14 模组作者 ltranc@ 发现并解释。"
+        },
+        {
+          "text": "Yukimura cannot be recruited in Conquest or Revelation, even though Revelation allows level 3 Puppets.",
+          "textZhHans": "幸村无法在暗夜线或透魔线招募，即使透魔线允许 3 级傀儡。"
+        }
       ]
     },
     {
@@ -1190,12 +1356,29 @@
       "dragonVein": false,
       "personalSkillId": "peacebringer",
       "notes": [
-        "Izana becomes recruitable after the Hot Spring reaches level 3 and My Castle refreshes. A completed map advances the refresh, but simply waiting for the real-time refresh also works.",
-        "Izana unlocks after Birthright Chapter 18 or Conquest Chapter 22; he is not locked to the next story chapter.",
-        "Izana starts gaining automatic levels in Chapter 23 and reaches his level 15 cap in Chapter 27; Conquest therefore begins at level 7 after Chapter 22.",
-        "Scaled stats use (individual growth rates + Onmyoji class growth rates) from the level 5 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
-        "Scaling details were identified and explained by FE14 modder ltranc@.",
-        "Izana is an NPC in Revelation and cannot be recruited there."
+        {
+          "text": "Izana starts gaining automatic levels in Chapter 23 and reaches his level 15 cap in Chapter 27.",
+          "textZhHans": "伊邪那自第23章起开始自动升级，并在第27章达到 15 级上限。"
+        },
+        {
+          "text": "Izana therefore begins at level 7 after Conquest Chapter 22.",
+          "textZhHans": "因此伊邪那在暗夜线第22章后从 7 级开始。",
+          "routes": [
+            "conquest"
+          ]
+        },
+        {
+          "text": "Scaled stats use (individual growth rates + Onmyoji class growth rates) from the level 5 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
+          "textZhHans": "缩放后的属性采用（个人成长率 + 阴阳师职业成长率），基于 5 级的基础属性组计算，恰为 0.5 时向上取整。武器熟练度与已习得的职业特技也会缩放，但确切的武器等级里程碑仍未确定。"
+        },
+        {
+          "text": "Scaling details were identified and explained by FE14 modder ltranc@.",
+          "textZhHans": "缩放细节由 FE14 模组作者 ltranc@ 发现并解释。"
+        },
+        {
+          "text": "Izana is an NPC in Revelation and cannot be recruited there.",
+          "textZhHans": "伊邪那在透魔线为 NPC，无法在此招募。"
+        }
       ]
     },
     {
@@ -1220,11 +1403,22 @@
       "dragonVein": false,
       "personalSkillId": "wind_disciple",
       "notes": [
-        "Fuga is Revelation-exclusive and becomes recruitable after Chapter 18 once the Hot Spring reaches level 3 and My Castle refreshes. Waiting for the real-time refresh or completing any map can advance the refresh.",
-        "His minimum level 10 Master of Arms base block, Sword B / Lance C / Axe C ranks, and empty inventory are independently corroborated.",
-        "Fuga starts gaining automatic levels in Chapter 25 and reaches his level 15 cap in Chapter 27.",
-        "Scaled stats use (individual growth rates + Master of Arms class growth rates) from the level 10 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
-        "Scaling details were identified and explained by FE14 modder ltranc@."
+        {
+          "text": "His minimum level 10 Master of Arms base block, Sword B / Lance C / Axe C ranks, and empty inventory are independently corroborated.",
+          "textZhHans": "他 10 级兵法者的最低基础属性组、剑 B / 枪 C / 斧 C 的武器等级以及空物品栏均已获独立佐证。"
+        },
+        {
+          "text": "Fuga starts gaining automatic levels in Chapter 25 and reaches his level 15 cap in Chapter 27.",
+          "textZhHans": "风雅自第25章起开始自动升级，并在第27章达到 15 级上限。"
+        },
+        {
+          "text": "Scaled stats use (individual growth rates + Master of Arms class growth rates) from the level 10 base stat block, with exact 0.5 results rounded up. Weapon proficiency and learned class skills also scale, but the exact weapon-rank milestones remain unresolved.",
+          "textZhHans": "缩放后的属性采用（个人成长率 + 兵法者职业成长率），基于 10 级的基础属性组计算，恰为 0.5 时向上取整。武器熟练度与已习得的职业特技也会缩放，但确切的武器等级里程碑仍未确定。"
+        },
+        {
+          "text": "Scaling details were identified and explained by FE14 modder ltranc@.",
+          "textZhHans": "缩放细节由 FE14 模组作者 ltranc@ 发现并解释。"
+        }
       ]
     },
     {
@@ -1252,11 +1446,16 @@
       "dragonVein": false,
       "personalSkillId": "make_a_killing",
       "notes": [
-        "Anna is a paid DLC-exclusive unit recruited by clearing Anna on the Run for the first time after the Dragon's Gate is unlocked.",
-        "The NPC Anna inside Anna on the Run scales from level 10 to 18 with story progress, but that NPC scaling does not carry into the recruited unit. Recruited Anna always joins with the fixed level 10 data shown below."
+        {
+          "text": "The NPC Anna inside Anna on the Run scales from level 10 to 18 with story progress, but that NPC scaling does not carry into the recruited unit. Recruited Anna always joins with the fixed level 10 data shown below.",
+          "textZhHans": "「安娜在逃亡」中的 NPC 安娜会随剧情进度从 10 级缩放至 18 级，但该 NPC 缩放不会带入被招募的单位。被招募的安娜始终以下方显示的固定 10 级数据加入。"
+        }
       ],
       "supportNotes": [
         "Anna's only first-generation support partner is Corrin; she can also support Kana if she is Kana's mother."
+      ],
+      "supportNotesZhHans": [
+        "安娜唯一的初代支援对象是神威；若她是神流的母亲，也可与神流支援。"
       ]
     }
   ]

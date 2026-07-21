@@ -5,16 +5,19 @@
     {
       "id": "apothecary",
       "label": "Apothecary",
+      "labelZhHans": "药商人",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "merchant",
           "label": "Merchant",
+          "labelZhHans": "大商人",
           "affiliation": "hoshidan"
         },
         {
           "id": "mechanist",
           "label": "Mechanist",
+          "labelZhHans": "傀儡师",
           "affiliation": "hoshidan"
         }
       ]
@@ -22,16 +25,19 @@
     {
       "id": "archer",
       "label": "Archer",
+      "labelZhHans": "弓使",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "sniper",
           "label": "Sniper",
+          "labelZhHans": "弓圣",
           "affiliation": "hoshidan"
         },
         {
           "id": "kinshi_knight",
           "label": "Kinshi Knight",
+          "labelZhHans": "金鵄武者",
           "affiliation": "hoshidan"
         }
       ]
@@ -39,16 +45,19 @@
     {
       "id": "cavalier",
       "label": "Cavalier",
+      "labelZhHans": "轻骑士",
       "affiliation": "nohrian",
       "promotions": [
         {
           "id": "paladin",
           "label": "Paladin",
+          "labelZhHans": "圣骑士",
           "affiliation": "nohrian"
         },
         {
           "id": "great_knight",
           "label": "Great Knight",
+          "labelZhHans": "重甲骑士",
           "affiliation": "nohrian"
         }
       ]
@@ -56,16 +65,19 @@
     {
       "id": "dark_mage",
       "label": "Dark Mage",
+      "labelZhHans": "暗魔法师",
       "affiliation": "nohrian",
       "promotions": [
         {
           "id": "sorcerer",
           "label": "Sorcerer",
+          "labelZhHans": "巫师",
           "affiliation": "nohrian"
         },
         {
           "id": "dark_knight",
           "label": "Dark Knight",
+          "labelZhHans": "黑暗骑士",
           "affiliation": "nohrian"
         }
       ]
@@ -73,16 +85,19 @@
     {
       "id": "diviner",
       "label": "Diviner",
+      "labelZhHans": "咒术师",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "onmyoji",
           "label": "Onmyoji",
+          "labelZhHans": "阴阳师",
           "affiliation": "hoshidan"
         },
         {
           "id": "basara",
           "label": "Basara",
+          "labelZhHans": "婆娑罗",
           "affiliation": "hoshidan"
         }
       ]
@@ -90,16 +105,19 @@
     {
       "id": "fighter",
       "label": "Fighter",
+      "labelZhHans": "斧战士",
       "affiliation": "nohrian",
       "promotions": [
         {
           "id": "hero",
           "label": "Hero",
+          "labelZhHans": "勇者",
           "affiliation": "nohrian"
         },
         {
           "id": "berserker",
           "label": "Berserker",
+          "labelZhHans": "狂战士",
           "affiliation": "nohrian"
         }
       ]
@@ -107,12 +125,16 @@
     {
       "id": "kitsune",
       "label": "Kitsune",
+      "labelZhHans": "妖狐",
       "affiliation": "hoshidan",
-      "categories": ["special"],
+      "categories": [
+        "special"
+      ],
       "promotions": [
         {
           "id": "nine_tails",
           "label": "Nine-Tails",
+          "labelZhHans": "九尾狐",
           "affiliation": "hoshidan"
         }
       ]
@@ -120,16 +142,19 @@
     {
       "id": "knight",
       "label": "Knight",
+      "labelZhHans": "重骑士",
       "affiliation": "nohrian",
       "promotions": [
         {
           "id": "general",
           "label": "General",
+          "labelZhHans": "将军",
           "affiliation": "nohrian"
         },
         {
           "id": "great_knight",
           "label": "Great Knight",
+          "labelZhHans": "重甲骑士",
           "affiliation": "nohrian"
         }
       ]
@@ -137,16 +162,19 @@
     {
       "id": "mercenary",
       "label": "Mercenary",
+      "labelZhHans": "佣兵",
       "affiliation": "nohrian",
       "promotions": [
         {
           "id": "hero",
           "label": "Hero",
+          "labelZhHans": "勇者",
           "affiliation": "nohrian"
         },
         {
           "id": "bow_knight",
           "label": "Bow Knight",
+          "labelZhHans": "弓骑士",
           "affiliation": "nohrian"
         }
       ]
@@ -154,16 +182,19 @@
     {
       "id": "monk",
       "label": "Monk",
+      "labelZhHans": "修炼者",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "great_master",
           "label": "Great Master",
+          "labelZhHans": "山伏",
           "affiliation": "hoshidan"
         },
         {
           "id": "onmyoji",
           "label": "Onmyoji",
+          "labelZhHans": "阴阳师",
           "affiliation": "hoshidan"
         }
       ]
@@ -171,16 +202,19 @@
     {
       "id": "ninja",
       "label": "Ninja",
+      "labelZhHans": "忍者",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "master_ninja",
           "label": "Master Ninja",
+          "labelZhHans": "上忍",
           "affiliation": "hoshidan"
         },
         {
           "id": "mechanist",
           "label": "Mechanist",
+          "labelZhHans": "傀儡师",
           "affiliation": "hoshidan"
         }
       ]
@@ -188,17 +222,22 @@
     {
       "id": "nohr_prince",
       "label": "Nohr Prince / Princess",
+      "labelZhHans": "黑暗王子／黑暗公主",
       "affiliation": "special",
-      "categories": ["special"],
+      "categories": [
+        "special"
+      ],
       "promotions": [
         {
           "id": "nohr_noble",
           "label": "Nohr Noble",
+          "labelZhHans": "暗夜血族",
           "affiliation": "nohrian"
         },
         {
           "id": "hoshido_noble",
           "label": "Hoshido Noble",
+          "labelZhHans": "白夜血族",
           "affiliation": "hoshidan"
         }
       ]
@@ -206,16 +245,19 @@
     {
       "id": "oni_savage",
       "label": "Oni Savage",
+      "labelZhHans": "鬼人",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "oni_chieftain",
           "label": "Oni Chieftain",
+          "labelZhHans": "修罗",
           "affiliation": "hoshidan"
         },
         {
           "id": "blacksmith",
           "label": "Blacksmith",
+          "labelZhHans": "锻冶",
           "affiliation": "hoshidan"
         }
       ]
@@ -223,16 +265,19 @@
     {
       "id": "outlaw",
       "label": "Outlaw",
+      "labelZhHans": "盗贼",
       "affiliation": "nohrian",
       "promotions": [
         {
           "id": "adventurer",
           "label": "Adventurer",
+          "labelZhHans": "冒险家",
           "affiliation": "nohrian"
         },
         {
           "id": "bow_knight",
           "label": "Bow Knight",
+          "labelZhHans": "弓骑士",
           "affiliation": "nohrian"
         }
       ]
@@ -240,16 +285,19 @@
     {
       "id": "samurai",
       "label": "Samurai",
+      "labelZhHans": "武士",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "swordmaster",
           "label": "Swordmaster",
+          "labelZhHans": "剑圣",
           "affiliation": "hoshidan"
         },
         {
           "id": "master_of_arms",
           "label": "Master of Arms",
+          "labelZhHans": "兵法者",
           "affiliation": "hoshidan"
         }
       ]
@@ -257,16 +305,19 @@
     {
       "id": "shrine_maiden",
       "label": "Shrine Maiden",
+      "labelZhHans": "巫女",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "priestess",
           "label": "Priestess",
+          "labelZhHans": "战巫女",
           "affiliation": "hoshidan"
         },
         {
           "id": "onmyoji",
           "label": "Onmyoji",
+          "labelZhHans": "阴阳师",
           "affiliation": "hoshidan"
         }
       ]
@@ -274,16 +325,19 @@
     {
       "id": "sky_knight",
       "label": "Sky Knight",
+      "labelZhHans": "天马武者",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "falcon_knight",
           "label": "Falcon Knight",
+          "labelZhHans": "圣天马武者",
           "affiliation": "hoshidan"
         },
         {
           "id": "kinshi_knight",
           "label": "Kinshi Knight",
+          "labelZhHans": "金鵄武者",
           "affiliation": "hoshidan"
         }
       ]
@@ -291,16 +345,19 @@
     {
       "id": "spear_fighter",
       "label": "Spear Fighter",
+      "labelZhHans": "枪术士",
       "affiliation": "hoshidan",
       "promotions": [
         {
           "id": "spear_master",
           "label": "Spear Master",
+          "labelZhHans": "枪圣",
           "affiliation": "hoshidan"
         },
         {
           "id": "basara",
           "label": "Basara",
+          "labelZhHans": "婆娑罗",
           "affiliation": "hoshidan"
         }
       ]
@@ -308,16 +365,19 @@
     {
       "id": "troubadour",
       "label": "Troubadour",
+      "labelZhHans": "杖骑士",
       "affiliation": "nohrian",
       "promotions": [
         {
           "id": "strategist",
           "label": "Strategist",
+          "labelZhHans": "战术师",
           "affiliation": "nohrian"
         },
         {
           "id": "attendant",
           "label": "Maid / Butler",
+          "labelZhHans": "女仆／管家",
           "affiliation": "nohrian"
         }
       ]
@@ -325,17 +385,22 @@
     {
       "id": "villager",
       "label": "Villager",
+      "labelZhHans": "村民",
       "affiliation": "hoshidan",
-      "categories": ["special"],
+      "categories": [
+        "special"
+      ],
       "promotions": [
         {
           "id": "merchant",
           "label": "Merchant",
+          "labelZhHans": "大商人",
           "affiliation": "hoshidan"
         },
         {
           "id": "master_of_arms",
           "label": "Master of Arms",
+          "labelZhHans": "兵法者",
           "affiliation": "hoshidan"
         }
       ]
@@ -343,12 +408,16 @@
     {
       "id": "wolfskin",
       "label": "Wolfskin",
+      "labelZhHans": "狼人",
       "affiliation": "nohrian",
-      "categories": ["special"],
+      "categories": [
+        "special"
+      ],
       "promotions": [
         {
           "id": "wolfssegner",
           "label": "Wolfssegner",
+          "labelZhHans": "逐月狼人",
           "affiliation": "nohrian"
         }
       ]
@@ -356,16 +425,19 @@
     {
       "id": "wyvern_rider",
       "label": "Wyvern Rider",
+      "labelZhHans": "龙骑士",
       "affiliation": "nohrian",
       "promotions": [
         {
           "id": "wyvern_lord",
           "label": "Wyvern Lord",
+          "labelZhHans": "龙骑统帅",
           "affiliation": "nohrian"
         },
         {
           "id": "malig_knight",
           "label": "Malig Knight",
+          "labelZhHans": "魔龙骑士",
           "affiliation": "nohrian"
         }
       ]
@@ -373,8 +445,11 @@
     {
       "id": "songstress",
       "label": "Songstress",
+      "labelZhHans": "歌姬",
       "affiliation": "special",
-      "categories": ["special"],
+      "categories": [
+        "special"
+      ],
       "promotions": []
     }
   ],

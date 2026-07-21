@@ -1,9 +1,15 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render as baseRender, screen, type RenderOptions } from "@testing-library/react";
+import type { ReactElement } from "react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import { fe14Data } from "../../../data";
 import { resolveUnitBaseConfiguration } from "../../../baseConfiguration";
 import ResolvedConfigurationPreview, { BaseConfigurationSurface } from "./ResolvedConfigurationPreview";
+import { LocaleProvider } from "../../../../../i18n/LocaleContext";
+
+function render(ui: ReactElement, options?: Omit<RenderOptions, "wrapper">) {
+  return baseRender(ui, { wrapper: LocaleProvider, ...options });
+}
 
 function unit(unitId: string) {
   return fe14Data.units.find((entry) => entry.identity.id === unitId)!;
@@ -118,6 +124,51 @@ describe("resolved configuration preview", () => {
 
     expect(screen.getByLabelText("Only available route")).toHaveTextContent("Birthright");
     expect(screen.queryByRole("tablist", { name: "Resolved route" })).not.toBeInTheDocument();
+  });
+
+  it("renders the selected configuration notes directly below the stat profile and above starting skills", () => {
+    render(
+      <ResolvedConfigurationPreview
+        avatarGender="male"
+        avatarSelection={null}
+        setAvatarGender={vi.fn()}
+        unit={unit("mozu")}
+      />,
+    );
+
+    const statProfile = screen.getByRole("table", { name: "Stat profile" }).closest("section")!;
+    const note = screen.getByText(/Mozu begins with Aptitude/);
+    const notes = note.closest("ul")!;
+    const startingSkills = screen.getByRole("heading", { name: "Starting skills" }).closest("div")!;
+
+    expect(statProfile.nextElementSibling).toBe(notes);
+    expect(notes.nextElementSibling?.contains(startingSkills)).toBe(true);
+  });
+
+  it("renders Charlotte and Benny's Revelation Elise requirements in Recruitment", async () => {
+    const user = userEvent.setup();
+    const view = render(
+      <ResolvedConfigurationPreview
+        avatarGender="male"
+        avatarSelection={null}
+        setAvatarGender={vi.fn()}
+        unit={unit("charlotte")}
+      />,
+    );
+
+    await user.click(screen.getByRole("tab", { name: "Revelation" }));
+    expect(screen.getByText("Chapter 14: Talk to Charlotte with Elise.")).toBeInTheDocument();
+
+    view.rerender(
+      <ResolvedConfigurationPreview
+        avatarGender="male"
+        avatarSelection={null}
+        setAvatarGender={vi.fn()}
+        unit={unit("benny")}
+      />,
+    );
+    await user.click(screen.getByRole("tab", { name: "Revelation" }));
+    expect(screen.getByText("Chapter 14: Talk to Benny with Elise.")).toBeInTheDocument();
   });
 
   it("exposes offspring timing, base growth, parent growth, and Offspring Seal controls", () => {

@@ -30,12 +30,15 @@ export interface AvailabilityStateOption {
   availabilityId: string;
   kind: AvailabilityStateKind;
   label: string;
+  labelZhHans?: string;
   joinLabel: string;
+  joinLabelZhHans?: string;
 }
 
 export interface ResolvedWeaponLevel {
   weaponTypeId: string;
   label: string;
+  labelZhHans?: string;
   iconAssetId: string;
   currentRank: string | null;
   rankCap: string;
@@ -55,8 +58,11 @@ export interface ResolvedStartingSkill {
   acquiredLevel?: number;
   guaranteed: boolean;
   condition?: string;
+  conditionZhHans?: string;
   name: string;
+  nameZhHans?: string;
   description: string;
+  descriptionZhHans?: string;
   iconAssetId: string;
 }
 
@@ -66,12 +72,15 @@ export type ResolvedRecruitmentContext =
       chapter: number;
       timing: string;
       turn?: number;
+      condition?: string;
+      conditionZhHans?: string;
     }
   | {
       kind: "paralogue";
       paralogueNo: number;
       title: string;
       trigger: string;
+      triggerZhHans?: string;
     };
 
 type ResolvedStance = Pick<StanceBonuses, "baseBonus" | "rankDeltas">;
@@ -82,6 +91,7 @@ export interface ResolvedUnitBaseConfiguration {
   availabilityId: string;
   stateKind: AvailabilityStateKind;
   stateLabel: string;
+  stateLabelZhHans?: string;
   scenarioConditions: {
     avatarGender?: "male" | "female";
     variableParentUnitId?: string;
@@ -93,6 +103,7 @@ export interface ResolvedUnitBaseConfiguration {
   displayClassId: string;
   canonicalClassId: string;
   classLabel: string;
+  classLabelZhHans?: string;
   level: number;
   joiningStats: StatBlock | null;
   joiningStatsKind: "fixed" | "minimum_before_parent_inheritance" | "conditional";
@@ -109,7 +120,9 @@ export interface ResolvedUnitBaseConfiguration {
   attackStance: ResolvedStance;
   guardStance: ResolvedStance;
   notes: string[];
+  notesZhHans: string[];
   levelContext?: string;
+  levelContextZhHans?: string;
   offspringContext?: {
     selectedChapter: number;
     earliestChapter: number;
@@ -118,18 +131,23 @@ export interface ResolvedUnitBaseConfiguration {
       level: number;
       promoted: boolean;
       label: string;
+      labelZhHans: string;
     }>;
     childBaseGrowths: StatBlock;
     variableParentGrowths: StatBlock;
     variableParentName: string;
+    variableParentNameZhHans?: string;
     nestedParentName?: string;
+    nestedParentNameZhHans?: string;
     unlockSources: Array<{
       unitId: string;
       name: string;
+      nameZhHans?: string;
       availableChapter: number;
       note: string;
+      noteZhHans?: string;
     }>;
-    promotionOptions: Array<{ classId: string; displayName: string }>;
+    promotionOptions: Array<{ classId: string; displayName: string; displayNameZhHans?: string }>;
     selectedPromotionClassId?: string;
   };
   storyProgression?: {
@@ -208,7 +226,9 @@ export function resolveUnitBaseConfiguration(
         availabilityId: scenario.id,
         kind,
         label: availabilityLabel(scenario, kind),
+        labelZhHans: availabilityLabelZhHans(scenario, kind),
         joinLabel: joinLabel(join),
+        joinLabelZhHans: joinLabelZhHans(join),
       } satisfies AvailabilityStateOption;
     })
     .sort((left, right) => {
@@ -274,6 +294,7 @@ export function resolveUnitBaseConfiguration(
       availabilityId: selectedAvailabilityId,
       stateKind: state.kind,
       stateLabel: state.label,
+      stateLabelZhHans: state.labelZhHans,
       scenarioConditions: {
         ...(scenario.avatarGender ? { avatarGender: scenario.avatarGender as "male" | "female" } : {}),
         difficultyInventory: Boolean(scenario.inventoryByDifficulty),
@@ -283,6 +304,7 @@ export function resolveUnitBaseConfiguration(
       displayClassId,
       canonicalClassId,
       classLabel: displayClassId === "maid" ? "Maid" : displayClassId === "butler" ? "Butler" : classProfile.displayName,
+      classLabelZhHans: displayClassId === "maid" ? "女仆" : displayClassId === "butler" ? "管家" : classDisplayNameZhHans(canonicalClassId, runtime),
       level: baseStats?.level ?? scenario.level,
       joiningStats,
       joiningStatsKind: scenario.autoLevel || Boolean(baseStats?.chapter5Carryover ?? scenario.chapter5Carryover)
@@ -302,10 +324,11 @@ export function resolveUnitBaseConfiguration(
       guardStance: stances.guardStance,
       notes: [
         ...scenarioNotes(unit, scenario, routeId),
-        ...(unit.identity.id === "corrin" && unit.avatarConfiguration?.pairupRule ? [
-          `Attack Stance: ${unit.avatarConfiguration.pairupRule.attackStance.semantics}`,
-          `Guard Stance: ${unit.avatarConfiguration.pairupRule.guardStance.semantics}`,
-        ] : []),
+        ...unitNotesForScenario(unit, routeId, scenario.id).map((note) => note.text),
+      ],
+      notesZhHans: [
+        ...scenarioNotesZhHans(unit, scenario, routeId, runtime),
+        ...unitNotesForScenario(unit, routeId, scenario.id).map((note) => note.textZhHans ?? note.text),
       ],
     },
   };
@@ -409,8 +432,11 @@ function resolveOffspringBaseConfiguration(
         acquiredLevel: learned.level,
         guaranteed: true,
         condition: `${selectedPromotion.displayName} via Offspring Seal at promoted level ${learned.level}`,
+        conditionZhHans: `${classDisplayNameZhHans(selectedPromotion.classId, runtime) ?? selectedPromotion.displayName}通过子代之证在进阶 ${learned.level} 级习得`,
         name: skill.names.en,
+        nameZhHans: skill.names.zhHans,
         description: skill.description,
+        descriptionZhHans: skill.descriptionZhHans,
         iconAssetId: skill.iconAssetId,
       }];
     }) ?? [];
@@ -444,7 +470,9 @@ function resolveOffspringBaseConfiguration(
       availabilityId,
       kind: "conditional",
       label: `Paralogue ${recruitment.paralogueNo}: ${recruitment.paralogueTitle}`,
+      labelZhHans: `外传${recruitment.paralogueNo}：${recruitment.paralogueTitleZhHans ?? recruitment.paralogueTitle}`,
       joinLabel: recruitment.recruitment.description,
+      joinLabelZhHans: recruitment.recruitment.descriptionZhHans,
     }],
     selectedAvailabilityId: availabilityId,
     parentOptions,
@@ -455,6 +483,7 @@ function resolveOffspringBaseConfiguration(
       availabilityId,
       stateKind: "conditional",
       stateLabel: `Paralogue ${recruitment.paralogueNo}: ${recruitment.paralogueTitle}`,
+      stateLabelZhHans: `外传${recruitment.paralogueNo}：${recruitment.paralogueTitleZhHans ?? recruitment.paralogueTitle}`,
       scenarioConditions: {
         avatarGender: childGender,
         variableParentUnitId: selectedParentOption.unitId,
@@ -467,16 +496,25 @@ function resolveOffspringBaseConfiguration(
         paralogueNo: recruitment.paralogueNo,
         title: recruitment.paralogueTitle,
         trigger: recruitment.recruitment.description,
+        triggerZhHans: recruitment.recruitment.descriptionZhHans,
       },
       displayClassId: selectedPromotion?.classId ?? displayClassId,
       canonicalClassId,
       classLabel: selectedPromotion?.displayName ?? (unit.identity.id === "kana"
         ? childGender === "male" ? "Nohr Prince" : "Nohr Princess"
         : classProfile.displayName),
+      classLabelZhHans: selectedPromotion
+        ? classDisplayNameZhHans(selectedPromotion.classId, runtime)
+        : (unit.identity.id === "kana"
+          ? childGender === "male" ? "黑暗王子" : "黑暗公主"
+          : classDisplayNameZhHans(canonicalClassId, runtime)),
       level: promotedLevel ?? selectedStory.level,
       levelContext: selectedStory.promoted
         ? `Offspring Seal at Chapter ${selectedStory.chapter}; level-only stats exclude parent inheritance bonuses.`
         : `Chapter ${selectedStory.chapter}; level-only stats exclude parent inheritance bonuses.`,
+      levelContextZhHans: selectedStory.promoted
+        ? `第${selectedStory.chapter}章使用子代之证；仅按等级计算的属性不含父母继承加成。`
+        : `第${selectedStory.chapter}章；仅按等级计算的属性不含父母继承加成。`,
       joiningStats,
       joiningStatsKind: "minimum_before_parent_inheritance",
       individualGrowths: scenario.personalGrowth,
@@ -496,6 +534,14 @@ function resolveOffspringBaseConfiguration(
         recruitment.mapLevelScaling.note,
         `Earliest paralogue timing is Chapter ${earliestChapter}, derived from the later available parent on ${capitalize(routeId)}.`,
       ],
+      notesZhHans: [
+        ...(recruitment.recruitmentNotesZhHans ?? recruitment.recruitmentNotes ?? []),
+        ...(recruitment.recruitment.deathBeforeRecruitmentIsPermanent
+          ? [`若${resolveUnitNameZhHans(unit, runtime)}在招募前阵亡，即使在休闲或不死鸟模式下也会永久阵亡，无法被招募。`]
+          : []),
+        recruitment.mapLevelScaling.noteZhHans ?? recruitment.mapLevelScaling.note,
+        `最早的外传时机为第${earliestChapter}章，取决于${routeLabelZhHans(routeId)}线上较晚登场的父母。`,
+      ],
       offspringContext: {
         selectedChapter: selectedStory.chapter,
         earliestChapter,
@@ -503,13 +549,18 @@ function resolveOffspringBaseConfiguration(
         childBaseGrowths: parentage.childBaseGrowth,
         variableParentGrowths: scenario.variableParentGrowth,
         variableParentName: scenario.variableParent.identity.displayName,
+        variableParentNameZhHans: unitDisplayNameZhHans(scenario.variableParent.identity.id, runtime),
         ...(scenario.nestedVariableParentScenario?.variableParent.identity.displayName
-          ? { nestedParentName: scenario.nestedVariableParentScenario.variableParent.identity.displayName }
+          ? {
+              nestedParentName: scenario.nestedVariableParentScenario.variableParent.identity.displayName,
+              nestedParentNameZhHans: unitDisplayNameZhHans(scenario.nestedVariableParentScenario.variableParent.identity.id, runtime),
+            }
           : {}),
         unlockSources,
         promotionOptions: legalPromotions.map((promotion) => ({
           classId: promotion.classId,
           displayName: promotion.displayName,
+          displayNameZhHans: classDisplayNameZhHans(promotion.classId, runtime) ?? promotion.displayNameZhHans,
         })),
         ...(selectedPromotion ? { selectedPromotionClassId: selectedPromotion.classId } : {}),
       },
@@ -538,6 +589,7 @@ function offspringStoryOptions(
         level: promotedLevel,
         promoted: true,
         label: `Ch. ${chapter} · Offspring Seal Lv. ${promotedLevel}`,
+        labelZhHans: `第${chapter}章 · 子代之证 Lv.${promotedLevel}`,
       };
     }
     const milestone = recruitment.levelByStoryPosition.find((entry, index, milestones) => {
@@ -549,6 +601,7 @@ function offspringStoryOptions(
       level: milestone.level,
       promoted: false,
       label: `Ch. ${chapter} · Lv. ${milestone.level}`,
+      labelZhHans: `第${chapter}章 · Lv.${milestone.level}`,
     };
   });
 }
@@ -580,19 +633,23 @@ function resolveParentAvailability(
   const name = parent?.identity.displayName
     ?? runtime.roster.find((candidate) => candidate.id === unitId)?.displayName
     ?? displayId(unitId);
+  const nameZhHans = unitDisplayNameZhHans(unitId, runtime);
+  const nameZh = nameZhHans ?? name;
   if (unitId === "jakob") {
     return {
       unitId,
       name,
+      nameZhHans,
       availableChapter: 8,
       note: "ASAP default: Jakob is treated as available by the first supported child-paralogue chapter.",
+      noteZhHans: `默认尽早：${nameZh}在最早支持的子女外传章节即视为可用。`,
     };
   }
   if (unitId === "corrin") {
-    return { unitId, name, availableChapter: 0, note: "Available from the prologue." };
+    return { unitId, name, nameZhHans, availableChapter: 0, note: "Available from the prologue.", noteZhHans: "序章即可用。" };
   }
   if (!parent || visited.has(unitId)) {
-    return { unitId, name, availableChapter: 8, note: "Uses the first supported child-paralogue chapter." };
+    return { unitId, name, nameZhHans, availableChapter: 8, note: "Uses the first supported child-paralogue chapter.", noteZhHans: "采用最早支持的子女外传章节。" };
   }
 
   if (parent.offspring) {
@@ -611,8 +668,10 @@ function resolveParentAvailability(
     return {
       unitId,
       name,
+      nameZhHans,
       availableChapter,
       note: `${name}'s paralogue can unlock from Chapter ${availableChapter} with the selected nested parent.`,
+      noteZhHans: `${nameZh}的外传最早可在第${availableChapter}章解锁（取决于所选的嵌套父母）。`,
     };
   }
 
@@ -639,13 +698,15 @@ function resolveParentAvailability(
     return [{
       availableChapter,
       note: `${joinLabel(join)}${join.timing === "conditional" ? "; available after its condition is cleared" : ""}.`,
+      noteZhHans: `${joinLabelZhHans(join)}${join.timing === "conditional" ? "；在其条件达成后可用" : ""}。`,
     }];
   }).sort((left, right) => left.availableChapter - right.availableChapter);
   const selected = candidates[0] ?? {
     availableChapter: 8,
     note: "No chapter-based availability record was found; uses the first supported child-paralogue chapter.",
+    noteZhHans: "未找到基于章节的登场记录；采用最早支持的子女外传章节。",
   };
-  return { unitId, name, ...selected };
+  return { unitId, name, nameZhHans, ...selected };
 }
 
 function resolveOffspringLevelOnlyStats(
@@ -707,6 +768,7 @@ function resolveWeaponLevels(
       return {
         weaponTypeId,
         label: weaponType.names.en,
+        labelZhHans: weaponType.names.zhHans,
         iconAssetId: weaponType.iconAssetId,
         currentRank: currentRanks[weaponTypeId] ?? null,
         rankCap,
@@ -721,7 +783,13 @@ function routeJoinFor(
 ) {
   const join = scenario.routeJoins.find((entry) => entry.route === routeId);
   if (!join) throw new Error(`Availability ${scenario.id} has no ${routeId} route join.`);
-  return { chapter: join.chapter, timing: join.timing, ...(join.turn ? { turn: join.turn } : {}) };
+  return {
+    chapter: join.chapter,
+    timing: join.timing,
+    ...(join.turn ? { turn: join.turn } : {}),
+    ...(join.condition ? { condition: join.condition } : {}),
+    ...(join.conditionZhHans ? { conditionZhHans: join.conditionZhHans } : {}),
+  };
 }
 
 function baseStatsForAvailability(unit: UnitRuntime, availabilityId: string) {
@@ -737,7 +805,9 @@ function classifyState(
 ): AvailabilityStateKind {
   const label = String(scenario.scenarioLabel ?? scenario.id).toLowerCase();
   if (label.includes("rejoin") || label.includes("return")) return "rejoin";
-  if (scenario.retentionCondition) return "conditional";
+  if (scenario.retentionCondition?.route === routeId || routeJoinFor(scenario, routeId).timing === "conditional") {
+    return "conditional";
+  }
   const hasLaterState = routeScenarios.some((candidate) =>
     candidate.id !== scenario.id && routeJoinFor(candidate, routeId).chapter > routeJoinFor(scenario, routeId).chapter,
   );
@@ -766,6 +836,81 @@ function joinLabel(join: { chapter: number; timing: string; turn?: number }): st
   if (join.chapter === 0) return "Prologue";
   if (join.turn) return `Chapter ${join.chapter}, turn ${join.turn}`;
   return `Chapter ${join.chapter}, ${join.timing}`;
+}
+
+const STATE_KIND_ZH: Record<AvailabilityStateKind, string> = {
+  appearance: "临时加入",
+  join: "加入",
+  rejoin: "重新加入",
+  conditional: "条件性加入",
+};
+
+const SCENARIO_LABEL_ZH: Record<string, string> = {
+  "Birthright Chapter 6 guest": "白夜第6章客将",
+  "Birthright My Castle recruitment": "白夜我的城堡招募",
+  "Birthright continuation": "白夜续战",
+  "Birthright permanent recruitment": "白夜永久招募",
+  "Birthright recruitment": "白夜招募",
+  "Chapter 5 recruitment": "第5章招募",
+  "Conquest Chapter 6 guest": "暗夜第6章客将",
+  "Conquest My Castle recruitment": "暗夜我的城堡招募",
+  "Conquest permanent recruitment": "暗夜永久招募",
+  "Conquest recruitment": "暗夜招募",
+  "Conquest recruitment (spare Shura)": "暗夜招募（放走阿修罗）",
+  "Conquest rejoin": "暗夜重新加入",
+  "Conquest return": "暗夜归队",
+  "DLC recruitment": "DLC 招募",
+  "Early route deployment": "前期路线出击",
+  "Paralogue 1 recruitment (unlocks after Chapter 7)": "外传1招募（第7章后解锁）",
+  "Pre-route": "路线分歧前",
+  "Pre-route recruitment": "路线分歧前招募",
+  "Prologue recruitment": "序章招募",
+  "Revelation My Castle recruitment": "透魔我的城堡招募",
+  "Revelation fixed return": "透魔固定归队",
+  "Revelation recruitment": "透魔招募",
+  "Revelation rejoin": "透魔重新加入",
+  "Revelation return": "透魔归队",
+  "Revelation temporary recruitment": "透魔临时招募",
+};
+
+const TIMING_ZH: Record<string, string> = {
+  start: "开始",
+  during: "进行中",
+  end: "结束",
+  conditional: "条件性",
+};
+
+const ROUTE_LABEL_ZH: Record<RouteId, string> = {
+  birthright: "白夜",
+  conquest: "暗夜",
+  revelation: "透魔",
+};
+
+function routeLabelZhHans(routeId: RouteId): string {
+  return ROUTE_LABEL_ZH[routeId];
+}
+
+function availabilityLabelZhHans(
+  scenario: UnitRuntime["availability"][number],
+  kind: AvailabilityStateKind,
+): string | undefined {
+  if (scenario.scenarioLabel) return SCENARIO_LABEL_ZH[scenario.scenarioLabel];
+  if (scenario.avatarGender) return scenario.avatarGender === "male" ? "神威（男）" : "神威（女）";
+  return STATE_KIND_ZH[kind];
+}
+
+function joinLabelZhHans(join: { chapter: number; timing: string; turn?: number }): string {
+  if (join.chapter === 0) return "序章";
+  if (join.turn) return `第${join.chapter}章，第${join.turn}回合`;
+  return `第${join.chapter}章，${TIMING_ZH[join.timing] ?? join.timing}`;
+}
+
+function unitDisplayNameZhHans(unitId: string, runtime: Fe14Runtime): string | undefined {
+  return runtime.roster.find((candidate) => candidate.id === unitId)?.names?.zhHans;
+}
+
+function resolveUnitNameZhHans(unit: UnitRuntime, runtime: Fe14Runtime): string {
+  return unitDisplayNameZhHans(unit.identity.id, runtime) ?? unit.identity.displayName;
 }
 
 function resolveStartingSkills(
@@ -802,7 +947,9 @@ function resolveStartingSkills(
       source: "personal",
       guaranteed: true,
       name: unit.personalSkill.names.en,
+      nameZhHans: unit.personalSkill.names.zhHans,
       description: unit.personalSkill.effect,
+      descriptionZhHans: unit.personalSkill.effectZhHans,
       iconAssetId: unit.personalSkill.iconAssetId,
     });
   }
@@ -826,7 +973,9 @@ function resolveStartingSkills(
       } : {}),
       guaranteed: true,
       name: classSkill.names.en,
+      nameZhHans: classSkill.names.zhHans,
       description: classSkill.description,
+      descriptionZhHans: classSkill.descriptionZhHans,
       iconAssetId: classSkill.iconAssetId,
     });
   }
@@ -854,6 +1003,12 @@ function classDisplayName(classId: string, runtime: Fe14Runtime): string {
     ?? runtime.classTrees.find((tree) => tree.id === classId)?.label
     ?? runtime.classTrees.flatMap((tree) => tree.promotions).find((promotion) => promotion.id === classId)?.label
     ?? displayId(classId);
+}
+
+function classDisplayNameZhHans(classId: string, runtime: Fe14Runtime): string | undefined {
+  return runtime.classStats.find((profile) => profile.classId === classId)?.displayNameZhHans
+    ?? runtime.classTrees.find((tree) => tree.id === classId)?.labelZhHans
+    ?? runtime.classTrees.flatMap((tree) => tree.promotions).find((promotion) => promotion.id === classId)?.labelZhHans;
 }
 
 function resolveCapModifiers(
@@ -926,9 +1081,47 @@ function scenarioNotes(
   if (scenario.retentionCondition?.route === routeId) notes.push(scenario.retentionCondition.note);
   if (scenario.chapter5Carryover) notes.push(scenario.chapter5Carryover.note);
   if (scenario.autoLevel) notes.push(scenario.autoLevel.note);
-  if (scenario.myCastleRecruitment) notes.push(scenario.myCastleRecruitment.note);
   if (scenario.dlcRecruitment) notes.push(scenario.dlcRecruitment.npcScaling.note);
   return notes;
+}
+
+function scenarioNotesZhHans(
+  unit: UnitRuntime,
+  scenario: UnitRuntime["availability"][number],
+  routeId: RouteId,
+  runtime: Fe14Runtime,
+): string[] {
+  const nameZh = resolveUnitNameZhHans(unit, runtime);
+  const notes: string[] = [];
+  if (scenario.temporarilyLeavesAfterChapter !== undefined) {
+    notes.push(
+      `${nameZh}在第${scenario.temporarilyLeavesAfterChapter}章后离队，并在第${scenario.returnsChapter}章归队。`,
+    );
+  }
+  if (scenario.temporaryDeparture?.routes.includes(routeId)) {
+    const returning = scenario.temporaryDeparture.returns.find((entry) => entry.route === routeId);
+    notes.push(returning
+      ? `${nameZh}在第${scenario.temporaryDeparture.afterChapter}章后离队，并在第${returning.chapter}章（${TIMING_ZH[returning.timing] ?? returning.timing}）归队。`
+      : routeId === "conquest"
+        ? `警告：${nameZh}在暗夜线不是永久单位，在第${scenario.temporaryDeparture.afterChapter}章后离队且不再归队。`
+        : `${nameZh}在本线于第${scenario.temporaryDeparture.afterChapter}章后离队。`);
+  }
+  if (scenario.retentionCondition?.route === routeId) notes.push(scenario.retentionCondition.noteZhHans ?? scenario.retentionCondition.note);
+  if (scenario.chapter5Carryover) notes.push(scenario.chapter5Carryover.noteZhHans ?? scenario.chapter5Carryover.note);
+  if (scenario.autoLevel) notes.push(scenario.autoLevel.noteZhHans ?? scenario.autoLevel.note);
+  if (scenario.dlcRecruitment) notes.push(scenario.dlcRecruitment.npcScaling.noteZhHans ?? scenario.dlcRecruitment.npcScaling.note);
+  return notes;
+}
+
+function unitNotesForScenario(
+  unit: UnitRuntime,
+  routeId: RouteId,
+  availabilityId: string,
+) {
+  return (unit.identity.notes ?? []).filter((note) => (
+    (!note.routes || note.routes.includes(routeId))
+    && (!note.availabilityIds || note.availabilityIds.includes(availabilityId))
+  ));
 }
 
 function addStats(base: StatBlock, ...deltas: Array<Partial<StatBlock> | undefined>): StatBlock {

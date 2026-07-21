@@ -79,6 +79,12 @@ select {
   font-weight: 700;
 }
 
+.app-fe14-menu-title {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
 .workspace-main {
   max-width: 72rem;
   padding-bottom: 3rem;
@@ -738,8 +744,17 @@ select {
 }
 
 .section-heading h2 {
-  font-size: 1.2rem;
+  border-left: 3px solid #395549;
+  font-size: 1.3rem;
+  font-weight: 700;
   margin: 0.15rem 0 0;
+  padding-left: 0.6rem;
+}
+
+html[lang="zh-Hans"] .section-heading h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
 }
 
 .recruitment-grid,
@@ -798,7 +813,9 @@ select {
   color: #395549;
   font-size: 0.72rem;
   font-weight: 800;
+  margin-left: auto;
   padding: 0.3rem 0.65rem;
+  white-space: nowrap;
 }
 
 .resolved-state-kind.is-appearance {
@@ -814,7 +831,7 @@ select {
 .resolved-config-controls {
   flex-wrap: wrap;
   gap: 0.75rem 1.25rem;
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .resolved-config-controls .form-label {
@@ -1935,6 +1952,62 @@ select {
   padding: 2rem 0;
 }
 
+.personal-skill-browser {
+  display: grid;
+  gap: 0;
+}
+
+.personal-skill-results {
+  min-width: 0;
+  padding: 0.35rem 0 1rem;
+}
+
+.personal-skill-result {
+  align-items: start;
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 2.75rem minmax(0, 1fr);
+  padding: 0.9rem 0;
+}
+
+.personal-skill-result + .personal-skill-result {
+  border-top: 1px solid #e1e5e3;
+}
+
+.personal-skill-portrait {
+  border: 1px solid #ccd3cf;
+  border-radius: 6px;
+  height: 2.75rem;
+  object-fit: cover;
+  object-position: top center;
+  width: 2.75rem;
+}
+
+.personal-skill-result-head {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.personal-skill-result-head > strong {
+  font-size: 0.95rem;
+}
+
+.personal-skill-character {
+  background: #eef2f0;
+  border-left: 2px solid #2e6b5d;
+  color: #34423c;
+  font-size: 0.72rem;
+  font-weight: 650;
+  padding: 0.22rem 0.4rem;
+}
+
+.personal-skill-result-copy p {
+  color: #4f5d57;
+  margin: 0.2rem 0 0;
+}
+
 .class-skill-tree-empty {
   color: #65706b;
   font-size: 0.85rem;
@@ -2693,6 +2766,25 @@ select {
 
 .home-heading > p:last-child {
   color: #5d6964;
+  margin: 0;
+}
+
+.home-credits {
+  border-top: 1px solid var(--bs-border-color);
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+}
+
+.home-credits h2 {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+}
+
+.home-credits p {
+  color: #5d6964;
+  font-size: 0.9rem;
   margin: 0;
 }
 

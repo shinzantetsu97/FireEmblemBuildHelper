@@ -1,5 +1,6 @@
 import { displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data";
 import { STAT_KEYS, type AvailabilityScenario } from "./types";
+import type { MessageKey } from "../../../../../i18n/messages/en";
 
 export function corrinBorrowedClassId(
   partnerUnitId: string,
@@ -47,7 +48,8 @@ export function formatBonuses(values: Record<string, number>): string {
   return Object.entries(values).map(([stat, value]) => `${labels[stat] ?? displayId(stat)} +${value}`).join(", ");
 }
 
-export function formatRoute(route: string): string {
+export function formatRoute(route: string, locale: string = "en"): string {
+  if (locale === "zhHans") return { birthright: "白夜", conquest: "暗夜", revelation: "透魔" }[route] ?? route;
   return { birthright: "BR", conquest: "CQ", revelation: "RV" }[route] ?? route;
 }
 
@@ -161,13 +163,27 @@ export function carryoverTrainingLabel(sourceAvailabilityId?: string, abbreviate
   return abbreviated ? "Ch. 4/5" : "Chapter 4/5";
 }
 
-export function corrinTalentLabel(unit: UnitRuntime): string {
-  if (unit.identity.id === "niles") return "Corrin Talent only";
-  const corrinGender = unit.identity.gender === "female" ? "Male" : "Female";
-  return `${corrinGender} Corrin Talent only`;
+export function corrinTalentLabel(
+  unit: UnitRuntime,
+  t: (key: MessageKey, params?: Record<string, string | number>) => string,
+): string {
+  if (unit.identity.id === "niles") return t("unit.corrinTalentOnly.niles");
+  return t(unit.identity.gender === "female" ? "unit.corrinTalentOnly.male" : "unit.corrinTalentOnly.female");
 }
 
-export function shortStatLabel(stat: keyof StatBlock): string {
+export function shortStatLabel(stat: keyof StatBlock, locale: string = "en"): string {
+  if (locale === "zhHans") {
+    return {
+      hp: "HP",
+      strength: "力量",
+      magic: "魔法",
+      skill: "技巧",
+      speed: "速度",
+      luck: "幸运",
+      defense: "防御",
+      resistance: "魔防",
+    }[stat];
+  }
   return {
     hp: "HP",
     strength: "Str",

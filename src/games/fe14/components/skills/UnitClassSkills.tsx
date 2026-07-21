@@ -4,6 +4,7 @@ import { fe14Data } from "../../data";
 import SectionHeading from "../units/detail/SectionHeading";
 import { type SealGrantPreviews } from "../units/detail/SupportDirectory";
 import UnitClassSkillCards, { type UnitClassSkillCard } from "./UnitClassSkillCards";
+import { useLocale } from "../../../../i18n/LocaleContext";
 
 export interface ClassSkillSource {
   label: string;
@@ -23,6 +24,7 @@ export default function UnitClassSkills({
   sources: ClassSkillSource[];
   selectedSealPreviews: SealGrantPreviews;
 }) {
+  const { t } = useLocale();
   const [showAll, setShowAll] = useState(false);
   const intrinsicSources = sources.map((source) => ({
       ...source,
@@ -32,7 +34,9 @@ export default function UnitClassSkills({
     const preview = selectedSealPreviews[seal];
     if (preview && preview.grantedClassId !== "avatar_talent") {
       result[seal] = {
-        label: `${seal === "friendship" ? "Friendship" : "Partner"}: ${preview.partnerName}`,
+        label: seal === "friendship"
+          ? t("skills.source.friendship", { name: preview.partnerName })
+          : t("skills.source.partner", { name: preview.partnerName }),
         classIds: [preview.grantedClassId],
       };
     }
@@ -54,12 +58,12 @@ export default function UnitClassSkills({
 
   return (
     <section className="data-section unit-class-skills" aria-labelledby="accessible-class-skills-heading">
-      <SectionHeading eyebrow="Build access" title="Accessible class skills" id="accessible-class-skills-heading" />
+      <SectionHeading title={t("skills.build.title")} id="accessible-class-skills-heading" />
       <UnitClassSkillCards cards={visibleCards} gender={gender} skills={fe14Data.classSkills} />
       {hasCardOverflow ? (
         <button className="unit-class-skill-expand" type="button" onClick={() => setShowAll((current) => !current)}>
           {showAll ? <ChevronUp aria-hidden="true" size={17} /> : <ChevronDown aria-hidden="true" size={17} />}
-          {showAll ? `Show first ${initialCardLimit} class trees` : `Show all ${cards.length} class trees`}
+          {showAll ? t("skills.showFirst", { count: initialCardLimit ?? 0 }) : t("skills.showAll", { count: cards.length })}
         </button>
       ) : null}
     </section>

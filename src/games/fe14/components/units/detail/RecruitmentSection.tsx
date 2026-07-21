@@ -3,6 +3,7 @@ import { AvatarConfigurationControls } from "./AvatarConfiguration";
 import ResolvedConfigurationPreview from "./ResolvedConfigurationPreview";
 import SectionHeading from "./SectionHeading";
 import { type AvatarSelection } from "./types";
+import { useLocale } from "../../../../../i18n/LocaleContext";
 
 export default function RecruitmentSection({
   unit,
@@ -15,13 +16,14 @@ export default function RecruitmentSection({
   avatarGender: "male" | "female";
   setAvatarGender: (gender: "male" | "female") => void;
 }) {
+  const { t } = useLocale();
   return (
     <section className="data-section" aria-labelledby="recruitment-heading">
-      <SectionHeading eyebrow="Starting state" title="Base configuration" id="recruitment-heading" />
+      <SectionHeading title={t("section.base.title")} id="recruitment-heading" />
       {avatarSelection ? (
         <div className="avatar-base-configuration">
-          <h3>Corrin configuration</h3>
-          <AvatarConfigurationControls selection={avatarSelection} context="Starting bases" />
+          <h3>{t("config.corrinConfiguration")}</h3>
+          <AvatarConfigurationControls selection={avatarSelection} context={t("config.startingBases")} />
         </div>
       ) : null}
       <ResolvedConfigurationPreview

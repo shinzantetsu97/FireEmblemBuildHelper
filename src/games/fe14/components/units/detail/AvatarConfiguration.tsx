@@ -2,7 +2,7 @@ import Alert from "react-bootstrap/Alert";
 import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
 import { ChevronDown, TriangleAlert } from "lucide-react";
-import { displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data";
+import { classNames, displayId, fe14Data, type StatBlock, type UnitRuntime } from "../../../data";
 import { ClassTreeList } from "./ClassTree";
 import SectionHeading from "./SectionHeading";
 import {
@@ -16,42 +16,54 @@ import {
   formatAvatarMatrixCell,
   shortStatLabel,
 } from "./utils";
+import { useLocale } from "../../../../../i18n/LocaleContext";
+import type { MessageKey } from "../../../../../i18n/messages/en";
+
+const AVATAR_ROUTE_KEYS: Record<string, MessageKey> = {
+  birthright: "filter.route.birthright",
+  conquest: "filter.route.conquest",
+  revelation: "filter.route.revelation",
+};
 
 export function AvatarConfigurationSection({ unit, selection }: { unit: UnitRuntime; selection: AvatarSelection }) {
   const { config } = selection;
+  const { t, resolve } = useLocale();
+  const routeLabel = (route: string) => (AVATAR_ROUTE_KEYS[route] ? t(AVATAR_ROUTE_KEYS[route]) : displayId(route));
+  const talentLabel = (talent: AvatarTalent) => {
+    const classId = avatarTalentClassId(talent, selection.gender);
+    return resolve({ en: talent.label, zhHans: classId ? classNames(classId)?.zhHans : undefined });
+  };
 
   return (
     <section className="data-section avatar-configuration" aria-labelledby="avatar-configuration-heading">
-      <SectionHeading eyebrow="Avatar rules" title="Corrin configuration" id="avatar-configuration-heading" />
-      <p className="avatar-config-intro">
-        Boon and bane deltas are added to Corrin's neutral starting stats, personal growths, and zero neutral cap modifiers.
-      </p>
+      <SectionHeading eyebrow={t("avatar.eyebrow")} title={t("config.corrinConfiguration")} id="avatar-configuration-heading" />
+      <p className="avatar-config-intro">{t("avatar.intro")}</p>
 
       <details className="avatar-modifier-matrices">
         <summary>
-          <span>Boon and bane modifier matrices</span>
+          <span>{t("avatar.matricesSummary")}</span>
           <ChevronDown aria-hidden="true" size={18} />
         </summary>
         <div className="avatar-modifier-matrix-content">
-          <p>Each populated cell shows the boon delta first and the corresponding bane delta second.</p>
+          <p>{t("avatar.matricesHint")}</p>
           <AvatarBaseModifierArray config={config} />
-          <AvatarModifierMatrix title="Personal growth modifiers" config={config} field="growthDeltas" percentage />
-          <AvatarModifierMatrix title="Cap modifiers" config={config} field="capDeltas" />
+          <AvatarModifierMatrix title={t("avatar.growthModifiers")} config={config} field="growthDeltas" percentage />
+          <AvatarModifierMatrix title={t("avatar.capModifiers")} config={config} field="capDeltas" />
         </div>
       </details>
 
       <div className="avatar-class-grid">
         <div>
           <div className="avatar-talent-heading">
-            <h3>Talent class trees</h3>
+            <h3>{t("avatar.talentTrees")}</h3>
             <Form.Group className="avatar-talent-selector" controlId="corrin-talent">
-              <Form.Label>Selected Talent</Form.Label>
+              <Form.Label>{t("avatar.selectedTalent")}</Form.Label>
               <Form.Select
                 value={selection.talentId}
                 onChange={(event) => selection.setTalentId(event.target.value)}
-                aria-label="Corrin Talent"
+                aria-label={t("avatar.corrinTalentAria")}
               >
-                {config.talents.map((talent) => <option key={talent.id} value={talent.id}>{talent.label}</option>)}
+                {config.talents.map((talent) => <option key={talent.id} value={talent.id}>{talentLabel(talent)}</option>)}
               </Form.Select>
             </Form.Group>
           </div>
@@ -62,31 +74,31 @@ export function AvatarConfigurationSection({ unit, selection }: { unit: UnitRunt
                 key={talent.id}
                 aria-current={talent.id === selection.talentId ? "true" : undefined}
               >
-                <dt>{talent.label}</dt>
-                <dd>{formatAvatarTalentTree(talent, selection.gender)}</dd>
+                <dt>{talentLabel(talent)}</dt>
+                <dd>{formatAvatarTalentTree(talent, selection.gender, resolve)}</dd>
               </div>
             ))}
           </dl>
         </div>
         <div>
-          <h3>Noble promotion access</h3>
+          <h3>{t("avatar.noblePromotion")}</h3>
           <dl className="avatar-route-promotions">
             {Object.entries(config.routePromotions).map(([route, classIds]) => (
               <div key={route}>
-                <dt>{displayId(route)}</dt>
-                <dd>{classIds.map(displayId).join(" / ")}</dd>
+                <dt>{routeLabel(route)}</dt>
+                <dd>{classIds.map((id) => resolve({ en: displayId(id), zhHans: classNames(id)?.zhHans })).join(" / ")}</dd>
               </div>
             ))}
           </dl>
-          <p className="avatar-pairup-note">{config.pairupRule.note}</p>
+          <p className="avatar-pairup-note">{resolve({ en: config.pairupRule.note, zhHans: config.pairupRule.noteZhHans })}</p>
         </div>
       </div>
 
       <Alert className="avatar-class-warning" variant="warning">
         <TriangleAlert aria-hidden="true" size={22} />
         <div>
-          <strong>Missable-class bottleneck</strong>
-          <p>{config.friendshipSealRule.note}</p>
+          <strong>{t("avatar.missableTitle")}</strong>
+          <p>{resolve({ en: config.friendshipSealRule.note, zhHans: config.friendshipSealRule.noteZhHans })}</p>
         </div>
       </Alert>
 
@@ -97,21 +109,22 @@ export function AvatarConfigurationSection({ unit, selection }: { unit: UnitRunt
 
 export function AvatarConfigurationControls({ selection, context }: { selection: AvatarSelection; context: string }) {
   const { config, boon, bane, boonId, baneId, setBoonId, setBaneId } = selection;
+  const { t, resolve, locale } = useLocale();
   return (
-    <div className="avatar-config-controls" aria-label={`${context} boon and bane`}>
+    <div className="avatar-config-controls" aria-label={t("avatar.boonBaneAria", { context })}>
       <Form.Group controlId={`${context.toLowerCase().replaceAll(" ", "-")}-boon`}>
-        <Form.Label>Boon</Form.Label>
-        <Form.Select value={boonId} onChange={(event) => setBoonId(event.target.value)} aria-label={`${context} boon`}>
+        <Form.Label>{t("avatar.boon")}</Form.Label>
+        <Form.Select value={boonId} onChange={(event) => setBoonId(event.target.value)} aria-label={t("avatar.boonAria", { context })}>
           {config.boons.map((choice) => (
-            <option key={choice.id} value={choice.id} disabled={choice.stat === bane.stat}>{choice.label} ({choice.stat === "hp" ? "HP" : displayId(choice.stat)})</option>
+            <option key={choice.id} value={choice.id} disabled={choice.stat === bane.stat}>{resolve({ en: choice.label, zhHans: choice.labelZhHans })} ({shortStatLabel(choice.stat, locale)})</option>
           ))}
         </Form.Select>
       </Form.Group>
       <Form.Group controlId={`${context.toLowerCase().replaceAll(" ", "-")}-bane`}>
-        <Form.Label>Bane</Form.Label>
-        <Form.Select value={baneId} onChange={(event) => setBaneId(event.target.value)} aria-label={`${context} bane`}>
+        <Form.Label>{t("avatar.bane")}</Form.Label>
+        <Form.Select value={baneId} onChange={(event) => setBaneId(event.target.value)} aria-label={t("avatar.baneAria", { context })}>
           {config.banes.map((choice) => (
-            <option key={choice.id} value={choice.id} disabled={choice.stat === boon.stat}>{choice.label} ({choice.stat === "hp" ? "HP" : displayId(choice.stat)})</option>
+            <option key={choice.id} value={choice.id} disabled={choice.stat === boon.stat}>{resolve({ en: choice.label, zhHans: choice.labelZhHans })} ({shortStatLabel(choice.stat, locale)})</option>
           ))}
         </Form.Select>
       </Form.Group>
@@ -120,16 +133,17 @@ export function AvatarConfigurationControls({ selection, context }: { selection:
 }
 
 function AvatarBaseModifierArray({ config }: { config: NonNullable<UnitRuntime["avatarConfiguration"]> }) {
+  const { t, locale } = useLocale();
   return (
     <div className="avatar-matrix-table avatar-base-modifier-array">
-      <h4>Starting base modifiers</h4>
+      <h4>{t("avatar.startingBaseModifiers")}</h4>
       <Table bordered responsive>
         <thead>
-          <tr><th>Boon / Bane</th>{STAT_KEYS.map((stat) => <th key={stat}>{shortStatLabel(stat)}</th>)}</tr>
+          <tr><th>{t("avatar.boonBane")}</th>{STAT_KEYS.map((stat) => <th key={stat}>{shortStatLabel(stat, locale)}</th>)}</tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Adjustment</th>
+            <th scope="row">{t("avatar.adjustment")}</th>
             {STAT_KEYS.map((stat) => {
               const boon = config.boons.find((choice) => choice.stat === stat);
               const bane = config.banes.find((choice) => choice.stat === stat);
@@ -153,12 +167,13 @@ function AvatarModifierMatrix({
   percentage?: boolean;
   title: string;
 }) {
+  const { t, resolve, locale } = useLocale();
   return (
     <div className="avatar-matrix-table">
       <h4>{title}</h4>
       <Table bordered responsive>
         <thead>
-          <tr><th>Boon / Bane</th>{STAT_KEYS.map((stat) => <th key={stat}>{shortStatLabel(stat)}</th>)}</tr>
+          <tr><th>{t("avatar.boonBane")}</th>{STAT_KEYS.map((stat) => <th key={stat}>{shortStatLabel(stat, locale)}</th>)}</tr>
         </thead>
         <tbody>
           {config.boons.map((boon) => {
@@ -167,7 +182,7 @@ function AvatarModifierMatrix({
             const baneValues = bane?.[field] as Partial<StatBlock> | undefined;
             return (
               <tr key={boon.id}>
-                <th scope="row"><strong>{boon.label}</strong><span>{bane?.label}</span></th>
+                <th scope="row"><strong>{resolve({ en: boon.label, zhHans: boon.labelZhHans })}</strong><span>{bane ? resolve({ en: bane.label, zhHans: bane.labelZhHans }) : null}</span></th>
                 {STAT_KEYS.map((stat) => (
                   <td key={stat}>{formatAvatarMatrixCell(boonValues[stat], baneValues?.[stat], percentage)}</td>
                 ))}
@@ -182,14 +197,17 @@ function AvatarModifierMatrix({
 
 function FriendshipCoverageTable({ unit, selection }: { unit: UnitRuntime; selection: AvatarSelection }) {
   const config = unit.avatarConfiguration;
+  const { t } = useLocale();
+  const routeLabel = (route: string) => (AVATAR_ROUTE_KEYS[route] ? t(AVATAR_ROUTE_KEYS[route]) : displayId(route));
+  const genderLabel = (gender: "male" | "female") => t(gender === "male" ? "common.male" : "common.female");
   if (!config) return null;
   const routes = ["birthright", "conquest", "revelation"] as const;
 
   return (
     <div className="friendship-coverage">
-      <h3>First-generation Friendship class coverage</h3>
-      <Table responsive aria-label="Corrin missing class access">
-        <thead><tr><th>Corrin</th><th>Route</th><th>Class trees still missing after Friendship and Talent access</th></tr></thead>
+      <h3>{t("avatar.friendshipCoverage")}</h3>
+      <Table responsive aria-label={t("avatar.missingClassAria")}>
+        <thead><tr><th>{t("avatar.coverageCorrin")}</th><th>{t("config.route")}</th><th>{t("avatar.coverageMissing")}</th></tr></thead>
         <tbody>
           {routes.map((route) => {
             const gender = selection.gender;
@@ -204,15 +222,15 @@ function FriendshipCoverageTable({ unit, selection }: { unit: UnitRuntime; selec
             const gaps = talentClasses.filter((classId) => classId !== selectedTalentClass && !available.has(classId));
             return (
               <tr key={`${route}-${gender}`}>
-                <th scope="row">{displayId(gender)}</th>
-                <td>{displayId(route)}</td>
-                <td>{gaps.length > 0 ? <ClassTreeList classIds={gaps} /> : "None in the current first-generation data"}</td>
+                <th scope="row">{genderLabel(gender)}</th>
+                <td>{routeLabel(route)}</td>
+                <td>{gaps.length > 0 ? <ClassTreeList classIds={gaps} /> : t("avatar.coverageNoneData")}</td>
               </tr>
             );
           })}
         </tbody>
       </Table>
-      <p>Coverage includes Corrin's selected Talent and eligible first-generation Friendship Seals; it excludes Partner Seals, child units, DLC, and unrecruited units.</p>
+      <p>{t("avatar.coverageNote")}</p>
     </div>
   );
 }
@@ -227,17 +245,27 @@ export function avatarTalentClassIds(talent: AvatarTalent, gender: AvatarGender)
   return classId ? [classId] : [];
 }
 
-function formatAvatarTalentTree(talent: AvatarTalent, gender: AvatarGender): string {
+function formatAvatarTalentTree(
+  talent: AvatarTalent,
+  gender: AvatarGender,
+  resolve: ReturnType<typeof useLocale>["resolve"],
+): string {
   const classId = avatarTalentClassId(talent, gender);
-  if (!classId) return "No class tree";
+  if (!classId) return resolve({ en: "No class tree", zhHans: "无职业树" });
   const classTree = fe14Data.classTrees.find((entry) => entry.id === classId);
   const promotions = classTree?.promotions
-    .map((promotion) => avatarPromotionLabel(promotion.id, promotion.label, gender))
-    .join(" / ") ?? "No standard promotions";
-  return `${displayId(classId)} → ${promotions}`;
+    .map((promotion) => avatarPromotionLabel(promotion.id, promotion.label, gender, resolve))
+    .join(" / ") ?? resolve({ en: "No standard promotions", zhHans: "无标准进阶职业" });
+  const base = resolve({ en: displayId(classId), zhHans: classNames(classId)?.zhHans });
+  return `${base} → ${promotions}`;
 }
 
-function avatarPromotionLabel(id: string, label: string, gender: AvatarGender): string {
-  if (id === "attendant") return gender === "female" ? "Maid" : "Butler";
-  return label;
+function avatarPromotionLabel(
+  id: string,
+  label: string,
+  gender: AvatarGender,
+  resolve: ReturnType<typeof useLocale>["resolve"],
+): string {
+  if (id === "attendant") return resolve({ en: gender === "female" ? "Maid" : "Butler", zhHans: gender === "female" ? "女仆" : "管家" });
+  return resolve({ en: label, zhHans: classNames(id)?.zhHans });
 }
