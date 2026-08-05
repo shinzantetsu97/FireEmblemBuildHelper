@@ -746,6 +746,61 @@ export const weaponTypesFileSchema = z.object({
   })).length(9),
 });
 
+const localizedWeaponItemNamesSchema = z.object({
+  en: z.string().min(1),
+  zhHans: z.string().min(1),
+  ja: z.string().min(1).optional(),
+});
+
+const iconSourceSchema = z.object({
+  filePageUrl: z.string().url().optional(),
+  imageUrl: z.string().url().optional(),
+}).optional();
+
+const worthSchema = z.object({
+  amount: z.number().int().nonnegative().nullable(),
+  sourceText: z.string().min(1),
+});
+
+export const weaponsFileSchema = z.object({
+  gameId: z.literal("fe14"),
+  scope: z.literal("candidate_player_usable_weapons"),
+  weapons: z.array(z.object({
+    id: weaponTypeIdSchema,
+    names: localizedWeaponItemNamesSchema,
+    weaponTypeId: weaponTypeIdSchema,
+    familyId: weaponTypeIdSchema,
+    displayOrder: z.number().int().positive(),
+    rank: weaponRankSchema.nullable(),
+    might: z.number().int().nullable(), hit: z.number().int().nullable(), crit: z.number().int().nullable(),
+    avoid: z.number().int().nullable(), ddg: z.number().int().nullable(),
+    range: z.object({ min: z.number().int().positive().nullable(), max: z.number().int().positive().nullable(), sourceText: z.string().min(1) }),
+    uses: z.number().int().positive().nullable(),
+    worth: worthSchema,
+    descriptions: z.object({ en: z.string(), zhHans: z.string().optional() }),
+    iconSource: iconSourceSchema,
+    reviewStatus: reviewStatusSchema,
+    provenance: z.array(sourceRefSchema).min(1),
+  })).min(1),
+});
+
+export const itemsFileSchema = z.object({
+  gameId: z.literal("fe14"),
+  scope: z.literal("standard_and_dlc_non_unused_items"),
+  items: z.array(z.object({
+    id: weaponTypeIdSchema,
+    names: localizedWeaponItemNamesSchema,
+    categoryId: z.enum(["consumable", "key", "permanent_booster", "promotion", "special"]),
+    displayOrder: z.number().int().positive(),
+    uses: z.number().int().positive().nullable(),
+    worth: z.object({ buy: z.number().int().nonnegative().nullable(), sell: z.number().int().nonnegative().nullable(), buySourceText: z.string().min(1), sellSourceText: z.string().min(1) }),
+    descriptions: z.object({ en: z.string().min(1), zhHans: z.string().min(1) }),
+    iconSource: iconSourceSchema,
+    reviewStatus: reviewStatusSchema,
+    provenance: z.array(sourceRefSchema).min(1),
+  })).min(1),
+});
+
 export const weaponIconManifestFileSchema = z.object({
   gameId: z.literal("fe14"),
   scope: z.literal("milestone-008-standard-weapon-types"),
@@ -838,6 +893,8 @@ export const domainSchemas = {
   "data/normalized/fe14/class-trees.json": classTreeFileSchema,
   "data/normalized/fe14/class-stats.json": classStatsFileSchema,
   "data/normalized/fe14/weapon-types.json": weaponTypesFileSchema,
+  "data/normalized/fe14/weapons.json": weaponsFileSchema,
+  "data/normalized/fe14/items.json": itemsFileSchema,
   "data/normalized/fe14/class-skills.json": classSkillsFileSchema,
   "data/normalized/fe14/unit-availability.json": availabilityFileSchema,
   "data/normalized/fe14/unit-base-stats.json": baseStatsFileSchema,

@@ -6,9 +6,16 @@ export const en = {
   "nav.units": "Units",
   "nav.classSkills": "Class Skills",
   "nav.personalSkills": "Personal Skills",
+  "nav.weapons": "Weapons & Items",
   "language.menuLabel": "Language",
 
   "fe14.eyebrow": "Fire Emblem Fates",
+  "weapons.title": "FE14 Weapons & Items",
+  "weapons.weapons": "Weapons",
+  "weapons.items": "Items",
+  "weapons.name": "Name",
+  "weapons.description": "Description",
+  "weapons.uses": "Uses",
 
   "directory.title": "FE14 Units",
   "directory.available": "{available} of {total} units available",

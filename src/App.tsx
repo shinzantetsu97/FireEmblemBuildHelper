@@ -5,6 +5,7 @@ import SkillIndexPage from "./games/fe14/pages/SkillIndexPage";
 import PersonalSkillIndexPage from "./games/fe14/pages/PersonalSkillIndexPage";
 import UnitDetailPage from "./games/fe14/pages/UnitDetailPage";
 import UnitIndexPage from "./games/fe14/pages/UnitIndexPage";
+import WeaponItemDirectoryPage from "./games/fe14/pages/WeaponItemDirectoryPage";
 import { useAppRoute } from "./router";
 import { LocaleProvider } from "./i18n/LocaleContext";
 import { trackPageView } from "./analytics";
@@ -25,6 +26,7 @@ export default function App() {
         {route.kind === "notes" ? <NotesPage /> : null}
         {route.kind === "skill-index" ? <SkillIndexPage /> : null}
         {route.kind === "personal-skill-index" ? <PersonalSkillIndexPage /> : null}
+        {route.kind === "weapon-item-directory" ? <WeaponItemDirectoryPage /> : null}
         {route.kind === "unit-index" ? <UnitIndexPage /> : null}
         {route.kind === "unit-detail" ? <UnitDetailPage slug={route.slug} /> : null}
         {route.kind === "not-found" ? <UnitIndexPage notFound /> : null}

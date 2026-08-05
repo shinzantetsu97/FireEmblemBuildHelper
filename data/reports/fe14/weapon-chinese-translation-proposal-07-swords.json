@@ -1,0 +1,31 @@
+{
+  "gameId": "fe14",
+  "status": "proposed",
+  "scope": "Swords",
+  "target": "data/normalized/fe14/weapons.json",
+  "note": "Apply only after review. Sword entries with no official English descriptor are intentionally omitted, leaving their Chinese description blank.",
+  "changes": [
+    { "id": "bronze_sword", "descriptionZhHans": "无法发动必杀或战技。" },
+    { "id": "steel_sword", "descriptionZhHans": "有效速度−3。" },
+    { "id": "silver_sword", "descriptionZhHans": "如果使用者为前卫，战斗结束时，力量与技巧各−2（可叠加；每回合恢复1点）。" },
+    { "id": "brave_sword", "descriptionZhHans": "装备时，防御−4、魔防−4。发动攻击时，连续攻击2次。" },
+    { "id": "armorslayer", "descriptionZhHans": "敌方为重甲单位时，威力×3。敌方为非重甲单位时，威力−4、命中−10。" },
+    { "id": "wyrmslayer", "descriptionZhHans": "敌方为龙族单位时，威力×3。敌方为非龙族单位时，威力−4、命中−10。" },
+    { "id": "killing_edge", "descriptionZhHans": "必杀伤害为×4，而非×3。" },
+    { "id": "levin_sword", "descriptionZhHans": "魔法武器。无法发动必杀或战技。" },
+    { "id": "ganglari_original", "descriptionZhHans": "仅限神威使用。无法交换。" },
+    { "id": "siegfried", "descriptionZhHans": "仅限马库斯使用。防御+4。无法出售。" },
+    { "id": "umbrella", "descriptionZhHans": "敌方有效速度+5。无法追击。" },
+    { "id": "nohrian_blade", "descriptionZhHans": "防御+3。" },
+    { "id": "leo_s_iceblade", "descriptionZhHans": "魔法武器。命中敌人后，战斗结束时，魔法与技巧各−2（可叠加；每回合恢复1点）。" },
+    { "id": "selena_s_blade", "descriptionZhHans": "有效速度−3。" },
+    { "id": "laslow_s_blade", "descriptionZhHans": "速度+3。装备时，防御−3、魔防−3。" },
+    { "id": "ganglari_upgraded", "descriptionZhHans": "命中敌人后，战斗结束时受到自身最大HP20%的伤害。" },
+    { "id": "falchion_marth", "descriptionZhHans": "敌方为龙族单位时，威力×3。使用后，恢复10HP。无法交换。" },
+    { "id": "ragnell", "descriptionZhHans": "防御+3。有效速度−3。无法交换。" },
+    { "id": "parallel_falchion", "descriptionZhHans": "敌方为龙族单位时，威力×3。使用后，恢复10HP。无法交换。有效速度+3。" },
+    { "id": "ike_s_backup", "descriptionZhHans": "防御+3。有效速度−3。" },
+    { "id": "lucina_s_estoc", "descriptionZhHans": "有效速度+3。" },
+    { "id": "falchion_chrom", "descriptionZhHans": "敌方为龙族单位时，威力×3。无法交换。" }
+  ]
+}

@@ -8,9 +8,16 @@ export const zhHans: Partial<Record<MessageKey, string>> = {
   "nav.units": "单位",
   "nav.classSkills": "职业特技",
   "nav.personalSkills": "个人特技",
+  "nav.weapons": "武器与道具",
   "language.menuLabel": "语言",
 
   "fe14.eyebrow": "火焰之纹章 if",
+  "weapons.title": "FE14 武器与道具",
+  "weapons.weapons": "武器",
+  "weapons.items": "道具",
+  "weapons.name": "名称",
+  "weapons.description": "说明",
+  "weapons.uses": "使用次数",
 
   "directory.title": "FE14 单位",
   "directory.available": "{total} 个单位中有 {available} 个可用",

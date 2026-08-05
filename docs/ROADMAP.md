@@ -95,6 +95,18 @@ This slice requires the class-data foundation to expose and validate:
 
 Implement this refactor on a new feature branch after the FE14 skill-data milestone is complete.
 
+### Near-Term Milestone: FE14 Weapon and Item Data Directory
+
+**Outcome:** Players can browse a validated bilingual FE14 weapon and item reference built from local static data, while the same canonical IDs remain available to unit inventories and later planning rules.
+
+- Cross-check English weapon mechanics between Fire Emblem Wiki and Serenes Forest, reconcile the supplied Chinese weapon tables, and use specifically documented Japanese references for staves, rods, dragonstones, and beaststones where the Chinese sources have gaps.
+- Normalize Rank, Mt, Hit, Crit, Avo, Ddg, Rng, Worth, descriptions, content availability, field-level provenance, and per-record local icons without changing the existing mechanical weapon-type IDs.
+- Keep Hoshidan and Nohrian counterparts as paired display families: Sword/Katana, Lance/Naginata, Axe/Club, Dagger/Shuriken, Bow/Yumi, Tome/Scroll, Staff/Rod, and Dragonstone/Beaststone.
+- Add item data from the Fire Emblem Wiki Fates item list. Exclude unused entries, but retain Ebon Wing and every later legitimate DLC or in-game entry.
+- Add a responsive `/FE14/Weapons` directory with one tab per paired weapon family plus an Items tab, bilingual presentation, validation reports, and no runtime source-site dependency.
+
+This milestone does not include forging, combat simulation, run-plan inventory editing, shop/economy planning, or enemy-only attacks. Implement it on a new feature branch after confirming the branch with the user.
+
 ## Phase 4: Fates Build Planner (MVP)
 
 **Outcome:** A player can create a local Fates run plan, add unit builds, and understand whether their intended paths are legal for the selected route and difficulty.

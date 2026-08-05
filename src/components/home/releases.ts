@@ -1,10 +1,22 @@
 export const RELEASES = [
   {
+    version: "0.8.0",
+    date: "2026-08-04",
+    dateLabel: "August 4, 2026",
+    title: "FE14 weapon and item directory",
+    current: true,
+    changes: [
+      "Added a source-backed FE14 weapon and item directory with local weapon-type icons, paired weapon-family sections, and a dedicated Items tab.",
+      "Added normalized weapon and item data, including ranks, combat stats, range, descriptions, provenance, and runtime validation while excluding unused items.",
+      "Added Simplified Chinese names, descriptions, tabs, categories, section titles, and chart headers across the directory.",
+      "Polished weapon-effect wording for effective speed, buffs, debuffs, weapon effectiveness, dual-wield katana behavior, and Hoshidan family modifiers.",
+    ],
+  },
+  {
     version: "0.7.1",
     date: "2026-07-21",
     dateLabel: "July 21, 2026",
     title: "Skill wording polish",
-    current: true,
     changes: [
       "Reworded English and Simplified Chinese personal- and class-skill descriptions for clearer, more concise conditions and effects without changing mechanics.",
       "Emphasized key terms, values, thresholds, and ranges throughout skill descriptions.",

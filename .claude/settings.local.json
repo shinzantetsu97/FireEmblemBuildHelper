@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s --max-time 25 \"http://fcfantasy.cn/fe2015/database/personal_skills.html\" -o /tmp/ps.html -w \"personal: HTTP %{http_code}, %{size_download} bytes\\\\n\")",
+      "Bash(python -c \"import re,sys; h=open\\('/tmp/cs.html',encoding='utf-8'\\).read\\(\\); rows=re.findall\\(r'<tr[^>]*>\\(.*?\\)</tr>',h,re.S\\); print\\('rows:',len\\(rows\\)\\); [print\\('| '+' | '.join\\(re.sub\\(r'<[^>]+>','',c\\).strip\\(\\) for c in re.findall\\(r'<t[dh][^>]*>\\(.*?\\)</t[dh]>',r,re.S\\)\\)\\) for r in rows[:6]]\")"
+    ]
+  }
+}

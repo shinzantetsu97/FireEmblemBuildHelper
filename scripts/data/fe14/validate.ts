@@ -204,6 +204,8 @@ function validateRelationships(
     }
   }
 
+  validateWeaponItemDirectory(parsed, errors);
+
   const domainPaths = Object.keys(parsed).filter(
     (relativePath) =>
       relativePath.startsWith("data/normalized/fe14/") &&
@@ -212,7 +214,9 @@ function validateRelationships(
       !relativePath.endsWith("class-trees.json") &&
       !relativePath.endsWith("class-stats.json") &&
       !relativePath.endsWith("class-skills.json") &&
-      !relativePath.endsWith("weapon-types.json"),
+      !relativePath.endsWith("weapon-types.json") &&
+      !relativePath.endsWith("weapons.json") &&
+      !relativePath.endsWith("items.json"),
   );
 
   for (const relativePath of domainPaths) {
@@ -1535,6 +1539,30 @@ function validateUniqueIds(records: JsonObject[], label: string, errors: Validat
       errors.push({ code: "duplicate_id", message: `Duplicate ${label} ID ${id}.` });
     }
     ids.add(id);
+  }
+}
+
+function validateWeaponItemDirectory(parsed: Record<string, unknown>, errors: ValidationMessage[]): void {
+  const weaponFile = parsed["data/normalized/fe14/weapons.json"] as JsonObject;
+  const itemFile = parsed["data/normalized/fe14/items.json"] as JsonObject;
+  const weapons = weaponFile.weapons as JsonObject[];
+  const items = itemFile.items as JsonObject[];
+
+  validateUniqueIds(weapons, "weapon", errors);
+  validateUniqueIds(items, "item", errors);
+  for (const [label, records, path] of [
+    ["weapon", weapons, "data/normalized/fe14/weapons.json"],
+    ["item", items, "data/normalized/fe14/items.json"],
+  ] as const) {
+    if (records.some((record, index) => record.displayOrder !== index + 1)) {
+      errors.push({ code: "directory_display_order", message: `${label} directory displayOrder values must be continuous from 1.`, path });
+    }
+  }
+  if (weapons.some((weapon) => (weapon.names as JsonObject).en.includes("(enemy-only)"))) {
+    errors.push({ code: "enemy_only_weapon", message: "Weapon directory must exclude enemy-only entries.", path: "data/normalized/fe14/weapons.json" });
+  }
+  if (items.some((item) => ((item.descriptions as JsonObject).en as string).includes("Unused."))) {
+    errors.push({ code: "unused_item", message: "Item directory must exclude explicitly unused items.", path: "data/normalized/fe14/items.json" });
   }
 }
 

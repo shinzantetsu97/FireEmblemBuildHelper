@@ -13,6 +13,7 @@ const FE14_ROUTE_KINDS: AppRoute["kind"][] = [
   "unit-detail",
   "skill-index",
   "personal-skill-index",
+  "weapon-item-directory",
 ];
 
 export default function AppHeader({ route }: { route: AppRoute }) {
@@ -50,6 +51,9 @@ export default function AppHeader({ route }: { route: AppRoute }) {
               </NavDropdown.Item>
               <NavDropdown.Item as={AppLink} to="/FE14/PersonalSkills" active={route.kind === "personal-skill-index"}>
                 {t("nav.personalSkills")}
+              </NavDropdown.Item>
+              <NavDropdown.Item as={AppLink} to="/FE14/Weapons" active={route.kind === "weapon-item-directory"}>
+                {t("nav.weapons")}
               </NavDropdown.Item>
             </NavDropdown>
             <Dropdown align="end" className="app-language-menu">

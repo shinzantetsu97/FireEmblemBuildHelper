@@ -13,6 +13,8 @@ const DOMAIN_PATHS = {
   classStats: "data/normalized/fe14/class-stats.json",
   classSkills: "data/normalized/fe14/class-skills.json",
   weaponTypes: "data/normalized/fe14/weapon-types.json",
+  weapons: "data/normalized/fe14/weapons.json",
+  items: "data/normalized/fe14/items.json",
   availability: "data/normalized/fe14/unit-availability.json",
   baseStats: "data/normalized/fe14/unit-base-stats.json",
   growths: "data/normalized/fe14/unit-growths.json",
@@ -44,12 +46,16 @@ const classTreeFile = result.parsed[DOMAIN_PATHS.classTrees] as JsonObject;
 const classStatsFile = result.parsed[DOMAIN_PATHS.classStats] as JsonObject;
 const classSkillFile = result.parsed[DOMAIN_PATHS.classSkills] as JsonObject;
 const weaponTypeFile = result.parsed[DOMAIN_PATHS.weaponTypes] as JsonObject;
+const weaponsFile = result.parsed[DOMAIN_PATHS.weapons] as JsonObject;
+const itemsFile = result.parsed[DOMAIN_PATHS.items] as JsonObject;
 const sourcesFile = result.parsed[DOMAIN_PATHS.sources] as JsonObject;
 const updatedAt = sourcesFile.updatedAt as string;
 const classTrees = classTreeFile.classes as JsonObject[];
 const classStats = classStatsFile.classes as JsonObject[];
 const classSkills = classSkillFile.skills as JsonObject[];
 const weaponTypes = weaponTypeFile.weaponTypes as JsonObject[];
+const weapons = weaponsFile.weapons as JsonObject[];
+const items = itemsFile.items as JsonObject[];
 const classStatsById = new Map(
   classStats.map((profile) => [profile.classId as string, profile]),
 );
@@ -112,7 +118,7 @@ const runtimeUnits = roster
   });
 
 const runtime = {
-  schemaVersion: 3,
+  schemaVersion: 4,
   gameId: "fe14",
   lastUpdated: updatedAt,
   roster,
@@ -120,6 +126,8 @@ const runtime = {
   classStats,
   classSkills,
   weaponTypes,
+  weapons,
+  items,
   skillsByClass,
   classDirectory,
   units: runtimeUnits,
@@ -189,6 +197,8 @@ const validationReport = {
       0,
     ),
     personalSkills: (result.parsed[DOMAIN_PATHS.personalSkills] as JsonObject[]).length,
+    weapons: weapons.length,
+    items: items.length,
     skillIcons: ((result.parsed[DOMAIN_PATHS.skillIconManifest] as JsonObject)
       .entries as JsonObject[]).length,
     errors: result.errors.length,

@@ -1258,6 +1258,112 @@
       "language": "zh-Hans",
       "reviewStatus": "candidate",
       "notes": "Chinese community skill database (FC Fantasy; draws on the fan-localization lineage credited to the FC Fantasy community and 3DM). Simplified-Chinese personal-skill names and effects. HTTPS certificate expired; fetch over HTTP."
+    },
+    {
+      "id": "fewiki-fe14-weapons",
+      "kind": "web",
+      "title": "List of weapons in Fire Emblem Fates - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/List_of_weapons_in_Fire_Emblem_Fates",
+      "language": "en",
+      "reviewStatus": "corroborated"
+    },
+    {
+      "id": "fewiki-fe14-items",
+      "kind": "web",
+      "title": "List of items in Fire Emblem Fates - Fire Emblem Wiki",
+      "location": "https://fireemblemwiki.org/wiki/List_of_items_in_Fire_Emblem_Fates",
+      "language": "en",
+      "reviewStatus": "corroborated"
+    },
+    {
+      "id": "fandom-fe14-weapons",
+      "kind": "web",
+      "title": "List of weapons in Fire Emblem Fates - Fire Emblem Wiki | Fandom",
+      "location": "https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Used to corroborate weapon descriptions and resolve discrepancies with the Fire Emblem Wiki source; direct retrieval may be restricted."
+    },
+    {
+      "id": "serenes-fe14-inventory",
+      "kind": "web",
+      "title": "Fire Emblem Fates inventory - Serenes Forest",
+      "location": "https://serenesforest.net/fire-emblem-fates/",
+      "language": "en",
+      "reviewStatus": "corroborated",
+      "notes": "Root index and its weapon and item subpages captured in raw source inventory."
+    },
+    {
+      "id": "fcfantasy-fe14-sword-katana",
+      "kind": "web",
+      "title": "FC Fantasy FE14 sword and katana data",
+      "location": "http://fcfantasy.cn/fe2015/database/sword.html",
+      "language": "zh-Hans",
+      "reviewStatus": "candidate"
+    },
+    {
+      "id": "fcfantasy-fe14-lance-naginata",
+      "kind": "web",
+      "title": "FC Fantasy FE14 lance and naginata data",
+      "location": "http://fcfantasy.cn/fe2015/database/lance.html",
+      "language": "zh-Hans",
+      "reviewStatus": "candidate"
+    },
+    {
+      "id": "fcfantasy-fe14-axe-club",
+      "kind": "web",
+      "title": "FC Fantasy FE14 axe and club data",
+      "location": "http://fcfantasy.cn/fe2015/database/axe.html",
+      "language": "zh-Hans",
+      "reviewStatus": "candidate"
+    },
+    {
+      "id": "fcfantasy-fe14-bow-yumi",
+      "kind": "web",
+      "title": "FC Fantasy FE14 bow and yumi data",
+      "location": "http://fcfantasy.cn/fe2015/database/bow.html",
+      "language": "zh-Hans",
+      "reviewStatus": "candidate"
+    },
+    {
+      "id": "fcfantasy-fe14-dagger-shuriken",
+      "kind": "web",
+      "title": "FC Fantasy FE14 dagger and shuriken data",
+      "location": "http://fcfantasy.cn/fe2015/database/knife.html",
+      "language": "zh-Hans",
+      "reviewStatus": "candidate"
+    },
+    {
+      "id": "fcfantasy-fe14-tome-scroll",
+      "kind": "web",
+      "title": "FC Fantasy FE14 tome and scroll data",
+      "location": "http://fcfantasy.cn/fe2015/database/magic.html",
+      "language": "zh-Hans",
+      "reviewStatus": "candidate"
+    },
+    {
+      "id": "pegasusknight-fe14-items",
+      "kind": "web",
+      "title": "FE14 items - Pegasus Knight",
+      "location": "https://www.pegasusknight.com/wiki/fe14/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/%E9%81%93%E5%85%B7",
+      "language": "ja",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "pegasusknight-fe14-stones",
+      "kind": "web",
+      "title": "FE14 dragonstones, beaststones, and other - Pegasus Knight",
+      "location": "https://www.pegasusknight.com/wiki/fe14/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/%E7%AB%9C%E7%9F%B3%E3%83%BB%E7%8D%A3%E7%9F%B3%E3%83%BB%E3%81%9D%E3%81%AE%E4%BB%96",
+      "language": "ja",
+      "reviewStatus": "accepted"
+    },
+    {
+      "id": "pegasusknight-fe14-reviewed-translations",
+      "kind": "game_data",
+      "title": "User-reviewed Japanese-to-Chinese FE14 item translations",
+      "location": "User-reviewed Japanese-to-Chinese FE14 item translations",
+      "language": "zh-Hans",
+      "reviewStatus": "accepted"
     }
   ]
 }

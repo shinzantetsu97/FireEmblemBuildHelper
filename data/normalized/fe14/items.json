@@ -1,0 +1,3141 @@
+{
+  "gameId": "fe14",
+  "scope": "standard_and_dlc_non_unused_items",
+  "items": [
+    {
+      "id": "vulnerary",
+      "names": {
+        "en": "Vulnerary",
+        "zhHans": "伤药",
+        "ja": "傷薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 1,
+      "uses": 3,
+      "worth": {
+        "buy": 300,
+        "sell": 100,
+        "buySourceText": "300",
+        "sellSourceText": "100"
+      },
+      "descriptions": {
+        "en": "Restores 10 HP to its user.",
+        "zhHans": "使自身恢复10点HP。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_healing.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/b/b8/Is_fe14_healing.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Vulnerary",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "傷薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "concoction",
+      "names": {
+        "en": "Concoction",
+        "zhHans": "调和药",
+        "ja": "調合薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 2,
+      "uses": 2,
+      "worth": {
+        "buy": 600,
+        "sell": 200,
+        "buySourceText": "600",
+        "sellSourceText": "200"
+      },
+      "descriptions": {
+        "en": "Restores 20 HP to its user.",
+        "zhHans": "使自身恢复20点HP。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_healing.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/b/b8/Is_fe14_healing.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Concoction",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "調合薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elixir",
+      "names": {
+        "en": "Elixir",
+        "zhHans": "特效药",
+        "ja": "特効薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 3,
+      "uses": 1,
+      "worth": {
+        "buy": 900,
+        "sell": 300,
+        "buySourceText": "900",
+        "sellSourceText": "300"
+      },
+      "descriptions": {
+        "en": "Restores 40 HP to its user.",
+        "zhHans": "使自身恢复40点HP。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_healing.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/b/b8/Is_fe14_healing.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Elixir",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "特効薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hp_tonic",
+      "names": {
+        "en": "HP Tonic",
+        "zhHans": "HP药",
+        "ja": "HPの薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 4,
+      "uses": 1,
+      "worth": {
+        "buy": 150,
+        "sell": 50,
+        "buySourceText": "150",
+        "sellSourceText": "50"
+      },
+      "descriptions": {
+        "en": "+5 maximum HP for the duration of one mission when used.",
+        "zhHans": "使用后，本章期间最大HP+5。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "HP Tonic",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "HPの薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "strength_tonic",
+      "names": {
+        "en": "Strength Tonic",
+        "zhHans": "力量药",
+        "ja": "力の薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 5,
+      "uses": 1,
+      "worth": {
+        "buy": 150,
+        "sell": 50,
+        "buySourceText": "150",
+        "sellSourceText": "50"
+      },
+      "descriptions": {
+        "en": "+2 strength for the duration of one mission when used.",
+        "zhHans": "使用后，本章期间力量+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Strength Tonic",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "力の薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "magic_tonic",
+      "names": {
+        "en": "Magic Tonic",
+        "zhHans": "魔力药",
+        "ja": "魔力の薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 6,
+      "uses": 1,
+      "worth": {
+        "buy": 150,
+        "sell": 50,
+        "buySourceText": "150",
+        "sellSourceText": "50"
+      },
+      "descriptions": {
+        "en": "+2 magic for the duration of one mission when used.",
+        "zhHans": "使用后，本章期间魔法+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Magic Tonic",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "魔力の薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "skill_tonic",
+      "names": {
+        "en": "Skill Tonic",
+        "zhHans": "技巧药",
+        "ja": "技の薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 7,
+      "uses": 1,
+      "worth": {
+        "buy": 150,
+        "sell": 50,
+        "buySourceText": "150",
+        "sellSourceText": "50"
+      },
+      "descriptions": {
+        "en": "+2 skill for the duration of one mission when used.",
+        "zhHans": "使用后，本章期间技巧+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Skill Tonic",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "技の薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "speed_tonic",
+      "names": {
+        "en": "Speed Tonic",
+        "zhHans": "速度药",
+        "ja": "速さの薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 8,
+      "uses": 1,
+      "worth": {
+        "buy": 150,
+        "sell": 50,
+        "buySourceText": "150",
+        "sellSourceText": "50"
+      },
+      "descriptions": {
+        "en": "+2 speed for the duration of one mission when used.",
+        "zhHans": "使用后，本章期间速度+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Speed Tonic",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "速さの薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "luck_tonic",
+      "names": {
+        "en": "Luck Tonic",
+        "zhHans": "幸运药",
+        "ja": "幸運の薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 9,
+      "uses": 1,
+      "worth": {
+        "buy": 150,
+        "sell": 50,
+        "buySourceText": "150",
+        "sellSourceText": "50"
+      },
+      "descriptions": {
+        "en": "+2 luck for the duration of one mission when used.",
+        "zhHans": "使用后，本章期间幸运+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Luck Tonic",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "幸運の薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "defense_tonic",
+      "names": {
+        "en": "Defense Tonic",
+        "zhHans": "防御药",
+        "ja": "守備の薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 10,
+      "uses": 1,
+      "worth": {
+        "buy": 150,
+        "sell": 50,
+        "buySourceText": "150",
+        "sellSourceText": "50"
+      },
+      "descriptions": {
+        "en": "+2 defense for the duration of one mission when used.",
+        "zhHans": "使用后，本章期间防御+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Defense Tonic",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "守備の薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "resistance_tonic",
+      "names": {
+        "en": "Resistance Tonic",
+        "zhHans": "魔防药",
+        "ja": "魔防の薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 11,
+      "uses": 1,
+      "worth": {
+        "buy": 150,
+        "sell": 50,
+        "buySourceText": "150",
+        "sellSourceText": "50"
+      },
+      "descriptions": {
+        "en": "+2 resistance for the duration of one mission when used.",
+        "zhHans": "使用后，本章期间魔防+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Resistance Tonic",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "魔防の薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "azura_s_salve",
+      "names": {
+        "en": "Azura's Salve",
+        "zhHans": "阿库娅的秘药",
+        "ja": "アクアの秘薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 12,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Recovers 10 HP to all adjacent allies.",
+        "zhHans": "使相邻的所有友军恢复10点HP。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_item.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/a/ae/Is_fe14_item.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Azura's Salve",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "アクアの秘薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gunter_s_potion",
+      "names": {
+        "en": "Gunter's Potion",
+        "zhHans": "玖塔的良药",
+        "ja": "ギュンターの良薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 13,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Restores 25 HP to its user.",
+        "zhHans": "使自身恢复25点HP。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_item.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/a/ae/Is_fe14_item.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Gunter's Potion",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "ギュンターの良薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "asugi_s_confect",
+      "names": {
+        "en": "Asugi's Confect",
+        "zhHans": "暮井的创作点心",
+        "ja": "グレイの創作菓子"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 14,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Restores 10 HP to the user, and also grants +2 strength, +2 skill, and +2 speed for the duration of the mission.",
+        "zhHans": "使自身恢复10点HP；本章期间力量、技巧、速度各+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_item.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/a/ae/Is_fe14_item.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Asugi's Confect",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "グレイの創作菓子",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rainbow_tonic",
+      "names": {
+        "en": "Rainbow Tonic",
+        "zhHans": "虹之秘药",
+        "ja": "虹の秘薬"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 15,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "+2 strength, +2 magic, +2 skill, +2 speed, +4 luck, +2 defense, +2 resistance for the duration of one mission when used.",
+        "zhHans": "使用后，本章期间力量、魔法、技巧、速度、防御、魔防各+2，幸运+4。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_item.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/a/ae/Is_fe14_item.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Rainbow Tonic",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "虹の秘薬",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "seed_of_trust",
+      "names": {
+        "en": "Seed of Trust",
+        "zhHans": "羁绊之种",
+        "ja": "絆の種"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 16,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Can only be used when paired up and both units of the pair are capable of supporting.Slightly boosts support between the user and their partner.",
+        "zhHans": "仅可在双人组队时使用，且两名单位可相互支援。略微提升使用者与搭档的支援度。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_item.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/a/ae/Is_fe14_item.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Seed of Trust",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "絆の種",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "allegro_harp",
+      "names": {
+        "en": "Allegro Harp",
+        "zhHans": "竖琴",
+        "ja": "ハープ"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 17,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Trigger Rally Speed for all allies within a two-square radius of the user by 4 each for the rest of the turn.",
+        "zhHans": "使自身周围2格内的所有友军在本回合获得「速度应援」效果，速度+4。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_item.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/a/ae/Is_fe14_item.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Allegro Harp",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "ハープ",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shell_horn",
+      "names": {
+        "en": "Shell Horn",
+        "zhHans": "海螺",
+        "ja": "ほら貝"
+      },
+      "categoryId": "consumable",
+      "displayOrder": 18,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Trigger Rally Defense skill for all allies within a two-square radius of the user by 4 each for the rest of the turn.",
+        "zhHans": "使自身周围2格内的所有友军在本回合获得「防御应援」效果，防御+4。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_item.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/a/ae/Is_fe14_item.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Shell Horn",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "ほら貝",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "door_key",
+      "names": {
+        "en": "Door Key",
+        "zhHans": "门钥匙",
+        "ja": "扉の鍵"
+      },
+      "categoryId": "key",
+      "displayOrder": 19,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Used to open a single door.Vanishes after the end of the map if unused.",
+        "zhHans": "用于打开一扇门。若未使用，章节结束后消失。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_key.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/b/b2/Is_fe14_key.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Door Key",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "扉の鍵",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "chest_key",
+      "names": {
+        "en": "Chest Key",
+        "zhHans": "宝箱钥匙",
+        "ja": "宝の鍵"
+      },
+      "categoryId": "key",
+      "displayOrder": 20,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Used to open a single chest.Vanishes after the end of the map if unused.",
+        "zhHans": "用于打开一个宝箱。若未使用，章节结束后消失。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_key.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/b/b2/Is_fe14_key.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Chest Key",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "宝の鍵",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "master_key",
+      "names": {
+        "en": "Master Key",
+        "zhHans": "万能钥匙"
+      },
+      "categoryId": "key",
+      "displayOrder": 21,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Opens any door or treasure chest.",
+        "zhHans": "可打开任意门或宝箱。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_key.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/b/b2/Is_fe14_key.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Master Key",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "Master Key",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "seraph_robe",
+      "names": {
+        "en": "Seraph Robe",
+        "zhHans": "天使之衣",
+        "ja": "天使の衣"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 22,
+      "uses": 1,
+      "worth": {
+        "buy": 10000,
+        "sell": 1000,
+        "buySourceText": "10,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases maximum HP by 5 points when used.",
+        "zhHans": "使用后，最大HP永久+5。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Seraph Robe",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "天使の衣",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "energy_drop",
+      "names": {
+        "en": "Energy Drop",
+        "zhHans": "力量之滴",
+        "ja": "力のしずく"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 23,
+      "uses": 1,
+      "worth": {
+        "buy": 10000,
+        "sell": 1000,
+        "buySourceText": "10,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases strength by 2 points when used.",
+        "zhHans": "使用后，力量永久+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Energy Drop",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "力のしずく",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "spirit_dust",
+      "names": {
+        "en": "Spirit Dust",
+        "zhHans": "精灵之粉",
+        "ja": "精霊の粉"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 24,
+      "uses": 1,
+      "worth": {
+        "buy": 10000,
+        "sell": 1000,
+        "buySourceText": "10,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases magic by 2 points when used.",
+        "zhHans": "使用后，魔法永久+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Spirit Dust",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "精霊の粉",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "secret_book",
+      "names": {
+        "en": "Secret Book",
+        "zhHans": "秘传之书",
+        "ja": "秘伝の書"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 25,
+      "uses": 1,
+      "worth": {
+        "buy": 10000,
+        "sell": 1000,
+        "buySourceText": "10,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases skill by 2 points when used.",
+        "zhHans": "使用后，技巧永久+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Secret Book",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "秘伝の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "speedwing",
+      "names": {
+        "en": "Speedwing",
+        "zhHans": "疾风之羽",
+        "ja": "はやての羽"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 26,
+      "uses": 1,
+      "worth": {
+        "buy": 10000,
+        "sell": 1000,
+        "buySourceText": "10,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases speed by 2 points when used.",
+        "zhHans": "使用后，速度永久+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Speedwing",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "はやての羽",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "goddess_icon",
+      "names": {
+        "en": "Goddess Icon",
+        "zhHans": "女神像",
+        "ja": "女神の像"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 27,
+      "uses": 1,
+      "worth": {
+        "buy": 10000,
+        "sell": 1000,
+        "buySourceText": "10,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases luck by 4 points when used.",
+        "zhHans": "使用后，幸运永久+4。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Goddess Icon",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "女神の像",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dracoshield",
+      "names": {
+        "en": "Dracoshield",
+        "zhHans": "龙盾",
+        "ja": "竜の盾"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 28,
+      "uses": 1,
+      "worth": {
+        "buy": 10000,
+        "sell": 1000,
+        "buySourceText": "10,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases defense by 2 points when used.",
+        "zhHans": "使用后，防御永久+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Dracoshield",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "竜の盾",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "talisman",
+      "names": {
+        "en": "Talisman",
+        "zhHans": "魔除护符",
+        "ja": "魔よけ"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 29,
+      "uses": 1,
+      "worth": {
+        "buy": 10000,
+        "sell": 1000,
+        "buySourceText": "10,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases resistance by 2 points when used.",
+        "zhHans": "使用后，魔防永久+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Talisman",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "魔よけ",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dragon_herbs",
+      "names": {
+        "en": "Dragon Herbs",
+        "zhHans": "神龙草",
+        "ja": "神竜草"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 30,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 1000,
+        "buySourceText": "0",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases all stats by 1 point each when used.",
+        "zhHans": "使用后，所有能力永久各+1。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Dragon Herbs",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "神竜草",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "boots",
+      "names": {
+        "en": "Boots",
+        "zhHans": "靴子",
+        "ja": "ブーツ"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 31,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 1000,
+        "buySourceText": "0",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Permanently increases movement by 1 point when used.Cannot be used on the same character more than twice.",
+        "zhHans": "使用后，移动力永久+1。同一单位最多可使用2次。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Boots",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "ブーツ",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "arms_scroll",
+      "names": {
+        "en": "Arms Scroll",
+        "zhHans": "术书",
+        "ja": "術書"
+      },
+      "categoryId": "permanent_booster",
+      "displayOrder": 32,
+      "uses": 1,
+      "worth": {
+        "buy": 5000,
+        "sell": 1000,
+        "buySourceText": "5,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "Raises the user's weapon levels in all weapon types available to their current class by one tier each.",
+        "zhHans": "使当前职业可使用的所有武器类型的武器等级各提升1级。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_stat_booster.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/6f/Is_fe14_stat_booster.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Arms Scroll",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "術書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "master_seal",
+      "names": {
+        "en": "Master Seal",
+        "zhHans": "大师之证",
+        "ja": "マスタープルフ"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 33,
+      "uses": 1,
+      "worth": {
+        "buy": 2000,
+        "sell": 500,
+        "buySourceText": "2,000",
+        "sellSourceText": "500"
+      },
+      "descriptions": {
+        "en": "Initiates class change for every base class when at Level 10 or higher.",
+        "zhHans": "基础职业达到10级或以上时使用，可转职为上级职业。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Master Seal",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "マスタープルフ",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "heart_seal",
+      "names": {
+        "en": "Heart Seal",
+        "zhHans": "平行之证",
+        "ja": "パラレルプルフ"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 34,
+      "uses": 1,
+      "worth": {
+        "buy": 2000,
+        "sell": 500,
+        "buySourceText": "2,000",
+        "sellSourceText": "500"
+      },
+      "descriptions": {
+        "en": "Initiates reclassing for the unit using it.",
+        "zhHans": "使使用者转职为可选的其他职业。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Heart Seal",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "パラレルプルフ",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "partner_seal",
+      "names": {
+        "en": "Partner Seal",
+        "zhHans": "婚姻之证",
+        "ja": "マリッジプルフ"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 35,
+      "uses": 1,
+      "worth": {
+        "buy": 2000,
+        "sell": 500,
+        "buySourceText": "2,000",
+        "sellSourceText": "500"
+      },
+      "descriptions": {
+        "en": "Allows the unit to reclass into a class tree based on their spouse's base class tree.",
+        "zhHans": "使使用者转职为与配偶初始职业对应的职业树。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Partner Seal",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "マリッジプルフ",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "friendship_seal",
+      "names": {
+        "en": "Friendship Seal",
+        "zhHans": "友情之证",
+        "ja": "バディプルフ"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 36,
+      "uses": 1,
+      "worth": {
+        "buy": 2000,
+        "sell": 500,
+        "buySourceText": "2,000",
+        "sellSourceText": "500"
+      },
+      "descriptions": {
+        "en": "Allows the unit to reclass into a class tree based on their buddy's base class tree.",
+        "zhHans": "使使用者转职为与挚友初始职业对应的职业树。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Friendship Seal",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "バディプルフ",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "offspring_seal",
+      "names": {
+        "en": "Offspring Seal",
+        "zhHans": "子代之证",
+        "ja": "チャイルドプルフ"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 37,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Reclasses the unit into a advanced class and adjust its stats to match.Usable only by children characters.",
+        "zhHans": "仅限子代单位使用。使使用者转职为上级职业，并调整其能力值。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Offspring Seal",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "チャイルドプルフ",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "eternal_seal",
+      "names": {
+        "en": "Eternal Seal",
+        "zhHans": "永恒之证",
+        "ja": "エターナルプルフ"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 38,
+      "uses": 1,
+      "worth": {
+        "buy": 12000,
+        "sell": 1000,
+        "buySourceText": "12,000",
+        "sellSourceText": "1,000"
+      },
+      "descriptions": {
+        "en": "When used at an advanced class unit's maximum level, increases the user's maximum level by 5.",
+        "zhHans": "上级职业达到等级上限时使用，使等级上限+5。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Eternal Seal",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "エターナルプルフ",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dread_scroll",
+      "names": {
+        "en": "Dread Scroll",
+        "zhHans": "魔战士卷轴",
+        "ja": "魔戦士の巻物"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 39,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Initiates reclass for the user (if level 10 base or in an advanced class), promoting them to Dread Fighter.",
+        "zhHans": "基础职业达到10级或以上，或为上级职业时使用，使使用者转职为魔战士。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Dread Scroll",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "魔戦士の巻物",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "ebon_wing",
+      "names": {
+        "en": "Ebon Wing",
+        "zhHans": "黑天马之翼",
+        "ja": "黒天馬の翼"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 40,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Initiates reclass for the user (if level 10 base or in an advanced class), promoting them to Dark Falcon.",
+        "zhHans": "基础职业达到10级或以上，或为上级职业时使用，使使用者转职为黑天马。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Ebon Wing",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "黒天馬の翼",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sighting_lens",
+      "names": {
+        "en": "Sighting Lens",
+        "zhHans": "射手炮台",
+        "ja": "シューター砲台"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 41,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Initiates reclass for the user (if level 10 base or in an advanced class), promoting them to Ballistician. Male units only.",
+        "zhHans": "仅限男性单位。基础职业达到10级或以上，或为上级职业时使用，使使用者转职为炮台。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Sighting Lens",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "シューター砲台",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "witch_s_mark",
+      "names": {
+        "en": "Witch's Mark",
+        "zhHans": "魔女魔法阵",
+        "ja": "魔女の魔法陣"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 42,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Initiates reclass for the user (if level 10 base or in an advanced class), promoting them to Witch. Female units only.",
+        "zhHans": "仅限女性单位。基础职业达到10级或以上，或为上级职业时使用，使使用者转职为魔女。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Witch's Mark",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "魔女の魔法陣",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hero_s_brand",
+      "names": {
+        "en": "Hero's Brand",
+        "zhHans": "英雄王纹章",
+        "ja": "英雄王の紋章"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 43,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Initiates reclass for the user (if level 10 base or in an advanced class), promoting them to Lodestar. Male units only.",
+        "zhHans": "仅限男性单位。基础职业达到10级或以上，或为上级职业时使用，使使用者转职为星之领主。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Hero's Brand",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "英雄王の紋章",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "exalt_s_brand",
+      "names": {
+        "en": "Exalt's Brand",
+        "zhHans": "圣痕纹章",
+        "ja": "聖痕の紋章"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 44,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Initiates reclass for the user (if level 10 base or in an advanced class), promoting them to Great Lord. Female units only.",
+        "zhHans": "仅限女性单位。基础职业达到10级或以上，或为上级职业时使用，使使用者转职为大领主。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Exalt's Brand",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "聖痕の紋章",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fell_brand",
+      "names": {
+        "en": "Fell Brand",
+        "zhHans": "邪痕纹章",
+        "ja": "邪痕の紋章"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 45,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Initiates reclass for the user (if level 10 base or in an advanced class), promoting them to Grandmaster. Male units only.",
+        "zhHans": "仅限男性单位。基础职业达到10级或以上，或为上级职业时使用，使使用者转职为大军师。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Fell Brand",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "邪痕の紋章",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "vanguard_brand",
+      "names": {
+        "en": "Vanguard Brand",
+        "zhHans": "神将纹章",
+        "ja": "神将の紋章"
+      },
+      "categoryId": "promotion",
+      "displayOrder": 46,
+      "uses": 1,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Initiates reclass for the user (if level 10 base or in an advanced class), promoting them to Vanguard. Male units only.",
+        "zhHans": "仅限男性单位。基础职业达到10级或以上，或为上级职业时使用，使使用者转职为神将。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_class_change.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/0/0d/Is_fe14_class_change.png"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Vanguard Brand",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "神将の紋章",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "paragon",
+      "names": {
+        "en": "Paragon",
+        "zhHans": "精英之书",
+        "ja": "エリートの書"
+      },
+      "categoryId": "special",
+      "displayOrder": 47,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Paragon to a single unit.",
+        "zhHans": "使一名单位习得「精英」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Paragon",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "エリートの書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "point_blank",
+      "names": {
+        "en": "Point Blank",
+        "zhHans": "近接射击之书",
+        "ja": "近接射撃の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 48,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Point Blank to a single unit.",
+        "zhHans": "使一名单位习得「近接射击」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Point Blank",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "近接射撃の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "strengthtaker",
+      "names": {
+        "en": "Strengthtaker",
+        "zhHans": "力量吸收之书",
+        "ja": "力の吸収の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 49,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Strengthtaker to a single unit.",
+        "zhHans": "使一名单位习得「力量吸收」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Strengthtaker",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "力の吸収の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "magictaker",
+      "names": {
+        "en": "Magictaker",
+        "zhHans": "魔力吸收之书",
+        "ja": "魔力の吸収の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 50,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Magictaker to a single unit.",
+        "zhHans": "使一名单位习得「魔力吸收」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Magictaker",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "魔力の吸収の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "skilltaker",
+      "names": {
+        "en": "Skilltaker",
+        "zhHans": "技巧吸收之书",
+        "ja": "技の吸収の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 51,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Skilltaker to a single unit.",
+        "zhHans": "使一名单位习得「技巧吸收」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Skilltaker",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "技の吸収の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "speedtaker",
+      "names": {
+        "en": "Speedtaker",
+        "zhHans": "速度吸收之书",
+        "ja": "速さの吸収の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 52,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Speedtaker to a single unit.",
+        "zhHans": "使一名单位习得「速度吸收」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Speedtaker",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "速さの吸収の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lucktaker",
+      "names": {
+        "en": "Lucktaker",
+        "zhHans": "幸运吸收之书",
+        "ja": "幸運の吸収の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 53,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Lucktaker to a single unit.",
+        "zhHans": "使一名单位习得「幸运吸收」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Lucktaker",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "幸運の吸収の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "defensetaker",
+      "names": {
+        "en": "Defensetaker",
+        "zhHans": "防御吸收之书",
+        "ja": "守備の吸収の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 54,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Defensetaker to a single unit.",
+        "zhHans": "使一名单位习得「防御吸收」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Defensetaker",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "守備の吸収の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "resistancetaker",
+      "names": {
+        "en": "Resistancetaker",
+        "zhHans": "魔防吸收之书",
+        "ja": "魔防の吸収の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 55,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Resistancetaker to a single unit.",
+        "zhHans": "使一名单位习得「魔防吸收」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Resistancetaker",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "魔防の吸収の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "heavy_blade",
+      "names": {
+        "en": "Heavy Blade",
+        "zhHans": "刚剑之书",
+        "ja": "剛剣の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 56,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Heavy Blade to a single unit.",
+        "zhHans": "使一名单位习得「刚剑」。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Heavy Blade",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "剛剣の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "veteran_intuition",
+      "names": {
+        "en": "Veteran Intuition",
+        "zhHans": "历战之勘之书",
+        "ja": "歴戦の勘の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 57,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Veteran Intuition to a single unit.If used by a base or special class, character must be level 10 minimum.Advanced classes may use at any level.",
+        "zhHans": "使一名单位习得「历战之勘」。基础职业或特殊职业须达到10级才能使用；上级职业不限等级。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Veteran Intuition",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "歴戦の勘の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "aether",
+      "names": {
+        "en": "Aether",
+        "zhHans": "天空之书",
+        "ja": "天空の書"
+      },
+      "categoryId": "special",
+      "displayOrder": 58,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Aether to a single unit.Cannot be used by base classes.If used by a special class, character must be level 25 minimum; if used by an advanced class, character must be level 5 minimum.",
+        "zhHans": "使一名单位习得「天空」。基础职业无法使用；特殊职业须达到25级、上级职业须达到5级才能使用。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Aether",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "天空の書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "warp",
+      "names": {
+        "en": "Warp",
+        "zhHans": "传送之书",
+        "ja": "ワープの書"
+      },
+      "categoryId": "special",
+      "displayOrder": 59,
+      "uses": 1,
+      "worth": {
+        "buy": null,
+        "sell": null,
+        "buySourceText": "--",
+        "sellSourceText": "--"
+      },
+      "descriptions": {
+        "en": "Teaches the skill Warp to a single unit.Cannot be used by base classes.If used by a special class, character must be level 35 minimum; if used by an advanced class, character must be level 15 minimum.",
+        "zhHans": "使一名单位习得「传送」。基础职业无法使用；特殊职业须达到35级、上级职业须达到15级才能使用。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_skill_book.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/9/96/Is_fe14_skill_book.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Warp",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "ワープの書",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gold_bar",
+      "names": {
+        "en": "Gold Bar",
+        "zhHans": "小判",
+        "ja": "小判"
+      },
+      "categoryId": "special",
+      "displayOrder": 60,
+      "uses": null,
+      "worth": {
+        "buy": 0,
+        "sell": 300,
+        "buySourceText": "0",
+        "sellSourceText": "300"
+      },
+      "descriptions": {
+        "en": "Can be spent to trigger the Spendthrift skill.",
+        "zhHans": "可消耗以发动「挥霍」特技。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_gold_bar.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/3/34/Is_fe14_gold_bar.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Gold Bar",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "小判",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "battle_seal",
+      "names": {
+        "en": "Battle Seal",
+        "zhHans": "战斗王纹章",
+        "ja": "戦闘王の紋章"
+      },
+      "categoryId": "special",
+      "displayOrder": 61,
+      "uses": null,
+      "worth": {
+        "buy": 0,
+        "sell": 10000,
+        "buySourceText": "0",
+        "sellSourceText": "10,000"
+      },
+      "descriptions": {
+        "en": "+2 strength, magic, skill, and speed when in inventory.",
+        "zhHans": "持有时，力量、魔法、技巧、速度各+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_emblem.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/c/ca/Is_fe14_emblem.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Battle Seal",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "戦闘王の紋章",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "visitation_seal",
+      "names": {
+        "en": "Visitation Seal",
+        "zhHans": "访问王纹章",
+        "ja": "訪問王の紋章"
+      },
+      "categoryId": "special",
+      "displayOrder": 62,
+      "uses": null,
+      "worth": {
+        "buy": 0,
+        "sell": 10000,
+        "buySourceText": "0",
+        "sellSourceText": "10,000"
+      },
+      "descriptions": {
+        "en": "+2 luck, defense, and resistance when in inventory.",
+        "zhHans": "持有时，幸运、防御、魔防各+2。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_emblem.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/c/ca/Is_fe14_emblem.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Visitation Seal",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "訪問王の紋章",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "master_emblem",
+      "names": {
+        "en": "Master Emblem",
+        "zhHans": "羁绊王纹章",
+        "ja": "絆の王の紋章"
+      },
+      "categoryId": "special",
+      "displayOrder": 63,
+      "uses": null,
+      "worth": {
+        "buy": 0,
+        "sell": 10000,
+        "buySourceText": "0",
+        "sellSourceText": "10,000"
+      },
+      "descriptions": {
+        "en": "+1 strength, magic, skill, speed, luck, defense and resistance when in inventory.",
+        "zhHans": "持有时，力量、魔法、技巧、速度、幸运、防御、魔防各+1。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_emblem.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/c/ca/Is_fe14_emblem.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Master Emblem",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "絆の王の紋章",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "obstacle",
+      "names": {
+        "en": "Obstacle",
+        "zhHans": "障碍物",
+        "ja": "障害物"
+      },
+      "categoryId": "special",
+      "displayOrder": 64,
+      "uses": null,
+      "worth": {
+        "buy": 0,
+        "sell": 0,
+        "buySourceText": "0",
+        "sellSourceText": "0"
+      },
+      "descriptions": {
+        "en": "Allows the user to position the obstacle onto an adjacent tile.Once placed, the space the \"Obstacle\" is set onto can no longer be traversed.They may be picked back up by player units after being placed.Vanishes after chapter's end if unused.",
+        "zhHans": "可将障碍物放置在相邻的地格。放置后，该格无法通行。可由玩家单位回收；若未使用，章节结束后消失。"
+      },
+      "iconSource": {
+        "filePageUrl": "https://fireemblemwiki.org/wiki/File:Is_fe14_obstacle.png",
+        "imageUrl": "https://cdn.fireemblemwiki.org/6/64/Is_fe14_obstacle.png"
+      },
+      "reviewStatus": "candidate",
+      "provenance": [
+        {
+          "sourceId": "fewiki-fe14-items",
+          "locator": "Obstacle",
+          "fields": [
+            "names.en",
+            "uses",
+            "worth",
+            "descriptions.en",
+            "iconSource"
+          ],
+          "reviewStatus": "corroborated"
+        },
+        {
+          "sourceId": "pegasusknight-fe14-items",
+          "locator": "障害物",
+          "fields": [
+            "names.ja",
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "gameId": "fe14",
+  "status": "proposed",
+  "scope": "Katanas",
+  "target": "data/normalized/fe14/weapons.json",
+  "note": "Apply only after review. Katana entries with no official English descriptor are intentionally omitted, leaving their Chinese description blank. The section header already supplies the standard +1 Speed, −1 Defense, −1 Resistance effect.",
+  "changes": [
+    { "id": "brass_katana", "descriptionZhHans": "无法发动必杀或奥义。" },
+    { "id": "steel_katana", "descriptionZhHans": "有效速度−3。" },
+    { "id": "silver_katana", "descriptionZhHans": "如果使用者为前卫，战斗后，力量与技巧各−2（可叠加；每回合恢复1点）。" },
+    { "id": "venge_katana", "descriptionZhHans": "敌方发动攻击时，威力×2。" },
+    { "id": "kodachi", "descriptionZhHans": "敌方有效速度+5。无法追击。无法发动必杀或奥义。" },
+    { "id": "wakizashi", "descriptionZhHans": "敌方有效速度+5。无法追击。" },
+    { "id": "axe_splitter", "descriptionZhHans": "敌方正使用的武器为斧时，威力×3。敌方正使用的武器不为斧时，威力−4、命中−10。" },
+    { "id": "dual_katana", "descriptionZhHans": "反转武器三角，并将其效果×2。" },
+    { "id": "practice_katana", "descriptionZhHans": "速度+5。装备时，防御−1、魔防−1。" },
+    { "id": "spirit_katana", "descriptionZhHans": "速度+1。装备时，防御−4、魔防−4。敌方为魔物单位时，威力×3。回合开始时，恢复10HP。" },
+    { "id": "hagakure_blade", "descriptionZhHans": "发动攻击后，力量减半，直至下次发动攻击的战斗结束（可叠加）。" },
+    { "id": "yato", "descriptionZhHans": "仅限神威使用。无法出售。" },
+    { "id": "noble_yato", "descriptionZhHans": "仅限神威使用。力量+2、速度+2。无法出售。" },
+    { "id": "blazing_yato", "descriptionZhHans": "仅限神威使用。力量+4、速度+4。无效化【龙鳞】的效果。无法出售。" },
+    { "id": "grim_yato", "descriptionZhHans": "仅限神威使用。防御+2、魔防+2。无法出售。" },
+    { "id": "shadow_yato", "descriptionZhHans": "仅限神威使用。防御+4、魔防+4。无效化【龙鳞】的效果。无法出售。" },
+    { "id": "alpha_yato", "descriptionZhHans": "仅限神威使用。力量+2、速度+2、防御+2、魔防+2。无法出售。" },
+    { "id": "omega_yato", "descriptionZhHans": "仅限神威使用。力量+4、速度+4、防御+4、魔防+4。无效化【龙鳞】的效果。无法出售。" },
+    { "id": "raijinto", "descriptionZhHans": "仅限龙马使用。力量+4。无法出售。" },
+    { "id": "parasol", "descriptionZhHans": "敌方有效速度+5。无法追击。" },
+    { "id": "raider_katana", "descriptionZhHans": "命中时，若使用者处于武器相克优势，则令敌人脱衣。有效速度+3。" },
+    { "id": "takumi_s_shinai", "descriptionZhHans": "速度+1。装备时，防御−3、魔防−3。无法击败敌人，改为使其HP保留1点。无法追击。" },
+    { "id": "hana_s_katana", "descriptionZhHans": "敌方发动攻击时，威力×2。无法追击。" },
+    { "id": "hinata_s_katana", "descriptionZhHans": "速度+1。装备时，防御−3、魔防−3。发动攻击时，威力×2。无法追击。" }
+  ]
+}

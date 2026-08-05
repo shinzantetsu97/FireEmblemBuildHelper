@@ -503,6 +503,36 @@ export interface WeaponType {
   displayOrder: number;
 }
 
+export interface WeaponDirectoryEntry {
+  id: string;
+  names: { en: string; zhHans: string; ja?: string };
+  weaponTypeId: string;
+  familyId: string;
+  displayOrder: number;
+  rank: string | null;
+  might: number | null;
+  hit: number | null;
+  crit: number | null;
+  avoid: number | null;
+  ddg: number | null;
+  range: { min: number | null; max: number | null; sourceText: string };
+  uses: number | null;
+  worth: { amount: number | null; sourceText: string };
+  descriptions: { en: string; zhHans?: string };
+  iconSource: { filePageUrl?: string; imageUrl?: string };
+}
+
+export interface ItemDirectoryEntry {
+  id: string;
+  names: { en: string; zhHans: string; ja?: string };
+  categoryId: "consumable" | "key" | "permanent_booster" | "promotion" | "special";
+  displayOrder: number;
+  uses: number | null;
+  worth: { buy: number | null; sell: number | null; buySourceText: string; sellSourceText: string };
+  descriptions: { en: string; zhHans: string };
+  iconSource: { filePageUrl?: string; imageUrl?: string };
+}
+
 export interface EnrichedClassNode extends ClassTreeNode {
   stats: ClassStatProfile;
   skills: ClassSkillIndexEntry[];
@@ -522,6 +552,8 @@ export interface Fe14Runtime {
   classStats: ClassStatProfile[];
   classSkills: ClassSkill[];
   weaponTypes: WeaponType[];
+  weapons: WeaponDirectoryEntry[];
+  items: ItemDirectoryEntry[];
   skillsByClass: Record<string, ClassSkillIndexEntry[]>;
   classDirectory: EnrichedClassTree[];
   units: UnitRuntime[];

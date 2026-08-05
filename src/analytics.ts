@@ -91,6 +91,8 @@ function pagePath(route: AppRoute): string {
       return "/fe14/skills";
     case "personal-skill-index":
       return "/fe14/personalskills";
+    case "weapon-item-directory":
+      return "/fe14/weapons";
     case "not-found":
       return "/404";
   }

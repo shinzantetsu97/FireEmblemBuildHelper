@@ -19,8 +19,8 @@ describe("application regressions", () => {
 
     expect(screen.getByRole("heading", { name: "FireEmblemBuildHelper", level: 1 })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Fire Emblem If \/ Fates/ })).toHaveAttribute("href", "/FE14/Units");
-    expect(screen.getByText("v0.6.0")).toBeInTheDocument();
-    expect(screen.getByText("Route-driven FE14 base configuration")).toBeInTheDocument();
+    expect(screen.getByText("v0.8.0")).toBeInTheDocument();
+    expect(screen.getByText("FE14 weapon and item directory")).toBeInTheDocument();
     expect(screen.getAllByText(/^v\d/)).toHaveLength(5);
 
     await user.click(screen.getByRole("button", { name: "View complete history" }));

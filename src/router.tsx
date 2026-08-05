@@ -5,6 +5,7 @@ export type AppRoute =
   | { kind: "notes" }
   | { kind: "skill-index" }
   | { kind: "personal-skill-index" }
+  | { kind: "weapon-item-directory" }
   | { kind: "unit-index" }
   | { kind: "unit-detail"; slug: string }
   | { kind: "not-found" };
@@ -81,6 +82,9 @@ function parseRoute(pathname: string): AppRoute {
   }
   if (normalized.toLowerCase() === "/fe14/personalskills") {
     return { kind: "personal-skill-index" };
+  }
+  if (normalized.toLowerCase() === "/fe14/weapons") {
+    return { kind: "weapon-item-directory" };
   }
 
   const detailMatch = normalized.match(/^\/fe14\/units\/([^/]+)$/i);

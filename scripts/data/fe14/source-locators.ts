@@ -145,6 +145,18 @@ export const SOURCE_LOCATIONS = {
     "https://serenesforest.net/fire-emblem-fates/nohrian-classes/growth-rates/",
   "fandom-fe14-weapon-list":
     "https://fireemblem.fandom.com/wiki/List_of_weapons_in_Fire_Emblem_Fates",
+  "fewiki-fe14-weapons": "https://fireemblemwiki.org/wiki/List_of_weapons_in_Fire_Emblem_Fates",
+  "fewiki-fe14-items": "https://fireemblemwiki.org/wiki/List_of_items_in_Fire_Emblem_Fates",
+  "serenes-fe14-inventory": "https://serenesforest.net/fire-emblem-fates/",
+  "fcfantasy-fe14-sword-katana": "http://fcfantasy.cn/fe2015/database/sword.html",
+  "fcfantasy-fe14-lance-naginata": "http://fcfantasy.cn/fe2015/database/lance.html",
+  "fcfantasy-fe14-axe-club": "http://fcfantasy.cn/fe2015/database/axe.html",
+  "fcfantasy-fe14-bow-yumi": "http://fcfantasy.cn/fe2015/database/bow.html",
+  "fcfantasy-fe14-dagger-shuriken": "http://fcfantasy.cn/fe2015/database/knife.html",
+  "fcfantasy-fe14-tome-scroll": "http://fcfantasy.cn/fe2015/database/magic.html",
+  "pegasusknight-fe14-items": "https://www.pegasusknight.com/wiki/fe14/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/%E9%81%93%E5%85%B7",
+  "pegasusknight-fe14-stones": "https://www.pegasusknight.com/wiki/fe14/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0/%E7%AB%9C%E7%9F%B3%E3%83%BB%E7%8D%A3%E7%9F%B3%E3%83%BB%E3%81%9D%E3%81%AE%E4%BB%96",
+  "pegasusknight-fe14-reviewed-translations": "User-reviewed Japanese-to-Chinese FE14 item translations",
   "serenes-fe14-other-base-stats":
     "https://serenesforest.net/fire-emblem-fates/other-characters/base-stats/",
   "serenes-fe14-other-recruitment":
