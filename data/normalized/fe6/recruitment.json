@@ -1,0 +1,2288 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "recruitment": [
+    {
+      "id": "roy.story",
+      "unitId": "roy",
+      "joins": [
+        {
+          "chapterId": "chapter_1",
+          "label": "1",
+          "chapterNumber": 1,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "lord",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "roy.normal",
+      "weaponLevelSnapshotId": "roy.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Roy",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Roy",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "marcus.story",
+      "unitId": "marcus",
+      "joins": [
+        {
+          "chapterId": "chapter_1",
+          "label": "1",
+          "chapterNumber": 1,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "paladin_m",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "marcus.normal",
+      "weaponLevelSnapshotId": "marcus.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Marcus",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Marcus",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "alen.story",
+      "unitId": "alen",
+      "joins": [
+        {
+          "chapterId": "chapter_1",
+          "label": "1",
+          "chapterNumber": 1,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "cavalier_m",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "alen.normal",
+      "weaponLevelSnapshotId": "alen.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Allen",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Allen",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lance.story",
+      "unitId": "lance",
+      "joins": [
+        {
+          "chapterId": "chapter_1",
+          "label": "1",
+          "chapterNumber": 1,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "cavalier_m",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "lance.normal",
+      "weaponLevelSnapshotId": "lance.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Lance",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lance",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wolt.story",
+      "unitId": "wolt",
+      "joins": [
+        {
+          "chapterId": "chapter_1",
+          "label": "1",
+          "chapterNumber": 1,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "archer_m",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "wolt.normal",
+      "weaponLevelSnapshotId": "wolt.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Wolt",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wolt",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bors.story",
+      "unitId": "bors",
+      "joins": [
+        {
+          "chapterId": "chapter_1",
+          "label": "1",
+          "chapterNumber": 1,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "knight_m",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "bors.normal",
+      "weaponLevelSnapshotId": "bors.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Bors",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Bors",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "merlinus.story",
+      "unitId": "merlinus",
+      "joins": [
+        {
+          "chapterId": "chapter_2",
+          "label": "2",
+          "chapterNumber": 2,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "transporter",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "merlinus.normal",
+      "weaponLevelSnapshotId": "merlinus.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Merlinus",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Merlinus",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elen.story",
+      "unitId": "elen",
+      "joins": [
+        {
+          "chapterId": "chapter_2",
+          "label": "2",
+          "chapterNumber": 2,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "priest_f",
+      "startingLevel": 2,
+      "baseStatSnapshotId": "elen.normal",
+      "weaponLevelSnapshotId": "elen.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Ellen",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Ellen",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dieck.story",
+      "unitId": "dieck",
+      "joins": [
+        {
+          "chapterId": "chapter_2",
+          "label": "2",
+          "chapterNumber": 2,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from Turn 2",
+      "startingClassId": "mercenary_m",
+      "startingLevel": 5,
+      "baseStatSnapshotId": "dieck.normal",
+      "weaponLevelSnapshotId": "dieck.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Dieck",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dieck",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wade.story",
+      "unitId": "wade",
+      "joins": [
+        {
+          "chapterId": "chapter_2",
+          "label": "2",
+          "chapterNumber": 2,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from Turn 2",
+      "startingClassId": "fighter",
+      "startingLevel": 2,
+      "baseStatSnapshotId": "wade.normal",
+      "weaponLevelSnapshotId": "wade.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Wade",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wade",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lot.story",
+      "unitId": "lot",
+      "joins": [
+        {
+          "chapterId": "chapter_2",
+          "label": "2",
+          "chapterNumber": 2,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from Turn 2",
+      "startingClassId": "fighter",
+      "startingLevel": 3,
+      "baseStatSnapshotId": "lot.normal",
+      "weaponLevelSnapshotId": "lot.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Lott",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lott",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shanna.story",
+      "unitId": "shanna",
+      "joins": [
+        {
+          "chapterId": "chapter_2",
+          "label": "2",
+          "chapterNumber": 2,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from Turn 2",
+      "startingClassId": "pegasus_knight",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "shanna.normal",
+      "weaponLevelSnapshotId": "shanna.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Thany",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Thany",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "chad.story",
+      "unitId": "chad",
+      "joins": [
+        {
+          "chapterId": "chapter_3",
+          "label": "3",
+          "chapterNumber": 3,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "thief_m",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "chad.normal",
+      "weaponLevelSnapshotId": "chad.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Chad",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Chad",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lugh.story",
+      "unitId": "lugh",
+      "joins": [
+        {
+          "chapterId": "chapter_3",
+          "label": "3",
+          "chapterNumber": 3,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Visit the north west village",
+      "startingClassId": "mage_m",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "lugh.normal",
+      "weaponLevelSnapshotId": "lugh.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Lugh",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lugh",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "clarine.story",
+      "unitId": "clarine",
+      "joins": [
+        {
+          "chapterId": "chapter_4",
+          "label": "4",
+          "chapterNumber": 4,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an NPC from Turn 4, let her talk to Roy",
+      "startingClassId": "troubadour",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "clarine.normal",
+      "weaponLevelSnapshotId": "clarine.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Clarine",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Clarine",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rutger.story",
+      "unitId": "rutger",
+      "joins": [
+        {
+          "chapterId": "chapter_4",
+          "label": "4",
+          "chapterNumber": 4,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an enemy from Turn 6, talk with Clarine",
+      "startingClassId": "myrmidon_m",
+      "startingLevel": 4,
+      "baseStatSnapshotId": "rutger.normal",
+      "weaponLevelSnapshotId": "rutger.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Rutger",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Rutger",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "saul.story",
+      "unitId": "saul",
+      "joins": [
+        {
+          "chapterId": "chapter_6",
+          "label": "6",
+          "chapterNumber": 6,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "priest_m",
+      "startingLevel": 5,
+      "baseStatSnapshotId": "saul.normal",
+      "weaponLevelSnapshotId": "saul.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Saul",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Saul",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dorothy.story",
+      "unitId": "dorothy",
+      "joins": [
+        {
+          "chapterId": "chapter_6",
+          "label": "6",
+          "chapterNumber": 6,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "archer_f",
+      "startingLevel": 3,
+      "baseStatSnapshotId": "dorothy.normal",
+      "weaponLevelSnapshotId": "dorothy.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Dorothy",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dorothy",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sue.story",
+      "unitId": "sue",
+      "joins": [
+        {
+          "chapterId": "chapter_6",
+          "label": "6",
+          "chapterNumber": 6,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "NPC, talk with Roy",
+      "startingClassId": "nomad_f",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "sue.normal",
+      "weaponLevelSnapshotId": "sue.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Sue",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Sue",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zelot.story",
+      "unitId": "zelot",
+      "joins": [
+        {
+          "chapterId": "chapter_7",
+          "label": "7",
+          "chapterNumber": 7,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an NPC from Turn 2, talk with Roy, Noah or Treck",
+      "startingClassId": "paladin_m",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "zelot.normal",
+      "weaponLevelSnapshotId": "zelot.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Zealot",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Zealot",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "trec.story",
+      "unitId": "trec",
+      "joins": [
+        {
+          "chapterId": "chapter_7",
+          "label": "7",
+          "chapterNumber": 7,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an NPC from Turn 2, talk with Roy or Zealot",
+      "startingClassId": "cavalier_m",
+      "startingLevel": 4,
+      "baseStatSnapshotId": "trec.normal",
+      "weaponLevelSnapshotId": "trec.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Treck",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Treck",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "noah.story",
+      "unitId": "noah",
+      "joins": [
+        {
+          "chapterId": "chapter_7",
+          "label": "7",
+          "chapterNumber": 7,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an NPC from Turn 3, talk with Roy or Zealot",
+      "startingClassId": "cavalier_m",
+      "startingLevel": 7,
+      "baseStatSnapshotId": "noah.normal",
+      "weaponLevelSnapshotId": "noah.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Noah",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Noah",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "astolfo.story",
+      "unitId": "astolfo",
+      "joins": [
+        {
+          "chapterId": "chapter_8",
+          "label": "8",
+          "chapterNumber": 8,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "thief_m",
+      "startingLevel": 10,
+      "baseStatSnapshotId": "astolfo.normal",
+      "weaponLevelSnapshotId": "astolfo.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Astohl",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Astohl",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lilina.story",
+      "unitId": "lilina",
+      "joins": [
+        {
+          "chapterId": "chapter_8",
+          "label": "8",
+          "chapterNumber": 8,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "mage_f",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "lilina.normal",
+      "weaponLevelSnapshotId": "lilina.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Lilina",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lilina",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gwendolyn.story",
+      "unitId": "gwendolyn",
+      "joins": [
+        {
+          "chapterId": "chapter_8",
+          "label": "8",
+          "chapterNumber": 8,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from Turn 6",
+      "startingClassId": "knight_f",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "gwendolyn.normal",
+      "weaponLevelSnapshotId": "gwendolyn.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Wendy",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wendy",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "barthe.story",
+      "unitId": "barthe",
+      "joins": [
+        {
+          "chapterId": "chapter_8",
+          "label": "8",
+          "chapterNumber": 8,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from Turn 6",
+      "startingClassId": "knight_m",
+      "startingLevel": 9,
+      "baseStatSnapshotId": "barthe.normal",
+      "weaponLevelSnapshotId": "barthe.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Barth",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Barth",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "ogier.story",
+      "unitId": "ogier",
+      "joins": [
+        {
+          "chapterId": "chapter_8",
+          "label": "8",
+          "chapterNumber": 8,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from Turn 6",
+      "startingClassId": "mercenary_m",
+      "startingLevel": 3,
+      "baseStatSnapshotId": "ogier.normal",
+      "weaponLevelSnapshotId": "ogier.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Oujay",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Oujay",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fir.story",
+      "unitId": "fir",
+      "joins": [
+        {
+          "chapterId": "chapter_9",
+          "label": "9",
+          "chapterNumber": 9,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an enemy from Turn 2, talk with Noah",
+      "startingClassId": "myrmidon_f",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "fir.normal",
+      "weaponLevelSnapshotId": "fir.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Fir",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Fir",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sin.story",
+      "unitId": "sin",
+      "joins": [
+        {
+          "chapterId": "chapter_9",
+          "label": "9",
+          "chapterNumber": 9,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an enemy from Turn 2, talk with Sue",
+      "startingClassId": "nomad_m",
+      "startingLevel": 5,
+      "baseStatSnapshotId": "sin.normal",
+      "weaponLevelSnapshotId": "sin.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Shin",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Shin",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gonzalez.story",
+      "unitId": "gonzalez",
+      "joins": [
+        {
+          "chapterId": "chapter_10a",
+          "label": "10A",
+          "chapterNumber": 10,
+          "routeVariant": "A",
+          "sideChapter": false
+        },
+        {
+          "chapterId": "chapter_10b",
+          "label": "10B",
+          "chapterNumber": 10,
+          "routeVariant": "B",
+          "sideChapter": false,
+          "startingLevelOverride": 11,
+          "weaponLevelOverrides": {
+            "axe": "D"
+          },
+          "note": "Serenes notes that Gonzalez joins at level 11 with D Axes in Chapter 10B; his other base stats are unchanged."
+        }
+      ],
+      "condition": "Appears as an enemy from Turn 6, talk with Lilina",
+      "startingClassId": "brigand",
+      "startingLevel": 5,
+      "baseStatSnapshotId": "gonzalez.normal",
+      "weaponLevelSnapshotId": "gonzalez.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Gonzales",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Gonzales",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "geese.story",
+      "unitId": "geese",
+      "joins": [
+        {
+          "chapterId": "chapter_10a",
+          "label": "10A",
+          "chapterNumber": 10,
+          "routeVariant": "A",
+          "sideChapter": false
+        },
+        {
+          "chapterId": "chapter_11b",
+          "label": "11B",
+          "chapterNumber": 11,
+          "routeVariant": "B",
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an NPC from Turn 5 (A) / Turn 6 (B), talk with Roy",
+      "startingClassId": "pirate",
+      "startingLevel": 10,
+      "baseStatSnapshotId": "geese.normal",
+      "weaponLevelSnapshotId": "geese.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Geese",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Geese",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "klein.story",
+      "unitId": "klein",
+      "joins": [
+        {
+          "chapterId": "chapter_10b",
+          "label": "10B",
+          "chapterNumber": 10,
+          "routeVariant": "B",
+          "sideChapter": false
+        },
+        {
+          "chapterId": "chapter_11a",
+          "label": "11A",
+          "chapterNumber": 11,
+          "routeVariant": "A",
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an enemy from Turn 5 (A) / Turn 8 (B), talk with Roy or Clarine",
+      "startingClassId": "sniper_m",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "klein.normal",
+      "weaponLevelSnapshotId": "klein.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Klein",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Klein",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thea.story",
+      "unitId": "thea",
+      "joins": [
+        {
+          "chapterId": "chapter_10b",
+          "label": "10B",
+          "chapterNumber": 10,
+          "routeVariant": "B",
+          "sideChapter": false
+        },
+        {
+          "chapterId": "chapter_11a",
+          "label": "11A",
+          "chapterNumber": 11,
+          "routeVariant": "A",
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an enemy from Turn 7 (A) / Turn 10 (B), talk with Klein (or talk with Thany before and after Klein has been recruited (note that if you only talk with Thany after recruiting Klein, Tate will just become an NPC))",
+      "startingClassId": "pegasus_knight",
+      "startingLevel": 8,
+      "baseStatSnapshotId": "thea.normal",
+      "weaponLevelSnapshotId": "thea.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Tate",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Tate",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "larum.story",
+      "unitId": "larum",
+      "joins": [
+        {
+          "chapterId": "chapter_11a",
+          "label": "11A",
+          "chapterNumber": 11,
+          "routeVariant": "A",
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "dancer",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "larum.normal",
+      "weaponLevelSnapshotId": "larum.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Lalum",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lalum",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "echidna.story",
+      "unitId": "echidna",
+      "joins": [
+        {
+          "chapterId": "chapter_11a",
+          "label": "11A",
+          "chapterNumber": 11,
+          "routeVariant": "A",
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an NPC from Turn 8, talk with Lalum",
+      "startingClassId": "hero_f",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "echidna.normal",
+      "weaponLevelSnapshotId": "echidna.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Echidna",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Echidna",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elffin.story",
+      "unitId": "elffin",
+      "joins": [
+        {
+          "chapterId": "chapter_11b",
+          "label": "11B",
+          "chapterNumber": 11,
+          "routeVariant": "B",
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "bard",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "elffin.normal",
+      "weaponLevelSnapshotId": "elffin.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Elphin",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Elphin",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bartre.story",
+      "unitId": "bartre",
+      "joins": [
+        {
+          "chapterId": "chapter_11b",
+          "label": "11B",
+          "chapterNumber": 11,
+          "routeVariant": "B",
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an NPC from Turn 9, talk with Roy or Fir",
+      "startingClassId": "warrior",
+      "startingLevel": 2,
+      "baseStatSnapshotId": "bartre.normal",
+      "weaponLevelSnapshotId": "bartre.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Bartre",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Bartre",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "raigh.story",
+      "unitId": "raigh",
+      "joins": [
+        {
+          "chapterId": "chapter_12",
+          "label": "12",
+          "chapterNumber": 12,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Enemy, talk with Chad or Lugh",
+      "startingClassId": "shaman_m",
+      "startingLevel": 12,
+      "baseStatSnapshotId": "raigh.normal",
+      "weaponLevelSnapshotId": "raigh.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Ray",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Ray",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cath.story",
+      "unitId": "cath",
+      "joins": [
+        {
+          "chapterId": "chapter_12",
+          "label": "12",
+          "chapterNumber": 12,
+          "routeVariant": null,
+          "sideChapter": false
+        },
+        {
+          "chapterId": "chapter_16",
+          "label": "16",
+          "chapterNumber": 16,
+          "routeVariant": null,
+          "sideChapter": false
+        },
+        {
+          "chapterId": "chapter_20",
+          "label": "20",
+          "chapterNumber": 20,
+          "routeVariant": null,
+          "sideChapter": false
+        },
+        {
+          "chapterId": "chapter_22",
+          "label": "22",
+          "chapterNumber": 22,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Enemy, talk with Roy three times and she'll join during the third time. She appears in Chapters 6 (Turn 5), 8 (Turn 10), 12 (Turn 7), 16 (Turn 10), 20 (Turn 10) and 22 (Turn 15)",
+      "startingClassId": "thief_m",
+      "startingLevel": 5,
+      "baseStatSnapshotId": "cath.normal",
+      "weaponLevelSnapshotId": "cath.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Cath",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Cath",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "melady.story",
+      "unitId": "melady",
+      "joins": [
+        {
+          "chapterId": "chapter_13",
+          "label": "13",
+          "chapterNumber": 13,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from Turn 3",
+      "startingClassId": "wyvern_rider_f",
+      "startingLevel": 10,
+      "baseStatSnapshotId": "melady.normal",
+      "weaponLevelSnapshotId": "melady.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Miredy",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Miredy",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "perceval.story",
+      "unitId": "perceval",
+      "joins": [
+        {
+          "chapterId": "chapter_13",
+          "label": "13",
+          "chapterNumber": 13,
+          "routeVariant": null,
+          "sideChapter": false
+        },
+        {
+          "chapterId": "chapter_15",
+          "label": "15",
+          "chapterNumber": 15,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Enemy, talk with Lalum or Elphin (in Chapter 13, he automatically leaves at the end of Turn 8)",
+      "startingClassId": "paladin_m",
+      "startingLevel": 5,
+      "baseStatSnapshotId": "perceval.normal",
+      "weaponLevelSnapshotId": "perceval.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Percival",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Percival",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cecilia.story",
+      "unitId": "cecilia",
+      "joins": [
+        {
+          "chapterId": "chapter_14",
+          "label": "14",
+          "chapterNumber": 14,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "valkyrie",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "cecilia.normal",
+      "weaponLevelSnapshotId": "cecilia.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Cecilia",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Cecilia",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sophia.story",
+      "unitId": "sophia",
+      "joins": [
+        {
+          "chapterId": "chapter_14",
+          "label": "14",
+          "chapterNumber": 14,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "shaman_f",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "sophia.normal",
+      "weaponLevelSnapshotId": "sophia.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Sofiya",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Sofiya",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "igrene.story",
+      "unitId": "igrene",
+      "joins": [
+        {
+          "chapterId": "chapter_15",
+          "label": "15",
+          "chapterNumber": 15,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "sniper_f",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "igrene.normal",
+      "weaponLevelSnapshotId": "igrene.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Igrene",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Igrene",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "garret.story",
+      "unitId": "garret",
+      "joins": [
+        {
+          "chapterId": "chapter_15",
+          "label": "15",
+          "chapterNumber": 15,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an enemy from Turn 3, talk with Lilina",
+      "startingClassId": "berserker",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "garret.normal",
+      "weaponLevelSnapshotId": "garret.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Garret",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Garret",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fae.story",
+      "unitId": "fae",
+      "joins": [
+        {
+          "chapterId": "chapter_16",
+          "label": "16",
+          "chapterNumber": 16,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start (appears in the battle preparations)",
+      "startingClassId": "manakete_f",
+      "startingLevel": 1,
+      "baseStatSnapshotId": "fae.normal",
+      "weaponLevelSnapshotId": "fae.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Fa",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Fa",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hugh.story",
+      "unitId": "hugh",
+      "joins": [
+        {
+          "chapterId": "chapter_16",
+          "label": "16",
+          "chapterNumber": 16,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Enemy, talk with Roy and pay him 10,000G to 5,000G (the less money you pay him, the lower his stats are)",
+      "startingClassId": "mage_m",
+      "startingLevel": 15,
+      "baseStatSnapshotId": "hugh.normal",
+      "weaponLevelSnapshotId": "hugh.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Hugh",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Hugh",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zeiss.story",
+      "unitId": "zeiss",
+      "joins": [
+        {
+          "chapterId": "chapter_16",
+          "label": "16",
+          "chapterNumber": 16,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an enemy from Turn 2, talk with Miredy",
+      "startingClassId": "wyvern_rider_m",
+      "startingLevel": 7,
+      "baseStatSnapshotId": "zeiss.normal",
+      "weaponLevelSnapshotId": "zeiss.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Zeis",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Zeis",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "douglas.story",
+      "unitId": "douglas",
+      "joins": [
+        {
+          "chapterId": "chapter_16x",
+          "label": "16x",
+          "chapterNumber": 16,
+          "routeVariant": null,
+          "sideChapter": true
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "general_m",
+      "startingLevel": 8,
+      "baseStatSnapshotId": "douglas.normal",
+      "weaponLevelSnapshotId": "douglas.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Douglas",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Douglas",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "niime.story",
+      "unitId": "niime",
+      "joins": [
+        {
+          "chapterId": "chapter_19a",
+          "label": "19A",
+          "chapterNumber": 19,
+          "routeVariant": "A",
+          "sideChapter": false
+        },
+        {
+          "chapterId": "chapter_20b",
+          "label": "20B",
+          "chapterNumber": 20,
+          "routeVariant": "B",
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "druid_m",
+      "startingLevel": 18,
+      "baseStatSnapshotId": "niime.normal",
+      "weaponLevelSnapshotId": "niime.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Niime",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Niime",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "juno.story",
+      "unitId": "juno",
+      "joins": [
+        {
+          "chapterId": "chapter_20a",
+          "label": "20A",
+          "chapterNumber": 20,
+          "routeVariant": "A",
+          "sideChapter": false
+        }
+      ],
+      "condition": "NPC, talk with Thany, Tate or Zealot",
+      "startingClassId": "falcon_knight",
+      "startingLevel": 9,
+      "baseStatSnapshotId": "juno.normal",
+      "weaponLevelSnapshotId": "juno.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Juno",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Juno",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dayan.story",
+      "unitId": "dayan",
+      "joins": [
+        {
+          "chapterId": "chapter_20b",
+          "label": "20B",
+          "chapterNumber": 20,
+          "routeVariant": "B",
+          "sideChapter": false
+        }
+      ],
+      "condition": "Appears as an NPC from Turn 3, talk with Roy, Sue or Shin",
+      "startingClassId": "nomad_trooper_m",
+      "startingLevel": 12,
+      "baseStatSnapshotId": "dayan.normal",
+      "weaponLevelSnapshotId": "dayan.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Dayan",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dayan",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "yoder.story",
+      "unitId": "yoder",
+      "joins": [
+        {
+          "chapterId": "chapter_21",
+          "label": "21",
+          "chapterNumber": 21,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Automatically from the start",
+      "startingClassId": "bishop_m",
+      "startingLevel": 20,
+      "baseStatSnapshotId": "yoder.normal",
+      "weaponLevelSnapshotId": "yoder.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Yodel",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Yodel",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "karel.story",
+      "unitId": "karel",
+      "joins": [
+        {
+          "chapterId": "chapter_23",
+          "label": "23",
+          "chapterNumber": 23,
+          "routeVariant": null,
+          "sideChapter": false
+        }
+      ],
+      "condition": "Visit the village with Fir or Bartre",
+      "startingClassId": "swordmaster_m",
+      "startingLevel": 19,
+      "baseStatSnapshotId": "karel.normal",
+      "weaponLevelSnapshotId": "karel.normal",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-recruitment",
+          "locator": "Recruitment > Karel",
+          "fields": [
+            "joins",
+            "condition"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Karel",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "baseStatSnapshotId",
+            "weaponLevelSnapshotId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

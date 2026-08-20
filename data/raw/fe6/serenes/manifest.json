@@ -1,0 +1,196 @@
+{
+  "gameId": "fe6",
+  "source": "Serenes Forest",
+  "entries": [
+    {
+      "sourceId": "serenes-fe6-name-chart",
+      "url": "https://serenesforest.net/binding-blade/general/name-chart/",
+      "relativePath": "identity/name-chart.html",
+      "retrievedAt": "2026-08-20T05:17:29.493Z",
+      "status": 200,
+      "bytes": 50807,
+      "sha256": "f285bfa104b760dd837e32c7ac888156dfb35fb3147b2750e7147cc763a773b0",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-recruitment",
+      "url": "https://serenesforest.net/binding-blade/characters/recruitment/",
+      "relativePath": "characters/recruitment.html",
+      "retrievedAt": "2026-08-20T05:17:29.611Z",
+      "status": 200,
+      "bytes": 53319,
+      "sha256": "9ed6f3af5297def88b26bc9d15a10bfcb79702d62b5a2b6c15c626bc276ee28a",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-character-base-stats",
+      "url": "https://serenesforest.net/binding-blade/characters/base-stats/",
+      "relativePath": "characters/base-stats.html",
+      "retrievedAt": "2026-08-20T05:17:29.744Z",
+      "status": 200,
+      "bytes": 99666,
+      "sha256": "b10f6b786d1261867e40d323efe1654419ec10f5f51a65fc755dd13469e78ff5",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-character-growth-rates",
+      "url": "https://serenesforest.net/binding-blade/characters/growth-rates/",
+      "relativePath": "characters/growth-rates.html",
+      "retrievedAt": "2026-08-20T05:17:29.860Z",
+      "status": 200,
+      "bytes": 51603,
+      "sha256": "a1423668d3f5cd68154eedb98c58af573bfa8e0577ed6db3edac008642b3b260",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-supports",
+      "url": "https://serenesforest.net/binding-blade/characters/supports/",
+      "relativePath": "characters/supports.html",
+      "retrievedAt": "2026-08-20T05:17:29.982Z",
+      "status": 200,
+      "bytes": 140650,
+      "sha256": "3aa04590134ae074f366c2c568dc7cdd8fd7b73ee280fe9fd43d1b09465762d6",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-support-calculation",
+      "url": "https://serenesforest.net/binding-blade/characters/supports/calculation/",
+      "relativePath": "characters/support-calculation.html",
+      "retrievedAt": "2026-08-20T05:17:30.096Z",
+      "status": 200,
+      "bytes": 50417,
+      "sha256": "994f42223ef058c651b64017172b0d9e5f4068a30ee7dc64e05f9c1c6f74475e",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-class-introduction",
+      "url": "https://serenesforest.net/binding-blade/classes/introduction/",
+      "relativePath": "classes/introduction.html",
+      "retrievedAt": "2026-08-20T05:17:30.212Z",
+      "status": 200,
+      "bytes": 60194,
+      "sha256": "d36e78472eff6f0dc7426312d4f523d2586e1fedf6ea05bef6f12f444636ceb1",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-class-base-stats",
+      "url": "https://serenesforest.net/binding-blade/classes/base-stats/",
+      "relativePath": "classes/base-stats.html",
+      "retrievedAt": "2026-08-20T05:17:30.330Z",
+      "status": 200,
+      "bytes": 75202,
+      "sha256": "0098e3f3fdd1324cd37eb1aaae734c39ea472568598c28acea2f75cf009e0567",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-class-maximum-stats",
+      "url": "https://serenesforest.net/binding-blade/classes/maximum-stats/",
+      "relativePath": "classes/maximum-stats.html",
+      "retrievedAt": "2026-08-20T05:17:30.443Z",
+      "status": 200,
+      "bytes": 49329,
+      "sha256": "43e30aacbbed6b1d7a6810a8df211e1c1fce9e64f05a464e25854d64f9f8213e",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-promotion-gains",
+      "url": "https://serenesforest.net/binding-blade/classes/promotion-gains/",
+      "relativePath": "classes/promotion-gains.html",
+      "retrievedAt": "2026-08-20T05:17:30.565Z",
+      "status": 200,
+      "bytes": 62967,
+      "sha256": "10edca8d65304e6e4e554ae8091bcf4ab87173fa1a68e60e15823173d157985e",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-swords",
+      "url": "https://serenesforest.net/binding-blade/inventory/swords/",
+      "relativePath": "inventory/swords.html",
+      "retrievedAt": "2026-08-20T05:17:30.683Z",
+      "status": 200,
+      "bytes": 55433,
+      "sha256": "7faed3cff31fee4955250bf9478a4114ed27219e9d87835939c80202713be80a",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-lances",
+      "url": "https://serenesforest.net/binding-blade/inventory/lances/",
+      "relativePath": "inventory/lances.html",
+      "retrievedAt": "2026-08-20T05:17:30.798Z",
+      "status": 200,
+      "bytes": 52177,
+      "sha256": "3d26a82a2406d559d27bbbdea42a1e0e00b239956c141e22aa95d2c604f447ae",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-axes",
+      "url": "https://serenesforest.net/binding-blade/inventory/axes/",
+      "relativePath": "inventory/axes.html",
+      "retrievedAt": "2026-08-20T05:17:31.084Z",
+      "status": 200,
+      "bytes": 51954,
+      "sha256": "d18f5e4b7760833c06a9bfd8cac3528f181b944269edc6d9caf439c14b80914d",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-bows",
+      "url": "https://serenesforest.net/binding-blade/inventory/bows/",
+      "relativePath": "inventory/bows.html",
+      "retrievedAt": "2026-08-20T05:17:31.201Z",
+      "status": 200,
+      "bytes": 52389,
+      "sha256": "13ddf68931dc8d0680ec3c6f281011cb97493d26e7fb013fa82577ad121ffa63",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-staves",
+      "url": "https://serenesforest.net/binding-blade/inventory/staves/",
+      "relativePath": "inventory/staves.html",
+      "retrievedAt": "2026-08-20T05:17:31.317Z",
+      "status": 200,
+      "bytes": 53281,
+      "sha256": "1567ae6851754d4950520f6491de5da3797c6ca179e5211e85217edcc2b33580",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-anima-tomes",
+      "url": "https://serenesforest.net/binding-blade/inventory/anima-tomes/",
+      "relativePath": "inventory/anima-tomes.html",
+      "retrievedAt": "2026-08-20T05:17:31.433Z",
+      "status": 200,
+      "bytes": 49373,
+      "sha256": "ff1babd1303128a4957e734ee35a99ed187426566462c74a6334ebc4d25d2d3e",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-light-tomes",
+      "url": "https://serenesforest.net/binding-blade/inventory/light-tomes/",
+      "relativePath": "inventory/light-tomes.html",
+      "retrievedAt": "2026-08-20T05:17:31.549Z",
+      "status": 200,
+      "bytes": 48539,
+      "sha256": "e2bda7ed4f8da083ded4b6a457600260b2746f861576d6c1f17f8b3e2d0637c2",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-dark-tomes",
+      "url": "https://serenesforest.net/binding-blade/inventory/dark-tomes/",
+      "relativePath": "inventory/dark-tomes.html",
+      "retrievedAt": "2026-08-20T05:17:31.665Z",
+      "status": 200,
+      "bytes": 48593,
+      "sha256": "c11b78493a1e868c4355360752c6c261df9a5dc7ed5c5dd824761a0ad909c7bb",
+      "acquisition": "automated_fetch"
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-items",
+      "url": "https://serenesforest.net/binding-blade/inventory/items/",
+      "relativePath": "inventory/items.html",
+      "retrievedAt": "2026-08-20T05:17:31.781Z",
+      "status": 200,
+      "bytes": 59236,
+      "sha256": "a95c1ddffc787b8507188a90bdb4a5a041b28b522f1579c1d5bd3562a489f8a3",
+      "acquisition": "automated_fetch"
+    }
+  ]
+}

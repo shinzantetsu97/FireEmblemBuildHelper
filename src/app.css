@@ -3413,3 +3413,608 @@ html[lang="zh-Hans"] .section-heading h2 {
     flex-basis: 11rem;
   }
 }
+
+.fe6-directory-controls {
+  align-items: end;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.fe6-directory-controls .form-label {
+  color: #5b6962;
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+}
+
+.fe6-directory-controls .form-control,
+.fe6-directory-controls .form-select {
+  font-size: 0.85rem;
+  min-width: 10.5rem;
+}
+
+.fe6-directory-controls > span {
+  color: #66716c;
+  font-size: 0.825rem;
+  white-space: nowrap;
+}
+
+.fe6-unit-directory {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+}
+
+.fe6-unit-directory-card {
+  background: #ffffff;
+  border: 1px solid #d3dbd6;
+  border-radius: 0.375rem;
+  color: #26312d;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.fe6-unit-directory-card {
+  display: grid;
+  grid-template-rows: auto minmax(5.25rem, auto);
+}
+
+.fe6-unit-directory-card:hover,
+.fe6-unit-directory-card:focus-visible {
+  border-color: #7b3f57;
+  color: #26312d;
+  outline: 0;
+  text-decoration: none;
+}
+
+.fe6-unit-directory-card > img,
+.fe6-unit-directory-card > .fe6-portrait-fallback {
+  background: #e8ece9;
+  display: block;
+  height: 9rem;
+  image-rendering: pixelated;
+  object-fit: contain;
+  object-position: bottom center;
+  width: 100%;
+}
+
+.fe6-portrait-fallback {
+  align-items: center;
+  color: #5b6962;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.fe6-unit-directory-card > div:last-child {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 0;
+  padding: 0.65rem 0.75rem 0.75rem;
+}
+
+.fe6-unit-directory-card strong,
+.fe6-class-record strong {
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.fe6-unit-directory-card span:not(.fe6-unit-number),
+.fe6-unit-directory-card small {
+  color: #5b6962;
+  font-size: 0.78rem;
+}
+
+.fe6-unit-directory-card small {
+  padding-right: 1.25rem;
+}
+
+.fe6-unit-directory-card svg {
+  bottom: 0.7rem;
+  color: #7b3f57;
+  position: absolute;
+  right: 0.6rem;
+}
+
+.fe6-unit-number {
+  background: #ffffff;
+  border: 1px solid #d3dbd6;
+  border-radius: 999px;
+  color: #4f5d57;
+  font-size: 0.7rem;
+  font-weight: 700;
+  left: 0.5rem;
+  padding: 0.15rem 0.4rem;
+  position: absolute;
+  top: 0.5rem;
+}
+
+.fe6-class-directory {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.fe6-class-record {
+  --fe6-class-sprite-size: 3.5rem;
+  background: #ffffff;
+  border: 1px solid #d3dbd6;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.fe6-class-record-main {
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: minmax(9.5rem, 0.75fr) minmax(31rem, 3.2fr) minmax(9rem, 0.9fr) minmax(9rem, 1fr);
+}
+
+.fe6-class-identity,
+.fe6-class-ranks,
+.fe6-class-notes {
+  border-right: 1px solid #dce3df;
+  padding: 0.8rem;
+}
+
+.fe6-class-identity {
+  align-items: center;
+  display: flex;
+  gap: 0.65rem;
+}
+
+.fe6-class-identity > img,
+.fe6-class-identity > .fe6-class-sprite-fallback {
+  background: #eef1ef;
+  flex: 0 0 auto;
+  height: var(--fe6-class-sprite-size);
+  image-rendering: pixelated;
+  object-fit: contain;
+  width: var(--fe6-class-sprite-size);
+}
+
+.fe6-class-identity > div:last-child {
+  display: grid;
+  gap: 0.14rem;
+}
+
+.fe6-class-identity strong {
+  font-size: 0.93rem;
+}
+
+.fe6-class-identity span {
+  color: #5b6962;
+  font-size: 0.72rem;
+  text-transform: capitalize;
+}
+
+.fe6-class-stat-table {
+  font-size: 0.76rem;
+  margin: 0;
+  min-width: 31rem;
+  text-align: center;
+}
+
+.fe6-class-stat-table :is(th, td) {
+  padding: 0.52rem 0.38rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.fe6-class-stat-table th:first-child {
+  text-align: left;
+}
+
+.fe6-class-ranks h2,
+.fe6-class-notes h2 {
+  color: #5b6962;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.48rem;
+  text-transform: uppercase;
+}
+
+.fe6-class-ranks .fe6-rank-list {
+  gap: 0.2rem;
+}
+
+.fe6-class-ranks .fe6-rank-list div {
+  font-size: 0.76rem;
+  grid-template-columns: 1fr auto;
+}
+
+.fe6-class-notes {
+  border-right: 0;
+}
+
+.fe6-class-notes p {
+  color: #4f5d57;
+  font-size: 0.78rem;
+  margin: 0;
+}
+
+.fe6-class-promotion-gain-row :is(th, td) {
+  background: #f7f9f7;
+  color: #4f5d57;
+}
+
+.fe6-class-sprite-fallback {
+  align-items: center;
+  color: #5b6962;
+  display: inline-flex;
+  font-size: 1.05rem;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.fe6-detail-main {
+  max-width: 78rem;
+}
+
+.fe6-unit-header > img,
+.fe6-unit-header > .fe6-portrait-fallback {
+  background: #e8ece9;
+  border: 1px solid #d3dbd6;
+  border-radius: 0.375rem;
+  height: 9.5rem;
+  image-rendering: pixelated;
+  object-fit: contain;
+  object-position: bottom center;
+  width: 9.5rem;
+}
+
+.fe6-unit-header > .fe6-portrait-fallback {
+  flex: 0 0 auto;
+}
+
+.fe6-unit-header .unit-header-copy p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+}
+
+.fe6-unit-header .unit-header-copy p span + span::before {
+  color: #a1aaa6;
+  content: "•";
+  margin-right: 0.8rem;
+}
+
+.fe6-fact-grid,
+.fe6-affinity-grid,
+.fe6-rank-list {
+  display: grid;
+  gap: 0.5rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.fe6-fact-grid div,
+.fe6-affinity-grid div,
+.fe6-rank-list div {
+  border-left: 2px solid #c8d3cc;
+  padding-left: 0.65rem;
+}
+
+.fe6-fact-grid dt,
+.fe6-affinity-grid dt,
+.fe6-rank-list dt {
+  color: #5b6962;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fe6-fact-grid dd,
+.fe6-affinity-grid dd,
+.fe6-rank-list dd {
+  margin: 0.18rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.fe6-overview .data-section > h2,
+.fe6-hard-mode h3,
+.fe6-two-column h3 {
+  font-size: 1.15rem;
+  letter-spacing: 0;
+  margin: 0 0 0.75rem;
+}
+
+.fe6-overview .data-section {
+  border-top: 1px solid var(--bs-border-color);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.fe6-stat-table,
+.fe6-class-stat-table {
+  font-size: 0.88rem;
+}
+
+.fe6-stat-table {
+  min-width: 52rem;
+  text-align: center;
+}
+
+.fe6-stat-table :is(th, td) {
+  vertical-align: middle;
+}
+
+.fe6-stat-table th:first-child {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.fe6-stat-table td:last-child {
+  font-size: 0.78rem;
+  min-width: 8rem;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+
+.fe6-stat-table th,
+.fe6-class-stat-table th {
+  white-space: nowrap;
+}
+
+.fe6-hard-mode {
+  background: #f5f7f5;
+  border-left: 3px solid #8b9b92;
+  margin: 1rem 0;
+  padding: 0.9rem 1rem;
+}
+
+.fe6-hard-mode p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.fe6-hard-mode-table {
+  margin-bottom: 0;
+}
+
+.fe6-two-column {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.25rem;
+}
+
+.fe6-two-column > section {
+  background: #ffffff;
+  border: 1px solid #d3dbd6;
+  border-radius: 0.375rem;
+  padding: 1rem;
+}
+
+.fe6-affinity-note,
+.fe6-notes,
+.fe6-empty-state {
+  color: #5b6962;
+}
+
+.fe6-affinity-note {
+  font-size: 0.82rem;
+}
+
+.fe6-affinity-section {
+  border-top: 1px solid var(--bs-border-color);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.fe6-affinity-heading {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: space-between;
+}
+
+.fe6-affinity-heading h3,
+.fe6-affinity-calculator h3 {
+  align-items: center;
+  display: flex;
+  font-size: 1.15rem;
+  gap: 0.4rem;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.fe6-affinity-heading p,
+.fe6-affinity-calculator > div > p {
+  color: #5b6962;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.fe6-affinity-icon {
+  height: 1rem;
+  image-rendering: pixelated;
+  vertical-align: -0.1rem;
+  width: 1rem;
+}
+
+.fe6-affinity-table {
+  font-size: 0.86rem;
+  margin: 0.75rem 0 0;
+  min-width: 39rem;
+  text-align: center;
+}
+
+.fe6-affinity-table :is(th, td) {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.fe6-affinity-table th:first-child {
+  text-align: left;
+}
+
+.fe6-affinity-calculator {
+  background: #f5f7f5;
+  border: 1px solid #d3dbd6;
+  border-radius: 0.375rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.fe6-affinity-controls {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(0, 1fr) minmax(8rem, 10rem);
+  margin-top: 1rem;
+}
+
+.fe6-affinity-controls .form-label {
+  color: #5b6962;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.fe6-affinity-result {
+  margin-top: 1rem;
+}
+
+.fe6-affinity-result > p {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.fe6-support-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fe6-support-list a {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #d3dbd6;
+  border-radius: 999px;
+  color: #26312d;
+  display: inline-flex;
+  font-size: 0.86rem;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.25rem;
+  text-decoration: none;
+}
+
+.fe6-support-list a:hover,
+.fe6-support-list a:focus-visible {
+  border-color: #7b3f57;
+  color: #7b3f57;
+  outline: 0;
+}
+
+.fe6-support-list img {
+  height: 1.6rem;
+  image-rendering: pixelated;
+  object-fit: contain;
+  width: 1.6rem;
+}
+
+.fe6-class-header {
+  align-items: end;
+  border-bottom: 1px solid var(--bs-border-color);
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 1rem 0 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.fe6-class-header h1 {
+  font-size: 1.75rem;
+  margin: 0.1rem 0;
+}
+
+.fe6-class-header p {
+  color: #5b6962;
+  margin: 0;
+}
+
+.fe6-class-header > div:last-child {
+  min-width: 10rem;
+}
+
+.fe6-weapon-table {
+  min-width: 63rem;
+}
+
+.fe6-item-table {
+  min-width: 42rem;
+}
+
+.fe6-flag {
+  font-size: 0.62rem;
+  margin-left: 0.4rem;
+  text-transform: capitalize;
+  vertical-align: 0.1rem;
+}
+
+.fe6-weapon-item-name {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
+.fe6-weapon-item-name img {
+  height: 1.25rem;
+  image-rendering: pixelated;
+  object-fit: contain;
+  width: 1.25rem;
+}
+
+@media (max-width: 575.98px) {
+  .fe6-directory-controls,
+  .fe6-class-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .fe6-directory-controls .form-control,
+  .fe6-directory-controls .form-select {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .fe6-unit-directory {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fe6-unit-directory-card > img,
+  .fe6-unit-directory-card > .fe6-portrait-fallback {
+    height: 7.25rem;
+  }
+
+  .fe6-unit-header > img,
+  .fe6-unit-header > .fe6-portrait-fallback {
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+
+  .fe6-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .fe6-affinity-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .fe6-class-record-main { grid-template-columns: 1fr; }
+  .fe6-class-identity,
+  .fe6-class-ranks,
+  .fe6-class-notes { border-bottom: 1px solid #dce3df; border-right: 0; }
+  .fe6-class-stat-table { min-width: 31rem; }
+}

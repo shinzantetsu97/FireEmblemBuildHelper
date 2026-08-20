@@ -1,10 +1,19 @@
 export const RELEASES = [
   {
+    version: "0.9.0",
+    date: "2026-08-20",
+    dateLabel: "August 20, 2026",
+    title: "FE6 English data viewer patch",
+    current: true,
+    changes: [
+      "Added English information for The Binding Blade, including unit, class, weapon, and item directories with source-backed sprites and icons.",
+    ],
+  },
+  {
     version: "0.8.0",
     date: "2026-08-04",
     dateLabel: "August 4, 2026",
     title: "FE14 weapon and item directory",
-    current: true,
     changes: [
       "Added a source-backed FE14 weapon and item directory with local weapon-type icons, paired weapon-family sections, and a dedicated Items tab.",
       "Added normalized weapon and item data, including ranks, combat stats, range, descriptions, provenance, and runtime validation while excluding unused items.",

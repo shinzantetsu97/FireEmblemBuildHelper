@@ -1,0 +1,1042 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "weaponLevels": [
+    {
+      "id": "roy.normal",
+      "unitId": "roy",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Roy",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "marcus.normal",
+      "unitId": "marcus",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "D",
+        "lance": "A",
+        "axe": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Marcus",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "alen.normal",
+      "unitId": "alen",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "E",
+        "lance": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Allen",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lance.normal",
+      "unitId": "lance",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "E",
+        "lance": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lance",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wolt.normal",
+      "unitId": "wolt",
+      "difficulty": "normal",
+      "levels": {
+        "bow": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wolt",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bors.normal",
+      "unitId": "bors",
+      "difficulty": "normal",
+      "levels": {
+        "lance": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Bors",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "merlinus.normal",
+      "unitId": "merlinus",
+      "difficulty": "normal",
+      "levels": {},
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Merlinus",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elen.normal",
+      "unitId": "elen",
+      "difficulty": "normal",
+      "levels": {
+        "staff": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Ellen",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dieck.normal",
+      "unitId": "dieck",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dieck",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wade.normal",
+      "unitId": "wade",
+      "difficulty": "normal",
+      "levels": {
+        "axe": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wade",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lot.normal",
+      "unitId": "lot",
+      "difficulty": "normal",
+      "levels": {
+        "axe": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lott",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shanna.normal",
+      "unitId": "shanna",
+      "difficulty": "normal",
+      "levels": {
+        "lance": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Thany",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "chad.normal",
+      "unitId": "chad",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Chad",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lugh.normal",
+      "unitId": "lugh",
+      "difficulty": "normal",
+      "levels": {
+        "anima": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lugh",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "clarine.normal",
+      "unitId": "clarine",
+      "difficulty": "normal",
+      "levels": {
+        "staff": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Clarine",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rutger.normal",
+      "unitId": "rutger",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Rutger",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "saul.normal",
+      "unitId": "saul",
+      "difficulty": "normal",
+      "levels": {
+        "staff": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Saul",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dorothy.normal",
+      "unitId": "dorothy",
+      "difficulty": "normal",
+      "levels": {
+        "bow": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dorothy",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sue.normal",
+      "unitId": "sue",
+      "difficulty": "normal",
+      "levels": {
+        "bow": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Sue",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zelot.normal",
+      "unitId": "zelot",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "C",
+        "lance": "A",
+        "axe": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Zealot",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "trec.normal",
+      "unitId": "trec",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "E",
+        "lance": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Treck",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "noah.normal",
+      "unitId": "noah",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "C",
+        "lance": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Noah",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "astolfo.normal",
+      "unitId": "astolfo",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Astohl",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lilina.normal",
+      "unitId": "lilina",
+      "difficulty": "normal",
+      "levels": {
+        "anima": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lilina",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gwendolyn.normal",
+      "unitId": "gwendolyn",
+      "difficulty": "normal",
+      "levels": {
+        "lance": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wendy",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "barthe.normal",
+      "unitId": "barthe",
+      "difficulty": "normal",
+      "levels": {
+        "lance": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Barth",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "ogier.normal",
+      "unitId": "ogier",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Oujay",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fir.normal",
+      "unitId": "fir",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Fir",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sin.normal",
+      "unitId": "sin",
+      "difficulty": "normal",
+      "levels": {
+        "bow": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Shin",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gonzalez.normal",
+      "unitId": "gonzalez",
+      "difficulty": "normal",
+      "levels": {
+        "axe": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Gonzales",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "geese.normal",
+      "unitId": "geese",
+      "difficulty": "normal",
+      "levels": {
+        "axe": "B"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Geese",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "klein.normal",
+      "unitId": "klein",
+      "difficulty": "normal",
+      "levels": {
+        "bow": "A"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Klein",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thea.normal",
+      "unitId": "thea",
+      "difficulty": "normal",
+      "levels": {
+        "lance": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Tate",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "larum.normal",
+      "unitId": "larum",
+      "difficulty": "normal",
+      "levels": {},
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lalum",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "echidna.normal",
+      "unitId": "echidna",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "C",
+        "axe": "B"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Echidna",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elffin.normal",
+      "unitId": "elffin",
+      "difficulty": "normal",
+      "levels": {},
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Elphin",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bartre.normal",
+      "unitId": "bartre",
+      "difficulty": "normal",
+      "levels": {
+        "axe": "A",
+        "bow": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Bartre",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "raigh.normal",
+      "unitId": "raigh",
+      "difficulty": "normal",
+      "levels": {
+        "dark": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Ray",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cath.normal",
+      "unitId": "cath",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Cath",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "melady.normal",
+      "unitId": "melady",
+      "difficulty": "normal",
+      "levels": {
+        "lance": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Miredy",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "perceval.normal",
+      "unitId": "perceval",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "A",
+        "lance": "A",
+        "axe": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Percival",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cecilia.normal",
+      "unitId": "cecilia",
+      "difficulty": "normal",
+      "levels": {
+        "staff": "C",
+        "anima": "A"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Cecilia",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sophia.normal",
+      "unitId": "sophia",
+      "difficulty": "normal",
+      "levels": {
+        "dark": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Sofiya",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "igrene.normal",
+      "unitId": "igrene",
+      "difficulty": "normal",
+      "levels": {
+        "bow": "B"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Igrene",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "garret.normal",
+      "unitId": "garret",
+      "difficulty": "normal",
+      "levels": {
+        "axe": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Garret",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fae.normal",
+      "unitId": "fae",
+      "difficulty": "normal",
+      "levels": {},
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Fa",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hugh.normal",
+      "unitId": "hugh",
+      "difficulty": "normal",
+      "levels": {
+        "anima": "C"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Hugh",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zeiss.normal",
+      "unitId": "zeiss",
+      "difficulty": "normal",
+      "levels": {
+        "lance": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Zeis",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "douglas.normal",
+      "unitId": "douglas",
+      "difficulty": "normal",
+      "levels": {
+        "lance": "A",
+        "axe": "A"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Douglas",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "niime.normal",
+      "unitId": "niime",
+      "difficulty": "normal",
+      "levels": {
+        "staff": "A",
+        "dark": "A"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Niime",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dayan.normal",
+      "unitId": "dayan",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "C",
+        "bow": "A"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dayan",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "juno.normal",
+      "unitId": "juno",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "E",
+        "lance": "A"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Juno",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "yoder.normal",
+      "unitId": "yoder",
+      "difficulty": "normal",
+      "levels": {
+        "staff": "S",
+        "light": "A"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Yodel",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "karel.normal",
+      "unitId": "karel",
+      "difficulty": "normal",
+      "levels": {
+        "sword": "S"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Karel",
+          "fields": [
+            "levels"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

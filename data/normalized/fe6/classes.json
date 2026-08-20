@@ -1,0 +1,4930 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "classes": [
+    {
+      "id": "lord",
+      "displayOrder": 1,
+      "names": {
+        "en": "Lord"
+      },
+      "aliases": [],
+      "sourceName": "Lord",
+      "gender": null,
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 18,
+        "power": 3,
+        "skill": 3,
+        "speed": 4,
+        "defense": 5,
+        "resistance": 0
+      },
+      "constitution": 6,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "sword": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "master_lord",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Lord",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Lord",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "master_lord",
+      "displayOrder": 2,
+      "names": {
+        "en": "Master Lord"
+      },
+      "aliases": [],
+      "sourceName": "Master Lord",
+      "gender": null,
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 22,
+        "power": 5,
+        "skill": 6,
+        "speed": 6,
+        "defense": 7,
+        "resistance": 5
+      },
+      "constitution": 8,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "sword": "A"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 25,
+        "skill": 25,
+        "speed": 25,
+        "luck": 30,
+        "defense": 25,
+        "resistance": 25,
+        "constitution": 25,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Master Lord",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Master Lord",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Master Lord",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bard",
+      "displayOrder": 3,
+      "names": {
+        "en": "Bard"
+      },
+      "aliases": [],
+      "sourceName": "Bard",
+      "gender": null,
+      "tier": "special",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 14,
+        "power": 1,
+        "skill": 2,
+        "speed": 7,
+        "defense": 1,
+        "resistance": 0
+      },
+      "constitution": 6,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Can allow an ally to move again",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Bard",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Bard",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dancer",
+      "displayOrder": 4,
+      "names": {
+        "en": "Dancer"
+      },
+      "aliases": [],
+      "sourceName": "Dancer",
+      "gender": null,
+      "tier": "special",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 14,
+        "power": 1,
+        "skill": 2,
+        "speed": 7,
+        "defense": 0,
+        "resistance": 1
+      },
+      "constitution": 4,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Can allow an ally to move again",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Dancer",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Dancer",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "transporter",
+      "displayOrder": 5,
+      "names": {
+        "en": "Transporter"
+      },
+      "aliases": [],
+      "sourceName": "Transporter",
+      "gender": null,
+      "tier": "special",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 15,
+        "power": 0,
+        "skill": 3,
+        "speed": 3,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitution": 25,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 25,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Can store items",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Transporter",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Transporter",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Transporter",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "mercenary_m",
+      "displayOrder": 6,
+      "names": {
+        "en": "Mercenary (M)"
+      },
+      "aliases": [
+        "Mercenary"
+      ],
+      "sourceName": "Mercenary (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 18,
+        "power": 4,
+        "skill": 8,
+        "speed": 8,
+        "defense": 4,
+        "resistance": 0
+      },
+      "constitution": 9,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "sword": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "hero_m",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Mercenary",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Mercenary (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "mercenary_f",
+      "displayOrder": 7,
+      "names": {
+        "en": "Mercenary (F)"
+      },
+      "aliases": [
+        "Mercenary"
+      ],
+      "sourceName": "Mercenary (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 3,
+        "skill": 5,
+        "speed": 6,
+        "defense": 2,
+        "resistance": 0
+      },
+      "constitution": 8,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "sword": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "hero_f",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Mercenary",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Mercenary (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hero_m",
+      "displayOrder": 8,
+      "names": {
+        "en": "Hero (M)"
+      },
+      "aliases": [
+        "Hero"
+      ],
+      "sourceName": "Hero (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword",
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 22,
+        "power": 6,
+        "skill": 9,
+        "speed": 10,
+        "defense": 8,
+        "resistance": 2
+      },
+      "constitution": 10,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "sword": "C",
+        "axe": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 25,
+        "skill": 30,
+        "speed": 26,
+        "luck": 30,
+        "defense": 25,
+        "resistance": 22,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Hero",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Hero (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Hero (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hero_f",
+      "displayOrder": 9,
+      "names": {
+        "en": "Hero (F)"
+      },
+      "aliases": [
+        "Hero"
+      ],
+      "sourceName": "Hero (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword",
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 22,
+        "power": 6,
+        "skill": 10,
+        "speed": 11,
+        "defense": 6,
+        "resistance": 3
+      },
+      "constitution": 9,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "sword": "C",
+        "axe": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 24,
+        "skill": 30,
+        "speed": 26,
+        "luck": 30,
+        "defense": 24,
+        "resistance": 24,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Hero",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Hero (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Hero (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "myrmidon_m",
+      "displayOrder": 10,
+      "names": {
+        "en": "Myrmidon (M)"
+      },
+      "aliases": [
+        "Myrmidon"
+      ],
+      "sourceName": "Myrmidon (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 4,
+        "skill": 9,
+        "speed": 9,
+        "defense": 2,
+        "resistance": 0
+      },
+      "constitution": 8,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "sword": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "swordmaster_m",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Myrmidon",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Myrmidon (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "myrmidon_f",
+      "displayOrder": 11,
+      "names": {
+        "en": "Myrmidon (F)"
+      },
+      "aliases": [
+        "Myrmidon"
+      ],
+      "sourceName": "Myrmidon (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 15,
+        "power": 3,
+        "skill": 9,
+        "speed": 10,
+        "defense": 1,
+        "resistance": 1
+      },
+      "constitution": 5,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "sword": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "swordmaster_f",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Myrmidon",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Myrmidon (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "swordmaster_m",
+      "displayOrder": 12,
+      "names": {
+        "en": "Swordmaster (M)"
+      },
+      "aliases": [
+        "Swordmaster"
+      ],
+      "sourceName": "Swordmaster (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 21,
+        "power": 6,
+        "skill": 11,
+        "speed": 10,
+        "defense": 5,
+        "resistance": 2
+      },
+      "constitution": 9,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "sword": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 24,
+        "skill": 29,
+        "speed": 30,
+        "luck": 30,
+        "defense": 22,
+        "resistance": 23,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "+30 critical",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Swordmaster",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Swordmaster (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Swordmaster (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "swordmaster_f",
+      "displayOrder": 13,
+      "names": {
+        "en": "Swordmaster (F)"
+      },
+      "aliases": [
+        "Swordmaster"
+      ],
+      "sourceName": "Swordmaster (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 19,
+        "power": 6,
+        "skill": 11,
+        "speed": 12,
+        "defense": 4,
+        "resistance": 3
+      },
+      "constitution": 6,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "sword": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 22,
+        "skill": 29,
+        "speed": 30,
+        "luck": 30,
+        "defense": 22,
+        "resistance": 25,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "+30 critical",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Swordmaster",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Swordmaster (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Swordmaster (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thief_m",
+      "displayOrder": 14,
+      "names": {
+        "en": "Thief (M)"
+      },
+      "aliases": [
+        "Thief"
+      ],
+      "sourceName": "Thief (M)",
+      "gender": "male",
+      "tier": "special",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 3,
+        "skill": 1,
+        "speed": 9,
+        "defense": 2,
+        "resistance": 0
+      },
+      "constitution": 6,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "sword": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Thief",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Thief (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thief_f",
+      "displayOrder": 15,
+      "names": {
+        "en": "Thief (F)"
+      },
+      "aliases": [
+        "Thief"
+      ],
+      "sourceName": "Thief (F)",
+      "gender": "female",
+      "tier": "special",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 1,
+        "skill": 1,
+        "speed": 7,
+        "defense": 1,
+        "resistance": 1
+      },
+      "constitution": 5,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "sword": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Thief",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Thief (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "soldier",
+      "displayOrder": 16,
+      "names": {
+        "en": "Soldier"
+      },
+      "aliases": [],
+      "sourceName": "Soldier",
+      "gender": null,
+      "tier": "enemy_only",
+      "usableWeaponTypeIds": [
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 20,
+        "power": 3,
+        "skill": 0,
+        "speed": 1,
+        "defense": 0,
+        "resistance": 0
+      },
+      "constitution": 6,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "lance": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Enemy only",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Soldier",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Soldier",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cavalier_m",
+      "displayOrder": 17,
+      "names": {
+        "en": "Cavalier (M)"
+      },
+      "aliases": [
+        "Cavalier"
+      ],
+      "sourceName": "Cavalier (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "sword",
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 20,
+        "power": 5,
+        "skill": 2,
+        "speed": 5,
+        "defense": 6,
+        "resistance": 0
+      },
+      "constitution": 9,
+      "movement": 7,
+      "baseWeaponRanks": {
+        "sword": "E",
+        "lance": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "paladin_m",
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Cavalier",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Cavalier (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cavalier_f",
+      "displayOrder": 18,
+      "names": {
+        "en": "Cavalier (F)"
+      },
+      "aliases": [
+        "Cavalier"
+      ],
+      "sourceName": "Cavalier (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "sword",
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 18,
+        "power": 5,
+        "skill": 3,
+        "speed": 3,
+        "defense": 6,
+        "resistance": 0
+      },
+      "constitution": 9,
+      "movement": 7,
+      "baseWeaponRanks": {
+        "sword": "D",
+        "lance": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "paladin_f",
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Cavalier",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Cavalier (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "paladin_m",
+      "displayOrder": 19,
+      "names": {
+        "en": "Paladin (M)"
+      },
+      "aliases": [
+        "Paladin"
+      ],
+      "sourceName": "Paladin (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword",
+        "lance",
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 23,
+        "power": 7,
+        "skill": 4,
+        "speed": 7,
+        "defense": 8,
+        "resistance": 3
+      },
+      "constitution": 11,
+      "movement": 8,
+      "baseWeaponRanks": {
+        "sword": "D",
+        "lance": "C",
+        "axe": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 25,
+        "skill": 28,
+        "speed": 25,
+        "luck": 30,
+        "defense": 25,
+        "resistance": 25,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Paladin",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Paladin (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Paladin (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "paladin_f",
+      "displayOrder": 20,
+      "names": {
+        "en": "Paladin (F)"
+      },
+      "aliases": [
+        "Paladin"
+      ],
+      "sourceName": "Paladin (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword",
+        "lance",
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 23,
+        "power": 6,
+        "skill": 6,
+        "speed": 11,
+        "defense": 7,
+        "resistance": 6
+      },
+      "constitution": 10,
+      "movement": 8,
+      "baseWeaponRanks": {
+        "sword": "C",
+        "lance": "D",
+        "axe": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 24,
+        "skill": 28,
+        "speed": 24,
+        "luck": 30,
+        "defense": 24,
+        "resistance": 26,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Paladin",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Paladin (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Paladin (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "knight_m",
+      "displayOrder": 21,
+      "names": {
+        "en": "Knight (M)"
+      },
+      "aliases": [
+        "Knight"
+      ],
+      "sourceName": "Knight (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 17,
+        "power": 5,
+        "skill": 2,
+        "speed": 0,
+        "defense": 9,
+        "resistance": 0
+      },
+      "constitution": 13,
+      "movement": 4,
+      "baseWeaponRanks": {
+        "lance": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "general_m",
+      "notes": "Armoured",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Knight",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Knight (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "knight_f",
+      "displayOrder": 22,
+      "names": {
+        "en": "Knight (F)"
+      },
+      "aliases": [
+        "Knight"
+      ],
+      "sourceName": "Knight (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 4,
+        "skill": 3,
+        "speed": 1,
+        "defense": 8,
+        "resistance": 1
+      },
+      "constitution": 10,
+      "movement": 4,
+      "baseWeaponRanks": {
+        "lance": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "general_f",
+      "notes": "Armoured",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Knight",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Knight (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "general_m",
+      "displayOrder": 23,
+      "names": {
+        "en": "General (M)"
+      },
+      "aliases": [
+        "General"
+      ],
+      "sourceName": "General (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "lance",
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 21,
+        "power": 8,
+        "skill": 4,
+        "speed": 3,
+        "defense": 13,
+        "resistance": 3
+      },
+      "constitution": 15,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "lance": "C",
+        "axe": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 27,
+        "skill": 25,
+        "speed": 21,
+        "luck": 30,
+        "defense": 30,
+        "resistance": 25,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Armoured",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > General",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > General (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > General (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "general_f",
+      "displayOrder": 24,
+      "names": {
+        "en": "General (F)"
+      },
+      "aliases": [
+        "General"
+      ],
+      "sourceName": "General (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "lance",
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 20,
+        "power": 8,
+        "skill": 5,
+        "speed": 5,
+        "defense": 11,
+        "resistance": 4
+      },
+      "constitution": 11,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "lance": "C",
+        "axe": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 25,
+        "skill": 25,
+        "speed": 22,
+        "luck": 30,
+        "defense": 30,
+        "resistance": 26,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Armoured",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > General",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > General (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > General (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fighter",
+      "displayOrder": 25,
+      "names": {
+        "en": "Fighter"
+      },
+      "aliases": [],
+      "sourceName": "Fighter",
+      "gender": null,
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 20,
+        "power": 5,
+        "skill": 2,
+        "speed": 4,
+        "defense": 2,
+        "resistance": 0
+      },
+      "constitution": 11,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "axe": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "warrior",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Fighter",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Fighter",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "warrior",
+      "displayOrder": 26,
+      "names": {
+        "en": "Warrior"
+      },
+      "aliases": [],
+      "sourceName": "Warrior",
+      "gender": null,
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "axe",
+        "bow"
+      ],
+      "baseStats": {
+        "hp": 28,
+        "power": 8,
+        "skill": 5,
+        "speed": 6,
+        "defense": 5,
+        "resistance": 0
+      },
+      "constitution": 13,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "axe": "C",
+        "bow": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 30,
+        "skill": 26,
+        "speed": 24,
+        "luck": 30,
+        "defense": 28,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Warrior",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Warrior",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Warrior",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "brigand",
+      "displayOrder": 27,
+      "names": {
+        "en": "Brigand"
+      },
+      "aliases": [
+        "Bandit"
+      ],
+      "sourceName": "Brigand",
+      "gender": null,
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 20,
+        "power": 5,
+        "skill": 1,
+        "speed": 5,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitution": 12,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "axe": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "berserker",
+      "notes": "Can cross mountains",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Brigand",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Brigand",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "pirate",
+      "displayOrder": 28,
+      "names": {
+        "en": "Pirate"
+      },
+      "aliases": [],
+      "sourceName": "Pirate",
+      "gender": null,
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 19,
+        "power": 4,
+        "skill": 2,
+        "speed": 6,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitution": 10,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "axe": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "berserker",
+      "notes": "Can cross seas",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Pirate",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Pirate",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "berserker",
+      "displayOrder": 29,
+      "names": {
+        "en": "Berserker"
+      },
+      "aliases": [],
+      "sourceName": "Berserker",
+      "gender": null,
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "axe"
+      ],
+      "baseStats": {
+        "hp": 24,
+        "power": 7,
+        "skill": 6,
+        "speed": 7,
+        "defense": 6,
+        "resistance": 0
+      },
+      "constitution": 13,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "axe": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 30,
+        "skill": 24,
+        "speed": 28,
+        "luck": 30,
+        "defense": 22,
+        "resistance": 24,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "+30 critical, can cross mountains and seas",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Berserker",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Berserker",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Berserker",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "archer_m",
+      "displayOrder": 30,
+      "names": {
+        "en": "Archer (M)"
+      },
+      "aliases": [
+        "Archer"
+      ],
+      "sourceName": "Archer (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "bow"
+      ],
+      "baseStats": {
+        "hp": 18,
+        "power": 4,
+        "skill": 3,
+        "speed": 3,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitution": 7,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "bow": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "sniper_m",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Archer",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Archer (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "archer_f",
+      "displayOrder": 31,
+      "names": {
+        "en": "Archer (F)"
+      },
+      "aliases": [
+        "Archer"
+      ],
+      "sourceName": "Archer (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "bow"
+      ],
+      "baseStats": {
+        "hp": 17,
+        "power": 3,
+        "skill": 3,
+        "speed": 4,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitution": 6,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "bow": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "sniper_f",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Archer",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Archer (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sniper_m",
+      "displayOrder": 32,
+      "names": {
+        "en": "Sniper (M)"
+      },
+      "aliases": [
+        "Sniper"
+      ],
+      "sourceName": "Sniper (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "bow"
+      ],
+      "baseStats": {
+        "hp": 21,
+        "power": 7,
+        "skill": 6,
+        "speed": 5,
+        "defense": 5,
+        "resistance": 2
+      },
+      "constitution": 8,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "bow": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 24,
+        "skill": 30,
+        "speed": 29,
+        "luck": 30,
+        "defense": 22,
+        "resistance": 23,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Sniper",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Sniper (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Sniper (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sniper_f",
+      "displayOrder": 33,
+      "names": {
+        "en": "Sniper (F)"
+      },
+      "aliases": [
+        "Sniper"
+      ],
+      "sourceName": "Sniper (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "bow"
+      ],
+      "baseStats": {
+        "hp": 19,
+        "power": 6,
+        "skill": 6,
+        "speed": 7,
+        "defense": 5,
+        "resistance": 3
+      },
+      "constitution": 7,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "bow": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 23,
+        "skill": 30,
+        "speed": 29,
+        "luck": 30,
+        "defense": 21,
+        "resistance": 25,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Sniper",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Sniper (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Sniper (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "nomad_m",
+      "displayOrder": 34,
+      "names": {
+        "en": "Nomad (M)"
+      },
+      "aliases": [
+        "Nomad"
+      ],
+      "sourceName": "Nomad (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "bow"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 5,
+        "skill": 4,
+        "speed": 5,
+        "defense": 4,
+        "resistance": 0
+      },
+      "constitution": 7,
+      "movement": 7,
+      "baseWeaponRanks": {
+        "bow": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "nomad_trooper_m",
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Nomad",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Nomad (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "nomad_f",
+      "displayOrder": 35,
+      "names": {
+        "en": "Nomad (F)"
+      },
+      "aliases": [
+        "Nomad"
+      ],
+      "sourceName": "Nomad (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "bow"
+      ],
+      "baseStats": {
+        "hp": 15,
+        "power": 4,
+        "skill": 5,
+        "speed": 6,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitution": 5,
+      "movement": 7,
+      "baseWeaponRanks": {
+        "bow": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "nomad_trooper_f",
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Nomad",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Nomad (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "nomad_trooper_m",
+      "displayOrder": 36,
+      "names": {
+        "en": "Nomad Trooper (M)"
+      },
+      "aliases": [
+        "Nomad Trooper"
+      ],
+      "sourceName": "Nomad Trooper (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword",
+        "bow"
+      ],
+      "baseStats": {
+        "hp": 21,
+        "power": 7,
+        "skill": 6,
+        "speed": 7,
+        "defense": 6,
+        "resistance": 3
+      },
+      "constitution": 8,
+      "movement": 8,
+      "baseWeaponRanks": {
+        "sword": "E",
+        "bow": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 24,
+        "skill": 28,
+        "speed": 30,
+        "luck": 30,
+        "defense": 23,
+        "resistance": 23,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Nomad Trooper",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Nomad Trooper (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Nomad Trooper (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "nomad_trooper_f",
+      "displayOrder": 37,
+      "names": {
+        "en": "Nomad Trooper (F)"
+      },
+      "aliases": [
+        "Nomad Trooper"
+      ],
+      "sourceName": "Nomad Trooper (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword",
+        "bow"
+      ],
+      "baseStats": {
+        "hp": 21,
+        "power": 6,
+        "skill": 6,
+        "speed": 7,
+        "defense": 5,
+        "resistance": 4
+      },
+      "constitution": 6,
+      "movement": 8,
+      "baseWeaponRanks": {
+        "sword": "E",
+        "bow": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 23,
+        "skill": 28,
+        "speed": 30,
+        "luck": 30,
+        "defense": 22,
+        "resistance": 25,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Nomad Trooper",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Nomad Trooper (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Nomad Trooper (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "pegasus_knight",
+      "displayOrder": 38,
+      "names": {
+        "en": "Pegasus Knight"
+      },
+      "aliases": [],
+      "sourceName": "Pegasus Knight",
+      "gender": null,
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 14,
+        "power": 4,
+        "skill": 5,
+        "speed": 5,
+        "defense": 3,
+        "resistance": 2
+      },
+      "constitution": 5,
+      "movement": 7,
+      "baseWeaponRanks": {
+        "lance": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "falcon_knight",
+      "notes": "Flying",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Pegasus Knight",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Pegasus Knight",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "falcon_knight",
+      "displayOrder": 39,
+      "names": {
+        "en": "Falcon Knight"
+      },
+      "aliases": [],
+      "sourceName": "Falcon Knight",
+      "gender": null,
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword",
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 20,
+        "power": 6,
+        "skill": 7,
+        "speed": 7,
+        "defense": 5,
+        "resistance": 4
+      },
+      "constitution": 6,
+      "movement": 8,
+      "baseWeaponRanks": {
+        "sword": "E",
+        "lance": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 23,
+        "skill": 25,
+        "speed": 28,
+        "luck": 30,
+        "defense": 24,
+        "resistance": 28,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Flying",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Falcon Knight",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Falcon Knight",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Falcon Knight",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wyvern_rider_m",
+      "displayOrder": 40,
+      "names": {
+        "en": "Wyvern Rider (M)"
+      },
+      "aliases": [
+        "Wyvern Rider"
+      ],
+      "sourceName": "Wyvern Rider (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 20,
+        "power": 7,
+        "skill": 3,
+        "speed": 5,
+        "defense": 8,
+        "resistance": 0
+      },
+      "constitution": 10,
+      "movement": 7,
+      "baseWeaponRanks": {
+        "lance": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "wyvern_lord_m",
+      "notes": "Flying",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Wyvern Rider",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Wyvern Rider (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wyvern_rider_f",
+      "displayOrder": 41,
+      "names": {
+        "en": "Wyvern Rider (F)"
+      },
+      "aliases": [
+        "Wyvern Rider"
+      ],
+      "sourceName": "Wyvern Rider (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 19,
+        "power": 6,
+        "skill": 5,
+        "speed": 5,
+        "defense": 7,
+        "resistance": 0
+      },
+      "constitution": 9,
+      "movement": 7,
+      "baseWeaponRanks": {
+        "lance": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "wyvern_lord_f",
+      "notes": "Flying",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Wyvern Rider",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Wyvern Rider (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wyvern_lord_m",
+      "displayOrder": 42,
+      "names": {
+        "en": "Wyvern Lord (M)"
+      },
+      "aliases": [
+        "Wyvern Lord"
+      ],
+      "sourceName": "Wyvern Lord (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword",
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 25,
+        "power": 9,
+        "skill": 5,
+        "speed": 7,
+        "defense": 10,
+        "resistance": 1
+      },
+      "constitution": 11,
+      "movement": 8,
+      "baseWeaponRanks": {
+        "sword": "E",
+        "lance": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 26,
+        "skill": 26,
+        "speed": 23,
+        "luck": 30,
+        "defense": 30,
+        "resistance": 22,
+        "constitution": 21,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Flying",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Wyvern Lord",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Wyvern Lord (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Wyvern Lord (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wyvern_lord_f",
+      "displayOrder": 43,
+      "names": {
+        "en": "Wyvern Lord (F)"
+      },
+      "aliases": [
+        "Wyvern Lord"
+      ],
+      "sourceName": "Wyvern Lord (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "sword",
+        "lance"
+      ],
+      "baseStats": {
+        "hp": 24,
+        "power": 8,
+        "skill": 7,
+        "speed": 7,
+        "defense": 9,
+        "resistance": 2
+      },
+      "constitution": 10,
+      "movement": 8,
+      "baseWeaponRanks": {
+        "sword": "E",
+        "lance": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 25,
+        "skill": 26,
+        "speed": 23,
+        "luck": 30,
+        "defense": 29,
+        "resistance": 23,
+        "constitution": 22,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Flying",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Wyvern Lord",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Wyvern Lord (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Wyvern Lord (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "mage_m",
+      "displayOrder": 44,
+      "names": {
+        "en": "Mage (M)"
+      },
+      "aliases": [
+        "Mage"
+      ],
+      "sourceName": "Mage (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "anima"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 1,
+        "skill": 2,
+        "speed": 3,
+        "defense": 3,
+        "resistance": 3
+      },
+      "constitution": 6,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "anima": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "sage_m",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Mage",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Mage (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "mage_f",
+      "displayOrder": 45,
+      "names": {
+        "en": "Mage (F)"
+      },
+      "aliases": [
+        "Mage"
+      ],
+      "sourceName": "Mage (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "anima"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 1,
+        "skill": 3,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 4
+      },
+      "constitution": 4,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "anima": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "sage_f",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Mage",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Mage (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sage_m",
+      "displayOrder": 46,
+      "names": {
+        "en": "Sage (M)"
+      },
+      "aliases": [
+        "Sage"
+      ],
+      "sourceName": "Sage (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "staff",
+        "anima"
+      ],
+      "baseStats": {
+        "hp": 20,
+        "power": 5,
+        "skill": 4,
+        "speed": 4,
+        "defense": 5,
+        "resistance": 5
+      },
+      "constitution": 7,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "staff": "E",
+        "anima": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 28,
+        "skill": 30,
+        "speed": 25,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 25,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Sage",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Sage (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Sage (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sage_f",
+      "displayOrder": 47,
+      "names": {
+        "en": "Sage (F)"
+      },
+      "aliases": [
+        "Sage"
+      ],
+      "sourceName": "Sage (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "staff",
+        "anima"
+      ],
+      "baseStats": {
+        "hp": 19,
+        "power": 4,
+        "skill": 6,
+        "speed": 5,
+        "defense": 3,
+        "resistance": 6
+      },
+      "constitution": 5,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "staff": "E",
+        "anima": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 30,
+        "skill": 28,
+        "speed": 25,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 25,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Sage",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Sage (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Sage (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shaman_m",
+      "displayOrder": 48,
+      "names": {
+        "en": "Shaman (M)"
+      },
+      "aliases": [
+        "Shaman"
+      ],
+      "sourceName": "Shaman (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "dark"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 2,
+        "skill": 1,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 4
+      },
+      "constitution": 5,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "dark": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "druid_m",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Shaman",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Shaman (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shaman_f",
+      "displayOrder": 49,
+      "names": {
+        "en": "Shaman (F)"
+      },
+      "aliases": [
+        "Shaman"
+      ],
+      "sourceName": "Shaman (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "dark"
+      ],
+      "baseStats": {
+        "hp": 15,
+        "power": 3,
+        "skill": 1,
+        "speed": 1,
+        "defense": 1,
+        "resistance": 5
+      },
+      "constitution": 3,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "dark": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "druid_f",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Shaman",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Shaman (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "druid_m",
+      "displayOrder": 50,
+      "names": {
+        "en": "Druid (M)"
+      },
+      "aliases": [
+        "Druid"
+      ],
+      "sourceName": "Druid (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "staff",
+        "dark"
+      ],
+      "baseStats": {
+        "hp": 19,
+        "power": 6,
+        "skill": 3,
+        "speed": 4,
+        "defense": 4,
+        "resistance": 6
+      },
+      "constitution": 6,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "staff": "E",
+        "dark": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 29,
+        "skill": 24,
+        "speed": 26,
+        "luck": 30,
+        "defense": 21,
+        "resistance": 28,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Druid",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Druid (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Druid (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "druid_f",
+      "displayOrder": 51,
+      "names": {
+        "en": "Druid (F)"
+      },
+      "aliases": [
+        "Druid"
+      ],
+      "sourceName": "Druid (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "staff",
+        "dark"
+      ],
+      "baseStats": {
+        "hp": 17,
+        "power": 7,
+        "skill": 3,
+        "speed": 4,
+        "defense": 3,
+        "resistance": 7
+      },
+      "constitution": 4,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "staff": "E",
+        "dark": "C"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 29,
+        "skill": 24,
+        "speed": 26,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 29,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Druid",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Druid (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Druid (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "priest_m",
+      "displayOrder": 52,
+      "names": {
+        "en": "Priest (M)"
+      },
+      "aliases": [
+        "Priest"
+      ],
+      "sourceName": "Priest (M)",
+      "gender": "male",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "staff"
+      ],
+      "baseStats": {
+        "hp": 18,
+        "power": 1,
+        "skill": 1,
+        "speed": 2,
+        "defense": 1,
+        "resistance": 5
+      },
+      "constitution": 5,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "staff": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "bishop_m",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Priest",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Priest (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "priest_f",
+      "displayOrder": 53,
+      "names": {
+        "en": "Priest (F)"
+      },
+      "aliases": [
+        "Priest"
+      ],
+      "sourceName": "Priest (F)",
+      "gender": "female",
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "staff"
+      ],
+      "baseStats": {
+        "hp": 16,
+        "power": 1,
+        "skill": 2,
+        "speed": 2,
+        "defense": 0,
+        "resistance": 6
+      },
+      "constitution": 4,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "staff": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "bishop_f",
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Priest",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Priest (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bishop_m",
+      "displayOrder": 54,
+      "names": {
+        "en": "Bishop (M)"
+      },
+      "aliases": [
+        "Bishop"
+      ],
+      "sourceName": "Bishop (M)",
+      "gender": "male",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "staff",
+        "light"
+      ],
+      "baseStats": {
+        "hp": 21,
+        "power": 4,
+        "skill": 4,
+        "speed": 4,
+        "defense": 3,
+        "resistance": 8
+      },
+      "constitution": 6,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "staff": "C",
+        "light": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 25,
+        "skill": 26,
+        "speed": 25,
+        "luck": 30,
+        "defense": 22,
+        "resistance": 30,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Bishop",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Bishop (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Bishop (M)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bishop_f",
+      "displayOrder": 55,
+      "names": {
+        "en": "Bishop (F)"
+      },
+      "aliases": [
+        "Bishop"
+      ],
+      "sourceName": "Bishop (F)",
+      "gender": "female",
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "staff",
+        "light"
+      ],
+      "baseStats": {
+        "hp": 19,
+        "power": 4,
+        "skill": 5,
+        "speed": 4,
+        "defense": 2,
+        "resistance": 9
+      },
+      "constitution": 5,
+      "movement": 6,
+      "baseWeaponRanks": {
+        "staff": "C",
+        "light": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 26,
+        "skill": 25,
+        "speed": 26,
+        "luck": 30,
+        "defense": 21,
+        "resistance": 30,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Bishop",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Bishop (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Bishop (F)",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "troubadour",
+      "displayOrder": 56,
+      "names": {
+        "en": "Troubadour"
+      },
+      "aliases": [],
+      "sourceName": "Troubadour",
+      "gender": null,
+      "tier": "base",
+      "usableWeaponTypeIds": [
+        "staff"
+      ],
+      "baseStats": {
+        "hp": 15,
+        "power": 1,
+        "skill": 1,
+        "speed": 3,
+        "defense": 2,
+        "resistance": 5
+      },
+      "constitution": 5,
+      "movement": 7,
+      "baseWeaponRanks": {
+        "staff": "D"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": "valkyrie",
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Troubadour",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Troubadour",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "valkyrie",
+      "displayOrder": 57,
+      "names": {
+        "en": "Valkyrie"
+      },
+      "aliases": [
+        "Valkyria"
+      ],
+      "sourceName": "Valkyria",
+      "gender": null,
+      "tier": "promoted",
+      "usableWeaponTypeIds": [
+        "staff",
+        "anima"
+      ],
+      "baseStats": {
+        "hp": 19,
+        "power": 4,
+        "skill": 3,
+        "speed": 5,
+        "defense": 4,
+        "resistance": 8
+      },
+      "constitution": 6,
+      "movement": 8,
+      "baseWeaponRanks": {
+        "staff": "C",
+        "anima": "E"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 27,
+        "skill": 24,
+        "speed": 25,
+        "luck": 30,
+        "defense": 24,
+        "resistance": 28,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Horseback",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Valkyria",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Valkyria",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Valkyria",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "manakete_m",
+      "displayOrder": 58,
+      "names": {
+        "en": "Manakete (M)"
+      },
+      "aliases": [
+        "Mamkute (M)",
+        "Mamkute"
+      ],
+      "sourceName": "Mamkute (M)",
+      "gender": "male",
+      "tier": "special",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 20,
+        "power": 0,
+        "skill": 0,
+        "speed": 2,
+        "defense": 1,
+        "resistance": 1
+      },
+      "constitution": 5,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Can transform into dragons",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Mamkute",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Mamkute (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "manakete_f",
+      "displayOrder": 59,
+      "names": {
+        "en": "Manakete (F)"
+      },
+      "aliases": [
+        "Mamkute (F)",
+        "Mamkute"
+      ],
+      "sourceName": "Mamkute (F)",
+      "gender": "female",
+      "tier": "special",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 12,
+        "power": 0,
+        "skill": 0,
+        "speed": 2,
+        "defense": 1,
+        "resistance": 1
+      },
+      "constitution": 1,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Can transform into dragons",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Mamkute",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Mamkute (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fire_dragon",
+      "displayOrder": 60,
+      "names": {
+        "en": "Fire Dragon"
+      },
+      "aliases": [],
+      "sourceName": "Fire Dragon",
+      "gender": null,
+      "tier": "enemy_only",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 40,
+        "power": 10,
+        "skill": 5,
+        "speed": 5,
+        "defense": 12,
+        "resistance": 10
+      },
+      "constitution": 25,
+      "movement": 8,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 30,
+        "skill": 28,
+        "speed": 28,
+        "luck": 30,
+        "defense": 30,
+        "resistance": 28,
+        "constitution": 25,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Fire Dragon",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Fire Dragon",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Fire Dragon",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "divine_dragon",
+      "displayOrder": 61,
+      "names": {
+        "en": "Divine Dragon"
+      },
+      "aliases": [],
+      "sourceName": "Divine Dragon",
+      "gender": null,
+      "tier": "special",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 40,
+        "power": 10,
+        "skill": 5,
+        "speed": 5,
+        "defense": 12,
+        "resistance": 10
+      },
+      "constitution": 25,
+      "movement": 8,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 30,
+        "skill": 30,
+        "speed": 30,
+        "luck": 30,
+        "defense": 30,
+        "resistance": 30,
+        "constitution": 25,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Divine Dragon",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Divine Dragon",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Divine Dragon",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "demon_dragon",
+      "displayOrder": 62,
+      "names": {
+        "en": "Demon Dragon"
+      },
+      "aliases": [],
+      "sourceName": "Demon Dragon",
+      "gender": null,
+      "tier": "enemy_only",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 40,
+        "power": 25,
+        "skill": 20,
+        "speed": 5,
+        "defense": 32,
+        "resistance": 21
+      },
+      "constitution": 25,
+      "movement": 2,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 30,
+        "skill": 30,
+        "speed": 30,
+        "luck": 30,
+        "defense": 30,
+        "resistance": 30,
+        "constitution": 25,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Enemy only",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Demon Dragon",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Demon Dragon",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Demon Dragon",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "child_m",
+      "displayOrder": 63,
+      "names": {
+        "en": "Child (M)"
+      },
+      "aliases": [
+        "Child"
+      ],
+      "sourceName": "Child (M)",
+      "gender": "male",
+      "tier": "npc_only",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 10,
+        "power": 0,
+        "skill": 0,
+        "speed": 0,
+        "defense": 0,
+        "resistance": 0
+      },
+      "constitution": 1,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Child",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Child (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "child_f",
+      "displayOrder": 64,
+      "names": {
+        "en": "Child (F)"
+      },
+      "aliases": [
+        "Child"
+      ],
+      "sourceName": "Child (F)",
+      "gender": "female",
+      "tier": "npc_only",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 10,
+        "power": 0,
+        "skill": 0,
+        "speed": 0,
+        "defense": 0,
+        "resistance": 0
+      },
+      "constitution": 1,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Child",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Child (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "civilian_m",
+      "displayOrder": 65,
+      "names": {
+        "en": "Civilian (M)"
+      },
+      "aliases": [
+        "Civilian"
+      ],
+      "sourceName": "Civilian (M)",
+      "gender": "male",
+      "tier": "npc_only",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 10,
+        "power": 0,
+        "skill": 0,
+        "speed": 0,
+        "defense": 0,
+        "resistance": 0
+      },
+      "constitution": 4,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "NPC only",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Civilian",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Civilian (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "civilian_f",
+      "displayOrder": 66,
+      "names": {
+        "en": "Civilian (F)"
+      },
+      "aliases": [
+        "Civilian"
+      ],
+      "sourceName": "Civilian (F)",
+      "gender": "female",
+      "tier": "npc_only",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 10,
+        "power": 0,
+        "skill": 0,
+        "speed": 0,
+        "defense": 0,
+        "resistance": 0
+      },
+      "constitution": 3,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "NPC only",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Civilian",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Civilian (F)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "king",
+      "displayOrder": 67,
+      "names": {
+        "en": "King"
+      },
+      "aliases": [],
+      "sourceName": "King",
+      "gender": null,
+      "tier": "enemy_only",
+      "usableWeaponTypeIds": [
+        "sword"
+      ],
+      "baseStats": {
+        "hp": 35,
+        "power": 14,
+        "skill": 5,
+        "speed": 5,
+        "defense": 15,
+        "resistance": 10
+      },
+      "constitution": 17,
+      "movement": 5,
+      "baseWeaponRanks": {
+        "sword": "A"
+      },
+      "maximumStats": {
+        "hp": 60,
+        "power": 30,
+        "skill": 30,
+        "speed": 30,
+        "luck": 30,
+        "defense": 30,
+        "resistance": 30,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Enemy only",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > King",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > King",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > King",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

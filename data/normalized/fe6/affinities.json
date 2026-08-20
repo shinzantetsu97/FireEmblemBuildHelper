@@ -1,0 +1,195 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "affinities": [
+    {
+      "id": "fire",
+      "displayOrder": 1,
+      "names": {
+        "en": "Fire"
+      },
+      "unit": "half_point",
+      "bonusHalfUnits": {
+        "attack": 1,
+        "defense": 0,
+        "accuracy": 5,
+        "avoid": 5,
+        "critical": 5,
+        "criticalEvade": 0
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-support-calculation",
+          "locator": "Support Calculation > Fire",
+          "fields": [
+            "bonusHalfUnits"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thunder",
+      "displayOrder": 2,
+      "names": {
+        "en": "Thunder"
+      },
+      "unit": "half_point",
+      "bonusHalfUnits": {
+        "attack": 0,
+        "defense": 1,
+        "accuracy": 0,
+        "avoid": 5,
+        "critical": 5,
+        "criticalEvade": 5
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-support-calculation",
+          "locator": "Support Calculation > Thunder",
+          "fields": [
+            "bonusHalfUnits"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wind",
+      "displayOrder": 3,
+      "names": {
+        "en": "Wind"
+      },
+      "unit": "half_point",
+      "bonusHalfUnits": {
+        "attack": 1,
+        "defense": 0,
+        "accuracy": 5,
+        "avoid": 0,
+        "critical": 5,
+        "criticalEvade": 5
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-support-calculation",
+          "locator": "Support Calculation > Wind",
+          "fields": [
+            "bonusHalfUnits"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "ice",
+      "displayOrder": 4,
+      "names": {
+        "en": "Ice"
+      },
+      "unit": "half_point",
+      "bonusHalfUnits": {
+        "attack": 0,
+        "defense": 1,
+        "accuracy": 5,
+        "avoid": 5,
+        "critical": 0,
+        "criticalEvade": 5
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-support-calculation",
+          "locator": "Support Calculation > Ice",
+          "fields": [
+            "bonusHalfUnits"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dark",
+      "displayOrder": 5,
+      "names": {
+        "en": "Dark"
+      },
+      "unit": "half_point",
+      "bonusHalfUnits": {
+        "attack": 0,
+        "defense": 0,
+        "accuracy": 5,
+        "avoid": 5,
+        "critical": 5,
+        "criticalEvade": 5
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-support-calculation",
+          "locator": "Support Calculation > Dark",
+          "fields": [
+            "bonusHalfUnits"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "displayOrder": 6,
+      "names": {
+        "en": "Light"
+      },
+      "unit": "half_point",
+      "bonusHalfUnits": {
+        "attack": 1,
+        "defense": 1,
+        "accuracy": 5,
+        "avoid": 0,
+        "critical": 5,
+        "criticalEvade": 0
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-support-calculation",
+          "locator": "Support Calculation > Light",
+          "fields": [
+            "bonusHalfUnits"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "anima",
+      "displayOrder": 7,
+      "names": {
+        "en": "Anima"
+      },
+      "unit": "half_point",
+      "bonusHalfUnits": {
+        "attack": 1,
+        "defense": 1,
+        "accuracy": 0,
+        "avoid": 5,
+        "critical": 0,
+        "criticalEvade": 5
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-support-calculation",
+          "locator": "Support Calculation > Anima",
+          "fields": [
+            "bonusHalfUnits"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

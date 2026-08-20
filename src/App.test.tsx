@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it } from "vitest";
 import App from "./App";
 import { fe14Data } from "./games/fe14/data";
+import { fe6Units } from "./games/fe6/data";
 import { createNote, ensureDefaultWorkspace } from "./storage";
 import { resetBrowserStorage } from "./test/storageTestUtils";
 
@@ -19,6 +20,7 @@ describe("application regressions", () => {
 
     expect(screen.getByRole("heading", { name: "FireEmblemBuildHelper", level: 1 })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Fire Emblem If \/ Fates/ })).toHaveAttribute("href", "/FE14/Units");
+    expect(screen.getByRole("link", { name: /Fire Emblem: The Binding Blade/ })).toHaveAttribute("href", "/FE6/Units");
     expect(screen.getByText("v0.8.0")).toBeInTheDocument();
     expect(screen.getByText("FE14 weapon and item directory")).toBeInTheDocument();
     expect(screen.getAllByText(/^v\d/)).toHaveLength(5);
@@ -26,6 +28,44 @@ describe("application regressions", () => {
     await user.click(screen.getByRole("button", { name: "View complete history" }));
     expect(screen.getByText("v0.0.1")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Show newest releases only" })).toHaveAttribute("aria-expanded", "true");
+  });
+
+  it("renders the FE6 directories, unit profile, class profile, and weapons without changing FE14 routes", async () => {
+    const user = userEvent.setup();
+    window.history.replaceState({}, "", "/FE6/Units");
+    const view = render(<App />);
+
+    expect(screen.getByRole("heading", { name: "FE6 Units", level: 1 })).toBeInTheDocument();
+    expect(view.container.querySelectorAll(".fe6-unit-directory-card")).toHaveLength(fe6Units.length);
+    await user.type(screen.getByLabelText("Search roster"), "Thite");
+    expect(view.container.querySelectorAll(".fe6-unit-directory-card")).toHaveLength(1);
+    expect(screen.getByText("Thea")).toBeInTheDocument();
+
+    await user.clear(screen.getByLabelText("Search roster"));
+    await user.click(screen.getByRole("link", { name: /Roy/ }));
+    expect(window.location.pathname).toBe("/FE6/Units/roy");
+    expect(screen.getByRole("heading", { name: "Roy", level: 1 })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Character Profile", level: 2 })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Supports", level: 2 })).toBeInTheDocument();
+    expect(screen.getByRole("table", { name: /stat profile/i })).toBeInTheDocument();
+    expect(screen.getByText("Weapon Levels")).toBeInTheDocument();
+    expect(screen.getByLabelText("Support partner")).toHaveValue("alen");
+    await user.selectOptions(screen.getByLabelText("Support rank"), "A");
+    expect(screen.getByText(/Roy.*Alen at rank A/)).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "JSON" }));
+    expect(screen.getByLabelText("Roy JSON tree")).toBeInTheDocument();
+
+    window.history.pushState({}, "", "/FE6/Classes");
+    window.dispatchEvent(new PopStateEvent("popstate"));
+    await waitFor(() => expect(screen.getByRole("heading", { name: "FE6 Classes", level: 1 })).toBeInTheDocument());
+    expect(view.container.querySelectorAll(".fe6-class-record")).toHaveLength(67);
+    expect(screen.getAllByText("Master Lord").length).toBeGreaterThanOrEqual(1);
+
+    window.history.pushState({}, "", "/FE6/Weapons");
+    window.dispatchEvent(new PopStateEvent("popstate"));
+    await waitFor(() => expect(screen.getByRole("heading", { name: "FE6 Weapons & Items", level: 1 })).toBeInTheDocument());
+    await user.click(screen.getByRole("button", { name: "Items" }));
+    expect(screen.getByText("Angelic Robe")).toBeInTheDocument();
   });
 
   it("creates a note that remains after the app remounts", async () => {

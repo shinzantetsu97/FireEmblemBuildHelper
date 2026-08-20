@@ -1,0 +1,859 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "promotions": [
+    {
+      "id": "lord__master_lord",
+      "sourceClassId": "lord",
+      "targetClassId": "master_lord",
+      "statGains": {
+        "hp": 4,
+        "power": 2,
+        "skill": 3,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 5
+      },
+      "constitutionGain": 2,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "+3"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Lord",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "mercenary_m__hero_m",
+      "sourceClassId": "mercenary_m",
+      "targetClassId": "hero_m",
+      "statGains": {
+        "hp": 4,
+        "power": 2,
+        "skill": 1,
+        "speed": 2,
+        "defense": 4,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "+1",
+        "axe": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Mercenary (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "mercenary_f__hero_f",
+      "sourceClassId": "mercenary_f",
+      "targetClassId": "hero_f",
+      "statGains": {
+        "hp": 6,
+        "power": 3,
+        "skill": 5,
+        "speed": 5,
+        "defense": 4,
+        "resistance": 3
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "+1",
+        "axe": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Mercenary (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "myrmidon_m__swordmaster_m",
+      "sourceClassId": "myrmidon_m",
+      "targetClassId": "swordmaster_m",
+      "statGains": {
+        "hp": 5,
+        "power": 2,
+        "skill": 2,
+        "speed": 1,
+        "defense": 3,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Myrmidon (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "myrmidon_f__swordmaster_f",
+      "sourceClassId": "myrmidon_f",
+      "targetClassId": "swordmaster_f",
+      "statGains": {
+        "hp": 4,
+        "power": 3,
+        "skill": 2,
+        "speed": 2,
+        "defense": 3,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Myrmidon (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cavalier_m__paladin_m",
+      "sourceClassId": "cavalier_m",
+      "targetClassId": "paladin_m",
+      "statGains": {
+        "hp": 3,
+        "power": 2,
+        "skill": 2,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 3
+      },
+      "constitutionGain": 2,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "+1",
+        "lance": "+1",
+        "axe": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Cavalier (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cavalier_f__paladin_f",
+      "sourceClassId": "cavalier_f",
+      "targetClassId": "paladin_f",
+      "statGains": {
+        "hp": 5,
+        "power": 1,
+        "skill": 3,
+        "speed": 8,
+        "defense": 1,
+        "resistance": 6
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "+1",
+        "lance": "+1",
+        "axe": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Cavalier (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "knight_m__general_m",
+      "sourceClassId": "knight_m",
+      "targetClassId": "general_m",
+      "statGains": {
+        "hp": 4,
+        "power": 3,
+        "skill": 2,
+        "speed": 3,
+        "defense": 4,
+        "resistance": 3
+      },
+      "constitutionGain": 2,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "lance": "+1",
+        "axe": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Knight (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "knight_f__general_f",
+      "sourceClassId": "knight_f",
+      "targetClassId": "general_f",
+      "statGains": {
+        "hp": 4,
+        "power": 4,
+        "skill": 2,
+        "speed": 4,
+        "defense": 3,
+        "resistance": 3
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "lance": "+1",
+        "axe": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Knight (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fighter__warrior",
+      "sourceClassId": "fighter",
+      "targetClassId": "warrior",
+      "statGains": {
+        "hp": 8,
+        "power": 3,
+        "skill": 3,
+        "speed": 2,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitutionGain": 2,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "axe": "+1",
+        "bow": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Fighter",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "brigand__berserker",
+      "sourceClassId": "brigand",
+      "targetClassId": "berserker",
+      "statGains": {
+        "hp": 4,
+        "power": 2,
+        "skill": 5,
+        "speed": 2,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "axe": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Brigand",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "pirate__berserker",
+      "sourceClassId": "pirate",
+      "targetClassId": "berserker",
+      "statGains": {
+        "hp": 5,
+        "power": 3,
+        "skill": 4,
+        "speed": 1,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitutionGain": 3,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "axe": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Pirate",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "archer_m__sniper_m",
+      "sourceClassId": "archer_m",
+      "targetClassId": "sniper_m",
+      "statGains": {
+        "hp": 3,
+        "power": 3,
+        "skill": 3,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "bow": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Archer (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "archer_f__sniper_f",
+      "sourceClassId": "archer_f",
+      "targetClassId": "sniper_f",
+      "statGains": {
+        "hp": 2,
+        "power": 3,
+        "skill": 3,
+        "speed": 3,
+        "defense": 2,
+        "resistance": 3
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "bow": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Archer (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "nomad_m__nomad_trooper_m",
+      "sourceClassId": "nomad_m",
+      "targetClassId": "nomad_trooper_m",
+      "statGains": {
+        "hp": 5,
+        "power": 2,
+        "skill": 2,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 3
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "E",
+        "bow": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Nomad (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "nomad_f__nomad_trooper_f",
+      "sourceClassId": "nomad_f",
+      "targetClassId": "nomad_trooper_f",
+      "statGains": {
+        "hp": 6,
+        "power": 2,
+        "skill": 1,
+        "speed": 1,
+        "defense": 2,
+        "resistance": 4
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "E",
+        "bow": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Nomad (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "pegasus_knight__falcon_knight",
+      "sourceClassId": "pegasus_knight",
+      "targetClassId": "falcon_knight",
+      "statGains": {
+        "hp": 6,
+        "power": 2,
+        "skill": 2,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "E",
+        "lance": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Pegasus Knight",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wyvern_rider_m__wyvern_lord_m",
+      "sourceClassId": "wyvern_rider_m",
+      "targetClassId": "wyvern_lord_m",
+      "statGains": {
+        "hp": 5,
+        "power": 2,
+        "skill": 2,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 1
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "E",
+        "lance": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Wyvern Rider (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wyvern_rider_f__wyvern_lord_f",
+      "sourceClassId": "wyvern_rider_f",
+      "targetClassId": "wyvern_lord_f",
+      "statGains": {
+        "hp": 5,
+        "power": 2,
+        "skill": 2,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "sword": "E",
+        "lance": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Wyvern Rider (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "mage_m__sage_m",
+      "sourceClassId": "mage_m",
+      "targetClassId": "sage_m",
+      "statGains": {
+        "hp": 4,
+        "power": 4,
+        "skill": 2,
+        "speed": 1,
+        "defense": 2,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "staff": "E",
+        "anima": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Mage (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "mage_f__sage_f",
+      "sourceClassId": "mage_f",
+      "targetClassId": "sage_f",
+      "statGains": {
+        "hp": 3,
+        "power": 3,
+        "skill": 3,
+        "speed": 3,
+        "defense": 1,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "staff": "E",
+        "anima": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Mage (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shaman_m__druid_m",
+      "sourceClassId": "shaman_m",
+      "targetClassId": "druid_m",
+      "statGains": {
+        "hp": 3,
+        "power": 4,
+        "skill": 2,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "staff": "E",
+        "dark": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Shaman (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shaman_f__druid_f",
+      "sourceClassId": "shaman_f",
+      "targetClassId": "druid_f",
+      "statGains": {
+        "hp": 2,
+        "power": 4,
+        "skill": 2,
+        "speed": 3,
+        "defense": 2,
+        "resistance": 2
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "staff": "E",
+        "dark": "+1"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Shaman (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "priest_m__bishop_m",
+      "sourceClassId": "priest_m",
+      "targetClassId": "bishop_m",
+      "statGains": {
+        "hp": 3,
+        "power": 3,
+        "skill": 3,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 3
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "staff": "+1",
+        "light": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Priest (M)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "priest_f__bishop_f",
+      "sourceClassId": "priest_f",
+      "targetClassId": "bishop_f",
+      "statGains": {
+        "hp": 3,
+        "power": 3,
+        "skill": 3,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 3
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "staff": "+1",
+        "light": "D"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Priest (F)",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "troubadour__valkyrie",
+      "sourceClassId": "troubadour",
+      "targetClassId": "valkyrie",
+      "statGains": {
+        "hp": 4,
+        "power": 3,
+        "skill": 2,
+        "speed": 2,
+        "defense": 2,
+        "resistance": 3
+      },
+      "constitutionGain": 1,
+      "movementGain": 1,
+      "weaponRankGains": {
+        "staff": "+1",
+        "anima": "E"
+      },
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-promotion-gains",
+          "locator": "Promotion Gains > Troubadour",
+          "fields": [
+            "statGains",
+            "constitutionGain",
+            "movementGain",
+            "weaponRankGains"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,864 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "items": [
+    {
+      "id": "angelic_robe",
+      "names": {
+        "en": "Angelic Robe"
+      },
+      "uses": 1,
+      "worth": 8000,
+      "effect": "Increases Max HP by 7",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Angelic Robe",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "energy_ring",
+      "names": {
+        "en": "Energy Ring"
+      },
+      "uses": 1,
+      "worth": 8000,
+      "effect": "Increases Strength or Magic by 2",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Energy Ring",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "secret_book",
+      "names": {
+        "en": "Secret Book"
+      },
+      "uses": 1,
+      "worth": 8000,
+      "effect": "Increases Skill by 2",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Secret Book",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "speedwings",
+      "names": {
+        "en": "Speedwings"
+      },
+      "uses": 1,
+      "worth": 8000,
+      "effect": "Increases Speed by 2",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Speedwings",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "goddess_icon",
+      "names": {
+        "en": "Goddess Icon"
+      },
+      "uses": 1,
+      "worth": 8000,
+      "effect": "Increases Luck by 2",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Goddess Icon",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dragonshield",
+      "names": {
+        "en": "Dragonshield"
+      },
+      "uses": 1,
+      "worth": 8000,
+      "effect": "Increases Defence by 2",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Dragonshield",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "talisman",
+      "names": {
+        "en": "Talisman"
+      },
+      "uses": 1,
+      "worth": 8000,
+      "effect": "Increases Resistance by 2",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Talisman",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "boots",
+      "names": {
+        "en": "Boots"
+      },
+      "uses": 1,
+      "worth": 8000,
+      "effect": "Increases Movement by 2",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Boots",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "body_ring",
+      "names": {
+        "en": "Body Ring"
+      },
+      "uses": 1,
+      "worth": 8000,
+      "effect": "Increases Constitution by 2",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Body Ring",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hero_crest",
+      "names": {
+        "en": "Hero Crest"
+      },
+      "uses": 1,
+      "worth": 10000,
+      "effect": "Promotes Level 10+ Mercenaries, Myrmidons, Pirates, Brigands and Fighters",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Hero Crest",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "knights_crest",
+      "names": {
+        "en": "Knight's Crest"
+      },
+      "uses": 1,
+      "worth": 10000,
+      "effect": "Promotes Level 10+ Knights and Cavaliers",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Knight's Crest",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "orions_bolt",
+      "names": {
+        "en": "Orion's Bolt"
+      },
+      "uses": 1,
+      "worth": 10000,
+      "effect": "Promotes Level 10+ Archers and Nomads",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Orion's Bolt",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elysian_whip",
+      "names": {
+        "en": "Elysian Whip"
+      },
+      "uses": 1,
+      "worth": 10000,
+      "effect": "Promotes Level 10+ Wyvern Riders and Pegasus Knights",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Elysian Whip",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "guiding_ring",
+      "names": {
+        "en": "Guiding Ring"
+      },
+      "uses": 1,
+      "worth": 10000,
+      "effect": "Promotes Level 10+ Shamans, Mages, Priests and Troubadours",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Guiding Ring",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "vulnerary",
+      "names": {
+        "en": "Vulnerary"
+      },
+      "uses": 3,
+      "worth": 300,
+      "effect": "Recovers 10 HP",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Vulnerary",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elixir",
+      "names": {
+        "en": "Elixir"
+      },
+      "uses": 3,
+      "worth": 3000,
+      "effect": "Recovers all HP",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Elixir",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "antitoxin",
+      "names": {
+        "en": "Antitoxin"
+      },
+      "uses": 3,
+      "worth": 450,
+      "effect": "Removes poison",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Antitoxin",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "pure_water",
+      "names": {
+        "en": "Pure Water"
+      },
+      "uses": 3,
+      "worth": 900,
+      "effect": "Increases Resistance by 7 (decreases by 1 each turn)",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Pure Water",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "torch",
+      "names": {
+        "en": "Torch"
+      },
+      "uses": 5,
+      "worth": 500,
+      "effect": "Increases Fog of War vision by 4 squares (effect decreases by 1 each turn)",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Torch",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "red_gem",
+      "names": {
+        "en": "Red Gem"
+      },
+      "uses": 1,
+      "worth": 6000,
+      "effect": "Sell for 3000 Gold",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Red Gem",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "blue_gem",
+      "names": {
+        "en": "Blue Gem"
+      },
+      "uses": 1,
+      "worth": 10000,
+      "effect": "Sell for 5000 Gold",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Blue Gem",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "white_gem",
+      "names": {
+        "en": "White Gem"
+      },
+      "uses": 1,
+      "worth": 20000,
+      "effect": "Sell for 10000 Gold",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > White Gem",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "silver_card",
+      "names": {
+        "en": "Silver Card"
+      },
+      "uses": 1,
+      "worth": 4000,
+      "effect": "Allows user to buy items for half price",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Silver Card",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "member_card",
+      "names": {
+        "en": "Member Card"
+      },
+      "uses": 1,
+      "worth": 4000,
+      "effect": "Allows user access to Secret Shops",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Member Card",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gold",
+      "names": {
+        "en": "Gold"
+      },
+      "uses": 1,
+      "worth": null,
+      "effect": "Probably acts as gold received from events (unused item that cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Gold",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "chest_key",
+      "names": {
+        "en": "Chest Key"
+      },
+      "uses": 5,
+      "worth": 1500,
+      "effect": "Opens a chest",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Chest Key",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "door_key",
+      "names": {
+        "en": "Door Key"
+      },
+      "uses": 1,
+      "worth": 50,
+      "effect": "Opens a door",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Door Key",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bridge_key",
+      "names": {
+        "en": "Bridge Key"
+      },
+      "uses": 1,
+      "worth": 50,
+      "effect": "Supposed to open bridges (unused item that cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Bridge Key",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lockpick",
+      "names": {
+        "en": "Lockpick"
+      },
+      "uses": 30,
+      "worth": 2400,
+      "effect": "Opens doors and chests, Thieves only",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Lockpick",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "delphi_shield",
+      "names": {
+        "en": "Delphi Shield"
+      },
+      "uses": 1,
+      "worth": 5000,
+      "effect": "Negates effective bonus of Aircalibur and Bows towards user",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Delphi Shield",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fire_dragonstone",
+      "names": {
+        "en": "Fire Dragonstone"
+      },
+      "uses": null,
+      "worth": null,
+      "effect": "Mamkutes only, Str +10, Skl +10, Def +20, Res +5. Stats: Range 1, Might 15, Hit 100, Critical 5, Weight 0",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Fire Dragonstone",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "divine_dragonstone",
+      "names": {
+        "en": "Divine Dragonstone"
+      },
+      "uses": 30,
+      "worth": null,
+      "effect": "Fa only, effective against Mamkutes and Demon Dragons, Str +12, Skl +12, Def +15, Res +20.Stats: Range 1, Might 16, Hit 100, Critical 15, Weight 0",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Divine Dragonstone",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "demon_dragonstone",
+      "names": {
+        "en": "Demon Dragonstone"
+      },
+      "uses": null,
+      "worth": null,
+      "effect": "Mamkutes only, Str +15, Skl +15, Def +20, Res +15. Stats: Range 1, Might 20, Hit 100, Critical 10, Weight 0 (unused item that cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Demon Dragonstone",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dark_breath",
+      "names": {
+        "en": "Dark Breath"
+      },
+      "uses": null,
+      "worth": null,
+      "effect": "Stats: Range 1, Might 20, Hit 100, Critical 10, Weight 0 (cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-items",
+          "locator": "Items > Dark Breath",
+          "fields": [
+            "names",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

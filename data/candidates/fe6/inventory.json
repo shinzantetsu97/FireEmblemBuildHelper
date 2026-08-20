@@ -1,0 +1,3576 @@
+{
+  "gameId": "fe6",
+  "sources": [
+    {
+      "sourceId": "serenes-fe6-inventory-swords",
+      "rows": [
+        {
+          "cells": [
+            "Icon",
+            "Name",
+            "Rank",
+            "Rng",
+            "Wt",
+            "Mt",
+            "Hit",
+            "Crt",
+            "Uses",
+            "Worth",
+            "Effects"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Iron Sword",
+            "E",
+            "1",
+            "5",
+            "5",
+            "85",
+            "0",
+            "46",
+            "460",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Iron Sword"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Slim Sword",
+            "E",
+            "1",
+            "2",
+            "3",
+            "95",
+            "5",
+            "30",
+            "480",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Slim Sword"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Rapier",
+            "E",
+            "1",
+            "5",
+            "5",
+            "95",
+            "10",
+            "25",
+            "2000",
+            "Lord/Master Lord only, effective against Cavaliers, Paladins, Knights and Generals"
+          ],
+          "imageAlts": [
+            [
+              "Rapier"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Al's Sword",
+            "D",
+            "1",
+            "7",
+            "7",
+            "75",
+            "0",
+            "50",
+            "1000",
+            "(Cameo of Al from the Hasha no Tsurugi manga)"
+          ],
+          "imageAlts": [
+            [
+              "Al's Sword"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Poison Sword",
+            "D",
+            "1",
+            "6",
+            "3",
+            "70",
+            "0",
+            "40",
+            "–",
+            "Poisons on contact (cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Poison Sword"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Steel Sword",
+            "D",
+            "1",
+            "10",
+            "8",
+            "70",
+            "0",
+            "30",
+            "600",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Steel Sword"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Iron Blade",
+            "D",
+            "1",
+            "12",
+            "9",
+            "65",
+            "0",
+            "35",
+            "980",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Iron Blade"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Armourslayer",
+            "D",
+            "1",
+            "11",
+            "8",
+            "85",
+            "0",
+            "18",
+            "1260",
+            "Effective against Knights and Generals"
+          ],
+          "imageAlts": [
+            [
+              "Armourslayer"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Wo Dao",
+            "D",
+            "1",
+            "5",
+            "8",
+            "75",
+            "40",
+            "20",
+            "1200",
+            "Myrmidon and Swordmaster only"
+          ],
+          "imageAlts": [
+            [
+              "Wo Dao"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Steel Blade",
+            "C",
+            "1",
+            "14",
+            "11",
+            "60",
+            "0",
+            "25",
+            "1250",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Steel Blade"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Killing Edge",
+            "C",
+            "1",
+            "7",
+            "9",
+            "80",
+            "30",
+            "20",
+            "1300",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Killing Edge"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Wyrmslayer",
+            "C",
+            "1",
+            "5",
+            "10",
+            "70",
+            "0",
+            "15",
+            "2250",
+            "Effective against Mamkutes, Wyvern Riders and Wyvern Lords"
+          ],
+          "imageAlts": [
+            [
+              "Wyrmslayer"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Light Brand",
+            "C",
+            "1~2",
+            "9",
+            "9",
+            "70",
+            "0",
+            "25",
+            "1250",
+            "When used for 2 spaces away, always does 10 damage"
+          ],
+          "imageAlts": [
+            [
+              "Light Brand"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Lancereaver",
+            "C",
+            "1",
+            "9",
+            "9",
+            "80",
+            "5",
+            "15",
+            "1800",
+            "Good against lances, bad against axes"
+          ],
+          "imageAlts": [
+            [
+              "Lancereaver"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Brave Sword",
+            "B",
+            "1",
+            "12",
+            "9",
+            "80",
+            "0",
+            "30",
+            "3000",
+            "Allows 2 consecutive hits (cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Brave Sword"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Silver Sword",
+            "A",
+            "1",
+            "8",
+            "13",
+            "75",
+            "0",
+            "20",
+            "1500",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Silver Sword"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Silver Blade",
+            "A",
+            "1",
+            "13",
+            "14",
+            "55",
+            "0",
+            "15",
+            "1800",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Silver Blade"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Runesword",
+            "A",
+            "1~2",
+            "11",
+            "12",
+            "60",
+            "0",
+            "15",
+            "3300",
+            "Drains HP from enemy; counts as Dark Magic (usable in Trial Maps only)"
+          ],
+          "imageAlts": [
+            [
+              "Runesword"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Durandal",
+            "S",
+            "1",
+            "12",
+            "17",
+            "90",
+            "0",
+            "20",
+            "–",
+            "Str +5, effective against Mamkutes, Wyvern Riders and Wyvern Lords"
+          ],
+          "imageAlts": [
+            [
+              "Durandal"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Eckesachs",
+            "–",
+            "1~2",
+            "15",
+            "15",
+            "90",
+            "5",
+            "–",
+            "–",
+            "Zephiel only (usable in Trial Maps only)"
+          ],
+          "imageAlts": [
+            [
+              "Eckesachs"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Binding Blade",
+            "–",
+            "1~2",
+            "8",
+            "18",
+            "95",
+            "10",
+            "20",
+            "–",
+            "Lord/Master Lord only, Def and Res +5, effective against Mamkutes and Demon Dragons, can be used to recover 30 HP"
+          ],
+          "imageAlts": [
+            [
+              "Binding Blade"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-lances",
+      "rows": [
+        {
+          "cells": [
+            "Icon",
+            "Name",
+            "Rank",
+            "Rng",
+            "Wt",
+            "Mt",
+            "Hit",
+            "Crt",
+            "Uses",
+            "Worth",
+            "Effects"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Iron Lance",
+            "E",
+            "1",
+            "8",
+            "7",
+            "70",
+            "0",
+            "45",
+            "360",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Iron Lance"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Steel Lance",
+            "D",
+            "1",
+            "13",
+            "10",
+            "55",
+            "0",
+            "30",
+            "480",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Steel Lance"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Silver Lance",
+            "A",
+            "1",
+            "10",
+            "14",
+            "65",
+            "0",
+            "20",
+            "1200",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Silver Lance"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Slim Lance",
+            "E",
+            "1",
+            "4",
+            "4",
+            "80",
+            "5",
+            "30",
+            "450",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Slim Lance"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Poison Lance",
+            "E",
+            "1",
+            "8",
+            "4",
+            "55",
+            "0",
+            "40",
+            "–",
+            "Poisons on contact (cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Poison Lance"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Brave Lance",
+            "B",
+            "1",
+            "14",
+            "10",
+            "70",
+            "0",
+            "30",
+            "2400",
+            "Allows 2 consecutive hits"
+          ],
+          "imageAlts": [
+            [
+              "Brave Lance"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Javelin",
+            "E",
+            "1~2",
+            "11",
+            "6",
+            "55",
+            "0",
+            "20",
+            "400",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Javelin"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Maltet",
+            "S",
+            "1",
+            "11",
+            "16",
+            "80",
+            "0",
+            "20",
+            "–",
+            "Skill +5, effective against Mamkutes, Wyvern Riders and Wyvern Lords"
+          ],
+          "imageAlts": [
+            [
+              "Maltet"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Horseslayer",
+            "D",
+            "1",
+            "13",
+            "11",
+            "75",
+            "0",
+            "16",
+            "1040",
+            "Effective against Cavaliers and Paladins"
+          ],
+          "imageAlts": [
+            [
+              "Horseslayer"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Killer Lance",
+            "C",
+            "1",
+            "9",
+            "10",
+            "75",
+            "30",
+            "20",
+            "1200",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Killer Lance"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Axereaver",
+            "C",
+            "1",
+            "11",
+            "10",
+            "75",
+            "5",
+            "15",
+            "1950",
+            "Good against axes, bad against swords"
+          ],
+          "imageAlts": [
+            [
+              "Axereaver"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Gant's Lance",
+            "D",
+            "1",
+            "10",
+            "9",
+            "65",
+            "0",
+            "50",
+            "800",
+            "(Cameo of Gant from the Hasha no Tsurugi manga)"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Spear",
+            "B",
+            "1~2",
+            "10",
+            "10",
+            "65",
+            "5",
+            "15",
+            "1500",
+            "(Cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Spear"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-axes",
+      "rows": [
+        {
+          "cells": [
+            "Icon",
+            "Name",
+            "Rank",
+            "Rng",
+            "Wt",
+            "Mt",
+            "Hit",
+            "Crt",
+            "Uses",
+            "Worth",
+            "Effects"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Iron Axe",
+            "E",
+            "1",
+            "10",
+            "8",
+            "65",
+            "0",
+            "45",
+            "270",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Iron Axe"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Steel Axe",
+            "E",
+            "1",
+            "15",
+            "11",
+            "50",
+            "0",
+            "30",
+            "360",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Steel Axe"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Silver Axe",
+            "A",
+            "1",
+            "12",
+            "15",
+            "55",
+            "0",
+            "20",
+            "1000",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Silver Axe"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Poison Axe",
+            "D",
+            "1",
+            "10",
+            "4",
+            "50",
+            "0",
+            "40",
+            "–",
+            "Poisons on contact (cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Poison Axe"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Brave Axe",
+            "B",
+            "1",
+            "16",
+            "10",
+            "55",
+            "0",
+            "30",
+            "2250",
+            "Allows 2 consecutive hits"
+          ],
+          "imageAlts": [
+            [
+              "Brave Axe"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Hand Axe",
+            "E",
+            "1~2",
+            "12",
+            "7",
+            "50",
+            "0",
+            "20",
+            "300",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Hand Axe"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Armads",
+            "S",
+            "1",
+            "13",
+            "18",
+            "75",
+            "0",
+            "20",
+            "–",
+            "Defence +5, effective against Mamkutes, Wyvern Riders and Wyvern Lords"
+          ],
+          "imageAlts": [
+            [
+              "Armads"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Hammer",
+            "D",
+            "1",
+            "15",
+            "8",
+            "45",
+            "0",
+            "20",
+            "800",
+            "Effective against Knights and Generals"
+          ],
+          "imageAlts": [
+            [
+              "Hammer"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Killer Axe",
+            "C",
+            "1",
+            "11",
+            "11",
+            "65",
+            "30",
+            "20",
+            "1000",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Killer Axe"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Swordreaver",
+            "C",
+            "1",
+            "13",
+            "11",
+            "60",
+            "5",
+            "20",
+            "2800",
+            "Good against Swords, bad against Lances"
+          ],
+          "imageAlts": [
+            [
+              "Swordreaver"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Devil Axe",
+            "E",
+            "1",
+            "18",
+            "18",
+            "55",
+            "0",
+            "20",
+            "900",
+            "Damages user if Luck is low"
+          ],
+          "imageAlts": [
+            [
+              "Devil Axe"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Halberd",
+            "D",
+            "1",
+            "15",
+            "10",
+            "55",
+            "0",
+            "18",
+            "810",
+            "Effective against Cavaliers and Paladins"
+          ],
+          "imageAlts": [
+            [
+              "Halberd"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Tomahawk",
+            "A",
+            "1~2",
+            "14",
+            "13",
+            "55",
+            "0",
+            "15",
+            "3000",
+            "(Usable in Trial Maps only)"
+          ],
+          "imageAlts": [
+            [
+              "Tomahawk"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-bows",
+      "rows": [
+        {
+          "cells": [
+            "Icon",
+            "Name",
+            "Rank",
+            "Rng",
+            "Wt",
+            "Mt",
+            "Hit",
+            "Crt",
+            "Uses",
+            "Worth",
+            "Effects"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Iron Bow",
+            "E",
+            "2",
+            "5",
+            "6",
+            "80",
+            "0",
+            "45",
+            "540",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Iron Bow"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Steel Bow",
+            "D",
+            "2",
+            "9",
+            "9",
+            "65",
+            "0",
+            "30",
+            "720",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Steel Bow"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Silver Bow",
+            "A",
+            "2",
+            "6",
+            "13",
+            "70",
+            "0",
+            "20",
+            "1600",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Silver Bow"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Poison Bow",
+            "D",
+            "2",
+            "5",
+            "4",
+            "65",
+            "0",
+            "40",
+            "–",
+            "Poisons on contact (cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Poison Bow"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Killer Bow",
+            "C",
+            "2",
+            "7",
+            "9",
+            "80",
+            "30",
+            "20",
+            "1400",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Killer Bow"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Brave Bow",
+            "B",
+            "2",
+            "12",
+            "10",
+            "75",
+            "0",
+            "30",
+            "3600",
+            "Allows 2 consecutive hits"
+          ],
+          "imageAlts": [
+            [
+              "Brave Bow"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Short Bow",
+            "D",
+            "2",
+            "3",
+            "5",
+            "80",
+            "10",
+            "22",
+            "1760",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Short Bow"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Long Bow",
+            "D",
+            "2~3",
+            "10",
+            "5",
+            "55",
+            "0",
+            "20",
+            "2000",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "Long Bow"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Murgleis",
+            "S",
+            "2",
+            "9",
+            "16",
+            "80",
+            "0",
+            "20",
+            "–",
+            "Speed +5, effective against Mamkutes"
+          ],
+          "imageAlts": [
+            [
+              "murgleis"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Ballista",
+            "E",
+            "3~10",
+            "20",
+            "8",
+            "70",
+            "0",
+            "5",
+            "–",
+            "Archer/Sniper only"
+          ],
+          "imageAlts": [
+            [
+              "Ballista"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Long Ballista",
+            "E",
+            "3~15",
+            "20",
+            "13",
+            "60",
+            "0",
+            "5",
+            "–",
+            "Archer/Sniper only"
+          ],
+          "imageAlts": [
+            [
+              "Long Ballista"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Killer Ballista",
+            "E",
+            "3~10",
+            "20",
+            "12",
+            "65",
+            "10",
+            "5",
+            "–",
+            "Archer/Sniper only"
+          ],
+          "imageAlts": [
+            [
+              "Killer Ballista"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-staves",
+      "rows": [
+        {
+          "cells": [
+            "Icon",
+            "Name",
+            "Rank",
+            "Rng",
+            "Uses",
+            "Worth",
+            "EXP",
+            "Effects"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Heal",
+            "E",
+            "1",
+            "30",
+            "600",
+            "11",
+            "Recovers Mag+10 HP"
+          ],
+          "imageAlts": [
+            [
+              "Heal"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Mend",
+            "D",
+            "1",
+            "20",
+            "1000",
+            "12",
+            "Recovers Mag+20 HP"
+          ],
+          "imageAlts": [
+            [
+              "Mend"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Recover",
+            "C",
+            "1",
+            "15",
+            "2250",
+            "17",
+            "Recovers all HP"
+          ],
+          "imageAlts": [
+            [
+              "Recover"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Physic",
+            "B",
+            "1~Mag",
+            "15",
+            "3750",
+            "22",
+            "Recovers Mag+10 HP"
+          ],
+          "imageAlts": [
+            [
+              "Physic"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Fortify",
+            "A",
+            "1~Mag",
+            "8",
+            "8000",
+            "60",
+            "Recovers Mag+10 HP to all units in range (usable in Trial Maps only)"
+          ],
+          "imageAlts": [
+            [
+              "Fortify"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Warp",
+            "A",
+            "–",
+            "5",
+            "7500",
+            "85",
+            "Teleports an ally to a traversable tile within a range of 1~(Mag/2 +5)"
+          ],
+          "imageAlts": [
+            [
+              "Warp"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Rescue",
+            "B",
+            "1~Mag",
+            "3",
+            "1800",
+            "40",
+            "Brings an ally next to the caster"
+          ],
+          "imageAlts": [
+            [
+              "Rescue"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Restore",
+            "C",
+            "1",
+            "10",
+            "2000",
+            "20",
+            "Removes status condition from ally"
+          ],
+          "imageAlts": [
+            [
+              "Restore"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Silence",
+            "B",
+            "1~Mag",
+            "3",
+            "1200",
+            "30",
+            "Silences enemy so they cannot use magic or staves"
+          ],
+          "imageAlts": [
+            [
+              "Silence"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Sleep",
+            "B",
+            "1~Mag",
+            "3",
+            "1500",
+            "35",
+            "Puts any enemy to sleep"
+          ],
+          "imageAlts": [
+            [
+              "Sleep"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Torch",
+            "D",
+            "1",
+            "10",
+            "1000",
+            "15",
+            "Lights up the area by 4 more tiles (decreases by 1 tile each turn)"
+          ],
+          "imageAlts": [
+            [
+              "Torch"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Hammerne",
+            "C",
+            "1",
+            "3",
+            "1800",
+            "40",
+            "Repairs a weapon or staff to full uses"
+          ],
+          "imageAlts": [
+            [
+              "Hammerne"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Watch",
+            "C",
+            "1~Mag",
+            "5",
+            "2000",
+            "30",
+            "Supposed to reveal hidden rooms (unused staff that cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Watch"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Berserk",
+            "B",
+            "1~Mag",
+            "3",
+            "1800",
+            "40",
+            "Berserks an enemy so they attack friend or foe"
+          ],
+          "imageAlts": [
+            [
+              "Berserk"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Unlock",
+            "D",
+            "1~2",
+            "3",
+            "1200",
+            "30",
+            "Unlocks a door"
+          ],
+          "imageAlts": [
+            [
+              "Unlock"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Barrier",
+            "C",
+            "1",
+            "15",
+            "2250",
+            "17",
+            "Increases Resistance by 7 (decreases by 1 each turn)"
+          ],
+          "imageAlts": [
+            [
+              "Barrier"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Tiena's Staff",
+            "E",
+            "1",
+            "30",
+            "1800",
+            "13",
+            "Recovers Mag+15 HP (cameo of Tiena from the Hasha no Tsurugi manga)"
+          ],
+          "imageAlts": [
+            [
+              "Tiena's Staff"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Saint's Staff",
+            "S",
+            "All",
+            "3",
+            "–",
+            "10",
+            "Completely recovers HP and status of all allies on the map (except the caster)"
+          ],
+          "imageAlts": [
+            [
+              "Saint's Staff"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-anima-tomes",
+      "rows": [
+        {
+          "cells": [
+            "Icon",
+            "Name",
+            "Rank",
+            "Rng",
+            "Wt",
+            "Mt",
+            "Hit",
+            "Crt",
+            "Uses",
+            "Worth",
+            "Effects"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Fire",
+            "E",
+            "1~2",
+            "1",
+            "5",
+            "95",
+            "0",
+            "30",
+            "420",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "55"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Thunder",
+            "D",
+            "1~2",
+            "2",
+            "6",
+            "80",
+            "5",
+            "25",
+            "500",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "56"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Fimbulvetr",
+            "A",
+            "1~2",
+            "8",
+            "13",
+            "80",
+            "0",
+            "15",
+            "3900",
+            "(Usable in Trial Maps only)"
+          ],
+          "imageAlts": [
+            [
+              "59"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Elfire",
+            "C",
+            "1~2",
+            "4",
+            "8",
+            "75",
+            "0",
+            "20",
+            "800",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "57"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Aircalibur",
+            "B",
+            "1~2",
+            "2",
+            "8",
+            "85",
+            "0",
+            "20",
+            "1100",
+            "Effective against flying units"
+          ],
+          "imageAlts": [
+            [
+              "Aircalibur"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Bolting",
+            "A",
+            "3~10",
+            "10",
+            "12",
+            "70",
+            "0",
+            "5",
+            "3000",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "58"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Forblaze",
+            "S",
+            "1~2",
+            "6",
+            "14",
+            "85",
+            "5",
+            "20",
+            "–",
+            "Luck +5, effective against Wyvern Riders, Wyvern Lords and Mamkutes"
+          ],
+          "imageAlts": [
+            [
+              "forblaze"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-light-tomes",
+      "rows": [
+        {
+          "cells": [
+            "Icon",
+            "Name",
+            "Rank",
+            "Rng",
+            "Wt",
+            "Mt",
+            "Hit",
+            "Crt",
+            "Uses",
+            "Worth",
+            "Effects"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Lightning",
+            "E",
+            "1~2",
+            "1",
+            "5",
+            "75",
+            "0",
+            "30",
+            "540",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "62"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Divine",
+            "C",
+            "1~2",
+            "3",
+            "8",
+            "65",
+            "0",
+            "25",
+            "1250",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "64"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Purge",
+            "A",
+            "3~10",
+            "8",
+            "10",
+            "70",
+            "0",
+            "5",
+            "3500",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "65"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Aureola",
+            "S",
+            "1~2",
+            "9",
+            "15",
+            "90",
+            "5",
+            "20",
+            "–",
+            "Resistance +5, effective against Wyvern Riders, Wyvern Lords and Mamkutes"
+          ],
+          "imageAlts": [
+            [
+              "aureola"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-dark-tomes",
+      "rows": [
+        {
+          "cells": [
+            "Icon",
+            "Name",
+            "Rank",
+            "Rng",
+            "Wt",
+            "Mt",
+            "Hit",
+            "Crt",
+            "Uses",
+            "Worth",
+            "Effects"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Fenrir",
+            "A",
+            "1~2",
+            "13",
+            "15",
+            "65",
+            "0",
+            "13",
+            "7800",
+            "(Cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "fenrir"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Flux",
+            "D",
+            "1~2",
+            "5",
+            "8",
+            "70",
+            "0",
+            "30",
+            "780",
+            "–"
+          ],
+          "imageAlts": [
+            [
+              "68"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Nosferatu",
+            "C",
+            "1~2",
+            "6",
+            "10",
+            "70",
+            "0",
+            "20",
+            "3000",
+            "Restores HP equal to damage done to enemy"
+          ],
+          "imageAlts": [
+            [
+              "nosferatu"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Eclipse",
+            "B",
+            "3~10",
+            "9",
+            "–",
+            "10",
+            "0",
+            "5",
+            "4000",
+            "Reduces HP to 1"
+          ],
+          "imageAlts": [
+            [
+              "71"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Apocalypse",
+            "S",
+            "1~2",
+            "12",
+            "18",
+            "80",
+            "5",
+            "20",
+            "–",
+            "Magic +5, effective against Wyvern Riders, Wyvern Lords and Mamkutes"
+          ],
+          "imageAlts": [
+            [
+              "apocalypse"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-items",
+      "rows": [
+        {
+          "cells": [
+            "Icon",
+            "Name",
+            "Uses",
+            "Worth",
+            "Effects"
+          ],
+          "imageAlts": [
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Angelic Robe",
+            "1",
+            "8000",
+            "Increases Max HP by 7"
+          ],
+          "imageAlts": [
+            [
+              "Angelic Robe"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Energy Ring",
+            "1",
+            "8000",
+            "Increases Strength or Magic by 2"
+          ],
+          "imageAlts": [
+            [
+              "Energy Ring"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Secret Book",
+            "1",
+            "8000",
+            "Increases Skill by 2"
+          ],
+          "imageAlts": [
+            [
+              "Secret Book"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Speedwings",
+            "1",
+            "8000",
+            "Increases Speed by 2"
+          ],
+          "imageAlts": [
+            [
+              "Speedwings"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Goddess Icon",
+            "1",
+            "8000",
+            "Increases Luck by 2"
+          ],
+          "imageAlts": [
+            [
+              "Goddess Icon"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Dragonshield",
+            "1",
+            "8000",
+            "Increases Defence by 2"
+          ],
+          "imageAlts": [
+            [
+              "Dragonshield"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Talisman",
+            "1",
+            "8000",
+            "Increases Resistance by 2"
+          ],
+          "imageAlts": [
+            [
+              "Talisman"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Boots",
+            "1",
+            "8000",
+            "Increases Movement by 2"
+          ],
+          "imageAlts": [
+            [
+              "Boots"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Body Ring",
+            "1",
+            "8000",
+            "Increases Constitution by 2"
+          ],
+          "imageAlts": [
+            [
+              "Body Ring"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Hero Crest",
+            "1",
+            "10000",
+            "Promotes Level 10+ Mercenaries, Myrmidons, Pirates, Brigands and Fighters"
+          ],
+          "imageAlts": [
+            [
+              "Hero Crest"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Knight's Crest",
+            "1",
+            "10000",
+            "Promotes Level 10+ Knights and Cavaliers"
+          ],
+          "imageAlts": [
+            [
+              "Knight's Crest"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Orion's Bolt",
+            "1",
+            "10000",
+            "Promotes Level 10+ Archers and Nomads"
+          ],
+          "imageAlts": [
+            [
+              "Orion's Bolt"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Elysian Whip",
+            "1",
+            "10000",
+            "Promotes Level 10+ Wyvern Riders and Pegasus Knights"
+          ],
+          "imageAlts": [
+            [
+              "Elysian Whip"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Guiding Ring",
+            "1",
+            "10000",
+            "Promotes Level 10+ Shamans, Mages, Priests and Troubadours"
+          ],
+          "imageAlts": [
+            [
+              "Guiding Ring"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Vulnerary",
+            "3",
+            "300",
+            "Recovers 10 HP"
+          ],
+          "imageAlts": [
+            [
+              "Vulnerary"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Elixir",
+            "3",
+            "3000",
+            "Recovers all HP"
+          ],
+          "imageAlts": [
+            [
+              "Elixir"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Antitoxin",
+            "3",
+            "450",
+            "Removes poison"
+          ],
+          "imageAlts": [
+            [
+              "Antitoxin"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Pure Water",
+            "3",
+            "900",
+            "Increases Resistance by 7 (decreases by 1 each turn)"
+          ],
+          "imageAlts": [
+            [
+              "Pure Water"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Torch",
+            "5",
+            "500",
+            "Increases Fog of War vision by 4 squares (effect decreases by 1 each turn)"
+          ],
+          "imageAlts": [
+            [
+              "Torch"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Red Gem",
+            "1",
+            "6000",
+            "Sell for 3000 Gold"
+          ],
+          "imageAlts": [
+            [
+              "Red Gem"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Blue Gem",
+            "1",
+            "10000",
+            "Sell for 5000 Gold"
+          ],
+          "imageAlts": [
+            [
+              "Blue Gem"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "White Gem",
+            "1",
+            "20000",
+            "Sell for 10000 Gold"
+          ],
+          "imageAlts": [
+            [
+              "White Gem"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Silver Card",
+            "1",
+            "4000",
+            "Allows user to buy items for half price"
+          ],
+          "imageAlts": [
+            [
+              "Silver Card"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Member Card",
+            "1",
+            "4000",
+            "Allows user access to Secret Shops"
+          ],
+          "imageAlts": [
+            [
+              "Member Card"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Gold",
+            "1",
+            "–",
+            "Probably acts as gold received from events (unused item that cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Gold"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Chest Key",
+            "5",
+            "1500",
+            "Opens a chest"
+          ],
+          "imageAlts": [
+            [
+              "Chest Key"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Door Key",
+            "1",
+            "50",
+            "Opens a door"
+          ],
+          "imageAlts": [
+            [
+              "Door Key"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Bridge Key",
+            "1",
+            "50",
+            "Supposed to open bridges (unused item that cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Bridge Key"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Lockpick",
+            "30",
+            "2400",
+            "Opens doors and chests, Thieves only"
+          ],
+          "imageAlts": [
+            [
+              "Lockpick"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Delphi Shield",
+            "1",
+            "5000",
+            "Negates effective bonus of Aircalibur and Bows towards user"
+          ],
+          "imageAlts": [
+            [
+              "Delphi Shield"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Fire Dragonstone",
+            "–",
+            "–",
+            "Mamkutes only, Str +10, Skl +10, Def +20, Res +5. Stats: Range 1, Might 15, Hit 100, Critical 5, Weight 0"
+          ],
+          "imageAlts": [
+            [
+              "Fire Dragonstone"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Divine Dragonstone",
+            "30",
+            "–",
+            "Fa only, effective against Mamkutes and Demon Dragons, Str +12, Skl +12, Def +15, Res +20.Stats: Range 1, Might 16, Hit 100, Critical 15, Weight 0"
+          ],
+          "imageAlts": [
+            [
+              "Divine Dragonstone"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Demon Dragonstone",
+            "–",
+            "–",
+            "Mamkutes only, Str +15, Skl +15, Def +20, Res +15. Stats: Range 1, Might 20, Hit 100, Critical 10, Weight 0 (unused item that cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Demon Dragonstone"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "Dark Breath",
+            "–",
+            "–",
+            "Stats: Range 1, Might 20, Hit 100, Critical 10, Weight 0 (cannot be obtained)"
+          ],
+          "imageAlts": [
+            [
+              "Dark Breath"
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    }
+  ]
+}

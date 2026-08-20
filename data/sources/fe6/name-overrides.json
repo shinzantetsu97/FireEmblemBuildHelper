@@ -1,0 +1,17 @@
+{
+  "gameId": "fe6",
+  "policy": "Prefer the Serenes NOA/Heroes name, then the Serenes fan-translation name. Preserve every source spelling as an alias.",
+  "unitDisplayNames": {
+    "ティト": "Thea"
+  },
+  "unitSourceAliases": {
+    "Allen": "alen",
+    "Astohl": "astolfo",
+    "Miredy": "melady",
+    "Zeis": "zeiss"
+  },
+  "classDisplayNames": {
+    "Mamkute": "Manakete",
+    "Valkyria": "Valkyrie"
+  }
+}

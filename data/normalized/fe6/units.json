@@ -1,0 +1,2038 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "units": [
+    {
+      "id": "roy",
+      "displayOrder": 1,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Roy",
+        "ja": "ロイ",
+        "jaLatn": "Roi",
+        "fan": "Roy",
+        "officialJpn": "Roy"
+      },
+      "aliases": [
+        "Roi"
+      ],
+      "affinityId": "fire",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ロイ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Roy",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "marcus",
+      "displayOrder": 2,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Marcus",
+        "ja": "マーカス",
+        "jaLatn": "Mākasu",
+        "fan": "Marcus",
+        "officialJpn": "Marcus"
+      },
+      "aliases": [
+        "Mākasu"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > マーカス",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Marcus",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "alen",
+      "displayOrder": 3,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Alen",
+        "ja": "アレン",
+        "jaLatn": "Aren",
+        "fan": "Alan",
+        "officialJpn": "Alen"
+      },
+      "aliases": [
+        "Aren",
+        "Alan",
+        "Allen"
+      ],
+      "affinityId": "fire",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > アレン",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Allen",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lance",
+      "displayOrder": 4,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Lance",
+        "ja": "ランス",
+        "jaLatn": "Ransu",
+        "fan": "Lance",
+        "officialJpn": "Lance"
+      },
+      "aliases": [
+        "Ransu"
+      ],
+      "affinityId": "anima",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ランス",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lance",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wolt",
+      "displayOrder": 5,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Wolt",
+        "ja": "ウォルト",
+        "jaLatn": "Woruto",
+        "fan": "Wolt",
+        "officialJpn": "Wolt"
+      },
+      "aliases": [
+        "Woruto"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ウォルト",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wolt",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bors",
+      "displayOrder": 6,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Bors",
+        "ja": "ボールス",
+        "jaLatn": "Bōrusu",
+        "fan": "Bors",
+        "officialJpn": "Bors"
+      },
+      "aliases": [
+        "Bōrusu"
+      ],
+      "affinityId": "wind",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ボールス",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Bors",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "merlinus",
+      "displayOrder": 7,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Merlinus",
+        "ja": "マリナス",
+        "jaLatn": "Marinasu",
+        "fan": "Merlinus",
+        "officialJpn": "Merlinus"
+      },
+      "aliases": [
+        "Marinasu"
+      ],
+      "affinityId": "dark",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > マリナス",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Merlinus",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elen",
+      "displayOrder": 8,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Elen",
+        "ja": "エレン",
+        "jaLatn": "Eren",
+        "fan": "Ellen",
+        "officialJpn": "Elen"
+      },
+      "aliases": [
+        "Eren",
+        "Ellen"
+      ],
+      "affinityId": "wind",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > エレン",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Ellen",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dieck",
+      "displayOrder": 9,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Dieck",
+        "ja": "ディーク",
+        "jaLatn": "Dīku",
+        "fan": "Dieck",
+        "officialJpn": "Dieck"
+      },
+      "aliases": [
+        "Dīku"
+      ],
+      "affinityId": "thunder",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ディーク",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dieck",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wade",
+      "displayOrder": 10,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Wade",
+        "ja": "ワード",
+        "jaLatn": "Wādo",
+        "fan": "Ward",
+        "officialJpn": "Wade"
+      },
+      "aliases": [
+        "Wādo",
+        "Ward"
+      ],
+      "affinityId": "fire",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ワード",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wade",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lot",
+      "displayOrder": 11,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Lot",
+        "ja": "ロット",
+        "jaLatn": "Rotto",
+        "fan": "Lott",
+        "officialJpn": "Lot"
+      },
+      "aliases": [
+        "Rotto",
+        "Lott"
+      ],
+      "affinityId": "anima",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ロット",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lott",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shanna",
+      "displayOrder": 12,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Shanna",
+        "ja": "シャニー",
+        "jaLatn": "Shanī",
+        "fan": "Thany",
+        "officialJpn": "Thany"
+      },
+      "aliases": [
+        "Shanī",
+        "Thany"
+      ],
+      "affinityId": "wind",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > シャニー",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Thany",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "chad",
+      "displayOrder": 13,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Chad",
+        "ja": "チャド",
+        "jaLatn": "Chado",
+        "fan": "Chad",
+        "officialJpn": "Chad"
+      },
+      "aliases": [
+        "Chado"
+      ],
+      "affinityId": "thunder",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > チャド",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Chad",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lugh",
+      "displayOrder": 14,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Lugh",
+        "ja": "ルゥ",
+        "jaLatn": "Rū",
+        "fan": "Lugh",
+        "officialJpn": "Lugh"
+      },
+      "aliases": [
+        "Rū"
+      ],
+      "affinityId": "fire",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ルゥ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lugh",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "clarine",
+      "displayOrder": 15,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Clarine",
+        "ja": "クラリーネ",
+        "jaLatn": "Kurarīne",
+        "fan": "Clarine",
+        "officialJpn": "Clarine"
+      },
+      "aliases": [
+        "Kurarīne"
+      ],
+      "affinityId": "thunder",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > クラリーネ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Clarine",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rutger",
+      "displayOrder": 16,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Rutger",
+        "ja": "ルトガー",
+        "jaLatn": "Rutogā",
+        "fan": "Rutger",
+        "officialJpn": "Rutger"
+      },
+      "aliases": [
+        "Rutogā"
+      ],
+      "affinityId": "dark",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ルトガー",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Rutger",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "saul",
+      "displayOrder": 17,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Saul",
+        "ja": "サウル",
+        "jaLatn": "Sauru",
+        "fan": "Saul",
+        "officialJpn": "Saul"
+      },
+      "aliases": [
+        "Sauru"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > サウル",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Saul",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dorothy",
+      "displayOrder": 18,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Dorothy",
+        "ja": "ドロシー",
+        "jaLatn": "Doroshī",
+        "fan": "Dorothy",
+        "officialJpn": "Dorothy"
+      },
+      "aliases": [
+        "Doroshī"
+      ],
+      "affinityId": "fire",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ドロシー",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dorothy",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sue",
+      "displayOrder": 19,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Sue",
+        "ja": "スー",
+        "jaLatn": "Sū",
+        "fan": "Sue",
+        "officialJpn": "Sue"
+      },
+      "aliases": [
+        "Sū"
+      ],
+      "affinityId": "wind",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > スー",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Sue",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zelot",
+      "displayOrder": 20,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Zelot",
+        "ja": "ゼロット",
+        "jaLatn": "Zerotto",
+        "fan": "Zealot",
+        "officialJpn": "Zelots"
+      },
+      "aliases": [
+        "Zerotto",
+        "Zelots",
+        "Zealot"
+      ],
+      "affinityId": "dark",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ゼロット",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Zealot",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "trec",
+      "displayOrder": 21,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Trec",
+        "ja": "トレック",
+        "jaLatn": "Torekku",
+        "fan": "Treck",
+        "officialJpn": "Trec"
+      },
+      "aliases": [
+        "Torekku",
+        "Treck"
+      ],
+      "affinityId": "wind",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > トレック",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Treck",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "noah",
+      "displayOrder": 22,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Noah",
+        "ja": "ノア",
+        "jaLatn": "Noa",
+        "fan": "Noah",
+        "officialJpn": "Noah"
+      },
+      "aliases": [
+        "Noa"
+      ],
+      "affinityId": "anima",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ノア",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Noah",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "astolfo",
+      "displayOrder": 23,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Astolfo",
+        "ja": "アストール",
+        "jaLatn": "Asutōru",
+        "fan": "Astol",
+        "officialJpn": "Astore"
+      },
+      "aliases": [
+        "Asutōru",
+        "Astore",
+        "Astol",
+        "Astohl"
+      ],
+      "affinityId": "dark",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > アストール",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Astohl",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lilina",
+      "displayOrder": 24,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Lilina",
+        "ja": "リリーナ",
+        "jaLatn": "Rirīna",
+        "fan": "Lilina",
+        "officialJpn": "Lilina"
+      },
+      "aliases": [
+        "Rirīna"
+      ],
+      "affinityId": "light",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > リリーナ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lilina",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gwendolyn",
+      "displayOrder": 25,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Gwendolyn",
+        "ja": "ウェンディ",
+        "jaLatn": "Wendi",
+        "fan": "Wendy",
+        "officialJpn": "Wendy"
+      },
+      "aliases": [
+        "Wendi",
+        "Wendy"
+      ],
+      "affinityId": "fire",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ウェンディ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wendy",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "barthe",
+      "displayOrder": 26,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Barthe",
+        "ja": "バース",
+        "jaLatn": "Bāsu",
+        "fan": "Barth",
+        "officialJpn": "Bath"
+      },
+      "aliases": [
+        "Bāsu",
+        "Bath",
+        "Barth"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > バース",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Barth",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "ogier",
+      "displayOrder": 27,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Ogier",
+        "ja": "オージェ",
+        "jaLatn": "Ōje",
+        "fan": "Oujay",
+        "officialJpn": "Ogier"
+      },
+      "aliases": [
+        "Ōje",
+        "Oujay"
+      ],
+      "affinityId": "wind",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > オージェ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Oujay",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fir",
+      "displayOrder": 28,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Fir",
+        "ja": "フィル",
+        "jaLatn": "Firu",
+        "fan": "Fir",
+        "officialJpn": "Fir"
+      },
+      "aliases": [
+        "Firu"
+      ],
+      "affinityId": "fire",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > フィル",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Fir",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sin",
+      "displayOrder": 29,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Sin",
+        "ja": "シン",
+        "jaLatn": "Shin",
+        "fan": "Shin",
+        "officialJpn": "Sin"
+      },
+      "aliases": [
+        "Shin"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > シン",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Shin",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gonzalez",
+      "displayOrder": 30,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Gonzalez",
+        "ja": "ゴンザレス",
+        "jaLatn": "Gonzaresu",
+        "fan": "Gonzales",
+        "officialJpn": "Gonzalez"
+      },
+      "aliases": [
+        "Gonzaresu",
+        "Gonzales"
+      ],
+      "affinityId": "thunder",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ゴンザレス",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Gonzales",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "geese",
+      "displayOrder": 31,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Geese",
+        "ja": "ギース",
+        "jaLatn": "Gīsu",
+        "fan": "Geese",
+        "officialJpn": "Geese"
+      },
+      "aliases": [
+        "Gīsu"
+      ],
+      "affinityId": "fire",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ギース",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Geese",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "klein",
+      "displayOrder": 32,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Klein",
+        "ja": "クレイン",
+        "jaLatn": "Kurein",
+        "fan": "Klein",
+        "officialJpn": "Klein"
+      },
+      "aliases": [
+        "Kurein"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > クレイン",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Klein",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thea",
+      "displayOrder": 33,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Thea",
+        "ja": "ティト",
+        "jaLatn": "Tito",
+        "fan": "Tate",
+        "officialJpn": "Thite"
+      },
+      "aliases": [
+        "Tito",
+        "Thite",
+        "Tate"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ティト",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Tate",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "larum",
+      "displayOrder": 34,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Larum",
+        "ja": "ララム",
+        "jaLatn": "Raramu",
+        "fan": "Lalum",
+        "officialJpn": "Lalum"
+      },
+      "aliases": [
+        "Raramu",
+        "Lalum"
+      ],
+      "affinityId": "thunder",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ララム",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lalum",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "echidna",
+      "displayOrder": 35,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Echidna",
+        "ja": "エキドナ",
+        "jaLatn": "Ekidona",
+        "fan": "Echidna",
+        "officialJpn": "Ekhidna"
+      },
+      "aliases": [
+        "Ekidona",
+        "Ekhidna"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > エキドナ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Echidna",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elffin",
+      "displayOrder": 36,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Elffin",
+        "ja": "エルフィン",
+        "jaLatn": "Erufin",
+        "fan": "Elphin",
+        "officialJpn": "Elphin"
+      },
+      "aliases": [
+        "Erufin",
+        "Elphin"
+      ],
+      "affinityId": "light",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > エルフィン",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Elphin",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bartre",
+      "displayOrder": 37,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Bartre",
+        "ja": "バアトル",
+        "jaLatn": "Bātoru",
+        "fan": "Bartre",
+        "officialJpn": "Bartr"
+      },
+      "aliases": [
+        "Bātoru",
+        "Bartr"
+      ],
+      "affinityId": "thunder",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > バアトル",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Bartre",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "raigh",
+      "displayOrder": 38,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Raigh",
+        "ja": "レイ",
+        "jaLatn": "Rei",
+        "fan": "Ray",
+        "officialJpn": "Lleu"
+      },
+      "aliases": [
+        "Rei",
+        "Lleu",
+        "Ray"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > レイ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Ray",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cath",
+      "displayOrder": 39,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Cath",
+        "ja": "キャス",
+        "jaLatn": "Kyasu",
+        "fan": "Cath",
+        "officialJpn": "Cath"
+      },
+      "aliases": [
+        "Kyasu"
+      ],
+      "affinityId": "anima",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > キャス",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Cath",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "melady",
+      "displayOrder": 40,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Melady",
+        "ja": "ミレディ",
+        "jaLatn": "Miredi",
+        "fan": "Miledy",
+        "officialJpn": "Milady"
+      },
+      "aliases": [
+        "Miredi",
+        "Milady",
+        "Miledy",
+        "Miredy"
+      ],
+      "affinityId": "dark",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ミレディ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Miredy",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "perceval",
+      "displayOrder": 41,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Perceval",
+        "ja": "パーシバル",
+        "jaLatn": "Pāshibaru",
+        "fan": "Percival",
+        "officialJpn": "Perceval"
+      },
+      "aliases": [
+        "Pāshibaru",
+        "Percival"
+      ],
+      "affinityId": "dark",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > パーシバル",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Percival",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cecilia",
+      "displayOrder": 42,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Cecilia",
+        "ja": "セシリア",
+        "jaLatn": "Seshiria",
+        "fan": "Cecilia",
+        "officialJpn": "Cecilia/Secilia"
+      },
+      "aliases": [
+        "Seshiria",
+        "Cecilia/Secilia"
+      ],
+      "affinityId": "anima",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > セシリア",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Cecilia",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sophia",
+      "displayOrder": 43,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Sophia",
+        "ja": "ソフィーヤ",
+        "jaLatn": "Sofīya",
+        "fan": "Sophia",
+        "officialJpn": "Sofiya"
+      },
+      "aliases": [
+        "Sofīya",
+        "Sofiya"
+      ],
+      "affinityId": "dark",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ソフィーヤ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Sofiya",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "igrene",
+      "displayOrder": 44,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Igrene",
+        "ja": "イグレーヌ",
+        "jaLatn": "Igurēnu",
+        "fan": "Igrene",
+        "officialJpn": "Igrene"
+      },
+      "aliases": [
+        "Igurēnu"
+      ],
+      "affinityId": "ice",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > イグレーヌ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Igrene",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "garret",
+      "displayOrder": 45,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Garret",
+        "ja": "ガレット",
+        "jaLatn": "Garetto",
+        "fan": "Garret",
+        "officialJpn": "Garret"
+      },
+      "aliases": [
+        "Garetto"
+      ],
+      "affinityId": "wind",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ガレット",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Garret",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fae",
+      "displayOrder": 46,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Fae",
+        "ja": "ファ",
+        "jaLatn": "Fa",
+        "fan": "Fae",
+        "officialJpn": "Fa"
+      },
+      "aliases": [
+        "Fa"
+      ],
+      "affinityId": "light",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ファ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Fa",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hugh",
+      "displayOrder": 47,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Hugh",
+        "ja": "ヒュウ",
+        "jaLatn": "Hyū",
+        "fan": "Hugh",
+        "officialJpn": "Hugh"
+      },
+      "aliases": [
+        "Hyū"
+      ],
+      "affinityId": "wind",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ヒュウ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Hugh",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zeiss",
+      "displayOrder": 48,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Zeiss",
+        "ja": "ツァイス",
+        "jaLatn": "Tsaisu",
+        "fan": "Zeiss",
+        "officialJpn": "Zeiss"
+      },
+      "aliases": [
+        "Tsaisu",
+        "Zeis"
+      ],
+      "affinityId": "thunder",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ツァイス",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Zeis",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "douglas",
+      "displayOrder": 49,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Douglas",
+        "ja": "ダグラス",
+        "jaLatn": "Dagurasu",
+        "fan": "Douglas",
+        "officialJpn": "Douglas"
+      },
+      "aliases": [
+        "Dagurasu"
+      ],
+      "affinityId": "thunder",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ダグラス",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Douglas",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "niime",
+      "displayOrder": 50,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Niime",
+        "ja": "ニイメ",
+        "jaLatn": "Nīme",
+        "fan": "Niime",
+        "officialJpn": "Nimue"
+      },
+      "aliases": [
+        "Nīme",
+        "Nimue"
+      ],
+      "affinityId": "anima",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ニイメ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Niime",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "juno",
+      "displayOrder": 51,
+      "unitKind": "story",
+      "gender": "female",
+      "names": {
+        "en": "Juno",
+        "ja": "ユーノ",
+        "jaLatn": "Yūno",
+        "fan": "Yuno",
+        "officialJpn": "Juno"
+      },
+      "aliases": [
+        "Yūno",
+        "Yuno"
+      ],
+      "affinityId": "light",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ユーノ",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Juno",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dayan",
+      "displayOrder": 52,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Dayan",
+        "ja": "ダヤン",
+        "jaLatn": "Dayan",
+        "fan": "Dayan",
+        "officialJpn": "Dayan"
+      },
+      "aliases": [],
+      "affinityId": "anima",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ダヤン",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dayan",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "yoder",
+      "displayOrder": 53,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Yoder",
+        "ja": "ヨーデル",
+        "jaLatn": "Yōderu",
+        "fan": "Yodel",
+        "officialJpn": "Jodel"
+      },
+      "aliases": [
+        "Yōderu",
+        "Jodel",
+        "Yodel"
+      ],
+      "affinityId": "light",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > ヨーデル",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Yodel",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "karel",
+      "displayOrder": 54,
+      "unitKind": "story",
+      "gender": "male",
+      "names": {
+        "en": "Karel",
+        "ja": "カレル",
+        "jaLatn": "Kareru",
+        "fan": "Karel",
+        "officialJpn": "Karel"
+      },
+      "aliases": [
+        "Kareru"
+      ],
+      "affinityId": "light",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-name-chart",
+          "locator": "Name Chart > カレル",
+          "fields": [
+            "names",
+            "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Karel",
+          "fields": [
+            "affinityId"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

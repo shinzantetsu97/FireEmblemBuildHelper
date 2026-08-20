@@ -1,0 +1,6972 @@
+{
+  "gameId": "fe6",
+  "sources": {
+    "recruitment": [
+      {
+        "cells": [
+          "Name",
+          "Class",
+          "Ch",
+          "Recruit"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Roy",
+          "Lord",
+          "1",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Marcus",
+          "Paladin",
+          "1",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Allen",
+          "Cavalier",
+          "1",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lance",
+          "Cavalier",
+          "1",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wolt",
+          "Archer",
+          "1",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Bors",
+          "Knight",
+          "1",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Merlinus",
+          "Transporter",
+          "2",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Ellen",
+          "Priest",
+          "2",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dieck",
+          "Mercenary",
+          "2",
+          "Automatically from Turn 2"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wade",
+          "Fighter",
+          "2",
+          "Automatically from Turn 2"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lott",
+          "Fighter",
+          "2",
+          "Automatically from Turn 2"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Thany",
+          "Pegasus Knight",
+          "2",
+          "Automatically from Turn 2"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Chad",
+          "Thief",
+          "3",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lugh",
+          "Mage",
+          "3",
+          "Visit the north west village"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Clarine",
+          "Troubadour",
+          "4",
+          "Appears as an NPC from Turn 4, let her talk to Roy"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Rutger",
+          "Myrmidon",
+          "4",
+          "Appears as an enemy from Turn 6, talk with Clarine"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Saul",
+          "Priest",
+          "6",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dorothy",
+          "Archer",
+          "6",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Sue",
+          "Nomad",
+          "6",
+          "NPC, talk with Roy"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zealot",
+          "Paladin",
+          "7",
+          "Appears as an NPC from Turn 2, talk with Roy, Noah or Treck"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Treck",
+          "Cavalier",
+          "7",
+          "Appears as an NPC from Turn 2, talk with Roy or Zealot"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Noah",
+          "Cavalier",
+          "7",
+          "Appears as an NPC from Turn 3, talk with Roy or Zealot"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Astohl",
+          "Thief",
+          "8",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lilina",
+          "Mage",
+          "8",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wendy",
+          "Knight",
+          "8",
+          "Automatically from Turn 6"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Barth",
+          "Knight",
+          "8",
+          "Automatically from Turn 6"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Oujay",
+          "Mercenary",
+          "8",
+          "Automatically from Turn 6"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Fir",
+          "Myrmidon",
+          "9",
+          "Appears as an enemy from Turn 2, talk with Noah"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Shin",
+          "Nomad",
+          "9",
+          "Appears as an enemy from Turn 2, talk with Sue"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Gonzales",
+          "Brigand",
+          "10A / 10B",
+          "Appears as an enemy from Turn 6, talk with Lilina"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Geese",
+          "Pirate",
+          "10A / 11B",
+          "Appears as an NPC from Turn 5 (A) / Turn 6 (B), talk with Roy"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Klein",
+          "Sniper",
+          "10B / 11A",
+          "Appears as an enemy from Turn 5 (A) / Turn 8 (B), talk with Roy or Clarine"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Tate",
+          "Pegasus Knight",
+          "10B / 11A",
+          "Appears as an enemy from Turn 7 (A) / Turn 10 (B), talk with Klein (or talk with Thany before and after Klein has been recruited (note that if you only talk with Thany after recruiting Klein, Tate will just become an NPC))"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lalum",
+          "Dancer",
+          "11A",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Echidna",
+          "Hero",
+          "11A",
+          "Appears as an NPC from Turn 8, talk with Lalum"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Elphin",
+          "Bard",
+          "11B",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Bartre",
+          "Warrior",
+          "11B",
+          "Appears as an NPC from Turn 9, talk with Roy or Fir"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Ray",
+          "Shaman",
+          "12",
+          "Enemy, talk with Chad or Lugh"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Cath",
+          "Thief",
+          "12 / 16 / 20 / 22",
+          "Enemy, talk with Roy three times and she'll join during the third time. She appears in Chapters 6 (Turn 5), 8 (Turn 10), 12 (Turn 7), 16 (Turn 10), 20 (Turn 10) and 22 (Turn 15)"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Miredy",
+          "Wyvern Rider",
+          "13",
+          "Automatically from Turn 3"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Percival",
+          "Paladin",
+          "13 / 15",
+          "Enemy, talk with Lalum or Elphin (in Chapter 13, he automatically leaves at the end of Turn 8)"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Cecilia",
+          "Valkyria",
+          "14",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Sofiya",
+          "Shaman",
+          "14",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Igrene",
+          "Sniper",
+          "15",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Garret",
+          "Berserker",
+          "15",
+          "Appears as an enemy from Turn 3, talk with Lilina"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Fa",
+          "Mamkute",
+          "16",
+          "Automatically from the start (appears in the battle preparations)"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Hugh",
+          "Mage",
+          "16",
+          "Enemy, talk with Roy and pay him 10,000G to 5,000G (the less money you pay him, the lower his stats are)"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zeis",
+          "Wyvern Rider",
+          "16",
+          "Appears as an enemy from Turn 2, talk with Miredy"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Douglas",
+          "General",
+          "16x",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Niime",
+          "Druid",
+          "19A / 20B",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Juno",
+          "Falcon Knight",
+          "20A",
+          "NPC, talk with Thany, Tate or Zealot"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dayan",
+          "Nomad Trooper",
+          "20B",
+          "Appears as an NPC from Turn 3, talk with Roy, Sue or Shin"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Yodel",
+          "Bishop",
+          "21",
+          "Automatically from the start"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Karel",
+          "Swordmaster",
+          "23",
+          "Visit the village with Fir or Bartre"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    ],
+    "baseStats": [
+      {
+        "cells": [
+          "Name",
+          "Class",
+          "Lv",
+          "HP",
+          "S/M",
+          "Skl",
+          "Spd",
+          "Lck",
+          "Def",
+          "Res",
+          "Con",
+          "Mov",
+          "Affin",
+          "Weapon ranks"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Roy",
+          "Lord",
+          "1",
+          "18",
+          "5",
+          "5",
+          "7",
+          "7",
+          "5",
+          "0",
+          "6",
+          "5",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Fire"
+          ],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Marcus",
+          "Paladin",
+          "1",
+          "32",
+          "9",
+          "14",
+          "11",
+          "10",
+          "9",
+          "8",
+          "11",
+          "8",
+          "",
+          "D, A, E"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Sword",
+            "Lance",
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Allen",
+          "Cavalier",
+          "1",
+          "21",
+          "7",
+          "4",
+          "6",
+          "3",
+          "6",
+          "0",
+          "9",
+          "7",
+          "",
+          "E, D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Fire"
+          ],
+          [
+            "Sword",
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Lance",
+          "Cavalier",
+          "1",
+          "20",
+          "5",
+          "6",
+          "8",
+          "2",
+          "6",
+          "0",
+          "9",
+          "7",
+          "",
+          "E, D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Sword",
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Wolt",
+          "Archer",
+          "1",
+          "18",
+          "4",
+          "4",
+          "5",
+          "2",
+          "4",
+          "0",
+          "7",
+          "5",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Bow"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Bors",
+          "Knight",
+          "1",
+          "20",
+          "7",
+          "4",
+          "3",
+          "4",
+          "11",
+          "0",
+          "14",
+          "4",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Wind"
+          ],
+          [
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Merlinus",
+          "Transporter",
+          "1",
+          "15",
+          "0",
+          "3",
+          "3",
+          "10",
+          "3",
+          "0",
+          "25",
+          "5",
+          "",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinDark"
+          ],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Ellen",
+          "Priest",
+          "2",
+          "16",
+          "1",
+          "6",
+          "8",
+          "8",
+          "0",
+          "6",
+          "4",
+          "5",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Wind"
+          ],
+          [
+            "Staff"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Dieck",
+          "Mercenary",
+          "5",
+          "26",
+          "9",
+          "12",
+          "10",
+          "5",
+          "6",
+          "1",
+          "13",
+          "5",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Thunder"
+          ],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Wade",
+          "Fighter",
+          "2",
+          "28",
+          "8",
+          "3",
+          "5",
+          "4",
+          "3",
+          "0",
+          "13",
+          "5",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Fire"
+          ],
+          [
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Lott",
+          "Fighter",
+          "3",
+          "29",
+          "7",
+          "6",
+          "7",
+          "2",
+          "4",
+          "1",
+          "12",
+          "5",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Thany",
+          "Pegasus Knight",
+          "1",
+          "17",
+          "4",
+          "6",
+          "12",
+          "5",
+          "6",
+          "5",
+          "4",
+          "7",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Wind"
+          ],
+          [
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Chad",
+          "Thief",
+          "1",
+          "16",
+          "3",
+          "3",
+          "10",
+          "4",
+          "2",
+          "0",
+          "5",
+          "6",
+          "",
+          "E"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Thunder"
+          ],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Lugh",
+          "Mage",
+          "1",
+          "16",
+          "4",
+          "5",
+          "6",
+          "5",
+          "3",
+          "5",
+          "4",
+          "5",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Fire"
+          ],
+          [
+            "Anima"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Clarine",
+          "Troubadour",
+          "1",
+          "15",
+          "2",
+          "5",
+          "9",
+          "8",
+          "2",
+          "5",
+          "5",
+          "7",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Thunder"
+          ],
+          [
+            "Staff"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Rutger",
+          "Myrmidon",
+          "4",
+          "22",
+          "7",
+          "12",
+          "13",
+          "2",
+          "5",
+          "0",
+          "7",
+          "5",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinDark"
+          ],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Rutger (HM)",
+          "26",
+          "9",
+          "14",
+          "15",
+          "4",
+          "6",
+          "1"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Saul",
+          "Priest",
+          "5",
+          "20",
+          "4",
+          "6",
+          "10",
+          "2",
+          "2",
+          "5",
+          "6",
+          "5",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Staff"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Dorothy",
+          "Archer",
+          "3",
+          "19",
+          "5",
+          "6",
+          "6",
+          "3",
+          "4",
+          "2",
+          "7",
+          "5",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Fire"
+          ],
+          [
+            "Bow"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Sue",
+          "Nomad",
+          "1",
+          "18",
+          "5",
+          "7",
+          "8",
+          "4",
+          "5",
+          "0",
+          "5",
+          "7",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Wind"
+          ],
+          [
+            "Bow"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Name",
+          "Class",
+          "Lv",
+          "HP",
+          "S/M",
+          "Skl",
+          "Spd",
+          "Lck",
+          "Def",
+          "Res",
+          "Con",
+          "Mov",
+          "Affin",
+          "Weapon ranks"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zealot",
+          "Paladin",
+          "1",
+          "35",
+          "10",
+          "12",
+          "13",
+          "5",
+          "11",
+          "7",
+          "11",
+          "8",
+          "",
+          "C, A, D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinDark"
+          ],
+          [
+            "Sword",
+            "Lance",
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Treck",
+          "Cavalier",
+          "4",
+          "25",
+          "8",
+          "6",
+          "7",
+          "5",
+          "8",
+          "0",
+          "9",
+          "7",
+          "",
+          "E, D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Wind"
+          ],
+          [
+            "Sword",
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Noah",
+          "Cavalier",
+          "7",
+          "27",
+          "8",
+          "7",
+          "9",
+          "6",
+          "7",
+          "1",
+          "10",
+          "7",
+          "",
+          "C, D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Sword",
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Astohl",
+          "Thief",
+          "10",
+          "25",
+          "7",
+          "8",
+          "15",
+          "11",
+          "7",
+          "3",
+          "8",
+          "6",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinDark"
+          ],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Lilina",
+          "Mage",
+          "1",
+          "16",
+          "5",
+          "5",
+          "4",
+          "4",
+          "2",
+          "7",
+          "4",
+          "5",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinLight"
+          ],
+          [
+            "Anima"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Wendy",
+          "Knight",
+          "1",
+          "19",
+          "4",
+          "3",
+          "3",
+          "6",
+          "8",
+          "1",
+          "10",
+          "4",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Fire"
+          ],
+          [
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Barth",
+          "Knight",
+          "9",
+          "25",
+          "10",
+          "6",
+          "5",
+          "2",
+          "14",
+          "1",
+          "16",
+          "4",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Oujay",
+          "Mercenary",
+          "3",
+          "24",
+          "7",
+          "10",
+          "9",
+          "6",
+          "4",
+          "0",
+          "8",
+          "5",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Wind"
+          ],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Fir",
+          "Myrmidon",
+          "1",
+          "19",
+          "6",
+          "9",
+          "10",
+          "3",
+          "3",
+          "1",
+          "5",
+          "5",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Fire"
+          ],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Fir (HM)",
+          "25",
+          "9",
+          "12",
+          "13",
+          "5",
+          "4",
+          "2"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Shin",
+          "Nomad",
+          "5",
+          "24",
+          "7",
+          "8",
+          "10",
+          "6",
+          "7",
+          "0",
+          "7",
+          "7",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Bow"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Shin (HM)",
+          "29",
+          "9",
+          "11",
+          "14",
+          "8",
+          "8",
+          "1"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Gonzales",
+          "Bandit",
+          "5",
+          "36",
+          "12",
+          "5",
+          "9",
+          "5",
+          "6",
+          "0",
+          "15",
+          "5",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Thunder"
+          ],
+          [
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Gonzales (HM)",
+          "43",
+          "16",
+          "7",
+          "11",
+          "6",
+          "7",
+          "1"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Geese",
+          "Pirate",
+          "10",
+          "33",
+          "10",
+          "9",
+          "9",
+          "9",
+          "8",
+          "0",
+          "11",
+          "5",
+          "",
+          "B"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Fire"
+          ],
+          [
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Klein",
+          "Sniper",
+          "1",
+          "27",
+          "13",
+          "13",
+          "11",
+          "10",
+          "8",
+          "6",
+          "7",
+          "6",
+          "",
+          "A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Bow"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Klein (HM)",
+          "33",
+          "16",
+          "16",
+          "13",
+          "13",
+          "9",
+          "7"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Tate",
+          "Pegasus Knight",
+          "8",
+          "22",
+          "6",
+          "8",
+          "11",
+          "3",
+          "7",
+          "6",
+          "5",
+          "7",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Tate (HM)",
+          "28",
+          "9",
+          "12",
+          "15",
+          "6",
+          "8",
+          "8"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Name",
+          "Class",
+          "Lv",
+          "HP",
+          "S/M",
+          "Skl",
+          "Spd",
+          "Lck",
+          "Def",
+          "Res",
+          "Con",
+          "Mov",
+          "Affin",
+          "Weapon ranks"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lalum",
+          "Dancer",
+          "1",
+          "14",
+          "1",
+          "2",
+          "11",
+          "9",
+          "2",
+          "4",
+          "4",
+          "5",
+          "",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Thunder"
+          ],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Echidna",
+          "Hero",
+          "1",
+          "35",
+          "13",
+          "19",
+          "18",
+          "6",
+          "8",
+          "7",
+          "9",
+          "6",
+          "",
+          "C, B"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Sword",
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Elphin",
+          "Bard",
+          "1",
+          "15",
+          "1",
+          "3",
+          "10",
+          "11",
+          "4",
+          "1",
+          "6",
+          "5",
+          "",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinLight"
+          ],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Bartre",
+          "Warrior",
+          "2",
+          "48",
+          "22",
+          "11",
+          "10",
+          "14",
+          "10",
+          "3",
+          "14",
+          "6",
+          "",
+          "A, D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Thunder"
+          ],
+          [
+            "Axe",
+            "Bow"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Ray",
+          "Shaman",
+          "12",
+          "23",
+          "12",
+          "9",
+          "9",
+          "6",
+          "5",
+          "10",
+          "4",
+          "5",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Dark"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Cath",
+          "Thief",
+          "5",
+          "16",
+          "3",
+          "7",
+          "11",
+          "8",
+          "2",
+          "1",
+          "5",
+          "6",
+          "",
+          "E"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Cath (HM)",
+          "20",
+          "3",
+          "11",
+          "15",
+          "12",
+          "2",
+          "3"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Miredy",
+          "Wyvern Rider",
+          "10",
+          "30",
+          "12",
+          "11",
+          "10",
+          "5",
+          "13",
+          "3",
+          "9",
+          "7",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinDark"
+          ],
+          [
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Miredy (HM)",
+          "38",
+          "17",
+          "15",
+          "13",
+          "8",
+          "16",
+          "4"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Percival",
+          "Paladin",
+          "5",
+          "43",
+          "17",
+          "13",
+          "18",
+          "12",
+          "14",
+          "11",
+          "12",
+          "8",
+          "",
+          "A, A, C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinDark"
+          ],
+          [
+            "Sword",
+            "Lance",
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Percival (HM)",
+          "51",
+          "20",
+          "16",
+          "20",
+          "15",
+          "15",
+          "13"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Cecilia",
+          "Valkyria",
+          "1",
+          "30",
+          "11",
+          "7",
+          "10",
+          "10",
+          "7",
+          "13",
+          "6",
+          "8",
+          "",
+          "C, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Staff",
+            "Anima"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Sofiya",
+          "Shaman",
+          "1",
+          "15",
+          "6",
+          "2",
+          "4",
+          "3",
+          "1",
+          "8",
+          "3",
+          "5",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinDark"
+          ],
+          [
+            "Dark"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Igrene",
+          "Sniper",
+          "1",
+          "32",
+          "16",
+          "18",
+          "15",
+          "9",
+          "11",
+          "10",
+          "7",
+          "6",
+          "",
+          "B"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Bow"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Garret",
+          "Berserker",
+          "1",
+          "49",
+          "17",
+          "13",
+          "10",
+          "12",
+          "9",
+          "4",
+          "13",
+          "6",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Wind"
+          ],
+          [
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Garret (HM)",
+          "55",
+          "21",
+          "16",
+          "11",
+          "14",
+          "10",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Fa",
+          "Mamkute",
+          "1",
+          "16",
+          "2",
+          "2",
+          "3",
+          "7",
+          "2",
+          "6",
+          "1",
+          "5",
+          "",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinLight"
+          ],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Hugh",
+          "Mage",
+          "15",
+          "26",
+          "13",
+          "11",
+          "12",
+          "10",
+          "9",
+          "9",
+          "7",
+          "5",
+          "",
+          "C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Wind"
+          ],
+          [
+            "Anima"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Zeis",
+          "Wyvern Rider",
+          "7",
+          "28",
+          "14",
+          "9",
+          "8",
+          "6",
+          "12",
+          "2",
+          "10",
+          "7",
+          "",
+          "D"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Thunder"
+          ],
+          [
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Zeis (HM)",
+          "37",
+          "19",
+          "13",
+          "11",
+          "9",
+          "15",
+          "3"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Name",
+          "Class",
+          "Lv",
+          "HP",
+          "S/M",
+          "Skl",
+          "Spd",
+          "Lck",
+          "Def",
+          "Res",
+          "Con",
+          "Mov",
+          "Affin",
+          "Weapon ranks"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Douglas",
+          "General",
+          "8",
+          "46",
+          "19",
+          "13",
+          "8",
+          "11",
+          "20",
+          "5",
+          "17",
+          "5",
+          "",
+          "A, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Thunder"
+          ],
+          [
+            "Lance",
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Niime",
+          "Druid",
+          "18",
+          "25",
+          "21",
+          "20",
+          "16",
+          "15",
+          "5",
+          "18",
+          "4",
+          "6",
+          "",
+          "A, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Staff",
+            "Dark"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Dayan",
+          "Nomadic Trooper",
+          "12",
+          "43",
+          "14",
+          "16",
+          "20",
+          "12",
+          "10",
+          "12",
+          "9",
+          "8",
+          "",
+          "C, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Sword",
+            "Bow"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Juno",
+          "Falcon Knight",
+          "9",
+          "33",
+          "11",
+          "14",
+          "16",
+          "14",
+          "8",
+          "12",
+          "7",
+          "8",
+          "",
+          "E, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinLight"
+          ],
+          [
+            "Sword",
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Yodel",
+          "Bishop",
+          "20",
+          "35",
+          "19",
+          "18",
+          "14",
+          "11",
+          "5",
+          "30",
+          "6",
+          "6",
+          "",
+          "S, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinLight"
+          ],
+          [
+            "Staff",
+            "Light"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Karel",
+          "Swordmaster",
+          "19",
+          "44",
+          "20",
+          "28",
+          "23",
+          "18",
+          "15",
+          "13",
+          "9",
+          "6",
+          "",
+          "S"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinLight"
+          ],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Narshen",
+          "Wyvern Lord",
+          "10",
+          "46",
+          "16",
+          "13",
+          "16",
+          "13",
+          "20",
+          "12",
+          "11",
+          "8",
+          "–",
+          "A, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Sword",
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Gale",
+          "Wyvern Lord",
+          "18",
+          "49",
+          "22",
+          "15",
+          "13",
+          "11",
+          "22",
+          "14",
+          "12",
+          "8",
+          "",
+          "A, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Ice"
+          ],
+          [
+            "Sword",
+            "Lance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Hector",
+          "General",
+          "20",
+          "43",
+          "18",
+          "20",
+          "10",
+          "15",
+          "30",
+          "15",
+          "20",
+          "5",
+          "",
+          "A, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Thunder"
+          ],
+          [
+            "Lance",
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Brunya",
+          "Sage",
+          "20",
+          "38",
+          "23",
+          "18",
+          "18",
+          "17",
+          "18",
+          "25",
+          "6",
+          "6",
+          "–",
+          "A, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Staff",
+            "Anima"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Eliwood",
+          "Paladin",
+          "20",
+          "48",
+          "25",
+          "20",
+          "22",
+          "14",
+          "24",
+          "15",
+          "11",
+          "8",
+          "",
+          "A, S, C"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Sword",
+            "Lance",
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Murdoch",
+          "General",
+          "20",
+          "60",
+          "27",
+          "19",
+          "12",
+          "12",
+          "25",
+          "17",
+          "20",
+          "5",
+          "–",
+          "A, A"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Lance",
+            "Axe"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Zephiel",
+          "King",
+          "20",
+          "60",
+          "24",
+          "20",
+          "14",
+          "15",
+          "22",
+          "24",
+          "17",
+          "5",
+          "–",
+          "S"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Sword"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Guinevere",
+          "Sage",
+          "20",
+          "29",
+          "24",
+          "24",
+          "23",
+          "24",
+          "13",
+          "25",
+          "5",
+          "6",
+          "",
+          "A, B, S"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "AffinLight"
+          ],
+          [
+            "Staff",
+            "Anima",
+            "Light"
+          ]
+        ]
+      }
+    ],
+    "growthRates": [
+      {
+        "cells": [
+          "Name",
+          "HP",
+          "S/M",
+          "Skl",
+          "Spd",
+          "Lck",
+          "Def",
+          "Res"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Roy",
+          "80",
+          "40",
+          "50",
+          "40",
+          "60",
+          "25",
+          "30"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Marcus",
+          "60",
+          "25",
+          "20",
+          "25",
+          "20",
+          "15",
+          "20"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Allen",
+          "85",
+          "45",
+          "40",
+          "45",
+          "40",
+          "25",
+          "10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lance",
+          "80",
+          "40",
+          "45",
+          "50",
+          "35",
+          "20",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wolt",
+          "80",
+          "40",
+          "50",
+          "40",
+          "40",
+          "20",
+          "10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Bors",
+          "90",
+          "30",
+          "30",
+          "40",
+          "50",
+          "35",
+          "10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Merlinus",
+          "100",
+          "0",
+          "50",
+          "50",
+          "100",
+          "20",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Ellen",
+          "45",
+          "50",
+          "30",
+          "20",
+          "70",
+          "5",
+          "60"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dieck",
+          "90",
+          "40",
+          "40",
+          "30",
+          "35",
+          "20",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wade",
+          "75",
+          "50",
+          "45",
+          "20",
+          "45",
+          "30",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lott",
+          "80",
+          "30",
+          "30",
+          "35",
+          "30",
+          "40",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Thany",
+          "45",
+          "30",
+          "55",
+          "60",
+          "60",
+          "10",
+          "25"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Chad",
+          "85",
+          "50",
+          "50",
+          "80",
+          "60",
+          "25",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lugh",
+          "50",
+          "40",
+          "50",
+          "50",
+          "35",
+          "15",
+          "30"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Clarine",
+          "40",
+          "30",
+          "40",
+          "50",
+          "65",
+          "10",
+          "40"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Rutger",
+          "80",
+          "30",
+          "60",
+          "50",
+          "30",
+          "20",
+          "20"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Saul",
+          "60",
+          "40",
+          "45",
+          "45",
+          "15",
+          "15",
+          "50"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dorothy",
+          "85",
+          "50",
+          "45",
+          "45",
+          "35",
+          "15",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Sue",
+          "55",
+          "30",
+          "55",
+          "65",
+          "50",
+          "10",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zealot",
+          "75",
+          "25",
+          "20",
+          "20",
+          "15",
+          "30",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Name",
+          "HP",
+          "S/M",
+          "Skl",
+          "Spd",
+          "Lck",
+          "Def",
+          "Res"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Treck",
+          "85",
+          "40",
+          "30",
+          "35",
+          "50",
+          "30",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Noah",
+          "75",
+          "30",
+          "45",
+          "30",
+          "40",
+          "30",
+          "10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Astohl",
+          "90",
+          "35",
+          "40",
+          "50",
+          "15",
+          "20",
+          "20"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lilina",
+          "45",
+          "75",
+          "20",
+          "35",
+          "50",
+          "10",
+          "35"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wendy",
+          "85",
+          "40",
+          "40",
+          "40",
+          "45",
+          "30",
+          "10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Barth",
+          "100",
+          "60",
+          "25",
+          "20",
+          "20",
+          "40",
+          "2"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Oujay",
+          "85",
+          "40",
+          "30",
+          "45",
+          "55",
+          "20",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Fir",
+          "75",
+          "25",
+          "50",
+          "55",
+          "50",
+          "15",
+          "20"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Shin",
+          "75",
+          "45",
+          "50",
+          "50",
+          "25",
+          "10",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Gonzales",
+          "90",
+          "60",
+          "15",
+          "50",
+          "35",
+          "25",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Geese",
+          "85",
+          "50",
+          "30",
+          "40",
+          "40",
+          "20",
+          "10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Klein",
+          "60",
+          "35",
+          "40",
+          "45",
+          "50",
+          "15",
+          "25"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Tate",
+          "60",
+          "40",
+          "45",
+          "55",
+          "40",
+          "15",
+          "20"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lalum",
+          "70",
+          "10",
+          "5",
+          "70",
+          "80",
+          "20",
+          "30"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Echidna",
+          "75",
+          "30",
+          "25",
+          "30",
+          "20",
+          "15",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Elphin",
+          "80",
+          "5",
+          "5",
+          "65",
+          "65",
+          "25",
+          "55"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Bartre",
+          "70",
+          "40",
+          "20",
+          "30",
+          "20",
+          "20",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Ray",
+          "55",
+          "45",
+          "55",
+          "40",
+          "15",
+          "15",
+          "35"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Cath",
+          "80",
+          "40",
+          "45",
+          "85",
+          "50",
+          "15",
+          "20"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Miredy",
+          "75",
+          "50",
+          "50",
+          "45",
+          "25",
+          "20",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Name",
+          "HP",
+          "S/M",
+          "Skl",
+          "Spd",
+          "Lck",
+          "Def",
+          "Res"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Percival",
+          "75",
+          "30",
+          "25",
+          "35",
+          "20",
+          "20",
+          "10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Cecilia",
+          "60",
+          "35",
+          "45",
+          "25",
+          "25",
+          "20",
+          "25"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Sofiya",
+          "60",
+          "55",
+          "40",
+          "30",
+          "20",
+          "20",
+          "55"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Igrene",
+          "70",
+          "35",
+          "25",
+          "35",
+          "20",
+          "10",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Garret",
+          "70",
+          "45",
+          "25",
+          "25",
+          "15",
+          "15",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Fa",
+          "130",
+          "90",
+          "85",
+          "65",
+          "150",
+          "30",
+          "50"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Hugh",
+          "75",
+          "30",
+          "30",
+          "45",
+          "25",
+          "20",
+          "15"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zeis",
+          "80",
+          "60",
+          "50",
+          "35",
+          "20",
+          "25",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Douglas",
+          "60",
+          "30",
+          "30",
+          "30",
+          "20",
+          "30",
+          "5"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Niime",
+          "25",
+          "15",
+          "15",
+          "15",
+          "5",
+          "15",
+          "20"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dayan",
+          "55",
+          "20",
+          "20",
+          "15",
+          "20",
+          "10",
+          "10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Juno",
+          "50",
+          "20",
+          "35",
+          "30",
+          "45",
+          "10",
+          "10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Yodel",
+          "20",
+          "30",
+          "15",
+          "10",
+          "20",
+          "10",
+          "20"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Karel",
+          "210",
+          "130",
+          "140",
+          "140",
+          "120",
+          "110",
+          "100"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "cells": [
+          "Character",
+          "Option 1",
+          "Option 2",
+          "Option 3",
+          "Option 4",
+          "Option 5",
+          "Option 6",
+          "Option 7",
+          "Option 8",
+          "Option 9",
+          "Option 10"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Roy",
+          "Lilina 56 +4",
+          "Marcus 30 +2",
+          "Wolt 30 +2",
+          "Cecilia 20 +2",
+          "Sofiya 1 +1",
+          "Sue 1 +1",
+          "Thany 1 +1",
+          "Lalum 1 +1",
+          "Allen 20 +2",
+          "Lance 20 +2"
+        ],
+        "imageAlts": [
+          [
+            "Fire"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinAnima"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Marcus",
+          "Roy 30 +2",
+          "Allen 20 +2",
+          "Lance 20 +2",
+          "Wolt 20 +2",
+          "Lilina 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinLight"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Allen",
+          "Tate 1+ 1",
+          "Marcus 20 +2",
+          "Wolt 20 +2",
+          "Lance 30 +2",
+          "Wade 1 +1",
+          "Roy 20 +2",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Fire"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Fire"
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lance",
+          "Marcus 20 +2",
+          "Wolt 20 +2",
+          "Allen 30 +2",
+          "Lott 1 +1",
+          "Roy 20 +2",
+          "Clarine 1 +1",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinAnima"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wolt",
+          "Roy 30 +2",
+          "Marcus 20 +2",
+          "Allen 20 +2",
+          "Lance 20 + 2",
+          "Sue 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Wind"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Bors",
+          "Lilina 30 + 2",
+          "Barth 20 +2",
+          "Wendy 35 +3",
+          "Astohl 1 +2",
+          "Oujay 1 +2",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Wind"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Wind"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Ellen",
+          "Miredy 20 + 2",
+          "Zeis 10 +2",
+          "Saul 1 +1",
+          "Lugh 30 +1",
+          "Chad 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Wind"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dieck",
+          "Wade 10 +2",
+          "Lott 10 +2",
+          "Thany 10 +2",
+          "Clarine 1 +1",
+          "Klein 40 +1",
+          "Rutger 10 + 1",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Thunder"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinDark"
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wade",
+          "Dieck 10 +2",
+          "Thany 10 +2",
+          "Lott 40 +2",
+          "Echidna 1 +1",
+          "Allen 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lott",
+          "Dieck 10 +2",
+          "Thany 10 +2",
+          "Wade 40 +2",
+          "Echidna 1 +1",
+          "Lance 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinAnima"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Thany",
+          "Dieck 10 +2",
+          "Wade 10 +2",
+          "Lott 10 +2",
+          "Juno 30 +3",
+          "Tate 30 +3",
+          "Roy 1 +1",
+          "Zealot 30 +1",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Wind"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinDark"
+          ],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Chad",
+          "Lugh 30 +2",
+          "Ray 1 +2",
+          "Cath 1 +1",
+          "Ellen 1 +1",
+          "Hugh 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Thunder"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Wind"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lugh",
+          "Ray 20 +3",
+          "Chad 30 +2",
+          "Ellen 30 +1",
+          "Hugh 5 +1",
+          "Miredy 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Fire"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinDark"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Clarine",
+          "Klein 40 +3",
+          "Rutger 10 +2",
+          "Dieck 1 +1",
+          "Lance 1 +1",
+          "Dorothy 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Thunder"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Fire"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Rutger",
+          "Clarine 10 +2",
+          "Dayan 1 +1",
+          "Dieck 10 +1",
+          "Karel 1 +1",
+          "Fir 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinDark"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Fire"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Saul",
+          "Dorothy 20 +2",
+          "Yodel 40 +2",
+          "Cecilia 1 +1",
+          "Igrene 1 +1",
+          "Ellen 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Wind"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dorothy",
+          "Saul 20 +2",
+          "Percival 1 +1",
+          "Yodel 40 +2",
+          "Shin 1 +1",
+          "Clarine 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Fire"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Sue",
+          "Dayan 40 +3",
+          "Shin 30 +2",
+          "Fa 1 +1",
+          "Wolt 1 +1",
+          "Roy 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Wind"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zealot",
+          "Noah 10 +2",
+          "Treck 10 +2",
+          "Juno 40 +3",
+          "Tate 30 +1",
+          "Thany 30 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinDark"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Wind"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Treck",
+          "Zealot 10 +2",
+          "Noah 10 +2",
+          "Miredy 1 +1",
+          "Gonzales 1 +1",
+          "Juno 20 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Wind"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinLight"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Noah",
+          "Fir 10 +2",
+          "Zealot 10 +2",
+          "Treck 10 +2",
+          "Juno 20 +1",
+          "Karel 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinAnima"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "AffinLight"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Astohl",
+          "Lilina 30 +2",
+          "Bors 1 +2",
+          "Barth 10 +2",
+          "Wendy 1 +2",
+          "Igrene 10 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinDark"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Ice"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lilina",
+          "Roy 56 +4",
+          "Bors 30 +2",
+          "Barth 30 +2",
+          "Oujay 10 +2",
+          "Gonzales 30 +2",
+          "Marcus 1 +1",
+          "Wendy 30 +2",
+          "Garret 10 +2",
+          "Astohl 30 +2",
+          "Cecilia 50 +1"
+        ],
+        "imageAlts": [
+          [
+            "AffinLight"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "AffinAnima"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          "Wendy",
+          "Lilina 30 +2",
+          "Bors 35 +3",
+          "Barth 20 +2",
+          "Oujay 10 +2",
+          "Astohl 1 +2",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Fire"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinDark"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Barth",
+          "Lilina 30 +2",
+          "Oujay 10 +2",
+          "Bors 20 +2",
+          "Wendy 20 +2",
+          "Astohl 10 +2",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinDark"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Oujay",
+          "Lilina 10 +2",
+          "Barth 10 +2",
+          "Lalum 1 +1",
+          "Wendy 10 +2",
+          "Bors 1 +2",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Wind"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Wind"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Fir",
+          "Bartre 40 +3",
+          "Noah 10 +2",
+          "Karel 30 +3",
+          "Rutger 1 +1",
+          "Shin 1 +2",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Ice"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Shin",
+          "Dayan 40 +2",
+          "Sue 30 +2",
+          "Fir 1 +2",
+          "Dorothy 1 +1",
+          "Zeis 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Gonzales",
+          "Lilina 30 +2",
+          "Echidna 1 +1",
+          "Dayan 1 +1",
+          "Treck 1 +1",
+          "Garret 20 +1",
+          "Bartre 1 +1",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Thunder"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Geese",
+          "Echidna 1 +1",
+          "Cath 20 +1",
+          "Douglas 1 +1",
+          "Lalum 1 +1",
+          "Garret 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Fire"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Wind"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Klein",
+          "Clarine 40 +3",
+          "Percival 20 +2",
+          "Dieck 40 +1",
+          "Elphin 10 +2",
+          "Tate 30 +2",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Tate",
+          "Juno 30 +3",
+          "Thany 30 +3",
+          "Allen 1 +1",
+          "Zealot 30 +1",
+          "Klein 30 +2",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Ice"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lalum",
+          "Echidna 20 +2",
+          "Garret 1 +1",
+          "Oujay 1 +1",
+          "Geese 1 +1",
+          "Roy 1 +1",
+          "Douglas 30 +3",
+          "Percival 1 +2",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Thunder"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinDark"
+          ],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Echidna",
+          "Geese 1 +1",
+          "Lalum 20 +2",
+          "Gonzales 1 +1",
+          "Wade 1 +1",
+          "Lott 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Elphin",
+          "Percival 20 +2",
+          "Fa 1 +1",
+          "Douglas 30 +2",
+          "Klein 10 +2",
+          "Cecilia 20 +2",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinLight"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Bartre",
+          "Fir 40 +3",
+          "Karel 20 +2",
+          "Gonzales 1 +1",
+          "Zeis 1 +1",
+          "Cath 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Thunder"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Ray",
+          "Lugh 20 +3",
+          "Chad 1 +2",
+          "Hugh 5 +1",
+          "Niime 1 +1",
+          "Sofiya 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "AffinDark"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Cath",
+          "Geese 20 +1",
+          "Chad 1 +1",
+          "Garret 1 +1",
+          "Hugh 1 +1",
+          "Bartre 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinAnima"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Miredy",
+          "Zeis 20 +3",
+          "Ellen 20 +2",
+          "Lugh 1 +1",
+          "Yodel 1 +1",
+          "Treck 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinDark"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Wind"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Percival",
+          "Klein 20 +2",
+          "Cecilia 30 +2",
+          "Dorothy 1 +1",
+          "Elphin 20 +2",
+          "Douglas 30 +2",
+          "Lalum 1 +2",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinDark"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Cecilia",
+          "Roy 20 +2",
+          "Percival 30 +2",
+          "Saul 1 +1",
+          "Elphin 20 +2",
+          "Douglas 30 +2",
+          "Lilina 50 +1",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinAnima"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinLight"
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Sofiya",
+          "Fa 30 +3",
+          "Igrene 30 +2",
+          "Ray 1 +1",
+          "Roy 1 +1",
+          "Niime 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinDark"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Igrene",
+          "Fa 30 +3",
+          "Sofiya 30 +2",
+          "Saul 1 +1",
+          "Astohl 10 +1",
+          "Douglas 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Ice"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Garret",
+          "Lilina 10 +2",
+          "Geese 1 +1",
+          "Lalum 1 +1",
+          "Cath 1 +1",
+          "Gonzales 20 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Wind"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Fa",
+          "Sofiya 30 +3",
+          "Igrene 30 +3",
+          "Sue 1 +1",
+          "Niime 1 +1",
+          "Elphin 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinLight"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "AffinLight"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Hugh",
+          "Niime 40 +1",
+          "Ray 5 +1",
+          "Cath 1 +1",
+          "Chad 1 +1",
+          "Lugh 5 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Wind"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Fire"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zeis",
+          "Miredy 20 +3",
+          "Ellen 10 +2",
+          "Karel 1 +1",
+          "Bartre 1 +1",
+          "Shin 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Thunder"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "Ice"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Douglas",
+          "Elphin 30 +2",
+          "Geese 1 +1",
+          "Igrene 1 +1",
+          "Percival 30 +2",
+          "Cecilia 30 +2",
+          "Lalum 30 +3",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "Thunder"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Thunder"
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Niime",
+          "Hugh 40 +1",
+          "Yodel 40 +1",
+          "Ray 1 +1",
+          "Sofiya 1 +1",
+          "Fa 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinAnima"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "AffinLight"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dayan",
+          "Shin 40 +2",
+          "Sue 40 +3",
+          "Yodel 1 +1",
+          "Gonzales 1 +1",
+          "Rutger 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinAnima"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinLight"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinDark"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Juno",
+          "Tate 30 +3",
+          "Thany 30 +3",
+          "Zealot 40 +3",
+          "Treck 20 +1",
+          "Noah 20 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinLight"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Wind"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Yodel",
+          "Niime 40 +1",
+          "Saul 40 +2",
+          "Dorothy 40 +2",
+          "Dayan 1 +1",
+          "Miredy 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinLight"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "Ice"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [
+            "AffinDark"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Karel",
+          "Fir 30 +3",
+          "Bartre 20 +2",
+          "Rutger 1 +1",
+          "Zeis 1 +1",
+          "Noah 1 +1",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "imageAlts": [
+          [
+            "AffinLight"
+          ],
+          [
+            "Fire"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinDark"
+          ],
+          [
+            "Thunder"
+          ],
+          [
+            "AffinAnima"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    ]
+  }
+}

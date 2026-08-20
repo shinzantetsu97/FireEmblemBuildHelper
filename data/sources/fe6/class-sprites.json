@@ -1,0 +1,995 @@
+{
+  "gameId": "fe6",
+  "sourcePageUrl": "https://fireemblem.fandom.com/wiki/List_of_classes_in_Fire_Emblem:_The_Binding_Blade",
+  "assets": [
+    {
+      "id": "lord",
+      "sourceClassName": "Lord",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE6%20Roy%20Lord%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/a/af/FE6_Roy_Lord_Map_Sprite.gif/revision/latest?cb=20140124005616&format=original",
+      "localFileName": "lord.gif",
+      "sha256": "ef59a9975ccb76a2eb8c4521f8a8603de688de9c691e23d86bf2fe67fdc564ca",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/a/af/FE6_Roy_Lord_Map_Sprite.gif/revision/latest?cb=20140124005616",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "masterlord",
+      "sourceClassName": "Master Lord",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE6%20Master%20Lord%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/7/7c/FE6_Master_Lord_Map_Sprite.gif/revision/latest?cb=20160410131719&format=original",
+      "localFileName": "masterlord.gif",
+      "sha256": "c63edaf326045b91aa947fe776ad1849f0c780c62c06859d0c2d9f84568b6643",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/7/7c/FE6_Master_Lord_Map_Sprite.gif/revision/latest?cb=20160410131719",
+      "mime": "image/gif",
+      "width": 18,
+      "height": 18
+    },
+    {
+      "id": "mercenary",
+      "sourceClassName": "Mercenary",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Mercenary%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/6/65/FE8_Mercenary_Map_Sprite.gif/revision/latest?cb=20140123070513&format=original",
+      "localFileName": "mercenary.gif",
+      "sha256": "0a8552a868fb6a377743f956a83d66dd4fed9e32001083b9b8f61b800188cf96",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/6/65/FE8_Mercenary_Map_Sprite.gif/revision/latest?cb=20140123070513",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "hero",
+      "sourceClassName": "Hero",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Hero%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/1/1f/FE8_Hero_Map_Sprite.gif/revision/latest?cb=20140123070220&format=original",
+      "localFileName": "hero.gif",
+      "sha256": "aa4bd0db9bd35daef22b0570cbafef48d58dbf01a08d8bdf35ed65c0aa9ecba3",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/1/1f/FE8_Hero_Map_Sprite.gif/revision/latest?cb=20140123070220",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "myrmidon",
+      "sourceClassName": "Myrmidon",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Male%20Myrmidon%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/7/7b/FE8_Male_Myrmidon_Map_Sprite.gif/revision/latest?cb=20140123070221&format=original",
+      "localFileName": "myrmidon.gif",
+      "sha256": "f0fba3bb5ce04fc5ff082dd8960e6884d30d02f834027e3313c82fb6e00a95dd",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/7/7b/FE8_Male_Myrmidon_Map_Sprite.gif/revision/latest?cb=20140123070221",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "swordmaster",
+      "sourceClassName": "Swordmaster",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Male%20Swordmaster%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/f/f5/FE8_Male_Swordmaster_Map_Sprite.gif/revision/latest?cb=20140123070222&format=original",
+      "localFileName": "swordmaster.gif",
+      "sha256": "19642525690f2ac2973eaa19dc5df11176fa3366b6f0ca318ac827ad4500aa4f",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/f/f5/FE8_Male_Swordmaster_Map_Sprite.gif/revision/latest?cb=20140123070222",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "thief",
+      "sourceClassName": "Thief",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Thief%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/a/a4/FE8_Thief_Map_Sprite.gif/revision/latest?cb=20140123070616&format=original",
+      "localFileName": "thief.gif",
+      "sha256": "9be7992bd498cd904b40dffeebe0c961f09809c193c6623999887a72c43f299e",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/a/a4/FE8_Thief_Map_Sprite.gif/revision/latest?cb=20140123070616",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "knight",
+      "sourceClassName": "Knight",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Knight%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/c/c9/FE8_Knight_Map_Sprite.gif/revision/latest?cb=20140123070220&format=original",
+      "localFileName": "knight.gif",
+      "sha256": "af880d4804dd85956c970f19e537d6bc3767bde04cb36a3de2f5924a0436909f",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/c/c9/FE8_Knight_Map_Sprite.gif/revision/latest?cb=20140123070220",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "general",
+      "sourceClassName": "General",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20General%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/c/c6/FE8_General_Map_Sprite.gif/revision/latest?cb=20140123070219&format=original",
+      "localFileName": "general.gif",
+      "sha256": "e1b0be4e3c30ae324458de62634ceb862e203d1e17e6c86d3d8723f7f0afa20e",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/c/c6/FE8_General_Map_Sprite.gif/revision/latest?cb=20140123070219",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 22
+    },
+    {
+      "id": "soldier",
+      "sourceClassName": "Soldier",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3ASoldier-GBA-map-sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/9/95/Soldier-GBA-map-sprite.gif/revision/latest?cb=20150904090857&format=original",
+      "localFileName": "soldier.gif",
+      "sha256": "e0b9fc27515168c2526934adca8a65d89a39ef83aad18c87abb0ab7c8b38701c",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/9/95/Soldier-GBA-map-sprite.gif/revision/latest?cb=20150904090857",
+      "mime": "image/gif",
+      "width": 15,
+      "height": 15
+    },
+    {
+      "id": "fighter",
+      "sourceClassName": "Fighter",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Fighter%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/8/8b/FE8_Fighter_Map_Sprite.gif/revision/latest?cb=20140123070056&format=original",
+      "localFileName": "fighter.gif",
+      "sha256": "a856266492f3a1e783a5625b6d61fd2ced964a0b100d1a7b583ad029e3c3dd8b",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/8/8b/FE8_Fighter_Map_Sprite.gif/revision/latest?cb=20140123070056",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "warrior",
+      "sourceClassName": "Warrior",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Warrior%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/e/e3/FE8_Warrior_Map_Sprite.gif/revision/latest?cb=20140123070617&format=original",
+      "localFileName": "warrior.gif",
+      "sha256": "3be826acf8694583cc04c72a1f9dc7acb6f2ca19bfaaf5764227ea3395f7810a",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/e/e3/FE8_Warrior_Map_Sprite.gif/revision/latest?cb=20140123070617",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "bandit",
+      "sourceClassName": "Bandit",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE6Brigand.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/8/8c/FE6Brigand.gif/revision/latest?cb=20150908105728&format=original",
+      "localFileName": "bandit.gif",
+      "sha256": "e63aa27cd61d999f8ec08d6ceb0eaa5dac4900f202df8011253276a2eae56261",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/8/8c/FE6Brigand.gif/revision/latest?cb=20150908105728",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 18
+    },
+    {
+      "id": "pirate",
+      "sourceClassName": "Pirate",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Pirate%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/6/6c/FE8_Pirate_Map_Sprite.gif/revision/latest?cb=20140123070515&format=original",
+      "localFileName": "pirate.gif",
+      "sha256": "77348d53c460af91850622cf5ca6a85f16867858a280a5b1cbae74d992c985e7",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/6/6c/FE8_Pirate_Map_Sprite.gif/revision/latest?cb=20140123070515",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "berserker",
+      "sourceClassName": "Berserker",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Berserker%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/3/38/FE8_Berserker_Map_Sprite.gif/revision/latest?cb=20140123065949&format=original",
+      "localFileName": "berserker.gif",
+      "sha256": "3c1cc42d04d0e1a1b7233cf10f89ba75ac5167d9cab62e99f34f1cae1cfc1230",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/3/38/FE8_Berserker_Map_Sprite.gif/revision/latest?cb=20140123065949",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "archer",
+      "sourceClassName": "Archer",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE7archer.png",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/b/bb/FE7archer.png/revision/latest?cb=20121221021516&format=original",
+      "localFileName": "archer.png",
+      "sha256": "6058ed3a1cf02389b2ad6574ff31c80c4ca45095508c3810da8c1325cf0981c3",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/b/bb/FE7archer.png/revision/latest?cb=20121221021516",
+      "mime": "image/png",
+      "width": 15,
+      "height": 16
+    },
+    {
+      "id": "sniper",
+      "sourceClassName": "Sniper",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Sniper%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/3/3c/FE8_Sniper_Map_Sprite.gif/revision/latest?cb=20140123070615&format=original",
+      "localFileName": "sniper.gif",
+      "sha256": "0559fdf642038e74613b55213436a6dcb412ae062f2f09e68a0b195b94733b82",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/3/3c/FE8_Sniper_Map_Sprite.gif/revision/latest?cb=20140123070615",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "nomad",
+      "sourceClassName": "Nomad",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE7%20Nomad%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/f/f8/FE7_Nomad_Map_Sprite.gif/revision/latest?cb=20140124001640&format=original",
+      "localFileName": "nomad.gif",
+      "sha256": "2d0f5ac2b04e95afcd08e878e8465ede1b105fc157884f1d9ff8d0548b191a74",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/f/f8/FE7_Nomad_Map_Sprite.gif/revision/latest?cb=20140124001640",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "nomadtrooper",
+      "sourceClassName": "Nomad Trooper",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE7%20Nomadic%20Trooper%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/7/7f/FE7_Nomadic_Trooper_Map_Sprite.gif/revision/latest?cb=20140124001640&format=original",
+      "localFileName": "nomadtrooper.gif",
+      "sha256": "7ebec2537f81ca398acffaffdbf31344b163872944907bcd622d1855b2775ccc",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/7/7f/FE7_Nomadic_Trooper_Map_Sprite.gif/revision/latest?cb=20140124001640",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "cavalier",
+      "sourceClassName": "Cavalier",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Cavalier%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/8/8f/FE8_Cavalier_Map_Sprite.gif/revision/latest?cb=20140123065950&format=original",
+      "localFileName": "cavalier.gif",
+      "sha256": "6f28879b81e4efd7335f22e0eb9ec1693d4c38e6389121ed6b45257798eda22a",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/8/8f/FE8_Cavalier_Map_Sprite.gif/revision/latest?cb=20140123065950",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "paladin",
+      "sourceClassName": "Paladin",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Paladin%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/9/9f/FE8_Paladin_Map_Sprite.gif/revision/latest?cb=20140123070514&format=original",
+      "localFileName": "paladin.gif",
+      "sha256": "48e9b6c4fadd2d907a3e7672875a8a1ff7bbc3c5604f713dbe43875409b9a034",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/9/9f/FE8_Paladin_Map_Sprite.gif/revision/latest?cb=20140123070514",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "pegasusknight",
+      "sourceClassName": "Pegasus Knight",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Pegasus%20Knight%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/3/3c/FE8_Pegasus_Knight_Map_Sprite.gif/revision/latest?cb=20140123070514&format=original",
+      "localFileName": "pegasusknight.gif",
+      "sha256": "45d5bdf829b58619494f98e9ef644fe09969d6496132c27e364d4fce77879df2",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/3/3c/FE8_Pegasus_Knight_Map_Sprite.gif/revision/latest?cb=20140123070514",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "falconknight",
+      "sourceClassName": "Falcon Knight",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Falconknight%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/0/0a/FE8_Falconknight_Map_Sprite.gif/revision/latest?cb=20140123070054&format=original",
+      "localFileName": "falconknight.gif",
+      "sha256": "d4102c4df1eccaa552a9d65e572d9c195afa704372eb8e152997ad8ce03282ce",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/0/0a/FE8_Falconknight_Map_Sprite.gif/revision/latest?cb=20140123070054",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "wyvernrider",
+      "sourceClassName": "Wyvern Rider",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Wyvern%20Rider%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/6/63/FE8_Wyvern_Rider_Map_Sprite.gif/revision/latest?cb=20140123070658&format=original",
+      "localFileName": "wyvernrider.gif",
+      "sha256": "af59bd18519af179db11656c9453468f7e0e21a2b66107871b5cf6b4048de95f",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/6/63/FE8_Wyvern_Rider_Map_Sprite.gif/revision/latest?cb=20140123070658",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "wyvernlord",
+      "sourceClassName": "Wyvern Lord",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Wyvern%20Lord%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/7/7b/FE8_Wyvern_Lord_Map_Sprite.gif/revision/latest?cb=20140123070658&format=original",
+      "localFileName": "wyvernlord.gif",
+      "sha256": "dd9ecdb1d2134f5392d83f49258289744516b32c2fd917f526591ea4fb7369c4",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/7/7b/FE8_Wyvern_Lord_Map_Sprite.gif/revision/latest?cb=20140123070658",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "priest",
+      "sourceClassName": "Priest",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Priest%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/1/1c/FE8_Priest_Map_Sprite.gif/revision/latest?cb=20140123070516&format=original",
+      "localFileName": "priest.gif",
+      "sha256": "74cf7bf1cbd5d72655104312476f35e9ba43476b62f82706ad750350b735f09d",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/1/1c/FE8_Priest_Map_Sprite.gif/revision/latest?cb=20140123070516",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "bishop",
+      "sourceClassName": "Bishop",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Male%20Bishop%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/f/f7/FE8_Male_Bishop_Map_Sprite.gif/revision/latest?cb=20140123070220&format=original",
+      "localFileName": "bishop.gif",
+      "sha256": "060ef5ad1bfaf3b7b83ca7bf55e62d08c90d4a1f35c37b2d6bb8d078515de07b",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/f/f7/FE8_Male_Bishop_Map_Sprite.gif/revision/latest?cb=20140123070220",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "troubadour",
+      "sourceClassName": "Troubadour",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Troubadour%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/4/4f/FE8_Troubadour_Map_Sprite.gif/revision/latest?cb=20140123070616&format=original",
+      "localFileName": "troubadour.gif",
+      "sha256": "e02d45f2d7100245f92a8f663a524038260868bdef4cd100d12938a4eb0160e0",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/4/4f/FE8_Troubadour_Map_Sprite.gif/revision/latest?cb=20140123070616",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "valkyrie",
+      "sourceClassName": "Valkyrie",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Valkyrie%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/d/da/FE8_Valkyrie_Map_Sprite.gif/revision/latest?cb=20140123070616&format=original",
+      "localFileName": "valkyrie.gif",
+      "sha256": "ca47c844117a8276c49d2407bb6ba83786399ac04f9866469d5ed992df5f428a",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/d/da/FE8_Valkyrie_Map_Sprite.gif/revision/latest?cb=20140123070616",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "mage",
+      "sourceClassName": "Mage",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Male%20Mage%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/b/b1/FE8_Male_Mage_Map_Sprite.gif/revision/latest?cb=20140123070221&format=original",
+      "localFileName": "mage.gif",
+      "sha256": "95a0441a4706e896872743f7424e57e60544285e739124f902228c505828f7c3",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/b/b1/FE8_Male_Mage_Map_Sprite.gif/revision/latest?cb=20140123070221",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "sage",
+      "sourceClassName": "Sage",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Sage%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/2/29/FE8_Sage_Map_Sprite.gif/revision/latest?cb=20140123070615&format=original",
+      "localFileName": "sage.gif",
+      "sha256": "23604bc046c61a2b45d604be4e1ad2b389d1ebcc7ec0f0b5fb3c90dac310545f",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/2/29/FE8_Sage_Map_Sprite.gif/revision/latest?cb=20140123070615",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "shaman",
+      "sourceClassName": "Shaman",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Shaman%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/5/5e/FE8_Shaman_Map_Sprite.gif/revision/latest?cb=20140123070615&format=original",
+      "localFileName": "shaman.gif",
+      "sha256": "22cdb108546dd1852d269e21116dc03484adcd63920a4070238d89df3d1b8dfb",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/5/5e/FE8_Shaman_Map_Sprite.gif/revision/latest?cb=20140123070615",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "druid",
+      "sourceClassName": "Druid",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE6%20Female%20Druid%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/9/98/FE6_Female_Druid_Map_Sprite.gif/revision/latest?cb=20140124005616&format=original",
+      "localFileName": "druid.gif",
+      "sha256": "1edd1878b358a985ec0d322eea19ff5c155a5429df1c09729fc2b2408914c3c8",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/9/98/FE6_Female_Druid_Map_Sprite.gif/revision/latest?cb=20140124005616",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "bard",
+      "sourceClassName": "Bard",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE6%20Bard%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/d/dd/FE6_Bard_Map_Sprite.gif/revision/latest?cb=20140124005615&format=original",
+      "localFileName": "bard.gif",
+      "sha256": "907986eec99d55dc1b157f584f3c40eb7e75e821998679c2ef696c985e988e6a",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/d/dd/FE6_Bard_Map_Sprite.gif/revision/latest?cb=20140124005615",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "dancer",
+      "sourceClassName": "Dancer",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Dancer%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/a/a4/FE8_Dancer_Map_Sprite.gif/revision/latest?cb=20140123065950&format=original",
+      "localFileName": "dancer.gif",
+      "sha256": "6c5aec98de32341f9dcae80c03dc04272e81e95102472c6f7bf80013c78ad86e",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/a/a4/FE8_Dancer_Map_Sprite.gif/revision/latest?cb=20140123065950",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "civilian",
+      "sourceClassName": "Civilian",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3ACivilian.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/3/32/Civilian.gif/revision/latest?cb=20150909022315&format=original",
+      "localFileName": "civilian.gif",
+      "sha256": "6ad7713a6f4e6bcf647b125147d8f19e5edac59a71841479789d590247cc7125",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/3/32/Civilian.gif/revision/latest?cb=20150909022315",
+      "mime": "image/gif",
+      "width": 15,
+      "height": 17
+    },
+    {
+      "id": "transporter",
+      "sourceClassName": "Transporter",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE6%20Wagon%20Transporter%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/d/df/FE6_Wagon_Transporter_Map_Sprite.gif/revision/latest?cb=20140124005617&format=original",
+      "localFileName": "transporter.gif",
+      "sha256": "3b0e23e4452ccb6ac48f34d440b1d7b6d6497a730a1beac3356b8a07ecbb9174",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/d/df/FE6_Wagon_Transporter_Map_Sprite.gif/revision/latest?cb=20140124005617",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 24
+    },
+    {
+      "id": "manakete",
+      "sourceClassName": "Manakete",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AMamkute.png",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/1/18/Mamkute.png/revision/latest?cb=20131013131611&format=original",
+      "localFileName": "manakete.png",
+      "sha256": "de39eab43931027d2ca14554bc11b88d5fa45046b8de443cddd436b88b6a6a63",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/1/18/Mamkute.png/revision/latest?cb=20131013131611",
+      "mime": "image/png",
+      "width": 72,
+      "height": 72
+    },
+    {
+      "id": "king",
+      "sourceClassName": "King",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AKing.png",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/1/1d/King.png/revision/latest?cb=20131013130211&format=original",
+      "localFileName": "king.png",
+      "sha256": "01f336102ca0a5fdfb2f82446fbbfaacf428e26e4bc9d5363ee6dfe3dc044236",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/1/1d/King.png/revision/latest?cb=20131013130211",
+      "mime": "image/png",
+      "width": 16,
+      "height": 26
+    },
+    {
+      "id": "demondragon",
+      "sourceClassName": "Demon Dragon",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE6Demondragon.png",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/f/f0/FE6Demondragon.png/revision/latest?cb=20130928155733&format=original",
+      "localFileName": "demondragon.png",
+      "sha256": "52c029e016bed592c84d2cf6bf5436ac94235c9bfcd81abc06db944db544ac1a",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/f/f0/FE6Demondragon.png/revision/latest?cb=20130928155733",
+      "mime": "image/png",
+      "width": 90,
+      "height": 95
+    },
+    {
+      "id": "thief-f",
+      "sourceClassName": "Thief (F)",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE6%20Female%20Thief%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/1/13/FE6_Female_Thief_Map_Sprite.gif/revision/latest?cb=20140124005616&format=original",
+      "localFileName": "thief-f.gif",
+      "sha256": "b91a1ed9df2c071d73dceb4eae7e5551d8e5691c7119e623d814e6b7ac973c7e",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/1/13/FE6_Female_Thief_Map_Sprite.gif/revision/latest?cb=20140124005616",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "myrmidon-f",
+      "sourceClassName": "Myrmidon (F)",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Female%20Myrmidon%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/c/cf/FE8_Female_Myrmidon_Map_Sprite.gif/revision/latest?cb=20140123070056&format=original",
+      "localFileName": "myrmidon-f.gif",
+      "sha256": "5fcbac24253c8cc0418dedd9b25733cd07db8dcdfed09d0bc44ac233d05fcf2e",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/c/cf/FE8_Female_Myrmidon_Map_Sprite.gif/revision/latest?cb=20140123070056",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "swordmaster-f",
+      "sourceClassName": "Swordmaster (F)",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Female%20Swordmaster%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/4/4c/FE8_Female_Swordmaster_Map_Sprite.gif/revision/latest?cb=20140123070056&format=original",
+      "localFileName": "swordmaster-f.gif",
+      "sha256": "14444d633b09c1def8c70374fda384c74ebcef5bfdba4155466250b38f5fbf52",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/4/4c/FE8_Female_Swordmaster_Map_Sprite.gif/revision/latest?cb=20140123070056",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "sniper-f",
+      "sourceClassName": "Sniper (F)",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Sniper%20Map%20Sprite%20(F).gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/e/e7/FE8_Sniper_Map_Sprite_%28F%29.gif/revision/latest?cb=20160502072321&format=original",
+      "localFileName": "sniper-f.gif",
+      "sha256": "10bc0e908a9c7fc28d77f67ec47a27e0d4c72e309ab0d5d07ca4fc95611016d4",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/e/e7/FE8_Sniper_Map_Sprite_%28F%29.gif/revision/latest?cb=20160502072321",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 15
+    },
+    {
+      "id": "mage-f",
+      "sourceClassName": "Mage (F)",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Female%20Mage%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/1/12/FE8_Female_Mage_Map_Sprite.gif/revision/latest?cb=20140123070056&format=original",
+      "localFileName": "mage-f.gif",
+      "sha256": "5cffecc1633bcccd3159b3e85f7bea9a0a7d6e3900132395738a5b1978107bf9",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/1/12/FE8_Female_Mage_Map_Sprite.gif/revision/latest?cb=20140123070056",
+      "mime": "image/gif",
+      "width": 15,
+      "height": 15
+    },
+    {
+      "id": "sage-f",
+      "sourceClassName": "Sage (F)",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Female%20Sage%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/e/ee/FE8_Female_Sage_Map_Sprite.gif/revision/latest?cb=20160429155946&format=original",
+      "localFileName": "sage-f.gif",
+      "sha256": "e60e5d54b891ae16edb07cab4786b1c6a4842646c5c7285bda2e6828db6d1a43",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/e/ee/FE8_Female_Sage_Map_Sprite.gif/revision/latest?cb=20160429155946",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "druid-m",
+      "sourceClassName": "Druid (M)",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Druid%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/e/ed/FE8_Druid_Map_Sprite.gif/revision/latest?cb=20140123065951&format=original",
+      "localFileName": "druid-m.gif",
+      "sha256": "c54f60607454be9595a8ca869967443d84ef8237d51edc03d7ff47b007c9343d",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/e/ed/FE8_Druid_Map_Sprite.gif/revision/latest?cb=20140123065951",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "bishop-f",
+      "sourceClassName": "Bishop (F)",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AFE8%20Female%20Bishop%20Map%20Sprite.gif",
+      "sourceImageUrl": "https://static.wikia.nocookie.net/fireemblem/images/7/7b/FE8_Female_Bishop_Map_Sprite.gif/revision/latest?cb=20140123070055&format=original",
+      "localFileName": "bishop-f.gif",
+      "sha256": "a734776fb0f7f33869d3ad9d8f8255f6efd9355cf25b248d9b7b478eee23d0f7",
+      "reviewStatus": "accepted",
+      "rightsNote": "Source-page attribution only. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "https://static.wikia.nocookie.net/fireemblem/images/7/7b/FE8_Female_Bishop_Map_Sprite.gif/revision/latest?cb=20140123070055",
+      "mime": "image/gif",
+      "width": 16,
+      "height": 16
+    }
+  ],
+  "assignments": [
+    {
+      "classId": "lord",
+      "assetId": "lord",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "master_lord",
+      "assetId": "masterlord",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "bard",
+      "assetId": "bard",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "dancer",
+      "assetId": "dancer",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "transporter",
+      "assetId": "transporter",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "mercenary_m",
+      "assetId": "mercenary",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "mercenary_f",
+      "assetId": "mercenary",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "hero_m",
+      "assetId": "hero",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "hero_f",
+      "assetId": "hero",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "myrmidon_m",
+      "assetId": "myrmidon",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "myrmidon_f",
+      "assetId": "myrmidon-f",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "swordmaster_m",
+      "assetId": "swordmaster",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "swordmaster_f",
+      "assetId": "swordmaster-f",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "thief_m",
+      "assetId": "thief",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "thief_f",
+      "assetId": "thief-f",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "soldier",
+      "assetId": "soldier",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "cavalier_m",
+      "assetId": "cavalier",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "cavalier_f",
+      "assetId": "cavalier",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "paladin_m",
+      "assetId": "paladin",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "paladin_f",
+      "assetId": "paladin",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "knight_m",
+      "assetId": "knight",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "knight_f",
+      "assetId": "knight",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "general_m",
+      "assetId": "general",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "general_f",
+      "assetId": "general",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "fighter",
+      "assetId": "fighter",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "warrior",
+      "assetId": "warrior",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "brigand",
+      "assetId": "bandit",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "pirate",
+      "assetId": "pirate",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "berserker",
+      "assetId": "berserker",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "archer_m",
+      "assetId": "archer",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "archer_f",
+      "assetId": "archer",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "sniper_m",
+      "assetId": "sniper",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "sniper_f",
+      "assetId": "sniper-f",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "nomad_m",
+      "assetId": "nomad",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "nomad_f",
+      "assetId": "nomad",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "nomad_trooper_m",
+      "assetId": "nomadtrooper",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "nomad_trooper_f",
+      "assetId": "nomadtrooper",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "pegasus_knight",
+      "assetId": "pegasusknight",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "falcon_knight",
+      "assetId": "falconknight",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "wyvern_rider_m",
+      "assetId": "wyvernrider",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "wyvern_rider_f",
+      "assetId": "wyvernrider",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "wyvern_lord_m",
+      "assetId": "wyvernlord",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "wyvern_lord_f",
+      "assetId": "wyvernlord",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "mage_m",
+      "assetId": "mage",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "mage_f",
+      "assetId": "mage-f",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "sage_m",
+      "assetId": "sage",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "sage_f",
+      "assetId": "sage-f",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "shaman_m",
+      "assetId": "shaman",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "shaman_f",
+      "assetId": "shaman",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "druid_m",
+      "assetId": "druid-m",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "druid_f",
+      "assetId": "druid",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "priest_m",
+      "assetId": "priest",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "priest_f",
+      "assetId": "priest",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "bishop_m",
+      "assetId": "bishop",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "bishop_f",
+      "assetId": "bishop-f",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "troubadour",
+      "assetId": "troubadour",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "valkyrie",
+      "assetId": "valkyrie",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "manakete_m",
+      "assetId": "manakete",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "manakete_f",
+      "assetId": "manakete",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "demon_dragon",
+      "assetId": "demondragon",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "civilian_m",
+      "assetId": "civilian",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "civilian_f",
+      "assetId": "civilian",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "king",
+      "assetId": "king",
+      "reviewStatus": "accepted"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "updatedAt": "2026-08-20T05:17:31.781Z",
+  "sources": [
+    {
+      "id": "serenes-fe6-name-chart",
+      "kind": "web",
+      "title": "Binding Blade Name Chart",
+      "location": "https://serenesforest.net/binding-blade/general/name-chart/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/identity/name-chart.html",
+        "retrievedAt": "2026-08-20T05:17:29.493Z",
+        "sha256": "f285bfa104b760dd837e32c7ac888156dfb35fb3147b2750e7147cc763a773b0",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-recruitment",
+      "kind": "web",
+      "title": "Binding Blade Character Recruitment",
+      "location": "https://serenesforest.net/binding-blade/characters/recruitment/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/characters/recruitment.html",
+        "retrievedAt": "2026-08-20T05:17:29.611Z",
+        "sha256": "9ed6f3af5297def88b26bc9d15a10bfcb79702d62b5a2b6c15c626bc276ee28a",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-character-base-stats",
+      "kind": "web",
+      "title": "Binding Blade Character Base Stats",
+      "location": "https://serenesforest.net/binding-blade/characters/base-stats/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/characters/base-stats.html",
+        "retrievedAt": "2026-08-20T05:17:29.744Z",
+        "sha256": "b10f6b786d1261867e40d323efe1654419ec10f5f51a65fc755dd13469e78ff5",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-character-growth-rates",
+      "kind": "web",
+      "title": "Binding Blade Character Growth Rates",
+      "location": "https://serenesforest.net/binding-blade/characters/growth-rates/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/characters/growth-rates.html",
+        "retrievedAt": "2026-08-20T05:17:29.860Z",
+        "sha256": "a1423668d3f5cd68154eedb98c58af573bfa8e0577ed6db3edac008642b3b260",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-supports",
+      "kind": "web",
+      "title": "Binding Blade Supports",
+      "location": "https://serenesforest.net/binding-blade/characters/supports/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/characters/supports.html",
+        "retrievedAt": "2026-08-20T05:17:29.982Z",
+        "sha256": "3aa04590134ae074f366c2c568dc7cdd8fd7b73ee280fe9fd43d1b09465762d6",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-support-calculation",
+      "kind": "web",
+      "title": "Binding Blade Support Calculation",
+      "location": "https://serenesforest.net/binding-blade/characters/supports/calculation/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/characters/support-calculation.html",
+        "retrievedAt": "2026-08-20T05:17:30.096Z",
+        "sha256": "994f42223ef058c651b64017172b0d9e5f4068a30ee7dc64e05f9c1c6f74475e",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-class-introduction",
+      "kind": "web",
+      "title": "Binding Blade Class Introduction",
+      "location": "https://serenesforest.net/binding-blade/classes/introduction/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/classes/introduction.html",
+        "retrievedAt": "2026-08-20T05:17:30.212Z",
+        "sha256": "d36e78472eff6f0dc7426312d4f523d2586e1fedf6ea05bef6f12f444636ceb1",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-class-base-stats",
+      "kind": "web",
+      "title": "Binding Blade Class Base Stats",
+      "location": "https://serenesforest.net/binding-blade/classes/base-stats/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/classes/base-stats.html",
+        "retrievedAt": "2026-08-20T05:17:30.330Z",
+        "sha256": "0098e3f3fdd1324cd37eb1aaae734c39ea472568598c28acea2f75cf009e0567",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-class-maximum-stats",
+      "kind": "web",
+      "title": "Binding Blade Class Maximum Stats",
+      "location": "https://serenesforest.net/binding-blade/classes/maximum-stats/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/classes/maximum-stats.html",
+        "retrievedAt": "2026-08-20T05:17:30.443Z",
+        "sha256": "43e30aacbbed6b1d7a6810a8df211e1c1fce9e64f05a464e25854d64f9f8213e",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-promotion-gains",
+      "kind": "web",
+      "title": "Binding Blade Promotion Gains",
+      "location": "https://serenesforest.net/binding-blade/classes/promotion-gains/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/classes/promotion-gains.html",
+        "retrievedAt": "2026-08-20T05:17:30.565Z",
+        "sha256": "10edca8d65304e6e4e554ae8091bcf4ab87173fa1a68e60e15823173d157985e",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-inventory-swords",
+      "kind": "web",
+      "title": "Binding Blade Swords",
+      "location": "https://serenesforest.net/binding-blade/inventory/swords/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/inventory/swords.html",
+        "retrievedAt": "2026-08-20T05:17:30.683Z",
+        "sha256": "7faed3cff31fee4955250bf9478a4114ed27219e9d87835939c80202713be80a",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-inventory-lances",
+      "kind": "web",
+      "title": "Binding Blade Lances",
+      "location": "https://serenesforest.net/binding-blade/inventory/lances/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/inventory/lances.html",
+        "retrievedAt": "2026-08-20T05:17:30.798Z",
+        "sha256": "3d26a82a2406d559d27bbbdea42a1e0e00b239956c141e22aa95d2c604f447ae",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-inventory-axes",
+      "kind": "web",
+      "title": "Binding Blade Axes",
+      "location": "https://serenesforest.net/binding-blade/inventory/axes/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/inventory/axes.html",
+        "retrievedAt": "2026-08-20T05:17:31.084Z",
+        "sha256": "d18f5e4b7760833c06a9bfd8cac3528f181b944269edc6d9caf439c14b80914d",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-inventory-bows",
+      "kind": "web",
+      "title": "Binding Blade Bows",
+      "location": "https://serenesforest.net/binding-blade/inventory/bows/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/inventory/bows.html",
+        "retrievedAt": "2026-08-20T05:17:31.201Z",
+        "sha256": "13ddf68931dc8d0680ec3c6f281011cb97493d26e7fb013fa82577ad121ffa63",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-inventory-staves",
+      "kind": "web",
+      "title": "Binding Blade Staves",
+      "location": "https://serenesforest.net/binding-blade/inventory/staves/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/inventory/staves.html",
+        "retrievedAt": "2026-08-20T05:17:31.317Z",
+        "sha256": "1567ae6851754d4950520f6491de5da3797c6ca179e5211e85217edcc2b33580",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-inventory-anima-tomes",
+      "kind": "web",
+      "title": "Binding Blade Anima Tomes",
+      "location": "https://serenesforest.net/binding-blade/inventory/anima-tomes/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/inventory/anima-tomes.html",
+        "retrievedAt": "2026-08-20T05:17:31.433Z",
+        "sha256": "ff1babd1303128a4957e734ee35a99ed187426566462c74a6334ebc4d25d2d3e",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-inventory-light-tomes",
+      "kind": "web",
+      "title": "Binding Blade Light Tomes",
+      "location": "https://serenesforest.net/binding-blade/inventory/light-tomes/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/inventory/light-tomes.html",
+        "retrievedAt": "2026-08-20T05:17:31.549Z",
+        "sha256": "e2bda7ed4f8da083ded4b6a457600260b2746f861576d6c1f17f8b3e2d0637c2",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-inventory-dark-tomes",
+      "kind": "web",
+      "title": "Binding Blade Dark Tomes",
+      "location": "https://serenesforest.net/binding-blade/inventory/dark-tomes/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/inventory/dark-tomes.html",
+        "retrievedAt": "2026-08-20T05:17:31.665Z",
+        "sha256": "c11b78493a1e868c4355360752c6c261df9a5dc7ed5c5dd824761a0ad909c7bb",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-inventory-items",
+      "kind": "web",
+      "title": "Binding Blade Items",
+      "location": "https://serenesforest.net/binding-blade/inventory/items/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/inventory/items.html",
+        "retrievedAt": "2026-08-20T05:17:31.781Z",
+        "sha256": "a95c1ddffc787b8507188a90bdb4a5a041b28b522f1579c1d5bd3562a489f8a3",
+        "acquisition": "automated_fetch"
+      }
+    }
+  ]
+}

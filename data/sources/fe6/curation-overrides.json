@@ -1,0 +1,31 @@
+{
+  "gameId": "fe6",
+  "unitGenders": {
+    "lilina": "female",
+    "shanna": "female",
+    "elen": "female",
+    "clarine": "female",
+    "dorothy": "female",
+    "sue": "female",
+    "gwendolyn": "female",
+    "fir": "female",
+    "thea": "female",
+    "larum": "female",
+    "echidna": "female",
+    "melady": "female",
+    "cecilia": "female",
+    "sophia": "female",
+    "igrene": "female",
+    "fae": "female",
+    "juno": "female"
+  },
+  "recruitmentOverrides": {
+    "gonzalez": {
+      "chapter_10b": {
+        "startingLevel": 11,
+        "weaponLevels": { "axe": "D" },
+        "note": "Serenes notes that Gonzalez joins at level 11 with D Axes in Chapter 10B; his other base stats are unchanged."
+      }
+    }
+  }
+}

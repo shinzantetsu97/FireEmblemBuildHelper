@@ -1,0 +1,100 @@
+{
+  "gameId": "fe6",
+  "generatedAt": "2026-08-20T05:17:31.781Z",
+  "sourceCounts": [
+    {
+      "sourceId": "serenes-fe6-name-chart",
+      "rows": 60
+    },
+    {
+      "sourceId": "serenes-fe6-recruitment",
+      "rows": 62
+    },
+    {
+      "sourceId": "serenes-fe6-character-base-stats",
+      "rows": 76
+    },
+    {
+      "sourceId": "serenes-fe6-character-growth-rates",
+      "rows": 56
+    },
+    {
+      "sourceId": "serenes-fe6-supports",
+      "rows": 53
+    },
+    {
+      "sourceId": "serenes-fe6-support-calculation",
+      "rows": 0
+    },
+    {
+      "sourceId": "serenes-fe6-class-introduction",
+      "rows": 40
+    },
+    {
+      "sourceId": "serenes-fe6-class-base-stats",
+      "rows": 70
+    },
+    {
+      "sourceId": "serenes-fe6-class-maximum-stats",
+      "rows": 32
+    },
+    {
+      "sourceId": "serenes-fe6-promotion-gains",
+      "rows": 27
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-swords",
+      "rows": 21
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-lances",
+      "rows": 13
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-axes",
+      "rows": 13
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-bows",
+      "rows": 12
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-staves",
+      "rows": 18
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-anima-tomes",
+      "rows": 7
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-light-tomes",
+      "rows": 4
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-dark-tomes",
+      "rows": 5
+    },
+    {
+      "sourceId": "serenes-fe6-inventory-items",
+      "rows": 34
+    }
+  ],
+  "normalizedCounts": {
+    "units": 54,
+    "recruitment": 54,
+    "baseStatSnapshots": 65,
+    "growths": 54,
+    "weaponLevelSnapshots": 54,
+    "supportRelationships": 143,
+    "affinities": 7,
+    "classes": 67,
+    "promotions": 26,
+    "weapons": 93,
+    "items": 34
+  },
+  "notes": [
+    "The story roster comes from the primary Serenes recruitment table; Trial Map bonus units remain in raw snapshots only.",
+    "Hard-mode rows are stored as rounded expected values and never replace fixed Normal-mode bases.",
+    "The FE6 class-growth table is intentionally excluded because it is not added to playable character growth rates."
+  ]
+}

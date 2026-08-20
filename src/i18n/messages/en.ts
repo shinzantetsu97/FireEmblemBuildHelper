@@ -3,7 +3,9 @@
 export const en = {
   "nav.notes": "Notes",
   "nav.fe14": "FE14",
+  "nav.fe6": "FE6",
   "nav.units": "Units",
+  "nav.classes": "Classes",
   "nav.classSkills": "Class Skills",
   "nav.personalSkills": "Personal Skills",
   "nav.weapons": "Weapons & Items",
@@ -372,6 +374,8 @@ export const en = {
   "home.games.title": "Game Library",
   "home.games.fe14Title": "Fire Emblem If / Fates",
   "home.games.fe14Desc": "First-generation unit data and JSON visualizer",
+  "home.games.fe6Title": "Fire Emblem: The Binding Blade",
+  "home.games.fe6Desc": "Curated unit, class, weapon, and item reference",
   "home.versions.eyebrow": "Project history",
   "home.versions.title": "Version log",
   "home.versions.aria": "FireEmblemBuildHelper releases",

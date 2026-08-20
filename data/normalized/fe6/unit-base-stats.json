@@ -1,0 +1,2183 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "snapshots": [
+    {
+      "id": "roy.normal",
+      "unitId": "roy",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "lord",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 18,
+        "power": 5,
+        "skill": 5,
+        "speed": 7,
+        "luck": 7,
+        "defense": 5,
+        "resistance": 0
+      },
+      "constitution": 6,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Roy",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "marcus.normal",
+      "unitId": "marcus",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "paladin_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 32,
+        "power": 9,
+        "skill": 14,
+        "speed": 11,
+        "luck": 10,
+        "defense": 9,
+        "resistance": 8
+      },
+      "constitution": 11,
+      "movement": 8,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Marcus",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "alen.normal",
+      "unitId": "alen",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "cavalier_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 21,
+        "power": 7,
+        "skill": 4,
+        "speed": 6,
+        "luck": 3,
+        "defense": 6,
+        "resistance": 0
+      },
+      "constitution": 9,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Allen",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lance.normal",
+      "unitId": "lance",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "cavalier_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 20,
+        "power": 5,
+        "skill": 6,
+        "speed": 8,
+        "luck": 2,
+        "defense": 6,
+        "resistance": 0
+      },
+      "constitution": 9,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lance",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wolt.normal",
+      "unitId": "wolt",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "archer_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 18,
+        "power": 4,
+        "skill": 4,
+        "speed": 5,
+        "luck": 2,
+        "defense": 4,
+        "resistance": 0
+      },
+      "constitution": 7,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wolt",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bors.normal",
+      "unitId": "bors",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "knight_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 20,
+        "power": 7,
+        "skill": 4,
+        "speed": 3,
+        "luck": 4,
+        "defense": 11,
+        "resistance": 0
+      },
+      "constitution": 14,
+      "movement": 4,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Bors",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "merlinus.normal",
+      "unitId": "merlinus",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "transporter",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 15,
+        "power": 0,
+        "skill": 3,
+        "speed": 3,
+        "luck": 10,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitution": 25,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Merlinus",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elen.normal",
+      "unitId": "elen",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "priest_f",
+      "startingLevel": 2,
+      "stats": {
+        "hp": 16,
+        "power": 1,
+        "skill": 6,
+        "speed": 8,
+        "luck": 8,
+        "defense": 0,
+        "resistance": 6
+      },
+      "constitution": 4,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Ellen",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dieck.normal",
+      "unitId": "dieck",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "mercenary_m",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 26,
+        "power": 9,
+        "skill": 12,
+        "speed": 10,
+        "luck": 5,
+        "defense": 6,
+        "resistance": 1
+      },
+      "constitution": 13,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dieck",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wade.normal",
+      "unitId": "wade",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "fighter",
+      "startingLevel": 2,
+      "stats": {
+        "hp": 28,
+        "power": 8,
+        "skill": 3,
+        "speed": 5,
+        "luck": 4,
+        "defense": 3,
+        "resistance": 0
+      },
+      "constitution": 13,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wade",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lot.normal",
+      "unitId": "lot",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "fighter",
+      "startingLevel": 3,
+      "stats": {
+        "hp": 29,
+        "power": 7,
+        "skill": 6,
+        "speed": 7,
+        "luck": 2,
+        "defense": 4,
+        "resistance": 1
+      },
+      "constitution": 12,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lott",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shanna.normal",
+      "unitId": "shanna",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "pegasus_knight",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 17,
+        "power": 4,
+        "skill": 6,
+        "speed": 12,
+        "luck": 5,
+        "defense": 6,
+        "resistance": 5
+      },
+      "constitution": 4,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Thany",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "chad.normal",
+      "unitId": "chad",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "thief_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 16,
+        "power": 3,
+        "skill": 3,
+        "speed": 10,
+        "luck": 4,
+        "defense": 2,
+        "resistance": 0
+      },
+      "constitution": 5,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Chad",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lugh.normal",
+      "unitId": "lugh",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "mage_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 16,
+        "power": 4,
+        "skill": 5,
+        "speed": 6,
+        "luck": 5,
+        "defense": 3,
+        "resistance": 5
+      },
+      "constitution": 4,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lugh",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "clarine.normal",
+      "unitId": "clarine",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "troubadour",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 15,
+        "power": 2,
+        "skill": 5,
+        "speed": 9,
+        "luck": 8,
+        "defense": 2,
+        "resistance": 5
+      },
+      "constitution": 5,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Clarine",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rutger.normal",
+      "unitId": "rutger",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "myrmidon_m",
+      "startingLevel": 4,
+      "stats": {
+        "hp": 22,
+        "power": 7,
+        "skill": 12,
+        "speed": 13,
+        "luck": 2,
+        "defense": 5,
+        "resistance": 0
+      },
+      "constitution": 7,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Rutger",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rutger.hard_expected",
+      "unitId": "rutger",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "myrmidon_m",
+      "startingLevel": 4,
+      "stats": {
+        "hp": 26,
+        "power": 9,
+        "skill": 14,
+        "speed": 15,
+        "luck": 4,
+        "defense": 6,
+        "resistance": 1
+      },
+      "constitution": 7,
+      "movement": 5,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Rutger (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "saul.normal",
+      "unitId": "saul",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "priest_m",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 20,
+        "power": 4,
+        "skill": 6,
+        "speed": 10,
+        "luck": 2,
+        "defense": 2,
+        "resistance": 5
+      },
+      "constitution": 6,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Saul",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dorothy.normal",
+      "unitId": "dorothy",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "archer_f",
+      "startingLevel": 3,
+      "stats": {
+        "hp": 19,
+        "power": 5,
+        "skill": 6,
+        "speed": 6,
+        "luck": 3,
+        "defense": 4,
+        "resistance": 2
+      },
+      "constitution": 7,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dorothy",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sue.normal",
+      "unitId": "sue",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "nomad_f",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 18,
+        "power": 5,
+        "skill": 7,
+        "speed": 8,
+        "luck": 4,
+        "defense": 5,
+        "resistance": 0
+      },
+      "constitution": 5,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Sue",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zelot.normal",
+      "unitId": "zelot",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "paladin_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 35,
+        "power": 10,
+        "skill": 12,
+        "speed": 13,
+        "luck": 5,
+        "defense": 11,
+        "resistance": 7
+      },
+      "constitution": 11,
+      "movement": 8,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Zealot",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "trec.normal",
+      "unitId": "trec",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "cavalier_m",
+      "startingLevel": 4,
+      "stats": {
+        "hp": 25,
+        "power": 8,
+        "skill": 6,
+        "speed": 7,
+        "luck": 5,
+        "defense": 8,
+        "resistance": 0
+      },
+      "constitution": 9,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Treck",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "noah.normal",
+      "unitId": "noah",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "cavalier_m",
+      "startingLevel": 7,
+      "stats": {
+        "hp": 27,
+        "power": 8,
+        "skill": 7,
+        "speed": 9,
+        "luck": 6,
+        "defense": 7,
+        "resistance": 1
+      },
+      "constitution": 10,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Noah",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "astolfo.normal",
+      "unitId": "astolfo",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "thief_m",
+      "startingLevel": 10,
+      "stats": {
+        "hp": 25,
+        "power": 7,
+        "skill": 8,
+        "speed": 15,
+        "luck": 11,
+        "defense": 7,
+        "resistance": 3
+      },
+      "constitution": 8,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Astohl",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lilina.normal",
+      "unitId": "lilina",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "mage_f",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 16,
+        "power": 5,
+        "skill": 5,
+        "speed": 4,
+        "luck": 4,
+        "defense": 2,
+        "resistance": 7
+      },
+      "constitution": 4,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lilina",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gwendolyn.normal",
+      "unitId": "gwendolyn",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "knight_f",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 19,
+        "power": 4,
+        "skill": 3,
+        "speed": 3,
+        "luck": 6,
+        "defense": 8,
+        "resistance": 1
+      },
+      "constitution": 10,
+      "movement": 4,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Wendy",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "barthe.normal",
+      "unitId": "barthe",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "knight_m",
+      "startingLevel": 9,
+      "stats": {
+        "hp": 25,
+        "power": 10,
+        "skill": 6,
+        "speed": 5,
+        "luck": 2,
+        "defense": 14,
+        "resistance": 1
+      },
+      "constitution": 16,
+      "movement": 4,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Barth",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "ogier.normal",
+      "unitId": "ogier",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "mercenary_m",
+      "startingLevel": 3,
+      "stats": {
+        "hp": 24,
+        "power": 7,
+        "skill": 10,
+        "speed": 9,
+        "luck": 6,
+        "defense": 4,
+        "resistance": 0
+      },
+      "constitution": 8,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Oujay",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fir.normal",
+      "unitId": "fir",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "myrmidon_f",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 19,
+        "power": 6,
+        "skill": 9,
+        "speed": 10,
+        "luck": 3,
+        "defense": 3,
+        "resistance": 1
+      },
+      "constitution": 5,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Fir",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fir.hard_expected",
+      "unitId": "fir",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "myrmidon_f",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 25,
+        "power": 9,
+        "skill": 12,
+        "speed": 13,
+        "luck": 5,
+        "defense": 4,
+        "resistance": 2
+      },
+      "constitution": 5,
+      "movement": 5,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Fir (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sin.normal",
+      "unitId": "sin",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "nomad_m",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 24,
+        "power": 7,
+        "skill": 8,
+        "speed": 10,
+        "luck": 6,
+        "defense": 7,
+        "resistance": 0
+      },
+      "constitution": 7,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Shin",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sin.hard_expected",
+      "unitId": "sin",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "nomad_m",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 29,
+        "power": 9,
+        "skill": 11,
+        "speed": 14,
+        "luck": 8,
+        "defense": 8,
+        "resistance": 1
+      },
+      "constitution": 7,
+      "movement": 7,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Shin (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gonzalez.normal",
+      "unitId": "gonzalez",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "brigand",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 36,
+        "power": 12,
+        "skill": 5,
+        "speed": 9,
+        "luck": 5,
+        "defense": 6,
+        "resistance": 0
+      },
+      "constitution": 15,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Gonzales",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gonzalez.hard_expected",
+      "unitId": "gonzalez",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "brigand",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 43,
+        "power": 16,
+        "skill": 7,
+        "speed": 11,
+        "luck": 6,
+        "defense": 7,
+        "resistance": 1
+      },
+      "constitution": 15,
+      "movement": 5,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Gonzales (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "geese.normal",
+      "unitId": "geese",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "pirate",
+      "startingLevel": 10,
+      "stats": {
+        "hp": 33,
+        "power": 10,
+        "skill": 9,
+        "speed": 9,
+        "luck": 9,
+        "defense": 8,
+        "resistance": 0
+      },
+      "constitution": 11,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Geese",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "klein.normal",
+      "unitId": "klein",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "sniper_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 27,
+        "power": 13,
+        "skill": 13,
+        "speed": 11,
+        "luck": 10,
+        "defense": 8,
+        "resistance": 6
+      },
+      "constitution": 7,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Klein",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "klein.hard_expected",
+      "unitId": "klein",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "sniper_m",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 33,
+        "power": 16,
+        "skill": 16,
+        "speed": 13,
+        "luck": 13,
+        "defense": 9,
+        "resistance": 7
+      },
+      "constitution": 7,
+      "movement": 6,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Klein (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thea.normal",
+      "unitId": "thea",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "pegasus_knight",
+      "startingLevel": 8,
+      "stats": {
+        "hp": 22,
+        "power": 6,
+        "skill": 8,
+        "speed": 11,
+        "luck": 3,
+        "defense": 7,
+        "resistance": 6
+      },
+      "constitution": 5,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Tate",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thea.hard_expected",
+      "unitId": "thea",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "pegasus_knight",
+      "startingLevel": 8,
+      "stats": {
+        "hp": 28,
+        "power": 9,
+        "skill": 12,
+        "speed": 15,
+        "luck": 6,
+        "defense": 8,
+        "resistance": 8
+      },
+      "constitution": 5,
+      "movement": 7,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Tate (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "larum.normal",
+      "unitId": "larum",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "dancer",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 14,
+        "power": 1,
+        "skill": 2,
+        "speed": 11,
+        "luck": 9,
+        "defense": 2,
+        "resistance": 4
+      },
+      "constitution": 4,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Lalum",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "echidna.normal",
+      "unitId": "echidna",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "hero_f",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 35,
+        "power": 13,
+        "skill": 19,
+        "speed": 18,
+        "luck": 6,
+        "defense": 8,
+        "resistance": 7
+      },
+      "constitution": 9,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Echidna",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elffin.normal",
+      "unitId": "elffin",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "bard",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 15,
+        "power": 1,
+        "skill": 3,
+        "speed": 10,
+        "luck": 11,
+        "defense": 4,
+        "resistance": 1
+      },
+      "constitution": 6,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Elphin",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bartre.normal",
+      "unitId": "bartre",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "warrior",
+      "startingLevel": 2,
+      "stats": {
+        "hp": 48,
+        "power": 22,
+        "skill": 11,
+        "speed": 10,
+        "luck": 14,
+        "defense": 10,
+        "resistance": 3
+      },
+      "constitution": 14,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Bartre",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "raigh.normal",
+      "unitId": "raigh",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "shaman_m",
+      "startingLevel": 12,
+      "stats": {
+        "hp": 23,
+        "power": 12,
+        "skill": 9,
+        "speed": 9,
+        "luck": 6,
+        "defense": 5,
+        "resistance": 10
+      },
+      "constitution": 4,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Ray",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cath.normal",
+      "unitId": "cath",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "thief_m",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 16,
+        "power": 3,
+        "skill": 7,
+        "speed": 11,
+        "luck": 8,
+        "defense": 2,
+        "resistance": 1
+      },
+      "constitution": 5,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Cath",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cath.hard_expected",
+      "unitId": "cath",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "thief_m",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 20,
+        "power": 3,
+        "skill": 11,
+        "speed": 15,
+        "luck": 12,
+        "defense": 2,
+        "resistance": 3
+      },
+      "constitution": 5,
+      "movement": 6,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Cath (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "melady.normal",
+      "unitId": "melady",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "wyvern_rider_f",
+      "startingLevel": 10,
+      "stats": {
+        "hp": 30,
+        "power": 12,
+        "skill": 11,
+        "speed": 10,
+        "luck": 5,
+        "defense": 13,
+        "resistance": 3
+      },
+      "constitution": 9,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Miredy",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "melady.hard_expected",
+      "unitId": "melady",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "wyvern_rider_f",
+      "startingLevel": 10,
+      "stats": {
+        "hp": 38,
+        "power": 17,
+        "skill": 15,
+        "speed": 13,
+        "luck": 8,
+        "defense": 16,
+        "resistance": 4
+      },
+      "constitution": 9,
+      "movement": 7,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Miredy (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "perceval.normal",
+      "unitId": "perceval",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "paladin_m",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 43,
+        "power": 17,
+        "skill": 13,
+        "speed": 18,
+        "luck": 12,
+        "defense": 14,
+        "resistance": 11
+      },
+      "constitution": 12,
+      "movement": 8,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Percival",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "perceval.hard_expected",
+      "unitId": "perceval",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "paladin_m",
+      "startingLevel": 5,
+      "stats": {
+        "hp": 51,
+        "power": 20,
+        "skill": 16,
+        "speed": 20,
+        "luck": 15,
+        "defense": 15,
+        "resistance": 13
+      },
+      "constitution": 12,
+      "movement": 8,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Percival (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cecilia.normal",
+      "unitId": "cecilia",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "valkyrie",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 30,
+        "power": 11,
+        "skill": 7,
+        "speed": 10,
+        "luck": 10,
+        "defense": 7,
+        "resistance": 13
+      },
+      "constitution": 6,
+      "movement": 8,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Cecilia",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sophia.normal",
+      "unitId": "sophia",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "shaman_f",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 15,
+        "power": 6,
+        "skill": 2,
+        "speed": 4,
+        "luck": 3,
+        "defense": 1,
+        "resistance": 8
+      },
+      "constitution": 3,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Sofiya",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "igrene.normal",
+      "unitId": "igrene",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "sniper_f",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 32,
+        "power": 16,
+        "skill": 18,
+        "speed": 15,
+        "luck": 9,
+        "defense": 11,
+        "resistance": 10
+      },
+      "constitution": 7,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Igrene",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "garret.normal",
+      "unitId": "garret",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "berserker",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 49,
+        "power": 17,
+        "skill": 13,
+        "speed": 10,
+        "luck": 12,
+        "defense": 9,
+        "resistance": 4
+      },
+      "constitution": 13,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Garret",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "garret.hard_expected",
+      "unitId": "garret",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "berserker",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 55,
+        "power": 21,
+        "skill": 16,
+        "speed": 11,
+        "luck": 14,
+        "defense": 10,
+        "resistance": 5
+      },
+      "constitution": 13,
+      "movement": 6,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Garret (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fae.normal",
+      "unitId": "fae",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "manakete_f",
+      "startingLevel": 1,
+      "stats": {
+        "hp": 16,
+        "power": 2,
+        "skill": 2,
+        "speed": 3,
+        "luck": 7,
+        "defense": 2,
+        "resistance": 6
+      },
+      "constitution": 1,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Fa",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hugh.normal",
+      "unitId": "hugh",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "mage_m",
+      "startingLevel": 15,
+      "stats": {
+        "hp": 26,
+        "power": 13,
+        "skill": 11,
+        "speed": 12,
+        "luck": 10,
+        "defense": 9,
+        "resistance": 9
+      },
+      "constitution": 7,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Hugh",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zeiss.normal",
+      "unitId": "zeiss",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "wyvern_rider_m",
+      "startingLevel": 7,
+      "stats": {
+        "hp": 28,
+        "power": 14,
+        "skill": 9,
+        "speed": 8,
+        "luck": 6,
+        "defense": 12,
+        "resistance": 2
+      },
+      "constitution": 10,
+      "movement": 7,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Zeis",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zeiss.hard_expected",
+      "unitId": "zeiss",
+      "difficulty": "hard",
+      "valueKind": "expected_hard_mode",
+      "startingClassId": "wyvern_rider_m",
+      "startingLevel": 7,
+      "stats": {
+        "hp": 37,
+        "power": 19,
+        "skill": 13,
+        "speed": 11,
+        "luck": 9,
+        "defense": 15,
+        "resistance": 3
+      },
+      "constitution": 10,
+      "movement": 7,
+      "note": "Serenes reports rounded expected Hard-mode stats rather than fixed bases.",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Zeis (HM)",
+          "fields": [
+            "stats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "douglas.normal",
+      "unitId": "douglas",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "general_m",
+      "startingLevel": 8,
+      "stats": {
+        "hp": 46,
+        "power": 19,
+        "skill": 13,
+        "speed": 8,
+        "luck": 11,
+        "defense": 20,
+        "resistance": 5
+      },
+      "constitution": 17,
+      "movement": 5,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Douglas",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "niime.normal",
+      "unitId": "niime",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "druid_m",
+      "startingLevel": 18,
+      "stats": {
+        "hp": 25,
+        "power": 21,
+        "skill": 20,
+        "speed": 16,
+        "luck": 15,
+        "defense": 5,
+        "resistance": 18
+      },
+      "constitution": 4,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Niime",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dayan.normal",
+      "unitId": "dayan",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "nomad_trooper_m",
+      "startingLevel": 12,
+      "stats": {
+        "hp": 43,
+        "power": 14,
+        "skill": 16,
+        "speed": 20,
+        "luck": 12,
+        "defense": 10,
+        "resistance": 12
+      },
+      "constitution": 9,
+      "movement": 8,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Dayan",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "juno.normal",
+      "unitId": "juno",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "falcon_knight",
+      "startingLevel": 9,
+      "stats": {
+        "hp": 33,
+        "power": 11,
+        "skill": 14,
+        "speed": 16,
+        "luck": 14,
+        "defense": 8,
+        "resistance": 12
+      },
+      "constitution": 7,
+      "movement": 8,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Juno",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "yoder.normal",
+      "unitId": "yoder",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "bishop_m",
+      "startingLevel": 20,
+      "stats": {
+        "hp": 35,
+        "power": 19,
+        "skill": 18,
+        "speed": 14,
+        "luck": 11,
+        "defense": 5,
+        "resistance": 30
+      },
+      "constitution": 6,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Yodel",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "karel.normal",
+      "unitId": "karel",
+      "difficulty": "normal",
+      "valueKind": "fixed",
+      "startingClassId": "swordmaster_m",
+      "startingLevel": 19,
+      "stats": {
+        "hp": 44,
+        "power": 20,
+        "skill": 28,
+        "speed": 23,
+        "luck": 18,
+        "defense": 15,
+        "resistance": 13
+      },
+      "constitution": 9,
+      "movement": 6,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-character-base-stats",
+          "locator": "Character Base Stats > Karel",
+          "fields": [
+            "startingClassId",
+            "startingLevel",
+            "stats",
+            "constitution",
+            "movement"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

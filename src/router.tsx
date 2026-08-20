@@ -5,9 +5,10 @@ export type AppRoute =
   | { kind: "notes" }
   | { kind: "skill-index" }
   | { kind: "personal-skill-index" }
-  | { kind: "weapon-item-directory" }
-  | { kind: "unit-index" }
-  | { kind: "unit-detail"; slug: string }
+  | { kind: "weapon-item-directory"; gameId: "fe14" | "fe6" }
+  | { kind: "unit-index"; gameId: "fe14" | "fe6" }
+  | { kind: "unit-detail"; gameId: "fe14" | "fe6"; slug: string }
+  | { kind: "class-index"; gameId: "fe6" }
   | { kind: "not-found" };
 
 export function useAppRoute(): AppRoute {
@@ -75,7 +76,7 @@ function parseRoute(pathname: string): AppRoute {
     return { kind: "notes" };
   }
   if (normalized.toLowerCase() === "/fe14/units") {
-    return { kind: "unit-index" };
+    return { kind: "unit-index", gameId: "fe14" };
   }
   if (normalized.toLowerCase() === "/fe14/skills") {
     return { kind: "skill-index" };
@@ -84,13 +85,27 @@ function parseRoute(pathname: string): AppRoute {
     return { kind: "personal-skill-index" };
   }
   if (normalized.toLowerCase() === "/fe14/weapons") {
-    return { kind: "weapon-item-directory" };
+    return { kind: "weapon-item-directory", gameId: "fe14" };
   }
 
   const detailMatch = normalized.match(/^\/fe14\/units\/([^/]+)$/i);
   if (detailMatch) {
-    return { kind: "unit-detail", slug: decodeURIComponent(detailMatch[1]) };
+    return { kind: "unit-detail", gameId: "fe14", slug: decodeURIComponent(detailMatch[1]) };
   }
 
+  if (normalized.toLowerCase() === "/fe6" || normalized.toLowerCase() === "/fe6/units") {
+    return { kind: "unit-index", gameId: "fe6" };
+  }
+  if (normalized.toLowerCase() === "/fe6/classes") {
+    return { kind: "class-index", gameId: "fe6" };
+  }
+  if (normalized.toLowerCase() === "/fe6/weapons") {
+    return { kind: "weapon-item-directory", gameId: "fe6" };
+  }
+
+  const fe6UnitDetailMatch = normalized.match(/^\/fe6\/units\/([^/]+)$/i);
+  if (fe6UnitDetailMatch) {
+    return { kind: "unit-detail", gameId: "fe6", slug: decodeURIComponent(fe6UnitDetailMatch[1]) };
+  }
   return { kind: "not-found" };
 }

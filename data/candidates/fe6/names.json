@@ -1,0 +1,886 @@
+{
+  "gameId": "fe6",
+  "sourceId": "serenes-fe6-name-chart",
+  "rows": [
+    {
+      "cells": [
+        "Japanese name",
+        "Romaji",
+        "Official JPN",
+        "Fan name",
+        "NOA Name"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ロイ",
+        "Roi",
+        "Roy",
+        "Roy",
+        "Roy"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "リリーナ",
+        "Rirīna",
+        "Lilina",
+        "Lilina",
+        "Lilina"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "アレン",
+        "Aren",
+        "Alen",
+        "Alan",
+        "Alen"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ランス",
+        "Ransu",
+        "Lance",
+        "Lance",
+        "Lance"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "マーカス",
+        "Mākasu",
+        "Marcus",
+        "Marcus",
+        "Marcus"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ウォルト",
+        "Woruto",
+        "Wolt",
+        "Wolt",
+        "Wolt"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ボールス",
+        "Bōrusu",
+        "Bors",
+        "Bors",
+        "Bors"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "マリナス",
+        "Marinasu",
+        "Merlinus",
+        "Merlinus",
+        "Merlinus"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "エレン",
+        "Eren",
+        "Elen",
+        "Ellen",
+        "Elen"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ディーク",
+        "Dīku",
+        "Dieck",
+        "Dieck",
+        "Dieck *1"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ワード",
+        "Wādo",
+        "Wade",
+        "Ward",
+        "Wade"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ロット",
+        "Rotto",
+        "Lot",
+        "Lott",
+        "Lot"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "シャニー",
+        "Shanī",
+        "Thany",
+        "Thany",
+        "Shanna"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ルトガー",
+        "Rutogā",
+        "Rutger",
+        "Rutger",
+        "Rutger *2"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "クラリーネ",
+        "Kurarīne",
+        "Clarine",
+        "Clarine",
+        "Clarine"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ルゥ",
+        "Rū",
+        "Lugh",
+        "Lugh",
+        "Lugh"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "チャド",
+        "Chado",
+        "Chad",
+        "Chad",
+        "Chad"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ドロシー",
+        "Doroshī",
+        "Dorothy",
+        "Dorothy",
+        "Dorothy"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "サウル",
+        "Sauru",
+        "Saul",
+        "Saul",
+        "Saul"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "スー",
+        "Sū",
+        "Sue",
+        "Sue",
+        "Sue"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ゼロット",
+        "Zerotto",
+        "Zelots",
+        "Zealot",
+        "Zelot"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "トレック",
+        "Torekku",
+        "Trec",
+        "Treck",
+        "Trec"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ノア",
+        "Noa",
+        "Noah",
+        "Noah",
+        "Noah"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "アストール",
+        "Asutōru",
+        "Astore",
+        "Astol",
+        "Astolfo"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ウェンディ",
+        "Wendi",
+        "Wendy",
+        "Wendy",
+        "Gwendolyn"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "バース",
+        "Bāsu",
+        "Bath",
+        "Barth",
+        "Barthe"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "オージェ",
+        "Ōje",
+        "Ogier",
+        "Oujay",
+        "Ogier"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "フィル",
+        "Firu",
+        "Fir",
+        "Fir",
+        "Fir"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "シン",
+        "Shin",
+        "Sin",
+        "Shin",
+        "Sin"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ゴンザレス",
+        "Gonzaresu",
+        "Gonzalez",
+        "Gonzales",
+        "Gonzalez"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ギース",
+        "Gīsu",
+        "Geese",
+        "Geese",
+        "Geese"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "クレイン",
+        "Kurein",
+        "Klein",
+        "Klein",
+        "Klein"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ティト",
+        "Tito",
+        "Thite",
+        "Tate",
+        "Thite"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ララム",
+        "Raramu",
+        "Lalum",
+        "Lalum",
+        "Larum"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "エキドナ",
+        "Ekidona",
+        "Ekhidna",
+        "Echidna",
+        "Echidna"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "エルフィン",
+        "Erufin",
+        "Elphin",
+        "Elphin",
+        "Elffin"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "バアトル",
+        "Bātoru",
+        "Bartr",
+        "Bartre",
+        "Bartre"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "レイ",
+        "Rei",
+        "Lleu",
+        "Ray",
+        "Raigh"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "キャス",
+        "Kyasu",
+        "Cath",
+        "Cath",
+        "Cath"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ミレディ",
+        "Miredi",
+        "Milady",
+        "Miledy",
+        "Melady"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "パーシバル",
+        "Pāshibaru",
+        "Perceval",
+        "Percival",
+        "Perceval"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ソフィーヤ",
+        "Sofīya",
+        "Sofiya",
+        "Sophia",
+        "Sophia"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "セシリア",
+        "Seshiria",
+        "Cecilia/Secilia",
+        "Cecilia",
+        "Cecilia"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "イグレーヌ",
+        "Igurēnu",
+        "Igrene",
+        "Igrene",
+        "Igrene"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ガレット",
+        "Garetto",
+        "Garret",
+        "Garret",
+        "Garret"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ファ",
+        "Fa",
+        "Fa",
+        "Fae",
+        "Fae"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ヒュウ",
+        "Hyū",
+        "Hugh",
+        "Hugh",
+        "Hugh"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ツァイス",
+        "Tsaisu",
+        "Zeiss",
+        "Zeiss",
+        "Zeiss"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ダグラス",
+        "Dagurasu",
+        "Douglas",
+        "Douglas",
+        "Douglas"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ニイメ",
+        "Nīme",
+        "Nimue",
+        "Niime",
+        "Niime *3"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ユーノ",
+        "Yūno",
+        "Juno",
+        "Yuno",
+        "Juno"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ダヤン",
+        "Dayan",
+        "Dayan",
+        "Dayan",
+        "Dayan"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "ヨーデル",
+        "Yōderu",
+        "Jodel",
+        "Yodel",
+        "Yoder"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "cells": [
+        "カレル",
+        "Kareru",
+        "Karel",
+        "Karel",
+        "Karel"
+      ],
+      "imageAlts": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    }
+  ]
+}

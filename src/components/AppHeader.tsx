@@ -17,7 +17,8 @@ const FE14_ROUTE_KINDS: AppRoute["kind"][] = [
 ];
 
 export default function AppHeader({ route }: { route: AppRoute }) {
-  const fe14Active = FE14_ROUTE_KINDS.includes(route.kind);
+  const fe14Active = FE14_ROUTE_KINDS.includes(route.kind) && (!("gameId" in route) || route.gameId === "fe14");
+  const fe6Active = "gameId" in route && route.gameId === "fe6";
   const { locale, setLocale, t } = useLocale();
 
   return (
@@ -34,6 +35,15 @@ export default function AppHeader({ route }: { route: AppRoute }) {
               {t("nav.notes")}
             </AppLink>
             <NavDropdown
+              id="fe6-menu"
+              className={`app-fe6-menu${fe6Active ? " active" : ""}`}
+              title={<span className="app-fe14-menu-title"><BookOpen aria-hidden="true" size={17} />{t("nav.fe6")}</span>}
+            >
+              <NavDropdown.Item as={AppLink} to="/FE6/Units" active={(route.kind === "unit-index" || route.kind === "unit-detail") && route.gameId === "fe6"}>{t("nav.units")}</NavDropdown.Item>
+              <NavDropdown.Item as={AppLink} to="/FE6/Classes" active={route.kind === "class-index"}>{t("nav.classes")}</NavDropdown.Item>
+              <NavDropdown.Item as={AppLink} to="/FE6/Weapons" active={route.kind === "weapon-item-directory" && route.gameId === "fe6"}>{t("nav.weapons")}</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
               id="fe14-menu"
               className={`app-fe14-menu${fe14Active ? " active" : ""}`}
               title={
@@ -43,7 +53,7 @@ export default function AppHeader({ route }: { route: AppRoute }) {
                 </span>
               }
             >
-              <NavDropdown.Item as={AppLink} to="/FE14/Units" active={route.kind === "unit-index" || route.kind === "unit-detail"}>
+              <NavDropdown.Item as={AppLink} to="/FE14/Units" active={(route.kind === "unit-index" || route.kind === "unit-detail") && route.gameId === "fe14"}>
                 {t("nav.units")}
               </NavDropdown.Item>
               <NavDropdown.Item as={AppLink} to="/FE14/Skills" active={route.kind === "skill-index"}>
@@ -52,7 +62,7 @@ export default function AppHeader({ route }: { route: AppRoute }) {
               <NavDropdown.Item as={AppLink} to="/FE14/PersonalSkills" active={route.kind === "personal-skill-index"}>
                 {t("nav.personalSkills")}
               </NavDropdown.Item>
-              <NavDropdown.Item as={AppLink} to="/FE14/Weapons" active={route.kind === "weapon-item-directory"}>
+              <NavDropdown.Item as={AppLink} to="/FE14/Weapons" active={route.kind === "weapon-item-directory" && route.gameId === "fe14"}>
                 {t("nav.weapons")}
               </NavDropdown.Item>
             </NavDropdown>

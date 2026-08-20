@@ -84,15 +84,17 @@ function pagePath(route: AppRoute): string {
     case "notes":
       return "/notes";
     case "unit-index":
-      return "/fe14/units";
+      return `/${route.gameId}/units`;
     case "unit-detail":
-      return `/fe14/units/${route.slug}`;
+      return `/${route.gameId}/units/${route.slug}`;
     case "skill-index":
       return "/fe14/skills";
     case "personal-skill-index":
       return "/fe14/personalskills";
     case "weapon-item-directory":
-      return "/fe14/weapons";
+      return `/${route.gameId}/weapons`;
+    case "class-index":
+      return "/fe6/classes";
     case "not-found":
       return "/404";
   }

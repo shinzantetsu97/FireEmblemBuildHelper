@@ -1,0 +1,13 @@
+{
+  "gameId": "fe6",
+  "valid": true,
+  "counts": {
+    "units": 54,
+    "classes": 67,
+    "weapons": 93,
+    "items": 34,
+    "supports": 143
+  },
+  "errors": [],
+  "warnings": []
+}

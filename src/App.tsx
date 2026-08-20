@@ -6,6 +6,12 @@ import PersonalSkillIndexPage from "./games/fe14/pages/PersonalSkillIndexPage";
 import UnitDetailPage from "./games/fe14/pages/UnitDetailPage";
 import UnitIndexPage from "./games/fe14/pages/UnitIndexPage";
 import WeaponItemDirectoryPage from "./games/fe14/pages/WeaponItemDirectoryPage";
+import {
+  Fe6ClassIndexPage,
+  Fe6UnitDetailPage,
+  Fe6UnitIndexPage,
+  Fe6WeaponItemDirectoryPage,
+} from "./games/fe6/components/Fe6Views";
 import { useAppRoute } from "./router";
 import { LocaleProvider } from "./i18n/LocaleContext";
 import { trackPageView } from "./analytics";
@@ -26,10 +32,14 @@ export default function App() {
         {route.kind === "notes" ? <NotesPage /> : null}
         {route.kind === "skill-index" ? <SkillIndexPage /> : null}
         {route.kind === "personal-skill-index" ? <PersonalSkillIndexPage /> : null}
-        {route.kind === "weapon-item-directory" ? <WeaponItemDirectoryPage /> : null}
-        {route.kind === "unit-index" ? <UnitIndexPage /> : null}
-        {route.kind === "unit-detail" ? <UnitDetailPage slug={route.slug} /> : null}
-        {route.kind === "not-found" ? <UnitIndexPage notFound /> : null}
+        {route.kind === "weapon-item-directory" && route.gameId === "fe14" ? <WeaponItemDirectoryPage /> : null}
+        {route.kind === "weapon-item-directory" && route.gameId === "fe6" ? <Fe6WeaponItemDirectoryPage /> : null}
+        {route.kind === "unit-index" && route.gameId === "fe14" ? <UnitIndexPage /> : null}
+        {route.kind === "unit-index" && route.gameId === "fe6" ? <Fe6UnitIndexPage /> : null}
+        {route.kind === "unit-detail" && route.gameId === "fe14" ? <UnitDetailPage slug={route.slug} /> : null}
+        {route.kind === "unit-detail" && route.gameId === "fe6" ? <Fe6UnitDetailPage slug={route.slug} /> : null}
+        {route.kind === "class-index" ? <Fe6ClassIndexPage /> : null}
+        {route.kind === "not-found" ? <Fe6UnitIndexPage notFound /> : null}
       </div>
     </LocaleProvider>
   );

@@ -5,7 +5,9 @@ import type { MessageKey } from "./en";
 export const zhHans: Partial<Record<MessageKey, string>> = {
   "nav.notes": "笔记",
   "nav.fe14": "FE14",
+  "nav.fe6": "FE6",
   "nav.units": "单位",
+  "nav.classes": "职业",
   "nav.classSkills": "职业特技",
   "nav.personalSkills": "个人特技",
   "nav.weapons": "武器与道具",
@@ -374,6 +376,8 @@ export const zhHans: Partial<Record<MessageKey, string>> = {
   "home.games.title": "游戏库",
   "home.games.fe14Title": "火焰之纹章 if",
   "home.games.fe14Desc": "初代单位数据与 JSON 可视化工具",
+  "home.games.fe6Title": "火焰之纹章：封印之剑",
+  "home.games.fe6Desc": "整理后的单位、职业、武器与道具资料",
   "home.versions.eyebrow": "项目历史",
   "home.versions.title": "版本记录",
   "home.versions.aria": "FireEmblemBuildHelper 版本发布",

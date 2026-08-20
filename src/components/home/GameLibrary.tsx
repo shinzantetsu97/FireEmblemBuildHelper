@@ -10,6 +10,14 @@ export default function GameLibrary() {
         <p className="eyebrow">{t("home.games.eyebrow")}</p>
         <h2 id="game-library-heading">{t("home.games.title")}</h2>
       </div>
+      <AppLink className="game-directory-link" to="/FE6/Units">
+        <div>
+          <span>FE6</span>
+          <h3>{t("home.games.fe6Title")}</h3>
+          <p>{t("home.games.fe6Desc")}</p>
+        </div>
+        <ChevronRight aria-hidden="true" size={20} />
+      </AppLink>
       <AppLink className="game-directory-link" to="/FE14/Units">
         <div>
           <span>FE14</span>

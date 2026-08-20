@@ -1,0 +1,4056 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "weapons": [
+    {
+      "id": "iron_sword",
+      "names": {
+        "en": "Iron Sword"
+      },
+      "weaponTypeId": "sword",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 5,
+      "might": 5,
+      "hit": 85,
+      "critical": 0,
+      "uses": 46,
+      "worth": 460,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Iron Sword",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "slim_sword",
+      "names": {
+        "en": "Slim Sword"
+      },
+      "weaponTypeId": "sword",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 2,
+      "might": 3,
+      "hit": 95,
+      "critical": 5,
+      "uses": 30,
+      "worth": 480,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Slim Sword",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rapier",
+      "names": {
+        "en": "Rapier"
+      },
+      "weaponTypeId": "sword",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 5,
+      "might": 5,
+      "hit": 95,
+      "critical": 10,
+      "uses": 25,
+      "worth": 2000,
+      "staffExperience": null,
+      "effect": "Lord/Master Lord only, effective against Cavaliers, Paladins, Knights and Generals",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Rapier",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "als_sword",
+      "names": {
+        "en": "Al's Sword"
+      },
+      "weaponTypeId": "sword",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 7,
+      "might": 7,
+      "hit": 75,
+      "critical": 0,
+      "uses": 50,
+      "worth": 1000,
+      "staffExperience": null,
+      "effect": "(Cameo of Al from the Hasha no Tsurugi manga)",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Al's Sword",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "poison_sword",
+      "names": {
+        "en": "Poison Sword"
+      },
+      "weaponTypeId": "sword",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 6,
+      "might": 3,
+      "hit": 70,
+      "critical": 0,
+      "uses": 40,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Poisons on contact (cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Poison Sword",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "steel_sword",
+      "names": {
+        "en": "Steel Sword"
+      },
+      "weaponTypeId": "sword",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 10,
+      "might": 8,
+      "hit": 70,
+      "critical": 0,
+      "uses": 30,
+      "worth": 600,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Steel Sword",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "iron_blade",
+      "names": {
+        "en": "Iron Blade"
+      },
+      "weaponTypeId": "sword",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 12,
+      "might": 9,
+      "hit": 65,
+      "critical": 0,
+      "uses": 35,
+      "worth": 980,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Iron Blade",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "armourslayer",
+      "names": {
+        "en": "Armourslayer"
+      },
+      "weaponTypeId": "sword",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 11,
+      "might": 8,
+      "hit": 85,
+      "critical": 0,
+      "uses": 18,
+      "worth": 1260,
+      "staffExperience": null,
+      "effect": "Effective against Knights and Generals",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Armourslayer",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wo_dao",
+      "names": {
+        "en": "Wo Dao"
+      },
+      "weaponTypeId": "sword",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 5,
+      "might": 8,
+      "hit": 75,
+      "critical": 40,
+      "uses": 20,
+      "worth": 1200,
+      "staffExperience": null,
+      "effect": "Myrmidon and Swordmaster only",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Wo Dao",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "steel_blade",
+      "names": {
+        "en": "Steel Blade"
+      },
+      "weaponTypeId": "sword",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 14,
+      "might": 11,
+      "hit": 60,
+      "critical": 0,
+      "uses": 25,
+      "worth": 1250,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Steel Blade",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "killing_edge",
+      "names": {
+        "en": "Killing Edge"
+      },
+      "weaponTypeId": "sword",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 7,
+      "might": 9,
+      "hit": 80,
+      "critical": 30,
+      "uses": 20,
+      "worth": 1300,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Killing Edge",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wyrmslayer",
+      "names": {
+        "en": "Wyrmslayer"
+      },
+      "weaponTypeId": "sword",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 5,
+      "might": 10,
+      "hit": 70,
+      "critical": 0,
+      "uses": 15,
+      "worth": 2250,
+      "staffExperience": null,
+      "effect": "Effective against Mamkutes, Wyvern Riders and Wyvern Lords",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Wyrmslayer",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "light_brand",
+      "names": {
+        "en": "Light Brand"
+      },
+      "weaponTypeId": "sword",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 9,
+      "might": 9,
+      "hit": 70,
+      "critical": 0,
+      "uses": 25,
+      "worth": 1250,
+      "staffExperience": null,
+      "effect": "When used for 2 spaces away, always does 10 damage",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Light Brand",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lancereaver",
+      "names": {
+        "en": "Lancereaver"
+      },
+      "weaponTypeId": "sword",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 9,
+      "might": 9,
+      "hit": 80,
+      "critical": 5,
+      "uses": 15,
+      "worth": 1800,
+      "staffExperience": null,
+      "effect": "Good against lances, bad against axes",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Lancereaver",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "brave_sword",
+      "names": {
+        "en": "Brave Sword"
+      },
+      "weaponTypeId": "sword",
+      "rank": "B",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 12,
+      "might": 9,
+      "hit": 80,
+      "critical": 0,
+      "uses": 30,
+      "worth": 3000,
+      "staffExperience": null,
+      "effect": "Allows 2 consecutive hits (cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Brave Sword",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "silver_sword",
+      "names": {
+        "en": "Silver Sword"
+      },
+      "weaponTypeId": "sword",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 8,
+      "might": 13,
+      "hit": 75,
+      "critical": 0,
+      "uses": 20,
+      "worth": 1500,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Silver Sword",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "silver_blade",
+      "names": {
+        "en": "Silver Blade"
+      },
+      "weaponTypeId": "sword",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 13,
+      "might": 14,
+      "hit": 55,
+      "critical": 0,
+      "uses": 15,
+      "worth": 1800,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Silver Blade",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "runesword",
+      "names": {
+        "en": "Runesword"
+      },
+      "weaponTypeId": "sword",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 11,
+      "might": 12,
+      "hit": 60,
+      "critical": 0,
+      "uses": 15,
+      "worth": 3300,
+      "staffExperience": null,
+      "effect": "Drains HP from enemy; counts as Dark Magic (usable in Trial Maps only)",
+      "availabilityFlags": [
+        "trial_map_only"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Runesword",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "durandal",
+      "names": {
+        "en": "Durandal"
+      },
+      "weaponTypeId": "sword",
+      "rank": "S",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 12,
+      "might": 17,
+      "hit": 90,
+      "critical": 0,
+      "uses": 20,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Str +5, effective against Mamkutes, Wyvern Riders and Wyvern Lords",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Durandal",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "eckesachs",
+      "names": {
+        "en": "Eckesachs"
+      },
+      "weaponTypeId": "sword",
+      "rank": null,
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 15,
+      "might": 15,
+      "hit": 90,
+      "critical": 5,
+      "uses": null,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Zephiel only (usable in Trial Maps only)",
+      "availabilityFlags": [
+        "trial_map_only"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Eckesachs",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "binding_blade",
+      "names": {
+        "en": "Binding Blade"
+      },
+      "weaponTypeId": "sword",
+      "rank": null,
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 8,
+      "might": 18,
+      "hit": 95,
+      "critical": 10,
+      "uses": 20,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Lord/Master Lord only, Def and Res +5, effective against Mamkutes and Demon Dragons, can be used to recover 30 HP",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-swords",
+          "locator": "Swords > Binding Blade",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "iron_lance",
+      "names": {
+        "en": "Iron Lance"
+      },
+      "weaponTypeId": "lance",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 8,
+      "might": 7,
+      "hit": 70,
+      "critical": 0,
+      "uses": 45,
+      "worth": 360,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Iron Lance",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "steel_lance",
+      "names": {
+        "en": "Steel Lance"
+      },
+      "weaponTypeId": "lance",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 13,
+      "might": 10,
+      "hit": 55,
+      "critical": 0,
+      "uses": 30,
+      "worth": 480,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Steel Lance",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "silver_lance",
+      "names": {
+        "en": "Silver Lance"
+      },
+      "weaponTypeId": "lance",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 10,
+      "might": 14,
+      "hit": 65,
+      "critical": 0,
+      "uses": 20,
+      "worth": 1200,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Silver Lance",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "slim_lance",
+      "names": {
+        "en": "Slim Lance"
+      },
+      "weaponTypeId": "lance",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 4,
+      "might": 4,
+      "hit": 80,
+      "critical": 5,
+      "uses": 30,
+      "worth": 450,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Slim Lance",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "poison_lance",
+      "names": {
+        "en": "Poison Lance"
+      },
+      "weaponTypeId": "lance",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 8,
+      "might": 4,
+      "hit": 55,
+      "critical": 0,
+      "uses": 40,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Poisons on contact (cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Poison Lance",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "brave_lance",
+      "names": {
+        "en": "Brave Lance"
+      },
+      "weaponTypeId": "lance",
+      "rank": "B",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 14,
+      "might": 10,
+      "hit": 70,
+      "critical": 0,
+      "uses": 30,
+      "worth": 2400,
+      "staffExperience": null,
+      "effect": "Allows 2 consecutive hits",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Brave Lance",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "javelin",
+      "names": {
+        "en": "Javelin"
+      },
+      "weaponTypeId": "lance",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 11,
+      "might": 6,
+      "hit": 55,
+      "critical": 0,
+      "uses": 20,
+      "worth": 400,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Javelin",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "maltet",
+      "names": {
+        "en": "Maltet"
+      },
+      "weaponTypeId": "lance",
+      "rank": "S",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 11,
+      "might": 16,
+      "hit": 80,
+      "critical": 0,
+      "uses": 20,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Skill +5, effective against Mamkutes, Wyvern Riders and Wyvern Lords",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Maltet",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "horseslayer",
+      "names": {
+        "en": "Horseslayer"
+      },
+      "weaponTypeId": "lance",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 13,
+      "might": 11,
+      "hit": 75,
+      "critical": 0,
+      "uses": 16,
+      "worth": 1040,
+      "staffExperience": null,
+      "effect": "Effective against Cavaliers and Paladins",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Horseslayer",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "killer_lance",
+      "names": {
+        "en": "Killer Lance"
+      },
+      "weaponTypeId": "lance",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 9,
+      "might": 10,
+      "hit": 75,
+      "critical": 30,
+      "uses": 20,
+      "worth": 1200,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Killer Lance",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "axereaver",
+      "names": {
+        "en": "Axereaver"
+      },
+      "weaponTypeId": "lance",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 11,
+      "might": 10,
+      "hit": 75,
+      "critical": 5,
+      "uses": 15,
+      "worth": 1950,
+      "staffExperience": null,
+      "effect": "Good against axes, bad against swords",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Axereaver",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gants_lance",
+      "names": {
+        "en": "Gant's Lance"
+      },
+      "weaponTypeId": "lance",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 10,
+      "might": 9,
+      "hit": 65,
+      "critical": 0,
+      "uses": 50,
+      "worth": 800,
+      "staffExperience": null,
+      "effect": "(Cameo of Gant from the Hasha no Tsurugi manga)",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Gant's Lance",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "spear",
+      "names": {
+        "en": "Spear"
+      },
+      "weaponTypeId": "lance",
+      "rank": "B",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 10,
+      "might": 10,
+      "hit": 65,
+      "critical": 5,
+      "uses": 15,
+      "worth": 1500,
+      "staffExperience": null,
+      "effect": "(Cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-lances",
+          "locator": "Lances > Spear",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "iron_axe",
+      "names": {
+        "en": "Iron Axe"
+      },
+      "weaponTypeId": "axe",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 10,
+      "might": 8,
+      "hit": 65,
+      "critical": 0,
+      "uses": 45,
+      "worth": 270,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Iron Axe",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "steel_axe",
+      "names": {
+        "en": "Steel Axe"
+      },
+      "weaponTypeId": "axe",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 15,
+      "might": 11,
+      "hit": 50,
+      "critical": 0,
+      "uses": 30,
+      "worth": 360,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Steel Axe",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "silver_axe",
+      "names": {
+        "en": "Silver Axe"
+      },
+      "weaponTypeId": "axe",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 12,
+      "might": 15,
+      "hit": 55,
+      "critical": 0,
+      "uses": 20,
+      "worth": 1000,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Silver Axe",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "poison_axe",
+      "names": {
+        "en": "Poison Axe"
+      },
+      "weaponTypeId": "axe",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 10,
+      "might": 4,
+      "hit": 50,
+      "critical": 0,
+      "uses": 40,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Poisons on contact (cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Poison Axe",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "brave_axe",
+      "names": {
+        "en": "Brave Axe"
+      },
+      "weaponTypeId": "axe",
+      "rank": "B",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 16,
+      "might": 10,
+      "hit": 55,
+      "critical": 0,
+      "uses": 30,
+      "worth": 2250,
+      "staffExperience": null,
+      "effect": "Allows 2 consecutive hits",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Brave Axe",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hand_axe",
+      "names": {
+        "en": "Hand Axe"
+      },
+      "weaponTypeId": "axe",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 12,
+      "might": 7,
+      "hit": 50,
+      "critical": 0,
+      "uses": 20,
+      "worth": 300,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Hand Axe",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "armads",
+      "names": {
+        "en": "Armads"
+      },
+      "weaponTypeId": "axe",
+      "rank": "S",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 13,
+      "might": 18,
+      "hit": 75,
+      "critical": 0,
+      "uses": 20,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Defence +5, effective against Mamkutes, Wyvern Riders and Wyvern Lords",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Armads",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hammer",
+      "names": {
+        "en": "Hammer"
+      },
+      "weaponTypeId": "axe",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 15,
+      "might": 8,
+      "hit": 45,
+      "critical": 0,
+      "uses": 20,
+      "worth": 800,
+      "staffExperience": null,
+      "effect": "Effective against Knights and Generals",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Hammer",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "killer_axe",
+      "names": {
+        "en": "Killer Axe"
+      },
+      "weaponTypeId": "axe",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 11,
+      "might": 11,
+      "hit": 65,
+      "critical": 30,
+      "uses": 20,
+      "worth": 1000,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Killer Axe",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "swordreaver",
+      "names": {
+        "en": "Swordreaver"
+      },
+      "weaponTypeId": "axe",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 13,
+      "might": 11,
+      "hit": 60,
+      "critical": 5,
+      "uses": 20,
+      "worth": 2800,
+      "staffExperience": null,
+      "effect": "Good against Swords, bad against Lances",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Swordreaver",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "devil_axe",
+      "names": {
+        "en": "Devil Axe"
+      },
+      "weaponTypeId": "axe",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 18,
+      "might": 18,
+      "hit": 55,
+      "critical": 0,
+      "uses": 20,
+      "worth": 900,
+      "staffExperience": null,
+      "effect": "Damages user if Luck is low",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Devil Axe",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "halberd",
+      "names": {
+        "en": "Halberd"
+      },
+      "weaponTypeId": "axe",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": 15,
+      "might": 10,
+      "hit": 55,
+      "critical": 0,
+      "uses": 18,
+      "worth": 810,
+      "staffExperience": null,
+      "effect": "Effective against Cavaliers and Paladins",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Halberd",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "tomahawk",
+      "names": {
+        "en": "Tomahawk"
+      },
+      "weaponTypeId": "axe",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 14,
+      "might": 13,
+      "hit": 55,
+      "critical": 0,
+      "uses": 15,
+      "worth": 3000,
+      "staffExperience": null,
+      "effect": "(Usable in Trial Maps only)",
+      "availabilityFlags": [
+        "trial_map_only"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-axes",
+          "locator": "Axes > Tomahawk",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "iron_bow",
+      "names": {
+        "en": "Iron Bow"
+      },
+      "weaponTypeId": "bow",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "2",
+        "minimum": 2,
+        "maximum": 2
+      },
+      "weight": 5,
+      "might": 6,
+      "hit": 80,
+      "critical": 0,
+      "uses": 45,
+      "worth": 540,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Iron Bow",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "steel_bow",
+      "names": {
+        "en": "Steel Bow"
+      },
+      "weaponTypeId": "bow",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "2",
+        "minimum": 2,
+        "maximum": 2
+      },
+      "weight": 9,
+      "might": 9,
+      "hit": 65,
+      "critical": 0,
+      "uses": 30,
+      "worth": 720,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Steel Bow",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "silver_bow",
+      "names": {
+        "en": "Silver Bow"
+      },
+      "weaponTypeId": "bow",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "2",
+        "minimum": 2,
+        "maximum": 2
+      },
+      "weight": 6,
+      "might": 13,
+      "hit": 70,
+      "critical": 0,
+      "uses": 20,
+      "worth": 1600,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Silver Bow",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "poison_bow",
+      "names": {
+        "en": "Poison Bow"
+      },
+      "weaponTypeId": "bow",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "2",
+        "minimum": 2,
+        "maximum": 2
+      },
+      "weight": 5,
+      "might": 4,
+      "hit": 65,
+      "critical": 0,
+      "uses": 40,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Poisons on contact (cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Poison Bow",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "killer_bow",
+      "names": {
+        "en": "Killer Bow"
+      },
+      "weaponTypeId": "bow",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "2",
+        "minimum": 2,
+        "maximum": 2
+      },
+      "weight": 7,
+      "might": 9,
+      "hit": 80,
+      "critical": 30,
+      "uses": 20,
+      "worth": 1400,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Killer Bow",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "brave_bow",
+      "names": {
+        "en": "Brave Bow"
+      },
+      "weaponTypeId": "bow",
+      "rank": "B",
+      "range": {
+        "kind": "fixed",
+        "display": "2",
+        "minimum": 2,
+        "maximum": 2
+      },
+      "weight": 12,
+      "might": 10,
+      "hit": 75,
+      "critical": 0,
+      "uses": 30,
+      "worth": 3600,
+      "staffExperience": null,
+      "effect": "Allows 2 consecutive hits",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Brave Bow",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "short_bow",
+      "names": {
+        "en": "Short Bow"
+      },
+      "weaponTypeId": "bow",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "2",
+        "minimum": 2,
+        "maximum": 2
+      },
+      "weight": 3,
+      "might": 5,
+      "hit": 80,
+      "critical": 10,
+      "uses": 22,
+      "worth": 1760,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Short Bow",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "long_bow",
+      "names": {
+        "en": "Long Bow"
+      },
+      "weaponTypeId": "bow",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "2~3",
+        "minimum": 2,
+        "maximum": 3
+      },
+      "weight": 10,
+      "might": 5,
+      "hit": 55,
+      "critical": 0,
+      "uses": 20,
+      "worth": 2000,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Long Bow",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "murgleis",
+      "names": {
+        "en": "Murgleis"
+      },
+      "weaponTypeId": "bow",
+      "rank": "S",
+      "range": {
+        "kind": "fixed",
+        "display": "2",
+        "minimum": 2,
+        "maximum": 2
+      },
+      "weight": 9,
+      "might": 16,
+      "hit": 80,
+      "critical": 0,
+      "uses": 20,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Speed +5, effective against Mamkutes",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Murgleis",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "ballista",
+      "names": {
+        "en": "Ballista"
+      },
+      "weaponTypeId": "bow",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "3~10",
+        "minimum": 3,
+        "maximum": 10
+      },
+      "weight": 20,
+      "might": 8,
+      "hit": 70,
+      "critical": 0,
+      "uses": 5,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Archer/Sniper only",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Ballista",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "long_ballista",
+      "names": {
+        "en": "Long Ballista"
+      },
+      "weaponTypeId": "bow",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "3~15",
+        "minimum": 3,
+        "maximum": 15
+      },
+      "weight": 20,
+      "might": 13,
+      "hit": 60,
+      "critical": 0,
+      "uses": 5,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Archer/Sniper only",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Long Ballista",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "killer_ballista",
+      "names": {
+        "en": "Killer Ballista"
+      },
+      "weaponTypeId": "bow",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "3~10",
+        "minimum": 3,
+        "maximum": 10
+      },
+      "weight": 20,
+      "might": 12,
+      "hit": 65,
+      "critical": 10,
+      "uses": 5,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Archer/Sniper only",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-bows",
+          "locator": "Bows > Killer Ballista",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "heal",
+      "names": {
+        "en": "Heal"
+      },
+      "weaponTypeId": "staff",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 30,
+      "worth": 600,
+      "staffExperience": 11,
+      "effect": "Recovers Mag+10 HP",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Heal",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "mend",
+      "names": {
+        "en": "Mend"
+      },
+      "weaponTypeId": "staff",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 20,
+      "worth": 1000,
+      "staffExperience": 12,
+      "effect": "Recovers Mag+20 HP",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Mend",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "recover",
+      "names": {
+        "en": "Recover"
+      },
+      "weaponTypeId": "staff",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 15,
+      "worth": 2250,
+      "staffExperience": 17,
+      "effect": "Recovers all HP",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Recover",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "physic",
+      "names": {
+        "en": "Physic"
+      },
+      "weaponTypeId": "staff",
+      "rank": "B",
+      "range": {
+        "kind": "formula",
+        "display": "1~Mag",
+        "formula": "1-Mag"
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 15,
+      "worth": 3750,
+      "staffExperience": 22,
+      "effect": "Recovers Mag+10 HP",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Physic",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fortify",
+      "names": {
+        "en": "Fortify"
+      },
+      "weaponTypeId": "staff",
+      "rank": "A",
+      "range": {
+        "kind": "formula",
+        "display": "1~Mag",
+        "formula": "1-Mag"
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 8,
+      "worth": 8000,
+      "staffExperience": 60,
+      "effect": "Recovers Mag+10 HP to all units in range (usable in Trial Maps only)",
+      "availabilityFlags": [
+        "trial_map_only"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Fortify",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "warp",
+      "names": {
+        "en": "Warp"
+      },
+      "weaponTypeId": "staff",
+      "rank": "A",
+      "range": null,
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 5,
+      "worth": 7500,
+      "staffExperience": 85,
+      "effect": "Teleports an ally to a traversable tile within a range of 1~(Mag/2 +5)",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Warp",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rescue",
+      "names": {
+        "en": "Rescue"
+      },
+      "weaponTypeId": "staff",
+      "rank": "B",
+      "range": {
+        "kind": "formula",
+        "display": "1~Mag",
+        "formula": "1-Mag"
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 3,
+      "worth": 1800,
+      "staffExperience": 40,
+      "effect": "Brings an ally next to the caster",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Rescue",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "restore",
+      "names": {
+        "en": "Restore"
+      },
+      "weaponTypeId": "staff",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 10,
+      "worth": 2000,
+      "staffExperience": 20,
+      "effect": "Removes status condition from ally",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Restore",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "silence",
+      "names": {
+        "en": "Silence"
+      },
+      "weaponTypeId": "staff",
+      "rank": "B",
+      "range": {
+        "kind": "formula",
+        "display": "1~Mag",
+        "formula": "1-Mag"
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 3,
+      "worth": 1200,
+      "staffExperience": 30,
+      "effect": "Silences enemy so they cannot use magic or staves",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Silence",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "names": {
+        "en": "Sleep"
+      },
+      "weaponTypeId": "staff",
+      "rank": "B",
+      "range": {
+        "kind": "formula",
+        "display": "1~Mag",
+        "formula": "1-Mag"
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 3,
+      "worth": 1500,
+      "staffExperience": 35,
+      "effect": "Puts any enemy to sleep",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Sleep",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "torch_staff",
+      "names": {
+        "en": "Torch"
+      },
+      "weaponTypeId": "staff",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 10,
+      "worth": 1000,
+      "staffExperience": 15,
+      "effect": "Lights up the area by 4 more tiles (decreases by 1 tile each turn)",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Torch",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hammerne",
+      "names": {
+        "en": "Hammerne"
+      },
+      "weaponTypeId": "staff",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 3,
+      "worth": 1800,
+      "staffExperience": 40,
+      "effect": "Repairs a weapon or staff to full uses",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Hammerne",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "watch",
+      "names": {
+        "en": "Watch"
+      },
+      "weaponTypeId": "staff",
+      "rank": "C",
+      "range": {
+        "kind": "formula",
+        "display": "1~Mag",
+        "formula": "1-Mag"
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 5,
+      "worth": 2000,
+      "staffExperience": 30,
+      "effect": "Supposed to reveal hidden rooms (unused staff that cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Watch",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "berserk",
+      "names": {
+        "en": "Berserk"
+      },
+      "weaponTypeId": "staff",
+      "rank": "B",
+      "range": {
+        "kind": "formula",
+        "display": "1~Mag",
+        "formula": "1-Mag"
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 3,
+      "worth": 1800,
+      "staffExperience": 40,
+      "effect": "Berserks an enemy so they attack friend or foe",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Berserk",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "unlock",
+      "names": {
+        "en": "Unlock"
+      },
+      "weaponTypeId": "staff",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 3,
+      "worth": 1200,
+      "staffExperience": 30,
+      "effect": "Unlocks a door",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Unlock",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "barrier",
+      "names": {
+        "en": "Barrier"
+      },
+      "weaponTypeId": "staff",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 15,
+      "worth": 2250,
+      "staffExperience": 17,
+      "effect": "Increases Resistance by 7 (decreases by 1 each turn)",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Barrier",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "tienas_staff",
+      "names": {
+        "en": "Tiena's Staff"
+      },
+      "weaponTypeId": "staff",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1",
+        "minimum": 1,
+        "maximum": 1
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 30,
+      "worth": 1800,
+      "staffExperience": 13,
+      "effect": "Recovers Mag+15 HP (cameo of Tiena from the Hasha no Tsurugi manga)",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Tiena's Staff",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "saints_staff",
+      "names": {
+        "en": "Saint's Staff"
+      },
+      "weaponTypeId": "staff",
+      "rank": "S",
+      "range": {
+        "kind": "all",
+        "display": "All"
+      },
+      "weight": null,
+      "might": null,
+      "hit": null,
+      "critical": null,
+      "uses": 3,
+      "worth": null,
+      "staffExperience": 10,
+      "effect": "Completely recovers HP and status of all allies on the map (except the caster)",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-staves",
+          "locator": "Staves > Saint's Staff",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "uses",
+            "worth",
+            "staffExperience",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "names": {
+        "en": "Fire"
+      },
+      "weaponTypeId": "anima",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 1,
+      "might": 5,
+      "hit": 95,
+      "critical": 0,
+      "uses": 30,
+      "worth": 420,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-anima-tomes",
+          "locator": "Anima Tomes > Fire",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thunder",
+      "names": {
+        "en": "Thunder"
+      },
+      "weaponTypeId": "anima",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 2,
+      "might": 6,
+      "hit": 80,
+      "critical": 5,
+      "uses": 25,
+      "worth": 500,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-anima-tomes",
+          "locator": "Anima Tomes > Thunder",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fimbulvetr",
+      "names": {
+        "en": "Fimbulvetr"
+      },
+      "weaponTypeId": "anima",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 8,
+      "might": 13,
+      "hit": 80,
+      "critical": 0,
+      "uses": 15,
+      "worth": 3900,
+      "staffExperience": null,
+      "effect": "(Usable in Trial Maps only)",
+      "availabilityFlags": [
+        "trial_map_only"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-anima-tomes",
+          "locator": "Anima Tomes > Fimbulvetr",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elfire",
+      "names": {
+        "en": "Elfire"
+      },
+      "weaponTypeId": "anima",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 4,
+      "might": 8,
+      "hit": 75,
+      "critical": 0,
+      "uses": 20,
+      "worth": 800,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-anima-tomes",
+          "locator": "Anima Tomes > Elfire",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "aircalibur",
+      "names": {
+        "en": "Aircalibur"
+      },
+      "weaponTypeId": "anima",
+      "rank": "B",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 2,
+      "might": 8,
+      "hit": 85,
+      "critical": 0,
+      "uses": 20,
+      "worth": 1100,
+      "staffExperience": null,
+      "effect": "Effective against flying units",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-anima-tomes",
+          "locator": "Anima Tomes > Aircalibur",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bolting",
+      "names": {
+        "en": "Bolting"
+      },
+      "weaponTypeId": "anima",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "3~10",
+        "minimum": 3,
+        "maximum": 10
+      },
+      "weight": 10,
+      "might": 12,
+      "hit": 70,
+      "critical": 0,
+      "uses": 5,
+      "worth": 3000,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-anima-tomes",
+          "locator": "Anima Tomes > Bolting",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "forblaze",
+      "names": {
+        "en": "Forblaze"
+      },
+      "weaponTypeId": "anima",
+      "rank": "S",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 6,
+      "might": 14,
+      "hit": 85,
+      "critical": 5,
+      "uses": 20,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Luck +5, effective against Wyvern Riders, Wyvern Lords and Mamkutes",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-anima-tomes",
+          "locator": "Anima Tomes > Forblaze",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lightning",
+      "names": {
+        "en": "Lightning"
+      },
+      "weaponTypeId": "light",
+      "rank": "E",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 1,
+      "might": 5,
+      "hit": 75,
+      "critical": 0,
+      "uses": 30,
+      "worth": 540,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-light-tomes",
+          "locator": "Light Tomes > Lightning",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "divine",
+      "names": {
+        "en": "Divine"
+      },
+      "weaponTypeId": "light",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 3,
+      "might": 8,
+      "hit": 65,
+      "critical": 0,
+      "uses": 25,
+      "worth": 1250,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-light-tomes",
+          "locator": "Light Tomes > Divine",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "purge",
+      "names": {
+        "en": "Purge"
+      },
+      "weaponTypeId": "light",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "3~10",
+        "minimum": 3,
+        "maximum": 10
+      },
+      "weight": 8,
+      "might": 10,
+      "hit": 70,
+      "critical": 0,
+      "uses": 5,
+      "worth": 3500,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-light-tomes",
+          "locator": "Light Tomes > Purge",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "aureola",
+      "names": {
+        "en": "Aureola"
+      },
+      "weaponTypeId": "light",
+      "rank": "S",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 9,
+      "might": 15,
+      "hit": 90,
+      "critical": 5,
+      "uses": 20,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Resistance +5, effective against Wyvern Riders, Wyvern Lords and Mamkutes",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-light-tomes",
+          "locator": "Light Tomes > Aureola",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fenrir",
+      "names": {
+        "en": "Fenrir"
+      },
+      "weaponTypeId": "dark",
+      "rank": "A",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 13,
+      "might": 15,
+      "hit": 65,
+      "critical": 0,
+      "uses": 13,
+      "worth": 7800,
+      "staffExperience": null,
+      "effect": "(Cannot be obtained)",
+      "availabilityFlags": [
+        "unobtainable"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-dark-tomes",
+          "locator": "Dark Tomes > Fenrir",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "flux",
+      "names": {
+        "en": "Flux"
+      },
+      "weaponTypeId": "dark",
+      "rank": "D",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 5,
+      "might": 8,
+      "hit": 70,
+      "critical": 0,
+      "uses": 30,
+      "worth": 780,
+      "staffExperience": null,
+      "effect": null,
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-dark-tomes",
+          "locator": "Dark Tomes > Flux",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "nosferatu",
+      "names": {
+        "en": "Nosferatu"
+      },
+      "weaponTypeId": "dark",
+      "rank": "C",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 6,
+      "might": 10,
+      "hit": 70,
+      "critical": 0,
+      "uses": 20,
+      "worth": 3000,
+      "staffExperience": null,
+      "effect": "Restores HP equal to damage done to enemy",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-dark-tomes",
+          "locator": "Dark Tomes > Nosferatu",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "eclipse",
+      "names": {
+        "en": "Eclipse"
+      },
+      "weaponTypeId": "dark",
+      "rank": "B",
+      "range": {
+        "kind": "fixed",
+        "display": "3~10",
+        "minimum": 3,
+        "maximum": 10
+      },
+      "weight": 9,
+      "might": null,
+      "hit": 10,
+      "critical": 0,
+      "uses": 5,
+      "worth": 4000,
+      "staffExperience": null,
+      "effect": "Reduces HP to 1",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-dark-tomes",
+          "locator": "Dark Tomes > Eclipse",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "apocalypse",
+      "names": {
+        "en": "Apocalypse"
+      },
+      "weaponTypeId": "dark",
+      "rank": "S",
+      "range": {
+        "kind": "fixed",
+        "display": "1~2",
+        "minimum": 1,
+        "maximum": 2
+      },
+      "weight": 12,
+      "might": 18,
+      "hit": 80,
+      "critical": 5,
+      "uses": 20,
+      "worth": null,
+      "staffExperience": null,
+      "effect": "Magic +5, effective against Wyvern Riders, Wyvern Lords and Mamkutes",
+      "availabilityFlags": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-inventory-dark-tomes",
+          "locator": "Dark Tomes > Apocalypse",
+          "fields": [
+            "names",
+            "rank",
+            "range",
+            "weight",
+            "might",
+            "hit",
+            "critical",
+            "uses",
+            "worth",
+            "effect",
+            "availabilityFlags"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}
