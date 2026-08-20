@@ -104,7 +104,7 @@ function Fe6UnitOverview({ unit }: { unit: Fe6Unit }) {
   const profile = unit.characterProfile;
   return <div className="fe6-overview">
     <section className="data-section" aria-labelledby="fe6-character-profile"><h2 id="fe6-character-profile">Character Profile</h2>
-      <dl className="fe6-fact-grid"><div><dt>Recruitment time</dt><dd>{formatFe6Join(profile.recruitment)}</dd></div><div><dt>Recruitment condition</dt><dd>{profile.recruitment.condition}</dd></div><div><dt>Starting class</dt><dd>{fe6ClassName(profile.startingClassId)}</dd></div><div><dt>Starting level</dt><dd>{profile.startingLevel}</dd></div></dl>
+      <dl className="fe6-fact-grid"><div><dt>Recruitment time</dt><dd>{formatFe6Join(profile.recruitment)}</dd></div><div><dt>Recruitment condition</dt><dd>{profile.recruitment.condition}</dd></div><div><dt>Starting class</dt><dd>{fe6ClassName(profile.startingClassId)}</dd></div><div><dt>Starting level</dt><dd>{profile.startingLevel}</dd></div><div><dt>Starting items</dt><dd><StartingItemsList items={profile.startingItems.items} /></dd></div></dl>
       <h3>Stat Profile</h3><StatProfile unit={unit} />
       {profile.hardModeExpectedStats.length ? <HardModeStatProfile unit={unit} /> : null}
       <AffinitySection unit={unit} />
@@ -142,6 +142,23 @@ function Fe6Supports({ unit }: { unit: Fe6Unit }) {
   const partners = unit.supports.map(findFe6UnitBySlug).filter((partner): partner is Fe6Unit => Boolean(partner));
   return partners.length ? <ul className="fe6-support-list">{partners.map((partner) => <li key={partner.id}><AppLink to={`/FE6/Units/${partner.id}`}>{getFe6PortraitUrl(partner.id) ? <img src={getFe6PortraitUrl(partner.id)} alt="" /> : null}{partner.names.en}</AppLink></li>)}</ul> : <p className="fe6-empty-state">No listed support partners.</p>;
 }
+
+function StartingItemsList({ items }: { items: string[] }) {
+  if (!items.length) return <>None</>;
+  return <span className="fe6-starting-items">{items.map((item) => <span className="fe6-starting-item" key={item}>{findStartingItemIcons(item).map(({ kind, id }) => {
+    const icon = getFe6WeaponItemIconUrl(kind, id);
+    return icon ? <img key={`${kind}:${id}`} src={icon} alt="" loading="lazy" /> : null;
+  })}<span>{item}</span></span>)}</span>;
+}
+
+function findStartingItemIcons(value: string): Array<{ kind: "weapon" | "item"; id: string }> {
+  return [...fe6Weapons.map((entry) => ({ kind: "weapon" as const, id: entry.id, name: entry.names.en })), ...fe6Items.map((entry) => ({ kind: "item" as const, id: entry.id, name: entry.names.en }))]
+    .filter((entry) => new RegExp(`(^|[^a-z])${escapeRegex(entry.name)}($|[^a-z])`, "i").test(value))
+    .sort((left, right) => right.name.length - left.name.length)
+    .map(({ kind, id }) => ({ kind, id }));
+}
+
+function escapeRegex(value: string): string { return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
 
 export function Fe6ClassIndexPage() {
   const [query, setQuery] = useState(""); const [tier, setTier] = useState<"all" | Fe6Class["tier"]>("all");

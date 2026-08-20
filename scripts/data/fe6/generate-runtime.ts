@@ -17,6 +17,7 @@ const recruitment = parsed["data/normalized/fe6/recruitment.json"].recruitment a
 const snapshots = parsed["data/normalized/fe6/unit-base-stats.json"].snapshots as JsonObject[];
 const growths = parsed["data/normalized/fe6/unit-growths.json"].growths as JsonObject[];
 const weaponLevels = parsed["data/normalized/fe6/unit-weapon-levels.json"].weaponLevels as JsonObject[];
+const startingItems = parsed["data/normalized/fe6/unit-starting-items.json"].startingItems as JsonObject[];
 const relationships = parsed["data/normalized/fe6/support-relationships.json"].relationships as JsonObject[];
 const affinities = parsed["data/normalized/fe6/affinities.json"].affinities as JsonObject[];
 const classes = parsed["data/normalized/fe6/classes.json"].classes as JsonObject[];
@@ -72,8 +73,9 @@ const runtimeUnits = units.map((unit) => {
   const hardBases = snapshots.filter((entry) => entry.unitId === unit.id && entry.difficulty === "hard");
   const growth = growths.find((entry) => entry.unitId === unit.id);
   const ranks = weaponLevels.find((entry) => entry.unitId === unit.id);
+  const itemsAtJoin = startingItems.find((entry) => entry.unitId === unit.id);
   const affinity = affinityById.get(unit.affinityId);
-  if (!recruitmentRecord || !normalBase || !growth || !ranks || !affinity) throw new Error(`Incomplete runtime join for ${unit.id}.`);
+  if (!recruitmentRecord || !normalBase || !growth || !ranks || !itemsAtJoin || !affinity) throw new Error(`Incomplete runtime join for ${unit.id}.`);
   const supportUnitIds = relationships
     .filter((relationship) => relationship.unitIds.includes(unit.id))
     .map((relationship) => relationship.unitIds.find((id: string) => id !== unit.id))
@@ -92,6 +94,7 @@ const runtimeUnits = units.map((unit) => {
       growths: growth.rates,
       ...classCaps(normalBase.startingClassId),
       weaponLevels: ranks.levels,
+      startingItems: itemsAtJoin,
       affinity: {
         id: affinity.id,
         name: affinity.names.en,

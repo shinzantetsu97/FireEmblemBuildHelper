@@ -49,6 +49,9 @@ describe("application regressions", () => {
     expect(screen.getByRole("heading", { name: "Supports", level: 2 })).toBeInTheDocument();
     expect(screen.getByRole("table", { name: /stat profile/i })).toBeInTheDocument();
     expect(screen.getByText("Weapon Levels")).toBeInTheDocument();
+    expect(screen.getByText("Rapier")).toBeInTheDocument();
+    expect(screen.getByText("Vulnerary")).toBeInTheDocument();
+    expect(view.container.querySelectorAll(".fe6-starting-item img")).toHaveLength(2);
     expect(screen.getByLabelText("Support partner")).toHaveValue("alen");
     await user.selectOptions(screen.getByLabelText("Support rank"), "A");
     expect(screen.getByText(/Roy.*Alen at rank A/)).toBeInTheDocument();

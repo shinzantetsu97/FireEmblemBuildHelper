@@ -1,0 +1,1023 @@
+{
+  "formatVersion": 1,
+  "gameId": "fe6",
+  "startingItems": [
+    {
+      "id": "roy.normal",
+      "unitId": "roy",
+      "items": [
+        "Rapier",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Roy",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "marcus.normal",
+      "unitId": "marcus",
+      "items": [
+        "Iron Sword",
+        "Silver Lance"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Marcus",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "alen.normal",
+      "unitId": "alen",
+      "items": [
+        "Iron Sword",
+        "Iron Lance"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Allen",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lance.normal",
+      "unitId": "lance",
+      "items": [
+        "Iron Sword",
+        "Javelin",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Lance",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wolt.normal",
+      "unitId": "wolt",
+      "items": [
+        "Iron Bow",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Wolt",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bors.normal",
+      "unitId": "bors",
+      "items": [
+        "Iron Lance",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Bors",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "merlinus.normal",
+      "unitId": "merlinus",
+      "items": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Merlinus",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elen.normal",
+      "unitId": "elen",
+      "items": [
+        "Heal",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Ellen",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dieck.normal",
+      "unitId": "dieck",
+      "items": [
+        "Iron Blade",
+        "Iron Sword"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Dieck",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "wade.normal",
+      "unitId": "wade",
+      "items": [
+        "Iron Axe",
+        "Hammer",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Wade",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lot.normal",
+      "unitId": "lot",
+      "items": [
+        "Iron Axe",
+        "Steel Axe",
+        "Hand Axe"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Lott",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "shanna.normal",
+      "unitId": "shanna",
+      "items": [
+        "Slim Lance",
+        "Javelin",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Thany",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "chad.normal",
+      "unitId": "chad",
+      "items": [
+        "Iron Sword",
+        "Lockpick"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Chad",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lugh.normal",
+      "unitId": "lugh",
+      "items": [
+        "Fire",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Lugh",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "clarine.normal",
+      "unitId": "clarine",
+      "items": [
+        "Heal",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Clarine",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "rutger.normal",
+      "unitId": "rutger",
+      "items": [
+        "Killing Edge"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Rutger",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "saul.normal",
+      "unitId": "saul",
+      "items": [
+        "Mend"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Saul",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dorothy.normal",
+      "unitId": "dorothy",
+      "items": [
+        "Steel Bow",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Dorothy",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sue.normal",
+      "unitId": "sue",
+      "items": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Sue",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zelot.normal",
+      "unitId": "zelot",
+      "items": [
+        "Steel Sword",
+        "Steel Lance",
+        "Javelin"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Zealot",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "trec.normal",
+      "unitId": "trec",
+      "items": [
+        "Iron Lance",
+        "Javelin",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Treck",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "noah.normal",
+      "unitId": "noah",
+      "items": [
+        "Steel Sword",
+        "Iron Lance",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Noah",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "astolfo.normal",
+      "unitId": "astolfo",
+      "items": [
+        "Iron Sword",
+        "Lockpick"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Astohl",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "lilina.normal",
+      "unitId": "lilina",
+      "items": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Lilina",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gwendolyn.normal",
+      "unitId": "gwendolyn",
+      "items": [
+        "Iron Lance",
+        "Javelin",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Wendy",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "barthe.normal",
+      "unitId": "barthe",
+      "items": [
+        "Steel Lance"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Barth",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "ogier.normal",
+      "unitId": "ogier",
+      "items": [
+        "Steel Sword",
+        "Armorslayer",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Oujay",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fir.normal",
+      "unitId": "fir",
+      "items": [
+        "Wo Dao",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Fir",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sin.normal",
+      "unitId": "sin",
+      "items": [
+        "Short Bow"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Shin",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "gonzalez.normal",
+      "unitId": "gonzalez",
+      "items": [
+        "Devil Axe",
+        "Vulnerary (Ch 10A)"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Gonzales",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "geese.normal",
+      "unitId": "geese",
+      "items": [
+        "Hero Axe (Ch 10A) Steel Axe (Ch 11B)",
+        "Hand Axe (Ch 11B)"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Geese",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "klein.normal",
+      "unitId": "klein",
+      "items": [
+        "Silver Bow",
+        "White Gem"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Klein",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "thea.normal",
+      "unitId": "thea",
+      "items": [
+        "Slim Lance",
+        "Javelin"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Tate",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "larum.normal",
+      "unitId": "larum",
+      "items": [
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Lalum",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "echidna.normal",
+      "unitId": "echidna",
+      "items": [
+        "Steel Axe"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Echidna",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "elffin.normal",
+      "unitId": "elffin",
+      "items": [
+        "Vulnerary",
+        "Angelic Robe",
+        "Blue Gem"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Elphin",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "bartre.normal",
+      "unitId": "bartre",
+      "items": [
+        "Hero Axe"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Bartre",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "raigh.normal",
+      "unitId": "raigh",
+      "items": [
+        "Nosferatu"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Ray",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cath.normal",
+      "unitId": "cath",
+      "items": [
+        "Iron Sword",
+        "Lockpick",
+        "Vulnerary"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Cath",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "melady.normal",
+      "unitId": "melady",
+      "items": [
+        "Steel Lance"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Miredy",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "perceval.normal",
+      "unitId": "perceval",
+      "items": [
+        "Silver Lance",
+        "Silver Sword (Ch 15)"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Percival",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "cecilia.normal",
+      "unitId": "cecilia",
+      "items": [
+        "Aircalibur",
+        "Mend"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Cecilia",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "sophia.normal",
+      "unitId": "sophia",
+      "items": [
+        "Flux"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Sofiya",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "igrene.normal",
+      "unitId": "igrene",
+      "items": [
+        "Killer Bow"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Igrene",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "garret.normal",
+      "unitId": "garret",
+      "items": [
+        "Steel Axe",
+        "Hand Axe"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Garret",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fae.normal",
+      "unitId": "fae",
+      "items": [
+        "Divine Dragonstone"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Fa",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "hugh.normal",
+      "unitId": "hugh",
+      "items": [
+        "Elfire",
+        "Member Card",
+        "Elixir"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Hugh",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "zeiss.normal",
+      "unitId": "zeiss",
+      "items": [
+        "Steel Lance",
+        "Javelin"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Zeis",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "douglas.normal",
+      "unitId": "douglas",
+      "items": [
+        "Silver Axe",
+        "Silver Lance"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Douglas",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "niime.normal",
+      "unitId": "niime",
+      "items": [
+        "Flux",
+        "Eclipse",
+        "Physic",
+        "Heal"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Niime",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "dayan.normal",
+      "unitId": "dayan",
+      "items": [
+        "Short Bow",
+        "Steel Sword"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Dayan",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "juno.normal",
+      "unitId": "juno",
+      "items": [],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Juno",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "yoder.normal",
+      "unitId": "yoder",
+      "items": [
+        "Recover",
+        "Lightning",
+        "Maltet (Sacae route) Murgleis (Ilia route)",
+        "Saint Staff"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Yodel",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "karel.normal",
+      "unitId": "karel",
+      "items": [
+        "Wo Dao"
+      ],
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-starting-items",
+          "locator": "Starting Items > Karel",
+          "fields": [
+            "items"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

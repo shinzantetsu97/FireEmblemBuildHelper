@@ -43,6 +43,16 @@
       "acquisition": "automated_fetch"
     },
     {
+      "sourceId": "serenes-fe6-starting-items",
+      "url": "https://serenesforest.net/binding-blade/characters/starting-items/",
+      "relativePath": "characters/starting-items.html",
+      "retrievedAt": "2026-08-20T15:35:17.356Z",
+      "status": 200,
+      "bytes": 52158,
+      "sha256": "c5bc8fcde668aa42961205565a89305e56ed130f799be84f7a67e74a03add1b1",
+      "acquisition": "automated_fetch"
+    },
+    {
       "sourceId": "serenes-fe6-supports",
       "url": "https://serenesforest.net/binding-blade/characters/supports/",
       "relativePath": "characters/supports.html",

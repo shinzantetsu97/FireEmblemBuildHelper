@@ -477,6 +477,27 @@ for (const row of dataRows(baseStatsTable, "Name")) {
   }
 }
 
+const startingItemsTable = await sourceTable("serenes-fe6-starting-items");
+const unitStartingItems = dataRows(startingItemsTable, "Name")
+  .filter((row) => row.cells.length === 5)
+  .flatMap((row) => {
+    const [sourceName, ...itemCells] = rowCells(row);
+    let unitId: string;
+    try {
+      unitId = unitIdFor(sourceName);
+    } catch {
+      return [];
+    }
+    if (!storyUnitIds.includes(unitId)) return [];
+    return [{
+      id: `${unitId}.normal`,
+      unitId,
+      items: itemCells.filter((item) => item !== "â€“" && item !== "–" && item !== "-"),
+      reviewStatus: "accepted",
+      provenance: [sourceRef("serenes-fe6-starting-items", `Starting Items > ${sourceName}`, ["items"])],
+    }];
+  });
+
 const growthTable = await sourceTable("serenes-fe6-character-growth-rates");
 const unitGrowths = dataRows(growthTable, "Name")
   .filter((row) => row.cells.length === 8)
@@ -717,6 +738,7 @@ const candidateFiles: Record<string, unknown> = {
     sources: {
       recruitment: rawRows(recruitmentTable),
       baseStats: rawRows(baseStatsTable),
+      startingItems: rawRows(startingItemsTable),
       growthRates: rawRows(growthTable),
       supports: rawRows(supportTable),
     },
@@ -739,6 +761,7 @@ const normalizedFiles: Record<string, unknown> = {
   "unit-base-stats.json": { formatVersion: 1, gameId: "fe6", snapshots: baseStatSnapshots },
   "unit-growths.json": { formatVersion: 1, gameId: "fe6", growths: unitGrowths },
   "unit-weapon-levels.json": { formatVersion: 1, gameId: "fe6", weaponLevels: unitWeaponLevels },
+  "unit-starting-items.json": { formatVersion: 1, gameId: "fe6", startingItems: unitStartingItems },
   "support-relationships.json": { formatVersion: 1, gameId: "fe6", relationships: [...supportEdges.values()].sort((left, right) => String(left.id).localeCompare(String(right.id))) },
   "affinities.json": { formatVersion: 1, gameId: "fe6", affinities },
   "classes.json": { formatVersion: 1, gameId: "fe6", classes },
@@ -762,6 +785,7 @@ const extractionReport = {
     baseStatSnapshots: baseStatSnapshots.length,
     growths: unitGrowths.length,
     weaponLevelSnapshots: unitWeaponLevels.length,
+    startingItemSnapshots: unitStartingItems.length,
     supportRelationships: supportEdges.size,
     affinities: affinities.length,
     classes: classes.length,

@@ -138,6 +138,17 @@ export const weaponLevelsSchema = z.object({
   }).strict()).min(1),
 }).strict();
 
+export const startingItemsSchema = z.object({
+  ...header,
+  startingItems: z.array(z.object({
+    id,
+    unitId: id,
+    items: z.array(z.string().min(1)).max(4),
+    reviewStatus,
+    provenance,
+  }).strict()).min(1),
+}).strict();
+
 export const supportsSchema = z.object({
   ...header,
   relationships: z.array(z.object({
@@ -260,6 +271,7 @@ export const domainSchemas = {
   "data/normalized/fe6/unit-base-stats.json": baseStatsSchema,
   "data/normalized/fe6/unit-growths.json": growthsSchema,
   "data/normalized/fe6/unit-weapon-levels.json": weaponLevelsSchema,
+  "data/normalized/fe6/unit-starting-items.json": startingItemsSchema,
   "data/normalized/fe6/support-relationships.json": supportsSchema,
   "data/normalized/fe6/affinities.json": affinitiesSchema,
   "data/normalized/fe6/classes.json": classesSchema,

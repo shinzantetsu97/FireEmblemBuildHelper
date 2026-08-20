@@ -3713,6 +3713,31 @@ html[lang="zh-Hans"] .section-heading h2 {
   overflow-wrap: anywhere;
 }
 
+.fe6-starting-items,
+.fe6-starting-item {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.fe6-starting-items {
+  row-gap: 0.45rem;
+}
+
+.fe6-starting-item + .fe6-starting-item::before {
+  color: #a1aaa6;
+  content: "•";
+  margin-right: 0.1rem;
+}
+
+.fe6-starting-item img {
+  height: 1.25rem;
+  image-rendering: pixelated;
+  object-fit: contain;
+  width: 1.25rem;
+}
+
 .fe6-overview .data-section > h2,
 .fe6-hard-mode h3,
 .fe6-two-column h3 {

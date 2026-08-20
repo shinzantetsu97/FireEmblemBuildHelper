@@ -21,6 +21,7 @@ const EXPECTED_COUNTS = {
   recruitment: 54,
   growths: 54,
   weaponLevels: 54,
+  startingItems: 54,
   affinities: 7,
   classes: 67,
   promotions: 26,
@@ -84,6 +85,7 @@ export async function validateFe6Data(): Promise<ValidationResult> {
   const snapshots = parsed["data/normalized/fe6/unit-base-stats.json"].snapshots as JsonObject[];
   const growths = parsed["data/normalized/fe6/unit-growths.json"].growths as JsonObject[];
   const weaponLevels = parsed["data/normalized/fe6/unit-weapon-levels.json"].weaponLevels as JsonObject[];
+  const startingItems = parsed["data/normalized/fe6/unit-starting-items.json"].startingItems as JsonObject[];
   const relationships = parsed["data/normalized/fe6/support-relationships.json"].relationships as JsonObject[];
   const affinities = parsed["data/normalized/fe6/affinities.json"].affinities as JsonObject[];
   const classes = parsed["data/normalized/fe6/classes.json"].classes as JsonObject[];
@@ -95,6 +97,7 @@ export async function validateFe6Data(): Promise<ValidationResult> {
   expectedCount(recruitment.length, "recruitment", errors);
   expectedCount(growths.length, "growths", errors);
   expectedCount(weaponLevels.length, "weaponLevels", errors);
+  expectedCount(startingItems.length, "startingItems", errors);
   expectedCount(relationships.length, "supports", errors);
   expectedCount(affinities.length, "affinities", errors);
   expectedCount(classes.length, "classes", errors);
@@ -107,6 +110,7 @@ export async function validateFe6Data(): Promise<ValidationResult> {
   unique(recruitment, "recruitment", errors);
   unique(snapshots, "base-stat snapshot", errors);
   unique(weaponLevels, "weapon-level snapshot", errors);
+  unique(startingItems, "starting-item snapshot", errors);
   unique(relationships, "support relationship", errors);
   unique(affinities, "affinity", errors);
   unique(classes, "class", errors);
@@ -145,6 +149,7 @@ export async function validateFe6Data(): Promise<ValidationResult> {
     if (normalBases.length !== 1) errors.push({ code: "unit_bases", message: `${unit.id} must have exactly one Normal-mode base snapshot.` });
     if (growths.filter((entry) => entry.unitId === unit.id).length !== 1) errors.push({ code: "unit_growth", message: `${unit.id} must have exactly one growth vector.` });
     if (weaponLevels.filter((entry) => entry.unitId === unit.id).length !== 1) errors.push({ code: "unit_weapon_levels", message: `${unit.id} must have exactly one starting weapon-level snapshot.` });
+    if (startingItems.filter((entry) => entry.unitId === unit.id).length !== 1) errors.push({ code: "unit_starting_items", message: `${unit.id} must have exactly one starting-item snapshot.` });
     if (recruitment.filter((entry) => entry.unitId === unit.id).length !== 1) errors.push({ code: "unit_recruitment", message: `${unit.id} must have exactly one recruitment record.` });
   });
 

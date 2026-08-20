@@ -55,6 +55,16 @@ export const FE6_SOURCES: SourceDefinition[] = [
     minimumRows: 54,
   },
   {
+    id: "serenes-fe6-starting-items",
+    title: "Binding Blade Starting Items",
+    url: `${ROOT}/characters/starting-items/`,
+    relativePath: "characters/starting-items.html",
+    domain: "units",
+    expectedHeading: "Starting Items",
+    expectedHeaders: ["Name", "Item 1", "Item 2", "Item 3", "Item 4"],
+    minimumRows: 54,
+  },
+  {
     id: "serenes-fe6-supports",
     title: "Binding Blade Supports",
     url: `${ROOT}/characters/supports/`,

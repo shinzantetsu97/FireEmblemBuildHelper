@@ -7,6 +7,7 @@ export const RELEASES = [
     current: true,
     changes: [
       "Added English information for The Binding Blade, including unit, class, weapon, and item directories with source-backed sprites and icons.",
+      "Added source-backed starting items to FE6 unit profiles, with matching weapon and item icons.",
     ],
   },
   {

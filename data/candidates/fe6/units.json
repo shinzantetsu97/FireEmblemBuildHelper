@@ -3520,6 +3520,1064 @@
         ]
       }
     ],
+    "startingItems": [
+      {
+        "cells": [
+          "Name",
+          "Item 1",
+          "Item 2",
+          "Item 3",
+          "Item 4"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Roy",
+          "Rapier",
+          "Vulnerary",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Marcus",
+          "Iron Sword",
+          "Silver Lance",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Allen",
+          "Iron Sword",
+          "Iron Lance",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lance",
+          "Iron Sword",
+          "Javelin",
+          "Vulnerary",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wolt",
+          "Iron Bow",
+          "Vulnerary",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Bors",
+          "Iron Lance",
+          "Vulnerary",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Merlinus",
+          "–",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Ellen",
+          "Heal",
+          "Vulnerary",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dieck",
+          "Iron Blade",
+          "Iron Sword",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wade",
+          "Iron Axe",
+          "Hammer",
+          "Vulnerary",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lott",
+          "Iron Axe",
+          "Steel Axe",
+          "Hand Axe",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Thany",
+          "Slim Lance",
+          "Javelin",
+          "Vulnerary",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Chad",
+          "Iron Sword",
+          "Lockpick",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lugh",
+          "Fire",
+          "Vulnerary",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Clarine",
+          "Heal",
+          "Vulnerary",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Rutger",
+          "Killing Edge",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Saul",
+          "Mend",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dorothy",
+          "Steel Bow",
+          "Vulnerary",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Sue",
+          "–",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zealot",
+          "Steel Sword",
+          "Steel Lance",
+          "Javelin",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Name",
+          "Item 1",
+          "Item 2",
+          "Item 3",
+          "Item 4"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Treck",
+          "Iron Lance",
+          "Javelin",
+          "Vulnerary",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Noah",
+          "Steel Sword",
+          "Iron Lance",
+          "Vulnerary",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Astohl",
+          "Iron Sword",
+          "Lockpick",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lilina",
+          "–",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Wendy",
+          "Iron Lance",
+          "Javelin",
+          "Vulnerary",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Barth",
+          "Steel Lance",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Oujay",
+          "Steel Sword",
+          "Armorslayer",
+          "Vulnerary",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Fir",
+          "Wo Dao",
+          "Vulnerary",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Shin",
+          "Short Bow",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Gonzales",
+          "Devil Axe",
+          "Vulnerary (Ch 10A)",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Geese",
+          "Hero Axe (Ch 10A) Steel Axe (Ch 11B)",
+          "Hand Axe (Ch 11B)",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Klein",
+          "Silver Bow",
+          "White Gem",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Tate",
+          "Slim Lance",
+          "Javelin",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Lalum",
+          "Vulnerary",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Echidna",
+          "Steel Axe",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Elphin",
+          "Vulnerary",
+          "Angelic Robe",
+          "Blue Gem",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Bartre",
+          "Hero Axe",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Ray",
+          "Nosferatu",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Cath",
+          "Iron Sword",
+          "Lockpick",
+          "Vulnerary",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Miredy",
+          "Steel Lance",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Name",
+          "Item 1",
+          "Item 2",
+          "Item 3",
+          "Item 4"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Percival",
+          "Silver Lance",
+          "Silver Sword (Ch 15)",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Cecilia",
+          "Aircalibur",
+          "Mend",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Sofiya",
+          "Flux",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Igrene",
+          "Killer Bow",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Garret",
+          "Steel Axe",
+          "Hand Axe",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Fa",
+          "Divine Dragonstone",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Hugh",
+          "Elfire",
+          "Member Card",
+          "Elixir",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zeis",
+          "Steel Lance",
+          "Javelin",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Douglas",
+          "Silver Axe",
+          "Silver Lance",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Niime",
+          "Flux",
+          "Eclipse",
+          "Physic",
+          "Heal"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Dayan",
+          "Short Bow",
+          "Steel Sword",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Juno",
+          "–",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Yodel",
+          "Recover",
+          "Lightning",
+          "Maltet (Sacae route) Murgleis (Ilia route)",
+          "Saint Staff"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Karel",
+          "Wo Dao",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Narshen",
+          "Runesword",
+          "Delphi Shield",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Gale",
+          "Killer Lance",
+          "Light Brand",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Hector",
+          "Hero Axe",
+          "Silver Lance",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Brunya",
+          "Fimbulvetr",
+          "Bolting",
+          "Fortify",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Eliwood",
+          "Silver Lance",
+          "Silver Sword",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Murdoch",
+          "Tomahawk",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Name",
+          "Item 1",
+          "Item 2",
+          "Item 3",
+          "Item 4"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Zephiel",
+          "Eckesachs",
+          "–",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "cells": [
+          "Guinevere",
+          "Divine",
+          "Recover",
+          "–",
+          "–"
+        ],
+        "imageAlts": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    ],
     "growthRates": [
       {
         "cells": [

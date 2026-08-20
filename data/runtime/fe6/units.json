@@ -132,6 +132,25 @@
         "weaponLevels": {
           "sword": "D"
         },
+        "startingItems": {
+          "id": "roy.normal",
+          "unitId": "roy",
+          "items": [
+            "Rapier",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Roy",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "fire",
           "name": "Fire",
@@ -310,6 +329,25 @@
           "lance": "A",
           "axe": "E"
         },
+        "startingItems": {
+          "id": "marcus.normal",
+          "unitId": "marcus",
+          "items": [
+            "Iron Sword",
+            "Silver Lance"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Marcus",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "ice",
           "name": "Ice",
@@ -484,6 +522,25 @@
           "sword": "E",
           "lance": "D"
         },
+        "startingItems": {
+          "id": "alen.normal",
+          "unitId": "alen",
+          "items": [
+            "Iron Sword",
+            "Iron Lance"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Allen",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "fire",
           "name": "Fire",
@@ -657,6 +714,26 @@
           "sword": "E",
           "lance": "D"
         },
+        "startingItems": {
+          "id": "lance.normal",
+          "unitId": "lance",
+          "items": [
+            "Iron Sword",
+            "Javelin",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Lance",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "anima",
           "name": "Anima",
@@ -829,6 +906,25 @@
         "weaponLevels": {
           "bow": "D"
         },
+        "startingItems": {
+          "id": "wolt.normal",
+          "unitId": "wolt",
+          "items": [
+            "Iron Bow",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Wolt",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "ice",
           "name": "Ice",
@@ -1000,6 +1096,25 @@
         "weaponLevels": {
           "lance": "C"
         },
+        "startingItems": {
+          "id": "bors.normal",
+          "unitId": "bors",
+          "items": [
+            "Iron Lance",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Bors",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "wind",
           "name": "Wind",
@@ -1159,6 +1274,22 @@
         "promotedClassId": null,
         "promotedClassCap": null,
         "weaponLevels": {},
+        "startingItems": {
+          "id": "merlinus.normal",
+          "unitId": "merlinus",
+          "items": [],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Merlinus",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "dark",
           "name": "Dark",
@@ -1324,6 +1455,25 @@
         },
         "weaponLevels": {
           "staff": "D"
+        },
+        "startingItems": {
+          "id": "elen.normal",
+          "unitId": "elen",
+          "items": [
+            "Heal",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Ellen",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "wind",
@@ -1495,6 +1645,25 @@
         },
         "weaponLevels": {
           "sword": "C"
+        },
+        "startingItems": {
+          "id": "dieck.normal",
+          "unitId": "dieck",
+          "items": [
+            "Iron Blade",
+            "Iron Sword"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Dieck",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "thunder",
@@ -1669,6 +1838,26 @@
         "weaponLevels": {
           "axe": "D"
         },
+        "startingItems": {
+          "id": "wade.normal",
+          "unitId": "wade",
+          "items": [
+            "Iron Axe",
+            "Hammer",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Wade",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "fire",
           "name": "Fire",
@@ -1840,6 +2029,26 @@
         },
         "weaponLevels": {
           "axe": "D"
+        },
+        "startingItems": {
+          "id": "lot.normal",
+          "unitId": "lot",
+          "items": [
+            "Iron Axe",
+            "Steel Axe",
+            "Hand Axe"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Lott",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "anima",
@@ -2013,6 +2222,26 @@
         "weaponLevels": {
           "lance": "D"
         },
+        "startingItems": {
+          "id": "shanna.normal",
+          "unitId": "shanna",
+          "items": [
+            "Slim Lance",
+            "Javelin",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Thany",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "wind",
           "name": "Wind",
@@ -2175,6 +2404,25 @@
         "promotedClassCap": null,
         "weaponLevels": {
           "sword": "E"
+        },
+        "startingItems": {
+          "id": "chad.normal",
+          "unitId": "chad",
+          "items": [
+            "Iron Sword",
+            "Lockpick"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Chad",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "thunder",
@@ -2347,6 +2595,25 @@
         "weaponLevels": {
           "anima": "D"
         },
+        "startingItems": {
+          "id": "lugh.normal",
+          "unitId": "lugh",
+          "items": [
+            "Fire",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Lugh",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "fire",
           "name": "Fire",
@@ -2517,6 +2784,25 @@
         },
         "weaponLevels": {
           "staff": "D"
+        },
+        "startingItems": {
+          "id": "clarine.normal",
+          "unitId": "clarine",
+          "items": [
+            "Heal",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Clarine",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "thunder",
@@ -2721,6 +3007,24 @@
         "weaponLevels": {
           "sword": "C"
         },
+        "startingItems": {
+          "id": "rutger.normal",
+          "unitId": "rutger",
+          "items": [
+            "Killing Edge"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Rutger",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "dark",
           "name": "Dark",
@@ -2891,6 +3195,24 @@
         },
         "weaponLevels": {
           "staff": "C"
+        },
+        "startingItems": {
+          "id": "saul.normal",
+          "unitId": "saul",
+          "items": [
+            "Mend"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Saul",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "ice",
@@ -3063,6 +3385,25 @@
         "weaponLevels": {
           "bow": "D"
         },
+        "startingItems": {
+          "id": "dorothy.normal",
+          "unitId": "dorothy",
+          "items": [
+            "Steel Bow",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Dorothy",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "fire",
           "name": "Fire",
@@ -3233,6 +3574,22 @@
         },
         "weaponLevels": {
           "bow": "D"
+        },
+        "startingItems": {
+          "id": "sue.normal",
+          "unitId": "sue",
+          "items": [],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Sue",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "wind",
@@ -3409,6 +3766,26 @@
           "lance": "A",
           "axe": "D"
         },
+        "startingItems": {
+          "id": "zelot.normal",
+          "unitId": "zelot",
+          "items": [
+            "Steel Sword",
+            "Steel Lance",
+            "Javelin"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Zealot",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "dark",
           "name": "Dark",
@@ -3582,6 +3959,26 @@
           "sword": "E",
           "lance": "D"
         },
+        "startingItems": {
+          "id": "trec.normal",
+          "unitId": "trec",
+          "items": [
+            "Iron Lance",
+            "Javelin",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Treck",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "wind",
           "name": "Wind",
@@ -3754,6 +4151,26 @@
           "sword": "C",
           "lance": "D"
         },
+        "startingItems": {
+          "id": "noah.normal",
+          "unitId": "noah",
+          "items": [
+            "Steel Sword",
+            "Iron Lance",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Noah",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "anima",
           "name": "Anima",
@@ -3917,6 +4334,25 @@
         "promotedClassCap": null,
         "weaponLevels": {
           "sword": "C"
+        },
+        "startingItems": {
+          "id": "astolfo.normal",
+          "unitId": "astolfo",
+          "items": [
+            "Iron Sword",
+            "Lockpick"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Astohl",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "dark",
@@ -4088,6 +4524,22 @@
         },
         "weaponLevels": {
           "anima": "C"
+        },
+        "startingItems": {
+          "id": "lilina.normal",
+          "unitId": "lilina",
+          "items": [],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Lilina",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "light",
@@ -4266,6 +4718,26 @@
         "weaponLevels": {
           "lance": "D"
         },
+        "startingItems": {
+          "id": "gwendolyn.normal",
+          "unitId": "gwendolyn",
+          "items": [
+            "Iron Lance",
+            "Javelin",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Wendy",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "fire",
           "name": "Fire",
@@ -4439,6 +4911,24 @@
         "weaponLevels": {
           "lance": "C"
         },
+        "startingItems": {
+          "id": "barthe.normal",
+          "unitId": "barthe",
+          "items": [
+            "Steel Lance"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Barth",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "ice",
           "name": "Ice",
@@ -4610,6 +5100,26 @@
         },
         "weaponLevels": {
           "sword": "D"
+        },
+        "startingItems": {
+          "id": "ogier.normal",
+          "unitId": "ogier",
+          "items": [
+            "Steel Sword",
+            "Armorslayer",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Oujay",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "wind",
@@ -4814,6 +5324,25 @@
         "weaponLevels": {
           "sword": "D"
         },
+        "startingItems": {
+          "id": "fir.normal",
+          "unitId": "fir",
+          "items": [
+            "Wo Dao",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Fir",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "fire",
           "name": "Fire",
@@ -5016,6 +5545,24 @@
         },
         "weaponLevels": {
           "bow": "D"
+        },
+        "startingItems": {
+          "id": "sin.normal",
+          "unitId": "sin",
+          "items": [
+            "Short Bow"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Shin",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "ice",
@@ -5233,6 +5780,25 @@
         "weaponLevels": {
           "axe": "C"
         },
+        "startingItems": {
+          "id": "gonzalez.normal",
+          "unitId": "gonzalez",
+          "items": [
+            "Devil Axe",
+            "Vulnerary (Ch 10A)"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Gonzales",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "thunder",
           "name": "Thunder",
@@ -5411,6 +5977,25 @@
         },
         "weaponLevels": {
           "axe": "B"
+        },
+        "startingItems": {
+          "id": "geese.normal",
+          "unitId": "geese",
+          "items": [
+            "Hero Axe (Ch 10A) Steel Axe (Ch 11B)",
+            "Hand Axe (Ch 11B)"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Geese",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "fire",
@@ -5621,6 +6206,25 @@
         },
         "weaponLevels": {
           "bow": "A"
+        },
+        "startingItems": {
+          "id": "klein.normal",
+          "unitId": "klein",
+          "items": [
+            "Silver Bow",
+            "White Gem"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Klein",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "ice",
@@ -5834,6 +6438,25 @@
         "weaponLevels": {
           "lance": "D"
         },
+        "startingItems": {
+          "id": "thea.normal",
+          "unitId": "thea",
+          "items": [
+            "Slim Lance",
+            "Javelin"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Tate",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "ice",
           "name": "Ice",
@@ -5994,6 +6617,24 @@
         "promotedClassId": null,
         "promotedClassCap": null,
         "weaponLevels": {},
+        "startingItems": {
+          "id": "larum.normal",
+          "unitId": "larum",
+          "items": [
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Lalum",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "thunder",
           "name": "Thunder",
@@ -6169,6 +6810,24 @@
           "sword": "C",
           "axe": "B"
         },
+        "startingItems": {
+          "id": "echidna.normal",
+          "unitId": "echidna",
+          "items": [
+            "Steel Axe"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Echidna",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "ice",
           "name": "Ice",
@@ -6329,6 +6988,26 @@
         "promotedClassId": null,
         "promotedClassCap": null,
         "weaponLevels": {},
+        "startingItems": {
+          "id": "elffin.normal",
+          "unitId": "elffin",
+          "items": [
+            "Vulnerary",
+            "Angelic Robe",
+            "Blue Gem"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Elphin",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "light",
           "name": "Light",
@@ -6502,6 +7181,24 @@
           "axe": "A",
           "bow": "D"
         },
+        "startingItems": {
+          "id": "bartre.normal",
+          "unitId": "bartre",
+          "items": [
+            "Hero Axe"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Bartre",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "thunder",
           "name": "Thunder",
@@ -6674,6 +7371,24 @@
         },
         "weaponLevels": {
           "dark": "C"
+        },
+        "startingItems": {
+          "id": "raigh.normal",
+          "unitId": "raigh",
+          "items": [
+            "Nosferatu"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Ray",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "ice",
@@ -6889,6 +7604,26 @@
         "weaponLevels": {
           "sword": "E"
         },
+        "startingItems": {
+          "id": "cath.normal",
+          "unitId": "cath",
+          "items": [
+            "Iron Sword",
+            "Lockpick",
+            "Vulnerary"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Cath",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "anima",
           "name": "Anima",
@@ -7094,6 +7829,24 @@
         },
         "weaponLevels": {
           "lance": "C"
+        },
+        "startingItems": {
+          "id": "melady.normal",
+          "unitId": "melady",
+          "items": [
+            "Steel Lance"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Miredy",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "dark",
@@ -7308,6 +8061,25 @@
           "lance": "A",
           "axe": "C"
         },
+        "startingItems": {
+          "id": "perceval.normal",
+          "unitId": "perceval",
+          "items": [
+            "Silver Lance",
+            "Silver Sword (Ch 15)"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Percival",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "dark",
           "name": "Dark",
@@ -7482,6 +8254,25 @@
           "staff": "C",
           "anima": "A"
         },
+        "startingItems": {
+          "id": "cecilia.normal",
+          "unitId": "cecilia",
+          "items": [
+            "Aircalibur",
+            "Mend"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Cecilia",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "anima",
           "name": "Anima",
@@ -7655,6 +8446,24 @@
         "weaponLevels": {
           "dark": "C"
         },
+        "startingItems": {
+          "id": "sophia.normal",
+          "unitId": "sophia",
+          "items": [
+            "Flux"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Sofiya",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "dark",
           "name": "Dark",
@@ -7825,6 +8634,24 @@
         },
         "weaponLevels": {
           "bow": "B"
+        },
+        "startingItems": {
+          "id": "igrene.normal",
+          "unitId": "igrene",
+          "items": [
+            "Killer Bow"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Igrene",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "ice",
@@ -8030,6 +8857,25 @@
         "weaponLevels": {
           "axe": "C"
         },
+        "startingItems": {
+          "id": "garret.normal",
+          "unitId": "garret",
+          "items": [
+            "Steel Axe",
+            "Hand Axe"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Garret",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "wind",
           "name": "Wind",
@@ -8189,6 +9035,24 @@
         "promotedClassId": null,
         "promotedClassCap": null,
         "weaponLevels": {},
+        "startingItems": {
+          "id": "fae.normal",
+          "unitId": "fae",
+          "items": [
+            "Divine Dragonstone"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Fa",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "light",
           "name": "Light",
@@ -8359,6 +9223,26 @@
         },
         "weaponLevels": {
           "anima": "C"
+        },
+        "startingItems": {
+          "id": "hugh.normal",
+          "unitId": "hugh",
+          "items": [
+            "Elfire",
+            "Member Card",
+            "Elixir"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Hugh",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "wind",
@@ -8564,6 +9448,25 @@
         "weaponLevels": {
           "lance": "D"
         },
+        "startingItems": {
+          "id": "zeiss.normal",
+          "unitId": "zeiss",
+          "items": [
+            "Steel Lance",
+            "Javelin"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Zeis",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "thunder",
           "name": "Thunder",
@@ -8735,6 +9638,25 @@
         "weaponLevels": {
           "lance": "A",
           "axe": "A"
+        },
+        "startingItems": {
+          "id": "douglas.normal",
+          "unitId": "douglas",
+          "items": [
+            "Silver Axe",
+            "Silver Lance"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Douglas",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "thunder",
@@ -8917,6 +9839,27 @@
           "staff": "A",
           "dark": "A"
         },
+        "startingItems": {
+          "id": "niime.normal",
+          "unitId": "niime",
+          "items": [
+            "Flux",
+            "Eclipse",
+            "Physic",
+            "Heal"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Niime",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "anima",
           "name": "Anima",
@@ -9090,6 +10033,22 @@
           "sword": "E",
           "lance": "A"
         },
+        "startingItems": {
+          "id": "juno.normal",
+          "unitId": "juno",
+          "items": [],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Juno",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "light",
           "name": "Light",
@@ -9259,6 +10218,25 @@
         "weaponLevels": {
           "sword": "C",
           "bow": "A"
+        },
+        "startingItems": {
+          "id": "dayan.normal",
+          "unitId": "dayan",
+          "items": [
+            "Short Bow",
+            "Steel Sword"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Dayan",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
         },
         "affinity": {
           "id": "anima",
@@ -9434,6 +10412,27 @@
           "staff": "S",
           "light": "A"
         },
+        "startingItems": {
+          "id": "yoder.normal",
+          "unitId": "yoder",
+          "items": [
+            "Recover",
+            "Lightning",
+            "Maltet (Sacae route) Murgleis (Ilia route)",
+            "Saint Staff"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Yodel",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "light",
           "name": "Light",
@@ -9605,6 +10604,24 @@
         "weaponLevels": {
           "sword": "S"
         },
+        "startingItems": {
+          "id": "karel.normal",
+          "unitId": "karel",
+          "items": [
+            "Wo Dao"
+          ],
+          "reviewStatus": "accepted",
+          "provenance": [
+            {
+              "sourceId": "serenes-fe6-starting-items",
+              "locator": "Starting Items > Karel",
+              "fields": [
+                "items"
+              ],
+              "reviewStatus": "accepted"
+            }
+          ]
+        },
         "affinity": {
           "id": "light",
           "name": "Light",
@@ -9658,7 +10675,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/identity/name-chart.html",
         "retrievedAt": "2026-08-20T05:17:29.493Z",
-        "sha256": "f285bfa104b760dd837e32c7ac888156dfb35fb3147b2750e7147cc763a773b0",
+        "sha256": "b44387ec2939269bb3926e89d12c414a662946bc7c5499c8e1bf65ce4a6d8f69",
         "acquisition": "automated_fetch"
       }
     },
@@ -9672,7 +10689,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/characters/recruitment.html",
         "retrievedAt": "2026-08-20T05:17:29.611Z",
-        "sha256": "9ed6f3af5297def88b26bc9d15a10bfcb79702d62b5a2b6c15c626bc276ee28a",
+        "sha256": "8bbdcc42865a57140ed4bb2344196ac01b8be8c4230a0a229a1abd883befbc71",
         "acquisition": "automated_fetch"
       }
     },
@@ -9686,7 +10703,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/characters/base-stats.html",
         "retrievedAt": "2026-08-20T05:17:29.744Z",
-        "sha256": "b10f6b786d1261867e40d323efe1654419ec10f5f51a65fc755dd13469e78ff5",
+        "sha256": "f21a728922170850db70caee024202ceffc4f5dc9287e58c0ef0d1897df65cf2",
         "acquisition": "automated_fetch"
       }
     },
@@ -9700,7 +10717,21 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/characters/growth-rates.html",
         "retrievedAt": "2026-08-20T05:17:29.860Z",
-        "sha256": "a1423668d3f5cd68154eedb98c58af573bfa8e0577ed6db3edac008642b3b260",
+        "sha256": "1ebbdc1e00026818c064424db7444d21735b26ae1e1dd452f3848ef192596cb9",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-starting-items",
+      "kind": "web",
+      "title": "Binding Blade Starting Items",
+      "location": "https://serenesforest.net/binding-blade/characters/starting-items/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/characters/starting-items.html",
+        "retrievedAt": "2026-08-20T15:35:17.356Z",
+        "sha256": "c5bc8fcde668aa42961205565a89305e56ed130f799be84f7a67e74a03add1b1",
         "acquisition": "automated_fetch"
       }
     },
@@ -9714,7 +10745,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/characters/supports.html",
         "retrievedAt": "2026-08-20T05:17:29.982Z",
-        "sha256": "3aa04590134ae074f366c2c568dc7cdd8fd7b73ee280fe9fd43d1b09465762d6",
+        "sha256": "a6278cd2d394ce9e5ffdf0845e995da51e5f9e21803ac570c1a8be27321a97f1",
         "acquisition": "automated_fetch"
       }
     },
@@ -9728,7 +10759,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/characters/support-calculation.html",
         "retrievedAt": "2026-08-20T05:17:30.096Z",
-        "sha256": "994f42223ef058c651b64017172b0d9e5f4068a30ee7dc64e05f9c1c6f74475e",
+        "sha256": "952cae4742570ed57dc9b24bff8c7e5e7cdc47e8b1d02a2024f6552dfde67288",
         "acquisition": "automated_fetch"
       }
     },
@@ -9742,7 +10773,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/classes/introduction.html",
         "retrievedAt": "2026-08-20T05:17:30.212Z",
-        "sha256": "d36e78472eff6f0dc7426312d4f523d2586e1fedf6ea05bef6f12f444636ceb1",
+        "sha256": "a8a621d0f72939a3104ed4d7c960fd351554922c4ed4cd7eab01c4cfd41aa8a9",
         "acquisition": "automated_fetch"
       }
     },
@@ -9756,7 +10787,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/classes/base-stats.html",
         "retrievedAt": "2026-08-20T05:17:30.330Z",
-        "sha256": "0098e3f3fdd1324cd37eb1aaae734c39ea472568598c28acea2f75cf009e0567",
+        "sha256": "d1a93449a428c606141c2db2afd3f95595c179fcd1b6d951d5a6416a069c7a56",
         "acquisition": "automated_fetch"
       }
     },
@@ -9770,7 +10801,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/classes/maximum-stats.html",
         "retrievedAt": "2026-08-20T05:17:30.443Z",
-        "sha256": "43e30aacbbed6b1d7a6810a8df211e1c1fce9e64f05a464e25854d64f9f8213e",
+        "sha256": "9f2093f24e74d070df6c9a39c74af681003f7855f62a2472dd56ecfd97207c9f",
         "acquisition": "automated_fetch"
       }
     },
@@ -9784,7 +10815,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/classes/promotion-gains.html",
         "retrievedAt": "2026-08-20T05:17:30.565Z",
-        "sha256": "10edca8d65304e6e4e554ae8091bcf4ab87173fa1a68e60e15823173d157985e",
+        "sha256": "c9f4b267eb56b3313e4ad6aae5bcac87c3d84375399ee14b77c798b5d2ff3586",
         "acquisition": "automated_fetch"
       }
     },
@@ -9798,7 +10829,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/inventory/swords.html",
         "retrievedAt": "2026-08-20T05:17:30.683Z",
-        "sha256": "7faed3cff31fee4955250bf9478a4114ed27219e9d87835939c80202713be80a",
+        "sha256": "b131b578ecb26b31ca90ad0a6a2486dbe0c3006f28efbce4c0fee17d25cf715e",
         "acquisition": "automated_fetch"
       }
     },
@@ -9812,7 +10843,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/inventory/lances.html",
         "retrievedAt": "2026-08-20T05:17:30.798Z",
-        "sha256": "3d26a82a2406d559d27bbbdea42a1e0e00b239956c141e22aa95d2c604f447ae",
+        "sha256": "74c1a7a6128e04deb047abe593efdad49f7240d690438d0ed376d4258d99f2c8",
         "acquisition": "automated_fetch"
       }
     },
@@ -9826,7 +10857,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/inventory/axes.html",
         "retrievedAt": "2026-08-20T05:17:31.084Z",
-        "sha256": "d18f5e4b7760833c06a9bfd8cac3528f181b944269edc6d9caf439c14b80914d",
+        "sha256": "1dda58f8d57b9ce34122897964a982fe522b41e9dd8ceada92bef931753f5acf",
         "acquisition": "automated_fetch"
       }
     },
@@ -9840,7 +10871,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/inventory/bows.html",
         "retrievedAt": "2026-08-20T05:17:31.201Z",
-        "sha256": "13ddf68931dc8d0680ec3c6f281011cb97493d26e7fb013fa82577ad121ffa63",
+        "sha256": "bf53b1df5db02609ec6c61b61412bdeac47fe8df675b9145e9a174d6da951055",
         "acquisition": "automated_fetch"
       }
     },
@@ -9854,7 +10885,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/inventory/staves.html",
         "retrievedAt": "2026-08-20T05:17:31.317Z",
-        "sha256": "1567ae6851754d4950520f6491de5da3797c6ca179e5211e85217edcc2b33580",
+        "sha256": "e7cbf40d0646d92869d16c646890c3d4215b34669dbd6d9fdbad9e041c41035d",
         "acquisition": "automated_fetch"
       }
     },
@@ -9868,7 +10899,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/inventory/anima-tomes.html",
         "retrievedAt": "2026-08-20T05:17:31.433Z",
-        "sha256": "ff1babd1303128a4957e734ee35a99ed187426566462c74a6334ebc4d25d2d3e",
+        "sha256": "c43aa818054cf7991aa39c641c3f3f97683f058150b6ad8f2753636a2ff98d6e",
         "acquisition": "automated_fetch"
       }
     },
@@ -9882,7 +10913,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/inventory/light-tomes.html",
         "retrievedAt": "2026-08-20T05:17:31.549Z",
-        "sha256": "e2bda7ed4f8da083ded4b6a457600260b2746f861576d6c1f17f8b3e2d0637c2",
+        "sha256": "8f9d73c71fbc40eef9ce0bc06695243b3d22aea4f672ada6e8a8e16bd9b0b427",
         "acquisition": "automated_fetch"
       }
     },
@@ -9896,7 +10927,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/inventory/dark-tomes.html",
         "retrievedAt": "2026-08-20T05:17:31.665Z",
-        "sha256": "c11b78493a1e868c4355360752c6c261df9a5dc7ed5c5dd824761a0ad909c7bb",
+        "sha256": "d756ad9dbb29892dccc97b45da6dfd9d27fc599037a224b6dc572bcc0381614a",
         "acquisition": "automated_fetch"
       }
     },
@@ -9910,7 +10941,7 @@
       "snapshot": {
         "path": "data/raw/fe6/serenes/inventory/items.html",
         "retrievedAt": "2026-08-20T05:17:31.781Z",
-        "sha256": "a95c1ddffc787b8507188a90bdb4a5a041b28b522f1579c1d5bd3562a489f8a3",
+        "sha256": "dc737e459becc97942770e6dce80e9a7d5e785bbe380ef585d30198d3331f61f",
         "acquisition": "automated_fetch"
       }
     }

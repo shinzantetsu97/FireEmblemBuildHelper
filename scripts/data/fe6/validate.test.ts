@@ -43,6 +43,7 @@ describe("FE6 curated data", () => {
     expect(roy.characterProfile.baseStats.stats.hp).toBe(18);
     expect(roy.characterProfile.growths.hp).toBe(80);
     expect(roy.characterProfile.weaponLevels).toEqual({ sword: "D" });
+    expect(roy.characterProfile.startingItems.items).toEqual(["Rapier", "Vulnerary"]);
     expect(roy.characterProfile.affinity.id).toBe("fire");
     expect(roy.supports).toHaveLength(10);
     expect(marcus.characterProfile.baseClassIds).toEqual(["cavalier_m"]);

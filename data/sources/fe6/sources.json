@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "gameId": "fe6",
-  "updatedAt": "2026-08-20T05:17:31.781Z",
+  "updatedAt": "2026-08-20T15:35:17.356Z",
   "sources": [
     {
       "id": "serenes-fe6-name-chart",
@@ -56,6 +56,20 @@
         "path": "data/raw/fe6/serenes/characters/growth-rates.html",
         "retrievedAt": "2026-08-20T05:17:29.860Z",
         "sha256": "1ebbdc1e00026818c064424db7444d21735b26ae1e1dd452f3848ef192596cb9",
+        "acquisition": "automated_fetch"
+      }
+    },
+    {
+      "id": "serenes-fe6-starting-items",
+      "kind": "web",
+      "title": "Binding Blade Starting Items",
+      "location": "https://serenesforest.net/binding-blade/characters/starting-items/",
+      "language": "en",
+      "reviewStatus": "accepted",
+      "snapshot": {
+        "path": "data/raw/fe6/serenes/characters/starting-items.html",
+        "retrievedAt": "2026-08-20T15:35:17.356Z",
+        "sha256": "c5bc8fcde668aa42961205565a89305e56ed130f799be84f7a67e74a03add1b1",
         "acquisition": "automated_fetch"
       }
     },

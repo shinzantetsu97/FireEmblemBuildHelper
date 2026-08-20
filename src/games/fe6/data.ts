@@ -28,6 +28,12 @@ export type Fe6Recruitment = {
   weaponLevelSnapshotId: string;
   provenance: Fe6SourceRef[];
 };
+export type Fe6StartingItems = {
+  id: string;
+  unitId: string;
+  items: string[];
+  provenance: Fe6SourceRef[];
+};
 export type Fe6Unit = {
   id: string;
   displayOrder: number;
@@ -45,6 +51,7 @@ export type Fe6Unit = {
     promotedClassId: string | null;
     promotedClassCap: Fe6Caps | null;
     weaponLevels: Record<string, string>;
+    startingItems: Fe6StartingItems;
     affinity: { id: string; name: string; unit: "half_point"; bonusHalfUnits: Record<string, number> };
   };
   supports: string[];
