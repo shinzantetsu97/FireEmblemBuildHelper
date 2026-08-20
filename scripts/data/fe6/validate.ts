@@ -29,6 +29,10 @@ const EXPECTED_COUNTS = {
   supports: 143,
 } as const;
 
+function canonicalSnapshot(content: Buffer): Buffer {
+  return Buffer.from(content.toString("utf8").replace(/\r\n/g, "\n"), "utf8");
+}
+
 async function readJson(relativePath: string): Promise<unknown> {
   return JSON.parse(await readFile(path.join(process.cwd(), relativePath), "utf8"));
 }
@@ -124,7 +128,7 @@ export async function validateFe6Data(): Promise<ValidationResult> {
       continue;
     }
     const content = await readFile(snapshotPath);
-    const hash = createHash("sha256").update(content).digest("hex");
+    const hash = createHash("sha256").update(canonicalSnapshot(content)).digest("hex");
     if (hash !== source.snapshot.sha256) errors.push({ code: "snapshot_hash", message: `Snapshot hash changed for ${source.id}.` });
   }
 

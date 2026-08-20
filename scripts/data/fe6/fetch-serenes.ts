@@ -7,6 +7,10 @@ import { FE6_SOURCES } from "./source-manifest";
 const rawRoot = path.join(process.cwd(), "data/raw/fe6/serenes");
 const refresh = process.argv.includes("--refresh");
 
+function canonicalSnapshot(html: string): string {
+  return html.replace(/\r\n/g, "\n");
+}
+
 type ManifestEntry = {
   sourceId: string;
   url: string;
@@ -42,7 +46,7 @@ for (const source of FE6_SOURCES) {
     },
     redirect: "follow",
   });
-  const html = await response.text();
+  const html = canonicalSnapshot(await response.text());
   if (!response.ok) throw new Error(`${source.id} returned HTTP ${response.status}.`);
   if (/just a moment|request is being verified|cf-chl-/i.test(html)) {
     throw new Error(`${source.id} returned a verification page; existing snapshots were not replaced.`);
