@@ -39,14 +39,16 @@ export const sourceCatalogSchema = z.object({
     kind: z.literal("web"),
     title: z.string().min(1),
     location: z.string().url(),
-    language: z.literal("en"),
+    language: z.enum(["en", "zh-Hans"]),
     reviewStatus,
     snapshot: z.object({
       path: z.string().min(1),
       retrievedAt: z.string().datetime(),
       sha256: z.string().regex(/^[a-f0-9]{64}$/),
       acquisition: z.string().min(1),
-    }).strict(),
+    }).strict().optional(),
+    attribution: z.string().min(1).optional(),
+    notes: z.string().min(1).optional(),
   }).strict()).min(1),
 }).strict();
 
@@ -59,6 +61,7 @@ export const unitsSchema = z.object({
     gender: z.enum(["female", "male"]),
     names: z.object({
       en: z.string().min(1),
+      zhHans: z.string().min(1),
       ja: z.string().min(1),
       jaLatn: z.string().min(1),
       fan: z.string().min(1),
@@ -189,7 +192,7 @@ export const classesSchema = z.object({
   classes: z.array(z.object({
     id,
     displayOrder: z.number().int().positive(),
-    names: z.object({ en: z.string().min(1) }).strict(),
+    names: z.object({ en: z.string().min(1), zhHans: z.string().min(1) }).strict(),
     aliases: z.array(z.string().min(1)),
     sourceName: z.string().min(1),
     gender: z.enum(["female", "male"]).nullable(),
@@ -202,6 +205,7 @@ export const classesSchema = z.object({
     maximumStats,
     promotionClassId: id.nullable(),
     notes: z.string().min(1).nullable(),
+    notesZhHans: z.string().min(1).nullable(),
     reviewStatus,
     provenance,
   }).strict()).min(1),
@@ -232,7 +236,7 @@ export const weaponsSchema = z.object({
   ...header,
   weapons: z.array(z.object({
     id,
-    names: z.object({ en: z.string().min(1) }).strict(),
+    names: z.object({ en: z.string().min(1), zhHans: z.string().min(1) }).strict(),
     weaponTypeId: z.enum(["sword", "lance", "axe", "bow", "staff", "anima", "light", "dark"]),
     rank: weaponRank.nullable(),
     range: rangeSchema.nullable(),
@@ -244,6 +248,7 @@ export const weaponsSchema = z.object({
     worth: z.number().int().nonnegative().nullable(),
     staffExperience: z.number().int().nonnegative().nullable(),
     effect: z.string().min(1).nullable(),
+    effectZhHans: z.string().min(1).nullable(),
     availabilityFlags: z.array(z.enum(["unobtainable", "trial_map_only"])),
     reviewStatus,
     provenance,
@@ -254,10 +259,11 @@ export const itemsSchema = z.object({
   ...header,
   items: z.array(z.object({
     id,
-    names: z.object({ en: z.string().min(1) }).strict(),
+    names: z.object({ en: z.string().min(1), zhHans: z.string().min(1) }).strict(),
     uses: z.number().int().nonnegative().nullable(),
     worth: z.number().int().nonnegative().nullable(),
     effect: z.string().min(1).nullable(),
+    effectZhHans: z.string().min(1).nullable(),
     availabilityFlags: z.array(z.enum(["unobtainable", "trial_map_only"])),
     reviewStatus,
     provenance,

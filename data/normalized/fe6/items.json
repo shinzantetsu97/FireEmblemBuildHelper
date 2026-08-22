@@ -5,11 +5,13 @@
     {
       "id": "angelic_robe",
       "names": {
-        "en": "Angelic Robe"
+        "en": "Angelic Robe",
+        "zhHans": "天使之衣"
       },
       "uses": 1,
       "worth": 8000,
       "effect": "Increases Max HP by 7",
+      "effectZhHans": "最大HP+7",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -30,11 +32,13 @@
     {
       "id": "energy_ring",
       "names": {
-        "en": "Energy Ring"
+        "en": "Energy Ring",
+        "zhHans": "力量之环"
       },
       "uses": 1,
       "worth": 8000,
       "effect": "Increases Strength or Magic by 2",
+      "effectZhHans": "力量或魔力+2",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -55,11 +59,13 @@
     {
       "id": "secret_book",
       "names": {
-        "en": "Secret Book"
+        "en": "Secret Book",
+        "zhHans": "秘传之书"
       },
       "uses": 1,
       "worth": 8000,
       "effect": "Increases Skill by 2",
+      "effectZhHans": "技巧+2",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -80,11 +86,13 @@
     {
       "id": "speedwings",
       "names": {
-        "en": "Speedwings"
+        "en": "Speedwings",
+        "zhHans": "疾风之羽"
       },
       "uses": 1,
       "worth": 8000,
       "effect": "Increases Speed by 2",
+      "effectZhHans": "速度+2",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -105,11 +113,13 @@
     {
       "id": "goddess_icon",
       "names": {
-        "en": "Goddess Icon"
+        "en": "Goddess Icon",
+        "zhHans": "女神之像"
       },
       "uses": 1,
       "worth": 8000,
       "effect": "Increases Luck by 2",
+      "effectZhHans": "幸运+2",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -130,11 +140,13 @@
     {
       "id": "dragonshield",
       "names": {
-        "en": "Dragonshield"
+        "en": "Dragonshield",
+        "zhHans": "龙鳞之盾"
       },
       "uses": 1,
       "worth": 8000,
       "effect": "Increases Defence by 2",
+      "effectZhHans": "防御+2",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -155,11 +167,13 @@
     {
       "id": "talisman",
       "names": {
-        "en": "Talisman"
+        "en": "Talisman",
+        "zhHans": "护符"
       },
       "uses": 1,
       "worth": 8000,
       "effect": "Increases Resistance by 2",
+      "effectZhHans": "魔防+2",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -180,11 +194,13 @@
     {
       "id": "boots",
       "names": {
-        "en": "Boots"
+        "en": "Boots",
+        "zhHans": "魔法靴"
       },
       "uses": 1,
       "worth": 8000,
       "effect": "Increases Movement by 2",
+      "effectZhHans": "移动+2",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -205,11 +221,13 @@
     {
       "id": "body_ring",
       "names": {
-        "en": "Body Ring"
+        "en": "Body Ring",
+        "zhHans": "体格之环"
       },
       "uses": 1,
       "worth": 8000,
       "effect": "Increases Constitution by 2",
+      "effectZhHans": "体格+2",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -230,11 +248,13 @@
     {
       "id": "hero_crest",
       "names": {
-        "en": "Hero Crest"
+        "en": "Hero Crest",
+        "zhHans": "英雄之证"
       },
       "uses": 1,
       "worth": 10000,
       "effect": "Promotes Level 10+ Mercenaries, Myrmidons, Pirates, Brigands and Fighters",
+      "effectZhHans": "使10级以上的佣兵、剑士、海贼、山贼及战士转职",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -255,11 +275,13 @@
     {
       "id": "knights_crest",
       "names": {
-        "en": "Knight's Crest"
+        "en": "Knight's Crest",
+        "zhHans": "骑士勋章"
       },
       "uses": 1,
       "worth": 10000,
       "effect": "Promotes Level 10+ Knights and Cavaliers",
+      "effectZhHans": "使10级以上的重甲骑士及骑士转职",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -280,11 +302,13 @@
     {
       "id": "orions_bolt",
       "names": {
-        "en": "Orion's Bolt"
+        "en": "Orion's Bolt",
+        "zhHans": "奥利安之箭"
       },
       "uses": 1,
       "worth": 10000,
       "effect": "Promotes Level 10+ Archers and Nomads",
+      "effectZhHans": "使10级以上的弓箭手及游牧民转职",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -305,11 +329,13 @@
     {
       "id": "elysian_whip",
       "names": {
-        "en": "Elysian Whip"
+        "en": "Elysian Whip",
+        "zhHans": "天空之鞭"
       },
       "uses": 1,
       "worth": 10000,
       "effect": "Promotes Level 10+ Wyvern Riders and Pegasus Knights",
+      "effectZhHans": "使10级以上的飞龙骑士及天马骑士转职",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -330,11 +356,13 @@
     {
       "id": "guiding_ring",
       "names": {
-        "en": "Guiding Ring"
+        "en": "Guiding Ring",
+        "zhHans": "引导之戒"
       },
       "uses": 1,
       "worth": 10000,
       "effect": "Promotes Level 10+ Shamans, Mages, Priests and Troubadours",
+      "effectZhHans": "使10级以上的萨满、法师、僧侣及神官骑士转职",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -355,11 +383,13 @@
     {
       "id": "vulnerary",
       "names": {
-        "en": "Vulnerary"
+        "en": "Vulnerary",
+        "zhHans": "伤药"
       },
       "uses": 3,
       "worth": 300,
       "effect": "Recovers 10 HP",
+      "effectZhHans": "回复10点HP",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -380,11 +410,13 @@
     {
       "id": "elixir",
       "names": {
-        "en": "Elixir"
+        "en": "Elixir",
+        "zhHans": "万灵药"
       },
       "uses": 3,
       "worth": 3000,
       "effect": "Recovers all HP",
+      "effectZhHans": "完全回复HP",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -405,11 +437,13 @@
     {
       "id": "antitoxin",
       "names": {
-        "en": "Antitoxin"
+        "en": "Antitoxin",
+        "zhHans": "解毒药"
       },
       "uses": 3,
       "worth": 450,
       "effect": "Removes poison",
+      "effectZhHans": "解除中毒",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -430,11 +464,13 @@
     {
       "id": "pure_water",
       "names": {
-        "en": "Pure Water"
+        "en": "Pure Water",
+        "zhHans": "圣水"
       },
       "uses": 3,
       "worth": 900,
       "effect": "Increases Resistance by 7 (decreases by 1 each turn)",
+      "effectZhHans": "魔防+7（每回合减少1）",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -455,11 +491,13 @@
     {
       "id": "torch",
       "names": {
-        "en": "Torch"
+        "en": "Torch",
+        "zhHans": "火把"
       },
       "uses": 5,
       "worth": 500,
       "effect": "Increases Fog of War vision by 4 squares (effect decreases by 1 each turn)",
+      "effectZhHans": "战争迷雾视野+4格（每回合减少1格）",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -480,11 +518,13 @@
     {
       "id": "red_gem",
       "names": {
-        "en": "Red Gem"
+        "en": "Red Gem",
+        "zhHans": "红宝玉"
       },
       "uses": 1,
       "worth": 6000,
       "effect": "Sell for 3000 Gold",
+      "effectZhHans": "出售可得3000G",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -505,11 +545,13 @@
     {
       "id": "blue_gem",
       "names": {
-        "en": "Blue Gem"
+        "en": "Blue Gem",
+        "zhHans": "蓝宝玉"
       },
       "uses": 1,
       "worth": 10000,
       "effect": "Sell for 5000 Gold",
+      "effectZhHans": "出售可得5000G",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -530,11 +572,13 @@
     {
       "id": "white_gem",
       "names": {
-        "en": "White Gem"
+        "en": "White Gem",
+        "zhHans": "白宝玉"
       },
       "uses": 1,
       "worth": 20000,
       "effect": "Sell for 10000 Gold",
+      "effectZhHans": "出售可得10000G",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -555,11 +599,13 @@
     {
       "id": "silver_card",
       "names": {
-        "en": "Silver Card"
+        "en": "Silver Card",
+        "zhHans": "银卡"
       },
       "uses": 1,
       "worth": 4000,
       "effect": "Allows user to buy items for half price",
+      "effectZhHans": "购买物品时半价",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -580,11 +626,13 @@
     {
       "id": "member_card",
       "names": {
-        "en": "Member Card"
+        "en": "Member Card",
+        "zhHans": "会员卡"
       },
       "uses": 1,
       "worth": 4000,
       "effect": "Allows user access to Secret Shops",
+      "effectZhHans": "可进入秘密商店",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -605,11 +653,13 @@
     {
       "id": "gold",
       "names": {
-        "en": "Gold"
+        "en": "Gold",
+        "zhHans": "金币"
       },
       "uses": 1,
       "worth": null,
       "effect": "Probably acts as gold received from events (unused item that cannot be obtained)",
+      "effectZhHans": "可能作为事件获得的金币（未使用且无法获得的道具）",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -632,11 +682,13 @@
     {
       "id": "chest_key",
       "names": {
-        "en": "Chest Key"
+        "en": "Chest Key",
+        "zhHans": "宝箱钥匙"
       },
       "uses": 5,
       "worth": 1500,
       "effect": "Opens a chest",
+      "effectZhHans": "打开宝箱",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -657,11 +709,13 @@
     {
       "id": "door_key",
       "names": {
-        "en": "Door Key"
+        "en": "Door Key",
+        "zhHans": "门钥匙"
       },
       "uses": 1,
       "worth": 50,
       "effect": "Opens a door",
+      "effectZhHans": "打开门",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -682,11 +736,13 @@
     {
       "id": "bridge_key",
       "names": {
-        "en": "Bridge Key"
+        "en": "Bridge Key",
+        "zhHans": "桥梁钥匙"
       },
       "uses": 1,
       "worth": 50,
       "effect": "Supposed to open bridges (unused item that cannot be obtained)",
+      "effectZhHans": "原本用于打开桥梁（未使用且无法获得的道具）",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -709,11 +765,13 @@
     {
       "id": "lockpick",
       "names": {
-        "en": "Lockpick"
+        "en": "Lockpick",
+        "zhHans": "盗贼钥匙"
       },
       "uses": 30,
       "worth": 2400,
       "effect": "Opens doors and chests, Thieves only",
+      "effectZhHans": "仅盗贼可用；可打开门与宝箱",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -734,11 +792,13 @@
     {
       "id": "delphi_shield",
       "names": {
-        "en": "Delphi Shield"
+        "en": "Delphi Shield",
+        "zhHans": "德尔斐之盾"
       },
       "uses": 1,
       "worth": 5000,
       "effect": "Negates effective bonus of Aircalibur and Bows towards user",
+      "effectZhHans": "使风神之书与弓对使用者的特效无效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -759,11 +819,13 @@
     {
       "id": "fire_dragonstone",
       "names": {
-        "en": "Fire Dragonstone"
+        "en": "Fire Dragonstone",
+        "zhHans": "火龙石"
       },
       "uses": null,
       "worth": null,
       "effect": "Mamkutes only, Str +10, Skl +10, Def +20, Res +5. Stats: Range 1, Might 15, Hit 100, Critical 5, Weight 0",
+      "effectZhHans": "仅龙人可用；力量+10、技巧+10、防御+20、魔防+5。属性：射程1、威力15、命中100、必杀5、重量0",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -784,11 +846,13 @@
     {
       "id": "divine_dragonstone",
       "names": {
-        "en": "Divine Dragonstone"
+        "en": "Divine Dragonstone",
+        "zhHans": "神龙石"
       },
       "uses": 30,
       "worth": null,
       "effect": "Fa only, effective against Mamkutes and Demon Dragons, Str +12, Skl +12, Def +15, Res +20.Stats: Range 1, Might 16, Hit 100, Critical 15, Weight 0",
+      "effectZhHans": "仅珐可用；对龙人及魔龙特效；力量+12、技巧+12、防御+15、魔防+20。属性：射程1、威力16、命中100、必杀15、重量0",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -809,11 +873,13 @@
     {
       "id": "demon_dragonstone",
       "names": {
-        "en": "Demon Dragonstone"
+        "en": "Demon Dragonstone",
+        "zhHans": "魔龙石"
       },
       "uses": null,
       "worth": null,
       "effect": "Mamkutes only, Str +15, Skl +15, Def +20, Res +15. Stats: Range 1, Might 20, Hit 100, Critical 10, Weight 0 (unused item that cannot be obtained)",
+      "effectZhHans": "仅龙人可用；力量+15、技巧+15、防御+20、魔防+15。属性：射程1、威力20、命中100、必杀10、重量0（未使用且无法获得的道具）",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -836,11 +902,13 @@
     {
       "id": "dark_breath",
       "names": {
-        "en": "Dark Breath"
+        "en": "Dark Breath",
+        "zhHans": "暗之吐息"
       },
       "uses": null,
       "worth": null,
       "effect": "Stats: Range 1, Might 20, Hit 100, Critical 10, Weight 0 (cannot be obtained)",
+      "effectZhHans": "属性：射程1、威力20、命中100、必杀10、重量0（无法获得）",
       "availabilityFlags": [
         "unobtainable"
       ],

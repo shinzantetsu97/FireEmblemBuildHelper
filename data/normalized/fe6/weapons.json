@@ -5,7 +5,8 @@
     {
       "id": "iron_sword",
       "names": {
-        "en": "Iron Sword"
+        "en": "Iron Sword",
+        "zhHans": "铁剑"
       },
       "weaponTypeId": "sword",
       "rank": "E",
@@ -23,6 +24,7 @@
       "worth": 460,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -49,7 +51,8 @@
     {
       "id": "slim_sword",
       "names": {
-        "en": "Slim Sword"
+        "en": "Slim Sword",
+        "zhHans": "细剑"
       },
       "weaponTypeId": "sword",
       "rank": "E",
@@ -67,6 +70,7 @@
       "worth": 480,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -93,7 +97,8 @@
     {
       "id": "rapier",
       "names": {
-        "en": "Rapier"
+        "en": "Rapier",
+        "zhHans": "西洋剑"
       },
       "weaponTypeId": "sword",
       "rank": "E",
@@ -111,6 +116,7 @@
       "worth": 2000,
       "staffExperience": null,
       "effect": "Lord/Master Lord only, effective against Cavaliers, Paladins, Knights and Generals",
+      "effectZhHans": "仅领主／大领主可用；对骑士、圣骑士、重甲骑士及将军特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -137,7 +143,8 @@
     {
       "id": "als_sword",
       "names": {
-        "en": "Al's Sword"
+        "en": "Al's Sword",
+        "zhHans": "阿尔之剑"
       },
       "weaponTypeId": "sword",
       "rank": "D",
@@ -155,6 +162,7 @@
       "worth": 1000,
       "staffExperience": null,
       "effect": "(Cameo of Al from the Hasha no Tsurugi manga)",
+      "effectZhHans": "《霸王之剑》漫画角色阿尔的客串武器",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -181,7 +189,8 @@
     {
       "id": "poison_sword",
       "names": {
-        "en": "Poison Sword"
+        "en": "Poison Sword",
+        "zhHans": "毒剑"
       },
       "weaponTypeId": "sword",
       "rank": "D",
@@ -199,6 +208,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Poisons on contact (cannot be obtained)",
+      "effectZhHans": "命中后附加中毒（无法获得）",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -227,7 +237,8 @@
     {
       "id": "steel_sword",
       "names": {
-        "en": "Steel Sword"
+        "en": "Steel Sword",
+        "zhHans": "钢剑"
       },
       "weaponTypeId": "sword",
       "rank": "D",
@@ -245,6 +256,7 @@
       "worth": 600,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -271,7 +283,8 @@
     {
       "id": "iron_blade",
       "names": {
-        "en": "Iron Blade"
+        "en": "Iron Blade",
+        "zhHans": "铁之大剑"
       },
       "weaponTypeId": "sword",
       "rank": "D",
@@ -289,6 +302,7 @@
       "worth": 980,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -315,7 +329,8 @@
     {
       "id": "armourslayer",
       "names": {
-        "en": "Armourslayer"
+        "en": "Armourslayer",
+        "zhHans": "破甲剑"
       },
       "weaponTypeId": "sword",
       "rank": "D",
@@ -333,6 +348,7 @@
       "worth": 1260,
       "staffExperience": null,
       "effect": "Effective against Knights and Generals",
+      "effectZhHans": "对重甲骑士及将军特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -359,7 +375,8 @@
     {
       "id": "wo_dao",
       "names": {
-        "en": "Wo Dao"
+        "en": "Wo Dao",
+        "zhHans": "倭刀"
       },
       "weaponTypeId": "sword",
       "rank": "D",
@@ -377,6 +394,7 @@
       "worth": 1200,
       "staffExperience": null,
       "effect": "Myrmidon and Swordmaster only",
+      "effectZhHans": "仅剑士及剑圣可用",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -403,7 +421,8 @@
     {
       "id": "steel_blade",
       "names": {
-        "en": "Steel Blade"
+        "en": "Steel Blade",
+        "zhHans": "钢之大剑"
       },
       "weaponTypeId": "sword",
       "rank": "C",
@@ -421,6 +440,7 @@
       "worth": 1250,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -447,7 +467,8 @@
     {
       "id": "killing_edge",
       "names": {
-        "en": "Killing Edge"
+        "en": "Killing Edge",
+        "zhHans": "必杀剑"
       },
       "weaponTypeId": "sword",
       "rank": "C",
@@ -465,6 +486,7 @@
       "worth": 1300,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -491,7 +513,8 @@
     {
       "id": "wyrmslayer",
       "names": {
-        "en": "Wyrmslayer"
+        "en": "Wyrmslayer",
+        "zhHans": "屠龙剑"
       },
       "weaponTypeId": "sword",
       "rank": "C",
@@ -509,6 +532,7 @@
       "worth": 2250,
       "staffExperience": null,
       "effect": "Effective against Mamkutes, Wyvern Riders and Wyvern Lords",
+      "effectZhHans": "对龙人、飞龙骑士及飞龙统帅特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -535,7 +559,8 @@
     {
       "id": "light_brand",
       "names": {
-        "en": "Light Brand"
+        "en": "Light Brand",
+        "zhHans": "光之剑"
       },
       "weaponTypeId": "sword",
       "rank": "C",
@@ -553,6 +578,7 @@
       "worth": 1250,
       "staffExperience": null,
       "effect": "When used for 2 spaces away, always does 10 damage",
+      "effectZhHans": "在2格距离使用时固定造成10点伤害",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -579,7 +605,8 @@
     {
       "id": "lancereaver",
       "names": {
-        "en": "Lancereaver"
+        "en": "Lancereaver",
+        "zhHans": "破枪剑"
       },
       "weaponTypeId": "sword",
       "rank": "C",
@@ -597,6 +624,7 @@
       "worth": 1800,
       "staffExperience": null,
       "effect": "Good against lances, bad against axes",
+      "effectZhHans": "克制枪，受斧克制",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -623,7 +651,8 @@
     {
       "id": "brave_sword",
       "names": {
-        "en": "Brave Sword"
+        "en": "Brave Sword",
+        "zhHans": "勇者之剑"
       },
       "weaponTypeId": "sword",
       "rank": "B",
@@ -641,6 +670,7 @@
       "worth": 3000,
       "staffExperience": null,
       "effect": "Allows 2 consecutive hits (cannot be obtained)",
+      "effectZhHans": "可连续攻击2次（无法获得）",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -669,7 +699,8 @@
     {
       "id": "silver_sword",
       "names": {
-        "en": "Silver Sword"
+        "en": "Silver Sword",
+        "zhHans": "银剑"
       },
       "weaponTypeId": "sword",
       "rank": "A",
@@ -687,6 +718,7 @@
       "worth": 1500,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -713,7 +745,8 @@
     {
       "id": "silver_blade",
       "names": {
-        "en": "Silver Blade"
+        "en": "Silver Blade",
+        "zhHans": "银之大剑"
       },
       "weaponTypeId": "sword",
       "rank": "A",
@@ -731,6 +764,7 @@
       "worth": 1800,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -757,7 +791,8 @@
     {
       "id": "runesword",
       "names": {
-        "en": "Runesword"
+        "en": "Runesword",
+        "zhHans": "符文剑"
       },
       "weaponTypeId": "sword",
       "rank": "A",
@@ -775,6 +810,7 @@
       "worth": 3300,
       "staffExperience": null,
       "effect": "Drains HP from enemy; counts as Dark Magic (usable in Trial Maps only)",
+      "effectZhHans": "吸收敌方HP；视为暗魔法（仅试炼地图可用）",
       "availabilityFlags": [
         "trial_map_only"
       ],
@@ -803,7 +839,8 @@
     {
       "id": "durandal",
       "names": {
-        "en": "Durandal"
+        "en": "Durandal",
+        "zhHans": "杜兰达尔"
       },
       "weaponTypeId": "sword",
       "rank": "S",
@@ -821,6 +858,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Str +5, effective against Mamkutes, Wyvern Riders and Wyvern Lords",
+      "effectZhHans": "力量+5；对龙人、飞龙骑士及飞龙统帅特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -847,7 +885,8 @@
     {
       "id": "eckesachs",
       "names": {
-        "en": "Eckesachs"
+        "en": "Eckesachs",
+        "zhHans": "艾克萨克斯"
       },
       "weaponTypeId": "sword",
       "rank": null,
@@ -865,6 +904,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Zephiel only (usable in Trial Maps only)",
+      "effectZhHans": "仅赛菲尔可用（仅试炼地图可用）",
       "availabilityFlags": [
         "trial_map_only"
       ],
@@ -893,7 +933,8 @@
     {
       "id": "binding_blade",
       "names": {
-        "en": "Binding Blade"
+        "en": "Binding Blade",
+        "zhHans": "封印之剑"
       },
       "weaponTypeId": "sword",
       "rank": null,
@@ -911,6 +952,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Lord/Master Lord only, Def and Res +5, effective against Mamkutes and Demon Dragons, can be used to recover 30 HP",
+      "effectZhHans": "仅领主／大领主可用；防御、魔防+5；对龙人及魔龙特效；可回复30点HP",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -937,7 +979,8 @@
     {
       "id": "iron_lance",
       "names": {
-        "en": "Iron Lance"
+        "en": "Iron Lance",
+        "zhHans": "铁枪"
       },
       "weaponTypeId": "lance",
       "rank": "E",
@@ -955,6 +998,7 @@
       "worth": 360,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -981,7 +1025,8 @@
     {
       "id": "steel_lance",
       "names": {
-        "en": "Steel Lance"
+        "en": "Steel Lance",
+        "zhHans": "钢枪"
       },
       "weaponTypeId": "lance",
       "rank": "D",
@@ -999,6 +1044,7 @@
       "worth": 480,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1025,7 +1071,8 @@
     {
       "id": "silver_lance",
       "names": {
-        "en": "Silver Lance"
+        "en": "Silver Lance",
+        "zhHans": "银枪"
       },
       "weaponTypeId": "lance",
       "rank": "A",
@@ -1043,6 +1090,7 @@
       "worth": 1200,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1069,7 +1117,8 @@
     {
       "id": "slim_lance",
       "names": {
-        "en": "Slim Lance"
+        "en": "Slim Lance",
+        "zhHans": "细身枪"
       },
       "weaponTypeId": "lance",
       "rank": "E",
@@ -1087,6 +1136,7 @@
       "worth": 450,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1113,7 +1163,8 @@
     {
       "id": "poison_lance",
       "names": {
-        "en": "Poison Lance"
+        "en": "Poison Lance",
+        "zhHans": "毒枪"
       },
       "weaponTypeId": "lance",
       "rank": "E",
@@ -1131,6 +1182,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Poisons on contact (cannot be obtained)",
+      "effectZhHans": "命中后附加中毒（无法获得）",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -1159,7 +1211,8 @@
     {
       "id": "brave_lance",
       "names": {
-        "en": "Brave Lance"
+        "en": "Brave Lance",
+        "zhHans": "勇者之枪"
       },
       "weaponTypeId": "lance",
       "rank": "B",
@@ -1177,6 +1230,7 @@
       "worth": 2400,
       "staffExperience": null,
       "effect": "Allows 2 consecutive hits",
+      "effectZhHans": "可连续攻击2次",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1203,7 +1257,8 @@
     {
       "id": "javelin",
       "names": {
-        "en": "Javelin"
+        "en": "Javelin",
+        "zhHans": "投枪"
       },
       "weaponTypeId": "lance",
       "rank": "E",
@@ -1221,6 +1276,7 @@
       "worth": 400,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1247,7 +1303,8 @@
     {
       "id": "maltet",
       "names": {
-        "en": "Maltet"
+        "en": "Maltet",
+        "zhHans": "马尔特"
       },
       "weaponTypeId": "lance",
       "rank": "S",
@@ -1265,6 +1322,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Skill +5, effective against Mamkutes, Wyvern Riders and Wyvern Lords",
+      "effectZhHans": "技巧+5；对龙人、飞龙骑士及飞龙统帅特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1291,7 +1349,8 @@
     {
       "id": "horseslayer",
       "names": {
-        "en": "Horseslayer"
+        "en": "Horseslayer",
+        "zhHans": "骑士克星"
       },
       "weaponTypeId": "lance",
       "rank": "D",
@@ -1309,6 +1368,7 @@
       "worth": 1040,
       "staffExperience": null,
       "effect": "Effective against Cavaliers and Paladins",
+      "effectZhHans": "对骑士及圣骑士特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1335,7 +1395,8 @@
     {
       "id": "killer_lance",
       "names": {
-        "en": "Killer Lance"
+        "en": "Killer Lance",
+        "zhHans": "必杀枪"
       },
       "weaponTypeId": "lance",
       "rank": "C",
@@ -1353,6 +1414,7 @@
       "worth": 1200,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1379,7 +1441,8 @@
     {
       "id": "axereaver",
       "names": {
-        "en": "Axereaver"
+        "en": "Axereaver",
+        "zhHans": "破斧枪"
       },
       "weaponTypeId": "lance",
       "rank": "C",
@@ -1397,6 +1460,7 @@
       "worth": 1950,
       "staffExperience": null,
       "effect": "Good against axes, bad against swords",
+      "effectZhHans": "克制斧，受剑克制",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1423,7 +1487,8 @@
     {
       "id": "gants_lance",
       "names": {
-        "en": "Gant's Lance"
+        "en": "Gant's Lance",
+        "zhHans": "甘特之枪"
       },
       "weaponTypeId": "lance",
       "rank": "D",
@@ -1441,6 +1506,7 @@
       "worth": 800,
       "staffExperience": null,
       "effect": "(Cameo of Gant from the Hasha no Tsurugi manga)",
+      "effectZhHans": "《霸王之剑》漫画角色甘特的客串武器",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1467,7 +1533,8 @@
     {
       "id": "spear",
       "names": {
-        "en": "Spear"
+        "en": "Spear",
+        "zhHans": "投矛"
       },
       "weaponTypeId": "lance",
       "rank": "B",
@@ -1485,6 +1552,7 @@
       "worth": 1500,
       "staffExperience": null,
       "effect": "(Cannot be obtained)",
+      "effectZhHans": "无法获得",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -1513,7 +1581,8 @@
     {
       "id": "iron_axe",
       "names": {
-        "en": "Iron Axe"
+        "en": "Iron Axe",
+        "zhHans": "铁斧"
       },
       "weaponTypeId": "axe",
       "rank": "E",
@@ -1531,6 +1600,7 @@
       "worth": 270,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1557,7 +1627,8 @@
     {
       "id": "steel_axe",
       "names": {
-        "en": "Steel Axe"
+        "en": "Steel Axe",
+        "zhHans": "钢斧"
       },
       "weaponTypeId": "axe",
       "rank": "E",
@@ -1575,6 +1646,7 @@
       "worth": 360,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1601,7 +1673,8 @@
     {
       "id": "silver_axe",
       "names": {
-        "en": "Silver Axe"
+        "en": "Silver Axe",
+        "zhHans": "银斧"
       },
       "weaponTypeId": "axe",
       "rank": "A",
@@ -1619,6 +1692,7 @@
       "worth": 1000,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1645,7 +1719,8 @@
     {
       "id": "poison_axe",
       "names": {
-        "en": "Poison Axe"
+        "en": "Poison Axe",
+        "zhHans": "毒斧"
       },
       "weaponTypeId": "axe",
       "rank": "D",
@@ -1663,6 +1738,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Poisons on contact (cannot be obtained)",
+      "effectZhHans": "命中后附加中毒（无法获得）",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -1691,7 +1767,8 @@
     {
       "id": "brave_axe",
       "names": {
-        "en": "Brave Axe"
+        "en": "Brave Axe",
+        "zhHans": "勇者之斧"
       },
       "weaponTypeId": "axe",
       "rank": "B",
@@ -1709,6 +1786,7 @@
       "worth": 2250,
       "staffExperience": null,
       "effect": "Allows 2 consecutive hits",
+      "effectZhHans": "可连续攻击2次",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1735,7 +1813,8 @@
     {
       "id": "hand_axe",
       "names": {
-        "en": "Hand Axe"
+        "en": "Hand Axe",
+        "zhHans": "手斧"
       },
       "weaponTypeId": "axe",
       "rank": "E",
@@ -1753,6 +1832,7 @@
       "worth": 300,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1779,7 +1859,8 @@
     {
       "id": "armads",
       "names": {
-        "en": "Armads"
+        "en": "Armads",
+        "zhHans": "阿尔马兹"
       },
       "weaponTypeId": "axe",
       "rank": "S",
@@ -1797,6 +1878,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Defence +5, effective against Mamkutes, Wyvern Riders and Wyvern Lords",
+      "effectZhHans": "防御+5；对龙人、飞龙骑士及飞龙统帅特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1823,7 +1905,8 @@
     {
       "id": "hammer",
       "names": {
-        "en": "Hammer"
+        "en": "Hammer",
+        "zhHans": "战锤"
       },
       "weaponTypeId": "axe",
       "rank": "D",
@@ -1841,6 +1924,7 @@
       "worth": 800,
       "staffExperience": null,
       "effect": "Effective against Knights and Generals",
+      "effectZhHans": "对重甲骑士及将军特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1867,7 +1951,8 @@
     {
       "id": "killer_axe",
       "names": {
-        "en": "Killer Axe"
+        "en": "Killer Axe",
+        "zhHans": "必杀斧"
       },
       "weaponTypeId": "axe",
       "rank": "C",
@@ -1885,6 +1970,7 @@
       "worth": 1000,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1911,7 +1997,8 @@
     {
       "id": "swordreaver",
       "names": {
-        "en": "Swordreaver"
+        "en": "Swordreaver",
+        "zhHans": "破剑斧"
       },
       "weaponTypeId": "axe",
       "rank": "C",
@@ -1929,6 +2016,7 @@
       "worth": 2800,
       "staffExperience": null,
       "effect": "Good against Swords, bad against Lances",
+      "effectZhHans": "克制剑，受枪克制",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1955,7 +2043,8 @@
     {
       "id": "devil_axe",
       "names": {
-        "en": "Devil Axe"
+        "en": "Devil Axe",
+        "zhHans": "恶魔之斧"
       },
       "weaponTypeId": "axe",
       "rank": "E",
@@ -1973,6 +2062,7 @@
       "worth": 900,
       "staffExperience": null,
       "effect": "Damages user if Luck is low",
+      "effectZhHans": "幸运较低时会伤害使用者",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -1999,7 +2089,8 @@
     {
       "id": "halberd",
       "names": {
-        "en": "Halberd"
+        "en": "Halberd",
+        "zhHans": "长柄战斧"
       },
       "weaponTypeId": "axe",
       "rank": "D",
@@ -2017,6 +2108,7 @@
       "worth": 810,
       "staffExperience": null,
       "effect": "Effective against Cavaliers and Paladins",
+      "effectZhHans": "对骑士及圣骑士特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2043,7 +2135,8 @@
     {
       "id": "tomahawk",
       "names": {
-        "en": "Tomahawk"
+        "en": "Tomahawk",
+        "zhHans": "战斧投掷"
       },
       "weaponTypeId": "axe",
       "rank": "A",
@@ -2061,6 +2154,7 @@
       "worth": 3000,
       "staffExperience": null,
       "effect": "(Usable in Trial Maps only)",
+      "effectZhHans": "仅试炼地图可用",
       "availabilityFlags": [
         "trial_map_only"
       ],
@@ -2089,7 +2183,8 @@
     {
       "id": "iron_bow",
       "names": {
-        "en": "Iron Bow"
+        "en": "Iron Bow",
+        "zhHans": "铁弓"
       },
       "weaponTypeId": "bow",
       "rank": "E",
@@ -2107,6 +2202,7 @@
       "worth": 540,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2133,7 +2229,8 @@
     {
       "id": "steel_bow",
       "names": {
-        "en": "Steel Bow"
+        "en": "Steel Bow",
+        "zhHans": "钢弓"
       },
       "weaponTypeId": "bow",
       "rank": "D",
@@ -2151,6 +2248,7 @@
       "worth": 720,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2177,7 +2275,8 @@
     {
       "id": "silver_bow",
       "names": {
-        "en": "Silver Bow"
+        "en": "Silver Bow",
+        "zhHans": "银弓"
       },
       "weaponTypeId": "bow",
       "rank": "A",
@@ -2195,6 +2294,7 @@
       "worth": 1600,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2221,7 +2321,8 @@
     {
       "id": "poison_bow",
       "names": {
-        "en": "Poison Bow"
+        "en": "Poison Bow",
+        "zhHans": "毒弓"
       },
       "weaponTypeId": "bow",
       "rank": "D",
@@ -2239,6 +2340,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Poisons on contact (cannot be obtained)",
+      "effectZhHans": "命中后附加中毒（无法获得）",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -2267,7 +2369,8 @@
     {
       "id": "killer_bow",
       "names": {
-        "en": "Killer Bow"
+        "en": "Killer Bow",
+        "zhHans": "必杀弓"
       },
       "weaponTypeId": "bow",
       "rank": "C",
@@ -2285,6 +2388,7 @@
       "worth": 1400,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2311,7 +2415,8 @@
     {
       "id": "brave_bow",
       "names": {
-        "en": "Brave Bow"
+        "en": "Brave Bow",
+        "zhHans": "勇者之弓"
       },
       "weaponTypeId": "bow",
       "rank": "B",
@@ -2329,6 +2434,7 @@
       "worth": 3600,
       "staffExperience": null,
       "effect": "Allows 2 consecutive hits",
+      "effectZhHans": "可连续攻击2次",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2355,7 +2461,8 @@
     {
       "id": "short_bow",
       "names": {
-        "en": "Short Bow"
+        "en": "Short Bow",
+        "zhHans": "短弓"
       },
       "weaponTypeId": "bow",
       "rank": "D",
@@ -2373,6 +2480,7 @@
       "worth": 1760,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2399,7 +2507,8 @@
     {
       "id": "long_bow",
       "names": {
-        "en": "Long Bow"
+        "en": "Long Bow",
+        "zhHans": "长弓"
       },
       "weaponTypeId": "bow",
       "rank": "D",
@@ -2417,6 +2526,7 @@
       "worth": 2000,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2443,7 +2553,8 @@
     {
       "id": "murgleis",
       "names": {
-        "en": "Murgleis"
+        "en": "Murgleis",
+        "zhHans": "缪鲁古雷"
       },
       "weaponTypeId": "bow",
       "rank": "S",
@@ -2461,6 +2572,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Speed +5, effective against Mamkutes",
+      "effectZhHans": "速度+5；对龙人特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2487,7 +2599,8 @@
     {
       "id": "ballista",
       "names": {
-        "en": "Ballista"
+        "en": "Ballista",
+        "zhHans": "弩炮"
       },
       "weaponTypeId": "bow",
       "rank": "E",
@@ -2505,6 +2618,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Archer/Sniper only",
+      "effectZhHans": "仅弓箭手／狙击手可用",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2531,7 +2645,8 @@
     {
       "id": "long_ballista",
       "names": {
-        "en": "Long Ballista"
+        "en": "Long Ballista",
+        "zhHans": "长射程弩炮"
       },
       "weaponTypeId": "bow",
       "rank": "E",
@@ -2549,6 +2664,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Archer/Sniper only",
+      "effectZhHans": "仅弓箭手／狙击手可用",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2575,7 +2691,8 @@
     {
       "id": "killer_ballista",
       "names": {
-        "en": "Killer Ballista"
+        "en": "Killer Ballista",
+        "zhHans": "必杀弩炮"
       },
       "weaponTypeId": "bow",
       "rank": "E",
@@ -2593,6 +2710,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Archer/Sniper only",
+      "effectZhHans": "仅弓箭手／狙击手可用",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2619,7 +2737,8 @@
     {
       "id": "heal",
       "names": {
-        "en": "Heal"
+        "en": "Heal",
+        "zhHans": "治疗之杖"
       },
       "weaponTypeId": "staff",
       "rank": "E",
@@ -2637,6 +2756,7 @@
       "worth": 600,
       "staffExperience": 11,
       "effect": "Recovers Mag+10 HP",
+      "effectZhHans": "回复魔力+10点HP",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2660,7 +2780,8 @@
     {
       "id": "mend",
       "names": {
-        "en": "Mend"
+        "en": "Mend",
+        "zhHans": "回复之杖"
       },
       "weaponTypeId": "staff",
       "rank": "D",
@@ -2678,6 +2799,7 @@
       "worth": 1000,
       "staffExperience": 12,
       "effect": "Recovers Mag+20 HP",
+      "effectZhHans": "回复魔力+20点HP",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2701,7 +2823,8 @@
     {
       "id": "recover",
       "names": {
-        "en": "Recover"
+        "en": "Recover",
+        "zhHans": "痊愈之杖"
       },
       "weaponTypeId": "staff",
       "rank": "C",
@@ -2719,6 +2842,7 @@
       "worth": 2250,
       "staffExperience": 17,
       "effect": "Recovers all HP",
+      "effectZhHans": "完全回复HP",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2742,7 +2866,8 @@
     {
       "id": "physic",
       "names": {
-        "en": "Physic"
+        "en": "Physic",
+        "zhHans": "远程治愈"
       },
       "weaponTypeId": "staff",
       "rank": "B",
@@ -2759,6 +2884,7 @@
       "worth": 3750,
       "staffExperience": 22,
       "effect": "Recovers Mag+10 HP",
+      "effectZhHans": "回复魔力+10点HP",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2782,7 +2908,8 @@
     {
       "id": "fortify",
       "names": {
-        "en": "Fortify"
+        "en": "Fortify",
+        "zhHans": "全体治愈"
       },
       "weaponTypeId": "staff",
       "rank": "A",
@@ -2799,6 +2926,7 @@
       "worth": 8000,
       "staffExperience": 60,
       "effect": "Recovers Mag+10 HP to all units in range (usable in Trial Maps only)",
+      "effectZhHans": "回复范围内所有单位魔力+10点HP（仅试炼地图可用）",
       "availabilityFlags": [
         "trial_map_only"
       ],
@@ -2824,7 +2952,8 @@
     {
       "id": "warp",
       "names": {
-        "en": "Warp"
+        "en": "Warp",
+        "zhHans": "传送"
       },
       "weaponTypeId": "staff",
       "rank": "A",
@@ -2837,6 +2966,7 @@
       "worth": 7500,
       "staffExperience": 85,
       "effect": "Teleports an ally to a traversable tile within a range of 1~(Mag/2 +5)",
+      "effectZhHans": "将一名同伴传送至射程1～（魔力÷2+5）内可通行的格子",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2860,7 +2990,8 @@
     {
       "id": "rescue",
       "names": {
-        "en": "Rescue"
+        "en": "Rescue",
+        "zhHans": "救援"
       },
       "weaponTypeId": "staff",
       "rank": "B",
@@ -2877,6 +3008,7 @@
       "worth": 1800,
       "staffExperience": 40,
       "effect": "Brings an ally next to the caster",
+      "effectZhHans": "将一名同伴拉至使用者身旁",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2900,7 +3032,8 @@
     {
       "id": "restore",
       "names": {
-        "en": "Restore"
+        "en": "Restore",
+        "zhHans": "恢复"
       },
       "weaponTypeId": "staff",
       "rank": "C",
@@ -2918,6 +3051,7 @@
       "worth": 2000,
       "staffExperience": 20,
       "effect": "Removes status condition from ally",
+      "effectZhHans": "解除同伴的异常状态",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2941,7 +3075,8 @@
     {
       "id": "silence",
       "names": {
-        "en": "Silence"
+        "en": "Silence",
+        "zhHans": "沉默"
       },
       "weaponTypeId": "staff",
       "rank": "B",
@@ -2958,6 +3093,7 @@
       "worth": 1200,
       "staffExperience": 30,
       "effect": "Silences enemy so they cannot use magic or staves",
+      "effectZhHans": "令敌人无法使用魔法或杖",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -2981,7 +3117,8 @@
     {
       "id": "sleep",
       "names": {
-        "en": "Sleep"
+        "en": "Sleep",
+        "zhHans": "睡眠"
       },
       "weaponTypeId": "staff",
       "rank": "B",
@@ -2998,6 +3135,7 @@
       "worth": 1500,
       "staffExperience": 35,
       "effect": "Puts any enemy to sleep",
+      "effectZhHans": "令一名敌人陷入睡眠",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3021,7 +3159,8 @@
     {
       "id": "torch_staff",
       "names": {
-        "en": "Torch"
+        "en": "Torch",
+        "zhHans": "火把之杖"
       },
       "weaponTypeId": "staff",
       "rank": "D",
@@ -3039,6 +3178,7 @@
       "worth": 1000,
       "staffExperience": 15,
       "effect": "Lights up the area by 4 more tiles (decreases by 1 tile each turn)",
+      "effectZhHans": "照亮额外4格区域（每回合减少1格）",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3062,7 +3202,8 @@
     {
       "id": "hammerne",
       "names": {
-        "en": "Hammerne"
+        "en": "Hammerne",
+        "zhHans": "修理之杖"
       },
       "weaponTypeId": "staff",
       "rank": "C",
@@ -3080,6 +3221,7 @@
       "worth": 1800,
       "staffExperience": 40,
       "effect": "Repairs a weapon or staff to full uses",
+      "effectZhHans": "将一件武器或杖的耐久完全修复",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3103,7 +3245,8 @@
     {
       "id": "watch",
       "names": {
-        "en": "Watch"
+        "en": "Watch",
+        "zhHans": "侦察"
       },
       "weaponTypeId": "staff",
       "rank": "C",
@@ -3120,6 +3263,7 @@
       "worth": 2000,
       "staffExperience": 30,
       "effect": "Supposed to reveal hidden rooms (unused staff that cannot be obtained)",
+      "effectZhHans": "原本用于显示隐藏房间（未使用且无法获得的杖）",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -3145,7 +3289,8 @@
     {
       "id": "berserk",
       "names": {
-        "en": "Berserk"
+        "en": "Berserk",
+        "zhHans": "狂暴"
       },
       "weaponTypeId": "staff",
       "rank": "B",
@@ -3162,6 +3307,7 @@
       "worth": 1800,
       "staffExperience": 40,
       "effect": "Berserks an enemy so they attack friend or foe",
+      "effectZhHans": "令敌人进入狂暴状态，不分敌我攻击",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3185,7 +3331,8 @@
     {
       "id": "unlock",
       "names": {
-        "en": "Unlock"
+        "en": "Unlock",
+        "zhHans": "开锁"
       },
       "weaponTypeId": "staff",
       "rank": "D",
@@ -3203,6 +3350,7 @@
       "worth": 1200,
       "staffExperience": 30,
       "effect": "Unlocks a door",
+      "effectZhHans": "打开门",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3226,7 +3374,8 @@
     {
       "id": "barrier",
       "names": {
-        "en": "Barrier"
+        "en": "Barrier",
+        "zhHans": "魔防之杖"
       },
       "weaponTypeId": "staff",
       "rank": "C",
@@ -3244,6 +3393,7 @@
       "worth": 2250,
       "staffExperience": 17,
       "effect": "Increases Resistance by 7 (decreases by 1 each turn)",
+      "effectZhHans": "魔防+7（每回合减少1）",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3267,7 +3417,8 @@
     {
       "id": "tienas_staff",
       "names": {
-        "en": "Tiena's Staff"
+        "en": "Tiena's Staff",
+        "zhHans": "缇娜之杖"
       },
       "weaponTypeId": "staff",
       "rank": "E",
@@ -3285,6 +3436,7 @@
       "worth": 1800,
       "staffExperience": 13,
       "effect": "Recovers Mag+15 HP (cameo of Tiena from the Hasha no Tsurugi manga)",
+      "effectZhHans": "回复魔力+15点HP（《霸王之剑》漫画角色缇娜的客串武器）",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3308,7 +3460,8 @@
     {
       "id": "saints_staff",
       "names": {
-        "en": "Saint's Staff"
+        "en": "Saint's Staff",
+        "zhHans": "圣女之杖"
       },
       "weaponTypeId": "staff",
       "rank": "S",
@@ -3324,6 +3477,7 @@
       "worth": null,
       "staffExperience": 10,
       "effect": "Completely recovers HP and status of all allies on the map (except the caster)",
+      "effectZhHans": "完全回复地图上所有己方单位的HP与异常状态（使用者除外）",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3347,7 +3501,8 @@
     {
       "id": "fire",
       "names": {
-        "en": "Fire"
+        "en": "Fire",
+        "zhHans": "火焰"
       },
       "weaponTypeId": "anima",
       "rank": "E",
@@ -3365,6 +3520,7 @@
       "worth": 420,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3391,7 +3547,8 @@
     {
       "id": "thunder",
       "names": {
-        "en": "Thunder"
+        "en": "Thunder",
+        "zhHans": "雷电"
       },
       "weaponTypeId": "anima",
       "rank": "D",
@@ -3409,6 +3566,7 @@
       "worth": 500,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3435,7 +3593,8 @@
     {
       "id": "fimbulvetr",
       "names": {
-        "en": "Fimbulvetr"
+        "en": "Fimbulvetr",
+        "zhHans": "芬布尔之冬"
       },
       "weaponTypeId": "anima",
       "rank": "A",
@@ -3453,6 +3612,7 @@
       "worth": 3900,
       "staffExperience": null,
       "effect": "(Usable in Trial Maps only)",
+      "effectZhHans": "仅试炼地图可用",
       "availabilityFlags": [
         "trial_map_only"
       ],
@@ -3481,7 +3641,8 @@
     {
       "id": "elfire",
       "names": {
-        "en": "Elfire"
+        "en": "Elfire",
+        "zhHans": "艾尔火焰"
       },
       "weaponTypeId": "anima",
       "rank": "C",
@@ -3499,6 +3660,7 @@
       "worth": 800,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3525,7 +3687,8 @@
     {
       "id": "aircalibur",
       "names": {
-        "en": "Aircalibur"
+        "en": "Aircalibur",
+        "zhHans": "风神之书"
       },
       "weaponTypeId": "anima",
       "rank": "B",
@@ -3543,6 +3706,7 @@
       "worth": 1100,
       "staffExperience": null,
       "effect": "Effective against flying units",
+      "effectZhHans": "对飞行单位特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3569,7 +3733,8 @@
     {
       "id": "bolting",
       "names": {
-        "en": "Bolting"
+        "en": "Bolting",
+        "zhHans": "雷暴"
       },
       "weaponTypeId": "anima",
       "rank": "A",
@@ -3587,6 +3752,7 @@
       "worth": 3000,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3613,7 +3779,8 @@
     {
       "id": "forblaze",
       "names": {
-        "en": "Forblaze"
+        "en": "Forblaze",
+        "zhHans": "福尔布雷兹"
       },
       "weaponTypeId": "anima",
       "rank": "S",
@@ -3631,6 +3798,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Luck +5, effective against Wyvern Riders, Wyvern Lords and Mamkutes",
+      "effectZhHans": "幸运+5；对飞龙骑士、飞龙统帅及龙人特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3657,7 +3825,8 @@
     {
       "id": "lightning",
       "names": {
-        "en": "Lightning"
+        "en": "Lightning",
+        "zhHans": "闪电"
       },
       "weaponTypeId": "light",
       "rank": "E",
@@ -3675,6 +3844,7 @@
       "worth": 540,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3701,7 +3871,8 @@
     {
       "id": "divine",
       "names": {
-        "en": "Divine"
+        "en": "Divine",
+        "zhHans": "神圣"
       },
       "weaponTypeId": "light",
       "rank": "C",
@@ -3719,6 +3890,7 @@
       "worth": 1250,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3745,7 +3917,8 @@
     {
       "id": "purge",
       "names": {
-        "en": "Purge"
+        "en": "Purge",
+        "zhHans": "净化"
       },
       "weaponTypeId": "light",
       "rank": "A",
@@ -3763,6 +3936,7 @@
       "worth": 3500,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3789,7 +3963,8 @@
     {
       "id": "aureola",
       "names": {
-        "en": "Aureola"
+        "en": "Aureola",
+        "zhHans": "奥雷欧拉"
       },
       "weaponTypeId": "light",
       "rank": "S",
@@ -3807,6 +3982,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Resistance +5, effective against Wyvern Riders, Wyvern Lords and Mamkutes",
+      "effectZhHans": "魔防+5；对飞龙骑士、飞龙统帅及龙人特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3833,7 +4009,8 @@
     {
       "id": "fenrir",
       "names": {
-        "en": "Fenrir"
+        "en": "Fenrir",
+        "zhHans": "芬里尔"
       },
       "weaponTypeId": "dark",
       "rank": "A",
@@ -3851,6 +4028,7 @@
       "worth": 7800,
       "staffExperience": null,
       "effect": "(Cannot be obtained)",
+      "effectZhHans": "无法获得",
       "availabilityFlags": [
         "unobtainable"
       ],
@@ -3879,7 +4057,8 @@
     {
       "id": "flux",
       "names": {
-        "en": "Flux"
+        "en": "Flux",
+        "zhHans": "暗流"
       },
       "weaponTypeId": "dark",
       "rank": "D",
@@ -3897,6 +4076,7 @@
       "worth": 780,
       "staffExperience": null,
       "effect": null,
+      "effectZhHans": null,
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3923,7 +4103,8 @@
     {
       "id": "nosferatu",
       "names": {
-        "en": "Nosferatu"
+        "en": "Nosferatu",
+        "zhHans": "吸星"
       },
       "weaponTypeId": "dark",
       "rank": "C",
@@ -3941,6 +4122,7 @@
       "worth": 3000,
       "staffExperience": null,
       "effect": "Restores HP equal to damage done to enemy",
+      "effectZhHans": "回复相当于对敌人造成伤害的HP",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -3967,7 +4149,8 @@
     {
       "id": "eclipse",
       "names": {
-        "en": "Eclipse"
+        "en": "Eclipse",
+        "zhHans": "月蚀"
       },
       "weaponTypeId": "dark",
       "rank": "B",
@@ -3985,6 +4168,7 @@
       "worth": 4000,
       "staffExperience": null,
       "effect": "Reduces HP to 1",
+      "effectZhHans": "将HP降至1",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [
@@ -4011,7 +4195,8 @@
     {
       "id": "apocalypse",
       "names": {
-        "en": "Apocalypse"
+        "en": "Apocalypse",
+        "zhHans": "末日"
       },
       "weaponTypeId": "dark",
       "rank": "S",
@@ -4029,6 +4214,7 @@
       "worth": null,
       "staffExperience": null,
       "effect": "Magic +5, effective against Wyvern Riders, Wyvern Lords and Mamkutes",
+      "effectZhHans": "魔力+5；对飞龙骑士、飞龙统帅及龙人特效",
       "availabilityFlags": [],
       "reviewStatus": "accepted",
       "provenance": [

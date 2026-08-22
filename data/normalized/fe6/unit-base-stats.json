@@ -2014,7 +2014,7 @@
       "unitId": "niime",
       "difficulty": "normal",
       "valueKind": "fixed",
-      "startingClassId": "druid_m",
+      "startingClassId": "druid_f",
       "startingLevel": 18,
       "stats": {
         "hp": 25,

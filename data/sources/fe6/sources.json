@@ -282,6 +282,26 @@
         "sha256": "dc737e459becc97942770e6dce80e9a7d5e785bbe380ef585d30198d3331f61f",
         "acquisition": "automated_fetch"
       }
+    },
+    {
+      "id": "k73-fe6-character-names",
+      "kind": "web",
+      "title": "火花天龙剑 — 火焰纹章封印之剑全人物加入方法及能力",
+      "location": "http://www.k73.com/3ds/19454-2.html",
+      "language": "zh-Hans",
+      "reviewStatus": "accepted",
+      "attribution": "火花天龙剑",
+      "notes": "Simplified-Chinese community character-name translations. These are unofficial fan translations, not official Nintendo translations."
+    },
+    {
+      "id": "k73-fe6-inventory-translations",
+      "kind": "web",
+      "title": "火花天龙剑 — 火焰纹章封印之剑全武器资料、杖及道具列表",
+      "location": "https://www.k73.com/3ds/19445.html",
+      "language": "zh-Hans",
+      "reviewStatus": "accepted",
+      "attribution": "火花天龙剑",
+      "notes": "Community Simplified-Chinese inventory translations, curated from the linked weapon list and the companion staff/item list at https://www.k73.com/3ds/19449.html. These are unofficial fan translations."
     }
   ]
 }

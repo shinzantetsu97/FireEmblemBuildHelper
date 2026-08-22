@@ -126,6 +126,7 @@ export async function validateFe6Data(): Promise<ValidationResult> {
   }
 
   for (const source of sources) {
+    if (!source.snapshot) continue;
     const snapshotPath = path.join(process.cwd(), source.snapshot.path);
     if (!existsSync(snapshotPath)) {
       errors.push({ code: "missing_snapshot", message: `Missing snapshot ${source.snapshot.path}.` });

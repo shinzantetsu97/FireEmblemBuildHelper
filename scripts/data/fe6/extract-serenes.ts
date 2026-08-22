@@ -33,6 +33,43 @@ type CurationOverrides = {
     weaponLevels?: Record<string, string>;
     note: string;
   }>>;
+  classOrder: {
+    insertAfter: string;
+    classIds: string[];
+  };
+};
+
+type ClassNameTranslations = {
+  gameId: "fe6";
+  locale: "zhHans";
+  names: Record<string, string>;
+  notes?: Record<string, string>;
+};
+
+type UnitNameTranslations = {
+  gameId: "fe6";
+  locale: "zhHans";
+  source: {
+    id: string;
+    kind: "web";
+    title: string;
+    location: string;
+    language: "zh-Hans";
+    reviewStatus: "accepted";
+    attribution: string;
+    notes: string;
+  };
+  names: Record<string, string>;
+};
+
+type InventoryTranslations = {
+  gameId: "fe6";
+  locale: "zhHans";
+  source: UnitNameTranslations["source"];
+  weapons: Record<string, string>;
+  items: Record<string, string>;
+  weaponEffects: Record<string, string>;
+  itemEffects: Record<string, string>;
 };
 
 type RawManifest = {
@@ -48,9 +85,12 @@ type RawManifest = {
   }>;
 };
 
-const [nameOverrides, curationOverrides, rawManifest] = await Promise.all([
+const [nameOverrides, curationOverrides, classNameTranslations, unitNameTranslations, inventoryTranslations, rawManifest] = await Promise.all([
   readJson<NameOverrides>("data/sources/fe6/name-overrides.json"),
   readJson<CurationOverrides>("data/sources/fe6/curation-overrides.json"),
+  readJson<ClassNameTranslations>("data/sources/fe6/class-name-translations.json"),
+  readJson<UnitNameTranslations>("data/sources/fe6/unit-name-translations.json"),
+  readJson<InventoryTranslations>("data/sources/fe6/inventory-translations.json"),
   readJson<RawManifest>("data/raw/fe6/serenes/manifest.json"),
 ]);
 
@@ -100,7 +140,7 @@ const sourceCatalog = {
   formatVersion: 1,
   gameId: "fe6",
   updatedAt: rawManifest.entries.map((entry) => entry.retrievedAt).sort().at(-1),
-  sources: FE6_SOURCES.map((source) => {
+  sources: [...FE6_SOURCES.map((source) => {
     const snapshot = rawManifest.entries.find((entry) => entry.sourceId === source.id);
     if (!snapshot) throw new Error(`Raw manifest is missing ${source.id}.`);
     return {
@@ -117,7 +157,7 @@ const sourceCatalog = {
         acquisition: snapshot.acquisition,
       },
     };
-  }),
+  }), unitNameTranslations.source, inventoryTranslations.source],
 };
 await writeFile(path.join(sourceRoot, "sources.json"), json(sourceCatalog), "utf8");
 
@@ -250,6 +290,27 @@ const classBaseTable = await sourceTable("serenes-fe6-class-base-stats");
 const classBaseRows = dataRows(classBaseTable, "Class").filter((row) => row.cells.length === 10);
 const classBaseLabels = new Set(classBaseRows.map((row) => rowCells(row)[0]));
 
+function curatedClassRows(rows: HTMLTableRowElement[]) {
+  const orderedIds = curationOverrides.classOrder.classIds;
+  if (new Set(orderedIds).size !== orderedIds.length) throw new Error("Curated class order contains duplicate class IDs.");
+
+  const rowsById = new Map(rows.map((row) => [classId(rowCells(row)[0]), row]));
+  for (const id of [...orderedIds, curationOverrides.classOrder.insertAfter]) {
+    if (!rowsById.has(id)) throw new Error(`Curated class order references unknown class ${id}.`);
+  }
+
+  const remainingRows = rows.filter((row) => !orderedIds.includes(classId(rowCells(row)[0])));
+  const insertAt = remainingRows.findIndex((row) => classId(rowCells(row)[0]) === curationOverrides.classOrder.insertAfter);
+  if (insertAt < 0) throw new Error(`Curated class order is missing ${curationOverrides.classOrder.insertAfter}.`);
+  return [
+    ...remainingRows.slice(0, insertAt + 1),
+    ...orderedIds.map((id) => rowsById.get(id)!),
+    ...remainingRows.slice(insertAt + 1),
+  ];
+}
+
+const orderedClassBaseRows = curatedClassRows(classBaseRows);
+
 function concretePromotionTarget(sourceClass: string, genericTarget: string): string {
   const gender = sourceClass.match(/\(([MF])\)$/)?.[1];
   const genderedTarget = gender ? `${genericTarget} (${gender})` : genericTarget;
@@ -283,7 +344,7 @@ for (const sourceClass of classBaseLabels) {
   }
 }
 
-const classes = classBaseRows.map((row, index) => {
+const classes = orderedClassBaseRows.map((row, index) => {
   const [sourceName, hp, power, skill, speed, defense, resistance, constitution, movement] = rowCells(row);
   const metadata = classMetadata(sourceName);
   const exactMaximum = maximumByName.get(sourceName);
@@ -300,10 +361,16 @@ const classes = classBaseRows.map((row, index) => {
   const maximumStats = exactMaximum ?? genericMaximum;
   if (!maximumStats) throw new Error(`No maximum-stat rule for ${sourceName}.`);
   const weaponRanks = parseWeaponRanks(row.cells[9]);
+  const id = classId(sourceName);
+  const zhHans = classNameTranslations.names[id];
+  if (!zhHans) throw new Error(`Missing Simplified Chinese class name for ${id}.`);
+  const notes = metadata?.notes ?? null;
+  const notesZhHans = notes ? classNameTranslations.notes?.[id] : null;
+  if (notes && !notesZhHans) throw new Error(`Missing Simplified Chinese class note for ${id}.`);
   return {
-    id: classId(sourceName),
+    id,
     displayOrder: index + 1,
-    names: { en: classDisplayName(sourceName) },
+    names: { en: classDisplayName(sourceName), zhHans },
     aliases: distinct([sourceName, genericClassName(sourceName), metadata?.name ?? ""]).filter((name) => name !== classDisplayName(sourceName)),
     sourceName,
     gender: sourceName.endsWith("(M)") ? "male" : sourceName.endsWith("(F)") ? "female" : null,
@@ -322,7 +389,8 @@ const classes = classBaseRows.map((row, index) => {
     baseWeaponRanks: weaponRanks,
     maximumStats,
     promotionClassId: metadata?.promotesTo ? concretePromotionTarget(sourceName, metadata.promotesTo) : null,
-    notes: metadata?.notes ?? null,
+    notes,
+    notesZhHans: notesZhHans ?? null,
     reviewStatus: "accepted",
     provenance: [
       sourceRef("serenes-fe6-class-introduction", `Class Introduction > ${genericClassName(sourceName)}`, ["usableWeaponTypeIds", "promotionClassId", "notes"]),
@@ -526,6 +594,8 @@ const units = storyUnitIds.map((unitId, index) => {
   const base = primaryBaseByUnit.get(unitId);
   const affinityId = affinityByUnit.get(unitId);
   if (!identity || !base || !affinityId) throw new Error(`Unit ${unitId} is missing identity, bases, or affinity.`);
+  const zhHans = unitNameTranslations.names[unitId];
+  if (!zhHans) throw new Error(`Missing Simplified Chinese unit name for ${unitId}.`);
   return {
     id: unitId,
     displayOrder: index + 1,
@@ -533,6 +603,7 @@ const units = storyUnitIds.map((unitId, index) => {
     gender: curationOverrides.unitGenders[unitId] ?? "male",
     names: {
       en: identity.preferred,
+      zhHans,
       ja: identity.japanese,
       jaLatn: identity.romanized,
       fan: identity.fan,
@@ -544,6 +615,7 @@ const units = storyUnitIds.map((unitId, index) => {
     reviewStatus: "accepted",
     provenance: [
       sourceRef("serenes-fe6-name-chart", `Name Chart > ${identity.japanese}`, ["names", "aliases"]),
+      sourceRef(unitNameTranslations.source.id, `Character names > ${identity.japanese} > ${zhHans}`, ["names.zhHans"]),
       sourceRef("serenes-fe6-character-base-stats", `Character Base Stats > ${baseSourceNameByUnit.get(unitId)}`, ["affinityId"]),
     ],
   };
@@ -666,6 +738,19 @@ const weapons: JsonObject[] = [];
 const items: JsonObject[] = [];
 const inventoryCandidates: JsonObject[] = [];
 
+function inventoryNames(id: string, name: string, kind: "weapon" | "item"): { en: string; zhHans: string } {
+  const zhHans = (kind === "weapon" ? inventoryTranslations.weapons : inventoryTranslations.items)[id];
+  if (!zhHans) throw new Error(`Missing Simplified-Chinese ${kind} translation for ${id}.`);
+  return { en: name, zhHans };
+}
+
+function inventoryEffect(id: string, effect: string | null, kind: "weapon" | "item"): string | null {
+  if (!effect) return null;
+  const zhHans = (kind === "weapon" ? inventoryTranslations.weaponEffects : inventoryTranslations.itemEffects)[id];
+  if (!zhHans) throw new Error(`Missing Simplified-Chinese ${kind} effect translation for ${id}.`);
+  return zhHans;
+}
+
 for (const definition of inventoryDefinitions) {
   const table = await sourceTable(definition.sourceId);
   inventoryCandidates.push({ sourceId: definition.sourceId, rows: rawRows(table) });
@@ -673,12 +758,15 @@ for (const definition of inventoryDefinitions) {
     const cells = rowCells(row);
     if (definition.kind === "item") {
       const [, name, uses, worth, effect] = cells;
+      const id = asciiId(name);
+      const effectValue = effect === "–" ? null : effect;
       items.push({
-        id: asciiId(name),
-        names: { en: name },
+        id,
+        names: inventoryNames(id, name, "item"),
         uses: nullableInteger(uses, `${name} uses`),
         worth: nullableInteger(worth, `${name} worth`),
-        effect: effect === "–" ? null : effect,
+        effect: effectValue,
+        effectZhHans: inventoryEffect(id, effectValue, "item"),
         availabilityFlags: availabilityFlags(effect),
         reviewStatus: "accepted",
         provenance: [sourceRef(definition.sourceId, `${sourceById.get(definition.sourceId)?.expectedHeading} > ${name}`, ["names", "uses", "worth", "effect", "availabilityFlags"])],
@@ -688,9 +776,11 @@ for (const definition of inventoryDefinitions) {
 
     if (definition.kind === "staff") {
       const [, name, rank, range, uses, worth, experience, effect] = cells;
+      const id = name === "Torch" ? "torch_staff" : asciiId(name);
+      const effectValue = effect === "–" ? null : effect;
       weapons.push({
-        id: name === "Torch" ? "torch_staff" : asciiId(name),
-        names: { en: name },
+        id,
+        names: inventoryNames(id, name, "weapon"),
         weaponTypeId: definition.weaponTypeId,
         rank: rank === "–" ? null : rank,
         range: rangeValue(range),
@@ -701,7 +791,8 @@ for (const definition of inventoryDefinitions) {
         uses: nullableInteger(uses, `${name} uses`),
         worth: nullableInteger(worth, `${name} worth`),
         staffExperience: nullableInteger(experience, `${name} staff experience`),
-        effect: effect === "–" ? null : effect,
+        effect: effectValue,
+        effectZhHans: inventoryEffect(id, effectValue, "weapon"),
         availabilityFlags: availabilityFlags(effect),
         reviewStatus: "accepted",
         provenance: [sourceRef(definition.sourceId, `${sourceById.get(definition.sourceId)?.expectedHeading} > ${name}`, ["names", "rank", "range", "uses", "worth", "staffExperience", "effect", "availabilityFlags"])],
@@ -710,9 +801,11 @@ for (const definition of inventoryDefinitions) {
     }
 
     const [, name, rank, range, weight, might, hit, critical, uses, worth, effect] = cells;
+    const id = asciiId(name);
+    const effectValue = effect === "–" ? null : effect;
     weapons.push({
-      id: asciiId(name),
-      names: { en: name },
+      id,
+      names: inventoryNames(id, name, "weapon"),
       weaponTypeId: definition.weaponTypeId,
       rank: rank === "–" ? null : rank,
       range: rangeValue(range),
@@ -723,7 +816,8 @@ for (const definition of inventoryDefinitions) {
       uses: nullableInteger(uses, `${name} uses`),
       worth: nullableInteger(worth, `${name} worth`),
       staffExperience: null,
-      effect: effect === "–" ? null : effect,
+      effect: effectValue,
+      effectZhHans: inventoryEffect(id, effectValue, "weapon"),
       availabilityFlags: availabilityFlags(effect),
       reviewStatus: "accepted",
       provenance: [sourceRef(definition.sourceId, `${sourceById.get(definition.sourceId)?.expectedHeading} > ${name}`, ["names", "rank", "range", "weight", "might", "hit", "critical", "uses", "worth", "effect", "availabilityFlags"])],

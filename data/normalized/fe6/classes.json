@@ -6,7 +6,8 @@
       "id": "lord",
       "displayOrder": 1,
       "names": {
-        "en": "Lord"
+        "en": "Lord",
+        "zhHans": "领主"
       },
       "aliases": [],
       "sourceName": "Lord",
@@ -41,6 +42,7 @@
       },
       "promotionClassId": "master_lord",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -78,7 +80,8 @@
       "id": "master_lord",
       "displayOrder": 2,
       "names": {
-        "en": "Master Lord"
+        "en": "Master Lord",
+        "zhHans": "大领主"
       },
       "aliases": [],
       "sourceName": "Master Lord",
@@ -113,6 +116,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -150,7 +154,8 @@
       "id": "bard",
       "displayOrder": 3,
       "names": {
-        "en": "Bard"
+        "en": "Bard",
+        "zhHans": "诗人"
       },
       "aliases": [],
       "sourceName": "Bard",
@@ -181,6 +186,7 @@
       },
       "promotionClassId": null,
       "notes": "Can allow an ally to move again",
+      "notesZhHans": "可令一名己方单位再动",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -218,7 +224,8 @@
       "id": "dancer",
       "displayOrder": 4,
       "names": {
-        "en": "Dancer"
+        "en": "Dancer",
+        "zhHans": "舞娘"
       },
       "aliases": [],
       "sourceName": "Dancer",
@@ -249,6 +256,7 @@
       },
       "promotionClassId": null,
       "notes": "Can allow an ally to move again",
+      "notesZhHans": "可令一名己方单位再动",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -286,7 +294,8 @@
       "id": "transporter",
       "displayOrder": 5,
       "names": {
-        "en": "Transporter"
+        "en": "Transporter",
+        "zhHans": "输送队"
       },
       "aliases": [],
       "sourceName": "Transporter",
@@ -317,6 +326,7 @@
       },
       "promotionClassId": null,
       "notes": "Can store items",
+      "notesZhHans": "可以储存物品",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -354,7 +364,8 @@
       "id": "mercenary_m",
       "displayOrder": 6,
       "names": {
-        "en": "Mercenary (M)"
+        "en": "Mercenary (M)",
+        "zhHans": "佣兵（男）"
       },
       "aliases": [
         "Mercenary"
@@ -391,6 +402,7 @@
       },
       "promotionClassId": "hero_m",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -428,7 +440,8 @@
       "id": "mercenary_f",
       "displayOrder": 7,
       "names": {
-        "en": "Mercenary (F)"
+        "en": "Mercenary (F)",
+        "zhHans": "佣兵（女）"
       },
       "aliases": [
         "Mercenary"
@@ -465,6 +478,7 @@
       },
       "promotionClassId": "hero_f",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -502,7 +516,8 @@
       "id": "hero_m",
       "displayOrder": 8,
       "names": {
-        "en": "Hero (M)"
+        "en": "Hero (M)",
+        "zhHans": "勇者（男）"
       },
       "aliases": [
         "Hero"
@@ -541,6 +556,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -578,7 +594,8 @@
       "id": "hero_f",
       "displayOrder": 9,
       "names": {
-        "en": "Hero (F)"
+        "en": "Hero (F)",
+        "zhHans": "勇者（女）"
       },
       "aliases": [
         "Hero"
@@ -617,6 +634,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -654,7 +672,8 @@
       "id": "myrmidon_m",
       "displayOrder": 10,
       "names": {
-        "en": "Myrmidon (M)"
+        "en": "Myrmidon (M)",
+        "zhHans": "剑士（男）"
       },
       "aliases": [
         "Myrmidon"
@@ -691,6 +710,7 @@
       },
       "promotionClassId": "swordmaster_m",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -728,7 +748,8 @@
       "id": "myrmidon_f",
       "displayOrder": 11,
       "names": {
-        "en": "Myrmidon (F)"
+        "en": "Myrmidon (F)",
+        "zhHans": "剑士（女）"
       },
       "aliases": [
         "Myrmidon"
@@ -765,6 +786,7 @@
       },
       "promotionClassId": "swordmaster_f",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -802,7 +824,8 @@
       "id": "swordmaster_m",
       "displayOrder": 12,
       "names": {
-        "en": "Swordmaster (M)"
+        "en": "Swordmaster (M)",
+        "zhHans": "剑圣（男）"
       },
       "aliases": [
         "Swordmaster"
@@ -839,6 +862,7 @@
       },
       "promotionClassId": null,
       "notes": "+30 critical",
+      "notesZhHans": "必杀 +30",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -876,7 +900,8 @@
       "id": "swordmaster_f",
       "displayOrder": 13,
       "names": {
-        "en": "Swordmaster (F)"
+        "en": "Swordmaster (F)",
+        "zhHans": "剑圣（女）"
       },
       "aliases": [
         "Swordmaster"
@@ -913,6 +938,7 @@
       },
       "promotionClassId": null,
       "notes": "+30 critical",
+      "notesZhHans": "必杀 +30",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -950,7 +976,8 @@
       "id": "thief_m",
       "displayOrder": 14,
       "names": {
-        "en": "Thief (M)"
+        "en": "Thief (M)",
+        "zhHans": "盗贼（男）"
       },
       "aliases": [
         "Thief"
@@ -987,6 +1014,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1024,7 +1052,8 @@
       "id": "thief_f",
       "displayOrder": 15,
       "names": {
-        "en": "Thief (F)"
+        "en": "Thief (F)",
+        "zhHans": "盗贼（女）"
       },
       "aliases": [
         "Thief"
@@ -1061,6 +1090,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1098,7 +1128,8 @@
       "id": "soldier",
       "displayOrder": 16,
       "names": {
-        "en": "Soldier"
+        "en": "Soldier",
+        "zhHans": "士兵"
       },
       "aliases": [],
       "sourceName": "Soldier",
@@ -1133,6 +1164,7 @@
       },
       "promotionClassId": null,
       "notes": "Enemy only",
+      "notesZhHans": "敌方专用",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1170,7 +1202,8 @@
       "id": "cavalier_m",
       "displayOrder": 17,
       "names": {
-        "en": "Cavalier (M)"
+        "en": "Cavalier (M)",
+        "zhHans": "骑士（男）"
       },
       "aliases": [
         "Cavalier"
@@ -1209,6 +1242,7 @@
       },
       "promotionClassId": "paladin_m",
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1246,7 +1280,8 @@
       "id": "cavalier_f",
       "displayOrder": 18,
       "names": {
-        "en": "Cavalier (F)"
+        "en": "Cavalier (F)",
+        "zhHans": "骑士（女）"
       },
       "aliases": [
         "Cavalier"
@@ -1285,6 +1320,7 @@
       },
       "promotionClassId": "paladin_f",
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1322,7 +1358,8 @@
       "id": "paladin_m",
       "displayOrder": 19,
       "names": {
-        "en": "Paladin (M)"
+        "en": "Paladin (M)",
+        "zhHans": "圣骑士（男）"
       },
       "aliases": [
         "Paladin"
@@ -1363,6 +1400,7 @@
       },
       "promotionClassId": null,
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1400,7 +1438,8 @@
       "id": "paladin_f",
       "displayOrder": 20,
       "names": {
-        "en": "Paladin (F)"
+        "en": "Paladin (F)",
+        "zhHans": "圣骑士（女）"
       },
       "aliases": [
         "Paladin"
@@ -1441,6 +1480,7 @@
       },
       "promotionClassId": null,
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1478,7 +1518,8 @@
       "id": "knight_m",
       "displayOrder": 21,
       "names": {
-        "en": "Knight (M)"
+        "en": "Knight (M)",
+        "zhHans": "重甲骑士（男）"
       },
       "aliases": [
         "Knight"
@@ -1515,6 +1556,7 @@
       },
       "promotionClassId": "general_m",
       "notes": "Armoured",
+      "notesZhHans": "重甲单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1552,7 +1594,8 @@
       "id": "knight_f",
       "displayOrder": 22,
       "names": {
-        "en": "Knight (F)"
+        "en": "Knight (F)",
+        "zhHans": "重甲骑士（女）"
       },
       "aliases": [
         "Knight"
@@ -1589,6 +1632,7 @@
       },
       "promotionClassId": "general_f",
       "notes": "Armoured",
+      "notesZhHans": "重甲单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1626,7 +1670,8 @@
       "id": "general_m",
       "displayOrder": 23,
       "names": {
-        "en": "General (M)"
+        "en": "General (M)",
+        "zhHans": "将军（男）"
       },
       "aliases": [
         "General"
@@ -1665,6 +1710,7 @@
       },
       "promotionClassId": null,
       "notes": "Armoured",
+      "notesZhHans": "重甲单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1702,7 +1748,8 @@
       "id": "general_f",
       "displayOrder": 24,
       "names": {
-        "en": "General (F)"
+        "en": "General (F)",
+        "zhHans": "将军（女）"
       },
       "aliases": [
         "General"
@@ -1741,6 +1788,7 @@
       },
       "promotionClassId": null,
       "notes": "Armoured",
+      "notesZhHans": "重甲单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1778,7 +1826,8 @@
       "id": "fighter",
       "displayOrder": 25,
       "names": {
-        "en": "Fighter"
+        "en": "Fighter",
+        "zhHans": "战士"
       },
       "aliases": [],
       "sourceName": "Fighter",
@@ -1813,6 +1862,7 @@
       },
       "promotionClassId": "warrior",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1850,7 +1900,8 @@
       "id": "warrior",
       "displayOrder": 26,
       "names": {
-        "en": "Warrior"
+        "en": "Warrior",
+        "zhHans": "勇士"
       },
       "aliases": [],
       "sourceName": "Warrior",
@@ -1887,6 +1938,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1924,7 +1976,8 @@
       "id": "brigand",
       "displayOrder": 27,
       "names": {
-        "en": "Brigand"
+        "en": "Brigand",
+        "zhHans": "山贼"
       },
       "aliases": [
         "Bandit"
@@ -1961,6 +2014,7 @@
       },
       "promotionClassId": "berserker",
       "notes": "Can cross mountains",
+      "notesZhHans": "可穿越山地",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -1998,7 +2052,8 @@
       "id": "pirate",
       "displayOrder": 28,
       "names": {
-        "en": "Pirate"
+        "en": "Pirate",
+        "zhHans": "海贼"
       },
       "aliases": [],
       "sourceName": "Pirate",
@@ -2033,6 +2088,7 @@
       },
       "promotionClassId": "berserker",
       "notes": "Can cross seas",
+      "notesZhHans": "可穿越海域",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2070,7 +2126,8 @@
       "id": "berserker",
       "displayOrder": 29,
       "names": {
-        "en": "Berserker"
+        "en": "Berserker",
+        "zhHans": "狂战士"
       },
       "aliases": [],
       "sourceName": "Berserker",
@@ -2105,6 +2162,7 @@
       },
       "promotionClassId": null,
       "notes": "+30 critical, can cross mountains and seas",
+      "notesZhHans": "必杀 +30，可穿越山地和海域",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2142,7 +2200,8 @@
       "id": "archer_m",
       "displayOrder": 30,
       "names": {
-        "en": "Archer (M)"
+        "en": "Archer (M)",
+        "zhHans": "弓箭手（男）"
       },
       "aliases": [
         "Archer"
@@ -2179,6 +2238,7 @@
       },
       "promotionClassId": "sniper_m",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2216,7 +2276,8 @@
       "id": "archer_f",
       "displayOrder": 31,
       "names": {
-        "en": "Archer (F)"
+        "en": "Archer (F)",
+        "zhHans": "弓箭手（女）"
       },
       "aliases": [
         "Archer"
@@ -2253,6 +2314,7 @@
       },
       "promotionClassId": "sniper_f",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2290,7 +2352,8 @@
       "id": "sniper_m",
       "displayOrder": 32,
       "names": {
-        "en": "Sniper (M)"
+        "en": "Sniper (M)",
+        "zhHans": "狙击手（男）"
       },
       "aliases": [
         "Sniper"
@@ -2327,6 +2390,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2364,7 +2428,8 @@
       "id": "sniper_f",
       "displayOrder": 33,
       "names": {
-        "en": "Sniper (F)"
+        "en": "Sniper (F)",
+        "zhHans": "狙击手（女）"
       },
       "aliases": [
         "Sniper"
@@ -2401,6 +2466,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2438,7 +2504,8 @@
       "id": "nomad_m",
       "displayOrder": 34,
       "names": {
-        "en": "Nomad (M)"
+        "en": "Nomad (M)",
+        "zhHans": "游牧民（男）"
       },
       "aliases": [
         "Nomad"
@@ -2475,6 +2542,7 @@
       },
       "promotionClassId": "nomad_trooper_m",
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2512,7 +2580,8 @@
       "id": "nomad_f",
       "displayOrder": 35,
       "names": {
-        "en": "Nomad (F)"
+        "en": "Nomad (F)",
+        "zhHans": "游牧民（女）"
       },
       "aliases": [
         "Nomad"
@@ -2549,6 +2618,7 @@
       },
       "promotionClassId": "nomad_trooper_f",
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2586,7 +2656,8 @@
       "id": "nomad_trooper_m",
       "displayOrder": 36,
       "names": {
-        "en": "Nomad Trooper (M)"
+        "en": "Nomad Trooper (M)",
+        "zhHans": "游牧骑兵（男）"
       },
       "aliases": [
         "Nomad Trooper"
@@ -2625,6 +2696,7 @@
       },
       "promotionClassId": null,
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2662,7 +2734,8 @@
       "id": "nomad_trooper_f",
       "displayOrder": 37,
       "names": {
-        "en": "Nomad Trooper (F)"
+        "en": "Nomad Trooper (F)",
+        "zhHans": "游牧骑兵（女）"
       },
       "aliases": [
         "Nomad Trooper"
@@ -2701,6 +2774,7 @@
       },
       "promotionClassId": null,
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2738,7 +2812,8 @@
       "id": "pegasus_knight",
       "displayOrder": 38,
       "names": {
-        "en": "Pegasus Knight"
+        "en": "Pegasus Knight",
+        "zhHans": "天马骑士"
       },
       "aliases": [],
       "sourceName": "Pegasus Knight",
@@ -2773,6 +2848,7 @@
       },
       "promotionClassId": "falcon_knight",
       "notes": "Flying",
+      "notesZhHans": "飞行单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2810,7 +2886,8 @@
       "id": "falcon_knight",
       "displayOrder": 39,
       "names": {
-        "en": "Falcon Knight"
+        "en": "Falcon Knight",
+        "zhHans": "圣天马骑士"
       },
       "aliases": [],
       "sourceName": "Falcon Knight",
@@ -2847,6 +2924,7 @@
       },
       "promotionClassId": null,
       "notes": "Flying",
+      "notesZhHans": "飞行单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2884,7 +2962,8 @@
       "id": "wyvern_rider_m",
       "displayOrder": 40,
       "names": {
-        "en": "Wyvern Rider (M)"
+        "en": "Wyvern Rider (M)",
+        "zhHans": "飞龙骑士（男）"
       },
       "aliases": [
         "Wyvern Rider"
@@ -2921,6 +3000,7 @@
       },
       "promotionClassId": "wyvern_lord_m",
       "notes": "Flying",
+      "notesZhHans": "飞行单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -2958,7 +3038,8 @@
       "id": "wyvern_rider_f",
       "displayOrder": 41,
       "names": {
-        "en": "Wyvern Rider (F)"
+        "en": "Wyvern Rider (F)",
+        "zhHans": "飞龙骑士（女）"
       },
       "aliases": [
         "Wyvern Rider"
@@ -2995,6 +3076,7 @@
       },
       "promotionClassId": "wyvern_lord_f",
       "notes": "Flying",
+      "notesZhHans": "飞行单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3032,7 +3114,8 @@
       "id": "wyvern_lord_m",
       "displayOrder": 42,
       "names": {
-        "en": "Wyvern Lord (M)"
+        "en": "Wyvern Lord (M)",
+        "zhHans": "飞龙统帅（男）"
       },
       "aliases": [
         "Wyvern Lord"
@@ -3071,6 +3154,7 @@
       },
       "promotionClassId": null,
       "notes": "Flying",
+      "notesZhHans": "飞行单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3108,7 +3192,8 @@
       "id": "wyvern_lord_f",
       "displayOrder": 43,
       "names": {
-        "en": "Wyvern Lord (F)"
+        "en": "Wyvern Lord (F)",
+        "zhHans": "飞龙统帅（女）"
       },
       "aliases": [
         "Wyvern Lord"
@@ -3147,6 +3232,7 @@
       },
       "promotionClassId": null,
       "notes": "Flying",
+      "notesZhHans": "飞行单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3184,7 +3270,8 @@
       "id": "mage_m",
       "displayOrder": 44,
       "names": {
-        "en": "Mage (M)"
+        "en": "Mage (M)",
+        "zhHans": "法师（男）"
       },
       "aliases": [
         "Mage"
@@ -3221,6 +3308,7 @@
       },
       "promotionClassId": "sage_m",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3258,7 +3346,8 @@
       "id": "mage_f",
       "displayOrder": 45,
       "names": {
-        "en": "Mage (F)"
+        "en": "Mage (F)",
+        "zhHans": "法师（女）"
       },
       "aliases": [
         "Mage"
@@ -3295,6 +3384,7 @@
       },
       "promotionClassId": "sage_f",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3332,7 +3422,8 @@
       "id": "sage_m",
       "displayOrder": 46,
       "names": {
-        "en": "Sage (M)"
+        "en": "Sage (M)",
+        "zhHans": "贤者（男）"
       },
       "aliases": [
         "Sage"
@@ -3371,6 +3462,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3408,7 +3500,8 @@
       "id": "sage_f",
       "displayOrder": 47,
       "names": {
-        "en": "Sage (F)"
+        "en": "Sage (F)",
+        "zhHans": "贤者（女）"
       },
       "aliases": [
         "Sage"
@@ -3447,6 +3540,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3484,7 +3578,8 @@
       "id": "shaman_m",
       "displayOrder": 48,
       "names": {
-        "en": "Shaman (M)"
+        "en": "Shaman (M)",
+        "zhHans": "萨满（男）"
       },
       "aliases": [
         "Shaman"
@@ -3521,6 +3616,7 @@
       },
       "promotionClassId": "druid_m",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3558,7 +3654,8 @@
       "id": "shaman_f",
       "displayOrder": 49,
       "names": {
-        "en": "Shaman (F)"
+        "en": "Shaman (F)",
+        "zhHans": "萨满（女）"
       },
       "aliases": [
         "Shaman"
@@ -3595,6 +3692,7 @@
       },
       "promotionClassId": "druid_f",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3632,7 +3730,8 @@
       "id": "druid_m",
       "displayOrder": 50,
       "names": {
-        "en": "Druid (M)"
+        "en": "Druid (M)",
+        "zhHans": "德鲁伊（男）"
       },
       "aliases": [
         "Druid"
@@ -3671,6 +3770,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3708,7 +3808,8 @@
       "id": "druid_f",
       "displayOrder": 51,
       "names": {
-        "en": "Druid (F)"
+        "en": "Druid (F)",
+        "zhHans": "德鲁伊（女）"
       },
       "aliases": [
         "Druid"
@@ -3747,6 +3848,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3784,7 +3886,8 @@
       "id": "priest_m",
       "displayOrder": 52,
       "names": {
-        "en": "Priest (M)"
+        "en": "Priest (M)",
+        "zhHans": "僧侣"
       },
       "aliases": [
         "Priest"
@@ -3821,6 +3924,7 @@
       },
       "promotionClassId": "bishop_m",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3858,7 +3962,8 @@
       "id": "priest_f",
       "displayOrder": 53,
       "names": {
-        "en": "Priest (F)"
+        "en": "Priest (F)",
+        "zhHans": "修女"
       },
       "aliases": [
         "Priest"
@@ -3895,6 +4000,7 @@
       },
       "promotionClassId": "bishop_f",
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -3932,7 +4038,8 @@
       "id": "bishop_m",
       "displayOrder": 54,
       "names": {
-        "en": "Bishop (M)"
+        "en": "Bishop (M)",
+        "zhHans": "主教（男）"
       },
       "aliases": [
         "Bishop"
@@ -3971,6 +4078,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4008,7 +4116,8 @@
       "id": "bishop_f",
       "displayOrder": 55,
       "names": {
-        "en": "Bishop (F)"
+        "en": "Bishop (F)",
+        "zhHans": "主教（女）"
       },
       "aliases": [
         "Bishop"
@@ -4047,6 +4156,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4084,7 +4194,8 @@
       "id": "troubadour",
       "displayOrder": 56,
       "names": {
-        "en": "Troubadour"
+        "en": "Troubadour",
+        "zhHans": "神官骑士"
       },
       "aliases": [],
       "sourceName": "Troubadour",
@@ -4119,6 +4230,7 @@
       },
       "promotionClassId": "valkyrie",
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4156,7 +4268,8 @@
       "id": "valkyrie",
       "displayOrder": 57,
       "names": {
-        "en": "Valkyrie"
+        "en": "Valkyrie",
+        "zhHans": "女武神"
       },
       "aliases": [
         "Valkyria"
@@ -4195,6 +4308,7 @@
       },
       "promotionClassId": null,
       "notes": "Horseback",
+      "notesZhHans": "马背单位",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4229,81 +4343,11 @@
       ]
     },
     {
-      "id": "manakete_m",
+      "id": "manakete_f",
       "displayOrder": 58,
       "names": {
-        "en": "Manakete (M)"
-      },
-      "aliases": [
-        "Mamkute (M)",
-        "Mamkute"
-      ],
-      "sourceName": "Mamkute (M)",
-      "gender": "male",
-      "tier": "special",
-      "usableWeaponTypeIds": [],
-      "baseStats": {
-        "hp": 20,
-        "power": 0,
-        "skill": 0,
-        "speed": 2,
-        "defense": 1,
-        "resistance": 1
-      },
-      "constitution": 5,
-      "movement": 5,
-      "baseWeaponRanks": {},
-      "maximumStats": {
-        "hp": 60,
-        "power": 20,
-        "skill": 20,
-        "speed": 20,
-        "luck": 30,
-        "defense": 20,
-        "resistance": 20,
-        "constitution": 20,
-        "movement": 15
-      },
-      "promotionClassId": null,
-      "notes": "Can transform into dragons",
-      "reviewStatus": "accepted",
-      "provenance": [
-        {
-          "sourceId": "serenes-fe6-class-introduction",
-          "locator": "Class Introduction > Mamkute",
-          "fields": [
-            "usableWeaponTypeIds",
-            "promotionClassId",
-            "notes"
-          ],
-          "reviewStatus": "accepted"
-        },
-        {
-          "sourceId": "serenes-fe6-class-base-stats",
-          "locator": "Class Base Stats > Mamkute (M)",
-          "fields": [
-            "baseStats",
-            "constitution",
-            "movement",
-            "baseWeaponRanks"
-          ],
-          "reviewStatus": "accepted"
-        },
-        {
-          "sourceId": "serenes-fe6-class-maximum-stats",
-          "locator": "Class Maximum Stats > Non-promoted",
-          "fields": [
-            "maximumStats"
-          ],
-          "reviewStatus": "accepted"
-        }
-      ]
-    },
-    {
-      "id": "manakete_f",
-      "displayOrder": 59,
-      "names": {
-        "en": "Manakete (F)"
+        "en": "Manakete (F)",
+        "zhHans": "神龙（未变身）"
       },
       "aliases": [
         "Mamkute (F)",
@@ -4337,6 +4381,7 @@
       },
       "promotionClassId": null,
       "notes": "Can transform into dragons",
+      "notesZhHans": "可变身为龙",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4371,78 +4416,11 @@
       ]
     },
     {
-      "id": "fire_dragon",
-      "displayOrder": 60,
-      "names": {
-        "en": "Fire Dragon"
-      },
-      "aliases": [],
-      "sourceName": "Fire Dragon",
-      "gender": null,
-      "tier": "enemy_only",
-      "usableWeaponTypeIds": [],
-      "baseStats": {
-        "hp": 40,
-        "power": 10,
-        "skill": 5,
-        "speed": 5,
-        "defense": 12,
-        "resistance": 10
-      },
-      "constitution": 25,
-      "movement": 8,
-      "baseWeaponRanks": {},
-      "maximumStats": {
-        "hp": 60,
-        "power": 30,
-        "skill": 28,
-        "speed": 28,
-        "luck": 30,
-        "defense": 30,
-        "resistance": 28,
-        "constitution": 25,
-        "movement": 15
-      },
-      "promotionClassId": null,
-      "notes": null,
-      "reviewStatus": "accepted",
-      "provenance": [
-        {
-          "sourceId": "serenes-fe6-class-introduction",
-          "locator": "Class Introduction > Fire Dragon",
-          "fields": [
-            "usableWeaponTypeIds",
-            "promotionClassId",
-            "notes"
-          ],
-          "reviewStatus": "accepted"
-        },
-        {
-          "sourceId": "serenes-fe6-class-base-stats",
-          "locator": "Class Base Stats > Fire Dragon",
-          "fields": [
-            "baseStats",
-            "constitution",
-            "movement",
-            "baseWeaponRanks"
-          ],
-          "reviewStatus": "accepted"
-        },
-        {
-          "sourceId": "serenes-fe6-class-maximum-stats",
-          "locator": "Class Maximum Stats > Fire Dragon",
-          "fields": [
-            "maximumStats"
-          ],
-          "reviewStatus": "accepted"
-        }
-      ]
-    },
-    {
       "id": "divine_dragon",
-      "displayOrder": 61,
+      "displayOrder": 59,
       "names": {
-        "en": "Divine Dragon"
+        "en": "Divine Dragon",
+        "zhHans": "神龙（战斗中）"
       },
       "aliases": [],
       "sourceName": "Divine Dragon",
@@ -4473,6 +4451,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4507,10 +4486,154 @@
       ]
     },
     {
+      "id": "manakete_m",
+      "displayOrder": 60,
+      "names": {
+        "en": "Manakete (M)",
+        "zhHans": "火龙（未变身）"
+      },
+      "aliases": [
+        "Mamkute (M)",
+        "Mamkute"
+      ],
+      "sourceName": "Mamkute (M)",
+      "gender": "male",
+      "tier": "special",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 20,
+        "power": 0,
+        "skill": 0,
+        "speed": 2,
+        "defense": 1,
+        "resistance": 1
+      },
+      "constitution": 5,
+      "movement": 5,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 20,
+        "skill": 20,
+        "speed": 20,
+        "luck": 30,
+        "defense": 20,
+        "resistance": 20,
+        "constitution": 20,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": "Can transform into dragons",
+      "notesZhHans": "可变身为龙",
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Mamkute",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Mamkute (M)",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Non-promoted",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
+      "id": "fire_dragon",
+      "displayOrder": 61,
+      "names": {
+        "en": "Fire Dragon",
+        "zhHans": "火龙（战斗中）"
+      },
+      "aliases": [],
+      "sourceName": "Fire Dragon",
+      "gender": null,
+      "tier": "enemy_only",
+      "usableWeaponTypeIds": [],
+      "baseStats": {
+        "hp": 40,
+        "power": 10,
+        "skill": 5,
+        "speed": 5,
+        "defense": 12,
+        "resistance": 10
+      },
+      "constitution": 25,
+      "movement": 8,
+      "baseWeaponRanks": {},
+      "maximumStats": {
+        "hp": 60,
+        "power": 30,
+        "skill": 28,
+        "speed": 28,
+        "luck": 30,
+        "defense": 30,
+        "resistance": 28,
+        "constitution": 25,
+        "movement": 15
+      },
+      "promotionClassId": null,
+      "notes": null,
+      "notesZhHans": null,
+      "reviewStatus": "accepted",
+      "provenance": [
+        {
+          "sourceId": "serenes-fe6-class-introduction",
+          "locator": "Class Introduction > Fire Dragon",
+          "fields": [
+            "usableWeaponTypeIds",
+            "promotionClassId",
+            "notes"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-base-stats",
+          "locator": "Class Base Stats > Fire Dragon",
+          "fields": [
+            "baseStats",
+            "constitution",
+            "movement",
+            "baseWeaponRanks"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "serenes-fe6-class-maximum-stats",
+          "locator": "Class Maximum Stats > Fire Dragon",
+          "fields": [
+            "maximumStats"
+          ],
+          "reviewStatus": "accepted"
+        }
+      ]
+    },
+    {
       "id": "demon_dragon",
       "displayOrder": 62,
       "names": {
-        "en": "Demon Dragon"
+        "en": "Demon Dragon",
+        "zhHans": "魔龙"
       },
       "aliases": [],
       "sourceName": "Demon Dragon",
@@ -4541,6 +4664,7 @@
       },
       "promotionClassId": null,
       "notes": "Enemy only",
+      "notesZhHans": "敌方专用",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4578,7 +4702,8 @@
       "id": "child_m",
       "displayOrder": 63,
       "names": {
-        "en": "Child (M)"
+        "en": "Child (M)",
+        "zhHans": "孩童"
       },
       "aliases": [
         "Child"
@@ -4611,6 +4736,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4648,7 +4774,8 @@
       "id": "child_f",
       "displayOrder": 64,
       "names": {
-        "en": "Child (F)"
+        "en": "Child (F)",
+        "zhHans": "孩童"
       },
       "aliases": [
         "Child"
@@ -4681,6 +4808,7 @@
       },
       "promotionClassId": null,
       "notes": null,
+      "notesZhHans": null,
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4718,7 +4846,8 @@
       "id": "civilian_m",
       "displayOrder": 65,
       "names": {
-        "en": "Civilian (M)"
+        "en": "Civilian (M)",
+        "zhHans": "市民"
       },
       "aliases": [
         "Civilian"
@@ -4751,6 +4880,7 @@
       },
       "promotionClassId": null,
       "notes": "NPC only",
+      "notesZhHans": "NPC 专用",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4788,7 +4918,8 @@
       "id": "civilian_f",
       "displayOrder": 66,
       "names": {
-        "en": "Civilian (F)"
+        "en": "Civilian (F)",
+        "zhHans": "市民"
       },
       "aliases": [
         "Civilian"
@@ -4821,6 +4952,7 @@
       },
       "promotionClassId": null,
       "notes": "NPC only",
+      "notesZhHans": "NPC 专用",
       "reviewStatus": "accepted",
       "provenance": [
         {
@@ -4858,7 +4990,8 @@
       "id": "king",
       "displayOrder": 67,
       "names": {
-        "en": "King"
+        "en": "King",
+        "zhHans": "国王"
       },
       "aliases": [],
       "sourceName": "King",
@@ -4893,6 +5026,7 @@
       },
       "promotionClassId": null,
       "notes": "Enemy only",
+      "notesZhHans": "敌方专用",
       "reviewStatus": "accepted",
       "provenance": [
         {

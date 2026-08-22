@@ -535,6 +535,34 @@
       "height": 72
     },
     {
+      "id": "manakete-f",
+      "sourceClassName": "Manakete (F)",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/List_of_classes_in_Fire_Emblem:_The_Binding_Blade",
+      "sourceImageUrl": "user-provided workspace asset",
+      "localFileName": "manakete-f.webp",
+      "sha256": "23c6a96c6a1d1746b24ac777f551953eb88141f43eb9ff487ef11b8f999ce0be",
+      "reviewStatus": "accepted",
+      "rightsNote": "User-provided sprite sourced from the class-list page. The underlying game map sprite remains the property of its respective copyright holder.",
+      "url": "user-provided workspace asset",
+      "mime": "image/webp",
+      "width": 72,
+      "height": 83
+    },
+    {
+      "id": "divine-dragon",
+      "sourceClassName": "Divine Dragon",
+      "sourceFileUrl": "https://fireemblem.fandom.com/wiki/List_of_classes_in_Fire_Emblem:_The_Binding_Blade",
+      "sourceImageUrl": "user-provided workspace asset",
+      "localFileName": "divine-dragon.webp",
+      "sha256": "c910468435d3cab63ec8418b8d587f2aa2575c9ce85bb50bcb8c12cb2eeec191",
+      "reviewStatus": "accepted",
+      "rightsNote": "User-provided sprite sourced from the class-list page. The underlying game battle sprite remains the property of its respective copyright holder.",
+      "url": "user-provided workspace asset",
+      "mime": "image/webp",
+      "width": 62,
+      "height": 85
+    },
+    {
       "id": "king",
       "sourceClassName": "King",
       "sourceFileUrl": "https://fireemblem.fandom.com/wiki/File%3AKing.png",
@@ -968,7 +996,12 @@
     },
     {
       "classId": "manakete_f",
-      "assetId": "manakete",
+      "assetId": "manakete-f",
+      "reviewStatus": "accepted"
+    },
+    {
+      "classId": "divine_dragon",
+      "assetId": "divine-dragon",
       "reviewStatus": "accepted"
     },
     {

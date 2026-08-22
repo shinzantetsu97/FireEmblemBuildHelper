@@ -1,10 +1,20 @@
 export const RELEASES = [
   {
+    version: "0.9.1",
+    date: "2026-08-22",
+    dateLabel: "August 22, 2026",
+    title: "FE6 Simplified Chinese support",
+    current: true,
+    changes: [
+      "Added Simplified Chinese support across the FE6 unit, class, weapon, and item directories, including localized names, labels, effects, and recruitment text.",
+      "Added community-translation attribution for Chinese FE6 character, class, weapon, and item terminology.",
+    ],
+  },
+  {
     version: "0.9.0",
     date: "2026-08-20",
     dateLabel: "August 20, 2026",
     title: "FE6 English data viewer patch",
-    current: true,
     changes: [
       "Added English information for The Binding Blade, including unit, class, weapon, and item directories with source-backed sprites and icons.",
       "Added source-backed starting items to FE6 unit profiles, with matching weapon and item icons.",

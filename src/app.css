@@ -3549,7 +3549,24 @@ html[lang="zh-Hans"] .section-heading h2 {
 .fe6-class-record-main {
   align-items: stretch;
   display: grid;
-  grid-template-columns: minmax(9.5rem, 0.75fr) minmax(31rem, 3.2fr) minmax(9rem, 0.9fr) minmax(9rem, 1fr);
+  grid-template-columns: 1fr 4fr 1.25fr 1.75fr;
+}
+
+.fe6-fan-translation-note {
+  background: #f7f9f7;
+  border-left: 3px solid #7b3f57;
+  color: #4f5d57;
+  font-size: 0.82rem;
+  margin: 0 0 1rem;
+  padding: 0.65rem 0.8rem;
+}
+
+.fe6-fan-translation-note a {
+  margin: 0 0.15rem;
+}
+
+.fe6-class-record-main > * {
+  min-width: 0;
 }
 
 .fe6-class-identity,
@@ -3593,8 +3610,10 @@ html[lang="zh-Hans"] .section-heading h2 {
 .fe6-class-stat-table {
   font-size: 0.76rem;
   margin: 0;
-  min-width: 31rem;
+  min-width: 34rem;
+  table-layout: fixed;
   text-align: center;
+  width: 100%;
 }
 
 .fe6-class-stat-table :is(th, td) {
@@ -3605,6 +3624,7 @@ html[lang="zh-Hans"] .section-heading h2 {
 
 .fe6-class-stat-table th:first-child {
   text-align: left;
+  width: 4rem;
 }
 
 .fe6-class-ranks h2,
@@ -3617,13 +3637,10 @@ html[lang="zh-Hans"] .section-heading h2 {
   text-transform: uppercase;
 }
 
-.fe6-class-ranks .fe6-rank-list {
-  gap: 0.2rem;
-}
-
-.fe6-class-ranks .fe6-rank-list div {
+.fe6-inline-ranks {
+  color: #4f5d57;
   font-size: 0.76rem;
-  grid-template-columns: 1fr auto;
+  margin: 0;
 }
 
 .fe6-class-notes {
@@ -3648,6 +3665,21 @@ html[lang="zh-Hans"] .section-heading h2 {
   font-size: 1.05rem;
   font-weight: 700;
   justify-content: center;
+}
+
+@media (max-width: 1199.98px) and (min-width: 576px) {
+  .fe6-class-record-main {
+    grid-template-columns: minmax(12rem, 0.9fr) minmax(0, 1fr);
+  }
+
+  .fe6-class-ranks,
+  .fe6-class-notes {
+    border-top: 1px solid #dce3df;
+  }
+
+  .fe6-class-ranks {
+    border-right: 1px solid #dce3df;
+  }
 }
 
 .fe6-detail-main {
@@ -4041,5 +4073,5 @@ html[lang="zh-Hans"] .section-heading h2 {
   .fe6-class-identity,
   .fe6-class-ranks,
   .fe6-class-notes { border-bottom: 1px solid #dce3df; border-right: 0; }
-  .fe6-class-stat-table { min-width: 31rem; }
+  .fe6-class-stat-table { min-width: 34rem; }
 }

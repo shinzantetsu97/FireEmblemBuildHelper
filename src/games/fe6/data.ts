@@ -2,7 +2,7 @@ import classesJson from "../../../data/runtime/fe6/classes.json";
 import unitsJson from "../../../data/runtime/fe6/units.json";
 import weaponsItemsJson from "../../../data/runtime/fe6/weapons-items.json";
 
-export type Fe6Names = { en: string; ja?: string; jaLatn?: string; fan?: string; officialJpn?: string };
+export type Fe6Names = { en: string; zhHans?: string; ja?: string; jaLatn?: string; fan?: string; officialJpn?: string };
 export type Fe6SourceRef = { sourceId: string; locator: string; fields: string[]; reviewStatus: string };
 export type Fe6Source = { id: string; title: string; location: string; reviewStatus: string };
 export type Fe6Stats = { hp: number; power: number; skill: number; speed: number; luck: number; defense: number; resistance: number };
@@ -72,6 +72,7 @@ export type Fe6Class = {
   maximumStats: Fe6Caps;
   promotionClassId: string | null;
   notes: string | null;
+  notesZhHans: string | null;
   provenance: Fe6SourceRef[];
   promotion: null | {
     targetClassId: string;
@@ -87,7 +88,7 @@ export type Fe6Weapon = {
   names: Fe6Names;
   weaponTypeId: string;
   rank: string | null;
-  range: { kind: string; display: string; minimum: number | null; maximum: number | null };
+  range: { kind: string; display: string; minimum?: number | null; maximum?: number | null; formula?: string } | null;
   weight: number | null;
   might: number | null;
   hit: number | null;
@@ -96,6 +97,7 @@ export type Fe6Weapon = {
   worth: number | null;
   staffExperience: number | null;
   effect: string | null;
+  effectZhHans: string | null;
   availabilityFlags: string[];
   provenance: Fe6SourceRef[];
 };
@@ -105,6 +107,7 @@ export type Fe6Item = {
   uses: number | null;
   worth: number | null;
   effect: string | null;
+  effectZhHans: string | null;
   availabilityFlags: string[];
   provenance: Fe6SourceRef[];
 };
@@ -129,8 +132,9 @@ export function findFe6ClassBySlug(slug: string): Fe6Class | undefined {
   return fe6Classes.find((entry) => entry.id === slug.toLocaleLowerCase());
 }
 
-export function fe6ClassName(classId: string | null | undefined): string {
-  return findFe6ClassBySlug(classId ?? "")?.names.en ?? "Unknown";
+export function fe6ClassName(classId: string | null | undefined, locale: "en" | "zhHans" = "en"): string {
+  const names = findFe6ClassBySlug(classId ?? "")?.names;
+  return names?.[locale] ?? names?.en ?? "Unknown";
 }
 
 export function findFe6Source(sourceId: string): Fe6Source | undefined {
@@ -176,8 +180,15 @@ export function calculateFe6SupportAffinityBonuses(
   ));
 }
 
-export function formatFe6Join(recruitment: Fe6Recruitment): string {
-  const chapters = recruitment.joins.map((join) => `Ch. ${join.label}${join.routeVariant ? ` ${join.routeVariant}` : ""}`);
+export function formatFe6Join(recruitment: Fe6Recruitment, locale: "en" | "zhHans" = "en"): string {
+  const chapters = recruitment.joins.map((join) => {
+    if (locale === "zhHans") {
+      return join.routeVariant
+        ? `${join.routeVariant}线第${join.chapterNumber}章`
+        : `第${join.label}章`;
+    }
+    return `Ch. ${join.label}`;
+  });
   return chapters.join(" / ");
 }
 

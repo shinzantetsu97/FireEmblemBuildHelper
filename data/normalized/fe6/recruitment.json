@@ -2092,7 +2092,7 @@
         }
       ],
       "condition": "Automatically from the start",
-      "startingClassId": "druid_m",
+      "startingClassId": "druid_f",
       "startingLevel": 18,
       "baseStatSnapshotId": "niime.normal",
       "weaponLevelSnapshotId": "niime.normal",

@@ -17,6 +17,7 @@
     "sophia": "female",
     "igrene": "female",
     "fae": "female",
+    "niime": "female",
     "juno": "female"
   },
   "recruitmentOverrides": {
@@ -27,5 +28,9 @@
         "note": "Serenes notes that Gonzalez joins at level 11 with D Axes in Chapter 10B; his other base stats are unchanged."
       }
     }
+  },
+  "classOrder": {
+    "insertAfter": "valkyrie",
+    "classIds": ["manakete_f", "divine_dragon"]
   }
 }

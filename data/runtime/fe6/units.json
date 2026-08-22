@@ -7,6 +7,7 @@
       "displayOrder": 1,
       "names": {
         "en": "Roy",
+        "zhHans": "罗伊",
         "ja": "ロイ",
         "jaLatn": "Roi",
         "fan": "Roy",
@@ -188,6 +189,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ロイ > 罗伊",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Roy",
           "fields": [
@@ -202,6 +211,7 @@
       "displayOrder": 2,
       "names": {
         "en": "Marcus",
+        "zhHans": "马库斯",
         "ja": "マーカス",
         "jaLatn": "Mākasu",
         "fan": "Marcus",
@@ -380,6 +390,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > マーカス > 马库斯",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Marcus",
           "fields": [
@@ -394,6 +412,7 @@
       "displayOrder": 3,
       "names": {
         "en": "Alen",
+        "zhHans": "亚伦",
         "ja": "アレン",
         "jaLatn": "Aren",
         "fan": "Alan",
@@ -574,6 +593,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > アレン > 亚伦",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Allen",
           "fields": [
@@ -588,6 +615,7 @@
       "displayOrder": 4,
       "names": {
         "en": "Lance",
+        "zhHans": "兰斯",
         "ja": "ランス",
         "jaLatn": "Ransu",
         "fan": "Lance",
@@ -767,6 +795,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ランス > 兰斯",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Lance",
           "fields": [
@@ -781,6 +817,7 @@
       "displayOrder": 5,
       "names": {
         "en": "Wolt",
+        "zhHans": "沃尔特",
         "ja": "ウォルト",
         "jaLatn": "Woruto",
         "fan": "Wolt",
@@ -957,6 +994,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ウォルト > 沃尔特",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Wolt",
           "fields": [
@@ -971,6 +1016,7 @@
       "displayOrder": 6,
       "names": {
         "en": "Bors",
+        "zhHans": "鲍斯",
         "ja": "ボールス",
         "jaLatn": "Bōrusu",
         "fan": "Bors",
@@ -1147,6 +1193,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ボールス > 鲍斯",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Bors",
           "fields": [
@@ -1161,6 +1215,7 @@
       "displayOrder": 7,
       "names": {
         "en": "Merlinus",
+        "zhHans": "马利纳斯",
         "ja": "マリナス",
         "jaLatn": "Marinasu",
         "fan": "Merlinus",
@@ -1316,6 +1371,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > マリナス > 马利纳斯",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Merlinus",
           "fields": [
@@ -1330,6 +1393,7 @@
       "displayOrder": 8,
       "names": {
         "en": "Elen",
+        "zhHans": "艾伦",
         "ja": "エレン",
         "jaLatn": "Eren",
         "fan": "Ellen",
@@ -1507,6 +1571,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > エレン > 艾伦",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Ellen",
           "fields": [
@@ -1521,6 +1593,7 @@
       "displayOrder": 9,
       "names": {
         "en": "Dieck",
+        "zhHans": "迪克",
         "ja": "ディーク",
         "jaLatn": "Dīku",
         "fan": "Dieck",
@@ -1698,6 +1771,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ディーク > 迪克",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Dieck",
           "fields": [
@@ -1712,6 +1793,7 @@
       "displayOrder": 10,
       "names": {
         "en": "Wade",
+        "zhHans": "韦德",
         "ja": "ワード",
         "jaLatn": "Wādo",
         "fan": "Ward",
@@ -1890,6 +1972,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ワード > 韦德",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Wade",
           "fields": [
@@ -1904,6 +1994,7 @@
       "displayOrder": 11,
       "names": {
         "en": "Lot",
+        "zhHans": "洛特",
         "ja": "ロット",
         "jaLatn": "Rotto",
         "fan": "Lott",
@@ -2082,6 +2173,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ロット > 洛特",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Lott",
           "fields": [
@@ -2096,6 +2195,7 @@
       "displayOrder": 12,
       "names": {
         "en": "Shanna",
+        "zhHans": "夏妮",
         "ja": "シャニー",
         "jaLatn": "Shanī",
         "fan": "Thany",
@@ -2276,6 +2376,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > シャニー > 夏妮",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Thany",
           "fields": [
@@ -2290,6 +2398,7 @@
       "displayOrder": 13,
       "names": {
         "en": "Chad",
+        "zhHans": "查德",
         "ja": "チャド",
         "jaLatn": "Chado",
         "fan": "Chad",
@@ -2456,6 +2565,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > チャド > 查德",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Chad",
           "fields": [
@@ -2470,6 +2587,7 @@
       "displayOrder": 14,
       "names": {
         "en": "Lugh",
+        "zhHans": "露",
         "ja": "ルゥ",
         "jaLatn": "Rū",
         "fan": "Lugh",
@@ -2646,6 +2764,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ルゥ > 露",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Lugh",
           "fields": [
@@ -2660,6 +2786,7 @@
       "displayOrder": 15,
       "names": {
         "en": "Clarine",
+        "zhHans": "克莱丽奈",
         "ja": "クラリーネ",
         "jaLatn": "Kurarīne",
         "fan": "Clarine",
@@ -2836,6 +2963,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > クラリーネ > 克莱丽奈",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Clarine",
           "fields": [
@@ -2850,6 +2985,7 @@
       "displayOrder": 16,
       "names": {
         "en": "Rutger",
+        "zhHans": "鲁特加",
         "ja": "ルトガー",
         "jaLatn": "Rutogā",
         "fan": "Rutger",
@@ -3057,6 +3193,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ルトガー > 鲁特加",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Rutger",
           "fields": [
@@ -3071,6 +3215,7 @@
       "displayOrder": 17,
       "names": {
         "en": "Saul",
+        "zhHans": "索尔",
         "ja": "サウル",
         "jaLatn": "Sauru",
         "fan": "Saul",
@@ -3246,6 +3391,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > サウル > 索尔",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Saul",
           "fields": [
@@ -3260,6 +3413,7 @@
       "displayOrder": 18,
       "names": {
         "en": "Dorothy",
+        "zhHans": "桃乐茜",
         "ja": "ドロシー",
         "jaLatn": "Doroshī",
         "fan": "Dorothy",
@@ -3436,6 +3590,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ドロシー > 桃乐茜",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Dorothy",
           "fields": [
@@ -3450,6 +3612,7 @@
       "displayOrder": 19,
       "names": {
         "en": "Sue",
+        "zhHans": "苏",
         "ja": "スー",
         "jaLatn": "Sū",
         "fan": "Sue",
@@ -3623,6 +3786,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > スー > 苏",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Sue",
           "fields": [
@@ -3637,6 +3808,7 @@
       "displayOrder": 20,
       "names": {
         "en": "Zelot",
+        "zhHans": "塞洛特",
         "ja": "ゼロット",
         "jaLatn": "Zerotto",
         "fan": "Zealot",
@@ -3818,6 +3990,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ゼロット > 塞洛特",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Zealot",
           "fields": [
@@ -3832,6 +4012,7 @@
       "displayOrder": 21,
       "names": {
         "en": "Trec",
+        "zhHans": "托雷克",
         "ja": "トレック",
         "jaLatn": "Torekku",
         "fan": "Treck",
@@ -4011,6 +4192,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > トレック > 托雷克",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Treck",
           "fields": [
@@ -4025,6 +4214,7 @@
       "displayOrder": 22,
       "names": {
         "en": "Noah",
+        "zhHans": "诺亚",
         "ja": "ノア",
         "jaLatn": "Noa",
         "fan": "Noah",
@@ -4203,6 +4393,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ノア > 诺亚",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Noah",
           "fields": [
@@ -4217,6 +4415,7 @@
       "displayOrder": 23,
       "names": {
         "en": "Astolfo",
+        "zhHans": "阿斯托尔",
         "ja": "アストール",
         "jaLatn": "Asutōru",
         "fan": "Astol",
@@ -4386,6 +4585,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > アストール > 阿斯托尔",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Astohl",
           "fields": [
@@ -4400,6 +4607,7 @@
       "displayOrder": 24,
       "names": {
         "en": "Lilina",
+        "zhHans": "莉莉娜",
         "ja": "リリーナ",
         "jaLatn": "Rirīna",
         "fan": "Lilina",
@@ -4578,6 +4786,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > リリーナ > 莉莉娜",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Lilina",
           "fields": [
@@ -4592,6 +4808,7 @@
       "displayOrder": 25,
       "names": {
         "en": "Gwendolyn",
+        "zhHans": "温迪",
         "ja": "ウェンディ",
         "jaLatn": "Wendi",
         "fan": "Wendy",
@@ -4770,6 +4987,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ウェンディ > 温迪",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Wendy",
           "fields": [
@@ -4784,6 +5009,7 @@
       "displayOrder": 26,
       "names": {
         "en": "Barthe",
+        "zhHans": "巴斯",
         "ja": "バース",
         "jaLatn": "Bāsu",
         "fan": "Barth",
@@ -4961,6 +5187,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > バース > 巴斯",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Barth",
           "fields": [
@@ -4975,6 +5209,7 @@
       "displayOrder": 27,
       "names": {
         "en": "Ogier",
+        "zhHans": "奥吉尔",
         "ja": "オージェ",
         "jaLatn": "Ōje",
         "fan": "Oujay",
@@ -5153,6 +5388,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > オージェ > 奥吉尔",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Oujay",
           "fields": [
@@ -5167,6 +5410,7 @@
       "displayOrder": 28,
       "names": {
         "en": "Fir",
+        "zhHans": "菲尔",
         "ja": "フィル",
         "jaLatn": "Firu",
         "fan": "Fir",
@@ -5375,6 +5619,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > フィル > 菲尔",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Fir",
           "fields": [
@@ -5389,6 +5641,7 @@
       "displayOrder": 29,
       "names": {
         "en": "Sin",
+        "zhHans": "辛",
         "ja": "シン",
         "jaLatn": "Shin",
         "fan": "Shin",
@@ -5596,6 +5849,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > シン > 辛",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Shin",
           "fields": [
@@ -5610,6 +5871,7 @@
       "displayOrder": 30,
       "names": {
         "en": "Gonzalez",
+        "zhHans": "刚萨雷斯",
         "ja": "ゴンザレス",
         "jaLatn": "Gonzaresu",
         "fan": "Gonzales",
@@ -5832,6 +6094,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ゴンザレス > 刚萨雷斯",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Gonzales",
           "fields": [
@@ -5846,6 +6116,7 @@
       "displayOrder": 31,
       "names": {
         "en": "Geese",
+        "zhHans": "基斯",
         "ja": "ギース",
         "jaLatn": "Gīsu",
         "fan": "Geese",
@@ -6029,6 +6300,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ギース > 基斯",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Geese",
           "fields": [
@@ -6043,6 +6322,7 @@
       "displayOrder": 32,
       "names": {
         "en": "Klein",
+        "zhHans": "克莱因",
         "ja": "クレイン",
         "jaLatn": "Kurein",
         "fan": "Klein",
@@ -6258,6 +6538,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > クレイン > 克莱因",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Klein",
           "fields": [
@@ -6272,6 +6560,7 @@
       "displayOrder": 33,
       "names": {
         "en": "Thea",
+        "zhHans": "缇特",
         "ja": "ティト",
         "jaLatn": "Tito",
         "fan": "Tate",
@@ -6489,6 +6778,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ティト > 缇特",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Tate",
           "fields": [
@@ -6503,6 +6800,7 @@
       "displayOrder": 34,
       "names": {
         "en": "Larum",
+        "zhHans": "拉拉姆",
         "ja": "ララム",
         "jaLatn": "Raramu",
         "fan": "Lalum",
@@ -6669,6 +6967,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ララム > 拉拉姆",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Lalum",
           "fields": [
@@ -6683,6 +6989,7 @@
       "displayOrder": 35,
       "names": {
         "en": "Echidna",
+        "zhHans": "埃肯娜",
         "ja": "エキドナ",
         "jaLatn": "Ekidona",
         "fan": "Echidna",
@@ -6860,6 +7167,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > エキドナ > 埃肯娜",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Echidna",
           "fields": [
@@ -6874,6 +7189,7 @@
       "displayOrder": 36,
       "names": {
         "en": "Elffin",
+        "zhHans": "艾尔芬",
         "ja": "エルフィン",
         "jaLatn": "Erufin",
         "fan": "Elphin",
@@ -7040,6 +7356,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > エルフィン > 艾尔芬",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Elphin",
           "fields": [
@@ -7054,6 +7378,7 @@
       "displayOrder": 37,
       "names": {
         "en": "Bartre",
+        "zhHans": "巴特尔",
         "ja": "バアトル",
         "jaLatn": "Bātoru",
         "fan": "Bartre",
@@ -7231,6 +7556,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > バアトル > 巴特尔",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Bartre",
           "fields": [
@@ -7245,6 +7578,7 @@
       "displayOrder": 38,
       "names": {
         "en": "Raigh",
+        "zhHans": "雷",
         "ja": "レイ",
         "jaLatn": "Rei",
         "fan": "Ray",
@@ -7422,6 +7756,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > レイ > 雷",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Ray",
           "fields": [
@@ -7436,6 +7778,7 @@
       "displayOrder": 39,
       "names": {
         "en": "Cath",
+        "zhHans": "嘉丝",
         "ja": "キャス",
         "jaLatn": "Kyasu",
         "fan": "Cath",
@@ -7656,6 +7999,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > キャス > 嘉丝",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Cath",
           "fields": [
@@ -7670,6 +8021,7 @@
       "displayOrder": 40,
       "names": {
         "en": "Melady",
+        "zhHans": "米蕾蒂",
         "ja": "ミレディ",
         "jaLatn": "Miredi",
         "fan": "Miledy",
@@ -7880,6 +8232,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ミレディ > 米蕾蒂",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Miredy",
           "fields": [
@@ -7894,6 +8254,7 @@
       "displayOrder": 41,
       "names": {
         "en": "Perceval",
+        "zhHans": "珀西瓦尔",
         "ja": "パーシバル",
         "jaLatn": "Pāshibaru",
         "fan": "Percival",
@@ -8113,6 +8474,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > パーシバル > 珀西瓦尔",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Percival",
           "fields": [
@@ -8127,6 +8496,7 @@
       "displayOrder": 42,
       "names": {
         "en": "Cecilia",
+        "zhHans": "塞茜莉娅",
         "ja": "セシリア",
         "jaLatn": "Seshiria",
         "fan": "Cecilia",
@@ -8306,6 +8676,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > セシリア > 塞茜莉娅",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Cecilia",
           "fields": [
@@ -8320,6 +8698,7 @@
       "displayOrder": 43,
       "names": {
         "en": "Sophia",
+        "zhHans": "索非亚",
         "ja": "ソフィーヤ",
         "jaLatn": "Sofīya",
         "fan": "Sophia",
@@ -8496,6 +8875,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ソフィーヤ > 索非亚",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Sofiya",
           "fields": [
@@ -8510,6 +8897,7 @@
       "displayOrder": 44,
       "names": {
         "en": "Igrene",
+        "zhHans": "依古莱奴",
         "ja": "イグレーヌ",
         "jaLatn": "Igurēnu",
         "fan": "Igrene",
@@ -8685,6 +9073,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > イグレーヌ > 依古莱奴",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Igrene",
           "fields": [
@@ -8699,6 +9095,7 @@
       "displayOrder": 45,
       "names": {
         "en": "Garret",
+        "zhHans": "加雷特",
         "ja": "ガレット",
         "jaLatn": "Garetto",
         "fan": "Garret",
@@ -8908,6 +9305,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ガレット > 加雷特",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Garret",
           "fields": [
@@ -8922,6 +9327,7 @@
       "displayOrder": 46,
       "names": {
         "en": "Fae",
+        "zhHans": "珐",
         "ja": "ファ",
         "jaLatn": "Fa",
         "fan": "Fae",
@@ -9085,6 +9491,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ファ > 珐",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Fa",
           "fields": [
@@ -9099,6 +9513,7 @@
       "displayOrder": 47,
       "names": {
         "en": "Hugh",
+        "zhHans": "修",
         "ja": "ヒュウ",
         "jaLatn": "Hyū",
         "fan": "Hugh",
@@ -9276,6 +9691,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ヒュウ > 修",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Hugh",
           "fields": [
@@ -9290,6 +9713,7 @@
       "displayOrder": 48,
       "names": {
         "en": "Zeiss",
+        "zhHans": "崔斯",
         "ja": "ツァイス",
         "jaLatn": "Tsaisu",
         "fan": "Zeiss",
@@ -9499,6 +9923,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ツァイス > 崔斯",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Zeis",
           "fields": [
@@ -9513,6 +9945,7 @@
       "displayOrder": 49,
       "names": {
         "en": "Douglas",
+        "zhHans": "道格拉斯",
         "ja": "ダグラス",
         "jaLatn": "Dagurasu",
         "fan": "Douglas",
@@ -9691,6 +10124,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ダグラス > 道格拉斯",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Douglas",
           "fields": [
@@ -9705,6 +10146,7 @@
       "displayOrder": 50,
       "names": {
         "en": "Niime",
+        "zhHans": "尼梅",
         "ja": "ニイメ",
         "jaLatn": "Nīme",
         "fan": "Niime",
@@ -9735,7 +10177,7 @@
             }
           ],
           "condition": "Automatically from the start",
-          "startingClassId": "druid_m",
+          "startingClassId": "druid_f",
           "startingLevel": 18,
           "baseStatSnapshotId": "niime.normal",
           "weaponLevelSnapshotId": "niime.normal",
@@ -9763,14 +10205,14 @@
             }
           ]
         },
-        "startingClassId": "druid_m",
+        "startingClassId": "druid_f",
         "startingLevel": 18,
         "baseStats": {
           "id": "niime.normal",
           "unitId": "niime",
           "difficulty": "normal",
           "valueKind": "fixed",
-          "startingClassId": "druid_m",
+          "startingClassId": "druid_f",
           "startingLevel": 18,
           "stats": {
             "hp": 25,
@@ -9810,7 +10252,7 @@
           "resistance": 20
         },
         "baseClassIds": [
-          "shaman_m"
+          "shaman_f"
         ],
         "baseClassCap": {
           "hp": 60,
@@ -9823,15 +10265,15 @@
           "constitution": 20,
           "movement": 15
         },
-        "promotedClassId": "druid_m",
+        "promotedClassId": "druid_f",
         "promotedClassCap": {
           "hp": 60,
           "power": 29,
           "skill": 24,
           "speed": 26,
           "luck": 30,
-          "defense": 21,
-          "resistance": 28,
+          "defense": 20,
+          "resistance": 29,
           "constitution": 20,
           "movement": 15
         },
@@ -9892,6 +10334,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ニイメ > 尼梅",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Niime",
           "fields": [
@@ -9906,6 +10356,7 @@
       "displayOrder": 51,
       "names": {
         "en": "Juno",
+        "zhHans": "朱诺",
         "ja": "ユーノ",
         "jaLatn": "Yūno",
         "fan": "Yuno",
@@ -10081,6 +10532,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ユーノ > 朱诺",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Juno",
           "fields": [
@@ -10095,6 +10554,7 @@
       "displayOrder": 52,
       "names": {
         "en": "Dayan",
+        "zhHans": "戴扬",
         "ja": "ダヤン",
         "jaLatn": "Dayan",
         "fan": "Dayan",
@@ -10270,6 +10730,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ダヤン > 戴扬",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Dayan",
           "fields": [
@@ -10284,6 +10752,7 @@
       "displayOrder": 53,
       "names": {
         "en": "Yoder",
+        "zhHans": "尤迪尔",
         "ja": "ヨーデル",
         "jaLatn": "Yōderu",
         "fan": "Yodel",
@@ -10465,6 +10934,14 @@
           "reviewStatus": "accepted"
         },
         {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > ヨーデル > 尤迪尔",
+          "fields": [
+            "names.zhHans"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
           "sourceId": "serenes-fe6-character-base-stats",
           "locator": "Character Base Stats > Yodel",
           "fields": [
@@ -10479,6 +10956,7 @@
       "displayOrder": 54,
       "names": {
         "en": "Karel",
+        "zhHans": "卡雷尔",
         "ja": "カレル",
         "jaLatn": "Kareru",
         "fan": "Karel",
@@ -10650,6 +11128,14 @@
           "fields": [
             "names",
             "aliases"
+          ],
+          "reviewStatus": "accepted"
+        },
+        {
+          "sourceId": "k73-fe6-character-names",
+          "locator": "Character names > カレル > 卡雷尔",
+          "fields": [
+            "names.zhHans"
           ],
           "reviewStatus": "accepted"
         },
@@ -10944,6 +11430,26 @@
         "sha256": "dc737e459becc97942770e6dce80e9a7d5e785bbe380ef585d30198d3331f61f",
         "acquisition": "automated_fetch"
       }
+    },
+    {
+      "id": "k73-fe6-character-names",
+      "kind": "web",
+      "title": "火花天龙剑 — 火焰纹章封印之剑全人物加入方法及能力",
+      "location": "http://www.k73.com/3ds/19454-2.html",
+      "language": "zh-Hans",
+      "reviewStatus": "accepted",
+      "attribution": "火花天龙剑",
+      "notes": "Simplified-Chinese community character-name translations. These are unofficial fan translations, not official Nintendo translations."
+    },
+    {
+      "id": "k73-fe6-inventory-translations",
+      "kind": "web",
+      "title": "火花天龙剑 — 火焰纹章封印之剑全武器资料、杖及道具列表",
+      "location": "https://www.k73.com/3ds/19445.html",
+      "language": "zh-Hans",
+      "reviewStatus": "accepted",
+      "attribution": "火花天龙剑",
+      "notes": "Community Simplified-Chinese inventory translations, curated from the linked weapon list and the companion staff/item list at https://www.k73.com/3ds/19449.html. These are unofficial fan translations."
     }
   ]
 }
