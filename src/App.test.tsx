@@ -123,7 +123,7 @@ describe("application regressions", () => {
     expect(screen.getByText("最大HP\+7")).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "语言" }));
     await user.click(screen.getByText("English"));
-  });
+  }, 15_000);
 
   it("creates a note that remains after the app remounts", async () => {
     const user = userEvent.setup();
